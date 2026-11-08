@@ -4,7 +4,7 @@
 Follows Colab Ultra Workstation Iron Rules:
 - Uses `colab exec -s <session> -f <temp_file>` + `nohup` detached execution + `alarm 20` log polling (Iron Rule C).
 - Uses Dual-Track CCU Meter (`colab_meter.py start` / `stop`).
-- Pulls all synthesized `.wav` files back to local `/Users/delroy/Documents/Playground/test001/tts_takes/`.
+- Pulls all synthesized `.wav` files back to local `<repo>/tts_takes/` (override with `TTS_TAKES_DIR`).
 """
 
 from __future__ import annotations
@@ -19,10 +19,11 @@ import tempfile
 import time
 from pathlib import Path
 
-ROOT = Path("/Users/delroy/Documents/Playground/test001")
-SCRIPTS_DIR = ROOT / "colab-ultra-workstation/scripts"
-LOCAL_TAKES_DIR = ROOT / "tts_takes"
-ARTIFACT_DIR = Path("/Users/delroy/.gemini/antigravity/brain/d4ba0448-57f4-477a-b8cc-1cb22bab61d2")
+SCRIPTS_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPTS_DIR.parent
+LOCAL_TAKES_DIR = Path(os.environ.get("TTS_TAKES_DIR", REPO_ROOT / "tts_takes")).expanduser()
+# Optional extra copy destination for synthesized takes (e.g. an agent artifact folder).
+ARTIFACT_DIR = Path(os.environ["TTS_ARTIFACT_DIR"]).expanduser() if os.environ.get("TTS_ARTIFACT_DIR") else None
 COLAB_BIN = os.path.expanduser("~/.local/bin/colab")
 COLAB_PY = os.path.expanduser("~/.local/share/uv/tools/google-colab-cli/bin/python")
 
@@ -207,7 +208,7 @@ print("TTS_PACK_START:" + json.dumps(out) + ":TTS_PACK_END")
         raw_bytes = base64.b64decode(b64_data)
         dst = LOCAL_TAKES_DIR / fname
         dst.write_bytes(raw_bytes)
-        if ARTIFACT_DIR.exists():
+        if ARTIFACT_DIR and ARTIFACT_DIR.exists():
             (ARTIFACT_DIR / fname).write_bytes(raw_bytes)
         print(f"📥 已拉取至本地: {dst.name} ({len(raw_bytes) / 1024:.1f} KB)", flush=True)
 
