@@ -8,6 +8,7 @@ Usage on Colab G4:
 """
 import argparse
 import json
+import math
 import os
 import re
 import shutil
@@ -54,29 +55,34 @@ def ensure_comfy_running() -> None:
     raise RuntimeError("❌ ComfyUI 启动超时，请检查 /tmp/comfyui.log")
 
 
-def cut_audio(ep: str, c: dict) -> str:
+def cut_audio(ep: str, c: dict, total_dur: float = 5.167) -> str:
     out = os.path.join(ep, "work", "audio", c["id"] + ".wav")
     os.makedirs(os.path.dirname(out), exist_ok=True)
     a, b = c["audio"]
-    dur = max(1.8, min(4.8, b - a))
-    # Fade out cleanly at the end of the lyric line, then pad with silence to exact 5.167s (124 frames @ 24fps)
-    # so the audio latent aligns 1:1 with the 124-frame video latent window [0.000s .. 5.167s].
+    dur = max(1.8, min(total_dur - 0.05, b - a))
+    # Fade out cleanly at the end of the lyric line, then pad with silence to the exact clip duration
+    # so the audio latent aligns 1:1 with the video latent window [0.000s .. total_dur].
     af = "afade=t=in:d=0.02,afade=t=out:st=%.3f:d=0.05" % max(0.05, dur - 0.05)
     if c.get("lead"):
         af += ",adelay=%d:all=1" % int(c["lead"] * 1000)
-    af += ",apad=whole_dur=5.167"
+    af += ",apad=whole_dur=%.3f" % total_dur
     src_wav = os.path.join(ep, "work", "vocals_final.wav")
     if not os.path.exists(src_wav):
         src_wav = os.path.join(ep, "work", "music_final.wav")
     subprocess.run([
         "ffmpeg", "-y", "-v", "error",
         "-ss", "%.3f" % max(0.0, a), "-t", "%.3f" % dur,
-        "-i", src_wav, "-af", af, "-t", "5.167", "-ac", "2", "-ar", "44100", out
+        "-i", src_wav, "-af", af, "-t", "%.3f" % total_dur, "-ac", "2", "-ar", "44100", out
     ], check=True)
     return out
 
 
-def adapt_prompt_for_comfy_h3(c: dict, e: dict) -> str:
+STATIC_CAM = (" on a locked-off static tripod, holding the same tight chest-up framing with a fixed focal length "
+              "from the very first frame to the last frame")
+
+
+def adapt_prompt_for_comfy_h3(c: dict, e: dict, total_dur: float = 5.167, mic: str = "handheld",
+                              static_cam: bool = False) -> str:
     """Build the official 6-section MiniMaxH3ReferenceToVideo structured prompt (`ref-en.txt` protocol)."""
     lang = e.get("language", "en")
     if c["kind"] != "rap" or not c.get("text"):
@@ -94,16 +100,28 @@ def adapt_prompt_for_comfy_h3(c: dict, e: dict) -> str:
     a0, a1 = c["audio"]
     lead = float(c.get("lead") or 0.0)
     t_start = lead
-    t_end = min(4.65, lead + max(1.8, a1 - a0))
+    t_end = min(total_dur - 0.05, lead + max(1.8, a1 - a0))
+    ts_total_str = f"00:0{total_dur:05.3f}"
     ts_start_str = f"00:0{t_start:05.3f}"
     ts_end_str = f"00:0{t_end:05.3f}"
+    if mic == "stand":
+        mic_summary = ("rapping into a vintage chrome microphone on a floor stand that stands at mid-chest height slightly to one side, "
+                       "well below his chin, never in front of his mouth; both hands are free")
+        mic_detail = ("with a vintage chrome microphone on a floor stand placed at mid-chest height slightly to one side of him "
+                      "(he never holds or lifts it, and it never covers his mouth, lips or jaw, which stay 100% unobstructed and visible)")
+    else:
+        mic_summary = "holding the vintage microphone at upper-chest height below his chin so his mouth and lips remain 100% uncovered"
+        mic_detail = ("holding the silver corded microphone in his right hand at upper-chest height a few inches below his chin "
+                      "(completely clear of his face so his mouth, lips, and jaw are 100% unobstructed and visible)")
     venue_desc = e.get("venue_en", "an 1890s industrial power plant rap battle arena")
     action_desc = c.get("action") or "fierce and confident, his free hand chopping the air on the beat"
     move = c.get("move", "M3")
 
-    if move == "M2":
+    if c.get("cam"):
+        cam_desc = c["cam"] + (STATIC_CAM if static_cam else "")
+    elif move == "M2":
         cam_desc = (
-            "The camera holds a chest-up close-up shot at eye level with a subtle slow push-in, framing "
+            "The camera holds a chest-up close-up shot at eye level" + (STATIC_CAM if static_cam else " with a subtle slow push-in") + ", framing "
             "<Subject 1>'s face and upper chest large and centered in the 16:9 frame with comfortable headroom"
         )
     elif two_shot:
@@ -113,7 +131,7 @@ def adapt_prompt_for_comfy_h3(c: dict, e: dict) -> str:
         )
     else:
         cam_desc = (
-            "The camera holds a chest-up medium close-up shot at eye level with a gentle slow push-in, "
+            "The camera holds a chest-up medium close-up shot at eye level" + (STATIC_CAM if static_cam else " with a gentle slow push-in") + ", "
             "framing <Subject 1> turned three-quarters toward the lens with his face and lips large and clearly readable"
         )
 
@@ -138,27 +156,39 @@ def adapt_prompt_for_comfy_h3(c: dict, e: dict) -> str:
     )
 
     listener_clause = (
-        f" while <Subject 2> stands on screen-right facing left with his mouth completely closed, watching silently"
-        if two_shot
-        else ""
+        c.get("listener")
+        or (f" while <Subject 2> stands on screen-right facing left with his mouth completely closed, watching silently"
+            if two_shot else "")
     )
 
     return (
         "subject_definitions:\n"
         + "\n".join(subj_lines)
         + "\n\nsummary:\n"
-        + f"[reference generation + audio reuse] Inside {venue_desc}, <Subject 1> performs an energetic {lang_tag} battle-rap line synced syllable-by-syllable to <Audio 1>, holding the vintage microphone at upper-chest height below his chin so his mouth and lips remain 100% uncovered{listener_clause}.\n\n"
+        + f"[reference generation + audio reuse] Inside {venue_desc}, <Subject 1> performs an energetic {lang_tag} battle-rap line synced syllable-by-syllable to <Audio 1>, {mic_summary}{listener_clause}.\n\n"
         + "retention_analysis:\n"
         + "\n".join(ret_lines)
         + "\n\ndetailed_description:\n"
         + f"[Shot 1] r34l1sm, Facial Realism, realistic ARRI Alexa Mini LF 50mm lens cinematography, Kodak Vision3 500T film look, natural soft matte skin texture with fine pores, zero oily shine, dramatic low-key 1890s spotlighting with warm amber glow against cool electric blue haze. {cam_desc}. "
-        + f"During {ts_start_str}–{ts_end_str}, holding the silver corded microphone in his right hand at upper-chest height a few inches below his chin (completely clear of his face so his mouth, lips, and jaw are 100% unobstructed and visible), <Subject 1> raps directly into the camera with lively, unmistakable syllable-by-syllable lip-sync and expressive jaw articulation matching <Audio 1>, {action_desc}{listener_clause}: <d>[{lang_tag}]{c['text']}</d> "
-        + f"Immediately during {ts_end_str}–00:05.167, <Subject 1> closes his mouth naturally and holds a fierce, confident stare into the lens{listener_clause}. No subtitles, no on-screen text.\n\n"
+        + f"During {ts_start_str}–{ts_end_str}, {mic_detail}, <Subject 1> raps directly into the camera with lively, unmistakable syllable-by-syllable lip-sync and expressive jaw articulation matching <Audio 1>, {action_desc}{listener_clause}: <d>[{lang_tag}]{c['text']}</d> "
+        + f"Immediately during {ts_end_str}–{ts_total_str}, <Subject 1> closes his mouth naturally and holds a fierce, confident stare into the lens{listener_clause}. No subtitles, no on-screen text.\n\n"
         + "overall_soundscape:\n"
         + f"Clear, punchy foreground rap vocal performance from <Subject 1> during {ts_start_str}–{ts_end_str} synced 1:1 to <Audio 1> in an underground industrial arena.\n\n"
         + "non_diegetic_music:\n"
         + "N/A — <Audio 1> is directly reused 1:1 as the target vocal track."
     )
+
+
+def fit_frames(line_dur: float, fps: int = 24) -> int:
+    """Pick the clip length (frames) for a rap line of `line_dur` seconds.
+
+    Must return a 17k+5 frame count (73, 90, 107, 124, ...) so the H3 temporal latent grid stays aligned.
+    """
+    # 0.35 s tail: H3 sometimes starts singing 0.1-0.3 s late (see qa.py), plus the 0.05 s fade-out.
+    # Shortest 17k+5 length that fits line + tail, capped at the legacy 124 frames (5.167 s).
+    need = math.ceil((line_dur + 0.35) * fps)
+    k = max(4, math.ceil((need - 5) / 17))
+    return min(17 * k + 5, 124)
 
 
 def build_single_clip_workflow(
@@ -168,9 +198,11 @@ def build_single_clip_workflow(
     prompt_text: str,
     steps: int = 8,
     seed: int = 2026110501,
+    length_frames: int = 124,
+    lock_strength: float = 0.85,
 ) -> dict:
-    """Build a self-contained ComfyUI API graph for a single 5.167-second (124 frames = 17*7+5, 1344x768) MiniMax-H3 clip."""
-    length_frames = 124  # 5.167s at 24fps (strict 17k+5 Group-Phase Ladder)
+    """Build a self-contained ComfyUI API graph for a single MiniMax-H3 clip (default 124 frames = 17*7+5, 1344x768)."""
+    assert (length_frames - 5) % 17 == 0, f"length_frames={length_frames} breaks the 17k+5 ladder"
     wf = {
         "1": {
             "class_type": "UNETLoader",
@@ -279,7 +311,7 @@ def build_single_clip_workflow(
             "inputs": {
                 "av_latent": ["20", 1],
                 "encoded_audio": ["111", 0],
-                "lock_strength": 0.85,
+                "lock_strength": lock_strength,
             },
         }
         sampler_latent_src = ["22", 0]
@@ -383,6 +415,13 @@ def main():
     ap.add_argument("ep")
     ap.add_argument("--ids", nargs="*", default=None)
     ap.add_argument("--steps", type=int, default=8)
+    ap.add_argument("--lock-strength", type=float, default=0.85,
+                    help="H3LockAudioLatent strength; 1.0 = keep our vocal latent bit-exact (no re-singing)")
+    ap.add_argument("--fit", action="store_true", help="Size each rap clip to its line (17k+5 frames) instead of fixed 124")
+    ap.add_argument("--tag", default=None, help="Sample mode: write clips/<id>_<tag>.mp4 and leave picks/shifts untouched")
+    ap.add_argument("--seed", type=int, default=None, help="Base seed (default 2026110600)")
+    ap.add_argument("--mic", choices=["handheld", "stand"], default="handheld", help="Microphone staging for rap shots")
+    ap.add_argument("--static-cam", action="store_true", help="Locked-off chest-up framing for rap shots (no push-in)")
     args = ap.parse_args()
 
     ep = os.path.abspath(args.ep)
@@ -409,10 +448,8 @@ def main():
     # Copy all unique reference images to /content/ComfyUI/input/
     for ref_png in (Path(ep) / "refs").glob("*.png"):
         shutil.copy2(ref_png, comfy_in / f"rap_{ref_png.name}")
-    for key_name in ("a_bust", "b_bust"):
-        src_p = Path(ep) / "work" / f"{key_name}.png"
-        if src_p.exists():
-            shutil.copy2(src_p, comfy_in / f"rap_{key_name}.png")
+    for src_p in (Path(ep) / "work").glob("*.png"):  # busts, clean face crops, ...
+        shutil.copy2(src_p, comfy_in / f"rap_{src_p.name}")
 
     total_t0 = time.time()
     for idx, cid in enumerate(target_ids, 1):
@@ -421,18 +458,25 @@ def main():
         comfy_imgs = [f"rap_{k}.png" for k in c["image_keys"]]
         comfy_aud = None
         local_aud = None
+        if c.get("frames"):
+            n_frames = int(c["frames"])
+        else:
+            n_frames = fit_frames(c["audio"][1] - c["audio"][0]) if (args.fit and c["kind"] == "rap") else 124
+        total_dur = round(n_frames / 24.0, 3)
+        print(f"   ⏱️ {n_frames} frames = {total_dur:.3f}s | lock_strength={args.lock_strength} | steps={args.steps}", flush=True)
         if c["kind"] == "rap":
-            local_aud = cut_audio(ep, c)
+            local_aud = cut_audio(ep, c, total_dur)
             comfy_aud = f"rap_audio_{cid}.wav"
             shutil.copy2(local_aud, comfy_in / comfy_aud)
 
-        prompt_text = adapt_prompt_for_comfy_h3(c, e)
-        seed = 2026110600 + idx
-        wf = build_single_clip_workflow(c, comfy_imgs, comfy_aud, prompt_text, steps=args.steps, seed=seed)
+        prompt_text = adapt_prompt_for_comfy_h3(c, e, total_dur, mic=args.mic, static_cam=args.static_cam)
+        seed = (args.seed if args.seed is not None else 2026110600) + idx
+        wf = build_single_clip_workflow(c, comfy_imgs, comfy_aud, prompt_text, steps=args.steps, seed=seed,
+                                        length_frames=n_frames, lock_strength=args.lock_strength)
         raw_mp4 = submit_and_wait(wf, cid)
 
         take = 1
-        final_clip = Path(ep) / "clips" / f"{cid}_t{take}.mp4"
+        final_clip = Path(ep) / "clips" / (f"{cid}_{args.tag}.mp4" if args.tag else f"{cid}_t{take}.mp4")
         shutil.copy2(raw_mp4, final_clip)
         shutil.copy2(final_clip, drive_out_dir / final_clip.name)
 
@@ -444,6 +488,8 @@ def main():
                     shifts[cid] = verdict["shift"]
             except Exception as qa_err:
                 print(f"   ⚠️ QA warning on {cid}: {qa_err}", flush=True)
+        if args.tag:  # sample run: keep picks/shifts untouched
+            continue
         picks[cid] = take
         jsave(picks_p, picks)
         jsave(shifts_p, shifts)

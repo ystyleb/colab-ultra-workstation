@@ -5,12 +5,13 @@
 Follows all Zero-Burn Iron Rules:
 1. Local prep (`kie_suno.py`, `make_clips.py`, `refs/*.png`) must be completed at 0 CCU before invoking this script.
 2. Starts/attaches G4 with `colab new -s rap-g4 --gpu G4` + `colab_meter.py start -s rap-g4 -g G4`, mounts Google Drive (`colab dfs mount -s rap-g4`), stages the prepared episode bundle via Drive v3 API, and runs `h3_colab_runner.py` via detached `nohup`.
-3. Immediately after rendering finishes and clips are synced to Google Drive, stops the G4 instance (`colab stop -s rap-g4` + `colab_meter.py stop -s rap-g4 --all` -> 0.00 CCU/h).
+3. Immediately after rendering finishes and clips are synced to Google Drive, stops the G4 instance (`colab stop -s rap-g4` + `colab_meter.py stop -s rap-g4`, this session only -> 0.00 CCU/h).
 4. Pulls clips from Google Drive v3 API at 0 CCU and runs `assemble.py` + `package.py` + `cover.py` locally on macOS.
 """
 import argparse
 import base64
 import json
+import shlex
 import os
 import shutil
 import subprocess
@@ -18,6 +19,7 @@ import sys
 import tarfile
 import tempfile
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -183,6 +185,17 @@ def pull_clips_from_drive(ep_dir: Path, title: str) -> int:
     token = get_drive_token()
     headers = {"Authorization": f"Bearer {token}"}
 
+    def retry(fn, what: str, tries: int = 3):
+        # Local proxy occasionally drops TLS mid-handshake (SSLEOFError); the G4 is already released here, so retrying is free.
+        for i in range(1, tries + 1):
+            try:
+                return fn()
+            except (urllib.error.URLError, ConnectionError, TimeoutError) as err:
+                if i == tries:
+                    raise
+                print(f"   ⚠️ {what} failed ({err}); retry {i}/{tries - 1} in {3 * i}s", flush=True)
+                time.sleep(3 * i)
+
     def gdrive_list(q: str) -> list:
         url = "https://www.googleapis.com/drive/v3/files?" + urllib.parse.urlencode({
             "q": q,
@@ -190,7 +203,17 @@ def pull_clips_from_drive(ep_dir: Path, title: str) -> int:
             "pageSize": 100,
         })
         req = urllib.request.Request(url, headers=headers)
-        return json.loads(urllib.request.urlopen(req, timeout=30).read().decode())["files"]
+        return retry(lambda: json.loads(urllib.request.urlopen(req, timeout=30).read().decode())["files"], "Drive list")
+
+    def gdrive_download(file_id: str, dst: Path, timeout: int) -> None:
+        tmp = dst.with_name(dst.name + ".part")
+        req = urllib.request.Request(f"https://www.googleapis.com/drive/v3/files/{file_id}?alt=media", headers=headers)
+
+        def _dl():
+            with urllib.request.urlopen(req, timeout=timeout) as r, open(tmp, "wb") as f:
+                shutil.copyfileobj(r, f)
+        retry(_dl, f"Download {dst.name}")
+        tmp.replace(dst)
 
     rb_folders = gdrive_list("name = 'rap_battle' and mimeType = 'application/vnd.google-apps.folder' and trashed = false")
     if not rb_folders:
@@ -203,11 +226,7 @@ def pull_clips_from_drive(ep_dir: Path, title: str) -> int:
 
     for jf in gdrive_list(f"'{ep_id}' in parents and trashed = false"):
         if jf["name"] in ("picks.json", "shifts.json"):
-            dst = ep_dir / "work" / jf["name"]
-            dl_url = f"https://www.googleapis.com/drive/v3/files/{jf['id']}?alt=media"
-            req = urllib.request.Request(dl_url, headers=headers)
-            with urllib.request.urlopen(req, timeout=60) as r, open(dst, "wb") as f:
-                shutil.copyfileobj(r, f)
+            gdrive_download(jf["id"], ep_dir / "work" / jf["name"], timeout=60)
 
     clip_folders = gdrive_list(f"'{ep_id}' in parents and name = 'clips' and mimeType = 'application/vnd.google-apps.folder' and trashed = false")
     if not clip_folders:
@@ -222,10 +241,9 @@ def pull_clips_from_drive(ep_dir: Path, title: str) -> int:
         if not fmeta["name"].endswith(".mp4"):
             continue
         dst = local_clips / fmeta["name"]
-        dl_url = f"https://www.googleapis.com/drive/v3/files/{fmeta['id']}?alt=media"
-        req = urllib.request.Request(dl_url, headers=headers)
-        with urllib.request.urlopen(req, timeout=120) as r, open(dst, "wb") as f:
-            shutil.copyfileobj(r, f)
+        if dst.exists() and str(dst.stat().st_size) == str(fmeta.get("size")):
+            continue  # already pulled by an earlier run
+        gdrive_download(fmeta["id"], dst, timeout=120)
         count += 1
         print(f"   ⬇️ Pulled {dst.name} ({dst.stat().st_size / 1048576:.2f} MB)", flush=True)
     return count
@@ -236,7 +254,10 @@ def main():
     ap.add_argument("ep", help="Path to episode directory")
     ap.add_argument("--steps", type=int, default=8)
     ap.add_argument("--ids", nargs="*", default=None)
+    ap.add_argument("--runner-args", default="", help="Extra args for h3_colab_runner.py, e.g. \"--fit --lock-strength 1.0 --tag lock\"")
+    ap.add_argument("--no-post", action="store_true", help="Only pull clips; skip assemble/package/cover (sample runs)")
     args = ap.parse_args()
+    runner_extra = shlex.split(args.runner_args)
 
     ep_dir = Path(args.ep).resolve()
     ep_json = json.loads((ep_dir / "episode.json").read_text(encoding="utf-8"))
@@ -295,6 +316,7 @@ cmd = [sys.executable, "-u", "/tmp/rap_job/scripts/h3_colab_runner.py", "/tmp/ra
 ids = {json.dumps(ids_list)}
 if ids:
     cmd.extend(["--ids"] + ids)
+cmd.extend({json.dumps(runner_extra)})
 p = subprocess.run(cmd)
 subprocess.run(["sync"])
 if p.returncode == 0:
@@ -351,10 +373,13 @@ print("DRIVE_SYNC_OK")
         print("\n🛑 [Step 4/4] Immediately stopping Colab G4 instance to stop CCU burn...", flush=True)
         subprocess.run([COLAB_BIN, "stop", "-s", SESSION_NAME], check=False)
         time.sleep(2)
-        run_local([sys.executable, str(ROOT_DIR / "scripts" / "colab_meter.py"), "stop", "-s", SESSION_NAME, "--all"], check=False)
+        run_local([sys.executable, str(ROOT_DIR / "scripts" / "colab_meter.py"), "stop", "-s", SESSION_NAME], check=False)
 
     print("\n⬇️ [0-CCU Post-Processing] Pulling rendered clips from Google Drive & packaging final video...", flush=True)
     pull_clips_from_drive(ep_dir, title)
+    if args.no_post:
+        print("✅ --no-post: clips pulled, skipping assemble/package.", flush=True)
+        return
     local_py = shutil.which("python3") or "/opt/homebrew/bin/python3"
     run_local([local_py, str(WF_DIR / "scripts" / "assemble.py"), str(ep_dir)])
     run_local([local_py, str(WF_DIR / "scripts" / "package.py"), str(ep_dir), "--phone"])
