@@ -1,0 +1,22 @@
+# OS / Python
+.DS_Store
+__pycache__/
+*.pyc
+
+# Generated workflow outputs (re-renderable; inputs like sample_inputs/ and tracks/ stay tracked)
+workflows/*/outputs/
+
+# 05 rap battle: rendered clips & masters (episode.json, refs/, cover/, song and work/*.json stay tracked)
+workflows/05_ancient_rap_battle/episodes/*/clips/
+workflows/05_ancient_rap_battle/episodes/*/final/
+workflows/05_ancient_rap_battle/episodes/*/preview/
+workflows/05_ancient_rap_battle/episodes/*/work/**/*.wav
+workflows/05_ancient_rap_battle/episodes/*/work/**/*.mp4
+workflows/05_ancient_rap_battle/episodes/*/work/**/*.png
+workflows/05_ancient_rap_battle/episodes/*/work/package/
+
+# Cloud TTS takes pulled back by scripts/run_cloud_tts_remote.py
+tts_takes/
+
+# Auto-downloaded font caches
+.cache/
