@@ -1,0 +1,146 @@
+{
+ "A01": {
+  "frames": 68,
+  "rms_corr_at_0": 0.121,
+  "vowel_corr_at_0": 0.877,
+  "best_lag_ms": 0,
+  "mouth_open_max": 0.1584,
+  "mouth_open_min": 0.0002,
+  "syllable_dyn": 0.0416,
+  "raw_active_span": [
+   0.42,
+   2.42
+  ],
+  "knots_s": [
+   0.44,
+   1.64,
+   2.35
+  ]
+ },
+ "A02": {
+  "frames": 66,
+  "rms_corr_at_0": 0.28,
+  "vowel_corr_at_0": 0.938,
+  "best_lag_ms": 0,
+  "mouth_open_max": 0.1448,
+  "mouth_open_min": 0.0014,
+  "syllable_dyn": 0.0332,
+  "raw_active_span": [
+   0.0,
+   2.5
+  ],
+  "knots_s": [
+   0.07,
+   1.3,
+   2.5
+  ]
+ },
+ "A03": {
+  "frames": 63,
+  "rms_corr_at_0": 0.223,
+  "vowel_corr_at_0": 0.986,
+  "best_lag_ms": 0,
+  "mouth_open_max": 0.1621,
+  "mouth_open_min": 0.002,
+  "syllable_dyn": 0.0451,
+  "raw_active_span": [
+   0.12,
+   2.5
+  ],
+  "knots_s": [
+   0.12,
+   1.21,
+   2.43
+  ]
+ },
+ "A04": {
+  "frames": 89,
+  "rms_corr_at_0": 0.386,
+  "vowel_corr_at_0": 0.891,
+  "best_lag_ms": 0,
+  "mouth_open_max": 0.1744,
+  "mouth_open_min": 0.0005,
+  "syllable_dyn": 0.0393,
+  "raw_active_span": [
+   0.08,
+   2.75
+  ],
+  "knots_s": [
+   0.08,
+   1.64,
+   2.63
+  ]
+ },
+ "B01": {
+  "frames": 66,
+  "rms_corr_at_0": 0.385,
+  "vowel_corr_at_0": 0.504,
+  "best_lag_ms": 0,
+  "mouth_open_max": 0.101,
+  "mouth_open_min": 0.008,
+  "syllable_dyn": 0.0142,
+  "raw_active_span": [
+   0.21,
+   2.71
+  ],
+  "knots_s": [
+   0.13,
+   1.26,
+   2.59
+  ]
+ },
+ "B02": {
+  "frames": 74,
+  "rms_corr_at_0": 0.185,
+  "vowel_corr_at_0": 0.127,
+  "best_lag_ms": -41,
+  "mouth_open_max": 0.0791,
+  "mouth_open_min": 0.0079,
+  "syllable_dyn": 0.014,
+  "raw_active_span": [
+   0.0,
+   2.83
+  ],
+  "knots_s": [
+   0.0,
+   1.47,
+   2.76
+  ]
+ },
+ "B03": {
+  "frames": 63,
+  "rms_corr_at_0": 0.336,
+  "vowel_corr_at_0": 0.188,
+  "best_lag_ms": 41,
+  "mouth_open_max": 0.1105,
+  "mouth_open_min": 0.0013,
+  "syllable_dyn": 0.0204,
+  "raw_active_span": [
+   0.0,
+   2.29
+  ],
+  "knots_s": [
+   0.12,
+   0.95,
+   2.35
+  ]
+ },
+ "B04": {
+  "frames": 83,
+  "rms_corr_at_0": 0.637,
+  "vowel_corr_at_0": 0.915,
+  "best_lag_ms": 0,
+  "mouth_open_max": 0.1665,
+  "mouth_open_min": 0.0024,
+  "syllable_dyn": 0.0345,
+  "raw_active_span": [
+   0.0,
+   2.83
+  ],
+  "knots_s": [
+   0.04,
+   1.2,
+   2.71
+  ]
+ }
+}

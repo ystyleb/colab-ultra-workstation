@@ -1,0 +1,90 @@
+[
+ {
+  "who": "a",
+  "n": 1,
+  "text": "Over a thousand patents stamped under my name",
+  "start": 2.526,
+  "end": 5.085,
+  "bar": 2.526,
+  "heard": "Over a thousand patents stamped under my name",
+  "orig_start": 12.911,
+  "orig_bar": 12.911
+ },
+ {
+  "who": "a",
+  "n": 2,
+  "text": "I lit up New York City while you chased a phantom flame",
+  "start": 5.135,
+  "end": 7.608,
+  "bar": 5.135,
+  "heard": "I lit up New York City while you chased a phantom flame",
+  "orig_start": 15.52,
+  "orig_bar": 15.52
+ },
+ {
+  "who": "a",
+  "n": 3,
+  "text": "You wired up the future? Boy, you couldn't pay the rent",
+  "start": 7.658,
+  "end": 10.02,
+  "bar": 7.658,
+  "heard": "You wired up the future? Boy, you couldn't pay the rent",
+  "orig_start": 18.043,
+  "orig_bar": 18.043
+ },
+ {
+  "who": "a",
+  "n": 4,
+  "text": "Feeding pigeons in a hotel without a single cent",
+  "start": 10.07,
+  "end": 13.21,
+  "bar": 10.07,
+  "heard": "Feeding pigeons in a hotel without a single cent",
+  "orig_start": 20.455,
+  "orig_bar": 20.455
+ },
+ {
+  "who": "b",
+  "n": 1,
+  "text": "Twenty-two men built the bulb before you made the steal",
+  "start": 15.494,
+  "end": 17.952,
+  "bar": 15.494,
+  "heard": "Twenty-two men built the bulb before you made the steal",
+  "orig_start": 25.879,
+  "orig_bar": 25.879
+ },
+ {
+  "who": "b",
+  "n": 2,
+  "text": "You promised fifty thousand bucks then broke the whole deal",
+  "start": 18.002,
+  "end": 20.81,
+  "bar": 18.002,
+  "heard": "You promised fifty thousand bucks then broke the whole deal",
+  "orig_start": 28.387,
+  "orig_bar": 28.387
+ },
+ {
+  "who": "b",
+  "n": 3,
+  "text": "Your weak direct current left the city in the dark",
+  "start": 20.858,
+  "end": 23.195,
+  "bar": 20.858,
+  "heard": "Your weak direct current left the city in the dark",
+  "orig_start": 31.243,
+  "orig_bar": 31.243
+ },
+ {
+  "who": "b",
+  "n": 4,
+  "text": "Now the future drives my name on every high-voltage spark",
+  "start": 23.245,
+  "end": 26.159,
+  "bar": 23.245,
+  "heard": "Now the future drives my name on every high-voltage spark",
+  "orig_start": 33.63,
+  "orig_bar": 33.63
+ }
+]
