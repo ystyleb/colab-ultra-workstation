@@ -186,7 +186,10 @@ def main():
     layers.append(("title.png", 0.0, L[0]["start"] - 0.1, 0.3))
     for who, right in (("a", False), ("b", True)):
         first = next(l for l in L if l["who"] == who and l["n"] == 1)
-        second = next((l for l in L if l["who"] == who and l["n"] == 2), first)
+        # episode.json "name_card_lines": how many lines the name card stays up (default 2). Use 1 when the
+        # storyboard cuts to the opponent's reaction inside line 2, or the card labels the wrong face.
+        n_card = int(e.get("name_card_lines", 2))
+        second = next((l for l in L if l["who"] == who and l["n"] == n_card), first)
         sh.name(e[who]["name_cn"], e[who].get("aka", ""), right).save(os.path.join(tmp, "name_%s.png" % who))
         layers.append(("name_%s.png" % who, first["start"] - 0.08, second["end"] - 0.1, 0.25))
     for i, l in enumerate(L):
@@ -197,7 +200,8 @@ def main():
         layers.append(("line_%02d.png" % i, l["start"] - 0.05, l["end"] + 0.5 if last else L[i + 1]["start"] - 0.07, 0.0))
     q = e.get("end_question", "下一场|你想看谁的对决？").split("|")
     sh.end(q[0], q[-1]).save(os.path.join(tmp, "end.png"))
-    layers.append(("end.png", end - 4.6, end, 0.5))
+    # episode.json "end_card_secs" (default 4.6): shorten it when the outro carries reaction shots of its own
+    layers.append(("end.png", end - float(e.get("end_card_secs", 4.6)), end, 0.5))
     if wm:
         sh.watermark(wm).save(os.path.join(tmp, "watermark.png"))
         layers.append(("watermark.png", 0.0, end, 0.0))
