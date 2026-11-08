@@ -113,9 +113,11 @@ def cmd_start(session: str, gpu: str) -> None:
 
 def cmd_stop(session: str | None = None, stop_all: bool = False) -> dict:
     data = load_tracker()
-    if not session and not stop_all and data:
-        # Default to the most recently started tracked session rather than killing all
-        session = list(data.keys())[-1]
+    if not session and not stop_all:
+        # Never guess: several agents share this tracker, and "most recent session" once killed another
+        # agent's running G4 render mid-batch (2026-11-08). Require an explicit -s or --all.
+        print(f"❌ stop 需要 -s <session> 或 --all。当前登记的会话: {', '.join(data) or '无'}", file=sys.stderr)
+        sys.exit(2)
     record = data.get(session) if session else None
 
     # 1. Unassign ONLY the target session (unless --all is explicitly passed)
@@ -139,8 +141,9 @@ def cmd_stop(session: str | None = None, stop_all: bool = False) -> dict:
             s = sessions.get(session)
             if s and getattr(s, "endpoint", None):
                 state.client.unassign(s.endpoint)
-            elif len(assignments) == 1:
-                state.client.unassign(assignments[0].endpoint)
+            elif assignments:
+                # Do NOT fall back to "the only assignment": it may belong to another agent's session.
+                print(f"⚠️ 会话 '{session}' 未找到，未释放任何实例；仍在线的 {len(assignments)} 个实例保持不动。", file=sys.stderr)
             try:
                 state.store.remove(session)
             except Exception:
