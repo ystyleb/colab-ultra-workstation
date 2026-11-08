@@ -1,0 +1,80 @@
+{
+  "title": "Edison_vs_Tesla_v2",
+  "language": "en",
+  "mode": "30s",
+  "song": "song.mp3",
+  "era_en": "1890s Gilded Age New York",
+  "commoners_en": "1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps",
+  "venue_en": "an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background",
+  "tagline": "DC vs AC · 电流之战：谁点亮了世界？",
+  "outro_chant": "TESLA",
+  "watermark": "AI RAP BATTLE",
+  "end_question": "NEXT BATTLE|WHO DO YOU WANT TO SEE?",
+  "a": {
+    "name_cn": "EDISON",
+    "name_en": "Thomas Edison",
+    "aka": "The Wizard of Menlo Park",
+    "look": "1890s three-piece charcoal tweed suit, gold pocket-watch chain across his vest, silver-streaked hair, holding a warm glowing amber carbon-filament light bulb in his left hand",
+    "voice": "booming Gilded Age tycoon male rapper, gritty authoritative baritone voice, aggressive confident boom-bap flow",
+    "pitch": -2.5,
+    "prop": "glowing amber carbon-filament bulb",
+    "prop_desc": "a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket",
+    "look_cn": "19世纪末深灰粗花呢三件套西装、金怀表链，右手握银色复古有线话筒，左手托着发暖黄光的碳丝白炽灯泡",
+    "listen_cn": "冷笑、低头拨弄怀表、脸色逐渐铁青"
+  },
+  "b": {
+    "name_cn": "TESLA",
+    "name_en": "Nikola Tesla",
+    "aka": "Master of Lightning",
+    "look": "sharp black Victorian frock coat, high white wing collar, dark silk cravat, neatly parted jet-black hair and signature moustache, holding a handheld brass Tesla coil crackling with blue-violet electric arcs in his left hand",
+    "voice": "sharp aristocratic male rapper, crisp electric tenor voice, fast razor-sharp rhythmic flow",
+    "pitch": 1.5,
+    "prop": "crackling blue-violet Tesla coil",
+    "prop_desc": "a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs",
+    "look_cn": "修身黑色维多利亚礼服、高领白衬衣、标志性八字胡，右手握银色复古有线话筒，左手托着滋滋冒蓝紫电弧的黄铜特斯拉线圈",
+    "listen_cn": "目光冷峻、嘴角微扬、指尖蓝紫电弧跳动"
+  },
+  "lyrics": {
+    "a": [
+      "Over a thousand patents stamped under my name",
+      "I lit up New York City while you chased a phantom flame",
+      "You wired up the future? Boy, you couldn't pay the rent",
+      "Feeding pigeons in a hotel without a single cent"
+    ],
+    "b": [
+      "Twenty-two men built the bulb before you made the steal",
+      "You promised fifty thousand bucks then broke the whole deal",
+      "Your weak direct current left the city in the dark",
+      "Now the future drives my name on every high-voltage spark"
+    ]
+  },
+  "notes": {
+    "a": [
+      "史实：爱迪生名下共 1,093 项美国专利，多由门洛帕克实验室团队研发（US Patent Office）。",
+      "史实：1882 年爱迪生在曼哈顿建成珍珠街直流发电站，率先点亮纽约 400 盏灯。",
+      "史实：1897 年特斯拉为帮威斯汀豪斯渡过危机，亲手撕毁价值数千万美元的交流电专利抽成合同。",
+      "史实：1943 年特斯拉在纽约客酒店 3327 房贫困离世，晚年每天去公园喂白鸽。"
+    ],
+    "b": [
+      "辟谣：爱迪生之前已有 22 人造出白炽灯（如斯旺），爱迪生是买下专利并改良竹丝商业化。",
+      "史实：1885 年爱迪生承诺给特斯拉 5 万美元改良直流电机，事后赖账称「你不懂美式幽默」。",
+      "物理：110V 直流电传输超 1.6 公里即严重损耗，特斯拉多相交流电最终统治全球电网。",
+      "致敬：1960 年国际磁感应单位定名「特斯拉(T)」，2003 年马斯克以他之名创立 Tesla 电动车。"
+    ]
+  },
+  "actions": {
+    "A1": "fierce and cocky, tapping the gold pocket-watch chain on his vest, then holding up the warm glowing amber bulb beside his grinning face",
+    "A2": "sweeping his glowing amber light bulb wide toward the cheering crowd while looking down at Tesla",
+    "A3": "rubbing his thumb and fingers together in a money gesture, laughing mockingly into the microphone",
+    "A4": "flapping his free hand mockingly like a pigeon wing, then pointing sharply at Tesla on the last word",
+    "B1": "holding up two fingers twice to show twenty-two, then thrusting his crackling blue-violet Tesla coil right toward Edison's dim yellow bulb",
+    "B2": "mimicking a handshake in mid-air and slicing his hand sideways as blue electric sparks flash from his brass coil",
+    "B3": "flicking Edison's warm yellow bulb with one finger as his own blue-violet Tesla coil blazes brighter across both faces",
+    "B4": "raising the crackling blue-violet Tesla coil high above his head as lightning arcs behind him, triumphant and fierce",
+    "B_REACT": "holding the brass Tesla coil as small blue-violet sparks dance across the toroid, watching Edison with a cold knowing smirk",
+    "A_REACT": "clenching his jaw as his warm yellow bulb flickers in his hand, forcing a tight furious smile",
+    "CROWD": "pointing his glowing amber bulb at Tesla across the circle"
+  },
+  "name_card_lines": 1,
+  "end_card_secs": 2.26
+}
