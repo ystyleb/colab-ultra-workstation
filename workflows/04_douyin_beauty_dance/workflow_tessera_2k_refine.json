@@ -157,7 +157,8 @@
       "fine_below_sigma": 0.75,
       "tile_select": "",
       "tile_limit": 0,
-      "flat_skip": 4.0
+      "flat_skip": 4.0,
+      "composite": "blend"
     }
   },
   "30": {
