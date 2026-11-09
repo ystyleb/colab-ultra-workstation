@@ -1,5 +1,7 @@
 # Workflow 05：历史人物说唱对决（Ancient / Historical Rap Battle）— 项目进度、操作指南与问题复盘
 
+> **最新进展（2026-11-09）**：完整版样片 `episodes/edison-vs-tesla-full/`（两回合、1 分 36 秒）改用 H3 锁音直出口型、统一背景参考图、真实运镜和后期现场运镜层，不再使用下文的 Wav2Lip 局部驱动方案。现在的流水线、经验和未解决问题见 **[经验沉淀_完整版样片.md](经验沉淀_完整版样片.md)**；下文是第一版（30 秒）的记录。
+
 > **当前剧集**：`edison-vs-tesla`（爱迪生 vs 特斯拉 · 30 秒英文 Freestyle Rap Battle）  
 > **剧集目录**：`workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/`  
 > **硬件架构**：云端 Colab Pro+ G4（NVIDIA RTX PRO 6000 Blackwell 96GB，用于 H3 视频生成，用完即焚 `0.00 CCU/h`）+ 本地 Mac（Apple M6 MPS，用于音频处理、口型对齐、字幕包装与成片合成，`0 CCU`）
