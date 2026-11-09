@@ -1,0 +1,9 @@
+Use your image generation tool to create ONE vertical YouTube Shorts cover image (9:16 portrait), then save it in the current directory as cover_s3.png. The final file must be exactly 1080x1920 pixels and FULL-BLEED: the picture must fill the whole canvas edge to edge. Do NOT add black or dark borders, frames or padding; if the generated image is not 9:16, crop/scale it to cover 1080x1920 instead of padding. Do not ask questions; just produce the file.
+
+Base it on the attached reference frame: keep the SAME man (Nikola Tesla as portrayed in our video: parted jet-black hair, thin moustache, black frock coat, white wing collar, chrome microphone, blue-violet Tesla-coil lightning in the background; cold confident smirk) with the same face, expression and the same 1890s power-plant rap arena background. Do not invent a different person.
+
+Layout (important text inside the central safe area, away from the top 8% and bottom 20%):
+- Small gold pill badge near the top-left: "AI RAP BATTLE".
+- Upper third: big bold title "EDISON VS TESLA", EDISON and TESLA in metallic gold (#f5c518) brush-style lettering with a dark outline, "VS" in red-orange (#f26a1b).
+- Middle-lower, over the chest area: a punchy hook in heavy white condensed caps with a black outline: "YOU'RE A FOOTNOTE IN THE DARK" (exact spelling).
+- Cinematic high contrast, slight vignette, readable at phone size. No other text, no watermarks, no logos.
