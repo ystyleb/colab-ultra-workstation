@@ -85,7 +85,30 @@ def norm_token(s: str) -> str:
     return "".join(ch for ch in s.lower() if ("a" <= ch <= "z") or ("0" <= ch <= "9"))
 
 
+def sung_order(e: dict) -> list:
+    """[(who, n, text)] in the order the lines are sung. episode.json `structure` (optional) lists sections like
+    {"type": "verse", "who": "a", "from": 1, "to": 8, "tag": "..."}; without it: all of A, then all of B."""
+    if not e.get("structure"):
+        return [(w, i, t) for w in ("a", "b") for i, t in enumerate(e["lyrics"][w], 1)]
+    out = []
+    for sec in e["structure"]:
+        if sec.get("type") == "verse":
+            for n in range(sec["from"], sec["to"] + 1):
+                out.append((sec["who"], n, e["lyrics"][sec["who"]][n - 1]))
+    return out
+
+
 def build_suno_lyrics(e: dict) -> str:
+    if e.get("structure"):
+        lines = []
+        for sec in e["structure"]:
+            lines.append("[%s]" % sec["tag"])
+            if sec.get("type") == "verse":
+                lines += [e["lyrics"][sec["who"]][n - 1] for n in range(sec["from"], sec["to"] + 1)]
+            elif sec.get("text"):
+                lines.append(sec["text"])
+            lines.append("")
+        return "\n".join(lines + ["[End]"])
     b_name = e["b"]["name_en"]
     chant = e.get("outro_chant", b_name.split()[-1].upper())
     lines = ["[Intro: short DJ scratch and electric hum]", ""]
@@ -107,6 +130,7 @@ def build_suno_style(e: dict) -> str:
             "hard punchy drums, vinyl scratches, electric arc zaps, brass hits, deep sub bass, "
             "live crowd hype, two contrasting male rappers, "
             "clear English diction, very short intro, short ending"
+            + (", two-round battle, short loud crowd reactions between verses" if e.get("structure") else "")
         )
     return (
         "Chinese battle rap, old school boom bap, 95 BPM, dark cinematic, hard punchy drums, "
@@ -184,10 +208,9 @@ def match_lines_to_words(words: list, e: dict, bar_sec: float = 240.0 / 95.0):
             })
 
     all_specs = []
-    for who in ("a", "b"):
-        for idx, text in enumerate(e["lyrics"][who], 1):
-            toks = [norm_token(t) for t in text.split() if norm_token(t)]
-            all_specs.append({"who": who, "n": idx, "text": text, "toks": toks})
+    for who, idx, text in sung_order(e):
+        toks = [norm_token(t) for t in text.split() if norm_token(t)]
+        all_specs.append({"who": who, "n": idx, "text": text, "toks": toks})
 
     word_norms = [w["norm"] for w in clean_ws]
     cursor = 0
@@ -397,6 +420,9 @@ def main():
     # Evaluate both tracks and pick the best aligned one
     bpm = 95.0
     bar = 240.0 / bpm
+    # tie-break: vocal span closest to one bar per line (+ one bar per crowd section); legacy 8 lines ~ 24 s
+    n_crowd = sum(1 for sec in e.get("structure", []) if sec.get("type") == "crowd") if e.get("structure") else 1
+    expected_span = 24.0 if not e.get("structure") else (len(sung_order(e)) + n_crowd) * bar
     best_pick = None
     for idx, tr in enumerate(tracks):
         matched, avg_sc, clean_ws = match_lines_to_words(tr.get("alignedWords", []), e, bar)
@@ -404,7 +430,7 @@ def main():
         print(f"📊 Track v{idx + 1}: duration={tr['duration']:.1f}s, vocal_span={span:.1f}s, match_score={avg_sc:.2f}")
         for m in matched:
             print(f"   {m['who'].upper()}{m['n']:02d} [{m['orig_start']:5.2f}s - {m['orig_end']:5.2f}s] (sc={m['score']:.2f}) heard: '{m['heard']}'")
-        cand = (avg_sc, -abs(span - 24.0), idx, tr, matched, clean_ws)
+        cand = (avg_sc, -abs(span - expected_span), idx, tr, matched, clean_ws)
         if best_pick is None or cand[:2] > best_pick[:2]:
             best_pick = cand
 
@@ -503,8 +529,15 @@ def main():
         w[i0 : i0 + k] = np.linspace(0.0, 1.0, k, dtype=np.float32)
         w[i1 - k : i1] = np.linspace(1.0, 0.0, k, dtype=np.float32)
 
-    ramp(wa, max(0.0, verse_a_start - 0.18), min(final_dur, verse_a_end + 0.25))
-    ramp(wb, max(0.0, verse_b_start - 0.18), min(final_dur, verse_b_end + 0.25))
+    runs = []  # contiguous runs of the same rapper, in sung order
+    for l in lines:
+        if runs and runs[-1][0] == l["who"]:
+            runs[-1][2] = l["end"]
+        else:
+            runs.append([l["who"], l["start"], l["end"]])
+    for who, r0, r1 in runs:
+        ramp(wa if who == "a" else wb, max(0.0, r0 - 0.18), min(final_dur, r1 + 0.25))
+    print("🎚️ Voice runs: " + ", ".join("%s %.2f-%.2fs" % (w.upper(), r0, r1) for w, r0, r1 in runs), flush=True)
 
     # Boost shifted vocal stems slightly (+1.15x) so the differentiated voice dominates cleanly over any residual bleed
     voc_dual = base_v * (1.0 - wa - wb)[:, None] + (1.15 * va) * wa[:, None] + (1.15 * vb) * wb[:, None]
