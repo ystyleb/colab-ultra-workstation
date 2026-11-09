@@ -29,7 +29,9 @@ GRADE = ("eq=contrast=1.04:saturation=0.92:brightness=0.01,colorbalance=rs=0.01:
 
 class Sheet:
     def __init__(self, w, h):
-        self.W, self.H, self.S = w, h, w / 1920
+        # landscape scales from a 1920 width; portrait (Shorts, 9:16) from a 1080 width so text stays readable
+        self.W, self.H, self.S = w, h, (w / 1920 if w >= h else w / 1080)
+        self.portrait = h > w
 
     def canvas(self):
         return Image.new("RGBA", (self.W, self.H), (0, 0, 0, 0))
@@ -62,6 +64,8 @@ class Sheet:
         return im.filter(ImageFilter.GaussianBlur(1.2))
 
     def lyric(self, text, note, seed):
+        if self.portrait:
+            return self.lyric_portrait(text, seed)
         S, W, H = self.S, self.W, self.H
         img, layer = self.canvas(), self.canvas()
         d = ImageDraw.Draw(layer)
@@ -85,7 +89,7 @@ class Sheet:
             ft_size = int(fh_size * 1.38)
             fh, ft = self.f(fh_size), self.f(ft_size)
             wh, wt = d.textlength(head, font=fh), d.textlength(tail, font=ft)
-        base = int(H * 0.896)
+        base = int(H * (0.896 if note else 0.94))  # lyric-only episodes sit the line lower, where the note used to be
         x = (W - wh - wt) / 2
         img.alpha_composite(self.brush(int(wt + 46 * S), int(52 * S), seed), (int(x + wh - 20 * S), int(base - 34 * S)))
         d.text((x, base), head, font=fh, fill=GOLD, anchor="ls", stroke_width=int(3 * S), stroke_fill=INK)
@@ -110,21 +114,58 @@ class Sheet:
         img.alpha_composite(self.shadowed(layer))
         return img
 
+    def lyric_portrait(self, text, seed):
+        """Shorts: two centred rows above the bottom ~22% that YouTube's caption / button overlay covers;
+        the last word is the big brushed punch word, as in landscape."""
+        S, W, H = self.S, self.W, self.H
+        img, layer = self.canvas(), self.canvas()
+        d = ImageDraw.Draw(layer)
+        words = text.rstrip().split(" ")
+        tail = words.pop() if words else ""
+        best = None   # split the remaining words so both rows are as even as possible
+        for k in range(0, len(words) + 1):
+            r1, r2 = " ".join(words[:k]), " ".join(words[k:])
+            score = abs(len(r1) - len(r2 + " " + tail))
+            if best is None or score < best[0]:
+                best = (score, r1, r2)
+        _, r1, r2 = best
+        size = 64
+        while True:
+            fh, ft = self.f(size), self.f(int(size * 1.38))
+            w1 = d.textlength(r1, font=fh)
+            w2 = d.textlength(r2 + " ", font=fh) + d.textlength(tail, font=ft)
+            if max(w1, w2) <= W - 90 * S or size <= 34:
+                break
+            size -= 2
+        base2 = int(H * 0.775)
+        base1 = base2 - int(size * 1.55 * S)
+        if r1:
+            d.text(((W - w1) / 2, base1), r1, font=fh, fill=GOLD, anchor="ls", stroke_width=int(3 * S), stroke_fill=INK)
+        x = (W - w2) / 2
+        wr2 = d.textlength(r2 + " ", font=fh)
+        wt = d.textlength(tail, font=ft)
+        img.alpha_composite(self.brush(int(wt + 46 * S), int(52 * S), seed), (int(x + wr2 - 20 * S), int(base2 - 34 * S)))
+        d.text((x, base2), r2 + " ", font=fh, fill=GOLD, anchor="ls", stroke_width=int(3 * S), stroke_fill=INK)
+        d.text((x + wr2, base2), tail, font=ft, fill=GOLD, anchor="ls", stroke_width=int(4 * S), stroke_fill=INK)
+        img.alpha_composite(self.shadowed(layer))
+        return img
+
     def name(self, name, aka, right):
         S, W, H = self.S, self.W, self.H
         img, layer = self.canvas(), self.canvas()
         d = ImageDraw.Draw(layer)
         x = W - int(150 * S) if right else int(150 * S)
         anc = "rs" if right else "ls"          # B's card sits on the right, where B stands
-        d.text((x, int(H * 0.8125)), "“%s”" % name, font=self.f(92), fill=GOLD, anchor=anc,
+        y0, y1 = (0.8125, 0.849) if not self.portrait else (0.20, 0.228)   # portrait: top, clear of the lyrics
+        d.text((x, int(H * y0)), "“%s”" % name, font=self.f(92), fill=GOLD, anchor=anc,
                stroke_width=int(3 * S), stroke_fill=INK)
         if aka:
-            d.text((x, int(H * 0.849)), "aka %s" % aka, font=self.f(36, "Bold"), fill=(250, 232, 180, 255), anchor=anc,
+            d.text((x, int(H * y1)), "aka %s" % aka, font=self.f(36, "Bold"), fill=(250, 232, 180, 255), anchor=anc,
                    stroke_width=int(2 * S), stroke_fill=INK)
         img.alpha_composite(self.shadowed(layer))
         return img
 
-    def title(self, a, b):
+    def title(self, a, b, disclaimer="AI生成  仅供娱乐"):
         S, W, H = self.S, self.W, self.H
         img = self.canvas()
         br = ImageFont.truetype(font("brush"), int(172 * S))
@@ -132,16 +173,45 @@ class Sheet:
         row(img, W // 2, int(H * 0.44), [(a, br, GOLD_GRAD, 8), ("VS", en, RED_GRAD, 8), (b, br, GOLD_GRAD, 8)], gap=30)
         fancy(img, (W // 2, int(H * 0.58)), "FREESTYLE BATTLE", ImageFont.truetype(font("serif_en_bold"), int(64 * S)),
               GOLD_GRAD, stroke=4, shadow=8)
-        fancy(img, (W // 2, int(H * 0.655)), "AI生成  仅供娱乐", self.f(40, "Bold"), CREAM, stroke=3, shadow=6)
+        fancy(img, (W // 2, int(H * 0.655)), disclaimer, self.f(40, "Bold"), CREAM, stroke=3, shadow=6)
         return img
 
-    def end(self, l1, l2):
+    def hook(self, a, b, sub):
+        """Shorts opener (episode.json "hook"): tells a cold viewer what this is in the first seconds -
+        '<A> VS <B>' in the title-card brush style plus one short line, sized to fit the frame width."""
+        S, W, H = self.S, self.W, self.H
+        img = self.canvas()
+        d = ImageDraw.Draw(img)
+        size = 150
+        while True:
+            br = ImageFont.truetype(font("brush"), int(size * S))
+            en = ImageFont.truetype(font("serif_en_bolditalic"), int(size * 0.87 * S))
+            gap = int(22 * S)
+            tw = d.textlength(a, font=br) + d.textlength("VS", font=en) + d.textlength(b, font=br) + 2 * gap
+            if tw <= W - 60 * S or size <= 70:
+                break
+            size -= 6
+        y = int(H * 0.115)
+        row(img, W // 2, y, [(a, br, GOLD_GRAD, 6), ("VS", en, RED_GRAD, 6), (b, br, GOLD_GRAD, 6)], gap=gap)
+        fs = 40
+        while d.textlength(sub, font=self.f(fs, "Bold")) > W - 60 * S and fs > 20:
+            fs -= 2
+        fancy(img, (W // 2, y + int(size * 0.72 * S)), sub, self.f(fs, "Bold"), CREAM, stroke=3, shadow=6)
+        return img
+
+    def end(self, l1, l2, disclaimer="AI生成 仅供娱乐"):
         S, W, H = self.S, self.W, self.H
         img = self.canvas()
         br = ImageFont.truetype(font("brush"), int(150 * S))
         fancy(img, (W // 2, int(H * 0.40)), l1, br, GOLD_GRAD, stroke=8)
         fancy(img, (W // 2, int(H * 0.56)), l2, br, GOLD_GRAD, stroke=8)
-        fancy(img, (W // 2, int(H * 0.68)), "FREESTYLE BATTLE  ·  AI生成 仅供娱乐", self.f(36, "Bold"), CREAM, stroke=3, shadow=6)
+        if self.portrait:   # the long landscape line does not fit a 9:16 width: disclaimer only, shrunk to fit
+            size = 36
+            while ImageDraw.Draw(img).textlength(disclaimer, font=self.f(size, "Bold")) > W - 60 * S and size > 18:
+                size -= 2
+            fancy(img, (W // 2, int(H * 0.68)), disclaimer, self.f(size, "Bold"), CREAM, stroke=3, shadow=6)
+        else:
+            fancy(img, (W // 2, int(H * 0.68)), "FREESTYLE BATTLE  ·  " + disclaimer, self.f(36, "Bold"), CREAM, stroke=3, shadow=6)
         return img
 
     def watermark(self, text):
@@ -177,19 +247,30 @@ def main():
     W, H, fps, end = probe(os.path.join(ep, src))
     sh = Sheet(W, H)
     L = jload(os.path.join(work, "lines.json"))
-    notes = e.get("notes", {})
+    # episode.json "show_notes": false keeps only the lyric line (no Chinese history note under it)
+    notes = e.get("notes", {}) if e.get("show_notes", True) else {}
     A, B = e["a"], e["b"]
     wm = a.watermark if a.watermark is not None else e.get("watermark", "")
 
     layers = []
-    sh.title(A["name_cn"], B["name_cn"]).save(os.path.join(tmp, "title.png"))
-    layers.append(("title.png", 0.0, L[0]["start"] - 0.1, 0.3))
-    for who, right in (("a", False), ("b", True)):
-        first = next(l for l in L if l["who"] == who and l["n"] == 1)
+    # episode.json "disclaimer": the AI / entertainment notice on the title and end cards (English channel: English)
+    disc = e.get("disclaimer")
+    if e.get("title_card", True):   # Shorts open straight on the first bar
+        sh.title(A["name_cn"], B["name_cn"], *([disc] if disc else [])).save(os.path.join(tmp, "title.png"))
+        layers.append(("title.png", 0.0, L[0]["start"] - 0.1, 0.3))
+    hook = e.get("hook")   # Shorts: {"a": "EDISON", "b": "TESLA", "sub": "...", "secs": 2.6}
+    if hook:
+        sh.hook(hook["a"], hook["b"], hook["sub"]).save(os.path.join(tmp, "hook.png"))
+        layers.append(("hook.png", 0.0, float(hook.get("secs", 2.6)), 0.3))
+    for who, right in (("a", False), ("b", True)) if e.get("name_cards", True) else ():
+        # a Short may hold only some lines of one rapper: the card goes on that rapper's first line in the clip
+        first = next((l for l in L if l["who"] == who), None)
+        if first is None:
+            continue
         # episode.json "name_card_lines": how many lines the name card stays up (default 2). Use 1 when the
         # storyboard cuts to the opponent's reaction inside line 2, or the card labels the wrong face.
         n_card = int(e.get("name_card_lines", 2))
-        second = next((l for l in L if l["who"] == who and l["n"] == n_card), first)
+        second = next((l for l in L if l["who"] == who and l["n"] == first["n"] + n_card - 1), first)
         sh.name(e[who]["name_cn"], e[who].get("aka", ""), right).save(os.path.join(tmp, "name_%s.png" % who))
         layers.append(("name_%s.png" % who, first["start"] - 0.08, second["end"] - 0.1, 0.25))
     for i, l in enumerate(L):
@@ -199,9 +280,11 @@ def main():
         last = i + 1 == len(L) or L[i + 1]["who"] != l["who"]
         layers.append(("line_%02d.png" % i, l["start"] - 0.05, l["end"] + 0.5 if last else L[i + 1]["start"] - 0.07, 0.0))
     q = e.get("end_question", "下一场|你想看谁的对决？").split("|")
-    sh.end(q[0], q[-1]).save(os.path.join(tmp, "end.png"))
+    sh.end(q[0], q[-1], *([disc] if disc else [])).save(os.path.join(tmp, "end.png"))
     # episode.json "end_card_secs" (default 4.6): shorten it when the outro carries reaction shots of its own
-    layers.append(("end.png", end - float(e.get("end_card_secs", 4.6)), end, 0.5))
+    # never on top of the last lyric line (Shorts end only ~1.8 s after the last word)
+    last_lyric = max(en for png, st, en, fd in layers if png.startswith("line_"))
+    layers.append(("end.png", max(end - float(e.get("end_card_secs", 4.6)), last_lyric + 0.05), end, 0.5))
     if wm:
         sh.watermark(wm).save(os.path.join(tmp, "watermark.png"))
         layers.append(("watermark.png", 0.0, end, 0.0))
