@@ -4,8 +4,8 @@
 
 Follows all Zero-Burn Iron Rules:
 1. Local prep (`kie_suno.py`, `make_clips.py`, `refs/*.png`) must be completed at 0 CCU before invoking this script.
-2. Starts/attaches G4 with `colab new -s rap-g4 --gpu G4` + `colab_meter.py start -s rap-g4 -g G4`, mounts Google Drive (`colab dfs mount -s rap-g4`), stages the prepared episode bundle via Drive v3 API, and runs `h3_colab_runner.py` via detached `nohup`.
-3. Immediately after rendering finishes and clips are synced to Google Drive, stops the G4 instance (`colab stop -s rap-g4` + `colab_meter.py stop -s rap-g4`, this session only -> 0.00 CCU/h).
+2. Starts/attaches G4 with `colab new -s rap-g4-<run-timestamp> --gpu G4` + `colab_meter.py start -s rap-g4-<run-timestamp> -g G4`, mounts Google Drive (`colab dfs mount -s rap-g4-<run-timestamp>`), stages the prepared episode bundle via Drive v3 API, and runs `h3_colab_runner.py` via detached `nohup`.
+3. Immediately after rendering finishes and clips are synced to Google Drive, stops the G4 instance (`colab stop -s rap-g4-<run-timestamp>` + `colab_meter.py stop -s rap-g4-<run-timestamp>`, this session only -> 0.00 CCU/h).
 4. Pulls clips from Google Drive v3 API at 0 CCU and runs `assemble.py` + `package.py` + `cover.py` locally on macOS.
 """
 import argparse
@@ -30,8 +30,10 @@ if _uv_py.exists() and str(sys.executable) != str(_uv_py):
 
 ROOT_DIR = Path(__file__).resolve().parents[2]
 WF_DIR = Path(__file__).resolve().parent
-COLAB_BIN = "/Users/winson/.local/bin/colab"
-SESSION_NAME = "rap-g4"
+COLAB_BIN = str(Path.home() / ".local" / "bin" / "colab")
+# Unique per run: another local agent once ran its own job on our live "rap-g4" instance and stopped it by name
+# mid-batch (2026-11-09). A fresh name per run means nobody can borrow or stop it by remembering the name.
+SESSION_NAME = os.environ.get("RAP_G4_SESSION") or "rap-g4-" + time.strftime("%m%d-%H%M%S")
 
 
 def run_local(cmd: list, check: bool = True) -> subprocess.CompletedProcess:
@@ -199,7 +201,7 @@ def pull_clips_from_drive(ep_dir: Path, title: str) -> int:
     def gdrive_list(q: str) -> list:
         url = "https://www.googleapis.com/drive/v3/files?" + urllib.parse.urlencode({
             "q": q,
-            "fields": "files(id,name,size,mimeType)",
+            "fields": "files(id,name,size,mimeType,modifiedTime)",
             "pageSize": 100,
         })
         req = urllib.request.Request(url, headers=headers)
@@ -243,6 +245,14 @@ def pull_clips_from_drive(ep_dir: Path, title: str) -> int:
         dst = local_clips / fmeta["name"]
         if dst.exists() and str(dst.stat().st_size) == str(fmeta.get("size")):
             continue  # already pulled by an earlier run
+        if dst.exists() and fmeta.get("modifiedTime"):
+            # a local take swapped in by hand (e.g. a sample promoted to _t1) is newer than the stale Drive copy:
+            # never let an old upload overwrite it
+            from datetime import datetime
+            drive_t = datetime.fromisoformat(fmeta["modifiedTime"].replace("Z", "+00:00")).timestamp()
+            if dst.stat().st_mtime >= drive_t:
+                print(f"   ⏭️ Kept local {dst.name} (newer than the Drive copy)", flush=True)
+                continue
         gdrive_download(fmeta["id"], dst, timeout=120)
         count += 1
         print(f"   ⬇️ Pulled {dst.name} ({dst.stat().st_size / 1048576:.2f} MB)", flush=True)
@@ -348,7 +358,9 @@ print("POLL_JSON:" + json.dumps({"state": state, "tail": log_txt.splitlines()[-8
             if "POLL_JSON:" not in p_out:
                 consec_err += 1
                 print(f"⚠️ [Poll transient warning #{consec_err}]", flush=True)
-                if consec_err >= 6:
+                # ~5 min of failed polls: long batches survived a 90 s local proxy blip badly (G4 keeps rendering
+                # and syncing clips to Drive meanwhile, so waiting costs little and a resume is cheap)
+                if consec_err >= 20:
                     raise RuntimeError("Lost connection to G4 during polling")
                 continue
             consec_err = 0
