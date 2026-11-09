@@ -1,0 +1,102 @@
+[
+ {
+  "id": "B05",
+  "kind": "rap",
+  "who": "b",
+  "line": 5,
+  "move": "FULL",
+  "text": "You electrocuted dogs to make the public fear my wire",
+  "audio": [
+   0.27,
+   2.768
+  ],
+  "lead": 0.0,
+  "action": "jabbing an accusing finger straight at the lens, furious, the crackling blue-violet Tesla coil stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "aspect": "9:16"
+ },
+ {
+  "id": "B06",
+  "kind": "rap",
+  "who": "b",
+  "line": 6,
+  "move": "FULL",
+  "text": "Called the chair \"Westinghoused\" — a showman and a liar",
+  "audio": [
+   2.724,
+   5.361
+  ],
+  "lead": 0.0,
+  "action": "shaking his head slowly, disgusted, then pointing again, the crackling blue-violet Tesla coil stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera with a subtle natural sway starts on a vertical waist-up shot at eye level and gently creeps closer to a head-and-shoulders close-up, his face and lips large in the upper half of the tall 9:16 frame from the first frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0,
+  "aspect": "9:16"
+ },
+ {
+  "id": "B07",
+  "kind": "rap",
+  "who": "b",
+  "line": 7,
+  "move": "FULL",
+  "text": "If you had to find a needle, you'd search every single straw",
+  "audio": [
+   5.331,
+   7.805
+  ],
+  "lead": 0.0,
+  "action": "miming plucking straw after straw with exaggerated patience, the crackling blue-violet Tesla coil stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "aspect": "9:16"
+ },
+ {
+  "id": "B08",
+  "kind": "rap",
+  "who": "b",
+  "line": 8,
+  "move": "FULL",
+  "text": "A little theory saves you ninety percent — that's the law",
+  "audio": [
+   7.775,
+   11.064
+  ],
+  "lead": 0.0,
+  "action": "tapping his temple twice with one finger, cool and precise, the crackling blue-violet Tesla coil stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera with a subtle natural sway starts on a vertical waist-up shot at eye level and gently creeps closer to a head-and-shoulders close-up, his face and lips large in the upper half of the tall 9:16 frame from the first frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0,
+  "aspect": "9:16"
+ }
+]

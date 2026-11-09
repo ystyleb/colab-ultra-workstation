@@ -1,0 +1,46 @@
+[
+ {
+  "who": "a",
+  "n": 5,
+  "text": "You walked into my shop with four cents in your coat",
+  "start": 0.35,
+  "end": 2.873,
+  "bar": 12.483,
+  "heard": "You walked into my shop with four cents in your coat",
+  "orig_start": 27.998,
+  "orig_bar": 27.998
+ },
+ {
+  "who": "a",
+  "n": 6,
+  "text": "A book of poems and a letter somebody else wrote",
+  "start": 2.923,
+  "end": 5.45,
+  "bar": 15.056,
+  "heard": "A book of poems and a letter somebody else wrote",
+  "orig_start": 30.571,
+  "orig_bar": 30.571
+ },
+ {
+  "who": "a",
+  "n": 7,
+  "text": "Fifty thousand? That was American humor, son",
+  "start": 5.5,
+  "end": 7.995,
+  "bar": 17.633,
+  "heard": "Fifty thousand? That was American humor, son",
+  "orig_start": 33.148,
+  "orig_bar": 33.148
+ },
+ {
+  "who": "a",
+  "n": 8,
+  "text": "Read the fine print: Edison already won",
+  "start": 8.045,
+  "end": 10.369,
+  "bar": 20.178,
+  "heard": "Read the fine print: Edison already won",
+  "orig_start": 35.693,
+  "orig_bar": 35.693
+ }
+]

@@ -1,0 +1,102 @@
+[
+ {
+  "id": "A05",
+  "kind": "rap",
+  "who": "a",
+  "line": 5,
+  "move": "FULL",
+  "text": "You walked into my shop with four cents in your coat",
+  "audio": [
+   0.27,
+   2.873
+  ],
+  "lead": 0.0,
+  "action": "pinching an imaginary coin between two fingers and flicking it away with a sneer, the glowing amber carbon-filament bulb stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "aspect": "9:16"
+ },
+ {
+  "id": "A06",
+  "kind": "rap",
+  "who": "a",
+  "line": 6,
+  "move": "FULL",
+  "text": "A book of poems and a letter somebody else wrote",
+  "audio": [
+   2.843,
+   5.45
+  ],
+  "lead": 0.0,
+  "action": "miming opening a little book and fluttering it dismissively, holding his own glowing amber carbon-filament bulb in his left hand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "aspect": "9:16"
+ },
+ {
+  "id": "A07",
+  "kind": "rap",
+  "who": "a",
+  "line": 7,
+  "move": "FULL",
+  "text": "Fifty thousand? That was American humor, son",
+  "audio": [
+   5.42,
+   7.995
+  ],
+  "lead": 0.0,
+  "action": "laughing broadly with his head thrown back, then wagging a finger, the glowing amber carbon-filament bulb stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera with a subtle natural sway starts on a vertical waist-up shot at eye level and gently creeps closer to a head-and-shoulders close-up, his face and lips large in the upper half of the tall 9:16 frame from the first frame",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.0,
+  "aspect": "9:16"
+ },
+ {
+  "id": "A08",
+  "kind": "rap",
+  "who": "a",
+  "line": 8,
+  "move": "FULL",
+  "text": "Read the fine print: Edison already won",
+  "audio": [
+   7.965,
+   10.369
+  ],
+  "lead": 0.0,
+  "action": "spreading his arms wide like a showman taking a bow, the glowing amber carbon-filament bulb stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "aspect": "9:16"
+ }
+]

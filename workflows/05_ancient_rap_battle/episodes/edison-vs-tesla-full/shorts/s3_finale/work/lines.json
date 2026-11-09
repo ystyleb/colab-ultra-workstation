@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 13,
+  "text": "Radio? The Supreme Court finally handed it to me",
+  "start": 0.35,
+  "end": 2.811,
+  "bar": 81.231,
+  "heard": "Radio? The Supreme Court finally handed it to me",
+  "orig_start": 96.746,
+  "orig_bar": 96.746
+ },
+ {
+  "who": "b",
+  "n": 14,
+  "text": "Every outlet on this planet hums at my frequency",
+  "start": 2.861,
+  "end": 5.239,
+  "bar": 83.742,
+  "heard": "Every outlet on this planet hums at my frequency",
+  "orig_start": 99.257,
+  "orig_bar": 99.257
+ },
+ {
+  "who": "b",
+  "n": 15,
+  "text": "Physics named a unit after me — the tesla's on the chart",
+  "start": 5.264,
+  "end": 7.865,
+  "bar": 86.145,
+  "heard": "Physics named a unit after me the tesla's on the chart",
+  "orig_start": 101.66,
+  "orig_bar": 101.66
+ },
+ {
+  "who": "b",
+  "n": 16,
+  "text": "And the future drives my name, while you're a footnote in the dark",
+  "start": 7.915,
+  "end": 10.778,
+  "bar": 88.796,
+  "heard": "And the future drives my name, while you're a footnote in the dark",
+  "orig_start": 104.311,
+  "orig_bar": 104.311
+ }
+]
