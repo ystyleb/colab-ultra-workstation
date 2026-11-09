@@ -1,6 +1,6 @@
 # Workflow 05：历史人物说唱对决（Ancient / Historical Rap Battle）— 项目进度、操作指南与问题复盘
 
-> **最新进展（2026-11-09）**：完整版样片 `episodes/edison-vs-tesla-full/`（两回合、1 分 36 秒）改用 H3 锁音直出口型、统一背景参考图、真实运镜和后期现场运镜层，不再使用下文的 Wav2Lip 局部驱动方案。现在的流水线、经验和未解决问题见 **[经验沉淀_完整版样片.md](经验沉淀_完整版样片.md)**；下文是第一版（30 秒）的记录。
+> **最新进展（2026-11-09）**：完整版样片 `episodes/edison-vs-tesla-full/`（两回合、1 分 36 秒）改用 H3 锁音直出口型、统一背景参考图、真实运镜和后期现场运镜层，不再使用下文的 Wav2Lip 局部驱动方案。**做一集照着 [SOP_每集制作流程.md](SOP_每集制作流程.md) 走**（选题 → 歌曲 → 分镜 → 出片 → Shorts → 封面 → 上传）；原因、坑和未解决问题见 [经验沉淀_完整版样片.md](经验沉淀_完整版样片.md)；下文是第一版（30 秒）的记录。
 
 > **当前剧集**：`edison-vs-tesla`（爱迪生 vs 特斯拉 · 30 秒英文 Freestyle Rap Battle）  
 > **剧集目录**：`workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/`  
