@@ -84,6 +84,13 @@ STATIC_CAM = (" on a locked-off static tripod, holding the same tight chest-up f
 def adapt_prompt_for_comfy_h3(c: dict, e: dict, total_dur: float = 5.167, mic: str = "handheld",
                               static_cam: bool = False) -> str:
     """Build the official 6-section MiniMaxH3ReferenceToVideo structured prompt (`ref-en.txt` protocol)."""
+    p = _adapt_prompt(c, e, total_dur, mic, static_cam)
+    if c.get("aspect") == "9:16":   # vertical Shorts: every framing phrase must describe the tall frame
+        p = p.replace("16:9 frame", "vertical 9:16 frame").replace("16:9", "vertical 9:16")
+    return p
+
+
+def _adapt_prompt(c: dict, e: dict, total_dur: float, mic: str, static_cam: bool) -> str:
     lang = e.get("language", "en")
     if c["kind"] != "rap" or not c.get("text"):
         p = c["prompt"]
@@ -96,6 +103,7 @@ def adapt_prompt_for_comfy_h3(c: dict, e: dict, total_dur: float = 5.167, mic: s
     me = e[who]
     them = e["b" if who == "a" else "a"]
     two_shot = bool(c.get("two_shot"))
+    wide = bool(c.get("wide"))  # wide / reverse shots: deep focus, no fixed screen side, not singing into the lens
     lang_tag = "English" if lang == "en" else "Mandarin"
     a0, a1 = c["audio"]
     lead = float(c.get("lead") or 0.0)
@@ -117,6 +125,8 @@ def adapt_prompt_for_comfy_h3(c: dict, e: dict, total_dur: float = 5.167, mic: s
     action_desc = c.get("action") or "fierce and confident, his free hand chopping the air on the beat"
     move = c.get("move", "M3")
 
+    if c.get("static") is not None:  # per-shot override of --static-cam (handheld / moving-camera shots)
+        static_cam = bool(c["static"])
     if c.get("cam"):
         cam_desc = c["cam"] + (STATIC_CAM if static_cam else "")
     elif move == "M2":
@@ -146,8 +156,17 @@ def adapt_prompt_for_comfy_h3(c: dict, e: dict, total_dur: float = 5.167, mic: s
             f"<Subject 2> is {them['name_en']} ({them['look']}) from <Picture 2>, natural matte skin texture."
         )
         ret_lines.append(
-            f"<Subject 2> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial structure and outfit from <Picture 2> on screen-right, keeping his mouth closed in silent listening throughout this clip."
+            f"<Subject 2> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial structure and outfit from <Picture 2>{'' if wide else ' on screen-right'}, keeping his mouth closed in silent listening throughout this clip."
         )
+    bg_clause = ""
+    if c.get("bg"):  # shared stage plate so every shot of this singer sits in the same place of the same arena
+        k = c["image_keys"].index(c["bg"]) + 1
+        subj_lines.append(f"<Picture {k}> is the arena environment directly behind <Subject 1>: the same set, lights and "
+                          f"crowd in every shot of him.")
+        ret_lines.append(f"Background (appears in [Shot 1]): fully_preserved - Keep the exact environment, set dressing, light "
+                         f"colours and crowd of <Picture {k}> behind <Subject 1>, "
+                         + ("in deep focus so the whole room reads clearly." if wide else "softly out of focus with shallow depth of field."))
+        bg_clause = f" The background behind him is the arena from <Picture {k}>" + (", in deep focus." if wide else ", softly out of focus.")
     subj_lines.append(
         f"<Audio 1> is the target rap vocal track for <Subject 1>, providing his exact vocal timbre ({me.get('voice', 'male rapper')}) and syllable-by-syllable rhythm during {ts_start_str}–{ts_end_str}, followed by silence."
     )
@@ -169,9 +188,9 @@ def adapt_prompt_for_comfy_h3(c: dict, e: dict, total_dur: float = 5.167, mic: s
         + "retention_analysis:\n"
         + "\n".join(ret_lines)
         + "\n\ndetailed_description:\n"
-        + f"[Shot 1] r34l1sm, Facial Realism, realistic ARRI Alexa Mini LF 50mm lens cinematography, Kodak Vision3 500T film look, natural soft matte skin texture with fine pores, zero oily shine, dramatic low-key 1890s spotlighting with warm amber glow against cool electric blue haze. {cam_desc}. "
-        + f"During {ts_start_str}–{ts_end_str}, {mic_detail}, <Subject 1> raps directly into the camera with lively, unmistakable syllable-by-syllable lip-sync and expressive jaw articulation matching <Audio 1>, {action_desc}{listener_clause}: <d>[{lang_tag}]{c['text']}</d> "
-        + f"Immediately during {ts_end_str}–{ts_total_str}, <Subject 1> closes his mouth naturally and holds a fierce, confident stare into the lens{listener_clause}. No subtitles, no on-screen text.\n\n"
+        + f"[Shot 1] r34l1sm, Facial Realism, realistic ARRI Alexa Mini LF 50mm lens cinematography, Kodak Vision3 500T film look, natural soft matte skin texture with fine pores, zero oily shine, dramatic low-key 1890s spotlighting with warm amber glow against cool electric blue haze. {cam_desc}.{bg_clause} "
+        + f"During {ts_start_str}–{ts_end_str}, {mic_detail}, <Subject 1> raps {'out toward the arena' if wide else 'directly into the camera'} with lively, unmistakable syllable-by-syllable lip-sync and expressive jaw articulation matching <Audio 1>, {action_desc}{listener_clause}: <d>[{lang_tag}]{c['text']}</d> "
+        + f"Immediately during {ts_end_str}–{ts_total_str}, <Subject 1> closes his mouth naturally and holds a fierce, confident stare {'at his opponent' if wide else 'into the lens'}{listener_clause}. No subtitles, no on-screen text.\n\n"
         + "overall_soundscape:\n"
         + f"Clear, punchy foreground rap vocal performance from <Subject 1> during {ts_start_str}–{ts_end_str} synced 1:1 to <Audio 1> in an underground industrial arena.\n\n"
         + "non_diegetic_music:\n"
@@ -185,10 +204,11 @@ def fit_frames(line_dur: float, fps: int = 24) -> int:
     Must return a 17k+5 frame count (73, 90, 107, 124, ...) so the H3 temporal latent grid stays aligned.
     """
     # 0.35 s tail: H3 sometimes starts singing 0.1-0.3 s late (see qa.py), plus the 0.05 s fade-out.
-    # Shortest 17k+5 length that fits line + tail, capped at the legacy 124 frames (5.167 s).
+    # Shortest 17k+5 length that fits line + tail, capped at 158 frames (6.58 s): a long final line in the
+    # full-song episode (A16, 5.4 s) would otherwise lose its last syllables.
     need = math.ceil((line_dur + 0.35) * fps)
     k = max(4, math.ceil((need - 5) / 17))
-    return min(17 * k + 5, 124)
+    return min(17 * k + 5, 158)
 
 
 def build_single_clip_workflow(
@@ -201,7 +221,8 @@ def build_single_clip_workflow(
     length_frames: int = 124,
     lock_strength: float = 0.85,
 ) -> dict:
-    """Build a self-contained ComfyUI API graph for a single MiniMax-H3 clip (default 124 frames = 17*7+5, 1344x768)."""
+    """Build a self-contained ComfyUI API graph for a single MiniMax-H3 clip (default 124 frames = 17*7+5, 1344x768;
+    768x1344 when c["aspect"] == "9:16")."""
     assert (length_frames - 5) % 17 == 0, f"length_frames={length_frames} breaks the 17k+5 ladder"
     wf = {
         "1": {
@@ -224,7 +245,8 @@ def build_single_clip_workflow(
             "inputs": {
                 "model": ["2", 0],
                 "lora_name": "minimax-h3-facial-realism-closeup-cp2000.safetensors",
-                "strength_model": 0.35,
+                # wide shots set "closeup_lora": 0 - this LoRA pulls framing in (wide lines kept coming back medium)
+                "strength_model": float(c.get("closeup_lora", 0.35)),
             },
         },
         "4": {
@@ -286,8 +308,9 @@ def build_single_clip_workflow(
         "clip": ["6", 0],
         "vae": ["7", 0],
         "audio_vae": ["8", 0],
-        "width": 1344,
-        "height": 768,
+        # "aspect": "9:16" renders a vertical Short natively (768x1344) instead of cropping the 16:9 master
+        "width": 768 if c.get("aspect") == "9:16" else 1344,
+        "height": 1344 if c.get("aspect") == "9:16" else 768,
         "length": length_frames,
         "ref_image_size": "max",
         "prompt": prompt_text,
