@@ -1,0 +1,798 @@
+[
+ {
+  "id": "A01",
+  "kind": "rap",
+  "who": "a",
+  "line": 1,
+  "move": "ENTER",
+  "text": "Ten-ninety-three patents, kid, I own the whole wall / I lit up Pearl Street while you were learning how to crawl",
+  "audio": [
+   2.446,
+   7.114
+  ],
+  "lead": 0.0,
+  "frames": 124,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "sweeping his free left hand across the room like a landlord showing his property",
+  "two_shot": false,
+  "cam": "The camera starts behind the audience at head height: the backs of heads, flat caps and raised fists of the packed crowd fill the lower half of the frame with the spotlit stage small in the distance, then the camera pushes in with large amplitude at slow speed, gliding forward between the raised arms and over the shoulders of the crowd until it reaches the edge of the stage and settles on a chest-up medium shot of <Subject 1>; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps",
+  "wide": true,
+  "image_keys": [
+   "a_face_clean"
+  ],
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "A03",
+  "kind": "rap",
+  "who": "a",
+  "line": 3,
+  "move": "PUSH",
+  "text": "Phonograph, the bulb, the motion picture reel / I don't sell you theories, boy, I ship what's real",
+  "audio": [
+   7.084,
+   12.436
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "counting off on the fingers of his free left hand, then jabbing a finger straight into the lens",
+  "two_shot": false,
+  "cam": "The camera starts on a knee-up medium shot of <Subject 1> in the cold spotlight beam, then the camera pushes in with large amplitude at slow speed, travelling steadily toward him until it settles on a head-and-shoulders close-up, his face and lips large and clearly readable whenever he faces the camera. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "A05",
+  "kind": "rap",
+  "who": "a",
+  "line": 5,
+  "move": "ARC",
+  "text": "You walked into my shop with four cents in your coat / A book of poems and a letter somebody else wrote",
+  "audio": [
+   12.403,
+   17.583
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "flicking his free left hand toward his opponent as if tossing him a coin",
+  "two_shot": true,
+  "cam": "The camera starts on a chest-up medium shot of <Subject 1> from the front as he raps, then the camera trucks left and pans right with large amplitude at slow speed, moving in an arc shot around his left shoulder, until it ends as an over-the-shoulder shot from behind him: the back of <Subject 1>'s head and his left shoulder softly blurred in the left foreground, and <Subject 2> in sharp focus a few steps away on screen-right, facing the camera. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his mouth firmly closed, hands clasped in front of him, watching him in silence",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "A07",
+  "kind": "rap",
+  "who": "a",
+  "line": 7,
+  "move": "ECU",
+  "text": "Fifty thousand? That was American humor, son",
+  "audio": [
+   17.553,
+   20.128
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "smirking down into the lens, wagging one finger of his free left hand",
+  "two_shot": false,
+  "cam": "A handheld camera with a wide-angle lens is very close to his face and slightly below chin height, looking up at him: an extreme close-up where his face fills most of the 16:9 frame, the head of the microphone large and soft in the bottom foreground just below his chin; the camera pushes in with small amplitude at slow speed, the spotlight haze flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "lens": "24mm wide-angle"
+ },
+ {
+  "id": "A08",
+  "kind": "rap",
+  "who": "a",
+  "line": 8,
+  "move": "FACE",
+  "text": "Read the fine print: Edison already won",
+  "audio": [
+   20.098,
+   22.502
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "leaning into his opponent's face with a slow winner's grin",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-left in profile facing right, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-right in profile facing left; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "ENTER",
+  "text": "Your direct current dies before it leaves the street / A power plant on every corner — wow, what a feat",
+  "audio": [
+   25.109,
+   30.504
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "raising his free left hand high, then letting it drop in mock applause",
+  "two_shot": false,
+  "cam": "The camera starts behind the audience at head height: the backs of heads, flat caps and raised fists of the packed crowd fill the lower half of the frame with the spotlit stage small in the distance, then the camera pushes in with large amplitude at slow speed, gliding forward between the raised arms and over the shoulders of the crowd until it reaches the edge of the stage and settles on a chest-up medium shot of <Subject 1>; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps",
+  "wide": true,
+  "image_keys": [
+   "b_face_clean"
+  ],
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "LONG",
+  "text": "My alternating current lit the Fair in Chicago / A hundred thousand lamps while you sulked in the shadow",
+  "audio": [
+   30.474,
+   35.446
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "his free left hand sweeping wide across the frame, then pointing up beside his head",
+  "two_shot": false,
+  "cam": "From the very first frame to the last, the camera holds a frontal head-and-shoulders close-up at eye level, shot on a handheld camera with a subtle natural sway, never a full-body or wide shot, his legs and the stage floor never in frame, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B05",
+  "kind": "rap",
+  "who": "b",
+  "line": 5,
+  "move": "WHIP",
+  "text": "You electrocuted dogs to make the public fear my wire / Called the chair \"Westinghoused\" — a showman and a liar",
+  "audio": [
+   35.416,
+   40.507
+  ],
+  "lead": 2.5,
+  "frames": 192,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "raw": true,
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "closeup_lora": 0.2,
+  "prompt": "subject_definitions:\n<Subject 1> is Nikola Tesla (tall, very slim man of about 34 with centre-parted jet-black hair and a neat dark moustache, immaculate black Victorian frock coat with satin lapels, high stiff white wing collar, dark patterned silk cravat with a small pearl pin, white pocket square) from <Picture 1>, natural matte skin texture with fine pores.\n<Subject 2> is Thomas Edison (stocky man of about 45 with thick dishevelled grey-brown hair, clean-shaven, rumpled charcoal three-piece wool suit worn open, dark waistcoat with a gold pocket-watch chain, white shirt with a stand-up collar and a loose black bow tie) from <Picture 2>, natural matte skin texture.\n<Picture 3> is the hall directly behind <Subject 1> in [Shot 1], seen from the stage: the Tesla coils, the violet-lit arched windows and the crowd below.\n<Audio 1> is the target rap vocal track for <Subject 1>, providing his exact vocal timbre (sharp aristocratic male rapper, crisp electric tenor voice, fast razor-sharp rhythmic flow) and syllable-by-syllable rhythm during 00:02.500–00:07.591, followed by silence.\n\nsummary:\n[reference generation + audio reuse] Inside the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background, and a raised round iron stage in the middle; the two rappers always stand on top of this stage, above the crowd, who stand on the hall floor below and look up at them, <Subject 1> performs an energetic English battle-rap couplet synced syllable-by-syllable to <Audio 1>, holding the vintage chrome handheld microphone with a round mesh head in his right hand below his chin, across 2 shots, with <Subject 2> listening in silence, while the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial bone structure, hairstyle, facial hair and outfit from <Picture 1>.\n<Subject 2> (appears in [Shot 2]): fully_preserved - Strictly preserve exact facial structure, hairstyle and outfit from <Picture 2>, keeping his mouth closed in silent listening throughout this clip.\nBackground (appears in [Shot 1]): fully_preserved - Keep the environment of <Picture 3> behind <Subject 1>, softly out of focus; the crowd keeps moving.\n<Audio 1>: fully_copy - Reused 1:1 as the target vocal track; while <Subject 1>'s face is on screen his lip movements, jaw openings and syllable articulation are synchronized directly to <Audio 1>; after the camera leaves him the same vocal continues uninterrupted from off screen.\n\ndetailed_description:\nr34l1sm, Facial Realism, realistic ARRI Alexa Mini LF 35mm lens cinematography, Kodak Vision3 500T film look, natural soft matte skin texture with fine pores, zero oily shine, rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, one cold white spotlight beam from above cutting through soft haze, glowing highlights, the crowd behind clearly lit by the warm lamps. Both shots are in the same room: red-brick walls, dark iron girders, haze, the crowd of workers in flat caps packed around the stage. [Shot 1] During 00:00.000–00:02.500, before he starts rapping, his mouth stays closed while the camera pushes in from a wide view of the stage and settles on him. Then, during 00:02.500–00:05.030, the camera holds a chest-up three-quarter medium shot of <Subject 1> standing on the raised stage, on the right half of the frame, his face and lips large and readable, with the hall of <Picture 3> blurred behind him, rapping with lively syllable-by-syllable lip-sync to <Audio 1>, his free left arm stretched out pointing toward screen-left at his opponent off screen; at the end of this shot the camera pans left with large amplitude at fast speed, a whip pan with heavy motion blur. [Shot 2] At 00:05.230, the whip pan lands on a new shot. During 00:05.230–00:07.591, the camera holds a static chest-up medium close-up of <Subject 2> standing on the left side of the stage with warm amber incandescent bulbs blurred behind him, facing the camera, mouth firmly closed, jaw tight, his face slowly darkening with anger while <Subject 1>'s voice continues from off screen. The lyric sung across the whole clip: <d>[English]You electrocuted dogs to make the public fear my wire Called the chair \"Westinghoused\" — a showman and a liar</d> No subtitles, no on-screen text.\n\noverall_soundscape:\nClear, punchy foreground rap vocal performance from <Subject 1> during 00:02.500–00:07.591 synced 1:1 to <Audio 1> in a packed brick dynamo hall full of roaring workers, continuous across the cut.\n\nnon_diegetic_music:\nN/A — <Audio 1> is directly reused 1:1 as the target vocal track."
+ },
+ {
+  "id": "B07",
+  "kind": "rap",
+  "who": "b",
+  "line": 7,
+  "move": "CRASH",
+  "text": "If you had to find a needle, you'd search every single straw",
+  "audio": [
+   40.477,
+   42.951
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pinching his thumb and finger together as if holding a needle, eyes wide",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and back of the head of <Subject 2> in the left foreground, <Subject 1> chest-up on the right facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from hairline to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "24mm wide-angle",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "B08",
+  "kind": "rap",
+  "who": "b",
+  "line": 8,
+  "move": "FACE",
+  "text": "A little theory saves you ninety percent — that's the law",
+  "audio": [
+   42.921,
+   46.21
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "tapping his own temple with his free left hand, then holding up one finger between their faces",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "A09",
+  "kind": "rap",
+  "who": "a",
+  "line": 9,
+  "move": "ECU",
+  "text": "Theory don't pay rent — ask the hotel where you died",
+  "audio": [
+   48.078,
+   50.645
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "rubbing his thumb and fingers together like counting money, sneering",
+  "two_shot": false,
+  "cam": "A handheld camera with a wide-angle lens is very close to his face and slightly below chin height, looking up at him: an extreme close-up where his face fills most of the 16:9 frame, the head of the microphone large and soft in the bottom foreground just below his chin; the camera pushes in with small amplitude at slow speed, the spotlight haze flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "lens": "24mm wide-angle"
+ },
+ {
+  "id": "A10",
+  "kind": "rap",
+  "who": "a",
+  "line": 10,
+  "move": "REVEAL",
+  "text": "Room three-three-two-seven, just the pigeons by your side",
+  "audio": [
+   50.61,
+   53.249
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "holding up three fingers, then two, then seven, stepping in close",
+  "two_shot": true,
+  "cam": "The camera starts on a chest-up three-quarter medium close-up of <Subject 1> alone on the left half of the frame, facing right as he raps, then the camera pans right with small amplitude at slow speed, revealing <Subject 2> standing in profile at the right edge of the frame, and settles into a profile two-shot of the two men face to face, <Subject 1>'s lips and jaw clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> listens with his mouth firmly closed, a faint cold smile"
+ },
+ {
+  "id": "A11",
+  "kind": "rap",
+  "who": "a",
+  "line": 11,
+  "move": "FACE",
+  "text": "Wardenclyffe Tower was your free-power fairy tale / They scrapped it for your hotel tab — that's how dreamers fail",
+  "audio": [
+   53.219,
+   58.301
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "snapping the fingers of his free left hand right beside his opponent's ear",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-left in profile facing right, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-right in profile facing left; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "A13",
+  "kind": "rap",
+  "who": "a",
+  "line": 13,
+  "move": "TQ",
+  "text": "Genius? One percent inspiration, that's your share",
+  "audio": [
+   58.269,
+   60.747
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "tapping his own chest with his free left hand, then flicking the hand away",
+  "two_shot": false,
+  "cam": "The camera holds a chest-up three-quarter medium shot of <Subject 1> on the left half of the frame, facing right, shot on a handheld camera with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ]
+ },
+ {
+  "id": "A14",
+  "kind": "rap",
+  "who": "a",
+  "line": 14,
+  "move": "CRASH",
+  "text": "Ninety-nine percent is sweat, and you were never there",
+  "audio": [
+   60.717,
+   63.168
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "wiping imaginary sweat off his brow with the back of his free left hand, glaring",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and back of the head of <Subject 2> in the right foreground, <Subject 1> chest-up on the left facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from hairline to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "35mm",
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "A15",
+  "kind": "rap",
+  "who": "a",
+  "line": 15,
+  "move": "FACEWIDE",
+  "text": "You walk around the block three times before you take the door",
+  "audio": [
+   63.138,
+   65.556
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "walking two fingers of his free left hand in a little circle in the air, mocking",
+  "two_shot": true,
+  "cam": "The camera holds a waist-up medium profile two-shot at eye level: <Subject 1> on screen-left facing right, leaning toward <Subject 2> and rapping at him, <Subject 2> on screen-right facing left standing his ground, the cold spotlight beam falling between the two men, <Subject 1>'s lips and jaw clearly readable in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his arms crossed and his mouth firmly closed"
+ },
+ {
+  "id": "A16",
+  "kind": "rap",
+  "who": "a",
+  "line": 16,
+  "move": "LONG",
+  "text": "Eighteen napkins at your table — what are you counting for?",
+  "audio": [
+   65.502,
+   70.88
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "counting napkins in the air with his free left hand, one, two, three, then shrugging",
+  "two_shot": false,
+  "cam": "From the very first frame to the last, the camera holds a frontal head-and-shoulders close-up at eye level, shot on a handheld camera with a subtle natural sway, never a full-body or wide shot, his legs and the stage floor never in frame, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ]
+ },
+ {
+  "id": "B09",
+  "kind": "rap",
+  "who": "b",
+  "line": 9,
+  "move": "TQ",
+  "text": "Ninety-two, they merged your company and dropped your name",
+  "audio": [
+   70.865,
+   73.431
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "slicing his free left hand through the air like striking out a name",
+  "two_shot": false,
+  "cam": "The camera holds a chest-up three-quarter medium shot of <Subject 1> on the right half of the frame, facing left, shot on a handheld camera with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B10",
+  "kind": "rap",
+  "who": "b",
+  "line": 10,
+  "move": "FACE",
+  "text": "Even your own bankers knew which current won the game",
+  "audio": [
+   73.401,
+   75.924
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing his free left index finger at his opponent's chest",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B11",
+  "kind": "rap",
+  "who": "b",
+  "line": 11,
+  "move": "LONG",
+  "text": "I harnessed Niagara Falls while you were sitting in the park / And lit up Buffalo with nothing but my spark",
+  "audio": [
+   75.894,
+   81.181
+  ],
+  "lead": 3.0,
+  "frames": 209,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "spreading his free left arm wide like a waterfall pouring down, then snapping his fingers",
+  "two_shot": false,
+  "cam": "During 00:00.000–00:03.000, before he starts rapping, his mouth stays closed while the camera pushes in with large amplitude at slow speed from a wide shot of him standing on the stage until it reaches the framing below; from 00:03.000 to the end of the shot it holds that framing. The framing is a frontal head-and-shoulders close-up at eye level, shot on a handheld camera with a subtle natural sway, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B13",
+  "kind": "rap",
+  "who": "b",
+  "line": 13,
+  "move": "ECU",
+  "text": "Radio? The Supreme Court finally handed it to me",
+  "audio": [
+   81.151,
+   83.692
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "bringing down his free left hand like a judge's gavel, cold smile",
+  "two_shot": false,
+  "cam": "A handheld camera with a wide-angle lens is very close to his face and slightly below chin height, looking up at him: an extreme close-up where his face fills most of the 16:9 frame, the head of the microphone large and soft in the bottom foreground just below his chin; the camera pushes in with small amplitude at slow speed, the spotlight haze flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "lens": "24mm wide-angle"
+ },
+ {
+  "id": "B14",
+  "kind": "rap",
+  "who": "b",
+  "line": 14,
+  "move": "FACE",
+  "text": "Every outlet on this planet hums at my frequency",
+  "audio": [
+   83.662,
+   86.12
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing a finger at the ground, then circling it slowly around the whole room",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B15",
+  "kind": "rap",
+  "who": "b",
+  "line": 15,
+  "move": "FACEWIDE",
+  "text": "Physics named a unit after me — the tesla's on the chart",
+  "audio": [
+   86.065,
+   88.746
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "holding up one finger of his free left hand, then pointing up at the ceiling",
+  "two_shot": true,
+  "cam": "The camera holds a waist-up medium profile two-shot at eye level: <Subject 1> on screen-right facing left, leaning toward <Subject 2> and rapping at him, <Subject 2> on screen-left facing right standing his ground, the cold spotlight beam falling between the two men, <Subject 1>'s lips and jaw clearly readable in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his arms crossed and his mouth firmly closed"
+ },
+ {
+  "id": "B16",
+  "kind": "rap",
+  "who": "b",
+  "line": 16,
+  "move": "CRASH",
+  "text": "And the future drives my name, while you're a footnote in the dark",
+  "audio": [
+   88.716,
+   91.659
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing straight into the lens, then turning the hand into a dismissive wave",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and back of the head of <Subject 2> in the left foreground, <Subject 1> chest-up on the right facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from hairline to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "24mm wide-angle",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "R_T_SHIP",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Nikola Tesla (keep his exact face, centre-parted jet-black hair, dark moustache, black frock coat with satin lapels, high white wing collar, dark cravat with a pearl pin). Image 2 is Tesla's side of the hall as seen from the stage (two tall brass Tesla coils throwing blue-violet arcs, arched windows washed in violet light, the crowd).\n\nCinematic photoreal shot, 16:9. From the very first frame to the last, the camera holds a static tight head-and-shoulders close-up of Nikola Tesla (Image 1) alone, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the violet-lit Tesla coils and arched windows of his side of the hall (Image 2) glow softly blurred behind him, never a plain studio backdrop or a dark wall of people. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. One eyebrow slowly rises and the corner of his mouth lifts in a thin, amused smile.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep the face, hairstyle, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_T_HOTEL",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Nikola Tesla (keep his exact face, centre-parted jet-black hair, dark moustache, black frock coat with satin lapels, high white wing collar, dark cravat with a pearl pin). Image 2 is Tesla's side of the hall as seen from the stage (two tall brass Tesla coils throwing blue-violet arcs, arched windows washed in violet light, the crowd).\n\nCinematic photoreal shot, 16:9. From the very first frame to the last, the camera holds a static tight head-and-shoulders close-up of Nikola Tesla (Image 1) alone, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the violet-lit Tesla coils and arched windows of his side of the hall (Image 2) glow softly blurred behind him, never a plain studio backdrop or a dark wall of people. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His eyes drop for a moment and his jaw tightens, then he looks back up, cold and proud.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep the face, hairstyle, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_T_SWEAT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Nikola Tesla (keep his exact face, centre-parted jet-black hair, dark moustache, black frock coat with satin lapels, high white wing collar, dark cravat with a pearl pin). Image 2 is Tesla's side of the hall as seen from the stage (two tall brass Tesla coils throwing blue-violet arcs, arched windows washed in violet light, the crowd).\n\nCinematic photoreal shot, 16:9. From the very first frame to the last, the camera holds a static tight head-and-shoulders close-up of Nikola Tesla (Image 1) alone, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the violet-lit Tesla coils and arched windows of his side of the hall (Image 2) glow softly blurred behind him, never a plain studio backdrop or a dark wall of people. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He tilts his head a few degrees and exhales through his nose, utterly unimpressed.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep the face, hairstyle, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_E_FAIR",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Thomas Edison (keep his exact face, dishevelled grey-brown hair, rumpled charcoal three-piece suit, gold watch chain, stand-up collar and loose black bow tie). Image 2 is Edison's side of the hall as seen from the stage (a canopy of warm amber bulbs, a giant brass flywheel, brick, the warmly lit crowd).\n\nCinematic photoreal shot, 16:9. From the very first frame to the last, the camera holds a static tight head-and-shoulders close-up of Thomas Edison (Image 1) alone, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the amber bulbs and brass flywheel of his side of the hall (Image 2) glow softly blurred behind him, never a plain studio backdrop or a dark wall of people. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His confident smirk fades and his eyes narrow, a muscle twitching in his cheek.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep the face, hairstyle, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_E_BANK",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Thomas Edison (keep his exact face, dishevelled grey-brown hair, rumpled charcoal three-piece suit, gold watch chain, stand-up collar and loose black bow tie). Image 2 is Edison's side of the hall as seen from the stage (a canopy of warm amber bulbs, a giant brass flywheel, brick, the warmly lit crowd).\n\nCinematic photoreal shot, 16:9. From the very first frame to the last, the camera holds a static tight head-and-shoulders close-up of Thomas Edison (Image 1) alone, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the amber bulbs and brass flywheel of his side of the hall (Image 2) glow softly blurred behind him, never a plain studio backdrop or a dark wall of people. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He glances away to one side and swallows, then glares back, face reddening.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep the face, hairstyle, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_E_HUM",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Thomas Edison (keep his exact face, dishevelled grey-brown hair, rumpled charcoal three-piece suit, gold watch chain, stand-up collar and loose black bow tie). Image 2 is Edison's side of the hall as seen from the stage (a canopy of warm amber bulbs, a giant brass flywheel, brick, the warmly lit crowd).\n\nCinematic photoreal shot, 16:9. From the very first frame to the last, the camera holds a static tight head-and-shoulders close-up of Thomas Edison (Image 1) alone, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the amber bulbs and brass flywheel of his side of the hall (Image 2) glow softly blurred behind him, never a plain studio backdrop or a dark wall of people. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He grinds his teeth, nostrils flaring, staring straight back in fury.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep the face, hairstyle, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "OPEN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Thomas Edison (keep his exact face, dishevelled grey-brown hair, rumpled charcoal three-piece suit, gold watch chain, stand-up collar and loose black bow tie). Image 2 is Nikola Tesla (keep his exact face, centre-parted jet-black hair, dark moustache, black frock coat with satin lapels, high white wing collar, dark cravat with a pearl pin).\n\nCinematic photoreal shot, 16:9. Over-the-shoulder shot at eye level, handheld: the blurred dark shoulder and back of the head of Nikola Tesla (Image 2) fill the right foreground, and beyond him Thomas Edison (Image 1) stands chest-up on the left, facing the camera, lifting his microphone toward his chin with a slow confident smirk, mouth closed, amber bulbs glowing behind him; the camera pulls out with small amplitude at slow speed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold white spotlight beam from above as the key light, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background, and a raised round iron stage in the middle; the two rappers always stand on top of this stage, above the crowd, who stand on the hall floor below and look up at them. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the spotlit circle. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, one cold white spotlight beam from above cutting through soft haze, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Edison always stands on the left side of the stage with the amber bulbs behind him, Tesla on the right with the Tesla coils behind him. Whenever Edison or Tesla is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else."
+ },
+ {
+  "id": "DJ_FRONT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "dj"
+  ],
+  "prompt": "Image 1 is the DJ at his raised booth built on a brass dynamo.\n\nCinematic photoreal shot, 16:9. Frontal medium shot of exactly one person, the DJ (Image 1), alone behind his raised booth of brass dynamos, scratching a record with one hand and pressing one headphone to his ear with the other, small electric sparks jumping from the dynamos, the crowd bouncing in the haze behind him.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep the face, hairstyle, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "DJ_HANDS",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "dj"
+  ],
+  "prompt": "Image 1 is the DJ at his raised booth built on a brass dynamo.\n\nCinematic photoreal shot, 16:9. Low-angle close shot across the turntables of the DJ booth (Image 1): the DJ's hands scratch a spinning record and ride a brass fader, his torso above, coloured indicator lamps glowing on the brass mixer, haze and stage light behind.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep the face, hairstyle, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_OOH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the crowd of 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps.\n\nCinematic photoreal shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close medium shot packed with four or five workers from the front row (Image 1), their faces large and filling the 16:9 frame, handheld camera at their eye level, the hall lights only a blurred glow behind them. They react to a brutal punchline: one claps both hands over his mouth, one grabs his flat cap with wide eyes, one doubles over laughing and shoves his friend. Energetic, joyful chaos.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep the face, hairstyle, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_CHANT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the crowd of 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps.\n\nCinematic photoreal shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close medium shot of the front rows of the crowd (Image 1), handheld at their eye level, faces large and lit by warm amber light: workers and engineers chant together with their fists pumping in rhythm, mouths wide open, sweat and haze. The camera trucks right with small amplitude at slow speed along the front row and stays on their faces.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep the face, hairstyle, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_STARE",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the crowd of 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps.\n\nCinematic photoreal shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Medium close shot of three workers in the front row (Image 1), handheld at their eye level, warm amber light: they look up past the camera in tense silence, arms folded, one of them slowly letting out a low whistle and shaking his head.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep the face, hairstyle, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_LAUGH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the crowd of 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps.\n\nCinematic photoreal shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close shot of one young worker in a flat cap in the front row (Image 1) throwing his head back and roaring with laughter, one fist punching the air, his friends cheering and clapping around him, warm amber light, handheld.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep the face, hairstyle, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CURTAIN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 192,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Thomas Edison (keep his exact face, dishevelled grey-brown hair, rumpled charcoal three-piece suit, gold watch chain, stand-up collar and loose black bow tie). Image 2 is Nikola Tesla (keep his exact face, centre-parted jet-black hair, dark moustache, black frock coat with satin lapels, high white wing collar, dark cravat with a pearl pin).\n\nCinematic photoreal shot, 16:9. The shot starts as a waist-up medium two-shot of Thomas Edison (Image 1) on the left and Nikola Tesla (Image 2) on the right standing side by side on the stage, both facing the camera, both spreading their arms wide to the roaring crowd, mouths closed, Tesla with a calm victorious smile and Edison with a grudging one. Then the camera pulls out and pedestals up with large amplitude at slow speed, rising steadily backward and upward over the heads of the audience until it holds a high wide shot of the whole dynamo hall: the two men small in the spotlight at the center of the circular stage, hundreds of cheering workers with raised fists all around them, amber bulbs on the left, Tesla coils arcing on the right. During the last second the camera smoothly decelerates and settles into a stationary shot.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold white spotlight beam from above as the key light, 35-50mm lens look. Setting: the huge dynamo hall of an 1890s New York red-brick electric power station turned into an underground rap battle arena at night, riveted iron columns and girders, giant brass flywheels and dynamos, steam and tall arched windows; on the left side a dense canopy of hundreds of warm amber carbon-filament light bulbs, on the right side two tall brass Tesla coils throwing blue-violet electric arcs, a raised DJ booth built on a brass dynamo in the center background, and a raised round iron stage in the middle; the two rappers always stand on top of this stage, above the crowd, who stand on the hall floor below and look up at them. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the spotlit circle. Lighting: rich warm cinematic lighting, well-exposed faces: golden light from hundreds of amber bulbs as the key light, a vivid blue-violet rim light from the Tesla coils, one cold white spotlight beam from above cutting through soft haze, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some workers jumping and waving their flat caps.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Edison always stands on the left side of the stage with the amber bulbs behind him, Tesla on the right with the Tesla coils behind him. Whenever Edison or Tesla is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else.",
+  "closeup_lora": 0.0
+ }
+]
