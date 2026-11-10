@@ -24,7 +24,7 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-_uv_py = Path("/Users/winson/.local/share/uv/tools/google-colab-cli/bin/python")
+_uv_py = Path.home() / ".local/share/uv/tools/google-colab-cli/bin/python"
 if _uv_py.exists() and str(sys.executable) != str(_uv_py):
     os.execv(str(_uv_py), [str(_uv_py), *sys.argv])
 
