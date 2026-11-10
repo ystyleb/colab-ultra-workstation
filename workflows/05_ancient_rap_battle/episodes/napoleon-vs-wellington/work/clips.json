@@ -1,0 +1,938 @@
+[
+ {
+  "id": "A01",
+  "kind": "rap",
+  "who": "a",
+  "line": 1,
+  "move": "FULL",
+  "text": "Seventeen sixty-nine, the world got a brand-new king",
+  "audio": [
+   2.446,
+   4.803
+  ],
+  "lead": 0.0,
+  "action": "spreading both arms wide like a king greeting his subjects, chin raised high, holding his own golden laurel wreath in his left hand",
+  "two_shot": true,
+  "static": false,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "wide": true,
+  "cam": "A handheld camera with a subtle natural sway holds a wide shot from inside the crowd, behind the audience at head height: the backs of heads, bearskin hats, shakos and raised fists of the packed crowd fill the lower third of the frame, and beyond them on the left half of the spotlit circular stage <Subject 1> raps full-body into the floor-stand microphone while <Subject 2> stands full-body on the right half; the whole courtyard rises above them: stone farm walls, flaming torches, French tricolours and golden eagles on the left, British flags on the right, haze drifting through the spotlight beam; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats",
+  "closeup_lora": 0.0,
+  "listener": " while <Subject 2> stands across the stage holding his own brass spyglass telescope at his side, arms still and mouth closed, watching him"
+ },
+ {
+  "id": "A02",
+  "kind": "rap",
+  "who": "a",
+  "line": 2,
+  "move": "FULL",
+  "text": "I crowned myself at Notre-Dame, the Pope just blessed the thing",
+  "audio": [
+   4.773,
+   7.577
+  ],
+  "lead": 0.0,
+  "action": "lifting the golden laurel wreath above his own head, smug and slow, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a low-angle chest-up medium close-up looking slightly up at him, the cold spotlight beam glowing through the smoke at the top of the frame, shot on a handheld camera at shoulder height with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame"
+ },
+ {
+  "id": "A03",
+  "kind": "rap",
+  "who": "a",
+  "line": 3,
+  "move": "FULL",
+  "text": "Three emperors at Austerlitz — two of them took flight / My Code still writes the law in half the world tonight",
+  "audio": [
+   7.547,
+   12.786
+  ],
+  "lead": 0.0,
+  "action": "holding up three fingers, then folding two of them down with a grin, then slipping his free hand into his waistcoat in his famous pose, proud and still, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.0,
+  "cam": "A handheld camera with a subtle natural sway starts on a chest-up medium close-up at eye level and slowly, steadily creeps closer to a tight head-and-shoulders close-up over the whole shot, his face and lips large and clearly readable from the first frame"
+ },
+ {
+  "id": "A05",
+  "kind": "rap",
+  "who": "a",
+  "line": 5,
+  "move": "FULL",
+  "text": "Your troops say \"Old Nosey\" — I say \"sepoy general\"",
+  "audio": [
+   12.734,
+   15.802
+  ],
+  "lead": 0.0,
+  "action": "tapping the side of his nose mockingly, then pointing at the lens, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a tight head-and-shoulders close-up at eye level, frontal, his face filling the upper half of the 16:9 frame, shot on a handheld camera at shoulder height with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame"
+ },
+ {
+  "id": "A06",
+  "kind": "rap",
+  "who": "a",
+  "line": 6,
+  "move": "FULL",
+  "text": "Beating rajahs doesn't make you my equal",
+  "audio": [
+   15.757,
+   17.935
+  ],
+  "lead": 0.0,
+  "action": "waving his hand dismissively, shaking his head with contempt, holding only his own golden laurel wreath low in his left hand",
+  "two_shot": true,
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-left in profile facing right, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-right in profile facing left; both from the chest up, his lips and jaw clearly readable in every frame, handheld camera with a subtle natural sway",
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> holds only his own brass spyglass telescope at his side, mouth firmly closed, glaring back at him"
+ },
+ {
+  "id": "A07",
+  "kind": "rap",
+  "who": "a",
+  "line": 7,
+  "move": "FULL",
+  "text": "Sixty battles fought — I had all Europe on my plate",
+  "audio": [
+   17.905,
+   20.342
+  ],
+  "lead": 0.0,
+  "action": "sweeping his hand across the air as if pushing armies across a map, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a chest-up medium close-up from a three-quarter angle at eye level from his left side, shot on a handheld camera at shoulder height with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame"
+ },
+ {
+  "id": "A08",
+  "kind": "rap",
+  "who": "a",
+  "line": 8,
+  "move": "FULL",
+  "text": "You? You're just a breakfast, and an Emperor won't wait",
+  "audio": [
+   20.312,
+   22.999
+  ],
+  "lead": 0.0,
+  "action": "miming a quick bite and dusting crumbs off his fingers, impatient, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.0,
+  "cam": "From the very first frame to the last, a handheld camera with a wide-angle lens is very close to his face, slightly below eye level, with no wider opening and no zoom: an extreme close-up where his face fills most of the 16:9 frame, his free hand thrusting toward the lens looks huge from the wide-angle perspective, the spotlight haze flaring behind his head, his lips large and clearly readable in every frame",
+  "lens": "24mm wide-angle"
+ },
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "FULL",
+  "text": "Breakfast? Then why'd you wait till noon to fire a gun?",
+  "audio": [
+   28.201,
+   30.897
+  ],
+  "lead": 0.0,
+  "action": "glancing at an imaginary pocket watch, one eyebrow raised, deadpan, holding his own brass spyglass telescope in his left hand",
+  "two_shot": true,
+  "static": false,
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "wide": true,
+  "cam": "A handheld camera with a subtle natural sway holds a wide shot from inside the crowd, behind the audience at head height: the backs of heads, bearskin hats, shakos and raised fists of the packed crowd fill the lower third of the frame, and beyond them on the right half of the spotlit circular stage <Subject 1> raps full-body into the floor-stand microphone while <Subject 2> stands full-body on the left half; the whole courtyard rises above them: stone farm walls, flaming torches, French tricolours and golden eagles on the left, British flags on the right, haze drifting through the spotlight beam; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats",
+  "closeup_lora": 0.0,
+  "listener": " while <Subject 2> stands across the stage holding his own golden laurel wreath at his side, arms still and mouth closed, watching him"
+ },
+ {
+  "id": "B02",
+  "kind": "rap",
+  "who": "b",
+  "line": 2,
+  "move": "FULL",
+  "text": "Waiting on the mud to dry — by sunset, you were done",
+  "audio": [
+   30.862,
+   33.214
+  ],
+  "lead": 0.0,
+  "action": "pointing down at the ground, then waving goodbye with two fingers, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a tight head-and-shoulders close-up at eye level, frontal, his face filling the upper half of the 16:9 frame, shot on a handheld camera at shoulder height with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame"
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "FULL",
+  "text": "Six hundred thousand marched to Moscow, proud and fed",
+  "audio": [
+   33.184,
+   35.94
+  ],
+  "lead": 0.0,
+  "action": "marching on the spot with stiff exaggerated steps, mocking, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a chest-up medium close-up from a three-quarter angle at eye level from his right side, shot on a handheld camera at shoulder height with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame"
+ },
+ {
+  "id": "B04",
+  "kind": "rap",
+  "who": "b",
+  "line": 4,
+  "move": "FULL",
+  "text": "Count the men who made it home — the winter kept the dead",
+  "audio": [
+   35.91,
+   38.431
+  ],
+  "lead": 0.0,
+  "action": "rubbing his arms as if freezing, cold stare at the lens, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a low-angle chest-up medium close-up looking slightly up at him, the cold spotlight beam glowing through the smoke at the top of the frame, shot on a handheld camera at shoulder height with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame"
+ },
+ {
+  "id": "B05",
+  "kind": "rap",
+  "who": "b",
+  "line": 5,
+  "move": "FULL",
+  "text": "You called Spain your \"ulcer\" — guess who made it bleed? / Your marshals came in one by one, and one by one they'd flee",
+  "audio": [
+   38.396,
+   43.592
+  ],
+  "lead": 0.0,
+  "action": "pressing a hand to his own stomach, then jabbing a finger forward, then flicking imaginary figures off a table one by one, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0,
+  "cam": "A handheld camera with a subtle natural sway starts on a chest-up medium close-up at eye level and slowly, steadily creeps closer to a tight head-and-shoulders close-up over the whole shot, his face and lips large and clearly readable from the first frame"
+ },
+ {
+  "id": "B07",
+  "kind": "rap",
+  "who": "b",
+  "line": 7,
+  "move": "FULL",
+  "text": "\"Sepoy general\"? Fine — this sepoy took you down",
+  "audio": [
+   43.561,
+   46.094
+  ],
+  "lead": 0.0,
+  "action": "raising the brass spyglass to his eye, then snapping it shut with a smirk, holding only his own brass spyglass telescope low in his left hand",
+  "two_shot": true,
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, his lips and jaw clearly readable in every frame, handheld camera with a subtle natural sway",
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> holds only his own golden laurel wreath at his side, mouth firmly closed, glaring back at him"
+ },
+ {
+  "id": "B08",
+  "kind": "rap",
+  "who": "b",
+  "line": 8,
+  "move": "FULL",
+  "text": "One day at Waterloo — so long, your self-made crown",
+  "audio": [
+   46.064,
+   48.895
+  ],
+  "lead": 0.0,
+  "action": "lifting an imaginary crown off a head and tossing it aside, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0,
+  "cam": "From the very first frame to the last, a handheld camera with a wide-angle lens is very close to his face, slightly below eye level, with no wider opening and no zoom: an extreme close-up where his face fills most of the 16:9 frame, his free hand thrusting toward the lens looks huge from the wide-angle perspective, the spotlight haze flaring behind his head, his lips large and clearly readable in every frame",
+  "lens": "24mm wide-angle"
+ },
+ {
+  "id": "A09",
+  "kind": "rap",
+  "who": "a",
+  "line": 9,
+  "move": "FULL",
+  "text": "Took me down? You prayed for night or the Prussians to arrive",
+  "audio": [
+   58.995,
+   61.608
+  ],
+  "lead": 0.0,
+  "action": "clasping his hands in mock prayer, eyes rolled up to the sky, holding his own golden laurel wreath in his left hand",
+  "two_shot": true,
+  "static": false,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "wide": true,
+  "cam": "A handheld camera with a subtle natural sway holds a wide shot from inside the crowd, behind the audience at head height: the backs of heads, bearskin hats, shakos and raised fists of the packed crowd fill the lower third of the frame, and beyond them on the left half of the spotlit circular stage <Subject 1> raps full-body into the floor-stand microphone while <Subject 2> stands full-body on the right half; the whole courtyard rises above them: stone farm walls, flaming torches, French tricolours and golden eagles on the left, British flags on the right, haze drifting through the spotlight beam; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats",
+  "closeup_lora": 0.0,
+  "listener": " while <Subject 2> stands across the stage holding his own brass spyglass telescope at his side, arms still and mouth closed, watching him"
+ },
+ {
+  "id": "A10",
+  "kind": "rap",
+  "who": "a",
+  "line": 10,
+  "move": "FULL",
+  "text": "They hit my flank at half past four — that's how you survived",
+  "audio": [
+   61.549,
+   63.961
+  ],
+  "lead": 0.0,
+  "action": "slapping his own side hard, then pointing an accusing finger, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a chest-up medium close-up from a three-quarter angle at eye level from his right side, shot on a handheld camera at shoulder height with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame"
+ },
+ {
+  "id": "A11",
+  "kind": "rap",
+  "who": "a",
+  "line": 11,
+  "move": "FULL",
+  "text": "\"Nearest-run thing you ever saw\" — your own words, Duke",
+  "audio": [
+   63.9,
+   66.663
+  ],
+  "lead": 0.0,
+  "action": "pinching his thumb and finger almost together, sneering, holding only his own golden laurel wreath low in his left hand",
+  "two_shot": true,
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-left in profile facing right, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-right in profile facing left; both from the chest up, his lips and jaw clearly readable in every frame, handheld camera with a subtle natural sway",
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> holds only his own brass spyglass telescope at his side, mouth firmly closed, glaring back at him"
+ },
+ {
+  "id": "A12",
+  "kind": "rap",
+  "who": "a",
+  "line": 12,
+  "move": "FULL",
+  "text": "Your \"scum of the earth\" soldiers won you that fluke",
+  "audio": [
+   66.621,
+   69.22
+  ],
+  "lead": 0.0,
+  "action": "flicking imaginary dirt off his shoulder with disgust, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a tight head-and-shoulders close-up at eye level, frontal, his face filling the upper half of the 16:9 frame, shot on a handheld camera at shoulder height with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame"
+ },
+ {
+  "id": "A13",
+  "kind": "rap",
+  "who": "a",
+  "line": 13,
+  "move": "FULL",
+  "text": "Your own people smashed your windows when you blocked reform / Iron shutters — that's how the \"Iron Duke\" was born",
+  "audio": [
+   69.18,
+   74.371
+  ],
+  "lead": 0.0,
+  "action": "miming throwing a stone, then flinching with a mocking laugh, then knocking his knuckles on the air as if rapping on iron, smirking, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.0,
+  "cam": "A handheld camera with a subtle natural sway starts on a chest-up medium close-up at eye level and slowly, steadily creeps closer to a tight head-and-shoulders close-up over the whole shot, his face and lips large and clearly readable from the first frame"
+ },
+ {
+  "id": "A15",
+  "kind": "rap",
+  "who": "a",
+  "line": 15,
+  "move": "FULL",
+  "text": "Your legacy's a rubber boot for walking through the mud",
+  "audio": [
+   74.324,
+   76.698
+  ],
+  "lead": 0.0,
+  "action": "lifting one foot as if stepping out of a puddle, laughing, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a low-angle chest-up medium close-up looking slightly up at him, the cold spotlight beam glowing through the smoke at the top of the frame, shot on a handheld camera at shoulder height with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame"
+ },
+ {
+  "id": "A16",
+  "kind": "rap",
+  "who": "a",
+  "line": 16,
+  "move": "FULL",
+  "text": "Mine's a whole era, written in my Code and blood",
+  "audio": [
+   76.642,
+   82.562
+  ],
+  "lead": 0.0,
+  "action": "raising the golden laurel wreath high, then thumping his chest, fierce, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.0,
+  "cam": "From the very first frame to the last, a handheld camera with a wide-angle lens is very close to his face, slightly below eye level, with no wider opening and no zoom: an extreme close-up where his face fills most of the 16:9 frame, his free hand thrusting toward the lens looks huge from the wide-angle perspective, the spotlight haze flaring behind his head, his lips large and clearly readable in every frame",
+  "lens": "24mm wide-angle"
+ },
+ {
+  "id": "B09",
+  "kind": "rap",
+  "who": "b",
+  "line": 9,
+  "move": "FULL",
+  "text": "Elba couldn't hold you, so we found a smaller rock",
+  "audio": [
+   82.544,
+   84.657
+  ],
+  "lead": 0.0,
+  "action": "cupping his hand around something small, then setting it down far away, holding his own brass spyglass telescope in his left hand",
+  "two_shot": true,
+  "static": false,
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "wide": true,
+  "cam": "A handheld camera with a subtle natural sway holds a wide shot from inside the crowd, behind the audience at head height: the backs of heads, bearskin hats, shakos and raised fists of the packed crowd fill the lower third of the frame, and beyond them on the right half of the spotlit circular stage <Subject 1> raps full-body into the floor-stand microphone while <Subject 2> stands full-body on the left half; the whole courtyard rises above them: stone farm walls, flaming torches, French tricolours and golden eagles on the left, British flags on the right, haze drifting through the spotlight beam; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats",
+  "closeup_lora": 0.0,
+  "listener": " while <Subject 2> stands across the stage holding his own golden laurel wreath at his side, arms still and mouth closed, watching him"
+ },
+ {
+  "id": "B10",
+  "kind": "rap",
+  "who": "b",
+  "line": 10,
+  "move": "FULL",
+  "text": "Saint Helena, South Atlantic — five years watching the clock",
+  "audio": [
+   84.627,
+   87.249
+  ],
+  "lead": 0.0,
+  "action": "tapping his wrist slowly as if counting the years, bored, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a chest-up medium close-up from a three-quarter angle at eye level from his left side, shot on a handheld camera at shoulder height with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame"
+ },
+ {
+  "id": "B11",
+  "kind": "rap",
+  "who": "b",
+  "line": 11,
+  "move": "FULL",
+  "text": "We took your horse, Marengo — his bones are on display",
+  "audio": [
+   87.219,
+   89.822
+  ],
+  "lead": 0.0,
+  "action": "patting the air as if stroking a horse's neck, then smirking, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a tight head-and-shoulders close-up at eye level, frontal, his face filling the upper half of the 16:9 frame, shot on a handheld camera at shoulder height with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame"
+ },
+ {
+  "id": "B12",
+  "kind": "rap",
+  "who": "b",
+  "line": 12,
+  "move": "FULL",
+  "text": "In a London museum — people stare at him all day",
+  "audio": [
+   89.792,
+   92.415
+  ],
+  "lead": 0.0,
+  "action": "gesturing like a museum guide presenting an exhibit, mock-polite, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a low-angle chest-up medium close-up looking slightly up at him, the cold spotlight beam glowing through the smoke at the top of the frame, shot on a handheld camera at shoulder height with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame"
+ },
+ {
+  "id": "B13",
+  "kind": "rap",
+  "who": "b",
+  "line": 13,
+  "move": "FULL",
+  "text": "Canova carved you naked, marble, eleven feet tall / Now you stand in my stairwell with a fig leaf in my hall",
+  "audio": [
+   92.371,
+   97.534
+  ],
+  "lead": 0.0,
+  "action": "tracing a tall figure in the air with the spyglass, eyebrows raised, then covering his smirk with his hand, trying not to laugh, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0,
+  "cam": "A handheld camera with a subtle natural sway starts on a chest-up medium close-up at eye level and slowly, steadily creeps closer to a tight head-and-shoulders close-up over the whole shot, his face and lips large and clearly readable from the first frame"
+ },
+ {
+  "id": "B15",
+  "kind": "rap",
+  "who": "b",
+  "line": 15,
+  "move": "FULL",
+  "text": "Two hundred years later, the world still has a word for you",
+  "audio": [
+   97.504,
+   100.336
+  ],
+  "lead": 0.0,
+  "action": "pointing the brass spyglass straight at the camera like a verdict, holding only his own brass spyglass telescope low in his left hand",
+  "two_shot": true,
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, his lips and jaw clearly readable in every frame, handheld camera with a subtle natural sway",
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> holds only his own golden laurel wreath at his side, mouth firmly closed, glaring back at him"
+ },
+ {
+  "id": "B16",
+  "kind": "rap",
+  "who": "b",
+  "line": 16,
+  "move": "FULL",
+  "text": "Lose it all, and people say you met your Waterloo",
+  "audio": [
+   100.305,
+   102.932
+  ],
+  "lead": 0.0,
+  "action": "leaning into the lens with a cold, final smile, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0,
+  "cam": "From the very first frame to the last, a handheld camera with a wide-angle lens is very close to his face, slightly below eye level, with no wider opening and no zoom: an extreme close-up where his face fills most of the 16:9 frame, his free hand thrusting toward the lens looks huge from the wide-angle perspective, the spotlight haze flaring behind his head, his lips large and clearly readable in every frame",
+  "lens": "24mm wide-angle"
+ },
+ {
+  "id": "R_W_SEPOY",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is the Duke of Wellington's face (keep his exact face, hooked nose, curly greying hair and sideburns, front-to-back black bicorne, scarlet field marshal's coat with gold epaulettes, white cravat). Image 2 is the British side of the arena behind Wellington (Union flags, scarlet colours, stacked muskets, torches).\n\nCinematic photoreal shot, 16:9. Close-up of the Duke of Wellington (Image 1), frontal, eye level, handheld with a subtle natural sway, the British side of the arena (Image 2) blurred behind him. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His head and shoulders fill the frame. One eyebrow slowly rises, utterly unimpressed, and he gives a tiny dry exhale through his nose.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "R_W_PLATE",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is the Duke of Wellington's face (keep his exact face, hooked nose, curly greying hair and sideburns, front-to-back black bicorne, scarlet field marshal's coat with gold epaulettes, white cravat). Image 2 is the British side of the arena behind Wellington (Union flags, scarlet colours, stacked muskets, torches).\n\nCinematic photoreal shot, 16:9. Close-up of the Duke of Wellington (Image 1), frontal, eye level, handheld with a subtle natural sway, the British side of the arena (Image 2) blurred behind him. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He slowly taps his closed brass spyglass against his palm, bored, eyes half-lidded.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "R_W_SURVIVED",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is the Duke of Wellington's face (keep his exact face, hooked nose, curly greying hair and sideburns, front-to-back black bicorne, scarlet field marshal's coat with gold epaulettes, white cravat). Image 2 is the British side of the arena behind Wellington (Union flags, scarlet colours, stacked muskets, torches).\n\nCinematic photoreal shot, 16:9. Close-up of the Duke of Wellington (Image 1), frontal, eye level, handheld with a subtle natural sway, the British side of the arena (Image 2) blurred behind him. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His jaw tightens and he stares straight back, cold and unblinking.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "R_W_FLUKE",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is the Duke of Wellington's face (keep his exact face, hooked nose, curly greying hair and sideburns, front-to-back black bicorne, scarlet field marshal's coat with gold epaulettes, white cravat). Image 2 is the British side of the arena behind Wellington (Union flags, scarlet colours, stacked muskets, torches).\n\nCinematic photoreal shot, 16:9. Close-up of the Duke of Wellington (Image 1), frontal, eye level, handheld with a subtle natural sway, the British side of the arena (Image 2) blurred behind him. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He scoffs silently, a thin cold smile at one corner of his pressed lips. His hands stay low, out of frame.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "R_N_SUNSET",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest). Image 2 is the French side of the arena behind Napoleon (tricolour banners, golden eagle standards, torches).\n\nCinematic photoreal shot, 16:9. Close-up of Napoleon Bonaparte (Image 1), frontal, eye level, handheld with a subtle natural sway, the French side of the arena (Image 2) blurred behind him. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His nostrils flare and his jaw clenches, eyes narrowing in fury.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "R_N_WINTER",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest). Image 2 is the French side of the arena behind Napoleon (tricolour banners, golden eagle standards, torches).\n\nCinematic photoreal shot, 16:9. Close-up of Napoleon Bonaparte (Image 1), frontal, eye level, handheld with a subtle natural sway, the French side of the arena (Image 2) blurred behind him. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. For a moment his face falls and his eyes drop, then he looks back up, hard and proud.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "R_N_CROWN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest). Image 2 is the French side of the arena behind Napoleon (tricolour banners, golden eagle standards, torches).\n\nCinematic photoreal shot, 16:9. Close-up of Napoleon Bonaparte (Image 1), frontal, eye level, handheld with a subtle natural sway, the French side of the arena (Image 2) blurred behind him. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He grips his golden laurel wreath tighter against his chest, glaring furiously.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "R_N_STARE",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest). Image 2 is the French side of the arena behind Napoleon (tricolour banners, golden eagle standards, torches).\n\nCinematic photoreal shot, 16:9. Close-up of Napoleon Bonaparte (Image 1), frontal, eye level, handheld with a subtle natural sway, the French side of the arena (Image 2) blurred behind him. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He grimaces in disgust and looks away, shaking his head.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "R_N_FIGLEAF",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest). Image 2 is the French side of the arena behind Napoleon (tricolour banners, golden eagle standards, torches).\n\nCinematic photoreal shot, 16:9. Close-up of Napoleon Bonaparte (Image 1), frontal, eye level, handheld with a subtle natural sway, the French side of the arena (Image 2) blurred behind him. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His face flushes red with outrage, eyes wide, and he jabs a finger toward the lens while the crowd behind him bursts out laughing.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "R_W_GAP",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is the Duke of Wellington's face (keep his exact face, hooked nose, curly greying hair and sideburns, front-to-back black bicorne, scarlet field marshal's coat with gold epaulettes, white cravat). Image 2 is the British side of the arena behind Wellington (Union flags, scarlet colours, stacked muskets, torches).\n\nCinematic photoreal shot, 16:9. Close-up of the Duke of Wellington (Image 1), frontal, eye level, handheld with a subtle natural sway, the British side of the arena (Image 2) blurred behind him. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He calmly extends his brass spyglass, raises it to one eye toward the lens, then lowers it with a dry smirk.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "WIDE_OPEN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest). Image 2 is the Duke of Wellington's face (keep his exact face, hooked nose, curly greying hair and sideburns, front-to-back black bicorne, scarlet field marshal's coat with gold epaulettes, white cravat).\n\nCinematic photoreal shot, 16:9. Extreme wide establishing shot from high above the courtyard: the camera cranes slowly down through drifting cannon smoke, revealing the whole torchlit farm courtyard packed with soldiers, the cold white spotlight on the circular stage where Napoleon Bonaparte (Image 1) on the left and the Duke of Wellington (Image 2) on the right face off as small full-body figures, French tricolours and golden eagles on the left, British flags on the right, hundreds of raised fists around the stage.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark.",
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "FACEOFF_OPEN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest). Image 2 is the Duke of Wellington's face (keep his exact face, hooked nose, curly greying hair and sideburns, front-to-back black bicorne, scarlet field marshal's coat with gold epaulettes, white cravat).\n\nCinematic photoreal shot, 16:9. Tight eye-level profile two-shot, handheld with a subtle sway: Napoleon Bonaparte (Image 1) on screen-left facing right and the Duke of Wellington (Image 2) on screen-right facing left stand face to face, almost nose to nose, staring each other down in silence, mouths closed, smoke drifting through the spotlight between them; Napoleon holds his golden laurel wreath low, Wellington his brass spyglass.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "FACEOFF_MID",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest). Image 2 is the Duke of Wellington's face (keep his exact face, hooked nose, curly greying hair and sideburns, front-to-back black bicorne, scarlet field marshal's coat with gold epaulettes, white cravat).\n\nCinematic photoreal shot, 16:9. Medium two-shot at eye level, handheld, slowly circling: Napoleon Bonaparte (Image 1) on the left and the Duke of Wellington (Image 2) on the right pace slowly around each other in the spotlit circle like boxers between rounds, never breaking eye contact, mouths closed, the crowd roaring beyond the circle; Napoleon holds his golden laurel wreath, Wellington his brass spyglass.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "CROWD_OOH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the crowd of 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers.\n\nCinematic photoreal shot, 16:9. Close medium shot packed with four or five soldiers and villagers from the front row (Image 1), their faces large and filling the 16:9 frame, handheld camera at their eye level, the spotlit stage only a blurred glow behind them. They react to a brutal punchline: one claps both hands over his mouth, a grenadier grabs his bearskin hat with wide eyes, a redcoat doubles over laughing and shoves his friend. Energetic, joyful chaos.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "CROWD_CHANT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the crowd of 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers.\n\nCinematic photoreal shot, 16:9. Close medium shot of the front rows of the crowd (Image 1), handheld at their eye level, faces large and lit by torchlight: French grenadiers, British redcoats and villagers chant together with their fists pumping in rhythm, mouths wide open, sweat and smoke, the spotlight glowing behind them. The camera drifts sideways along this front row and stays on their faces from the first frame to the last; the stage is behind the camera.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "DJ",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "dj"
+  ],
+  "prompt": "Image 1 is the DJ, a young man in a short blue drummer-boy military jacket with headphones, at his turntables built on a bronze field cannon and powder barrels.\n\nCinematic photoreal shot, 16:9. Medium shot from a slightly low angle of the DJ (Image 1) at his raised booth built on a bronze field cannon and powder barrels, scratching a record with one hand and pointing at the crowd with the other, the crowd behind and below him punching the air in rhythm, torchlight and smoke.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "B_STEP",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is the Duke of Wellington's face (keep his exact face, hooked nose, curly greying hair and sideburns, front-to-back black bicorne, scarlet field marshal's coat with gold epaulettes, white cravat).\n\nCinematic photoreal shot, 16:9. The camera swings in from his side and settles into a frontal medium shot at eye level as the Duke of Wellington (Image 1) steps forward into the cold spotlight on the right side of the stage, calmly tugs his white cuffs straight and snaps his brass spyglass shut. Mouth closed, cold confident stare into the lens. He is alone on the stage: behind him only the British flags and the crowd beyond the edge of the circle.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "A_STEP",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean"
+  ],
+  "prompt": "Image 1 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest).\n\nCinematic photoreal shot, 16:9. The camera swings in from his side and settles into a frontal medium shot at eye level as Napoleon Bonaparte (Image 1) strides forward into the cold spotlight on the left side of the stage and raises his golden laurel wreath high above his head as the crowd roars. Mouth closed, fierce glare into the lens.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "WIDE_HIGH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest). Image 2 is the Duke of Wellington's face (keep his exact face, hooked nose, curly greying hair and sideburns, front-to-back black bicorne, scarlet field marshal's coat with gold epaulettes, white cravat).\n\nCinematic photoreal shot, 16:9. High wide shot from the top of the stone courtyard wall looking down over the whole arena, handheld: the entire crowd jumps and punches the air chanting, the spotlit circular stage in the middle with Napoleon Bonaparte (Image 1) on its left edge and the Duke of Wellington (Image 2) on its right edge, the DJ booth on its bronze cannon behind, haze drifting through the spotlight beam.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark.",
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "WIDE_OUTRO",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean"
+  ],
+  "prompt": "Image 1 is the Duke of Wellington's face (keep his exact face, hooked nose, curly greying hair and sideburns, front-to-back black bicorne, scarlet field marshal's coat with gold epaulettes, white cravat). Image 2 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest).\n\nCinematic photoreal shot, 16:9. Wide shot from behind the Duke of Wellington (Image 1) on the right side of the stage, handheld at shoulder height: seen from behind, he raises his brass spyglass high in his right hand like a trophy as the whole packed courtyard chants and pumps their fists toward him, British flags waving; Napoleon Bonaparte (Image 2) is a small figure at the far left edge of the stage clutching his golden laurel wreath and turning away.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark.",
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "R_N_END",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest). Image 2 is the French side of the arena behind Napoleon (tricolour banners, golden eagle standards, torches).\n\nCinematic photoreal shot, 16:9. Medium close-up of Napoleon Bonaparte (Image 1), handheld, the French side of the arena (Image 2) behind him: mouth closed, he lets his golden laurel wreath drop onto the straw at his feet and turns his back on the light.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "END",
+  "kind": "still",
+  "move": "V2",
+  "frames": 90,
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean"
+  ],
+  "prompt": "Image 1 is the Duke of Wellington's face (keep his exact face, hooked nose, curly greying hair and sideburns, front-to-back black bicorne, scarlet field marshal's coat with gold epaulettes, white cravat). Image 2 is Napoleon Bonaparte's face (keep his exact face, sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest).\n\nCinematic photoreal shot, 16:9. Medium shot at eye level in the spotlit circle, slow push-in: the Duke of Wellington (Image 1) stands victorious on the right and spreads his arms wide, spyglass in one hand, the crowd roaring beyond the circle. In the dark background on the left, Napoleon Bonaparte (Image 2) walks out of the light. Mouths closed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same cold spotlight beam from above as the key light, 35-50mm lens look. Setting: the walled courtyard of Hougoumont farm at Waterloo in 1815 at dusk turned into an underground rap battle arena, rough stone farm walls, drifting cannon smoke, flaming torches; on the left side French tricolour banners and golden imperial eagle standards with blue-and-gold drums, on the right side British Union flags and scarlet regimental colours with stacked muskets, a raised DJ booth built on a bronze field cannon and wooden powder barrels in the center background, with a cold white-blue spotlight beam cutting through thick cannon smoke onto the circular stage. The crowd are 1815 soldiers of both armies, French grenadiers in tall bearskin hats and blue coats and British redcoat infantry in black shakos, mixed with Belgian farm villagers. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm orange torchlight against the cold blue-white spotlight, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some soldiers jumping and waving their hats.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Napoleon's golden laurel wreath is always a simple open circlet of gleaming golden laurel leaves like a Roman emperor's victory wreath, held in the hand, not worn; no jewels, no gems, no spikes, never a royal crown. Wellington's brass spyglass telescope is always a long extended brass naval spyglass telescope with leather grip. The golden laurel wreath belongs only to Napoleon, the spyglass only to Wellington. Napoleon always stands on the left side of the stage with the French flags behind him, Wellington on the right with the British flags behind him. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ }
+]

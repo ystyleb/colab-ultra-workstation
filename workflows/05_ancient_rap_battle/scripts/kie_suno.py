@@ -124,6 +124,9 @@ def build_suno_lyrics(e: dict) -> str:
 
 
 def build_suno_style(e: dict) -> str:
+    # 每集的配器/氛围不同（电流之战用电弧声，滑铁卢用军鼓），episode.json 里写了就用它的
+    if e.get("suno_style"):
+        return e["suno_style"]
     if e.get("language") == "en":
         return (
             "English battle rap, classic old school boom bap, 95 BPM, dark cinematic steampunk, "
@@ -478,6 +481,14 @@ def main():
         })
 
     jsave(os.path.join(work, "lines.json"), lines)
+    # 词级时间轴（剪辑时间，含 [段落标签] 和观众喊词）：分镜脚本的「唱完才切」断言、assemble.py 的甩镜避让都读它
+    # Suno 会把段落标签和下一个词粘成一个 token（"[Crowd reacts]\nOOOH!"），只留换行后的词，否则全大写判断认不出观众喊词
+    def _tok(s: str) -> str:
+        s = s.strip()
+        return s.rsplit("\n", 1)[1].strip() if "]" in s and "\n" in s else s
+    words_edit = [{"w": _tok(w["word"]), "t0": round(w["startS"] - trim_start, 3), "t1": round(w["endS"] - trim_start, 3)}
+                  for w in best_tr.get("alignedWords", []) if w.get("word", "").strip() and w["startS"] >= trim_start]
+    jsave(os.path.join(work, "words_edit.json"), words_edit)
     verse_a_start = lines[0]["start"]
     verse_a_end = max(l["end"] for l in lines if l["who"] == "a")
     verse_b_start = next(l["start"] for l in lines if l["who"] == "b" and l["n"] == 1)

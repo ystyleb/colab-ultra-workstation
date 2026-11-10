@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 13,
+  "text": "Canova carved you naked, marble, eleven feet tall",
+  "start": 0.35,
+  "end": 2.839,
+  "bar": 92.451,
+  "heard": "Canova carved you naked, marble, eleven feet tall",
+  "orig_start": 107.574,
+  "orig_bar": 107.574
+ },
+ {
+  "who": "b",
+  "n": 14,
+  "text": "Now you stand in my stairwell with a fig leaf in my hall",
+  "start": 2.889,
+  "end": 5.433,
+  "bar": 94.99,
+  "heard": "Now you stand in my stairwell with a fig leaf in my hall",
+  "orig_start": 110.113,
+  "orig_bar": 110.113
+ },
+ {
+  "who": "b",
+  "n": 15,
+  "text": "Two hundred years later, the world still has a word for you",
+  "start": 5.483,
+  "end": 8.235,
+  "bar": 97.584,
+  "heard": "Two hundred years later, the world still has a word for you",
+  "orig_start": 112.707,
+  "orig_bar": 112.707
+ },
+ {
+  "who": "b",
+  "n": 16,
+  "text": "Lose it all, and people say you met your Waterloo",
+  "start": 8.284,
+  "end": 10.83,
+  "bar": 100.385,
+  "heard": "Lose it all, and people say you met your Waterloo",
+  "orig_start": 115.508,
+  "orig_bar": 115.508
+ }
+]

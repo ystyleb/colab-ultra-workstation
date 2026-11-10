@@ -1,0 +1,102 @@
+[
+ {
+  "id": "A11",
+  "kind": "rap",
+  "who": "a",
+  "line": 11,
+  "move": "FULL",
+  "text": "\"Nearest-run thing you ever saw\" — your own words, Duke",
+  "audio": [
+   0.27,
+   3.033
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "pinching his thumb and finger almost together, sneering, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A12",
+  "kind": "rap",
+  "who": "a",
+  "line": 12,
+  "move": "FULL",
+  "text": "Your \"scum of the earth\" soldiers won you that fluke",
+  "audio": [
+   2.991,
+   5.59
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "flicking imaginary dirt off his shoulder with disgust, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A13",
+  "kind": "rap",
+  "who": "a",
+  "line": 13,
+  "move": "FULL",
+  "text": "Your own people smashed your windows when you blocked reform",
+  "audio": [
+   5.55,
+   8.302
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "miming throwing a stone, then flinching with a mocking laugh, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A14",
+  "kind": "rap",
+  "who": "a",
+  "line": 14,
+  "move": "FULL",
+  "text": "Iron shutters — that's how the \"Iron Duke\" was born",
+  "audio": [
+   8.272,
+   10.741
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "knocking his knuckles on the air as if rapping on iron, smirking, the golden laurel wreath stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera with a subtle natural sway starts on a vertical waist-up shot at eye level and gently creeps closer to a head-and-shoulders close-up, his face and lips large in the upper half of the tall 9:16 frame from the first frame",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 1,
+  "text": "Breakfast? Then why'd you wait till noon to fire a gun?",
+  "start": 0.35,
+  "end": 2.965,
+  "bar": 28.281,
+  "heard": "Breakfast? Then why'd you wait till noon to fire a gun?",
+  "orig_start": 43.404,
+  "orig_bar": 43.404
+ },
+ {
+  "who": "b",
+  "n": 2,
+  "text": "Waiting on the mud to dry — by sunset, you were done",
+  "start": 3.011,
+  "end": 5.283,
+  "bar": 30.942,
+  "heard": "Waiting on the mud to dry by sunset, you were done",
+  "orig_start": 46.065,
+  "orig_bar": 46.065
+ },
+ {
+  "who": "b",
+  "n": 3,
+  "text": "Six hundred thousand marched to Moscow, proud and fed",
+  "start": 5.333,
+  "end": 8.009,
+  "bar": 33.264,
+  "heard": "Six hundred thousand marched to Moscow, proud and fed",
+  "orig_start": 48.387,
+  "orig_bar": 48.387
+ },
+ {
+  "who": "b",
+  "n": 4,
+  "text": "Count the men who made it home — the winter kept the dead",
+  "start": 8.059,
+  "end": 10.5,
+  "bar": 35.99,
+  "heard": "Count the men who made it home the winter kept the dead",
+  "orig_start": 51.113,
+  "orig_bar": 51.113
+ }
+]

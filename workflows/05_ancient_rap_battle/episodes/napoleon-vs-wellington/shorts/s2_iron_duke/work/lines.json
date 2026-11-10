@@ -1,0 +1,46 @@
+[
+ {
+  "who": "a",
+  "n": 11,
+  "text": "\"Nearest-run thing you ever saw\" — your own words, Duke",
+  "start": 0.35,
+  "end": 3.033,
+  "bar": 63.98,
+  "heard": "Nearest-run thing you ever saw\" your own words, Duke",
+  "orig_start": 79.103,
+  "orig_bar": 79.103
+ },
+ {
+  "who": "a",
+  "n": 12,
+  "text": "Your \"scum of the earth\" soldiers won you that fluke",
+  "start": 3.071,
+  "end": 5.59,
+  "bar": 66.701,
+  "heard": "Your scum of the earth\" soldiers won you that fluke",
+  "orig_start": 81.824,
+  "orig_bar": 81.824
+ },
+ {
+  "who": "a",
+  "n": 13,
+  "text": "Your own people smashed your windows when you blocked reform",
+  "start": 5.63,
+  "end": 8.302,
+  "bar": 69.26,
+  "heard": "Your own people smashed your windows when you blocked reform",
+  "orig_start": 84.383,
+  "orig_bar": 84.383
+ },
+ {
+  "who": "a",
+  "n": 14,
+  "text": "Iron shutters — that's how the \"Iron Duke\" was born",
+  "start": 8.352,
+  "end": 10.741,
+  "bar": 71.982,
+  "heard": "Iron shutters that's how the Iron Duke\" was born",
+  "orig_start": 87.105,
+  "orig_bar": 87.105
+ }
+]

@@ -125,10 +125,13 @@ def thumbnail(out, ep, name, left, right, tagline):
     shade.putalpha(grad.resize((W, H)))
     img.alpha_composite(shade)
     y = int(H * 0.74)
-    fl, fv = bebas(176), bebas(150)
     d = ImageDraw.Draw(img)
-    wl, wv, wr = (d.textlength(t, font=f) for t, f in ((left, fl), ("VS", fv), (right, fl)))
     gap = 26
+    # long names (NAPOLEON / WELLINGTON) shrink to fit 92% of the width; short ones keep the full size
+    full = sum(d.textlength(t, font=f) for t, f in ((left, bebas(176)), ("VS", bebas(150)), (right, bebas(176)))) + 2 * gap
+    s = min(1.0, W * 0.92 / full)
+    fl, fv = bebas(int(176 * s)), bebas(int(150 * s))
+    wl, wv, wr = (d.textlength(t, font=f) for t, f in ((left, fl), ("VS", fv), (right, fl)))
     x = (W - (wl + wv + wr + 2 * gap)) / 2
     text_shadow(img, (x, y), left, fl, GOLD, anchor="ls", off=(6, 6), glow=10)
     text_shadow(img, (x + wl + gap, y - 8), "VS", fv, ORANGE, anchor="ls", off=(5, 5), shadow=BG, glow=10)

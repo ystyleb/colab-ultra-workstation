@@ -38,6 +38,9 @@
    - `lyrics` + `notes`：两回合，每人每回合 8 句，每句一小节；每句配史实注释，传说和单方说法要标明
    - `structure`：intro → A1-8 → crowd → B1-8 → crowd → A9-16 → crowd → B9-16 → outro
    - 英文频道固定：`"show_notes": false`、`"disclaimer": "AI-GENERATED · FOR ENTERTAINMENT"`、`"end_question": "NEXT BATTLE|WHO DO YOU WANT TO SEE?"`、`"name_card_lines": 1`
+   - 每集的场景风格（第 2 集起）：`suno_style`（曲风/配器）、`light_en`（光线）、`arena_sound_en`、`crowd_motion_en`（台下观众怎么跟着音乐动）。不写就用第 1 集的默认值
+   - **两人固定站位**：A 永远在左、B 永远在右，`venue_en` 里左边只放 A 的元素、右边只放 B 的元素
+   - **道具名就是提示词**：避开会把模型带偏的词（「laurel-leaf crown」被画成镶宝石王冠，改成「laurel wreath」才对）
 3. `line_actions.json`：32 句每句一个手势/动作（英文短语）。
 4. 写 `歌词_完整版.md` 给用户确认。**歌词里避开像制作人署名的词**（如 "fifty grand"），Suno 会拒收。
 
@@ -50,18 +53,29 @@ python3 scripts/kie_suno.py episodes/<ep> --reuse  # 只重算双声线 / lines.
 
 检查：
 - `work/lines.json` 有 32 句，每句的 `start/end` 合理（一小节约 2.5 秒）
-- Suno 可能跳过写好的观众段，导致上一个词被拉长（第 1 集 A16 的 "for?" 拉到 2.9 秒）。这种情况镜头保持在歌手身上，不要切走
+- `work/words_edit.json`（词级时间轴）由脚本自动写出，分镜断言和甩镜避让都靠它
+- Suno 可能跳过写好的观众段，导致上一个词被拉长（第 1 集 A16 的 "for?" 拉到 2.9 秒，第 2 集 A16 的 "blood" 拉到 3.3 秒，都是第四段前那个 OOOH）。这种情况镜头保持在歌手身上，不要切走
 
 ## 3. 参考图
 
-- `refs/a_face.png`、`b_face.png`（2×2 脸部四宫格）、`venue.png`（擂台全景，左边是 A 的元素、右边是 B 的）、`crowd.png`、`dj.png`
-- **脸部参考图里不能有麦克风或道具**：用 `work/a_face_clean.png` / `b_face_clean.png`（从四宫格裁出右上那一格）
+- 用 Codex 生图（0 CCU，5 张并行约 10 分钟），提示词存在剧集的 `ref_prompts/*.txt`，照第 2 集改：
+  `codex exec --skip-git-repo-check -C /tmp/<ep>_refs/<name> -s workspace-write -o last.txt "$(cat ref_prompts/<name>.txt)" < /dev/null`
+- 人像直接生成 1024 见方的**单张无麦无道具**胸像，存成 `work/a_face_clean.png` / `b_face_clean.png`（也复制一份到 `refs/a_face.png`）。第 1 集是 2×2 四宫格裁出 512 小图放大，画质差
+- `refs/venue.png`（擂台全景，左边是 A 的元素、右边是 B 的）、`crowd.png`、`dj.png`，都是 1344×768
 - 统一背景：从 `venue.png` 左右各裁一块 768×768，作为 `work/stage_a.png` / `stage_b.png`
 - `work/*.png` 被 gitignore，提交时要用 `git add -f`
 
-## 4. 分镜（`episodes/<ep>/build_storyboard_*.py`）
+## 4. 分镜（`episodes/<ep>/build_storyboard*.py`）
 
-以 `edison-vs-tesla-full/build_storyboard_full.py` 为模板，规则：
+第 2 集起以 `napoleon-vs-wellington/build_storyboard.py` 为模板（逐句指定机位，见 `对标分析_曹操VS刘备.md`）：
+
+- **后半句切对手反应（L-cut）**：每回合 2～3 句在指定词处切到对手的反应特写，声音继续；歌手至少留 0.9 秒。反应镜头入点 1.15 秒（H3 开头约 1 秒是摆拍远景）
+- **面对面对峙双人（FACE）**：用 `listener_side` 让听的人留在自己固定的那一侧
+- **两句一镜的慢推长镜头（LONG）**、**广角推到贴脸（ECU，`lens`）**：节奏长短交替，镜头中位数约 1.8 秒
+- **远景不给场景参考图**：只要喂了 `venue.png` / 半边背景图，H3 就把图里的观众照抄成静止画面（观众帧间差 1.36，不给图 5.07）。近景保留半边背景图保证一致
+- 非口型镜头全部在脚本里写提示词（`still()`），不依赖旧剧集的 clips.json
+
+以下是第 1 集定下、仍然有效的规则：
 
 - **每句一个口型镜头，唱完才切**：切点取「下一句开口前 0.08 秒」和「本句最后一个词结束后 0.02 秒」中较晚的那个；脚本里有断言兜底
 - **机位每回合轮换**：CU、¾ 左、仰拍、越肩双人、CU、¾ 右、仰拍、CU；所有口型镜头带手持环绕（`HAND`）
@@ -152,7 +166,10 @@ ffmpeg -i final/<title>_成片.mp4 -vf "scale=1920:1097:flags=lanczos,crop=1920:
 
 **Shorts**（每条）
 - 标题带 `#shorts`，简介首行引导看完整版，同样的 AI 声明和链接
-- 发布后到编辑页：上传竖版封面、「相关视频」设为本集长视频、保存
+- 竖版封面在上传向导「详细信息 → 缩略图 → 上传文件」里直接传
+- 发布后到编辑页：「相关视频」设为本集长视频、保存
+
+弹出「我们仍在检查你的内容」时，原创内容点「仍然发布」即可。长视频上传慢（270 MB 约 30 分钟），可以同时在第二个标签页传 Shorts。
 
 **发布后必须核实**：抓公开播放页，`playabilityStatus` 为 `OK`、`isPrivate` 为 `false` 才算公开（`LOGIN_REQUIRED` = 还是私享草稿）。上传向导里给了链接不代表已发布。
 

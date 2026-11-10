@@ -1,0 +1,102 @@
+[
+ {
+  "id": "B13",
+  "kind": "rap",
+  "who": "b",
+  "line": 13,
+  "move": "FULL",
+  "text": "Canova carved you naked, marble, eleven feet tall",
+  "audio": [
+   0.27,
+   2.839
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "tracing a tall figure in the air with the spyglass, eyebrows raised, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B14",
+  "kind": "rap",
+  "who": "b",
+  "line": 14,
+  "move": "FULL",
+  "text": "Now you stand in my stairwell with a fig leaf in my hall",
+  "audio": [
+   2.809,
+   5.433
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "covering his smirk with his hand, trying not to laugh, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B15",
+  "kind": "rap",
+  "who": "b",
+  "line": 15,
+  "move": "FULL",
+  "text": "Two hundred years later, the world still has a word for you",
+  "audio": [
+   5.403,
+   8.235
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "pointing the brass spyglass straight at the camera like a verdict, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B16",
+  "kind": "rap",
+  "who": "b",
+  "line": 16,
+  "move": "FULL",
+  "text": "Lose it all, and people say you met your Waterloo",
+  "audio": [
+   8.204,
+   10.831
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "leaning into the lens with a cold, final smile, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera with a subtle natural sway starts on a vertical waist-up shot at eye level and gently creeps closer to a head-and-shoulders close-up, his face and lips large in the upper half of the tall 9:16 frame from the first frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

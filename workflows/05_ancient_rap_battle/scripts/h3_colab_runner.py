@@ -122,6 +122,9 @@ def _adapt_prompt(c: dict, e: dict, total_dur: float, mic: str, static_cam: bool
         mic_detail = ("holding the silver corded microphone in his right hand at upper-chest height a few inches below his chin "
                       "(completely clear of his face so his mouth, lips, and jaw are 100% unobstructed and visible)")
     venue_desc = e.get("venue_en", "an 1890s industrial power plant rap battle arena")
+    # 每集的光线不同（第 1 集电灯 + 电弧，第 2 集火把 + 冷光柱）；默认值保持第 1 集原样
+    crowd_motion = e.get("crowd_motion_en", "")  # 填了才生效；第 1 集没有这个字段，行为不变
+    light_desc = e.get("light_en", "dramatic low-key 1890s spotlighting with warm amber glow against cool electric blue haze")
     action_desc = c.get("action") or "fierce and confident, his free hand chopping the air on the beat"
     move = c.get("move", "M3")
 
@@ -149,24 +152,34 @@ def _adapt_prompt(c: dict, e: dict, total_dur: float, mic: str, static_cam: bool
         f"<Subject 1> is {me['name_en']} ({me['look']}) from <Picture 1>, natural matte skin texture with fine pores."
     ]
     ret_lines = [
-        f"<Subject 1> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial bone structure, hairstyle, moustache, outfit, and {me.get('prop', 'prop')} from <Picture 1>."
+        f"<Subject 1> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial bone structure, hairstyle, facial hair (or lack of it), outfit, and {me.get('prop', 'prop')} from <Picture 1>."
     ]
     if two_shot:
         subj_lines.append(
             f"<Subject 2> is {them['name_en']} ({them['look']}) from <Picture 2>, natural matte skin texture."
         )
         ret_lines.append(
-            f"<Subject 2> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial structure and outfit from <Picture 2>{'' if wide else ' on screen-right'}, keeping his mouth closed in silent listening throughout this clip."
+            f"<Subject 2> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial structure and outfit from <Picture 2>{'' if wide else ' on ' + c.get('listener_side', 'screen-right')}, keeping his mouth closed in silent listening throughout this clip."
         )
     bg_clause = ""
     if c.get("bg"):  # shared stage plate so every shot of this singer sits in the same place of the same arena
         k = c["image_keys"].index(c["bg"]) + 1
         subj_lines.append(f"<Picture {k}> is the arena environment directly behind <Subject 1>: the same set, lights and "
                           f"crowd in every shot of him.")
-        ret_lines.append(f"Background (appears in [Shot 1]): fully_preserved - Keep the exact environment, set dressing, light "
+        if c.get("bg_ref") == "reference":  # 场景图只作参考：布景照搬，观众重新生成动作（fully_preserved 会把观众冻成静图）
+            ret_lines.append(f"Background (appears in [Shot 1]): reference - Use <Picture {k}> only as a reference for the set, "
+                             f"flags, light colours and the costumes of the crowd behind <Subject 1>, "
+                             + ("in deep focus so the whole room reads clearly. " if wide else "softly out of focus with shallow depth of field. ")
+                             + "Every person in the crowd is newly animated and keeps moving to the beat the whole time.")
+        else:
+            ret_lines.append(f"Background (appears in [Shot 1]): fully_preserved - Keep the exact environment, set dressing, light "
                          f"colours and crowd of <Picture {k}> behind <Subject 1>, "
-                         + ("in deep focus so the whole room reads clearly." if wide else "softly out of focus with shallow depth of field."))
+                         + ("in deep focus so the whole room reads clearly." if wide else "softly out of focus with shallow depth of field.")
+                         + (" Preserve how the crowd looks, not its pose: the crowd is alive and keeps moving the whole time, "
+                            "never a frozen still image." if crowd_motion else ""))
         bg_clause = f" The background behind him is the arena from <Picture {k}>" + (", in deep focus." if wide else ", softly out of focus.")
+        if crowd_motion:  # 用户反馈（2026-11-09）：台上唱的时候，台下的人要跟着音乐动起来
+            bg_clause += f" The crowd behind him is never still: {crowd_motion}."
     subj_lines.append(
         f"<Audio 1> is the target rap vocal track for <Subject 1>, providing his exact vocal timbre ({me.get('voice', 'male rapper')}) and syllable-by-syllable rhythm during {ts_start_str}–{ts_end_str}, followed by silence."
     )
@@ -184,15 +197,15 @@ def _adapt_prompt(c: dict, e: dict, total_dur: float, mic: str, static_cam: bool
         "subject_definitions:\n"
         + "\n".join(subj_lines)
         + "\n\nsummary:\n"
-        + f"[reference generation + audio reuse] Inside {venue_desc}, <Subject 1> performs an energetic {lang_tag} battle-rap line synced syllable-by-syllable to <Audio 1>, {mic_summary}{listener_clause}.\n\n"
+        + f"[reference generation + audio reuse] Inside {venue_desc}, <Subject 1> performs an energetic {lang_tag} battle-rap line synced syllable-by-syllable to <Audio 1>, {mic_summary}{listener_clause}{(', while ' + crowd_motion) if crowd_motion else ''}.\n\n"
         + "retention_analysis:\n"
         + "\n".join(ret_lines)
         + "\n\ndetailed_description:\n"
-        + f"[Shot 1] r34l1sm, Facial Realism, realistic ARRI Alexa Mini LF 50mm lens cinematography, Kodak Vision3 500T film look, natural soft matte skin texture with fine pores, zero oily shine, dramatic low-key 1890s spotlighting with warm amber glow against cool electric blue haze. {cam_desc}.{bg_clause} "
+        + f"[Shot 1] r34l1sm, Facial Realism, realistic ARRI Alexa Mini LF {c.get('lens', '50mm')} lens cinematography, Kodak Vision3 500T film look, natural soft matte skin texture with fine pores, zero oily shine, {light_desc}. {cam_desc}.{bg_clause} "
         + f"During {ts_start_str}–{ts_end_str}, {mic_detail}, <Subject 1> raps {'out toward the arena' if wide else 'directly into the camera'} with lively, unmistakable syllable-by-syllable lip-sync and expressive jaw articulation matching <Audio 1>, {action_desc}{listener_clause}: <d>[{lang_tag}]{c['text']}</d> "
         + f"Immediately during {ts_end_str}–{ts_total_str}, <Subject 1> closes his mouth naturally and holds a fierce, confident stare {'at his opponent' if wide else 'into the lens'}{listener_clause}. No subtitles, no on-screen text.\n\n"
         + "overall_soundscape:\n"
-        + f"Clear, punchy foreground rap vocal performance from <Subject 1> during {ts_start_str}–{ts_end_str} synced 1:1 to <Audio 1> in an underground industrial arena.\n\n"
+        + f"Clear, punchy foreground rap vocal performance from <Subject 1> during {ts_start_str}–{ts_end_str} synced 1:1 to <Audio 1> in {e.get('arena_sound_en', 'an underground industrial arena')}.\n\n"
         + "non_diegetic_music:\n"
         + "N/A — <Audio 1> is directly reused 1:1 as the target vocal track."
     )

@@ -278,7 +278,10 @@ def main():
         note = ns[l["n"] - 1] if l["n"] - 1 < len(ns) else ""
         sh.lyric(l["text"], note, i).save(os.path.join(tmp, "line_%02d.png" % i))
         last = i + 1 == len(L) or L[i + 1]["who"] != l["who"]
-        layers.append(("line_%02d.png" % i, l["start"] - 0.05, l["end"] + 0.5 if last else L[i + 1]["start"] - 0.07, 0.0))
+        # the last line of a verse lingers 0.5 s, but never into the next rapper's first line when the verses abut
+        nxt = L[i + 1]["start"] - 0.07 if i + 1 < len(L) else None
+        hold = l["end"] + 0.5 if nxt is None else min(l["end"] + 0.5, nxt)
+        layers.append(("line_%02d.png" % i, l["start"] - 0.05, hold if last else nxt, 0.0))
     q = e.get("end_question", "下一场|你想看谁的对决？").split("|")
     sh.end(q[0], q[-1], *([disc] if disc else [])).save(os.path.join(tmp, "end.png"))
     # episode.json "end_card_secs" (default 4.6): shorten it when the outro carries reaction shots of its own

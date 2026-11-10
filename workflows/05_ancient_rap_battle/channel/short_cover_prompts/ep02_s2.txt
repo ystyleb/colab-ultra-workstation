@@ -1,0 +1,9 @@
+Use your image generation tool to create ONE vertical YouTube Shorts cover image (9:16 portrait), then save it in the current directory as cover_s2.png. The final file must be exactly 1080x1920 pixels and FULL-BLEED: the picture must fill the whole canvas edge to edge. Do NOT add black or dark borders, frames or padding; if the generated image is not 9:16, crop/scale it to cover 1080x1920 instead of padding. Do not ask questions; just produce the file.
+
+Base it on the first attached reference frame: keep the SAME man (Napoleon Bonaparte as portrayed in our video: sideways black bicorne with tricolour cockade, grey greatcoat over a dark green uniform with red collar, silver star on his chest, vintage chrome microphone on a stand, golden laurel wreath held in his hand) with the same face, the same fierce defiant glare, and the same background: the torchlit stone farm courtyard of Hougoumont at Waterloo, 1815, at dusk, with drifting cannon smoke, a cold blue-white spotlight beam, French tricolours and British Union flags. Do not invent a different person.
+
+Layout (important text inside the central safe area, away from the top 8% and bottom 20%):
+- Small gold pill badge near the top-left: "AI RAP BATTLE".
+- Upper third: big bold title on TWO LINES, as large as the frame width allows: line 1 "NAPOLEON", line 2 "VS WELLINGTON". NAPOLEON and WELLINGTON in metallic gold (#f5c518) brush-style italic lettering with a dark outline, "VS" in red-orange (#f26a1b). Match the style of the second attached image (a cover from the same series): same title treatment, two-line layout, badge and hook placement.
+- Middle-lower, over the chest area: a punchy hook in heavy white condensed caps with a black outline: "IRON SHUTTERS, DUKE!" (exact spelling).
+- Cinematic high contrast, slight vignette, readable at phone size. No other text, no watermarks, no logos.
