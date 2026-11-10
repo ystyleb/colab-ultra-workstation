@@ -1,0 +1,102 @@
+[
+ {
+  "id": "B13",
+  "kind": "rap",
+  "who": "b",
+  "line": 13,
+  "move": "FULL",
+  "text": "Radio? The Supreme Court finally handed it to me",
+  "audio": [
+   0.27,
+   2.811
+  ],
+  "lead": 0.0,
+  "action": "holding up his palm like taking an oath, then lowering it with a grin, holding his own crackling blue-violet Tesla coil in his left hand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "aspect": "9:16"
+ },
+ {
+  "id": "B14",
+  "kind": "rap",
+  "who": "b",
+  "line": 14,
+  "move": "FULL",
+  "text": "Every outlet on this planet hums at my frequency",
+  "audio": [
+   2.781,
+   5.239
+  ],
+  "lead": 0.0,
+  "action": "touching his ear as if listening to a faint hum, eyes half-closed, the crackling blue-violet Tesla coil stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "aspect": "9:16"
+ },
+ {
+  "id": "B15",
+  "kind": "rap",
+  "who": "b",
+  "line": 15,
+  "move": "FULL",
+  "text": "Physics named a unit after me — the tesla's on the chart",
+  "audio": [
+   5.184,
+   7.865
+  ],
+  "lead": 0.0,
+  "action": "drawing a line in the air like writing on a chart, the crackling blue-violet Tesla coil stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02,
+  "aspect": "9:16"
+ },
+ {
+  "id": "B16",
+  "kind": "rap",
+  "who": "b",
+  "line": 16,
+  "move": "FULL",
+  "text": "And the future drives my name, while you're a footnote in the dark",
+  "audio": [
+   7.835,
+   10.778
+  ],
+  "lead": 0.0,
+  "action": "leaning into the lens with a cold, final smile as lightning arcs flare behind him, the crackling blue-violet Tesla coil stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera with a subtle natural sway starts on a vertical waist-up shot at eye level and gently creeps closer to a head-and-shoulders close-up, his face and lips large in the upper half of the tall 9:16 frame from the first frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0,
+  "aspect": "9:16"
+ }
+]

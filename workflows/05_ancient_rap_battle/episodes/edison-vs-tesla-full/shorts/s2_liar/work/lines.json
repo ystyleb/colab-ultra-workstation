@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 5,
+  "text": "You electrocuted dogs to make the public fear my wire",
+  "start": 0.35,
+  "end": 2.768,
+  "bar": 35.496,
+  "heard": "You electrocuted dogs to make the public fear my wire",
+  "orig_start": 51.011,
+  "orig_bar": 51.011
+ },
+ {
+  "who": "b",
+  "n": 6,
+  "text": "Called the chair \"Westinghoused\" — a showman and a liar",
+  "start": 2.804,
+  "end": 5.361,
+  "bar": 37.95,
+  "heard": "Called the chair Westinghoused\" a showman and a liar",
+  "orig_start": 53.465,
+  "orig_bar": 53.465
+ },
+ {
+  "who": "b",
+  "n": 7,
+  "text": "If you had to find a needle, you'd search every single straw",
+  "start": 5.411,
+  "end": 7.805,
+  "bar": 40.557,
+  "heard": "If you had to find a needle, you'd search every single straw",
+  "orig_start": 56.072,
+  "orig_bar": 56.072
+ },
+ {
+  "who": "b",
+  "n": 8,
+  "text": "A little theory saves you ninety percent — that's the law",
+  "start": 7.855,
+  "end": 11.064,
+  "bar": 43.001,
+  "heard": "A little theory saves you ninety percent that's the law",
+  "orig_start": 58.516,
+  "orig_bar": 58.516
+ }
+]

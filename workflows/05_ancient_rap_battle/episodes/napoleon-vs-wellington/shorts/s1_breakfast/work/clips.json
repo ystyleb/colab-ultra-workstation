@@ -1,0 +1,102 @@
+[
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "FULL",
+  "text": "Breakfast? Then why'd you wait till noon to fire a gun?",
+  "audio": [
+   0.27,
+   2.966
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "glancing at an imaginary pocket watch, one eyebrow raised, deadpan, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B02",
+  "kind": "rap",
+  "who": "b",
+  "line": 2,
+  "move": "FULL",
+  "text": "Waiting on the mud to dry — by sunset, you were done",
+  "audio": [
+   2.931,
+   5.283
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "pointing down at the ground, then waving goodbye with two fingers, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "FULL",
+  "text": "Six hundred thousand marched to Moscow, proud and fed",
+  "audio": [
+   5.253,
+   8.009
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "marching on the spot with stiff exaggerated steps, mocking, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B04",
+  "kind": "rap",
+  "who": "b",
+  "line": 4,
+  "move": "FULL",
+  "text": "Count the men who made it home — the winter kept the dead",
+  "audio": [
+   7.979,
+   10.5
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "rubbing his arms as if freezing, cold stare at the lens, the brass spyglass telescope stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "A handheld camera with a subtle natural sway starts on a vertical waist-up shot at eye level and gently creeps closer to a head-and-shoulders close-up, his face and lips large in the upper half of the tall 9:16 frame from the first frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

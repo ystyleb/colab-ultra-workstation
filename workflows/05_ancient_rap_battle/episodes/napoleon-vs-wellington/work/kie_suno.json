@@ -1,0 +1,4825 @@
+{
+ "taskId": "c0d1521054206c10c9e4fd2c74f4e37f",
+ "tracks": [
+  {
+   "id": "8507e0a7-8c11-46ee-9e22-8b0b26306080",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/8507e0a7-8c11-46ee-9e22-8b0b26306080.mp3",
+   "duration": 148.8,
+   "title": "Napoleon_vs_Wellington",
+   "local_mp3": "/Volumes/WorkData/Workspace/projects/colab-ultra-workstation/workflows/05_ancient_rap_battle/episodes/napoleon-vs-wellington/work/suno_v1.mp3",
+   "alignedWords": [
+    {
+     "word": "[Intro: ",
+     "success": true,
+     "startS": 17.321,
+     "endS": 17.36517,
+     "palign": 0
+    },
+    {
+     "word": "short ",
+     "success": true,
+     "startS": 17.37148,
+     "endS": 17.40303,
+     "palign": 0
+    },
+    {
+     "word": "DJ ",
+     "success": true,
+     "startS": 17.40934,
+     "endS": 17.42196,
+     "palign": 0
+    },
+    {
+     "word": "scratch ",
+     "success": true,
+     "startS": 17.42827,
+     "endS": 17.47244,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 17.47875,
+     "endS": 17.49768,
+     "palign": 0
+    },
+    {
+     "word": "military ",
+     "success": true,
+     "startS": 17.50399,
+     "endS": 17.55447,
+     "palign": 0
+    },
+    {
+     "word": "snare ",
+     "success": true,
+     "startS": 17.56078,
+     "endS": 17.59233,
+     "palign": 0
+    },
+    {
+     "word": "roll]\n\n\n",
+     "success": true,
+     "startS": 17.59864,
+     "endS": 17.64281,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 1: fiery fast tenor male rapper]\nSeventeen ",
+     "success": true,
+     "startS": 17.64912,
+     "endS": 17.952,
+     "palign": 0
+    },
+    {
+     "word": "sixty-nine, ",
+     "success": true,
+     "startS": 18.0348,
+     "endS": 18.6955,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 18.708,
+     "endS": 18.733,
+     "palign": 0
+    },
+    {
+     "word": "world ",
+     "success": true,
+     "startS": 18.7976,
+     "endS": 19.056,
+     "palign": 0
+    },
+    {
+     "word": "got ",
+     "success": true,
+     "startS": 19.10833,
+     "endS": 19.213,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 19.335,
+     "endS": 19.335,
+     "palign": 0
+    },
+    {
+     "word": "brand-new ",
+     "success": true,
+     "startS": 19.3706,
+     "endS": 19.661,
+     "palign": 0
+    },
+    {
+     "word": "king\n",
+     "success": true,
+     "startS": 19.71975,
+     "endS": 19.896,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 19.976,
+     "endS": 19.991,
+     "palign": 0
+    },
+    {
+     "word": "crowned ",
+     "success": true,
+     "startS": 20.0032,
+     "endS": 20.241,
+     "palign": 0
+    },
+    {
+     "word": "myself ",
+     "success": true,
+     "startS": 20.29067,
+     "endS": 20.539,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 20.5975,
+     "endS": 20.656,
+     "palign": 0
+    },
+    {
+     "word": "Notre-Dame, ",
+     "success": true,
+     "startS": 20.69033,
+     "endS": 21.22,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 21.252,
+     "endS": 21.316,
+     "palign": 0
+    },
+    {
+     "word": "Pope ",
+     "success": true,
+     "startS": 21.3445,
+     "endS": 21.793,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 21.8235,
+     "endS": 21.915,
+     "palign": 0
+    },
+    {
+     "word": "blessed ",
+     "success": true,
+     "startS": 21.953,
+     "endS": 22.181,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 22.216,
+     "endS": 22.286,
+     "palign": 0
+    },
+    {
+     "word": "thing\n",
+     "success": true,
+     "startS": 22.366,
+     "endS": 22.7,
+     "palign": 0
+    },
+    {
+     "word": "Three ",
+     "success": true,
+     "startS": 22.7502,
+     "endS": 22.951,
+     "palign": 0
+    },
+    {
+     "word": "emperors ",
+     "success": true,
+     "startS": 22.97133,
+     "endS": 23.434,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 23.5,
+     "endS": 23.566,
+     "palign": 0
+    },
+    {
+     "word": "Austerlitz — ",
+     "success": true,
+     "startS": 23.588,
+     "endS": 24.249,
+     "palign": 0
+    },
+    {
+     "word": "two ",
+     "success": true,
+     "startS": 24.297,
+     "endS": 24.402,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 24.4505,
+     "endS": 24.499,
+     "palign": 0
+    },
+    {
+     "word": "them ",
+     "success": true,
+     "startS": 24.55325,
+     "endS": 24.716,
+     "palign": 0
+    },
+    {
+     "word": "took ",
+     "success": true,
+     "startS": 24.7605,
+     "endS": 24.894,
+     "palign": 0
+    },
+    {
+     "word": "flight\n",
+     "success": true,
+     "startS": 24.956,
+     "endS": 25.266,
+     "palign": 0
+    },
+    {
+     "word": "My ",
+     "success": true,
+     "startS": 25.3445,
+     "endS": 25.423,
+     "palign": 0
+    },
+    {
+     "word": "Code ",
+     "success": true,
+     "startS": 25.49025,
+     "endS": 25.692,
+     "palign": 0
+    },
+    {
+     "word": "still ",
+     "success": true,
+     "startS": 25.7514,
+     "endS": 25.989,
+     "palign": 0
+    },
+    {
+     "word": "writes ",
+     "success": true,
+     "startS": 26.0155,
+     "endS": 26.288,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 26.31567,
+     "endS": 26.371,
+     "palign": 0
+    },
+    {
+     "word": "law ",
+     "success": true,
+     "startS": 26.44033,
+     "endS": 26.579,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 26.612,
+     "endS": 26.645,
+     "palign": 0
+    },
+    {
+     "word": "half ",
+     "success": true,
+     "startS": 26.7235,
+     "endS": 26.959,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 26.96633,
+     "endS": 26.981,
+     "palign": 0
+    },
+    {
+     "word": "world ",
+     "success": true,
+     "startS": 27.0588,
+     "endS": 27.37,
+     "palign": 0
+    },
+    {
+     "word": "tonight\n",
+     "success": true,
+     "startS": 27.447,
+     "endS": 27.909,
+     "palign": 0
+    },
+    {
+     "word": "Your ",
+     "success": true,
+     "startS": 27.93725,
+     "endS": 28.022,
+     "palign": 0
+    },
+    {
+     "word": "troops ",
+     "success": true,
+     "startS": 28.04333,
+     "endS": 28.29,
+     "palign": 0
+    },
+    {
+     "word": "say \"",
+     "success": true,
+     "startS": 28.373,
+     "endS": 28.73225,
+     "palign": 0
+    },
+    {
+     "word": "Old ",
+     "success": true,
+     "startS": 28.7915,
+     "endS": 28.91,
+     "palign": 0
+    },
+    {
+     "word": "Nosey\" — ",
+     "success": true,
+     "startS": 28.978,
+     "endS": 29.38425,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 29.402,
+     "endS": 29.402,
+     "palign": 0
+    },
+    {
+     "word": "say \"",
+     "success": true,
+     "startS": 29.46667,
+     "endS": 29.65625,
+     "palign": 0
+    },
+    {
+     "word": "sepoy ",
+     "success": true,
+     "startS": 29.7165,
+     "endS": 30.216,
+     "palign": 0
+    },
+    {
+     "word": "general\"\n",
+     "success": true,
+     "startS": 30.2808,
+     "endS": 30.9244,
+     "palign": 0
+    },
+    {
+     "word": "Beating ",
+     "success": true,
+     "startS": 30.9598,
+     "endS": 31.212,
+     "palign": 0
+    },
+    {
+     "word": "rajahs ",
+     "success": true,
+     "startS": 31.318,
+     "endS": 31.735,
+     "palign": 0
+    },
+    {
+     "word": "doesn't ",
+     "success": true,
+     "startS": 31.74,
+     "endS": 31.981,
+     "palign": 0
+    },
+    {
+     "word": "make ",
+     "success": true,
+     "startS": 32.03475,
+     "endS": 32.196,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 32.25633,
+     "endS": 32.377,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 32.475,
+     "endS": 32.596,
+     "palign": 0
+    },
+    {
+     "word": "equal\n",
+     "success": true,
+     "startS": 32.663,
+     "endS": 33.028,
+     "palign": 0
+    },
+    {
+     "word": "Sixty ",
+     "success": true,
+     "startS": 33.108,
+     "endS": 33.469,
+     "palign": 0
+    },
+    {
+     "word": "battles ",
+     "success": true,
+     "startS": 33.50186,
+     "endS": 33.699,
+     "palign": 0
+    },
+    {
+     "word": "fought — ",
+     "success": true,
+     "startS": 33.75433,
+     "endS": 34.12567,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 34.173,
+     "endS": 34.184,
+     "palign": 0
+    },
+    {
+     "word": "had ",
+     "success": true,
+     "startS": 34.24433,
+     "endS": 34.365,
+     "palign": 0
+    },
+    {
+     "word": "all ",
+     "success": true,
+     "startS": 34.40433,
+     "endS": 34.483,
+     "palign": 0
+    },
+    {
+     "word": "Europe ",
+     "success": true,
+     "startS": 34.53,
+     "endS": 34.855,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 34.9105,
+     "endS": 34.966,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 35.046,
+     "endS": 35.166,
+     "palign": 0
+    },
+    {
+     "word": "plate\n",
+     "success": true,
+     "startS": 35.2258,
+     "endS": 35.465,
+     "palign": 0
+    },
+    {
+     "word": "You? ",
+     "success": true,
+     "startS": 35.51467,
+     "endS": 35.6265,
+     "palign": 0
+    },
+    {
+     "word": "You're ",
+     "success": true,
+     "startS": 35.639,
+     "endS": 35.804,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 35.8355,
+     "endS": 35.93,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 36.012,
+     "endS": 36.092,
+     "palign": 0
+    },
+    {
+     "word": "breakfast, ",
+     "success": true,
+     "startS": 36.172,
+     "endS": 37.05525,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 37.0945,
+     "endS": 37.173,
+     "palign": 0
+    },
+    {
+     "word": "an ",
+     "success": true,
+     "startS": 37.253,
+     "endS": 37.345,
+     "palign": 0
+    },
+    {
+     "word": "Emperor ",
+     "success": true,
+     "startS": 37.37067,
+     "endS": 37.812,
+     "palign": 0
+    },
+    {
+     "word": "won't ",
+     "success": true,
+     "startS": 37.82,
+     "endS": 37.984,
+     "palign": 0
+    },
+    {
+     "word": "wait\n\n",
+     "success": true,
+     "startS": 38.0145,
+     "endS": 38.122,
+     "palign": 0
+    },
+    {
+     "word": "[Crowd reacts]\nOOOH!\n\n",
+     "success": true,
+     "startS": 38.138,
+     "endS": 43.39266,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 2: cold deep baritone male rapper]\nBreakfast? ",
+     "success": true,
+     "startS": 43.40449,
+     "endS": 44.0174,
+     "palign": 0
+    },
+    {
+     "word": "Then ",
+     "success": true,
+     "startS": 44.0388,
+     "endS": 44.103,
+     "palign": 0
+    },
+    {
+     "word": "why'd ",
+     "success": true,
+     "startS": 44.12167,
+     "endS": 44.309,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 44.34,
+     "endS": 44.402,
+     "palign": 0
+    },
+    {
+     "word": "wait ",
+     "success": true,
+     "startS": 44.4375,
+     "endS": 44.544,
+     "palign": 0
+    },
+    {
+     "word": "till ",
+     "success": true,
+     "startS": 44.58225,
+     "endS": 44.697,
+     "palign": 0
+    },
+    {
+     "word": "noon ",
+     "success": true,
+     "startS": 44.75425,
+     "endS": 44.926,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 44.9635,
+     "endS": 45.001,
+     "palign": 0
+    },
+    {
+     "word": "fire ",
+     "success": true,
+     "startS": 45.094,
+     "endS": 45.376,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 45.456,
+     "endS": 45.497,
+     "palign": 0
+    },
+    {
+     "word": "gun?\n",
+     "success": true,
+     "startS": 45.58433,
+     "endS": 46.01925,
+     "palign": 0
+    },
+    {
+     "word": "Waiting ",
+     "success": true,
+     "startS": 46.0645,
+     "endS": 46.336,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 46.416,
+     "endS": 46.542,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 46.56667,
+     "endS": 46.616,
+     "palign": 0
+    },
+    {
+     "word": "mud ",
+     "success": true,
+     "startS": 46.693,
+     "endS": 46.847,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 46.876,
+     "endS": 46.905,
+     "palign": 0
+    },
+    {
+     "word": "dry — ",
+     "success": true,
+     "startS": 46.985,
+     "endS": 47.2015,
+     "palign": 0
+    },
+    {
+     "word": "by ",
+     "success": true,
+     "startS": 47.21925,
+     "endS": 47.237,
+     "palign": 0
+    },
+    {
+     "word": "sunset, ",
+     "success": true,
+     "startS": 47.32633,
+     "endS": 47.839,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 47.884,
+     "endS": 47.974,
+     "palign": 0
+    },
+    {
+     "word": "were ",
+     "success": true,
+     "startS": 48.004,
+     "endS": 48.094,
+     "palign": 0
+    },
+    {
+     "word": "done\n",
+     "success": true,
+     "startS": 48.14725,
+     "endS": 48.307,
+     "palign": 0
+    },
+    {
+     "word": "Six ",
+     "success": true,
+     "startS": 48.387,
+     "endS": 48.561,
+     "palign": 0
+    },
+    {
+     "word": "hundred ",
+     "success": true,
+     "startS": 48.60514,
+     "endS": 48.87,
+     "palign": 0
+    },
+    {
+     "word": "thousand ",
+     "success": true,
+     "startS": 48.90875,
+     "endS": 49.18,
+     "palign": 0
+    },
+    {
+     "word": "marched ",
+     "success": true,
+     "startS": 49.19767,
+     "endS": 49.471,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 49.523,
+     "endS": 49.575,
+     "palign": 0
+    },
+    {
+     "word": "Moscow, ",
+     "success": true,
+     "startS": 49.62467,
+     "endS": 50.19267,
+     "palign": 0
+    },
+    {
+     "word": "proud ",
+     "success": true,
+     "startS": 50.25833,
+     "endS": 50.521,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 50.551,
+     "endS": 50.611,
+     "palign": 0
+    },
+    {
+     "word": "fed\n",
+     "success": true,
+     "startS": 50.71233,
+     "endS": 51.052,
+     "palign": 0
+    },
+    {
+     "word": "Count ",
+     "success": true,
+     "startS": 51.1128,
+     "endS": 51.356,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 51.37833,
+     "endS": 51.423,
+     "palign": 0
+    },
+    {
+     "word": "men ",
+     "success": true,
+     "startS": 51.49367,
+     "endS": 51.635,
+     "palign": 0
+    },
+    {
+     "word": "who ",
+     "success": true,
+     "startS": 51.66867,
+     "endS": 51.736,
+     "palign": 0
+    },
+    {
+     "word": "made ",
+     "success": true,
+     "startS": 51.796,
+     "endS": 51.976,
+     "palign": 0
+    },
+    {
+     "word": "it ",
+     "success": true,
+     "startS": 52.0315,
+     "endS": 52.087,
+     "palign": 0
+    },
+    {
+     "word": "home — ",
+     "success": true,
+     "startS": 52.1405,
+     "endS": 52.3354,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 52.3526,
+     "endS": 52.387,
+     "palign": 0
+    },
+    {
+     "word": "winter ",
+     "success": true,
+     "startS": 52.44433,
+     "endS": 52.731,
+     "palign": 0
+    },
+    {
+     "word": "kept ",
+     "success": true,
+     "startS": 52.8115,
+     "endS": 53.08,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 53.11867,
+     "endS": 53.196,
+     "palign": 0
+    },
+    {
+     "word": "dead\n",
+     "success": true,
+     "startS": 53.276,
+     "endS": 53.554,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 53.59867,
+     "endS": 53.688,
+     "palign": 0
+    },
+    {
+     "word": "called ",
+     "success": true,
+     "startS": 53.7325,
+     "endS": 53.955,
+     "palign": 0
+    },
+    {
+     "word": "Spain ",
+     "success": true,
+     "startS": 53.9985,
+     "endS": 54.357,
+     "palign": 0
+    },
+    {
+     "word": "your \"",
+     "success": true,
+     "startS": 54.39875,
+     "endS": 54.57433,
+     "palign": 0
+    },
+    {
+     "word": "ulcer\" — ",
+     "success": true,
+     "startS": 54.62467,
+     "endS": 55.0165,
+     "palign": 0
+    },
+    {
+     "word": "guess ",
+     "success": true,
+     "startS": 55.042,
+     "endS": 55.144,
+     "palign": 0
+    },
+    {
+     "word": "who ",
+     "success": true,
+     "startS": 55.18333,
+     "endS": 55.262,
+     "palign": 0
+    },
+    {
+     "word": "made ",
+     "success": true,
+     "startS": 55.32475,
+     "endS": 55.513,
+     "palign": 0
+    },
+    {
+     "word": "it ",
+     "success": true,
+     "startS": 55.535,
+     "endS": 55.557,
+     "palign": 0
+    },
+    {
+     "word": "bleed?\n",
+     "success": true,
+     "startS": 55.6104,
+     "endS": 55.8346,
+     "palign": 0
+    },
+    {
+     "word": "Your ",
+     "success": true,
+     "startS": 55.8452,
+     "endS": 55.877,
+     "palign": 0
+    },
+    {
+     "word": "marshals ",
+     "success": true,
+     "startS": 55.903,
+     "endS": 56.266,
+     "palign": 0
+    },
+    {
+     "word": "came ",
+     "success": true,
+     "startS": 56.306,
+     "endS": 56.426,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 56.4845,
+     "endS": 56.543,
+     "palign": 0
+    },
+    {
+     "word": "one ",
+     "success": true,
+     "startS": 56.61833,
+     "endS": 56.769,
+     "palign": 0
+    },
+    {
+     "word": "by ",
+     "success": true,
+     "startS": 56.828,
+     "endS": 56.887,
+     "palign": 0
+    },
+    {
+     "word": "one, ",
+     "success": true,
+     "startS": 56.984,
+     "endS": 57.43675,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 57.4705,
+     "endS": 57.538,
+     "palign": 0
+    },
+    {
+     "word": "one ",
+     "success": true,
+     "startS": 57.604,
+     "endS": 57.736,
+     "palign": 0
+    },
+    {
+     "word": "by ",
+     "success": true,
+     "startS": 57.796,
+     "endS": 57.856,
+     "palign": 0
+    },
+    {
+     "word": "one ",
+     "success": true,
+     "startS": 57.936,
+     "endS": 58.114,
+     "palign": 0
+    },
+    {
+     "word": "they'd ",
+     "success": true,
+     "startS": 58.1265,
+     "endS": 58.3692,
+     "palign": 0
+    },
+    {
+     "word": "flee\n\"",
+     "success": true,
+     "startS": 58.4434,
+     "endS": 58.715,
+     "palign": 0
+    },
+    {
+     "word": "Sepoy ",
+     "success": true,
+     "startS": 58.764,
+     "endS": 59.133,
+     "palign": 0
+    },
+    {
+     "word": "general\"? ",
+     "success": true,
+     "startS": 59.1868,
+     "endS": 59.75367,
+     "palign": 0
+    },
+    {
+     "word": "Fine — ",
+     "success": true,
+     "startS": 59.807,
+     "endS": 60.04633,
+     "palign": 0
+    },
+    {
+     "word": "this ",
+     "success": true,
+     "startS": 60.06,
+     "endS": 60.101,
+     "palign": 0
+    },
+    {
+     "word": "sepoy ",
+     "success": true,
+     "startS": 60.159,
+     "endS": 60.468,
+     "palign": 0
+    },
+    {
+     "word": "took ",
+     "success": true,
+     "startS": 60.5025,
+     "endS": 60.606,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 60.672,
+     "endS": 60.804,
+     "palign": 0
+    },
+    {
+     "word": "down\n",
+     "success": true,
+     "startS": 60.884,
+     "endS": 61.194,
+     "palign": 0
+    },
+    {
+     "word": "One ",
+     "success": true,
+     "startS": 61.26733,
+     "endS": 61.414,
+     "palign": 0
+    },
+    {
+     "word": "day ",
+     "success": true,
+     "startS": 61.474,
+     "endS": 61.594,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 61.623,
+     "endS": 61.652,
+     "palign": 0
+    },
+    {
+     "word": "Waterloo — ",
+     "success": true,
+     "startS": 61.7108,
+     "endS": 62.292,
+     "palign": 0
+    },
+    {
+     "word": "so ",
+     "success": true,
+     "startS": 62.3405,
+     "endS": 62.389,
+     "palign": 0
+    },
+    {
+     "word": "long, ",
+     "success": true,
+     "startS": 62.469,
+     "endS": 62.8476,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 62.8632,
+     "endS": 62.91,
+     "palign": 0
+    },
+    {
+     "word": "self-made ",
+     "success": true,
+     "startS": 63.00725,
+     "endS": 63.568,
+     "palign": 0
+    },
+    {
+     "word": "crown\n\n",
+     "success": true,
+     "startS": 63.648,
+     "endS": 64.0173,
+     "palign": 0
+    },
+    {
+     "word": "[Break: crowd chanting]\nROUND ",
+     "success": true,
+     "startS": 64.0266,
+     "endS": 64.287,
+     "palign": 0
+    },
+    {
+     "word": "TWO! ",
+     "success": true,
+     "startS": 64.367,
+     "endS": 66.55467,
+     "palign": 0
+    },
+    {
+     "word": "ROUND ",
+     "success": true,
+     "startS": 66.62133,
+     "endS": 68.69,
+     "palign": 0
+    },
+    {
+     "word": "TWO!\n\n",
+     "success": true,
+     "startS": 68.77,
+     "endS": 74.19343,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3: fiery fast tenor male rapper]\nTook ",
+     "success": true,
+     "startS": 74.19765,
+     "endS": 74.379,
+     "palign": 0
+    },
+    {
+     "word": "me ",
+     "success": true,
+     "startS": 74.457,
+     "endS": 74.535,
+     "palign": 0
+    },
+    {
+     "word": "down? ",
+     "success": true,
+     "startS": 74.5905,
+     "endS": 74.786,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 74.815,
+     "endS": 74.873,
+     "palign": 0
+    },
+    {
+     "word": "prayed ",
+     "success": true,
+     "startS": 74.91117,
+     "endS": 75.102,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 75.15633,
+     "endS": 75.265,
+     "palign": 0
+    },
+    {
+     "word": "night ",
+     "success": true,
+     "startS": 75.32,
+     "endS": 75.54,
+     "palign": 0
+    },
+    {
+     "word": "or ",
+     "success": true,
+     "startS": 75.6145,
+     "endS": 75.689,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 75.71967,
+     "endS": 75.781,
+     "palign": 0
+    },
+    {
+     "word": "Prussians ",
+     "success": true,
+     "startS": 75.8095,
+     "endS": 76.224,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 76.319,
+     "endS": 76.414,
+     "palign": 0
+    },
+    {
+     "word": "arrive\n",
+     "success": true,
+     "startS": 76.46683,
+     "endS": 76.731,
+     "palign": 0
+    },
+    {
+     "word": "They ",
+     "success": true,
+     "startS": 76.75225,
+     "endS": 76.816,
+     "palign": 0
+    },
+    {
+     "word": "hit ",
+     "success": true,
+     "startS": 76.858,
+     "endS": 76.942,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 76.971,
+     "endS": 77.0,
+     "palign": 0
+    },
+    {
+     "word": "flank ",
+     "success": true,
+     "startS": 77.0965,
+     "endS": 77.313,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 77.391,
+     "endS": 77.469,
+     "palign": 0
+    },
+    {
+     "word": "half ",
+     "success": true,
+     "startS": 77.5245,
+     "endS": 77.691,
+     "palign": 0
+    },
+    {
+     "word": "past ",
+     "success": true,
+     "startS": 77.74,
+     "endS": 77.887,
+     "palign": 0
+    },
+    {
+     "word": "four — ",
+     "success": true,
+     "startS": 77.967,
+     "endS": 78.242,
+     "palign": 0
+    },
+    {
+     "word": "that's ",
+     "success": true,
+     "startS": 78.242,
+     "endS": 78.359,
+     "palign": 0
+    },
+    {
+     "word": "how ",
+     "success": true,
+     "startS": 78.41967,
+     "endS": 78.541,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 78.601,
+     "endS": 78.721,
+     "palign": 0
+    },
+    {
+     "word": "survived\n\"",
+     "success": true,
+     "startS": 78.76387,
+     "endS": 79.08333,
+     "palign": 0
+    },
+    {
+     "word": "Nearest-run ",
+     "success": true,
+     "startS": 79.10267,
+     "endS": 79.653,
+     "palign": 0
+    },
+    {
+     "word": "thing ",
+     "success": true,
+     "startS": 79.6942,
+     "endS": 79.859,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 79.92333,
+     "endS": 80.052,
+     "palign": 0
+    },
+    {
+     "word": "ever ",
+     "success": true,
+     "startS": 80.08575,
+     "endS": 80.187,
+     "palign": 0
+    },
+    {
+     "word": "saw\" — ",
+     "success": true,
+     "startS": 80.28267,
+     "endS": 80.63871,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 80.66029,
+     "endS": 80.725,
+     "palign": 0
+    },
+    {
+     "word": "own ",
+     "success": true,
+     "startS": 80.79467,
+     "endS": 80.934,
+     "palign": 0
+    },
+    {
+     "word": "words, ",
+     "success": true,
+     "startS": 81.009,
+     "endS": 81.32133,
+     "palign": 0
+    },
+    {
+     "word": "Duke\n",
+     "success": true,
+     "startS": 81.33367,
+     "endS": 81.786,
+     "palign": 0
+    },
+    {
+     "word": "Your \"",
+     "success": true,
+     "startS": 81.824,
+     "endS": 81.98367,
+     "palign": 0
+    },
+    {
+     "word": "scum ",
+     "success": true,
+     "startS": 82.02933,
+     "endS": 82.29,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 82.364,
+     "endS": 82.438,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 82.49133,
+     "endS": 82.598,
+     "palign": 0
+    },
+    {
+     "word": "earth\" ",
+     "success": true,
+     "startS": 82.6208,
+     "endS": 82.7465,
+     "palign": 0
+    },
+    {
+     "word": "soldiers ",
+     "success": true,
+     "startS": 82.781,
+     "endS": 83.293,
+     "palign": 0
+    },
+    {
+     "word": "won ",
+     "success": true,
+     "startS": 83.373,
+     "endS": 83.569,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 83.641,
+     "endS": 83.785,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 83.81625,
+     "endS": 83.91,
+     "palign": 0
+    },
+    {
+     "word": "fluke\n",
+     "success": true,
+     "startS": 83.95,
+     "endS": 84.343,
+     "palign": 0
+    },
+    {
+     "word": "Your ",
+     "success": true,
+     "startS": 84.38325,
+     "endS": 84.504,
+     "palign": 0
+    },
+    {
+     "word": "own ",
+     "success": true,
+     "startS": 84.584,
+     "endS": 84.791,
+     "palign": 0
+    },
+    {
+     "word": "people ",
+     "success": true,
+     "startS": 84.82083,
+     "endS": 84.97,
+     "palign": 0
+    },
+    {
+     "word": "smashed ",
+     "success": true,
+     "startS": 85.051,
+     "endS": 85.344,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 85.36725,
+     "endS": 85.437,
+     "palign": 0
+    },
+    {
+     "word": "windows ",
+     "success": true,
+     "startS": 85.48986,
+     "endS": 85.807,
+     "palign": 0
+    },
+    {
+     "word": "when ",
+     "success": true,
+     "startS": 85.8345,
+     "endS": 85.917,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 85.9405,
+     "endS": 86.1,
+     "palign": 0
+    },
+    {
+     "word": "blocked ",
+     "success": true,
+     "startS": 86.13633,
+     "endS": 86.406,
+     "palign": 0
+    },
+    {
+     "word": "reform\n",
+     "success": true,
+     "startS": 86.44367,
+     "endS": 87.037,
+     "palign": 0
+    },
+    {
+     "word": "Iron ",
+     "success": true,
+     "startS": 87.10525,
+     "endS": 87.31,
+     "palign": 0
+    },
+    {
+     "word": "shutters — ",
+     "success": true,
+     "startS": 87.362,
+     "endS": 87.85033,
+     "palign": 0
+    },
+    {
+     "word": "that's ",
+     "success": true,
+     "startS": 87.8505,
+     "endS": 88.033,
+     "palign": 0
+    },
+    {
+     "word": "how ",
+     "success": true,
+     "startS": 88.088,
+     "endS": 88.198,
+     "palign": 0
+    },
+    {
+     "word": "the \"",
+     "success": true,
+     "startS": 88.238,
+     "endS": 88.385,
+     "palign": 0
+    },
+    {
+     "word": "Iron ",
+     "success": true,
+     "startS": 88.452,
+     "endS": 88.669,
+     "palign": 0
+    },
+    {
+     "word": "Duke\" ",
+     "success": true,
+     "startS": 88.6855,
+     "endS": 89.021,
+     "palign": 0
+    },
+    {
+     "word": "was ",
+     "success": true,
+     "startS": 89.066,
+     "endS": 89.156,
+     "palign": 0
+    },
+    {
+     "word": "born\n",
+     "success": true,
+     "startS": 89.236,
+     "endS": 89.494,
+     "palign": 0
+    },
+    {
+     "word": "Your ",
+     "success": true,
+     "startS": 89.52675,
+     "endS": 89.625,
+     "palign": 0
+    },
+    {
+     "word": "legacy's ",
+     "success": true,
+     "startS": 89.66467,
+     "endS": 90.168,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 90.254,
+     "endS": 90.262,
+     "palign": 0
+    },
+    {
+     "word": "rubber ",
+     "success": true,
+     "startS": 90.31467,
+     "endS": 90.578,
+     "palign": 0
+    },
+    {
+     "word": "boot ",
+     "success": true,
+     "startS": 90.61675,
+     "endS": 90.733,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 90.79133,
+     "endS": 90.908,
+     "palign": 0
+    },
+    {
+     "word": "walking ",
+     "success": true,
+     "startS": 90.9865,
+     "endS": 91.239,
+     "palign": 0
+    },
+    {
+     "word": "through ",
+     "success": true,
+     "startS": 91.27086,
+     "endS": 91.462,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 91.48567,
+     "endS": 91.533,
+     "palign": 0
+    },
+    {
+     "word": "mud\n",
+     "success": true,
+     "startS": 91.613,
+     "endS": 91.821,
+     "palign": 0
+    },
+    {
+     "word": "Mine's ",
+     "success": true,
+     "startS": 91.845,
+     "endS": 92.152,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 92.199,
+     "endS": 92.199,
+     "palign": 0
+    },
+    {
+     "word": "whole ",
+     "success": true,
+     "startS": 92.261,
+     "endS": 92.509,
+     "palign": 0
+    },
+    {
+     "word": "era, ",
+     "success": true,
+     "startS": 92.637,
+     "endS": 93.09562,
+     "palign": 0
+    },
+    {
+     "word": "written ",
+     "success": true,
+     "startS": 93.15025,
+     "endS": 93.478,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 93.5325,
+     "endS": 93.587,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 93.675,
+     "endS": 93.763,
+     "palign": 0
+    },
+    {
+     "word": "Code ",
+     "success": true,
+     "startS": 93.8655,
+     "endS": 94.173,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 94.22,
+     "endS": 94.314,
+     "palign": 0
+    },
+    {
+     "word": "blood\n\n",
+     "success": true,
+     "startS": 94.394,
+     "endS": 97.68472,
+     "palign": 0
+    },
+    {
+     "word": "[Crowd reacts]\nOOOH!\n\n",
+     "success": true,
+     "startS": 97.68743,
+     "endS": 97.74448,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 4: cold deep baritone male rapper]\nElba ",
+     "success": true,
+     "startS": 97.74719,
+     "endS": 98.002,
+     "palign": 0
+    },
+    {
+     "word": "couldn't ",
+     "success": true,
+     "startS": 98.00933,
+     "endS": 98.222,
+     "palign": 0
+    },
+    {
+     "word": "hold ",
+     "success": true,
+     "startS": 98.276,
+     "endS": 98.446,
+     "palign": 0
+    },
+    {
+     "word": "you, ",
+     "success": true,
+     "startS": 98.49133,
+     "endS": 98.65833,
+     "palign": 0
+    },
+    {
+     "word": "so ",
+     "success": true,
+     "startS": 98.73467,
+     "endS": 98.811,
+     "palign": 0
+    },
+    {
+     "word": "we ",
+     "success": true,
+     "startS": 98.856,
+     "endS": 98.901,
+     "palign": 0
+    },
+    {
+     "word": "found ",
+     "success": true,
+     "startS": 98.954,
+     "endS": 99.166,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 99.198,
+     "endS": 99.198,
+     "palign": 0
+    },
+    {
+     "word": "smaller ",
+     "success": true,
+     "startS": 99.24657,
+     "endS": 99.538,
+     "palign": 0
+    },
+    {
+     "word": "rock\n",
+     "success": true,
+     "startS": 99.5975,
+     "endS": 99.776,
+     "palign": 0
+    },
+    {
+     "word": "Saint ",
+     "success": true,
+     "startS": 99.8296,
+     "endS": 100.044,
+     "palign": 0
+    },
+    {
+     "word": "Helena, ",
+     "success": true,
+     "startS": 100.124,
+     "endS": 100.54867,
+     "palign": 0
+    },
+    {
+     "word": "South ",
+     "success": true,
+     "startS": 100.59033,
+     "endS": 100.757,
+     "palign": 0
+    },
+    {
+     "word": "Atlantic — ",
+     "success": true,
+     "startS": 100.801,
+     "endS": 101.24533,
+     "palign": 0
+    },
+    {
+     "word": "five ",
+     "success": true,
+     "startS": 101.2805,
+     "endS": 101.386,
+     "palign": 0
+    },
+    {
+     "word": "years ",
+     "success": true,
+     "startS": 101.4196,
+     "endS": 101.554,
+     "palign": 0
+    },
+    {
+     "word": "watching ",
+     "success": true,
+     "startS": 101.5955,
+     "endS": 101.886,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 101.915,
+     "endS": 101.973,
+     "palign": 0
+    },
+    {
+     "word": "clock\n",
+     "success": true,
+     "startS": 102.0512,
+     "endS": 102.364,
+     "palign": 0
+    },
+    {
+     "word": "We ",
+     "success": true,
+     "startS": 102.4225,
+     "endS": 102.481,
+     "palign": 0
+    },
+    {
+     "word": "took ",
+     "success": true,
+     "startS": 102.52975,
+     "endS": 102.676,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 102.7075,
+     "endS": 102.802,
+     "palign": 0
+    },
+    {
+     "word": "horse, ",
+     "success": true,
+     "startS": 102.8656,
+     "endS": 103.152,
+     "palign": 0
+    },
+    {
+     "word": "Marengo — ",
+     "success": true,
+     "startS": 103.184,
+     "endS": 103.7216,
+     "palign": 0
+    },
+    {
+     "word": "his ",
+     "success": true,
+     "startS": 103.7504,
+     "endS": 103.808,
+     "palign": 0
+    },
+    {
+     "word": "bones ",
+     "success": true,
+     "startS": 103.8566,
+     "endS": 104.051,
+     "palign": 0
+    },
+    {
+     "word": "are ",
+     "success": true,
+     "startS": 104.084,
+     "endS": 104.15,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 104.3105,
+     "endS": 104.471,
+     "palign": 0
+    },
+    {
+     "word": "display\n",
+     "success": true,
+     "startS": 104.53443,
+     "endS": 104.915,
+     "palign": 0
+    },
+    {
+     "word": "In ",
+     "success": true,
+     "startS": 104.995,
+     "endS": 105.093,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 105.178,
+     "endS": 105.178,
+     "palign": 0
+    },
+    {
+     "word": "London ",
+     "success": true,
+     "startS": 105.2435,
+     "endS": 105.571,
+     "palign": 0
+    },
+    {
+     "word": "museum — ",
+     "success": true,
+     "startS": 105.6475,
+     "endS": 106.13225,
+     "palign": 0
+    },
+    {
+     "word": "people ",
+     "success": true,
+     "startS": 106.15587,
+     "endS": 106.274,
+     "palign": 0
+    },
+    {
+     "word": "stare ",
+     "success": true,
+     "startS": 106.3384,
+     "endS": 106.596,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 106.6695,
+     "endS": 106.743,
+     "palign": 0
+    },
+    {
+     "word": "him ",
+     "success": true,
+     "startS": 106.80267,
+     "endS": 106.922,
+     "palign": 0
+    },
+    {
+     "word": "all ",
+     "success": true,
+     "startS": 106.99733,
+     "endS": 107.148,
+     "palign": 0
+    },
+    {
+     "word": "day\n",
+     "success": true,
+     "startS": 107.228,
+     "endS": 107.538,
+     "palign": 0
+    },
+    {
+     "word": "Canova ",
+     "success": true,
+     "startS": 107.57367,
+     "endS": 107.971,
+     "palign": 0
+    },
+    {
+     "word": "carved ",
+     "success": true,
+     "startS": 108.00417,
+     "endS": 108.17,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 108.225,
+     "endS": 108.335,
+     "palign": 0
+    },
+    {
+     "word": "naked, ",
+     "success": true,
+     "startS": 108.4036,
+     "endS": 108.71725,
+     "palign": 0
+    },
+    {
+     "word": "marble, ",
+     "success": true,
+     "startS": 108.7565,
+     "endS": 109.10914,
+     "palign": 0
+    },
+    {
+     "word": "eleven ",
+     "success": true,
+     "startS": 109.16829,
+     "endS": 109.464,
+     "palign": 0
+    },
+    {
+     "word": "feet ",
+     "success": true,
+     "startS": 109.53975,
+     "endS": 109.767,
+     "palign": 0
+    },
+    {
+     "word": "tall\n",
+     "success": true,
+     "startS": 109.839,
+     "endS": 110.055,
+     "palign": 0
+    },
+    {
+     "word": "Now ",
+     "success": true,
+     "startS": 110.11267,
+     "endS": 110.228,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 110.26267,
+     "endS": 110.332,
+     "palign": 0
+    },
+    {
+     "word": "stand ",
+     "success": true,
+     "startS": 110.39,
+     "endS": 110.622,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 110.6705,
+     "endS": 110.719,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 110.7775,
+     "endS": 110.836,
+     "palign": 0
+    },
+    {
+     "word": "stairwell ",
+     "success": true,
+     "startS": 110.885,
+     "endS": 111.328,
+     "palign": 0
+    },
+    {
+     "word": "with ",
+     "success": true,
+     "startS": 111.356,
+     "endS": 111.44,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 111.503,
+     "endS": 111.503,
+     "palign": 0
+    },
+    {
+     "word": "fig ",
+     "success": true,
+     "startS": 111.57167,
+     "endS": 111.709,
+     "palign": 0
+    },
+    {
+     "word": "leaf ",
+     "success": true,
+     "startS": 111.7625,
+     "endS": 112.002,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 112.063,
+     "endS": 112.124,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 112.205,
+     "endS": 112.307,
+     "palign": 0
+    },
+    {
+     "word": "hall\n",
+     "success": true,
+     "startS": 112.387,
+     "endS": 112.648,
+     "palign": 0
+    },
+    {
+     "word": "Two ",
+     "success": true,
+     "startS": 112.70667,
+     "endS": 112.824,
+     "palign": 0
+    },
+    {
+     "word": "hundred ",
+     "success": true,
+     "startS": 112.878,
+     "endS": 113.202,
+     "palign": 0
+    },
+    {
+     "word": "years ",
+     "success": true,
+     "startS": 113.2492,
+     "endS": 113.438,
+     "palign": 0
+    },
+    {
+     "word": "later, ",
+     "success": true,
+     "startS": 113.5212,
+     "endS": 113.88525,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 113.8935,
+     "endS": 113.91,
+     "palign": 0
+    },
+    {
+     "word": "world ",
+     "success": true,
+     "startS": 113.9638,
+     "endS": 114.179,
+     "palign": 0
+    },
+    {
+     "word": "still ",
+     "success": true,
+     "startS": 114.236,
+     "endS": 114.464,
+     "palign": 0
+    },
+    {
+     "word": "has ",
+     "success": true,
+     "startS": 114.53233,
+     "endS": 114.669,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 114.787,
+     "endS": 114.787,
+     "palign": 0
+    },
+    {
+     "word": "word ",
+     "success": true,
+     "startS": 114.8295,
+     "endS": 114.957,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 114.994,
+     "endS": 115.068,
+     "palign": 0
+    },
+    {
+     "word": "you\n",
+     "success": true,
+     "startS": 115.148,
+     "endS": 115.459,
+     "palign": 0
+    },
+    {
+     "word": "Lose ",
+     "success": true,
+     "startS": 115.50825,
+     "endS": 115.656,
+     "palign": 0
+    },
+    {
+     "word": "it ",
+     "success": true,
+     "startS": 115.7285,
+     "endS": 115.801,
+     "palign": 0
+    },
+    {
+     "word": "all, ",
+     "success": true,
+     "startS": 115.881,
+     "endS": 116.288,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 116.328,
+     "endS": 116.408,
+     "palign": 0
+    },
+    {
+     "word": "people ",
+     "success": true,
+     "startS": 116.4455,
+     "endS": 116.633,
+     "palign": 0
+    },
+    {
+     "word": "say ",
+     "success": true,
+     "startS": 116.713,
+     "endS": 116.892,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 116.892,
+     "endS": 117.035,
+     "palign": 0
+    },
+    {
+     "word": "met ",
+     "success": true,
+     "startS": 117.11967,
+     "endS": 117.289,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 117.32475,
+     "endS": 117.432,
+     "palign": 0
+    },
+    {
+     "word": "Waterloo\n\n",
+     "success": true,
+     "startS": 117.4846,
+     "endS": 118.05424,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: crowd chanting]\nIRON ",
+     "success": true,
+     "startS": 118.06448,
+     "endS": 118.341,
+     "palign": 0
+    },
+    {
+     "word": "DUKE! ",
+     "success": true,
+     "startS": 118.4085,
+     "endS": 120.643,
+     "palign": 0
+    },
+    {
+     "word": "IRON ",
+     "success": true,
+     "startS": 120.733,
+     "endS": 120.93,
+     "palign": 0
+    },
+    {
+     "word": "DUKE!\n\n",
+     "success": true,
+     "startS": 120.971,
+     "endS": 123.13979,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: crowd chanting]\nIRON ",
+     "success": true,
+     "startS": 123.14568,
+     "endS": 123.489,
+     "palign": 0
+    },
+    {
+     "word": "DUKE! ",
+     "success": true,
+     "startS": 123.489,
+     "endS": 125.837,
+     "palign": 0
+    },
+    {
+     "word": "IRON ",
+     "success": true,
+     "startS": 125.933,
+     "endS": 127.898,
+     "palign": 0
+    },
+    {
+     "word": "DUKE!\n\n[",
+     "success": true,
+     "startS": 128.045,
+     "endS": 128.36875,
+     "palign": 0
+    },
+    {
+     "word": "End]\n\n\n",
+     "success": true,
+     "startS": 128.3975,
+     "endS": 128.57,
+     "palign": 0
+    }
+   ]
+  },
+  {
+   "id": "1677bc22-1f5d-4efb-b596-a8f7a1b491d6",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/1677bc22-1f5d-4efb-b596-a8f7a1b491d6.mp3",
+   "duration": 146.0,
+   "title": "Napoleon_vs_Wellington",
+   "local_mp3": "/Volumes/WorkData/Workspace/projects/colab-ultra-workstation/workflows/05_ancient_rap_battle/episodes/napoleon-vs-wellington/work/suno_v2.mp3",
+   "alignedWords": [
+    {
+     "word": "[Intro: ",
+     "success": true,
+     "startS": 15.471,
+     "endS": 15.51412,
+     "palign": 0
+    },
+    {
+     "word": "short ",
+     "success": true,
+     "startS": 15.52028,
+     "endS": 15.55108,
+     "palign": 0
+    },
+    {
+     "word": "DJ ",
+     "success": true,
+     "startS": 15.55724,
+     "endS": 15.56956,
+     "palign": 0
+    },
+    {
+     "word": "scratch ",
+     "success": true,
+     "startS": 15.57572,
+     "endS": 15.61884,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 15.625,
+     "endS": 15.64348,
+     "palign": 0
+    },
+    {
+     "word": "military ",
+     "success": true,
+     "startS": 15.64964,
+     "endS": 15.69892,
+     "palign": 0
+    },
+    {
+     "word": "snare ",
+     "success": true,
+     "startS": 15.70508,
+     "endS": 15.73588,
+     "palign": 0
+    },
+    {
+     "word": "roll]\n\n\n",
+     "success": true,
+     "startS": 15.74204,
+     "endS": 15.78516,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 1: fiery fast tenor male rapper]\nSeventeen ",
+     "success": true,
+     "startS": 15.79132,
+     "endS": 16.087,
+     "palign": 0
+    },
+    {
+     "word": "sixty-nine, ",
+     "success": true,
+     "startS": 16.1708,
+     "endS": 16.782,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 16.8,
+     "endS": 16.836,
+     "palign": 0
+    },
+    {
+     "word": "world ",
+     "success": true,
+     "startS": 16.8924,
+     "endS": 17.118,
+     "palign": 0
+    },
+    {
+     "word": "got ",
+     "success": true,
+     "startS": 17.17467,
+     "endS": 17.288,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 17.39,
+     "endS": 17.404,
+     "palign": 0
+    },
+    {
+     "word": "brand-new ",
+     "success": true,
+     "startS": 17.4388,
+     "endS": 17.73,
+     "palign": 0
+    },
+    {
+     "word": "king\n",
+     "success": true,
+     "startS": 17.7835,
+     "endS": 17.944,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 18.013,
+     "endS": 18.013,
+     "palign": 0
+    },
+    {
+     "word": "crowned ",
+     "success": true,
+     "startS": 18.0358,
+     "endS": 18.323,
+     "palign": 0
+    },
+    {
+     "word": "myself ",
+     "success": true,
+     "startS": 18.37267,
+     "endS": 18.621,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 18.688,
+     "endS": 18.755,
+     "palign": 0
+    },
+    {
+     "word": "Notre-Dame, ",
+     "success": true,
+     "startS": 18.78,
+     "endS": 19.3715,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 19.401,
+     "endS": 19.46,
+     "palign": 0
+    },
+    {
+     "word": "Pope ",
+     "success": true,
+     "startS": 19.476,
+     "endS": 19.701,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 19.752,
+     "endS": 19.905,
+     "palign": 0
+    },
+    {
+     "word": "blessed ",
+     "success": true,
+     "startS": 19.944,
+     "endS": 20.178,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 20.231,
+     "endS": 20.337,
+     "palign": 0
+    },
+    {
+     "word": "thing\n",
+     "success": true,
+     "startS": 20.403,
+     "endS": 20.667,
+     "palign": 0
+    },
+    {
+     "word": "Three ",
+     "success": true,
+     "startS": 20.7166,
+     "endS": 20.915,
+     "palign": 0
+    },
+    {
+     "word": "emperors ",
+     "success": true,
+     "startS": 20.94433,
+     "endS": 21.405,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 21.485,
+     "endS": 21.567,
+     "palign": 0
+    },
+    {
+     "word": "Austerlitz — ",
+     "success": true,
+     "startS": 21.647,
+     "endS": 22.2586,
+     "palign": 0
+    },
+    {
+     "word": "two ",
+     "success": true,
+     "startS": 22.3004,
+     "endS": 22.384,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 22.4335,
+     "endS": 22.483,
+     "palign": 0
+    },
+    {
+     "word": "them ",
+     "success": true,
+     "startS": 22.518,
+     "endS": 22.623,
+     "palign": 0
+    },
+    {
+     "word": "took ",
+     "success": true,
+     "startS": 22.6785,
+     "endS": 22.845,
+     "palign": 0
+    },
+    {
+     "word": "flight\n",
+     "success": true,
+     "startS": 22.90733,
+     "endS": 23.219,
+     "palign": 0
+    },
+    {
+     "word": "My ",
+     "success": true,
+     "startS": 23.293,
+     "endS": 23.367,
+     "palign": 0
+    },
+    {
+     "word": "Code ",
+     "success": true,
+     "startS": 23.43,
+     "endS": 23.619,
+     "palign": 0
+    },
+    {
+     "word": "still ",
+     "success": true,
+     "startS": 23.6628,
+     "endS": 23.838,
+     "palign": 0
+    },
+    {
+     "word": "writes ",
+     "success": true,
+     "startS": 23.8545,
+     "endS": 24.083,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 24.11367,
+     "endS": 24.175,
+     "palign": 0
+    },
+    {
+     "word": "law ",
+     "success": true,
+     "startS": 24.254,
+     "endS": 24.412,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 24.4495,
+     "endS": 24.487,
+     "palign": 0
+    },
+    {
+     "word": "half ",
+     "success": true,
+     "startS": 24.54825,
+     "endS": 24.732,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 24.76133,
+     "endS": 24.82,
+     "palign": 0
+    },
+    {
+     "word": "world ",
+     "success": true,
+     "startS": 24.9,
+     "endS": 25.275,
+     "palign": 0
+    },
+    {
+     "word": "tonight\n",
+     "success": true,
+     "startS": 25.33029,
+     "endS": 25.662,
+     "palign": 0
+    },
+    {
+     "word": "Your ",
+     "success": true,
+     "startS": 25.69075,
+     "endS": 25.777,
+     "palign": 0
+    },
+    {
+     "word": "troops ",
+     "success": true,
+     "startS": 25.81933,
+     "endS": 26.024,
+     "palign": 0
+    },
+    {
+     "word": "say \"",
+     "success": true,
+     "startS": 26.11,
+     "endS": 26.56375,
+     "palign": 0
+    },
+    {
+     "word": "Old ",
+     "success": true,
+     "startS": 26.6215,
+     "endS": 26.737,
+     "palign": 0
+    },
+    {
+     "word": "Nosey\" — ",
+     "success": true,
+     "startS": 26.8085,
+     "endS": 27.134,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 27.155,
+     "endS": 27.216,
+     "palign": 0
+    },
+    {
+     "word": "say \"",
+     "success": true,
+     "startS": 27.28333,
+     "endS": 27.4705,
+     "palign": 0
+    },
+    {
+     "word": "sepoy ",
+     "success": true,
+     "startS": 27.523,
+     "endS": 27.905,
+     "palign": 0
+    },
+    {
+     "word": "general\"\n",
+     "success": true,
+     "startS": 27.9686,
+     "endS": 28.748,
+     "palign": 0
+    },
+    {
+     "word": "Beating ",
+     "success": true,
+     "startS": 28.77,
+     "endS": 28.969,
+     "palign": 0
+    },
+    {
+     "word": "rajahs ",
+     "success": true,
+     "startS": 29.048,
+     "endS": 29.418,
+     "palign": 0
+    },
+    {
+     "word": "doesn't ",
+     "success": true,
+     "startS": 29.4388,
+     "endS": 29.656,
+     "palign": 0
+    },
+    {
+     "word": "make ",
+     "success": true,
+     "startS": 29.73825,
+     "endS": 29.985,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 30.04367,
+     "endS": 30.161,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 30.2595,
+     "endS": 30.461,
+     "palign": 0
+    },
+    {
+     "word": "equal\n",
+     "success": true,
+     "startS": 30.461,
+     "endS": 30.856,
+     "palign": 0
+    },
+    {
+     "word": "Sixty ",
+     "success": true,
+     "startS": 30.936,
+     "endS": 31.289,
+     "palign": 0
+    },
+    {
+     "word": "battles ",
+     "success": true,
+     "startS": 31.32529,
+     "endS": 31.543,
+     "palign": 0
+    },
+    {
+     "word": "fought — ",
+     "success": true,
+     "startS": 31.608,
+     "endS": 32.03967,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 32.093,
+     "endS": 32.107,
+     "palign": 0
+    },
+    {
+     "word": "had ",
+     "success": true,
+     "startS": 32.16767,
+     "endS": 32.289,
+     "palign": 0
+    },
+    {
+     "word": "all ",
+     "success": true,
+     "startS": 32.369,
+     "endS": 32.549,
+     "palign": 0
+    },
+    {
+     "word": "Europe ",
+     "success": true,
+     "startS": 32.60833,
+     "endS": 32.907,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 32.971,
+     "endS": 33.035,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 33.124,
+     "endS": 33.246,
+     "palign": 0
+    },
+    {
+     "word": "plate\n",
+     "success": true,
+     "startS": 33.302,
+     "endS": 33.526,
+     "palign": 0
+    },
+    {
+     "word": "You? ",
+     "success": true,
+     "startS": 33.6,
+     "endS": 33.75825,
+     "palign": 0
+    },
+    {
+     "word": "You're ",
+     "success": true,
+     "startS": 33.7685,
+     "endS": 33.875,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 33.90875,
+     "endS": 34.01,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 34.101,
+     "endS": 34.15,
+     "palign": 0
+    },
+    {
+     "word": "breakfast, ",
+     "success": true,
+     "startS": 34.221,
+     "endS": 34.8275,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 34.866,
+     "endS": 34.943,
+     "palign": 0
+    },
+    {
+     "word": "an ",
+     "success": true,
+     "startS": 35.023,
+     "endS": 35.122,
+     "palign": 0
+    },
+    {
+     "word": "Emperor ",
+     "success": true,
+     "startS": 35.16133,
+     "endS": 35.601,
+     "palign": 0
+    },
+    {
+     "word": "won't ",
+     "success": true,
+     "startS": 35.60133,
+     "endS": 35.847,
+     "palign": 0
+    },
+    {
+     "word": "wait\n\n",
+     "success": true,
+     "startS": 35.927,
+     "endS": 41.36305,
+     "palign": 0
+    },
+    {
+     "word": "[Crowd reacts]\nOOOH!\n\n",
+     "success": true,
+     "startS": 41.3721,
+     "endS": 41.55508,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 2: cold deep baritone male rapper]\nBreakfast? ",
+     "success": true,
+     "startS": 41.56511,
+     "endS": 42.0924,
+     "palign": 0
+    },
+    {
+     "word": "Then ",
+     "success": true,
+     "startS": 42.1178,
+     "endS": 42.194,
+     "palign": 0
+    },
+    {
+     "word": "why'd ",
+     "success": true,
+     "startS": 42.211,
+     "endS": 42.371,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 42.40767,
+     "endS": 42.481,
+     "palign": 0
+    },
+    {
+     "word": "wait ",
+     "success": true,
+     "startS": 42.5205,
+     "endS": 42.639,
+     "palign": 0
+    },
+    {
+     "word": "till ",
+     "success": true,
+     "startS": 42.672,
+     "endS": 42.771,
+     "palign": 0
+    },
+    {
+     "word": "noon ",
+     "success": true,
+     "startS": 42.8335,
+     "endS": 43.021,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 43.0535,
+     "endS": 43.086,
+     "palign": 0
+    },
+    {
+     "word": "fire ",
+     "success": true,
+     "startS": 43.1565,
+     "endS": 43.368,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 43.483,
+     "endS": 43.483,
+     "palign": 0
+    },
+    {
+     "word": "gun?\n",
+     "success": true,
+     "startS": 43.563,
+     "endS": 43.82762,
+     "palign": 0
+    },
+    {
+     "word": "Waiting ",
+     "success": true,
+     "startS": 43.86725,
+     "endS": 44.105,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 44.185,
+     "endS": 44.306,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 44.34033,
+     "endS": 44.409,
+     "palign": 0
+    },
+    {
+     "word": "mud ",
+     "success": true,
+     "startS": 44.472,
+     "endS": 44.598,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 44.6345,
+     "endS": 44.671,
+     "palign": 0
+    },
+    {
+     "word": "dry — ",
+     "success": true,
+     "startS": 44.772,
+     "endS": 45.0335,
+     "palign": 0
+    },
+    {
+     "word": "by ",
+     "success": true,
+     "startS": 45.05175,
+     "endS": 45.07,
+     "palign": 0
+    },
+    {
+     "word": "sunset, ",
+     "success": true,
+     "startS": 45.159,
+     "endS": 45.78775,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 45.8445,
+     "endS": 45.958,
+     "palign": 0
+    },
+    {
+     "word": "were ",
+     "success": true,
+     "startS": 45.98575,
+     "endS": 46.069,
+     "palign": 0
+    },
+    {
+     "word": "done\n",
+     "success": true,
+     "startS": 46.12375,
+     "endS": 46.288,
+     "palign": 0
+    },
+    {
+     "word": "Six ",
+     "success": true,
+     "startS": 46.37167,
+     "endS": 46.539,
+     "palign": 0
+    },
+    {
+     "word": "hundred ",
+     "success": true,
+     "startS": 46.59914,
+     "endS": 46.96,
+     "palign": 0
+    },
+    {
+     "word": "thousand ",
+     "success": true,
+     "startS": 46.99912,
+     "endS": 47.273,
+     "palign": 0
+    },
+    {
+     "word": "marched ",
+     "success": true,
+     "startS": 47.28767,
+     "endS": 47.585,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 47.633,
+     "endS": 47.681,
+     "palign": 0
+    },
+    {
+     "word": "Moscow, ",
+     "success": true,
+     "startS": 47.745,
+     "endS": 48.18017,
+     "palign": 0
+    },
+    {
+     "word": "proud ",
+     "success": true,
+     "startS": 48.23533,
+     "endS": 48.456,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 48.48867,
+     "endS": 48.554,
+     "palign": 0
+    },
+    {
+     "word": "fed\n",
+     "success": true,
+     "startS": 48.66733,
+     "endS": 48.897,
+     "palign": 0
+    },
+    {
+     "word": "Count ",
+     "success": true,
+     "startS": 48.9556,
+     "endS": 49.19,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 49.19267,
+     "endS": 49.198,
+     "palign": 0
+    },
+    {
+     "word": "men ",
+     "success": true,
+     "startS": 49.278,
+     "endS": 49.438,
+     "palign": 0
+    },
+    {
+     "word": "who ",
+     "success": true,
+     "startS": 49.47933,
+     "endS": 49.562,
+     "palign": 0
+    },
+    {
+     "word": "made ",
+     "success": true,
+     "startS": 49.61525,
+     "endS": 49.775,
+     "palign": 0
+    },
+    {
+     "word": "it ",
+     "success": true,
+     "startS": 49.854,
+     "endS": 49.933,
+     "palign": 0
+    },
+    {
+     "word": "home — ",
+     "success": true,
+     "startS": 50.013,
+     "endS": 50.4282,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 50.4458,
+     "endS": 50.481,
+     "palign": 0
+    },
+    {
+     "word": "winter ",
+     "success": true,
+     "startS": 50.53167,
+     "endS": 50.785,
+     "palign": 0
+    },
+    {
+     "word": "kept ",
+     "success": true,
+     "startS": 50.85975,
+     "endS": 51.084,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 51.12067,
+     "endS": 51.194,
+     "palign": 0
+    },
+    {
+     "word": "dead\n",
+     "success": true,
+     "startS": 51.26825,
+     "endS": 51.491,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 51.55,
+     "endS": 51.668,
+     "palign": 0
+    },
+    {
+     "word": "called ",
+     "success": true,
+     "startS": 51.68675,
+     "endS": 51.967,
+     "palign": 0
+    },
+    {
+     "word": "Spain ",
+     "success": true,
+     "startS": 52.016,
+     "endS": 52.328,
+     "palign": 0
+    },
+    {
+     "word": "your \"",
+     "success": true,
+     "startS": 52.37375,
+     "endS": 52.54133,
+     "palign": 0
+    },
+    {
+     "word": "ulcer\" — ",
+     "success": true,
+     "startS": 52.57167,
+     "endS": 53.13112,
+     "palign": 0
+    },
+    {
+     "word": "guess ",
+     "success": true,
+     "startS": 53.1545,
+     "endS": 53.248,
+     "palign": 0
+    },
+    {
+     "word": "who ",
+     "success": true,
+     "startS": 53.303,
+     "endS": 53.413,
+     "palign": 0
+    },
+    {
+     "word": "made ",
+     "success": true,
+     "startS": 53.47825,
+     "endS": 53.674,
+     "palign": 0
+    },
+    {
+     "word": "it ",
+     "success": true,
+     "startS": 53.7105,
+     "endS": 53.747,
+     "palign": 0
+    },
+    {
+     "word": "bleed?\n",
+     "success": true,
+     "startS": 53.7916,
+     "endS": 53.9778,
+     "palign": 0
+    },
+    {
+     "word": "Your ",
+     "success": true,
+     "startS": 53.9856,
+     "endS": 54.009,
+     "palign": 0
+    },
+    {
+     "word": "marshals ",
+     "success": true,
+     "startS": 54.05375,
+     "endS": 54.422,
+     "palign": 0
+    },
+    {
+     "word": "came ",
+     "success": true,
+     "startS": 54.46425,
+     "endS": 54.591,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 54.6385,
+     "endS": 54.686,
+     "palign": 0
+    },
+    {
+     "word": "one ",
+     "success": true,
+     "startS": 54.75333,
+     "endS": 54.888,
+     "palign": 0
+    },
+    {
+     "word": "by ",
+     "success": true,
+     "startS": 54.9635,
+     "endS": 55.039,
+     "palign": 0
+    },
+    {
+     "word": "one, ",
+     "success": true,
+     "startS": 55.117,
+     "endS": 55.29275,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 55.3125,
+     "endS": 55.352,
+     "palign": 0
+    },
+    {
+     "word": "one ",
+     "success": true,
+     "startS": 55.41867,
+     "endS": 55.552,
+     "palign": 0
+    },
+    {
+     "word": "by ",
+     "success": true,
+     "startS": 55.645,
+     "endS": 55.738,
+     "palign": 0
+    },
+    {
+     "word": "one ",
+     "success": true,
+     "startS": 55.818,
+     "endS": 55.981,
+     "palign": 0
+    },
+    {
+     "word": "they'd ",
+     "success": true,
+     "startS": 55.987,
+     "endS": 56.135,
+     "palign": 0
+    },
+    {
+     "word": "flee\n\"",
+     "success": true,
+     "startS": 56.215,
+     "endS": 56.61325,
+     "palign": 0
+    },
+    {
+     "word": "Sepoy ",
+     "success": true,
+     "startS": 56.6635,
+     "endS": 57.028,
+     "palign": 0
+    },
+    {
+     "word": "general\"? ",
+     "success": true,
+     "startS": 57.074,
+     "endS": 57.63067,
+     "palign": 0
+    },
+    {
+     "word": "Fine — ",
+     "success": true,
+     "startS": 57.684,
+     "endS": 58.07767,
+     "palign": 0
+    },
+    {
+     "word": "this ",
+     "success": true,
+     "startS": 58.097,
+     "endS": 58.155,
+     "palign": 0
+    },
+    {
+     "word": "sepoy ",
+     "success": true,
+     "startS": 58.244,
+     "endS": 58.551,
+     "palign": 0
+    },
+    {
+     "word": "took ",
+     "success": true,
+     "startS": 58.584,
+     "endS": 58.683,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 58.752,
+     "endS": 58.89,
+     "palign": 0
+    },
+    {
+     "word": "down\n",
+     "success": true,
+     "startS": 58.97,
+     "endS": 59.217,
+     "palign": 0
+    },
+    {
+     "word": "One ",
+     "success": true,
+     "startS": 59.28267,
+     "endS": 59.414,
+     "palign": 0
+    },
+    {
+     "word": "day ",
+     "success": true,
+     "startS": 59.494,
+     "endS": 59.687,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 59.7545,
+     "endS": 59.822,
+     "palign": 0
+    },
+    {
+     "word": "Waterloo — ",
+     "success": true,
+     "startS": 59.881,
+     "endS": 60.372,
+     "palign": 0
+    },
+    {
+     "word": "so ",
+     "success": true,
+     "startS": 60.4085,
+     "endS": 60.445,
+     "palign": 0
+    },
+    {
+     "word": "long, ",
+     "success": true,
+     "startS": 60.5045,
+     "endS": 60.6972,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 60.7114,
+     "endS": 60.754,
+     "palign": 0
+    },
+    {
+     "word": "self-made ",
+     "success": true,
+     "startS": 60.83475,
+     "endS": 61.393,
+     "palign": 0
+    },
+    {
+     "word": "crown\n\n",
+     "success": true,
+     "startS": 61.473,
+     "endS": 62.72067,
+     "palign": 0
+    },
+    {
+     "word": "[Break: crowd chanting]\nROUND ",
+     "success": true,
+     "startS": 62.73833,
+     "endS": 63.932,
+     "palign": 0
+    },
+    {
+     "word": "TWO! ",
+     "success": true,
+     "startS": 64.05267,
+     "endS": 65.32167,
+     "palign": 0
+    },
+    {
+     "word": "ROUND ",
+     "success": true,
+     "startS": 65.38833,
+     "endS": 66.582,
+     "palign": 0
+    },
+    {
+     "word": "TWO!\n\n",
+     "success": true,
+     "startS": 66.662,
+     "endS": 77.19157,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3: fiery fast tenor male rapper]\nTook ",
+     "success": true,
+     "startS": 77.19535,
+     "endS": 77.358,
+     "palign": 0
+    },
+    {
+     "word": "me ",
+     "success": true,
+     "startS": 77.4425,
+     "endS": 77.527,
+     "palign": 0
+    },
+    {
+     "word": "down? ",
+     "success": true,
+     "startS": 77.5765,
+     "endS": 77.75125,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 77.7775,
+     "endS": 77.83,
+     "palign": 0
+    },
+    {
+     "word": "prayed ",
+     "success": true,
+     "startS": 77.8785,
+     "endS": 78.075,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 78.1,
+     "endS": 78.15,
+     "palign": 0
+    },
+    {
+     "word": "night ",
+     "success": true,
+     "startS": 78.1952,
+     "endS": 78.376,
+     "palign": 0
+    },
+    {
+     "word": "or ",
+     "success": true,
+     "startS": 78.4445,
+     "endS": 78.513,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 78.55967,
+     "endS": 78.653,
+     "palign": 0
+    },
+    {
+     "word": "Prussians ",
+     "success": true,
+     "startS": 78.6924,
+     "endS": 79.093,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 79.197,
+     "endS": 79.301,
+     "palign": 0
+    },
+    {
+     "word": "arrive\n",
+     "success": true,
+     "startS": 79.36417,
+     "endS": 79.68,
+     "palign": 0
+    },
+    {
+     "word": "They ",
+     "success": true,
+     "startS": 79.7045,
+     "endS": 79.778,
+     "palign": 0
+    },
+    {
+     "word": "hit ",
+     "success": true,
+     "startS": 79.81367,
+     "endS": 79.885,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 79.9205,
+     "endS": 79.956,
+     "palign": 0
+    },
+    {
+     "word": "flank ",
+     "success": true,
+     "startS": 80.0455,
+     "endS": 80.253,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 80.3165,
+     "endS": 80.38,
+     "palign": 0
+    },
+    {
+     "word": "half ",
+     "success": true,
+     "startS": 80.44175,
+     "endS": 80.627,
+     "palign": 0
+    },
+    {
+     "word": "past ",
+     "success": true,
+     "startS": 80.68225,
+     "endS": 80.848,
+     "palign": 0
+    },
+    {
+     "word": "four — ",
+     "success": true,
+     "startS": 80.928,
+     "endS": 81.201,
+     "palign": 0
+    },
+    {
+     "word": "that's ",
+     "success": true,
+     "startS": 81.201,
+     "endS": 81.317,
+     "palign": 0
+    },
+    {
+     "word": "how ",
+     "success": true,
+     "startS": 81.376,
+     "endS": 81.494,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 81.58267,
+     "endS": 81.76,
+     "palign": 0
+    },
+    {
+     "word": "survived\n\"",
+     "success": true,
+     "startS": 81.82763,
+     "endS": 82.327,
+     "palign": 0
+    },
+    {
+     "word": "Nearest-run ",
+     "success": true,
+     "startS": 82.353,
+     "endS": 82.918,
+     "palign": 0
+    },
+    {
+     "word": "thing ",
+     "success": true,
+     "startS": 82.9564,
+     "endS": 83.11,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 83.18033,
+     "endS": 83.321,
+     "palign": 0
+    },
+    {
+     "word": "ever ",
+     "success": true,
+     "startS": 83.35425,
+     "endS": 83.454,
+     "palign": 0
+    },
+    {
+     "word": "saw\" — ",
+     "success": true,
+     "startS": 83.53767,
+     "endS": 83.91229,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 83.92971,
+     "endS": 83.982,
+     "palign": 0
+    },
+    {
+     "word": "own ",
+     "success": true,
+     "startS": 84.04167,
+     "endS": 84.161,
+     "palign": 0
+    },
+    {
+     "word": "words, ",
+     "success": true,
+     "startS": 84.241,
+     "endS": 84.60867,
+     "palign": 0
+    },
+    {
+     "word": "Duke\n",
+     "success": true,
+     "startS": 84.62733,
+     "endS": 84.859,
+     "palign": 0
+    },
+    {
+     "word": "Your \"",
+     "success": true,
+     "startS": 84.88875,
+     "endS": 85.01933,
+     "palign": 0
+    },
+    {
+     "word": "scum ",
+     "success": true,
+     "startS": 85.06067,
+     "endS": 85.33,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 85.405,
+     "endS": 85.48,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 85.50667,
+     "endS": 85.56,
+     "palign": 0
+    },
+    {
+     "word": "earth\" ",
+     "success": true,
+     "startS": 85.6022,
+     "endS": 85.82489,
+     "palign": 0
+    },
+    {
+     "word": "soldiers ",
+     "success": true,
+     "startS": 85.87878,
+     "endS": 86.256,
+     "palign": 0
+    },
+    {
+     "word": "won ",
+     "success": true,
+     "startS": 86.336,
+     "endS": 86.525,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 86.6,
+     "endS": 86.75,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 86.7955,
+     "endS": 86.932,
+     "palign": 0
+    },
+    {
+     "word": "fluke\n",
+     "success": true,
+     "startS": 86.975,
+     "endS": 87.296,
+     "palign": 0
+    },
+    {
+     "word": "Your ",
+     "success": true,
+     "startS": 87.341,
+     "endS": 87.476,
+     "palign": 0
+    },
+    {
+     "word": "own ",
+     "success": true,
+     "startS": 87.556,
+     "endS": 87.76,
+     "palign": 0
+    },
+    {
+     "word": "people ",
+     "success": true,
+     "startS": 87.7895,
+     "endS": 87.937,
+     "palign": 0
+    },
+    {
+     "word": "smashed ",
+     "success": true,
+     "startS": 88.0145,
+     "endS": 88.313,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 88.33575,
+     "endS": 88.404,
+     "palign": 0
+    },
+    {
+     "word": "windows ",
+     "success": true,
+     "startS": 88.45271,
+     "endS": 88.745,
+     "palign": 0
+    },
+    {
+     "word": "when ",
+     "success": true,
+     "startS": 88.78575,
+     "endS": 88.908,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 88.95533,
+     "endS": 89.05,
+     "palign": 0
+    },
+    {
+     "word": "blocked ",
+     "success": true,
+     "startS": 89.06133,
+     "endS": 89.32,
+     "palign": 0
+    },
+    {
+     "word": "reform\n",
+     "success": true,
+     "startS": 89.37533,
+     "endS": 89.945,
+     "palign": 0
+    },
+    {
+     "word": "Iron ",
+     "success": true,
+     "startS": 90.02625,
+     "endS": 90.27,
+     "palign": 0
+    },
+    {
+     "word": "shutters — ",
+     "success": true,
+     "startS": 90.3365,
+     "endS": 90.784,
+     "palign": 0
+    },
+    {
+     "word": "that's ",
+     "success": true,
+     "startS": 90.787,
+     "endS": 90.926,
+     "palign": 0
+    },
+    {
+     "word": "how ",
+     "success": true,
+     "startS": 91.01933,
+     "endS": 91.206,
+     "palign": 0
+    },
+    {
+     "word": "the \"",
+     "success": true,
+     "startS": 91.238,
+     "endS": 91.366,
+     "palign": 0
+    },
+    {
+     "word": "Iron ",
+     "success": true,
+     "startS": 91.43,
+     "endS": 91.623,
+     "palign": 0
+    },
+    {
+     "word": "Duke\" ",
+     "success": true,
+     "startS": 91.6435,
+     "endS": 91.976,
+     "palign": 0
+    },
+    {
+     "word": "was ",
+     "success": true,
+     "startS": 92.02,
+     "endS": 92.108,
+     "palign": 0
+    },
+    {
+     "word": "born\n",
+     "success": true,
+     "startS": 92.18625,
+     "endS": 92.421,
+     "palign": 0
+    },
+    {
+     "word": "Your ",
+     "success": true,
+     "startS": 92.45175,
+     "endS": 92.544,
+     "palign": 0
+    },
+    {
+     "word": "legacy's ",
+     "success": true,
+     "startS": 92.5935,
+     "endS": 93.154,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 93.223,
+     "endS": 93.223,
+     "palign": 0
+    },
+    {
+     "word": "rubber ",
+     "success": true,
+     "startS": 93.2765,
+     "endS": 93.544,
+     "palign": 0
+    },
+    {
+     "word": "boot ",
+     "success": true,
+     "startS": 93.57425,
+     "endS": 93.665,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 93.73133,
+     "endS": 93.864,
+     "palign": 0
+    },
+    {
+     "word": "walking ",
+     "success": true,
+     "startS": 93.911,
+     "endS": 94.193,
+     "palign": 0
+    },
+    {
+     "word": "through ",
+     "success": true,
+     "startS": 94.23471,
+     "endS": 94.485,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 94.53233,
+     "endS": 94.627,
+     "palign": 0
+    },
+    {
+     "word": "mud\n",
+     "success": true,
+     "startS": 94.716,
+     "endS": 95.052,
+     "palign": 0
+    },
+    {
+     "word": "Mine's ",
+     "success": true,
+     "startS": 95.08825,
+     "endS": 95.348,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 95.417,
+     "endS": 95.417,
+     "palign": 0
+    },
+    {
+     "word": "whole ",
+     "success": true,
+     "startS": 95.4884,
+     "endS": 95.774,
+     "palign": 0
+    },
+    {
+     "word": "era, ",
+     "success": true,
+     "startS": 95.87033,
+     "endS": 96.11062,
+     "palign": 0
+    },
+    {
+     "word": "written ",
+     "success": true,
+     "startS": 96.15825,
+     "endS": 96.444,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 96.499,
+     "endS": 96.554,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 96.656,
+     "endS": 96.758,
+     "palign": 0
+    },
+    {
+     "word": "Code ",
+     "success": true,
+     "startS": 96.8325,
+     "endS": 97.056,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 97.122,
+     "endS": 97.254,
+     "palign": 0
+    },
+    {
+     "word": "blood\n\n",
+     "success": true,
+     "startS": 97.334,
+     "endS": 97.789,
+     "palign": 0
+    },
+    {
+     "word": "[Crowd reacts]\nOOOH!\n\n",
+     "success": true,
+     "startS": 97.805,
+     "endS": 103.11496,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 4: cold deep baritone male rapper]\nElba ",
+     "success": true,
+     "startS": 103.11843,
+     "endS": 103.456,
+     "palign": 0
+    },
+    {
+     "word": "couldn't ",
+     "success": true,
+     "startS": 103.47633,
+     "endS": 103.734,
+     "palign": 0
+    },
+    {
+     "word": "hold ",
+     "success": true,
+     "startS": 103.78425,
+     "endS": 103.935,
+     "palign": 0
+    },
+    {
+     "word": "you, ",
+     "success": true,
+     "startS": 103.98,
+     "endS": 104.0775,
+     "palign": 0
+    },
+    {
+     "word": "so ",
+     "success": true,
+     "startS": 104.085,
+     "endS": 104.314,
+     "palign": 0
+    },
+    {
+     "word": "we ",
+     "success": true,
+     "startS": 104.3705,
+     "endS": 104.427,
+     "palign": 0
+    },
+    {
+     "word": "found ",
+     "success": true,
+     "startS": 104.473,
+     "endS": 104.657,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 104.711,
+     "endS": 104.711,
+     "palign": 0
+    },
+    {
+     "word": "smaller ",
+     "success": true,
+     "startS": 104.76043,
+     "endS": 105.057,
+     "palign": 0
+    },
+    {
+     "word": "rock\n",
+     "success": true,
+     "startS": 105.11475,
+     "endS": 105.288,
+     "palign": 0
+    },
+    {
+     "word": "Saint ",
+     "success": true,
+     "startS": 105.342,
+     "endS": 105.558,
+     "palign": 0
+    },
+    {
+     "word": "Helena, ",
+     "success": true,
+     "startS": 105.638,
+     "endS": 105.99567,
+     "palign": 0
+    },
+    {
+     "word": "South ",
+     "success": true,
+     "startS": 106.04533,
+     "endS": 106.244,
+     "palign": 0
+    },
+    {
+     "word": "Atlantic — ",
+     "success": true,
+     "startS": 106.262,
+     "endS": 106.785,
+     "palign": 0
+    },
+    {
+     "word": "five ",
+     "success": true,
+     "startS": 106.822,
+     "endS": 106.933,
+     "palign": 0
+    },
+    {
+     "word": "years ",
+     "success": true,
+     "startS": 106.9834,
+     "endS": 107.185,
+     "palign": 0
+    },
+    {
+     "word": "watching ",
+     "success": true,
+     "startS": 107.23025,
+     "endS": 107.547,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 107.55533,
+     "endS": 107.572,
+     "palign": 0
+    },
+    {
+     "word": "clock\n",
+     "success": true,
+     "startS": 107.6364,
+     "endS": 107.894,
+     "palign": 0
+    },
+    {
+     "word": "We ",
+     "success": true,
+     "startS": 107.95,
+     "endS": 108.006,
+     "palign": 0
+    },
+    {
+     "word": "took ",
+     "success": true,
+     "startS": 108.05575,
+     "endS": 108.205,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 108.2335,
+     "endS": 108.319,
+     "palign": 0
+    },
+    {
+     "word": "horse, ",
+     "success": true,
+     "startS": 108.3834,
+     "endS": 108.6846,
+     "palign": 0
+    },
+    {
+     "word": "Marengo — ",
+     "success": true,
+     "startS": 108.7282,
+     "endS": 109.369,
+     "palign": 0
+    },
+    {
+     "word": "his ",
+     "success": true,
+     "startS": 109.413,
+     "endS": 109.501,
+     "palign": 0
+    },
+    {
+     "word": "bones ",
+     "success": true,
+     "startS": 109.5624,
+     "endS": 109.808,
+     "palign": 0
+    },
+    {
+     "word": "are ",
+     "success": true,
+     "startS": 109.85,
+     "endS": 109.934,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 110.042,
+     "endS": 110.15,
+     "palign": 0
+    },
+    {
+     "word": "display\n",
+     "success": true,
+     "startS": 110.20186,
+     "endS": 110.513,
+     "palign": 0
+    },
+    {
+     "word": "In ",
+     "success": true,
+     "startS": 110.577,
+     "endS": 110.641,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 110.695,
+     "endS": 110.695,
+     "palign": 0
+    },
+    {
+     "word": "London ",
+     "success": true,
+     "startS": 110.75883,
+     "endS": 111.078,
+     "palign": 0
+    },
+    {
+     "word": "museum — ",
+     "success": true,
+     "startS": 111.1545,
+     "endS": 111.64425,
+     "palign": 0
+    },
+    {
+     "word": "people ",
+     "success": true,
+     "startS": 111.66938,
+     "endS": 111.795,
+     "palign": 0
+    },
+    {
+     "word": "stare ",
+     "success": true,
+     "startS": 111.8458,
+     "endS": 112.049,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 112.1175,
+     "endS": 112.186,
+     "palign": 0
+    },
+    {
+     "word": "him ",
+     "success": true,
+     "startS": 112.26233,
+     "endS": 112.415,
+     "palign": 0
+    },
+    {
+     "word": "all ",
+     "success": true,
+     "startS": 112.49367,
+     "endS": 112.651,
+     "palign": 0
+    },
+    {
+     "word": "day\n",
+     "success": true,
+     "startS": 112.731,
+     "endS": 112.973,
+     "palign": 0
+    },
+    {
+     "word": "Canova ",
+     "success": true,
+     "startS": 113.01267,
+     "endS": 113.417,
+     "palign": 0
+    },
+    {
+     "word": "carved ",
+     "success": true,
+     "startS": 113.44733,
+     "endS": 113.599,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 113.659,
+     "endS": 113.779,
+     "palign": 0
+    },
+    {
+     "word": "naked, ",
+     "success": true,
+     "startS": 113.841,
+     "endS": 114.1255,
+     "palign": 0
+    },
+    {
+     "word": "marble, ",
+     "success": true,
+     "startS": 114.162,
+     "endS": 114.546,
+     "palign": 0
+    },
+    {
+     "word": "eleven ",
+     "success": true,
+     "startS": 114.601,
+     "endS": 114.876,
+     "palign": 0
+    },
+    {
+     "word": "feet ",
+     "success": true,
+     "startS": 114.95375,
+     "endS": 115.187,
+     "palign": 0
+    },
+    {
+     "word": "tall\n",
+     "success": true,
+     "startS": 115.25575,
+     "endS": 115.462,
+     "palign": 0
+    },
+    {
+     "word": "Now ",
+     "success": true,
+     "startS": 115.53133,
+     "endS": 115.67,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 115.70233,
+     "endS": 115.767,
+     "palign": 0
+    },
+    {
+     "word": "stand ",
+     "success": true,
+     "startS": 115.89,
+     "endS": 116.045,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 116.097,
+     "endS": 116.149,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 116.2045,
+     "endS": 116.26,
+     "palign": 0
+    },
+    {
+     "word": "stairwell ",
+     "success": true,
+     "startS": 116.3026,
+     "endS": 116.708,
+     "palign": 0
+    },
+    {
+     "word": "with ",
+     "success": true,
+     "startS": 116.74775,
+     "endS": 116.867,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 116.9,
+     "endS": 116.9,
+     "palign": 0
+    },
+    {
+     "word": "fig ",
+     "success": true,
+     "startS": 116.95633,
+     "endS": 117.069,
+     "palign": 0
+    },
+    {
+     "word": "leaf ",
+     "success": true,
+     "startS": 117.1405,
+     "endS": 117.355,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 117.417,
+     "endS": 117.479,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 117.599,
+     "endS": 117.719,
+     "palign": 0
+    },
+    {
+     "word": "hall\n",
+     "success": true,
+     "startS": 117.799,
+     "endS": 118.079,
+     "palign": 0
+    },
+    {
+     "word": "Two ",
+     "success": true,
+     "startS": 118.13433,
+     "endS": 118.245,
+     "palign": 0
+    },
+    {
+     "word": "hundred ",
+     "success": true,
+     "startS": 118.29714,
+     "endS": 118.61,
+     "palign": 0
+    },
+    {
+     "word": "years ",
+     "success": true,
+     "startS": 118.6638,
+     "endS": 118.879,
+     "palign": 0
+    },
+    {
+     "word": "later, ",
+     "success": true,
+     "startS": 118.959,
+     "endS": 119.44575,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 119.4645,
+     "endS": 119.502,
+     "palign": 0
+    },
+    {
+     "word": "world ",
+     "success": true,
+     "startS": 119.5456,
+     "endS": 119.72,
+     "palign": 0
+    },
+    {
+     "word": "still ",
+     "success": true,
+     "startS": 119.839,
+     "endS": 120.147,
+     "palign": 0
+    },
+    {
+     "word": "has ",
+     "success": true,
+     "startS": 120.21767,
+     "endS": 120.359,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 120.479,
+     "endS": 120.479,
+     "palign": 0
+    },
+    {
+     "word": "word ",
+     "success": true,
+     "startS": 120.5365,
+     "endS": 120.709,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 120.748,
+     "endS": 120.826,
+     "palign": 0
+    },
+    {
+     "word": "you\n",
+     "success": true,
+     "startS": 120.92833,
+     "endS": 121.133,
+     "palign": 0
+    },
+    {
+     "word": "Lose ",
+     "success": true,
+     "startS": 121.18325,
+     "endS": 121.334,
+     "palign": 0
+    },
+    {
+     "word": "it ",
+     "success": true,
+     "startS": 121.404,
+     "endS": 121.474,
+     "palign": 0
+    },
+    {
+     "word": "all, ",
+     "success": true,
+     "startS": 121.54567,
+     "endS": 121.729,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 121.769,
+     "endS": 121.849,
+     "palign": 0
+    },
+    {
+     "word": "people ",
+     "success": true,
+     "startS": 121.88033,
+     "endS": 122.037,
+     "palign": 0
+    },
+    {
+     "word": "say ",
+     "success": true,
+     "startS": 122.103,
+     "endS": 122.235,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 122.235,
+     "endS": 122.411,
+     "palign": 0
+    },
+    {
+     "word": "met ",
+     "success": true,
+     "startS": 122.47533,
+     "endS": 122.604,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 122.65475,
+     "endS": 122.807,
+     "palign": 0
+    },
+    {
+     "word": "Waterloo\n\n",
+     "success": true,
+     "startS": 122.864,
+     "endS": 124.36303,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: crowd chanting]\nIRON ",
+     "success": true,
+     "startS": 124.37407,
+     "endS": 124.974,
+     "palign": 0
+    },
+    {
+     "word": "DUKE! ",
+     "success": true,
+     "startS": 125.032,
+     "endS": 126.976,
+     "palign": 0
+    },
+    {
+     "word": "IRON ",
+     "success": true,
+     "startS": 127.04,
+     "endS": 127.534,
+     "palign": 0
+    },
+    {
+     "word": "DUKE!\n\n[",
+     "success": true,
+     "startS": 127.5925,
+     "endS": 127.78892,
+     "palign": 0
+    },
+    {
+     "word": "End]\n\n\n",
+     "success": true,
+     "startS": 127.8165,
+     "endS": 127.982,
+     "palign": 0
+    }
+   ]
+  }
+ ]
+}

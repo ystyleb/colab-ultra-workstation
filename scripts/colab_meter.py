@@ -13,9 +13,17 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 import time
 from pathlib import Path
+
+try:
+    import colab_cli  # noqa: F401
+except ImportError:
+    _uv_py = Path.home() / ".local/share/uv/tools/google-colab-cli/bin/python"
+    if _uv_py.exists() and str(sys.executable) != str(_uv_py):
+        os.execv(str(_uv_py), [str(_uv_py), *sys.argv])
 
 TRACKER_FILE = Path.home() / ".config/colab-cli/session_tracker.json"
 TRACKER_FILE.parent.mkdir(parents=True, exist_ok=True)
@@ -105,26 +113,41 @@ def cmd_start(session: str, gpu: str) -> None:
 
 def cmd_stop(session: str | None = None, stop_all: bool = False) -> dict:
     data = load_tracker()
-    if not session and not stop_all and data:
-        # Default to the most recently started tracked session rather than killing all
-        session = list(data.keys())[-1]
+    if not session and not stop_all:
+        # Never guess: several agents share this tracker, and "most recent session" once killed another
+        # agent's running G4 render mid-batch (2026-11-08). Require an explicit -s or --all.
+        print(f"❌ stop 需要 -s <session> 或 --all。当前登记的会话: {', '.join(data) or '无'}", file=sys.stderr)
+        sys.exit(2)
     record = data.get(session) if session else None
 
     # 1. Unassign ONLY the target session (unless --all is explicitly passed)
     try:
         from colab_cli.common import state
+        sessions, assignments = state.sync_sessions()
         if stop_all:
-            _, assignments = state.sync_sessions()
             for a in assignments:
                 state.client.unassign(a.endpoint)
-            for sid in list(state.store.list_all().keys()):
-                state.store.remove(sid)
+            for sid in list(sessions.keys()):
+                try:
+                    state.store.remove(sid)
+                except Exception:
+                    pass
         elif session:
-            state.sync_sessions()
-            s = state.store.get(session)
+            import subprocess as _sp
+            _colab_bin = Path.home() / ".local/bin/colab"
+            if _colab_bin.exists():
+                _sp.run([str(_colab_bin), "stop", "-s", session], capture_output=True)
+            sessions, assignments = state.sync_sessions()
+            s = sessions.get(session)
             if s and getattr(s, "endpoint", None):
                 state.client.unassign(s.endpoint)
-            state.store.remove(session)
+            elif assignments:
+                # Do NOT fall back to "the only assignment": it may belong to another agent's session.
+                print(f"⚠️ 会话 '{session}' 未找到，未释放任何实例；仍在线的 {len(assignments)} 个实例保持不动。", file=sys.stderr)
+            try:
+                state.store.remove(session)
+            except Exception:
+                pass
     except Exception as e:
         print(f"⚠️ Unassign 异常: {e}", file=sys.stderr)
 

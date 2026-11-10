@@ -1,0 +1,9 @@
+Use your image generation tool to create ONE vertical YouTube Shorts cover image (9:16, portrait), then save it in the current directory as cover_s1.png and make sure it is exactly 1080x1920 pixels (resize/pad with a local tool if needed). Do not ask questions; just produce the file.
+
+Base it on the attached reference frame: keep the SAME man (Thomas Edison as portrayed in our video: silver-streaked hair, charcoal tweed three-piece suit, dark bow tie, vintage chrome microphone) with the same face, expression (laughing, mouth open) and the same 1890s power-plant rap arena background with warm amber string lights and a cold spotlight. Do not invent a different person.
+
+Layout for a Shorts cover (important text must stay inside the central safe area, away from the top 8% and bottom 20%):
+- Upper third: big bold title "EDISON VS TESLA", EDISON and TESLA in metallic gold (#f5c518) brush-style lettering with dark outline, "VS" in red-orange (#f26a1b).
+- Middle-lower, over the chest area: a short punchy hook in heavy white condensed caps with black outline: "FOUR CENTS IN YOUR COAT?!" (exact spelling).
+- Small gold pill badge near the top-left: "AI RAP BATTLE".
+- Cinematic high contrast, slight vignette, readable at phone size. No other text, no watermarks, no logos.

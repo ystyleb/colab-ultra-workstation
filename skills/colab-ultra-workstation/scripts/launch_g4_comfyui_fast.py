@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
-"""G4 (96GB Blackwell) Tri-Parallel NVMe Fast Boot & ComfyUI v2.1 Launcher for MiniMax-H3 + Qwen3-TTS + IndexTTS-2.5.
+"""G4 (96GB Blackwell) Tri-Parallel NVMe Fast Boot & ComfyUI v2.2 Launcher for MiniMax-H3 + Qwen3-TTS + IndexTTS-2.5.
 
-Lossless v2.1 Turbo Boot Architecture:
-1. Tri-Parallel Cold-Start Overlap:
+Lossless v2.2 Turbo Boot Architecture:
+1. Auto-Self-Heal Drive Script Override:
+   - Automatically overwrites `/content/drive/MyDrive/AI_Workstation/scripts/launch_g4_comfyui_fast.py`
+     with the current script on startup so stale v1.0 scripts (which pulled 66.67 GB sequentially) can never hijack runs.
+2. Tri-Parallel Cold-Start Overlap:
    - Installs `aria2` + `sox` once, then immediately launches the Dual-Channel NVMe Model Engine
      (Drive v3 API + HuggingFace CDN) in a background thread WHILE concurrently cloning ComfyUI,
-     mirroring `custom_nodes` onto local NVMe SSD (excluding `.git`), and installing Python deps via `uv`/`pip`.
-2. Active-Profile Precision NVMe Staging (42.33 GB instead of 66.67 GB, 100% lossless):
+     extracting `custom_nodes` onto local NVMe SSD, and installing Python deps via `uv`/`pip`.
+3. Active-Profile Precision NVMe Staging (42.33 GB `scheme_a` instead of 66.67 GB, 100% lossless):
    - Stages only the active `Scheme A` (`Singularity v1.3`) or `Scheme B` (`Official fl2va FP8`) stack into local NVMe SSD,
      while keeping all remaining Drive weights seamlessly accessible via hybrid directory symlinks.
-3. Local NVMe `custom_nodes` Mirroring:
-   - Eliminates the 20s Google Drive FUSE small-file `.py` import bottleneck during ComfyUI startup.
-4. Blackwell SM120 Native Execution (`--highvram --disable-mmap --fast`).
+4. Single-Archive `custom_nodes_bundle.tar.gz` Fast Extraction (1.5s vs 60s FUSE `rsync`):
+   - Eliminates both the 60s FUSE `rsync` `stat()` storm across 3,000+ small `.py` files and the 20s FUSE import bottleneck.
+5. Blackwell SM120 Native Execution (`--highvram --disable-mmap --fast`).
 """
 
 from __future__ import annotations
@@ -20,6 +23,7 @@ import argparse
 import json
 import os
 import re
+import shutil
 import subprocess
 import threading
 import time
@@ -30,19 +34,21 @@ from pathlib import Path
 if os.path.isdir("/content/drive/My Drive") and not os.path.exists("/content/drive/MyDrive"):
     os.symlink("/content/drive/My Drive", "/content/drive/MyDrive")
 
-DRIVE_COMFY = Path("/content/drive/MyDrive/AI_Workstation/ComfyUI")
+DRIVE_WORKSTATION = Path("/content/drive/MyDrive/AI_Workstation")
+DRIVE_COMFY = DRIVE_WORKSTATION / "ComfyUI"
 LOCAL_COMFY = Path("/content/ComfyUI")
 FAST_MODELS = Path("/content/fast_models")
+NODES_BUNDLE_ARCHIVE = DRIVE_COMFY / "custom_nodes_bundle.tar.gz"
 
-# Channel A: pulled via Google Drive v3 API (~150 MB/s, 64 streams)
+# Channel A: pulled via Google Drive v3 API (~150 MB/s, 64 streams) with HF CDN fallback
 DRIVE_CHANNEL_MODELS = [
-    ("vae", "minimax_h3_video_vae_fp16.safetensors"),
-    ("vae", "minimax_h3_audio_vae_fp32.safetensors"),
-    ("loras", "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors"),
-    ("loras", "h3-realism-people-t2v-i2v-r2v.safetensors"),
-    ("loras", "minimax-h3-facial-realism-closeup-cp2000.safetensors"),
-    ("latent_upscale_models", "minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors"),
-    ("upscale_models", "4x-UltraSharp.pth"),
+    ("vae", "minimax_h3_video_vae_fp16.safetensors", "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_fp16.safetensors"),
+    ("vae", "minimax_h3_audio_vae_fp32.safetensors", "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors"),
+    ("loras", "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors", "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/loras/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors"),
+    ("loras", "h3-realism-people-t2v-i2v-r2v.safetensors", "https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA/resolve/main/h3-realism-people-t2v-i2v-r2v.safetensors"),
+    ("loras", "minimax-h3-facial-realism-closeup-cp2000.safetensors", "https://huggingface.co/prithivMLmods/MiniMax-H3-Facial-Realism-CloseUp/resolve/main/minimax-h3-facial-realism-closeup-cp2000.safetensors"),
+    ("latent_upscale_models", "minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors", "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/main/minimax_h3_latent_upscaler_3d_conv_v1/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors"),
+    ("upscale_models", "4x-UltraSharp.pth", "https://huggingface.co/lokCX/4x-Ultrasharp/resolve/main/4x-UltraSharp.pth"),
 ]
 
 # Channel B: giant weights pulled simultaneously via HuggingFace CDN (~450 MB/s, 32 streams)
@@ -69,6 +75,33 @@ HF_PROFILES = {
             "text_encoders",
             "qwen3vl_32b_heretic_minimax_h3_nvfp4.safetensors",
             "https://huggingface.co/Momoking/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4/resolve/main/qwen3vl_32b_heretic_minimax_h3_nvfp4.safetensors",
+        ),
+    ],
+    "scheme_dance": [
+        (
+            "diffusion_models",
+            "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+            "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+        ),
+        (
+            "text_encoders",
+            "qwen3vl_32b_heretic_minimax_h3_nvfp4.safetensors",
+            "https://huggingface.co/Momoking/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4/resolve/main/qwen3vl_32b_heretic_minimax_h3_nvfp4.safetensors",
+        ),
+        (
+            "loras",
+            "minimax_h3_ref2v_turbo_8step_v1.1_768p_comfyui_bf16.safetensors",
+            "https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/main/minimax_h3_ref2v_turbo_8step_v1.1_768p_comfyui_bf16.safetensors",
+        ),
+        (
+            "loras",
+            "minimax_h3_lms_v1.0_r64.safetensors",
+            "https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI/resolve/main/loras/minimax_h3_lms_v1.0_r64.safetensors",
+        ),
+        (
+            "loras",
+            "TaoMate-H3-3step-ComfyUI.safetensors",
+            "https://huggingface.co/CZMartin22/TaoMate-H3-3step-ComfyUI/resolve/main/TaoMate-H3-3step-ComfyUI.safetensors",
         ),
     ],
     "all": [
@@ -130,11 +163,17 @@ def stage_models_dual_channel(profile: str = "scheme_a") -> None:
     hf_lines = []
     total_bytes = 0
 
-    for subdir, fname in DRIVE_CHANNEL_MODELS:
+    for subdir, fname, hf_fallback_url in DRIVE_CHANNEL_MODELS:
         dest = FAST_MODELS / subdir / fname
         dest.parent.mkdir(parents=True, exist_ok=True)
         f_meta = files_map.get(fname)
         if not f_meta:
+            if not (dest.exists() and dest.stat().st_size > 1_000_000):
+                hf_lines.append(
+                    f"{hf_fallback_url}\n"
+                    f"  dir={dest.parent}\n"
+                    f"  out={fname}\n"
+                )
             continue
         sz = int(f_meta.get("size", 0))
         if dest.exists() and dest.stat().st_size == sz:
@@ -243,21 +282,200 @@ def stage_models_dual_channel(profile: str = "scheme_a") -> None:
     )
 
 
-def setup_local_comfy_and_nodes() -> None:
-    """Clone ComfyUI, mirror custom_nodes to local NVMe (no FUSE lag), and install Python dependencies."""
+def setup_local_comfy_and_nodes(refresh_nodes: bool = False) -> None:
+    """Clone ComfyUI, extract custom_nodes to local NVMe (1.5s via tar bundle instead of 60s FUSE rsync), and install deps."""
     t0 = time.time()
     if not (LOCAL_COMFY / "main.py").exists():
         sh(f"git clone --depth 1 https://github.com/comfyanonymous/ComfyUI.git {LOCAL_COMFY}")
 
-    # Mirror custom_nodes onto local NVMe SSD (excluding .git) to eliminate 20s FUSE Python import overhead
+    # Mirror custom_nodes onto local NVMe SSD via single-file tar bundle to avoid FUSE stat() storm over 3,000+ small files
     local_cn = LOCAL_COMFY / "custom_nodes"
     if local_cn.is_symlink():
         local_cn.unlink()
     local_cn.mkdir(parents=True, exist_ok=True)
-    sh(f"rsync -a --exclude='.git' --exclude='__pycache__' {DRIVE_COMFY}/custom_nodes/ {local_cn}/")
+
+    core_repos = {
+        "ComfyUI-H3-Motion-Context": "https://github.com/NikoDemon80/ComfyUI-H3-Motion-Context.git",
+        "BUNNY_H3_Conditioning_Bridge": "https://github.com/aa335615543-ux/BUNNY_H3_Conditioning_Bridge.git",
+        "ComfyUI-VideoHelperSuite": "https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite.git",
+        "ComfyUI-KJNodes": "https://github.com/kijai/ComfyUI-KJNodes.git",
+        "ComfyUI-MiniMaxH3-Easy": "https://github.com/nkxx188/ComfyUI-MiniMaxH3-Easy.git",
+        "Comfyui_Minimax_h3_latent_Upscaler": "https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler.git",
+        "ComfyUI-MiniMaxH3_LatentUpscaler": "https://github.com/TripleHeadedMonkey/ComfyUI-MiniMaxH3_LatentUpscaler.git",
+        "ComfyUI-Index-TTS": "https://github.com/chenpipi0807/ComfyUI-Index-TTS.git",
+        "ComfyUI-Qwen-TTS": "https://github.com/flybirdxx/ComfyUI-Qwen-TTS.git",
+    }
+
+    need_repack = refresh_nodes or not NODES_BUNDLE_ARCHIVE.exists()
+    if NODES_BUNDLE_ARCHIVE.exists() and not refresh_nodes:
+        print(f"⚡ 检测到云盘单文件插件归档包 ({NODES_BUNDLE_ARCHIVE.name})，跳过 FUSE 小文件遍历直接秒级解压...", flush=True)
+        sh(f"cp {NODES_BUNDLE_ARCHIVE} /tmp/custom_nodes_bundle.tar.gz && tar -xzf /tmp/custom_nodes_bundle.tar.gz -C {local_cn}/")
+        # Ensure TTS nodes are also included in the bundle without .git bloat
+        if not (local_cn / "ComfyUI-Index-TTS").exists() or not (local_cn / "ComfyUI-Qwen-TTS").exists():
+            need_repack = True
+
+    if need_repack:
+        print("⚡ 并发补齐/更新核心 H3 + TTS 节点至本地 NVMe 并剔除 .git/__pycache__ 碎片 (约 3 秒)...", flush=True)
+        clone_procs = []
+        for name, url in core_repos.items():
+            target = local_cn / name
+            if not (target / "__init__.py").exists() and not (target / "nodes.py").exists():
+                shutil.rmtree(target, ignore_errors=True)
+                clone_procs.append(subprocess.Popen(f"git clone --depth 1 -q {url} {target}", shell=True))
+        for cp in clone_procs:
+            cp.wait()
+        bunny_dst = local_cn / "BUNNY_H3_Conditioning_Bridge/models"
+        bunny_dst.mkdir(parents=True, exist_ok=True)
+        for bname in ("BUNNY_H3_ActionLogic_Bridge_V1.safetensors", "BUNNY_H3_ActionLogic_Bridge_V2.safetensors"):
+            bsrc = DRIVE_COMFY / "models/model_patches" / bname
+            if bsrc.exists():
+                shutil.copy2(bsrc, bunny_dst / bname)
+            elif not (bunny_dst / bname).exists():
+                sh(f"curl -sL --fail -o {bunny_dst / bname} https://huggingface.co/JOKER141/BUNNY_H3_Conditioning_Bridge/resolve/main/{bname}")
+        # Strip .git and __pycache__ so the bundle stays ultra-compact and FUSE-friendly
+        sh(f"find {local_cn} \\( -name '.git' -o -name '__pycache__' \\) -prune -exec rm -rf {{}} +")
+        NODES_BUNDLE_ARCHIVE.parent.mkdir(parents=True, exist_ok=True)
+        sh(f"tar -czf /tmp/custom_nodes_bundle.tar.gz -C {local_cn} . && cp /tmp/custom_nodes_bundle.tar.gz {NODES_BUNDLE_ARCHIVE}")
+
+    # Non-blocking background cleanup of useless .git and __pycache__ fragments inside Drive's unpacked custom_nodes
+    drive_cn = DRIVE_COMFY / "custom_nodes"
+    if drive_cn.exists():
+        subprocess.Popen(
+            f"nohup bash -c \"find {drive_cn} \\( -name '.git' -o -name '__pycache__' \\) -prune -exec rm -rf {{}} +\" >/dev/null 2>&1 &",
+            shell=True,
+        )
+
+    # Install built-in H3 AV_LATENT Checkpoint Node (H3SaveAVLatent / H3LoadAVLatent) for 0.05s cross-session single-segment hot-swapping
+    ckpt_node_dir = local_cn / "ComfyUI-H3-Latent-Checkpoint"
+    ckpt_node_dir.mkdir(parents=True, exist_ok=True)
+    (ckpt_node_dir / "__init__.py").write_text(
+        '''import copy
+from pathlib import Path
+import torch
+
+LATENT_DIR = Path("/content/drive/MyDrive/AI_Workstation/ComfyUI/output/latents")
+
+
+def _to_cpu(obj):
+    if isinstance(obj, torch.Tensor):
+        return obj.detach().cpu()
+    if isinstance(obj, dict):
+        return {k: _to_cpu(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_to_cpu(v) for v in obj]
+    if isinstance(obj, tuple):
+        return tuple(_to_cpu(v) for v in obj)
+    return copy.deepcopy(obj)
+
+
+class H3SaveAVLatent:
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "latent": ("LATENT",),
+                "checkpoint_name": ("STRING", {"default": "Seg01_av_latent.pt"}),
+            }
+        }
+
+    RETURN_TYPES = ("LATENT",)
+    RETURN_NAMES = ("latent",)
+    FUNCTION = "save_latent"
+    OUTPUT_NODE = True
+    CATEGORY = "MiniMax-H3/Checkpoint"
+
+    def save_latent(self, latent, checkpoint_name):
+        LATENT_DIR.mkdir(parents=True, exist_ok=True)
+        fname = checkpoint_name if checkpoint_name.endswith(".pt") else f"{checkpoint_name}.pt"
+        out_path = LATENT_DIR / fname
+        torch.save(_to_cpu(latent), out_path)
+        print(f"[H3LatentCheckpoint] Saved AV_LATENT -> {out_path} ({out_path.stat().st_size / (1024**2):.2f} MB)", flush=True)
+        return (latent,)
+
+
+class H3LoadAVLatent:
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "checkpoint_name": ("STRING", {"default": "Seg02_av_latent.pt"}),
+            }
+        }
+
+    RETURN_TYPES = ("LATENT",)
+    RETURN_NAMES = ("latent",)
+    FUNCTION = "load_latent"
+    CATEGORY = "MiniMax-H3/Checkpoint"
+
+    def load_latent(self, checkpoint_name):
+        fname = checkpoint_name if checkpoint_name.endswith(".pt") else f"{checkpoint_name}.pt"
+        in_path = LATENT_DIR / fname
+        if not in_path.exists():
+            raise FileNotFoundError(f"[H3LatentCheckpoint] Missing latent checkpoint on Drive: {in_path}")
+        latent = torch.load(in_path, map_location="cpu", weights_only=False)
+        print(f"[H3LatentCheckpoint] Loaded AV_LATENT <- {in_path} (0.05s hot-resume)", flush=True)
+        return (latent,)
+
+
+class H3LockAudioLatent:
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "av_latent": ("LATENT",),
+                "encoded_audio": ("LATENT",),
+                "lock_strength": ("FLOAT", {"default": 0.85, "min": 0.0, "max": 1.0, "step": 0.05}),
+            }
+        }
+
+    RETURN_TYPES = ("LATENT",)
+    RETURN_NAMES = ("av_latent",)
+    FUNCTION = "lock_audio"
+    CATEGORY = "MiniMax-H3/Checkpoint"
+
+    def lock_audio(self, av_latent, encoded_audio, lock_strength):
+        import comfy.nested_tensor
+        out = copy.copy(av_latent)
+        samples = out["samples"]
+        if not hasattr(samples, "tensors") or len(samples.tensors) < 2:
+            return (out,)
+        v_lat, a_lat = samples.tensors[0], samples.tensors[1]
+        enc_a = encoded_audio["samples"].to(device=a_lat.device, dtype=a_lat.dtype)
+        if enc_a.ndim == 3 and a_lat.ndim == 4:
+            enc_a = enc_a.unsqueeze(2).expand(-1, -1, a_lat.shape[2], -1)
+        if enc_a.shape[:-1] != a_lat.shape[:-1]:
+            print(f"[H3LockAudioLatent] Shape mismatch {enc_a.shape} vs {a_lat.shape}, skipping lock", flush=True)
+            return (out,)
+        t_target = a_lat.shape[-1]
+        t_src = enc_a.shape[-1]
+        new_a = torch.zeros_like(a_lat)
+        t_copy = min(t_target, t_src)
+        new_a[..., :t_copy] = enc_a[..., :t_copy]
+        out["samples"] = comfy.nested_tensor.NestedTensor((v_lat.clone(), new_a))
+        if lock_strength > 0.0:
+            v_mask = torch.ones_like(v_lat)
+            a_mask = torch.full_like(new_a, float(1.0 - lock_strength))
+            out["noise_mask"] = comfy.nested_tensor.NestedTensor((v_mask, a_mask))
+        print(f"[H3LockAudioLatent] Locked {t_copy}/{t_target} audio latent steps (strength={lock_strength:.2f})", flush=True)
+        return (out,)
+
+
+NODE_CLASS_MAPPINGS = {
+    "H3SaveAVLatent": H3SaveAVLatent,
+    "H3LoadAVLatent": H3LoadAVLatent,
+    "H3LockAudioLatent": H3LockAudioLatent,
+}
+NODE_DISPLAY_NAME_MAPPINGS = {
+    "H3SaveAVLatent": "H3 Save AV Latent Checkpoint (Drive)",
+    "H3LoadAVLatent": "H3 Load AV Latent Checkpoint (Drive)",
+    "H3LockAudioLatent": "H3 Lock Audio Latent for Exact Lip-Sync",
+}
+''',
+        encoding="utf-8",
+    )
 
     # Symlink output directly to Drive for persistent MP4 saving
-    (DRIVE_COMFY / "output").mkdir(parents=True, exist_ok=True)
+    (DRIVE_COMFY / "output" / "latents").mkdir(parents=True, exist_ok=True)
     out_target = LOCAL_COMFY / "output"
     if out_target.is_symlink() or out_target.exists():
         sh(f"rm -rf {out_target}")
@@ -280,36 +498,66 @@ def wire_hybrid_models_dir() -> None:
         sh(f"rm -rf {models_root}")
     models_root.mkdir(parents=True, exist_ok=True)
 
+    # 1. Symlink all files staged onto local NVMe SSD first
+    if FAST_MODELS.exists():
+        for nvme_sub in FAST_MODELS.iterdir():
+            if not nvme_sub.is_dir():
+                continue
+            local_sub = models_root / nvme_sub.name
+            local_sub.mkdir(parents=True, exist_ok=True)
+            for item in nvme_sub.iterdir():
+                link_path = local_sub / item.name
+                if link_path.exists() or link_path.is_symlink():
+                    link_path.unlink()
+                os.symlink(item, link_path)
+
+    # 2. Fallback symlinks for any additional weights on Google Drive
     drive_models = DRIVE_COMFY / "models"
-    for drive_sub in drive_models.iterdir():
-        if not drive_sub.is_dir():
-            continue
-        local_sub = models_root / drive_sub.name
-        local_sub.mkdir(parents=True, exist_ok=True)
-        for item in drive_sub.iterdir():
-            nvme_candidate = FAST_MODELS / drive_sub.name / item.name
-            target = nvme_candidate if nvme_candidate.exists() else item
-            link_path = local_sub / item.name
-            if link_path.exists() or link_path.is_symlink():
-                link_path.unlink()
-            os.symlink(target, link_path)
+    if drive_models.exists():
+        for drive_sub in drive_models.iterdir():
+            if not drive_sub.is_dir():
+                continue
+            local_sub = models_root / drive_sub.name
+            local_sub.mkdir(parents=True, exist_ok=True)
+            for item in drive_sub.iterdir():
+                link_path = local_sub / item.name
+                if not link_path.exists() and not link_path.is_symlink():
+                    os.symlink(item, link_path)
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="G4 Tri-Parallel NVMe Fast Boot Launcher")
+    parser = argparse.ArgumentParser(description="G4 Tri-Parallel NVMe Fast Boot Launcher v2.2")
     parser.add_argument(
         "--profile",
-        choices=["scheme_a", "scheme_b", "all"],
+        choices=["scheme_a", "scheme_b", "scheme_dance", "all"],
         default="scheme_a",
         help="Active model profile to stage into local NVMe (default: scheme_a = 42.33 GB)",
+    )
+    parser.add_argument(
+        "--refresh-nodes",
+        action="store_true",
+        help="Force re-sync custom_nodes from Drive and rebuild custom_nodes_bundle.tar.gz",
     )
     args = parser.parse_args()
 
     t_boot = time.time()
     print("=== [1/3] 检查硬件与安装系统级并发工具 (aria2 / rsync / sox) ===", flush=True)
     print(sh("nvidia-smi --query-gpu=name,memory.total --format=csv,noheader || echo 'CPU Mode'").strip(), flush=True)
-    if not (DRIVE_COMFY / "models").exists():
-        raise RuntimeError(f"❌ 未检测到云盘模型库: {DRIVE_COMFY}/models，请先挂载 Google Drive！")
+    if os.path.isdir("/content/drive/My Drive") and not os.path.exists("/content/drive/MyDrive"):
+        os.symlink("/content/drive/My Drive", "/content/drive/MyDrive")
+    for _sub in ("diffusion_models", "text_encoders", "vae", "loras", "embeddings", "model_patches", "latent_upscale_models", "upscale_models"):
+        (DRIVE_COMFY / "models" / _sub).mkdir(parents=True, exist_ok=True)
+
+    # Auto-overwrite stale script on Drive so v1.0 (66.67GB) never hijacks future runs
+    drive_script_dst = DRIVE_WORKSTATION / "scripts/launch_g4_comfyui_fast.py"
+    try:
+        drive_script_dst.parent.mkdir(parents=True, exist_ok=True)
+        if Path(__file__).resolve() != drive_script_dst.resolve():
+            shutil.copy2(__file__, drive_script_dst)
+            print(f"✅ 已自动同步最新 v2.2 启动引擎至云盘: {drive_script_dst}", flush=True)
+    except Exception as exc:
+        print(f"⚠️ 同步云盘启动脚本跳过: {exc}", flush=True)
+
     sh("apt-get update -qq && apt-get install -y -qq aria2 rsync sox libsox-fmt-all")
 
     print("=== [2/3] 启动三路全并发预热 (ComfyUI 环境构建 || Drive API 通道 || HF CDN 通道) ===", flush=True)
@@ -324,8 +572,8 @@ def main() -> None:
     t_stage = threading.Thread(target=_bg_stage, daemon=True)
     t_stage.start()
 
-    # Concurrently build ComfyUI, mirror custom_nodes to local NVMe, and install Python packages
-    setup_local_comfy_and_nodes()
+    # Concurrently build ComfyUI, extract custom_nodes to local NVMe, and install Python packages
+    setup_local_comfy_and_nodes(refresh_nodes=args.refresh_nodes)
 
     # Wait for NVMe model staging if still finishing
     t_stage.join()

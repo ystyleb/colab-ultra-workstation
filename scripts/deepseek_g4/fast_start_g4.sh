@@ -72,7 +72,7 @@ done
 case "${ACTION}" in
   status)
     echo "=== [1] Local Colab Meter & Active Sessions ==="
-    /Users/delroy/.local/share/uv/tools/google-colab-cli/bin/python "${METER_PY}" report || true
+    "${HOME}/.local/share/uv/tools/google-colab-cli/bin/python" "${METER_PY}" report || true
     echo ""
     echo "=== [2] Local OpenAI Endpoint Health (http://127.0.0.1:${LOCAL_PORT}/health) ==="
     curl -s "http://127.0.0.1:${LOCAL_PORT}/health" | python3 -m json.tool || echo "Local tunnel not listening on :${LOCAL_PORT}"
@@ -82,7 +82,7 @@ case "${ACTION}" in
     echo "=== Stopping local SSH tunnel on :${LOCAL_PORT} & Releasing G4 Session (${SESSION_NAME}) ==="
     pkill -f "${LOCAL_PORT}:127.0.0.1:${REMOTE_PORT}" 2>/dev/null || true
     ~/.local/bin/colab stop -s "${SESSION_NAME}" 2>/dev/null || true
-    /Users/delroy/.local/share/uv/tools/google-colab-cli/bin/python "${METER_PY}" stop -s "${SESSION_NAME}" || true
+    "${HOME}/.local/share/uv/tools/google-colab-cli/bin/python" "${METER_PY}" stop -s "${SESSION_NAME}" || true
     ;;
 
   switch)

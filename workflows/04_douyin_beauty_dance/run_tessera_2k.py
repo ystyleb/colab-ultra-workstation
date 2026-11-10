@@ -186,15 +186,33 @@ nodes_py.write_text(nodes_txt)
 # Seg 3: frames 238..361 (9.9167s - 15.0833s)
 inp_dir = LOCAL_COMFY / "input"
 inp_dir.mkdir(parents=True, exist_ok=True)
-v15_src = DRIVE_COMFY / "output" / "20261031_DouyinDance_CatGirl_15s" / "V15_S1_OfficialBase" / "DouyinDance_RealGirlV3_15s_V15_S1_OfficialBase.mp4"
+
+cli_input_mp4 = None
+for i, arg in enumerate(sys.argv[1:]):
+    if arg == "--input-mp4" and i + 2 < len(sys.argv):
+        cli_input_mp4 = Path(sys.argv[i + 2])
+
+src_candidates = [
+    p for p in [
+        cli_input_mp4,
+        Path("/tmp/DouyinDance_RealGirlV3_15s_V15_Best.mp4"),
+        DRIVE_COMFY / "output" / "20261031_DouyinDance_CatGirl_15s" / "V15_Best" / "DouyinDance_RealGirlV3_15s_V15_Best.mp4",
+        DRIVE_COMFY / "output" / "20261031_DouyinDance_CatGirl_15s" / "V15_S1_OfficialBase" / "DouyinDance_RealGirlV3_15s_V15_S1_OfficialBase.mp4",
+    ] if p is not None and p.exists()
+]
+if not src_candidates:
+    raise FileNotFoundError("❌ Stage-1 MP4 not found in /tmp or Drive output!")
+v15_src = src_candidates[0]
+print(f"🎞️ Using Stage-1 source video for Tessera 2K refinement: {v15_src}", flush=True)
 shutil.copy2(v15_src, inp_dir / "v15_s1_full.mp4")
 
 for fn in ["ref_realgirl_v3_2k.png", "master_bgm_15s.wav"]:
     for cand in [
+        Path("/tmp") / fn,
         DRIVE_COMFY / "input" / fn,
         Path("/content/drive/MyDrive/AI_Workstation/workflows/04_douyin_beauty_dance/inputs") / fn,
     ]:
-        if cand.exists():
+        if cand.exists() and cand.resolve() != (inp_dir / fn).resolve():
             shutil.copy2(cand, inp_dir / fn)
             break
 
@@ -206,12 +224,11 @@ seg_defs = [
 for sid, f_start, f_cnt in seg_defs:
     seg_mp4 = inp_dir / f"v15_s1_seg{sid}.mp4"
     t_ss = f_start / 24.0
-    t_dur = f_cnt / 24.0
+    t_end = (f_start + f_cnt) / 24.0
     run_cmd([
         "ffmpeg", "-y", "-i", str(inp_dir / "v15_s1_full.mp4"),
-        "-ss", f"{t_ss:.6f}", "-t", f"{t_dur:.6f}",
-        "-vf", f"fps=24,trim=start_frame=0:end_frame={f_cnt},setpts=PTS-STARTPTS",
-        "-af", f"atrim=0:{t_dur:.6f},asetpts=PTS-STARTPTS",
+        "-vf", f"fps=24,trim=start_frame={f_start}:end_frame={f_start + f_cnt},setpts=PTS-STARTPTS",
+        "-af", f"atrim={t_ss:.6f}:{t_end:.6f},asetpts=PTS-STARTPTS",
         "-c:v", "libx264", "-crf", "12", "-preset", "fast",
         "-c:a", "aac", "-b:a", "192k",
         str(seg_mp4),
@@ -398,7 +415,8 @@ def run_segment_tessera(sid: int, seg_mp4_name: str, anchor_img_name: str) -> Pa
           "fine_below_sigma": 0.75,
           "tile_select": ACTIVE_PROFILE["tile_select"],
           "tile_limit": ACTIVE_PROFILE["tile_limit"],
-          "flat_skip": 4.0
+          "flat_skip": 4.0,
+          "composite": "blend"
         }
       },
       "30": {
@@ -449,6 +467,22 @@ def run_segment_tessera(sid: int, seg_mp4_name: str, anchor_img_name: str) -> Pa
         }
       }
     }
+
+    # Auto-fill any newly added required inputs on Tessera nodes from ComfyUI /object_info
+    try:
+        obj_info = json.loads(urllib.request.urlopen("http://127.0.0.1:8188/object_info", timeout=10).read().decode())
+        for nid in ("24", "29", "30"):
+            ctype = wf[nid]["class_type"]
+            req_defs = obj_info.get(ctype, {}).get("input", {}).get("required", {})
+            node_in = wf[nid]["inputs"]
+            for k, spec in req_defs.items():
+                if k not in node_in:
+                    if isinstance(spec, list) and len(spec) >= 2 and isinstance(spec[1], dict) and "default" in spec[1]:
+                        node_in[k] = spec[1]["default"]
+                    elif isinstance(spec, list) and len(spec) >= 1 and isinstance(spec[0], list) and spec[0]:
+                        node_in[k] = spec[0][0]
+    except Exception:
+        pass
 
     req = urllib.request.Request(
         "http://127.0.0.1:8188/prompt",

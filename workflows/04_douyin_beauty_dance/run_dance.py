@@ -93,7 +93,7 @@ def ensure_comfy_running() -> None:
     if not launcher.exists():
         launcher = Path("/content/drive/MyDrive/AI_Workstation/scripts/launch_g4_comfyui_fast.py")
     print("🚀 正在启动 launch_g4_comfyui_fast.py (v2.2 双通道 NVMe 极速常驻模式)...", flush=True)
-    subprocess.run([sys.executable, "-u", str(launcher), "--profile", "scheme_a"], check=True)
+    subprocess.run([sys.executable, "-u", str(launcher), "--profile", "scheme_dance"], check=True)
     for _ in range(60):
         if is_comfy_up():
             return
@@ -118,8 +118,9 @@ def find_asset_file(fname: str) -> Optional[Path]:
         script_dir / "bgm_library" / fname,
         script_dir / "sample_inputs" / fname,
         script_dir / "inputs" / fname,
-        script_dir.parents[2] / "local_debug_workspace" / "01_douyin_dance_catgirl_15s" / "inputs" / fname,
     ]
+    if len(script_dir.parents) > 2:
+        candidates.append(script_dir.parents[2] / "local_debug_workspace" / "01_douyin_dance_catgirl_15s" / "inputs" / fname)
     return next((p for p in candidates if p.exists()), None)
 
 
@@ -700,6 +701,24 @@ def sync_inputs_to_local_ssd(wf: dict, extra_files: Optional[List[str]] = None) 
             if l_base.is_symlink() or l_base.exists():
                 l_base.unlink()
             os.symlink(f_base, l_base)
+
+    # Auto-provision minimax_h3_ref2v_turbo_8step_v1.1_768p_comfyui_bf16.safetensors if requested by workflow
+    req_turbo = wf.get("4", {}).get("inputs", {}).get("lora_name", "")
+    if req_turbo == "minimax_h3_ref2v_turbo_8step_v1.1_768p_comfyui_bf16.safetensors":
+        l_turbo = LOCAL_COMFY / "models" / "loras" / req_turbo
+        d_turbo = DRIVE_COMFY / "models" / "loras" / req_turbo
+        f_turbo = Path("/content/fast_models/loras") / req_turbo
+        f_turbo.parent.mkdir(parents=True, exist_ok=True)
+        if not (l_turbo.exists() and l_turbo.stat().st_size > 100_000_000):
+            if d_turbo.exists() and d_turbo.stat().st_size > 100_000_000:
+                shutil.copy2(d_turbo, f_turbo)
+            elif not (f_turbo.exists() and f_turbo.stat().st_size > 100_000_000):
+                url = f"https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/main/{req_turbo}"
+                print(f"⬇️ 正在高速拉取官方 Turbo LoRA {req_turbo} 至本地 NVMe...", flush=True)
+                subprocess.run(["aria2c", "-x16", "-s16", "-k1M", "--console-log-level=warn", "-d", str(f_turbo.parent), "-o", req_turbo, url], check=True)
+            if l_turbo.is_symlink() or l_turbo.exists():
+                l_turbo.unlink()
+            os.symlink(f_turbo, l_turbo)
 
 
 def submit_and_wait(workflow: dict, label: str) -> dict:

@@ -1,0 +1,280 @@
+[
+ {
+  "id": "OPEN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "venue",
+   "crowd",
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background. Image 2 is the crowd of 1890s New York workers and engineers. Image 3 is Thomas Edison's face (keep his exact face, silver-streaked hair and charcoal tweed suit). Image 4 is Nikola Tesla's face (keep his exact face, parted jet-black hair, moustache and black frock coat).\n\nCinematic photoreal shot, 16:9. The camera glides fast at head height over the backs of the cheering crowd toward the spotlit circular stage, where Thomas Edison (Image 3) and Nikola Tesla (Image 4) stand facing each other about three meters apart, raised fists and flat caps in the blurred foreground.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs. The bulb belongs only to Edison, the Tesla coil only to Tesla. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "FACEOFF",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "venue"
+  ],
+  "prompt": "Image 1 is Thomas Edison's face (keep his exact face, silver-streaked hair and charcoal tweed suit). Image 2 is Nikola Tesla's face (keep his exact face, parted jet-black hair, moustache and black frock coat). Image 3 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background.\n\nCinematic photoreal shot, 16:9. Low-angle medium two-shot, static camera. Thomas Edison (Image 1) on screen-left and Nikola Tesla (Image 2) on screen-right face each other in profile, close enough to touch. Edison slowly raises his glowing amber bulb between them; Tesla answers by lifting his brass Tesla coil, blue-violet arcs crackling. Both stay silent, mouths closed, staring each other down.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs. The bulb belongs only to Edison, the Tesla coil only to Tesla. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "A01",
+  "kind": "rap",
+  "who": "a",
+  "line": 1,
+  "move": "M2",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   2.446,
+   5.085
+  ],
+  "image_keys": [
+   "a_face_clean"
+  ],
+  "text": "Over a thousand patents stamped under my name",
+  "action": "fierce and cocky, tapping the gold pocket-watch chain on his vest, then holding up the warm glowing amber bulb beside his grinning face, the glowing amber carbon-filament bulb stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "The camera holds a tight head-and-shoulders close-up at eye level, frontal, his face filling the upper half of the 16:9 frame"
+ },
+ {
+  "id": "A02",
+  "kind": "rap",
+  "who": "a",
+  "line": 2,
+  "move": "M5",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   5.055,
+   7.608
+  ],
+  "image_keys": [
+   "a_face_clean"
+  ],
+  "text": "I lit up New York City while you chased a phantom flame",
+  "action": "sweeping his glowing amber light bulb wide toward the cheering crowd while looking down at Tesla, the glowing amber carbon-filament bulb stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "The camera holds a chest-up medium close-up from a three-quarter angle at eye level from his left side"
+ },
+ {
+  "id": "R_T1",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "venue"
+  ],
+  "prompt": "Image 1 is Nikola Tesla's face (keep his exact face, parted jet-black hair, moustache and black frock coat). Image 2 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background.\n\nCinematic photoreal shot, 16:9. Close-up of Nikola Tesla (Image 1), frontal, eye level, static camera, the crowd blurred behind him. He listens silently with his mouth closed, unimpressed: one eyebrow rises, he tilts his head with a cold smirk, and tiny blue-violet sparks jump between his fingertips.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs. Tesla holds his Tesla coil in his left hand and his right hand is empty. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "A03",
+  "kind": "rap",
+  "who": "a",
+  "line": 3,
+  "move": "M3",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   7.578,
+   10.02
+  ],
+  "image_keys": [
+   "a_face_clean"
+  ],
+  "text": "You wired up the future? Boy, you couldn't pay the rent",
+  "action": "rubbing his thumb and fingers together in a money gesture, laughing mockingly into the microphone, the glowing amber carbon-filament bulb stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "The camera holds a low-angle chest-up medium close-up looking slightly up at him, the overhead spotlight lamp glowing at the top of the frame"
+ },
+ {
+  "id": "A04",
+  "kind": "rap",
+  "who": "a",
+  "line": 4,
+  "move": "M7",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   9.99,
+   13.21
+  ],
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "text": "Feeding pigeons in a hotel without a single cent",
+  "action": "flapping his free hand mockingly like a pigeon wing, then pointing sharply at Tesla on the last word, the glowing amber carbon-filament bulb stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": true,
+  "cam": "The camera holds an over-the-shoulder two-shot from behind <Subject 2>'s right shoulder: <Subject 2> is a dark, out-of-focus shoulder and back of the head in the left foreground, <Subject 1> is chest-up and in sharp focus on screen-right facing the lens",
+  "listener": " while <Subject 2> stays a silent, blurred foreground shoulder with his back to the camera"
+ },
+ {
+  "id": "CROWD_OOH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the crowd of 1890s New York workers and engineers.\n\nCinematic photoreal shot, 16:9. Close medium shot packed with four or five workers from the front row (Image 1), their faces large and filling the 16:9 frame, handheld camera at their eye level, the spotlit stage only a blurred glow behind them. They react to a brutal punchline: one claps both hands over his mouth, one grabs his head with wide eyes, one doubles over laughing and shoves his friend. Energetic, joyful chaos.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "DJ",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "dj",
+   "venue",
+   "crowd"
+  ],
+  "prompt": "Image 1 is the DJ at his steampunk booth. Image 2 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background. Image 3 is the crowd of 1890s New York workers and engineers.\n\nCinematic photoreal shot, 16:9. Medium shot from a slightly low angle of the DJ (Image 1) at the raised steampunk booth built on brass dynamos, scratching a record with one hand and pumping his fist with the other, the crowd behind and below him punching the air in rhythm.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "B_STEP",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "venue",
+   "crowd"
+  ],
+  "prompt": "Image 1 is Nikola Tesla's face (keep his exact face, parted jet-black hair, moustache and black frock coat). Image 2 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background. Image 3 is the crowd of 1890s New York workers and engineers.\n\nCinematic photoreal shot, 16:9. The camera swings in from his side and settles into a frontal medium shot at eye level as Nikola Tesla (Image 1) steps forward into the white spotlight, calmly straightens his cuffs and lifts his brass Tesla coil, which flares with blue-violet arcs. Mouth closed, cold confident stare into the lens.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs. Tesla holds his Tesla coil in his left hand and his right hand is empty. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "M3",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   15.414,
+   17.952
+  ],
+  "image_keys": [
+   "b_face_clean"
+  ],
+  "text": "Twenty-two men built the bulb before you made the steal",
+  "action": "holding up two fingers twice to show twenty-two, then thrusting his crackling blue-violet Tesla coil right toward Edison's dim yellow bulb, the crackling blue-violet Tesla coil stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "The camera holds a tight head-and-shoulders close-up at eye level, frontal, his face filling the upper half of the 16:9 frame"
+ },
+ {
+  "id": "B02",
+  "kind": "rap",
+  "who": "b",
+  "line": 2,
+  "move": "M2",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   17.922,
+   20.81
+  ],
+  "image_keys": [
+   "b_face_clean"
+  ],
+  "text": "You promised fifty thousand bucks then broke the whole deal",
+  "action": "mimicking a handshake in mid-air and slicing his hand sideways as blue electric sparks flash from his brass coil, the crackling blue-violet Tesla coil stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "The camera holds a chest-up medium close-up from a three-quarter angle at eye level from his right side"
+ },
+ {
+  "id": "R_E1",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "venue"
+  ],
+  "prompt": "Image 1 is Thomas Edison's face (keep his exact face, silver-streaked hair and charcoal tweed suit). Image 2 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background.\n\nCinematic photoreal shot, 16:9. Close-up of Thomas Edison (Image 1), three-quarter view, eye level, static camera, crowd blurred behind. He listens silently with his mouth closed, stung: his jaw tightens, he tugs at his cravat and looks away, the amber bulb in his hand trembling slightly.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Edison holds his bulb in his left hand and his right hand is empty. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "M6",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   20.778,
+   23.195
+  ],
+  "image_keys": [
+   "b_face_clean"
+  ],
+  "text": "Your weak direct current left the city in the dark",
+  "action": "flicking Edison's warm yellow bulb with one finger as his own blue-violet Tesla coil blazes brighter across both faces, the crackling blue-violet Tesla coil stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "The camera holds a low-angle chest-up medium close-up looking slightly up at him, the overhead spotlight lamp glowing at the top of the frame"
+ },
+ {
+  "id": "BLACKOUT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "venue"
+  ],
+  "prompt": "Image 1 is Thomas Edison's face (keep his exact face, silver-streaked hair and charcoal tweed suit). Image 2 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background.\n\nCinematic photoreal shot, 16:9. Close-up of Thomas Edison (Image 1) holding his glowing amber bulb near his face, static camera. During 00:00.000-00:01.000 the bulb glows warmly on his face; at 00:01.000 it flickers twice and dies completely; from 00:01.500 his face is left almost in darkness, only a faint cold blue rim light from the Tesla coils behind him. Mouth closed, shocked stare.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Edison holds his bulb in his left hand and his right hand is empty. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "B04",
+  "kind": "rap",
+  "who": "b",
+  "line": 4,
+  "move": "M7",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   23.165,
+   26.159
+  ],
+  "image_keys": [
+   "b_face_clean"
+  ],
+  "text": "Now the future drives my name on every high-voltage spark",
+  "action": "raising the crackling blue-violet Tesla coil high above his head as lightning arcs behind him, triumphant and fierce, and when he sings 'high-voltage' bright blue-violet lightning arcs flare up behind him, the crackling blue-violet Tesla coil stays in his left hand, clearly separate from the microphone stand",
+  "two_shot": false,
+  "cam": "The camera holds a tight head-and-shoulders close-up at eye level, frontal, his face filling the upper half of the 16:9 frame"
+ },
+ {
+  "id": "CROWD_ERUPT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd",
+   "venue"
+  ],
+  "prompt": "Image 1 is the crowd of 1890s New York workers and engineers. Image 2 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background.\n\nCinematic photoreal shot, 16:9. Wide-ish medium shot of the crowd erupting, handheld camera: everyone jumps and punches the air, chanting together, flat caps flying, blue-violet light flickering over their faces from the Tesla coils.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ },
+ {
+  "id": "END",
+  "kind": "still",
+  "move": "V2",
+  "frames": 90,
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "venue",
+   "crowd"
+  ],
+  "prompt": "Image 1 is Nikola Tesla's face (keep his exact face, parted jet-black hair, moustache and black frock coat). Image 2 is Thomas Edison's face (keep his exact face, silver-streaked hair and charcoal tweed suit). Image 3 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background. Image 4 is the crowd of 1890s New York workers and engineers.\n\nCinematic photoreal shot, 16:9. Medium shot at eye level in the spotlit circle, slow push-in: Nikola Tesla (Image 1) stands triumphant and spreads his arms wide as lightning arcs crackle from the coils behind him, the crowd roaring beyond the circle. In the dark background, Thomas Edison (Image 2) turns away and walks out of the light. Mouths closed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs. The bulb belongs only to Edison, the Tesla coil only to Tesla. Nobody holds a microphone; the two vintage chrome microphones stand on floor stands at the edge of the circle. No subtitles, no on-screen text, no logos, no watermark."
+ }
+]

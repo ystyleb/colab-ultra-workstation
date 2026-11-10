@@ -40,15 +40,15 @@ LOCAL_COMFY = Path("/content/ComfyUI")
 FAST_MODELS = Path("/content/fast_models")
 NODES_BUNDLE_ARCHIVE = DRIVE_COMFY / "custom_nodes_bundle.tar.gz"
 
-# Channel A: pulled via Google Drive v3 API (~150 MB/s, 64 streams)
+# Channel A: pulled via Google Drive v3 API (~150 MB/s, 64 streams) with HF CDN fallback
 DRIVE_CHANNEL_MODELS = [
-    ("vae", "minimax_h3_video_vae_fp16.safetensors"),
-    ("vae", "minimax_h3_audio_vae_fp32.safetensors"),
-    ("loras", "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors"),
-    ("loras", "h3-realism-people-t2v-i2v-r2v.safetensors"),
-    ("loras", "minimax-h3-facial-realism-closeup-cp2000.safetensors"),
-    ("latent_upscale_models", "minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors"),
-    ("upscale_models", "4x-UltraSharp.pth"),
+    ("vae", "minimax_h3_video_vae_fp16.safetensors", "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_video_vae_fp16.safetensors"),
+    ("vae", "minimax_h3_audio_vae_fp32.safetensors", "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/vae/minimax_h3_audio_vae_fp32.safetensors"),
+    ("loras", "minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors", "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/loras/minimax_h3_fl2v_turbo_8step_v1.0_comfyui_bf16.safetensors"),
+    ("loras", "h3-realism-people-t2v-i2v-r2v.safetensors", "https://huggingface.co/fal/MiniMax-H3-Realism-People-LoRA/resolve/main/h3-realism-people-t2v-i2v-r2v.safetensors"),
+    ("loras", "minimax-h3-facial-realism-closeup-cp2000.safetensors", "https://huggingface.co/prithivMLmods/MiniMax-H3-Facial-Realism-CloseUp/resolve/main/minimax-h3-facial-realism-closeup-cp2000.safetensors"),
+    ("latent_upscale_models", "minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors", "https://huggingface.co/LBH-123-AI/Minimax_h3_latent_Upscaler/resolve/main/minimax_h3_latent_upscaler_3d_conv_v1/minimax_h3_latent_upscaler_3d_conv_v1_bf16.safetensors"),
+    ("upscale_models", "4x-UltraSharp.pth", "https://huggingface.co/lokCX/4x-Ultrasharp/resolve/main/4x-UltraSharp.pth"),
 ]
 
 # Channel B: giant weights pulled simultaneously via HuggingFace CDN (~450 MB/s, 32 streams)
@@ -75,6 +75,33 @@ HF_PROFILES = {
             "text_encoders",
             "qwen3vl_32b_heretic_minimax_h3_nvfp4.safetensors",
             "https://huggingface.co/Momoking/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4/resolve/main/qwen3vl_32b_heretic_minimax_h3_nvfp4.safetensors",
+        ),
+    ],
+    "scheme_dance": [
+        (
+            "diffusion_models",
+            "minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+            "https://huggingface.co/Comfy-Org/MiniMax-H3/resolve/main/diffusion_models/minimax_h3_ref2va_pruned_int8_convrot.safetensors",
+        ),
+        (
+            "text_encoders",
+            "qwen3vl_32b_heretic_minimax_h3_nvfp4.safetensors",
+            "https://huggingface.co/Momoking/Qwen3-VL-32B-Heretic-MiniMax-H3-NVFP4/resolve/main/qwen3vl_32b_heretic_minimax_h3_nvfp4.safetensors",
+        ),
+        (
+            "loras",
+            "minimax_h3_ref2v_turbo_8step_v1.1_768p_comfyui_bf16.safetensors",
+            "https://huggingface.co/lightx2v/Minimax-h3-Turbo/resolve/main/minimax_h3_ref2v_turbo_8step_v1.1_768p_comfyui_bf16.safetensors",
+        ),
+        (
+            "loras",
+            "minimax_h3_lms_v1.0_r64.safetensors",
+            "https://huggingface.co/Alissonerdx/Minimax-H3-ComfyUI/resolve/main/loras/minimax_h3_lms_v1.0_r64.safetensors",
+        ),
+        (
+            "loras",
+            "TaoMate-H3-3step-ComfyUI.safetensors",
+            "https://huggingface.co/CZMartin22/TaoMate-H3-3step-ComfyUI/resolve/main/TaoMate-H3-3step-ComfyUI.safetensors",
         ),
     ],
     "all": [
@@ -136,11 +163,17 @@ def stage_models_dual_channel(profile: str = "scheme_a") -> None:
     hf_lines = []
     total_bytes = 0
 
-    for subdir, fname in DRIVE_CHANNEL_MODELS:
+    for subdir, fname, hf_fallback_url in DRIVE_CHANNEL_MODELS:
         dest = FAST_MODELS / subdir / fname
         dest.parent.mkdir(parents=True, exist_ok=True)
         f_meta = files_map.get(fname)
         if not f_meta:
+            if not (dest.exists() and dest.stat().st_size > 1_000_000):
+                hf_lines.append(
+                    f"{hf_fallback_url}\n"
+                    f"  dir={dest.parent}\n"
+                    f"  out={fname}\n"
+                )
             continue
         sz = int(f_meta.get("size", 0))
         if dest.exists() and dest.stat().st_size == sz:
@@ -297,8 +330,11 @@ def setup_local_comfy_and_nodes(refresh_nodes: bool = False) -> None:
             bsrc = DRIVE_COMFY / "models/model_patches" / bname
             if bsrc.exists():
                 shutil.copy2(bsrc, bunny_dst / bname)
+            elif not (bunny_dst / bname).exists():
+                sh(f"curl -sL --fail -o {bunny_dst / bname} https://huggingface.co/JOKER141/BUNNY_H3_Conditioning_Bridge/resolve/main/{bname}")
         # Strip .git and __pycache__ so the bundle stays ultra-compact and FUSE-friendly
         sh(f"find {local_cn} \\( -name '.git' -o -name '__pycache__' \\) -prune -exec rm -rf {{}} +")
+        NODES_BUNDLE_ARCHIVE.parent.mkdir(parents=True, exist_ok=True)
         sh(f"tar -czf /tmp/custom_nodes_bundle.tar.gz -C {local_cn} . && cp /tmp/custom_nodes_bundle.tar.gz {NODES_BUNDLE_ARCHIVE}")
 
     # Non-blocking background cleanup of useless .git and __pycache__ fragments inside Drive's unpacked custom_nodes
@@ -381,13 +417,58 @@ class H3LoadAVLatent:
         return (latent,)
 
 
+class H3LockAudioLatent:
+    @classmethod
+    def INPUT_TYPES(cls):
+        return {
+            "required": {
+                "av_latent": ("LATENT",),
+                "encoded_audio": ("LATENT",),
+                "lock_strength": ("FLOAT", {"default": 0.85, "min": 0.0, "max": 1.0, "step": 0.05}),
+            }
+        }
+
+    RETURN_TYPES = ("LATENT",)
+    RETURN_NAMES = ("av_latent",)
+    FUNCTION = "lock_audio"
+    CATEGORY = "MiniMax-H3/Checkpoint"
+
+    def lock_audio(self, av_latent, encoded_audio, lock_strength):
+        import comfy.nested_tensor
+        out = copy.copy(av_latent)
+        samples = out["samples"]
+        if not hasattr(samples, "tensors") or len(samples.tensors) < 2:
+            return (out,)
+        v_lat, a_lat = samples.tensors[0], samples.tensors[1]
+        enc_a = encoded_audio["samples"].to(device=a_lat.device, dtype=a_lat.dtype)
+        if enc_a.ndim == 3 and a_lat.ndim == 4:
+            enc_a = enc_a.unsqueeze(2).expand(-1, -1, a_lat.shape[2], -1)
+        if enc_a.shape[:-1] != a_lat.shape[:-1]:
+            print(f"[H3LockAudioLatent] Shape mismatch {enc_a.shape} vs {a_lat.shape}, skipping lock", flush=True)
+            return (out,)
+        t_target = a_lat.shape[-1]
+        t_src = enc_a.shape[-1]
+        new_a = torch.zeros_like(a_lat)
+        t_copy = min(t_target, t_src)
+        new_a[..., :t_copy] = enc_a[..., :t_copy]
+        out["samples"] = comfy.nested_tensor.NestedTensor((v_lat.clone(), new_a))
+        if lock_strength > 0.0:
+            v_mask = torch.ones_like(v_lat)
+            a_mask = torch.full_like(new_a, float(1.0 - lock_strength))
+            out["noise_mask"] = comfy.nested_tensor.NestedTensor((v_mask, a_mask))
+        print(f"[H3LockAudioLatent] Locked {t_copy}/{t_target} audio latent steps (strength={lock_strength:.2f})", flush=True)
+        return (out,)
+
+
 NODE_CLASS_MAPPINGS = {
     "H3SaveAVLatent": H3SaveAVLatent,
     "H3LoadAVLatent": H3LoadAVLatent,
+    "H3LockAudioLatent": H3LockAudioLatent,
 }
 NODE_DISPLAY_NAME_MAPPINGS = {
     "H3SaveAVLatent": "H3 Save AV Latent Checkpoint (Drive)",
     "H3LoadAVLatent": "H3 Load AV Latent Checkpoint (Drive)",
+    "H3LockAudioLatent": "H3 Lock Audio Latent for Exact Lip-Sync",
 }
 ''',
         encoding="utf-8",
@@ -417,26 +498,38 @@ def wire_hybrid_models_dir() -> None:
         sh(f"rm -rf {models_root}")
     models_root.mkdir(parents=True, exist_ok=True)
 
+    # 1. Symlink all files staged onto local NVMe SSD first
+    if FAST_MODELS.exists():
+        for nvme_sub in FAST_MODELS.iterdir():
+            if not nvme_sub.is_dir():
+                continue
+            local_sub = models_root / nvme_sub.name
+            local_sub.mkdir(parents=True, exist_ok=True)
+            for item in nvme_sub.iterdir():
+                link_path = local_sub / item.name
+                if link_path.exists() or link_path.is_symlink():
+                    link_path.unlink()
+                os.symlink(item, link_path)
+
+    # 2. Fallback symlinks for any additional weights on Google Drive
     drive_models = DRIVE_COMFY / "models"
-    for drive_sub in drive_models.iterdir():
-        if not drive_sub.is_dir():
-            continue
-        local_sub = models_root / drive_sub.name
-        local_sub.mkdir(parents=True, exist_ok=True)
-        for item in drive_sub.iterdir():
-            nvme_candidate = FAST_MODELS / drive_sub.name / item.name
-            target = nvme_candidate if nvme_candidate.exists() else item
-            link_path = local_sub / item.name
-            if link_path.exists() or link_path.is_symlink():
-                link_path.unlink()
-            os.symlink(target, link_path)
+    if drive_models.exists():
+        for drive_sub in drive_models.iterdir():
+            if not drive_sub.is_dir():
+                continue
+            local_sub = models_root / drive_sub.name
+            local_sub.mkdir(parents=True, exist_ok=True)
+            for item in drive_sub.iterdir():
+                link_path = local_sub / item.name
+                if not link_path.exists() and not link_path.is_symlink():
+                    os.symlink(item, link_path)
 
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="G4 Tri-Parallel NVMe Fast Boot Launcher v2.2")
     parser.add_argument(
         "--profile",
-        choices=["scheme_a", "scheme_b", "all"],
+        choices=["scheme_a", "scheme_b", "scheme_dance", "all"],
         default="scheme_a",
         help="Active model profile to stage into local NVMe (default: scheme_a = 42.33 GB)",
     )
@@ -450,8 +543,10 @@ def main() -> None:
     t_boot = time.time()
     print("=== [1/3] 检查硬件与安装系统级并发工具 (aria2 / rsync / sox) ===", flush=True)
     print(sh("nvidia-smi --query-gpu=name,memory.total --format=csv,noheader || echo 'CPU Mode'").strip(), flush=True)
-    if not (DRIVE_COMFY / "models").exists():
-        raise RuntimeError(f"❌ 未检测到云盘模型库: {DRIVE_COMFY}/models，请先挂载 Google Drive！")
+    if os.path.isdir("/content/drive/My Drive") and not os.path.exists("/content/drive/MyDrive"):
+        os.symlink("/content/drive/My Drive", "/content/drive/MyDrive")
+    for _sub in ("diffusion_models", "text_encoders", "vae", "loras", "embeddings", "model_patches", "latent_upscale_models", "upscale_models"):
+        (DRIVE_COMFY / "models" / _sub).mkdir(parents=True, exist_ok=True)
 
     # Auto-overwrite stale script on Drive so v1.0 (66.67GB) never hijacks future runs
     drive_script_dst = DRIVE_WORKSTATION / "scripts/launch_g4_comfyui_fast.py"

@@ -1,0 +1,264 @@
+[
+ {
+  "id": "A01",
+  "kind": "rap",
+  "who": "a",
+  "line": 1,
+  "move": "M2",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   2.446,
+   5.085
+  ],
+  "image_keys": [
+   "a_bust"
+  ],
+  "text": "Over a thousand patents stamped under my name",
+  "action": "fierce and cocky, tapping the gold pocket-watch chain on his vest, then holding up the warm glowing amber bulb beside his grinning face",
+  "two_shot": false,
+  "prompt": "Image 1 is a waist-up reference of Thomas Edison (face, hair, costume). Audio 1 is Thomas Edison's rap vocal for this shot; use it as his voice.\n\nFRAMING (most important): this is NOT a wide shot. Keep the camera close, exactly at the framing described below (extreme close-up, close-up, chest-up or waist-up); the characters' legs, feet and the floor never appear in frame, and faces stay large enough that every mouth movement is clearly readable.\n\nCinematic photoreal shot, 16:9. Extreme close-up for the whole shot, never starting wider: frontal, eye level, a very slow push-in. Thomas Edison's face fills the upper two thirds of the frame, holding the silver microphone at upper-chest height a few inches below his chin so his mouth and lips remain 100% uncovered; he raps Audio 1 with exact lip sync straight into the lens, fierce and cocky, tapping the gold pocket-watch chain on his vest, then holding up the warm glowing amber bulb beside his grinning face. Behind him only blurred blue-white LED tubes and red lantern bokeh; the overhead spotlight carves his cheekbones.\n\nSOUND (most important): the soundtrack is Audio 1 exactly as given - the same voice, every word unchanged, with identical timing from the first frame to the last. Do not re-sing, re-time, speed up, slow down or replace any part of it, and add no music or crowd noise over it. The lips follow Audio 1 syllable by syllable.\n\nThomas Edison holds the silver corded microphone at upper-chest height a few inches below his chin in his right hand the whole time he raps, never covering or blocking his mouth or lips. Only Thomas Edison is rapping; every other mouth in the shot stays closed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, eye-level camera and gentle handheld movement unless a different camera move is described above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, and behind the main characters it stays dark and out of focus, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs, exactly as in his reference images. No subtitles, no on-screen text, no logos, no watermark.",
+  "images": [
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/a_bust.png"
+  ]
+ },
+ {
+  "id": "A02",
+  "kind": "rap",
+  "who": "a",
+  "line": 2,
+  "move": "M5",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   5.055,
+   7.608
+  ],
+  "image_keys": [
+   "a_bust",
+   "b_bust"
+  ],
+  "text": "I lit up New York City while you chased a phantom flame",
+  "action": "sweeping his glowing amber light bulb wide toward the cheering crowd while looking down at Tesla",
+  "two_shot": true,
+  "prompt": "Image 1 is a waist-up reference of Thomas Edison (face, hair, costume). Image 2 is a waist-up reference of Nikola Tesla (face, hair, costume, crackling blue-violet Tesla coil). Audio 1 is Thomas Edison's rap vocal for this shot; use it as his voice.\n\nFRAMING (most important): this is NOT a wide shot. Keep the camera close, exactly at the framing described below (extreme close-up, close-up, chest-up or waist-up); the characters' legs, feet and the floor never appear in frame, and faces stay large enough that every mouth movement is clearly readable.\n\nCinematic photoreal shot, 16:9. Medium two-shot at eye level, both framed from the waist up. Thomas Edison raps Audio 1 with exact lip sync, sweeping his glowing amber light bulb wide toward the cheering crowd while looking down at Tesla; Nikola Tesla stays silent and still. The DJ booth and the spotlight beam sit in the center background between them.\n\nThomas Edison (1890s three-piece charcoal tweed suit, gold pocket-watch chain across his vest, silver-streaked hair, holding a warm glowing amber carbon-filament light bulb in his left hand) stays on the left of frame facing right and Nikola Tesla (sharp black Victorian frock coat, high white wing collar, dark silk cravat, neatly parted jet-black hair and signature moustache, holding a handheld brass Tesla coil crackling with blue-violet electric arcs in his left hand) stays on the right facing left for the whole shot; never swap or mix them.\n\nSOUND (most important): the soundtrack is Audio 1 exactly as given - the same voice, every word unchanged, with identical timing from the first frame to the last. Do not re-sing, re-time, speed up, slow down or replace any part of it, and add no music or crowd noise over it. The lips follow Audio 1 syllable by syllable.\n\nThomas Edison, who is rapping, is turned three-quarters toward the camera so his face and lips are clearly visible the whole time; the listener is seen in profile.\n\nThomas Edison holds the silver corded microphone at upper-chest height a few inches below his chin in his right hand the whole time he raps, never covering or blocking his mouth or lips. Only Thomas Edison is rapping; every other mouth in the shot stays closed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, eye-level camera and gentle handheld movement unless a different camera move is described above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, and behind the main characters it stays dark and out of focus, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs, exactly as in his reference images. No subtitles, no on-screen text, no logos, no watermark.",
+  "images": [
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/a_bust.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/b_bust.png"
+  ]
+ },
+ {
+  "id": "A03",
+  "kind": "rap",
+  "who": "a",
+  "line": 3,
+  "move": "M3",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   7.578,
+   10.02
+  ],
+  "image_keys": [
+   "a_bust"
+  ],
+  "text": "You wired up the future? Boy, you couldn't pay the rent",
+  "action": "rubbing his thumb and fingers together in a money gesture, laughing mockingly into the microphone",
+  "two_shot": false,
+  "prompt": "Image 1 is a waist-up reference of Thomas Edison (face, hair, costume). Audio 1 is Thomas Edison's rap vocal for this shot; use it as his voice.\n\nFRAMING (most important): this is NOT a wide shot. Keep the camera close, exactly at the framing described below (extreme close-up, close-up, chest-up or waist-up); the characters' legs, feet and the floor never appear in frame, and faces stay large enough that every mouth movement is clearly readable.\n\nCinematic photoreal shot, 16:9. Waist-up medium shot, three-quarter front view, eye level, gentle push-in. Thomas Edison raps Audio 1 with exact lip sync, rubbing his thumb and fingers together in a money gesture, laughing mockingly into the microphone. Dark, blurred crowd and red lantern bokeh behind him.\n\nSOUND (most important): the soundtrack is Audio 1 exactly as given - the same voice, every word unchanged, with identical timing from the first frame to the last. Do not re-sing, re-time, speed up, slow down or replace any part of it, and add no music or crowd noise over it. The lips follow Audio 1 syllable by syllable.\n\nThomas Edison holds the silver corded microphone at upper-chest height a few inches below his chin in his right hand the whole time he raps, never covering or blocking his mouth or lips. Only Thomas Edison is rapping; every other mouth in the shot stays closed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, eye-level camera and gentle handheld movement unless a different camera move is described above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, and behind the main characters it stays dark and out of focus, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs, exactly as in his reference images. No subtitles, no on-screen text, no logos, no watermark.",
+  "images": [
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/a_bust.png"
+  ]
+ },
+ {
+  "id": "A04",
+  "kind": "rap",
+  "who": "a",
+  "line": 4,
+  "move": "M7",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   9.99,
+   13.21
+  ],
+  "image_keys": [
+   "a_bust",
+   "b_bust"
+  ],
+  "text": "Feeding pigeons in a hotel without a single cent",
+  "action": "flapping his free hand mockingly like a pigeon wing, then pointing sharply at Tesla on the last word",
+  "two_shot": true,
+  "prompt": "Image 1 is a waist-up reference of Thomas Edison (face, hair, costume). Image 2 is a waist-up reference of Nikola Tesla (face, hair, costume, crackling blue-violet Tesla coil). Audio 1 is Thomas Edison's rap vocal for this shot; use it as his voice.\n\nFRAMING (most important): this is NOT a wide shot. Keep the camera close, exactly at the framing described below (extreme close-up, close-up, chest-up or waist-up); the characters' legs, feet and the floor never appear in frame, and faces stay large enough that every mouth movement is clearly readable.\n\nCinematic photoreal shot, 16:9. Low-angle medium shot with the overhead spotlight lamp visible at the top of frame, haze glowing in its beam. Thomas Edison raps Audio 1 with exact lip sync, flapping his free hand mockingly like a pigeon wing, then pointing sharply at Tesla on the last word, then on the last words points sharply at Nikola Tesla, who stands silent in the right third of the frame, and holds the pose.\n\nThomas Edison (1890s three-piece charcoal tweed suit, gold pocket-watch chain across his vest, silver-streaked hair, holding a warm glowing amber carbon-filament light bulb in his left hand) stays on the left of frame facing right and Nikola Tesla (sharp black Victorian frock coat, high white wing collar, dark silk cravat, neatly parted jet-black hair and signature moustache, holding a handheld brass Tesla coil crackling with blue-violet electric arcs in his left hand) stays on the right facing left for the whole shot; never swap or mix them.\n\nSOUND (most important): the soundtrack is Audio 1 exactly as given - the same voice, every word unchanged, with identical timing from the first frame to the last. Do not re-sing, re-time, speed up, slow down or replace any part of it, and add no music or crowd noise over it. The lips follow Audio 1 syllable by syllable.\n\nThomas Edison, who is rapping, is turned three-quarters toward the camera so his face and lips are clearly visible the whole time; the listener is seen in profile.\n\nThomas Edison holds the silver corded microphone at upper-chest height a few inches below his chin in his right hand the whole time he raps, never covering or blocking his mouth or lips. Only Thomas Edison is rapping; every other mouth in the shot stays closed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, eye-level camera and gentle handheld movement unless a different camera move is described above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, and behind the main characters it stays dark and out of focus, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs, exactly as in his reference images. No subtitles, no on-screen text, no logos, no watermark.",
+  "images": [
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/a_bust.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/b_bust.png"
+  ]
+ },
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "M3",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   15.414,
+   17.952
+  ],
+  "image_keys": [
+   "b_bust"
+  ],
+  "text": "Twenty-two men built the bulb before you made the steal",
+  "action": "holding up two fingers twice to show twenty-two, then thrusting his crackling blue-violet Tesla coil right toward Edison's dim yellow bulb",
+  "two_shot": false,
+  "prompt": "Image 1 is a waist-up reference of Nikola Tesla (face, hair, costume, crackling blue-violet Tesla coil). Audio 1 is Nikola Tesla's rap vocal for this shot; use it as his voice.\n\nFRAMING (most important): this is NOT a wide shot. Keep the camera close, exactly at the framing described below (extreme close-up, close-up, chest-up or waist-up); the characters' legs, feet and the floor never appear in frame, and faces stay large enough that every mouth movement is clearly readable.\n\nCinematic photoreal shot, 16:9. Waist-up medium shot, three-quarter front view, eye level, gentle push-in. Nikola Tesla raps Audio 1 with exact lip sync, holding up two fingers twice to show twenty-two, then thrusting his crackling blue-violet Tesla coil right toward Edison's dim yellow bulb. Dark, blurred crowd and red lantern bokeh behind him.\n\nSOUND (most important): the soundtrack is Audio 1 exactly as given - the same voice, every word unchanged, with identical timing from the first frame to the last. Do not re-sing, re-time, speed up, slow down or replace any part of it, and add no music or crowd noise over it. The lips follow Audio 1 syllable by syllable.\n\nNikola Tesla holds the silver corded microphone at upper-chest height a few inches below his chin in his right hand the whole time he raps, never covering or blocking his mouth or lips. Only Nikola Tesla is rapping; every other mouth in the shot stays closed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, eye-level camera and gentle handheld movement unless a different camera move is described above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, and behind the main characters it stays dark and out of focus, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs, exactly as in his reference images. No subtitles, no on-screen text, no logos, no watermark.",
+  "images": [
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/b_bust.png"
+  ]
+ },
+ {
+  "id": "B02",
+  "kind": "rap",
+  "who": "b",
+  "line": 2,
+  "move": "M2",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   17.922,
+   20.81
+  ],
+  "image_keys": [
+   "b_bust"
+  ],
+  "text": "You promised fifty thousand bucks then broke the whole deal",
+  "action": "mimicking a handshake in mid-air and slicing his hand sideways as blue electric sparks flash from his brass coil",
+  "two_shot": false,
+  "prompt": "Image 1 is a waist-up reference of Nikola Tesla (face, hair, costume, crackling blue-violet Tesla coil). Audio 1 is Nikola Tesla's rap vocal for this shot; use it as his voice.\n\nFRAMING (most important): this is NOT a wide shot. Keep the camera close, exactly at the framing described below (extreme close-up, close-up, chest-up or waist-up); the characters' legs, feet and the floor never appear in frame, and faces stay large enough that every mouth movement is clearly readable.\n\nCinematic photoreal shot, 16:9. Extreme close-up for the whole shot, never starting wider: frontal, eye level, a very slow push-in. Nikola Tesla's face fills the upper two thirds of the frame, holding the silver microphone at upper-chest height a few inches below his chin so his mouth and lips remain 100% uncovered; he raps Audio 1 with exact lip sync straight into the lens, mimicking a handshake in mid-air and slicing his hand sideways as blue electric sparks flash from his brass coil. Behind him only blurred blue-white LED tubes and red lantern bokeh; the overhead spotlight carves his cheekbones.\n\nSOUND (most important): the soundtrack is Audio 1 exactly as given - the same voice, every word unchanged, with identical timing from the first frame to the last. Do not re-sing, re-time, speed up, slow down or replace any part of it, and add no music or crowd noise over it. The lips follow Audio 1 syllable by syllable.\n\nNikola Tesla holds the silver corded microphone at upper-chest height a few inches below his chin in his right hand the whole time he raps, never covering or blocking his mouth or lips. Only Nikola Tesla is rapping; every other mouth in the shot stays closed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, eye-level camera and gentle handheld movement unless a different camera move is described above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, and behind the main characters it stays dark and out of focus, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs, exactly as in his reference images. No subtitles, no on-screen text, no logos, no watermark.",
+  "images": [
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/b_bust.png"
+  ]
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "M6",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   20.778,
+   23.195
+  ],
+  "image_keys": [
+   "b_bust",
+   "a_bust"
+  ],
+  "text": "Your weak direct current left the city in the dark",
+  "action": "flicking Edison's warm yellow bulb with one finger as his own blue-violet Tesla coil blazes brighter across both faces",
+  "two_shot": true,
+  "prompt": "Image 1 is a waist-up reference of Nikola Tesla (face, hair, costume, crackling blue-violet Tesla coil). Image 2 is a waist-up reference of Thomas Edison (face, hair, costume). Audio 1 is Nikola Tesla's rap vocal for this shot; use it as his voice.\n\nFRAMING (most important): this is NOT a wide shot. Keep the camera close, exactly at the framing described below (extreme close-up, close-up, chest-up or waist-up); the characters' legs, feet and the floor never appear in frame, and faces stay large enough that every mouth movement is clearly readable.\n\nCinematic photoreal shot, 16:9. Close two-shot, both framed from the chest up, faces about half a meter apart. Nikola Tesla raps Audio 1 with exact lip sync, flicking Edison's warm yellow bulb with one finger as his own blue-violet Tesla coil blazes brighter across both faces. Thomas Edison listens, mouth closed.\n\nNikola Tesla (sharp black Victorian frock coat, high white wing collar, dark silk cravat, neatly parted jet-black hair and signature moustache, holding a handheld brass Tesla coil crackling with blue-violet electric arcs in his left hand) stays on the left of frame facing right and Thomas Edison (1890s three-piece charcoal tweed suit, gold pocket-watch chain across his vest, silver-streaked hair, holding a warm glowing amber carbon-filament light bulb in his left hand) stays on the right facing left for the whole shot; never swap or mix them.\n\nSOUND (most important): the soundtrack is Audio 1 exactly as given - the same voice, every word unchanged, with identical timing from the first frame to the last. Do not re-sing, re-time, speed up, slow down or replace any part of it, and add no music or crowd noise over it. The lips follow Audio 1 syllable by syllable.\n\nNikola Tesla, who is rapping, is turned three-quarters toward the camera so his face and lips are clearly visible the whole time; the listener is seen in profile.\n\nNikola Tesla holds the silver corded microphone at upper-chest height a few inches below his chin in his right hand the whole time he raps, never covering or blocking his mouth or lips. Only Nikola Tesla is rapping; every other mouth in the shot stays closed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, eye-level camera and gentle handheld movement unless a different camera move is described above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, and behind the main characters it stays dark and out of focus, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs, exactly as in his reference images. No subtitles, no on-screen text, no logos, no watermark.",
+  "images": [
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/b_bust.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/a_bust.png"
+  ]
+ },
+ {
+  "id": "B04",
+  "kind": "rap",
+  "who": "b",
+  "line": 4,
+  "move": "M7",
+  "dur": 5,
+  "lead": 0.0,
+  "audio": [
+   23.165,
+   26.159
+  ],
+  "image_keys": [
+   "b_bust",
+   "a_bust"
+  ],
+  "text": "Now the future drives my name on every high-voltage spark",
+  "action": "raising the crackling blue-violet Tesla coil high above his head as lightning arcs behind him, triumphant and fierce",
+  "two_shot": true,
+  "prompt": "Image 1 is a waist-up reference of Nikola Tesla (face, hair, costume, crackling blue-violet Tesla coil). Image 2 is a waist-up reference of Thomas Edison (face, hair, costume). Audio 1 is Nikola Tesla's rap vocal for this shot; use it as his voice.\n\nFRAMING (most important): this is NOT a wide shot. Keep the camera close, exactly at the framing described below (extreme close-up, close-up, chest-up or waist-up); the characters' legs, feet and the floor never appear in frame, and faces stay large enough that every mouth movement is clearly readable.\n\nCinematic photoreal shot, 16:9. Low-angle medium shot with the overhead spotlight lamp visible at the top of frame, haze glowing in its beam. Nikola Tesla raps Audio 1 with exact lip sync, raising the crackling blue-violet Tesla coil high above his head as lightning arcs behind him, triumphant and fierce, then on the last words points sharply at Thomas Edison, who stands silent in the right third of the frame, and holds the pose.\n\nNikola Tesla (sharp black Victorian frock coat, high white wing collar, dark silk cravat, neatly parted jet-black hair and signature moustache, holding a handheld brass Tesla coil crackling with blue-violet electric arcs in his left hand) stays on the left of frame facing right and Thomas Edison (1890s three-piece charcoal tweed suit, gold pocket-watch chain across his vest, silver-streaked hair, holding a warm glowing amber carbon-filament light bulb in his left hand) stays on the right facing left for the whole shot; never swap or mix them.\n\nSOUND (most important): the soundtrack is Audio 1 exactly as given - the same voice, every word unchanged, with identical timing from the first frame to the last. Do not re-sing, re-time, speed up, slow down or replace any part of it, and add no music or crowd noise over it. The lips follow Audio 1 syllable by syllable.\n\nNikola Tesla, who is rapping, is turned three-quarters toward the camera so his face and lips are clearly visible the whole time; the listener is seen in profile.\n\nNikola Tesla holds the silver corded microphone at upper-chest height a few inches below his chin in his right hand the whole time he raps, never covering or blocking his mouth or lips. Only Nikola Tesla is rapping; every other mouth in the shot stays closed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, eye-level camera and gentle handheld movement unless a different camera move is described above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, and behind the main characters it stays dark and out of focus, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs, exactly as in his reference images. No subtitles, no on-screen text, no logos, no watermark.",
+  "images": [
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/b_bust.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/a_bust.png"
+  ]
+ },
+ {
+  "id": "OPEN",
+  "kind": "still",
+  "move": "M1",
+  "dur": 5,
+  "image_keys": [
+   "a_sheet",
+   "b_sheet",
+   "venue",
+   "crowd"
+  ],
+  "prompt": "Image 1 is the full-body turnaround sheet of Thomas Edison. Image 2 is the full-body turnaround sheet of Nikola Tesla. Image 3 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background. Image 4 is the look of the crowd: their faces, clothing and colors.\n\nCinematic photoreal shot, 16:9. Starts as a wide shot from just behind the front row of the crowd: the two men face each other about three meters apart in the spotlit circle, the DJ booth glowing behind them. The camera then pushes in fast past Nikola Tesla's shoulder, which ends up out of focus in the left foreground, and settles on a medium shot of Thomas Edison on the right, who lifts his microphone, eyes locked on his rival, while Nikola Tesla calmly holds his crackling blue-violet Tesla coil. Both men are silent with mouths closed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, eye-level camera and gentle handheld movement unless a different camera move is described above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, and behind the main characters it stays dark and out of focus, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs, exactly as in his reference images. No subtitles, no on-screen text, no logos, no watermark.",
+  "images": [
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/refs/a_sheet.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/refs/b_sheet.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/refs/venue.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/refs/crowd.png"
+  ]
+ },
+ {
+  "id": "B_REACT",
+  "kind": "still",
+  "move": "M8",
+  "dur": 5,
+  "image_keys": [
+   "b_bust",
+   "b_face",
+   "venue"
+  ],
+  "prompt": "Image 1 is a waist-up reference of Nikola Tesla (face, hair, costume, crackling blue-violet Tesla coil). Image 2 is Nikola Tesla's face and expressions. Image 3 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background.\n\nFRAMING (most important): this is NOT a wide shot. Keep the camera close, exactly at the framing described below (extreme close-up, close-up, chest-up or waist-up); the characters' legs, feet and the floor never appear in frame, and faces stay large enough that every mouth movement is clearly readable.\n\nCinematic photoreal shot, 16:9. Medium close-up, frontal, eye level, slow push-in, crowd blurred behind him. Nikola Tesla listens, silent with mouth closed, slowly holding the brass Tesla coil as small blue-violet sparks dance across the toroid, watching Edison with a cold knowing smirk, utterly unbothered. In the last second he calmly lifts his microphone toward his mouth.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, eye-level camera and gentle handheld movement unless a different camera move is described above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, and behind the main characters it stays dark and out of focus, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs, exactly as in his reference images. No subtitles, no on-screen text, no logos, no watermark.",
+  "images": [
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/work/b_bust.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/refs/b_face.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/refs/venue.png"
+  ]
+ },
+ {
+  "id": "DJ",
+  "kind": "still",
+  "move": "M13",
+  "dur": 5,
+  "image_keys": [
+   "dj",
+   "venue"
+  ],
+  "prompt": "Image 1 is the DJ. Image 2 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background.\n\nCinematic photoreal shot, 16:9. Medium shot from a slightly low angle of the DJ from his reference image at the raised booth, blue-white LED tubes behind him, scratching a vinyl record, head nodding to the beat; the camera then pushes in to his hands on the turntable and the glowing mixer.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, eye-level camera and gentle handheld movement unless a different camera move is described above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, and behind the main characters it stays dark and out of focus, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs, exactly as in his reference images. No subtitles, no on-screen text, no logos, no watermark.",
+  "images": [
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/refs/dj.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/refs/venue.png"
+  ]
+ },
+ {
+  "id": "END",
+  "kind": "still",
+  "move": "M14",
+  "dur": 5,
+  "image_keys": [
+   "a_sheet",
+   "b_sheet",
+   "venue",
+   "crowd"
+  ],
+  "prompt": "Image 1 is the full-body turnaround sheet of Thomas Edison. Image 2 is the full-body turnaround sheet of Nikola Tesla. Image 3 is the venue, an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background. Image 4 is the look of the crowd: their faces, clothing and colors.\n\nCinematic photoreal shot, 16:9. Starts at eye level in the spotlit circle: Nikola Tesla walks calmly toward the camera, then stops and spreads his arms wide with the crackling blue-violet Tesla coil raised like a champion; Thomas Edison stands behind him on the left, turned half away, arms crossed, sulking. The camera rises and pulls back into a high wide view looking down over the whole cheering crowd, the two men small in the center of the circle. Fists in the air everywhere. Both men's mouths are closed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same overhead spotlight as the key light from above, eye-level camera and gentle handheld movement unless a different camera move is described above, 35-50mm lens look. Setting: an 1890s New York red-brick industrial power plant turned into an underground rap battle arena, dark iron girders, warm amber DC incandescent bulbs hanging on the left, crackling blue-violet AC Tesla coils on the right, a raised steampunk DJ booth built on brass dynamos in the center background, with a cold white spotlight beam cutting through thick haze onto the circular stage floor. The crowd are 1890s New York industrial workers and engineers in wool waistcoats, rolled sleeves and flat caps. Nobody else stands inside the circle: the crowd is packed only beyond its edge, and behind the main characters it stays dark and out of focus, every person dressed differently, never matching uniforms. Low-key cinematic lighting with deep shadows, thick haze, high contrast, warm amber glow against cool blue-white electric light, shallow depth of field, gritty 35mm film grain; not glossy, not brightly lit.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Thomas Edison's glowing amber carbon-filament bulb is always a vintage pear-shaped glass incandescent bulb glowing with warm amber carbon filament in a brass socket. Nikola Tesla's crackling blue-violet Tesla coil is always a compact handheld brass-and-copper Tesla coil topped with a metal toroid crackling with bright blue-violet high-voltage electric arcs, exactly as in his reference images. No subtitles, no on-screen text, no logos, no watermark.",
+  "images": [
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/refs/a_sheet.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/refs/b_sheet.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/refs/venue.png",
+   "workflows/05_ancient_rap_battle/episodes/edison-vs-tesla/refs/crowd.png"
+  ]
+ }
+]
