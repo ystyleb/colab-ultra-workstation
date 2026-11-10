@@ -92,7 +92,9 @@ def adapt_prompt_for_comfy_h3(c: dict, e: dict, total_dur: float = 5.167, mic: s
 
 def _adapt_prompt(c: dict, e: dict, total_dur: float, mic: str, static_cam: bool) -> str:
     lang = e.get("language", "en")
-    if c["kind"] != "rap" or not c.get("text"):
+    # "raw": true on a rap clip = the clip brings its own full prompt (multi-shot / whip-pan camera tests) and still
+    # gets its vocal as <Audio 1>; the single-shot template below cannot express more than one [Shot].
+    if c["kind"] != "rap" or not c.get("text") or c.get("raw"):
         p = c["prompt"]
         for i in range(1, 10):
             p = re.sub(rf"\bImage {i}\b", f"<Picture {i}>", p)
@@ -118,8 +120,10 @@ def _adapt_prompt(c: dict, e: dict, total_dur: float, mic: str, static_cam: bool
         mic_detail = ("with a vintage chrome microphone on a floor stand placed at mid-chest height slightly to one side of him "
                       "(he never holds or lifts it, and it never covers his mouth, lips or jaw, which stay 100% unobstructed and visible)")
     else:
-        mic_summary = "holding the vintage microphone at upper-chest height below his chin so his mouth and lips remain 100% uncovered"
-        mic_detail = ("holding the silver corded microphone in his right hand at upper-chest height a few inches below his chin "
+        # episode.json "mic_en": one fixed wording for the handheld mic in every shot (camera samples 2026-11-10:
+        # without it the mic came out chrome-vintage in one clip and modern black in the next)
+        mic_summary = f"holding the {e.get('mic_en', 'vintage microphone')} at upper-chest height below his chin so his mouth and lips remain 100% uncovered"
+        mic_detail = (f"holding the {e.get('mic_en', 'silver corded microphone')} in his right hand at upper-chest height a few inches below his chin "
                       "(completely clear of his face so his mouth, lips, and jaw are 100% unobstructed and visible)")
     venue_desc = e.get("venue_en", "an 1890s industrial power plant rap battle arena")
     # 每集的光线不同（第 1 集电灯 + 电弧，第 2 集火把 + 冷光柱）；默认值保持第 1 集原样

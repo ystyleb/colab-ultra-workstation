@@ -1,0 +1,151 @@
+{
+  "title": "CaoCao_vs_LiuBei",
+  "language": "en",
+  "mode": "full",
+  "song": "song.mp3",
+  "era_en": "208 AD, the last years of the Eastern Han dynasty, Three Kingdoms era China",
+  "commoners_en": "Han dynasty Chinese soldiers and townspeople around 208 AD, northern soldiers in black lamellar armour with red sashes and southern soldiers in green tunics with leather armour, mixed with farmers, merchants and scholars in plain hemp robes and cloth head wraps, hair tied in topknots",
+  "venue_en": "the walled plum garden courtyard of a Han dynasty chancellor's residence at night around 208 AD turned into an underground rap battle arena, grey brick walls with dark tiled roofs, drifting incense smoke and mist, glowing paper lanterns; on the left side tall black war banners with dark red trim, bronze war drums and a steaming bronze wine cauldron, on the right side green banners with gold trim, a blossoming pink peach tree and stacks of woven straw mats, a raised DJ booth built on a large bronze tripod cauldron and red lacquered war drums in the center background",
+  "light_en": "dramatic low-key night lighting, warm amber paper-lantern light against a cold pale moonlight beam cutting through drifting incense smoke and mist, strong backlit haze",
+  "arena_sound_en": "a lantern-lit brick courtyard packed with roaring soldiers and townspeople",
+  "crowd_motion_en": "the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some people jumping and waving their wide sleeves",
+  "tagline": "煮酒论英雄 · WHO IS THE REAL HERO",
+  "outro_chant": "WEI SHU",
+  "watermark": "AI RAP BATTLE",
+  "end_question": "下一场|你想看谁开麦？",
+  "suno_style": "English battle rap, classic old school boom bap, 95 BPM, dark cinematic ancient Chinese epic, hard punchy drums, huge Chinese war drums, guzheng and pipa plucks, bamboo flute riffs, vinyl scratches, deep sub bass, live crowd hype, two contrasting male rappers, clear English diction, very short intro, short ending, one long verse each, one short loud crowd reaction between the two verses",
+  "a": {
+    "name_cn": "曹操",
+    "name_en": "Cao Cao",
+    "aka": "乱世奸雄",
+    "look": "Han dynasty Chinese warlord chancellor around 208 AD, aged about 53, sharp narrow eyes, long thin black moustache and a long pointed black beard, black hair in a topknot under a tall black lacquered official's cap, wide-sleeved black silk robe with dark red borders and a dark red sash, a bronze shoulder guard on one shoulder, holding a small bronze wine cup in his left hand",
+    "voice": "deep gritty commanding male rapper, dark baritone voice, slow heavy menacing boom-bap flow",
+    "pitch": -2.5,
+    "prop": "small bronze wine cup",
+    "prop_desc": "a small ancient Chinese bronze drinking cup with two little handles, dull green-gold patina, held in one hand; not a wine glass, not a goblet with a stem, not a bowl",
+    "look_cn": "细长眼、长须、黑漆高冠、黑底暗红镶边的宽袖长袍、单肩铜护甲，左手端一只小铜酒杯",
+    "listen_cn": "眯眼冷笑、慢慢转着酒杯、仰头大笑"
+  },
+  "b": {
+    "name_cn": "刘备",
+    "name_en": "Liu Bei",
+    "aka": "刘皇叔",
+    "look": "Han dynasty Chinese warlord around 208 AD, aged about 47, calm kind face with large long earlobes, short neat black moustache and a small chin beard, black hair in a topknot tied with a green silk cloth, wide-sleeved deep green robe with gold-thread borders over a cream inner collar, a plain brown leather belt, holding one woven straw sandal in his left hand",
+    "voice": "smooth warm male rapper, clear calm tenor voice that turns sharp and biting, quick precise flow",
+    "pitch": 1.5,
+    "prop": "woven straw sandal",
+    "prop_desc": "one flat hand-woven golden-brown straw sandal with rope straps, held up in one hand; not a boot, not a modern shoe",
+    "look_cn": "面相温和、大耳垂、短须、绿丝巾束发、深绿色金边宽袖长袍、棕色皮带，左手拎一只草鞋",
+    "listen_cn": "低头微笑、轻轻摇头、拿草鞋拍掌心"
+  },
+  "lyrics": {
+    "a": [
+      "Able minister in peace — in chaos, I'm the beast",
+      "I kept the Emperor in my camp — he stamped just what I pleased",
+      "Outnumbered at Guandu, I burned Yuan Shao's grain",
+      "Then wrote a poem, spear in hand — a warlord with a brain",
+      "You? You wove straw sandals, selling mats beside the road",
+      "Royal blood? That family tree's three hundred years cold",
+      "Six lords took you in — you never stayed with one",
+      "At Changban you left your wife and kids so you could run",
+      "Borrowed Jing Province — tell me, when's it coming back?",
+      "Took your kinsman's land out west — some virtue, what an act",
+      "You cry to get an army, cry to get a throne",
+      "You'd weep a river just to get a kingdom on loan",
+      "Your boy gave up your kingdom — they asked him, \"Miss your home?\"",
+      "He said, \"I'm happy here\" — that's the heir to your throne",
+      "I poured the wine and told you, \"The heroes: you and I\"",
+      "You dropped your chopsticks, shaking — and blamed it on the sky"
+    ],
+    "b": [
+      "Dropped my chopsticks? That was acting — and you bought the lie",
+      "You let me walk right out the door — worst mistake of your life",
+      "Red Cliffs — you chained your ships up, and we brought the fire",
+      "You bragged eight hundred thousand, then ran home through the mire",
+      "You drowned a whole province 'cause your father died",
+      "\"Better I wrong the world\" — your words, your pride",
+      "Your doctor could have cured you — you threw him in a cell",
+      "Killed the cure and kept the headache — genius, can't you tell?",
+      "I knocked three times on a thatched door for one man's mind",
+      "You hire the talented, then kill them when they shine",
+      "Hanzhong — I took it, and your best general fell",
+      "You called the place a \"chicken rib\" and ran — I wish you well",
+      "Changban? I was slow — a hundred thousand followed me",
+      "You rule them with a sword; they walked with me for free",
+      "My son lost his kingdom? Fine. Yours got robbed, too",
+      "The trick you played on Han — the Simas played on you"
+    ]
+  },
+  "notes": {
+    "a": [
+      "治世之能臣，乱世之奸雄",
+      "天子在我营中，诏书我说了算",
+      "官渡以少胜多，一把火烧光袁绍的粮",
+      "回头横槊赋诗——能打，还有脑子",
+      "你呢？路边织席卖草鞋",
+      "皇室血脉？那族谱都凉了三百年",
+      "六个主公收留过你，没一个你待得住",
+      "长坂坡，你丢下妻儿自己跑",
+      "借了荆州——说吧，什么时候还？",
+      "抢了同宗的西川，好一个仁义",
+      "哭来一支兵，哭来一把龙椅",
+      "为了借个江山，你能哭出一条河",
+      "你儿子献了国，人问他：想家吗？",
+      "他说「此间乐」——这就是你的接班人",
+      "我煮酒说过：天下英雄，唯你与我",
+      "你吓得掉了筷子，还赖给打雷"
+    ],
+    "b": [
+      "掉筷子？那是演的，你还真信了",
+      "你放我出了门——这辈子最大的错",
+      "赤壁：你把船锁成一片，我们送来了火",
+      "号称八十万，踩着烂泥逃回家",
+      "死了父亲，你就血洗一个州",
+      "「宁我负天下人」——你自己说的",
+      "神医能治你的病，你把他关进大牢",
+      "杀了解药留着头疼，真是天才",
+      "为一个人的才智，我三顾茅庐",
+      "你招揽人才，等他们出头就杀",
+      "汉中我拿下了，你的大将也折了",
+      "你嘴里念着「鸡肋」撤了兵，走好",
+      "长坂坡我走得慢？十万百姓跟着我",
+      "你靠刀管人，他们跟我是自愿",
+      "我儿子丢了江山？行，你家的也被偷了",
+      "你对汉室玩的把戏，司马家原样还给你"
+    ]
+  },
+  "name_card_lines": 1,
+  "end_card_secs": 2.3,
+  "structure": [
+    {
+      "type": "intro",
+      "tag": "Intro: short DJ scratch and Chinese war drum hits"
+    },
+    {
+      "type": "verse",
+      "who": "a",
+      "from": 1,
+      "to": 16,
+      "tag": "Verse 1: deep gritty baritone male rapper"
+    },
+    {
+      "type": "crowd",
+      "tag": "Crowd reacts",
+      "text": "OOOH!"
+    },
+    {
+      "type": "verse",
+      "who": "b",
+      "from": 1,
+      "to": 16,
+      "tag": "Verse 2: smooth sharp tenor male rapper"
+    },
+    {
+      "type": "outro",
+      "tag": "Outro: crowd chanting",
+      "text": "WEI! SHU! WEI! SHU!"
+    }
+  ],
+  "show_notes": true,
+  "disclaimer": "AI 生成 · 仅供娱乐"
+}

@@ -297,7 +297,9 @@ def main():
         t_from, t_to = [float(x) for x in a.test.split(":")]
     inputs = ["-ss", "%.3f" % t_from, "-t", "%.3f" % (t_to - t_from), "-i", os.path.join(ep, src),
               "-ss", "%.3f" % t_from, "-t", "%.3f" % (t_to - t_from), "-i", os.path.join(work, "music_final.wav")]
-    fc = ["[0:v]%s,format=yuv420p,setpts=PTS-STARTPTS[base]" % GRADE]
+    # episode.json "grade": ffmpeg filter chain replacing the default GRADE ("null" = none). assemble.py already
+    # grades once (work/live.json); the default second pass made the 2026-11-10 remake too dark and grey.
+    fc = ["[0:v]%s,format=yuv420p,setpts=PTS-STARTPTS[base]" % (e.get("grade") or GRADE)]
     last, k = "base", 2
     for idx, (png, st, en, fade) in enumerate(layers):
         st, en = max(st, t_from) - t_from, min(en, t_to) - t_from

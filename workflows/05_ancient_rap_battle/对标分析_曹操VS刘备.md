@@ -3,6 +3,7 @@
 > 来源：B 站 BV1T9Hy6hEwD，UP 主「喆FILM」，LibTV 生成，时长 1:45，2026-11-09 抓取时播放约 65 万。
 > 方法：yt-dlp 下载 480p → ffmpeg 场景检测 + 每秒 1 帧 / 4 帧接触表逐段看。
 > 用途：给第 2 集（Napoleon vs Wellington）起改分镜规则。
+> **2026-11-10 更正**：这份分析里的镜头数（「50+」）、对峙占比和收场镜头数不准，也漏了「前慢后快」、无道具、站位换边。逐镜头的重新拆解见 [episodes/caocao-vs-liubei/原片分镜表.md](episodes/caocao-vs-liubei/原片分镜表.md)，两者不一致时以那份为准。
 
 ## 1. 结构
 

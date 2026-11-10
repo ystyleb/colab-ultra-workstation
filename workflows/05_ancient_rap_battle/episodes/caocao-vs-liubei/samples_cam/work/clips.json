@@ -1,0 +1,266 @@
+[
+ {
+  "id": "T01_PUSH",
+  "kind": "rap",
+  "who": "a",
+  "line": 1,
+  "move": "CAM",
+  "text": "Seventeen sixty-nine, the world got a brand-new king I crowned myself at Notre-Dame, the Pope just blessed the thing",
+  "audio": [
+   2.476,
+   7.597
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "action": "prowling forward one step, then thrusting his free left hand out and pointing straight into the lens",
+  "two_shot": false,
+  "static": false,
+  "cam": "The camera starts on a full-body wide shot of <Subject 1> standing alone in the cold spotlight beam on the circular stage with the crowd packed around its edge, then the camera pushes in with large amplitude at slow speed, travelling steadily toward him until it settles on a chest-up medium close-up, his face and lips large and clearly readable whenever he faces the camera",
+  "image_keys": [
+   "a_face_clean"
+  ],
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "T02_CROWDPUSH",
+  "kind": "rap",
+  "who": "a",
+  "line": 3,
+  "move": "CAM",
+  "text": "Three emperors at Austerlitz — two of them took flight My Code still writes the law in half the world tonight",
+  "audio": [
+   7.577,
+   12.806
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "action": "rapping out toward the crowd with his free left hand chopping the air on the beat",
+  "two_shot": false,
+  "static": false,
+  "cam": "The camera starts behind the audience at head height: the backs of heads, topknots and raised fists of the packed crowd fill the lower half of the frame with the spotlit stage small in the distance, then the camera pushes in with large amplitude at slow speed, gliding forward between the raised arms and over the shoulders of the crowd until it reaches the edge of the stage and settles on a knee-up medium shot of <Subject 1>; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some people jumping and waving their wide sleeves",
+  "image_keys": [
+   "a_face_clean"
+  ],
+  "wide": true,
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "T03_ARC",
+  "kind": "rap",
+  "who": "a",
+  "line": 5,
+  "move": "CAM",
+  "text": "Your troops say \"Old Nosey\" — I say \"sepoy general\" Beating rajahs doesn't make you my equal",
+  "audio": [
+   12.764,
+   17.955
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "action": "jabbing his free left hand toward his opponent, pointing at him",
+  "two_shot": true,
+  "static": false,
+  "cam": "The camera starts on a chest-up medium shot of <Subject 1> from the front as he raps, then the camera trucks right and pans left with large amplitude at slow speed, moving in an arc shot around his right shoulder, until it ends as an over-the-shoulder shot from behind him: the back of <Subject 1>'s head and his right shoulder softly blurred in the right foreground, and <Subject 2> in sharp focus a few steps away on screen-left, facing the camera",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "listener": " while <Subject 2> stands on screen-left with his mouth firmly closed, hands clasped in front of him, watching him in silence",
+  "listener_side": "screen-left",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "T04_FACEOFF",
+  "kind": "rap",
+  "who": "a",
+  "line": 7,
+  "move": "CAM",
+  "text": "Sixty battles fought — I had all Europe on my plate You? You're just a breakfast, and an Emperor won't wait",
+  "audio": [
+   17.935,
+   23.019
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "action": "leaning into his opponent's face with a wolfish grin, his free left hand low",
+  "two_shot": true,
+  "static": false,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame, <Subject 1>'s lips and jaw clearly readable in profile in every frame, handheld camera with a subtle natural sway",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "listener": " while <Subject 2> on screen-left keeps his mouth firmly closed and stares back at him without blinking",
+  "listener_side": "screen-left"
+ },
+ {
+  "id": "T05_PANREVEAL",
+  "kind": "rap",
+  "who": "a",
+  "line": 9,
+  "move": "CAM",
+  "text": "Took me down? You prayed for night or the Prussians to arrive They hit my flank at half past four — that's how you survived",
+  "audio": [
+   59.025,
+   63.98
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "action": "stepping in close and rapping into his opponent's face, chin raised",
+  "two_shot": true,
+  "static": false,
+  "cam": "The camera starts on a chest-up three-quarter medium close-up of <Subject 1> alone on the right half of the frame, facing screen-left as he raps, then the camera pans left with small amplitude at slow speed, revealing <Subject 2> standing in profile at the left edge of the frame facing right, and settles into a tight profile two-shot of the two men face to face, <Subject 1>'s lips and jaw clearly readable in every frame",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "listener": " while <Subject 2> on screen-left listens with his mouth firmly closed, a faint calm smile",
+  "listener_side": "screen-left"
+ },
+ {
+  "id": "T06_ECU_LOW",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "CAM",
+  "text": "Breakfast? Then why'd you wait till noon to fire a gun? Waiting on the mud to dry — by sunset, you were done",
+  "audio": [
+   28.231,
+   33.234
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "action": "glaring down into the lens, his free left hand rising into the edge of the frame",
+  "two_shot": false,
+  "static": false,
+  "cam": "A handheld camera with a wide-angle lens is very close to his face and slightly below chin height, tilted a few degrees off level, looking up at him: an extreme close-up where his face fills most of the 16:9 frame and the head of the vintage microphone sits large and soft in the bottom foreground just below his chin; the camera pushes in with small amplitude at slow speed, the spotlight haze flaring behind his head, his lips large and clearly readable in every frame",
+  "image_keys": [
+   "b_face_clean"
+  ],
+  "lens": "24mm wide-angle"
+ },
+ {
+  "id": "T07_CRASH",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "CAM",
+  "text": "Six hundred thousand marched to Moscow, proud and fed",
+  "audio": [
+   33.214,
+   35.96
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "action": "snarling the line, eyes wide, leaning into the lens",
+  "two_shot": true,
+  "static": false,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and back of the head of <Subject 2> in the left foreground, <Subject 1> chest-up on the right facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on an extreme close-up of <Subject 1>'s face, and shakes slightly as it lands, his lips large and clearly readable",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean"
+  ],
+  "listener": " while <Subject 2> stands with his back to the camera in the left foreground, motionless",
+  "listener_side": "screen-left",
+  "lens": "24mm wide-angle"
+ },
+ {
+  "id": "T08_TILT",
+  "kind": "rap",
+  "who": "b",
+  "line": 13,
+  "move": "CAM",
+  "text": "Canova carved you naked, marble, eleven feet tall Now you stand in my stairwell with a fig leaf in my hall",
+  "audio": [
+   92.401,
+   97.554
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "action": "jabbing his free left index finger sharply down toward the ground between them, then raising it up to his opponent's chest",
+  "two_shot": true,
+  "static": false,
+  "cam": "The camera holds a tight profile two-shot of the two men face to face: <Subject 2> on screen-left in profile facing right, <Subject 1> on screen-right in profile facing left; as <Subject 1> jabs his free left hand downward, the camera tilts down with small amplitude at fast speed to follow the pointing hand, then tilts up again and settles back on the two faces, <Subject 1>'s lips and jaw clearly readable in profile",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean"
+  ],
+  "listener": " while <Subject 2> on screen-left stands with his arms crossed and his mouth firmly closed",
+  "listener_side": "screen-left"
+ },
+ {
+  "id": "T09_LONGCU",
+  "kind": "rap",
+  "who": "b",
+  "line": 9,
+  "move": "CAM",
+  "text": "Elba couldn't hold you, so we found a smaller rock Saint Helena, South Atlantic — five years watching the clock We took your horse, Marengo — his bones are on display",
+  "audio": [
+   82.574,
+   89.842
+  ],
+  "lead": 0.0,
+  "frames": 192,
+  "action": "his free left hand sweeping across the frame twice, then pointing up beside his head on the last line",
+  "two_shot": false,
+  "static": false,
+  "cam": "The camera holds a frontal head-and-shoulders close-up at eye level, shot on a handheld camera with a subtle natural sway, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame",
+  "image_keys": [
+   "b_face_clean"
+  ]
+ },
+ {
+  "id": "T10_WHIP",
+  "kind": "rap",
+  "raw": true,
+  "who": "b",
+  "line": 5,
+  "move": "CAM",
+  "text": "You called Spain your \"ulcer\" — guess who made it bleed? Your marshals came in one by one, and one by one they'd flee",
+  "audio": [
+   38.426,
+   43.612
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "prompt": "subject_definitions:\n<Subject 1> is Liu Bei (Han dynasty Chinese warlord around 208 AD, aged about 47, calm kind face with large long earlobes, short neat black moustache and a small chin beard, black hair in a topknot tied with a green silk cloth, wide-sleeved deep green robe with gold-thread borders over a cream inner collar, a plain brown leather belt) from <Picture 1>, natural matte skin texture with fine pores.\n<Subject 2> is Cao Cao (Han dynasty Chinese warlord chancellor around 208 AD, aged about 53, sharp narrow eyes, long thin black moustache and a long pointed black beard, black hair in a topknot under a tall black lacquered official's cap, wide-sleeved black silk robe with dark red borders and a dark red sash, a bronze shoulder guard on one shoulder) from <Picture 2>, natural matte skin texture.\n<Audio 1> is the target rap vocal track for <Subject 1>, providing his exact vocal timbre (cold dry male rapper, deep baritone voice) and syllable-by-syllable rhythm during 00:00.000–00:05.186, followed by silence.\n\nsummary:\n[reference generation + audio reuse] Inside the walled plum garden courtyard of a Han dynasty chancellor's residence at night around 208 AD turned into an underground rap battle arena, grey brick walls with dark tiled roofs, drifting incense smoke and mist, glowing paper lanterns; on the left side tall black war banners with dark red trim, bronze war drums and a steaming bronze wine cauldron, on the right side green banners with gold trim, a blossoming pink peach tree and stacks of woven straw mats, a raised DJ booth built on a large bronze tripod cauldron and red lacquered war drums in the center background, <Subject 1> performs an energetic English battle-rap verse synced syllable-by-syllable to <Audio 1>, holding a vintage microphone in his right hand below his chin, across 2 shots with <Subject 2> listening in silence, while the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some people jumping and waving their wide sleeves.\n\nretention_analysis:\n<Subject 1> (appears in every shot he is framed in): fully_preserved - Strictly preserve exact facial bone structure, hairstyle, facial hair and outfit from <Picture 1>.\n<Subject 2>: fully_preserved - Strictly preserve exact facial structure and outfit from <Picture 2>, keeping his mouth closed in silent listening throughout this clip.\n<Audio 1>: fully_copy - Reused 1:1 as the target vocal track; whenever <Subject 1>'s face is on screen during 00:00.000–00:05.186 his lip movements, jaw openings and syllable articulation are synchronized directly to <Audio 1>; when he is off screen or seen from behind, the same vocal continues uninterrupted.\n\ndetailed_description:\nr34l1sm, Facial Realism, realistic ARRI Alexa Mini LF 35mm lens cinematography, Kodak Vision3 500T film look, natural soft matte skin texture with fine pores, zero oily shine, dramatic low-key night lighting, warm amber paper-lantern light against a cold pale moonlight beam cutting through drifting incense smoke and mist, strong backlit haze. [Shot 1] During 00:00.000–00:02.400, The camera holds a chest-up three-quarter medium shot of <Subject 1> on the right half of the frame, rapping with lively syllable-by-syllable lip-sync to <Audio 1>, his free left arm stretched out pointing toward screen-left at someone off screen; at the end of this shot the camera pans left with large amplitude at fast speed, a whip pan with heavy motion blur. [Shot 2] At 00:02.600, the whip pan lands on a new shot. During 00:02.600–00:05.186, the camera holds a static chest-up medium close-up of <Subject 2> standing at the front of the crowd, facing the camera, mouth firmly closed, a slow cold smirk spreading across his face while <Subject 1>'s voice continues from off screen. The lyric sung across the whole clip: <d>[English]You called Spain your \"ulcer\" — guess who made it bleed? Your marshals came in one by one, and one by one they'd flee</d> No subtitles, no on-screen text.\n\noverall_soundscape:\nClear, punchy foreground rap vocal performance from <Subject 1> during 00:00.000–00:05.186 synced 1:1 to <Audio 1> in a lantern-lit brick courtyard packed with roaring soldiers and townspeople, continuous across every cut.\n\nnon_diegetic_music:\nN/A — <Audio 1> is directly reused 1:1 as the target vocal track.",
+  "closeup_lora": 0.2,
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean"
+  ]
+ },
+ {
+  "id": "T11_MULTI",
+  "kind": "rap",
+  "raw": true,
+  "who": "a",
+  "line": 11,
+  "move": "CAM",
+  "text": "\"Nearest-run thing you ever saw\" — your own words, Duke Your \"scum of the earth\" soldiers won you that fluke Your own people smashed your windows when you blocked reform",
+  "audio": [
+   63.93,
+   71.952
+  ],
+  "lead": 0.0,
+  "frames": 209,
+  "prompt": "subject_definitions:\n<Subject 1> is Cao Cao (Han dynasty Chinese warlord chancellor around 208 AD, aged about 53, sharp narrow eyes, long thin black moustache and a long pointed black beard, black hair in a topknot under a tall black lacquered official's cap, wide-sleeved black silk robe with dark red borders and a dark red sash, a bronze shoulder guard on one shoulder) from <Picture 1>, natural matte skin texture with fine pores.\n<Subject 2> is Liu Bei (Han dynasty Chinese warlord around 208 AD, aged about 47, calm kind face with large long earlobes, short neat black moustache and a small chin beard, black hair in a topknot tied with a green silk cloth, wide-sleeved deep green robe with gold-thread borders over a cream inner collar, a plain brown leather belt) from <Picture 2>, natural matte skin texture.\n<Audio 1> is the target rap vocal track for <Subject 1>, providing his exact vocal timbre (fiery intense male rapper, commanding tenor voice) and syllable-by-syllable rhythm during 00:00.000–00:08.022, followed by silence.\n\nsummary:\n[reference generation + audio reuse] Inside the walled plum garden courtyard of a Han dynasty chancellor's residence at night around 208 AD turned into an underground rap battle arena, grey brick walls with dark tiled roofs, drifting incense smoke and mist, glowing paper lanterns; on the left side tall black war banners with dark red trim, bronze war drums and a steaming bronze wine cauldron, on the right side green banners with gold trim, a blossoming pink peach tree and stacks of woven straw mats, a raised DJ booth built on a large bronze tripod cauldron and red lacquered war drums in the center background, <Subject 1> performs an energetic English battle-rap verse synced syllable-by-syllable to <Audio 1>, holding a vintage microphone in his right hand below his chin, across 3 shots with <Subject 2> listening in silence, while the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some people jumping and waving their wide sleeves.\n\nretention_analysis:\n<Subject 1> (appears in every shot he is framed in): fully_preserved - Strictly preserve exact facial bone structure, hairstyle, facial hair and outfit from <Picture 1>.\n<Subject 2>: fully_preserved - Strictly preserve exact facial structure and outfit from <Picture 2>, keeping his mouth closed in silent listening throughout this clip.\n<Audio 1>: fully_copy - Reused 1:1 as the target vocal track; whenever <Subject 1>'s face is on screen during 00:00.000–00:08.022 his lip movements, jaw openings and syllable articulation are synchronized directly to <Audio 1>; when he is off screen or seen from behind, the same vocal continues uninterrupted.\n\ndetailed_description:\nr34l1sm, Facial Realism, realistic ARRI Alexa Mini LF 35mm lens cinematography, Kodak Vision3 500T film look, natural soft matte skin texture with fine pores, zero oily shine, dramatic low-key night lighting, warm amber paper-lantern light against a cold pale moonlight beam cutting through drifting incense smoke and mist, strong backlit haze. [Shot 1] During 00:00.000–00:01.600, The camera holds a wide shot from behind the audience at head height: backs of heads and raised fists fill the lower third of the frame, and beyond them <Subject 1> stands full-body in the cold spotlight beam on the stage, rapping to <Audio 1>, with <Subject 2> standing at the left edge of the stage; the crowd bounces on the beat. [Shot 2] At 00:01.600, the camera cuts to a new angle. During 00:01.600–00:05.000, the camera holds a frontal chest-up medium close-up of <Subject 1> and pushes in with small amplitude at slow speed while he raps with lively, unmistakable syllable-by-syllable lip-sync to <Audio 1> and thrusts his free left hand toward the lens. [Shot 3] At 00:05.000, the camera cuts to a reverse angle. During 00:05.000–00:08.022, the camera holds an over-the-shoulder shot from behind <Subject 1>: the back of his head and right shoulder blurred in the right foreground, and <Subject 2> in sharp focus on screen-left facing the camera, hands clasped, mouth firmly closed, listening with a faint calm smile while <Subject 1>'s voice continues. The lyric sung across the whole clip: <d>[English]\"Nearest-run thing you ever saw\" — your own words, Duke Your \"scum of the earth\" soldiers won you that fluke Your own people smashed your windows when you blocked reform</d> No subtitles, no on-screen text.\n\noverall_soundscape:\nClear, punchy foreground rap vocal performance from <Subject 1> during 00:00.000–00:08.022 synced 1:1 to <Audio 1> in a lantern-lit brick courtyard packed with roaring soldiers and townspeople, continuous across every cut.\n\nnon_diegetic_music:\nN/A — <Audio 1> is directly reused 1:1 as the target vocal track.",
+  "closeup_lora": 0.2,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ]
+ },
+ {
+  "id": "T12_CURTAIN",
+  "kind": "still",
+  "move": "CAM",
+  "frames": 192,
+  "closeup_lora": 0.0,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Cao Cao's face (keep his exact face, narrow eyes, long thin moustache and pointed beard, tall black official's cap, black robe with dark red borders). Image 2 is Liu Bei's face (keep his exact face, large earlobes, short moustache and small chin beard, green hair cloth, deep green robe with gold borders).\n\nCinematic photoreal shot, 16:9. The shot starts as a waist-up medium two-shot of Liu Bei (Image 2) on the left and Cao Cao (Image 1) on the right standing side by side on the stage, both facing the camera, both spreading their arms wide and grinning at the roaring crowd. Then the camera pulls out and pedestals up with large amplitude at slow speed, rising steadily backward and upward over the heads of the audience until it holds a high wide shot of the whole lantern-lit courtyard: the two men small in the spotlight at the center of the circular stage, hundreds of cheering people with raised fists all around them, banners and lanterns along the walls. During the last second the camera smoothly decelerates and settles into a stationary shot.\n\nSetting: the walled plum garden courtyard of a Han dynasty chancellor's residence at night around 208 AD turned into an underground rap battle arena, grey brick walls with dark tiled roofs, drifting incense smoke and mist, glowing paper lanterns; on the left side tall black war banners with dark red trim, bronze war drums and a steaming bronze wine cauldron, on the right side green banners with gold trim, a blossoming pink peach tree and stacks of woven straw mats, a raised DJ booth built on a large bronze tripod cauldron and red lacquered war drums in the center background, with a cold pale spotlight beam cutting through thick incense smoke onto the circular stone stage. The crowd are Han dynasty Chinese soldiers and townspeople around 208 AD, northern soldiers in black lamellar armour with red sashes and southern soldiers in green tunics with leather armour, mixed with farmers, merchants and scholars in plain hemp robes and cloth head wraps, hair tied in topknots. Nobody else stands inside the circle. Lighting: dramatic low-key night lighting, warm amber paper-lantern light against a cold pale moonlight beam cutting through drifting incense smoke and mist, strong backlit haze, shallow haze, gritty 35mm film grain; not glossy, not brightly lit. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some people jumping and waving their wide sleeves.\n\nKeep every character's face, hairstyle, costume and colors exactly as in their reference images. Each man holds one vintage chrome microphone in his right hand and nothing else. No subtitles, no on-screen text, no watermark."
+ }
+]

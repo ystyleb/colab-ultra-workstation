@@ -103,8 +103,12 @@ def live_grade(live, t_from, beat0, beat):
     g = ["eq=contrast=%.3f:saturation=%.3f:gamma=0.97" % (live.get("contrast", 1.07), live.get("saturation", 0.9)),
          "colorbalance=rs=-0.04:bs=0.05:rh=0.05:bh=-0.04",
          "eq=brightness='%.3f*exp(-9*mod(t+%.3f-%.3f,%.4f))':eval=frame" % (live.get("beat_pulse", 0.03), t_from, beat0, beat),
-         "vignette=angle=0.55",
+         "vignette=angle=%.3f" % live.get("vignette", 0.55),
          "noise=alls=%d:allf=t" % live.get("grain", 7)]
+    if not live.get("vignette", 0.55):   # live.json "vignette": 0 = no vignette (bright, warm episodes)
+        g.pop(3)
+    if not live.get("cool", True):       # live.json "cool": false = skip the teal/orange colour balance
+        g.pop(1)
     return ",".join(g)
 
 
