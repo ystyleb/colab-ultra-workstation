@@ -1,0 +1,798 @@
+[
+ {
+  "id": "A01",
+  "kind": "rap",
+  "who": "a",
+  "line": 1,
+  "move": "ENTER",
+  "text": "Sixteen sixty-six, plague year — I unlocked the sky / Gravity, light and motion — apple fell and I asked why",
+  "audio": [
+   2.446,
+   7.862
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing one finger of his free left hand high toward the ceiling, then dropping his open palm sharply downward like a falling apple",
+  "two_shot": false,
+  "cam": "The camera starts behind the audience at head height: the backs of curled wigs, tricorn hats and raised fists of the packed crowd fill the lower half of the frame with the spotlit stage small in the distance, then the camera pushes in with large amplitude at slow speed, gliding forward between the raised arms and over the shoulders of the scholars until it reaches the edge of the stage and settles on a chest-up medium shot of <Subject 1>; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats",
+  "wide": true,
+  "image_keys": [
+   "a_face_clean"
+  ],
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "A03",
+  "kind": "rap",
+  "who": "a",
+  "line": 3,
+  "move": "PUSH",
+  "text": "I wrote my fluxions down while you were studying the law / Principia Mathematica — the greatest book the world saw",
+  "audio": [
+   7.812,
+   12.74
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "sweeping his free left hand across the air as if writing equations, then slapping his chest with an open palm",
+  "two_shot": false,
+  "cam": "The camera starts on a knee-up medium shot of <Subject 1> in the crisp spotlight beam, then the camera pushes in with large amplitude at slow speed, travelling steadily toward him until it settles on a head-and-shoulders close-up, his face and lips large and clearly readable whenever he faces the camera. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "A05",
+  "kind": "rap",
+  "who": "a",
+  "line": 5,
+  "move": "ARC",
+  "text": "You came to London in seventy-three, peeked behind the door / Read my letters through Oldenburg, then claimed the work was yours",
+  "audio": [
+   12.702,
+   17.894
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing an accusing left index finger toward his opponent, then clenching his fist as if snatching a letter back",
+  "two_shot": true,
+  "cam": "The camera starts on a chest-up medium shot of <Subject 1> from the front as he raps, then the camera trucks left and pans right with large amplitude at slow speed, moving in an arc shot around his left shoulder, until it ends as an over-the-shoulder shot from behind him: the back of <Subject 1>'s head and his left shoulder softly blurred in the left foreground, and <Subject 2> in sharp focus a few steps away on screen-right, facing the camera. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his mouth firmly closed, hands clasped in front of him, watching him in silence",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "A07",
+  "kind": "rap",
+  "who": "a",
+  "line": 7,
+  "move": "ECU",
+  "text": "\"Best of all possible worlds\"? Not when I am done with you",
+  "audio": [
+   17.854,
+   20.189
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "spreading his free left arm in mock grandeur, then wagging one finger down into the lens",
+  "two_shot": false,
+  "cam": "A handheld camera with a wide-angle lens is very close to his face and slightly below chin height, looking up at him: an extreme close-up where his face fills most of the 16:9 frame, the head of the microphone large and soft in the bottom foreground just below his chin; the camera pushes in with small amplitude at slow speed, the spotlight haze flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "lens": "24mm wide-angle"
+ },
+ {
+  "id": "A08",
+  "kind": "rap",
+  "who": "a",
+  "line": 8,
+  "move": "FACE",
+  "text": "\"Second inventors have no rights\" — and I'm the first, it's true",
+  "audio": [
+   20.152,
+   25.605
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "holding up one stiff left index finger right between their faces with a cold, imperious smirk",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-left in profile facing right, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-right in profile facing left; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "ENTER",
+  "text": "\"First\"? You hid your papers in a desk for twenty years / Sixteen eighty-four, I published — while you drowned in secret fears",
+  "audio": [
+   27.349,
+   31.984
+  ],
+  "lead": 0.0,
+  "frames": 124,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "miming turning a key to lock a drawer with his free left hand, then spreading his palm open toward the crowd",
+  "two_shot": false,
+  "cam": "The camera starts behind the audience at head height: the backs of curled wigs, tricorn hats and raised fists of the packed crowd fill the lower half of the frame with the spotlit stage small in the distance, then the camera pushes in with large amplitude at slow speed, gliding forward between the raised arms and over the shoulders of the scholars until it reaches the edge of the stage and settles on a chest-up medium shot of <Subject 1>; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats",
+  "wide": true,
+  "image_keys": [
+   "b_face_clean"
+  ],
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "LONG",
+  "text": "Your clumsy dots above a letter left your island far behind / Open any calculus book — my d-y d-x rules the mind",
+  "audio": [
+   31.935,
+   37.401
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "poking little imaginary dots in the air with his free left finger, then drawing a bold horizontal fraction line across the air",
+  "two_shot": false,
+  "cam": "From the very first frame to the last, the camera holds a frontal head-and-shoulders close-up at eye level, shot on a handheld camera with a subtle natural sway, never a full-body or wide shot, his legs and the stage floor never in frame, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B05",
+  "kind": "rap",
+  "who": "b",
+  "line": 5,
+  "move": "WHIP",
+  "text": "Thirty years on alchemy, boiling mercury in a pot / Chasing the Philosopher's Stone — look at the science you forgot",
+  "audio": [
+   37.366,
+   42.563
+  ],
+  "lead": 2.5,
+  "frames": 209,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "raw": true,
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "closeup_lora": 0.2,
+  "prompt": "subject_definitions:\n<Subject 1> is Gottfried Wilhelm Leibniz (charismatic German court philosopher of about 36 in his prime with a tall voluminous dark-brown curled baroque wig, sharp handsome features, firm jawline, clean-shaven, deep royal blue velvet coat with gold embroidery over a gilded waistcoat, white linen cravat) from <Picture 1>, natural matte skin texture with fine pores.\n<Subject 2> is Isaac Newton (intense English natural philosopher of about 38 in his prime with long shoulder-length natural wavy ash-brown hair (no powdered wig), sharp piercing eyes, firm jawline, clean-shaven, deep crimson velvet coat over a brocade waistcoat with brass buttons, white linen cravat) from <Picture 2>, natural matte skin texture.\n<Picture 3> is the hall directly behind <Subject 1> in [Shot 1], seen from the stage: the brass stepped-reckoner calculating gears, the calculus chalkboards and the wigged scholars below.\n<Audio 1> is the target rap vocal track for <Subject 1>, providing his exact vocal timbre (sharp articulate continental male rapper, crisp energetic tenor voice, fast nimble rhythmic flow) and syllable-by-syllable rhythm during 00:02.500–00:07.697, followed by silence.\n\nsummary:\n[reference generation + audio reuse] Inside the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background, and a raised round wooden stage in the middle; the two rappers always stand on top of this stage, above the crowd, who stand on the hall floor below and look up at them, <Subject 1> performs an energetic English battle-rap couplet synced syllable-by-syllable to <Audio 1>, holding the vintage chrome handheld microphone with a round mesh head in his right hand below his chin, across 2 shots, with <Subject 2> listening in silence, while the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial bone structure, hairstyle, wig and outfit from <Picture 1>.\n<Subject 2> (appears in [Shot 2]): fully_preserved - Strictly preserve exact facial structure, wig and outfit from <Picture 2>, keeping his mouth closed in silent listening throughout this clip.\nBackground (appears in [Shot 1]): fully_preserved - Keep the environment of <Picture 3> behind <Subject 1>, softly out of focus; the crowd keeps moving.\n<Audio 1>: fully_copy - Reused 1:1 as the target vocal track; while <Subject 1>'s face is on screen his lip movements, jaw openings and syllable articulation are synchronized directly to <Audio 1>; after the camera leaves him the same vocal continues uninterrupted from off screen.\n\ndetailed_description:\nr34l1sm, Facial Realism, realistic ARRI Alexa Mini LF 35mm lens cinematography, Kodak Vision3 500T film look, natural soft matte skin texture with fine pores, zero oily shine, rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, one crisp white spotlight beam from above cutting through soft chalk dust and haze, glowing highlights, the crowd behind clearly lit by the warm lamps. Both shots are in the same room: oak-panelled walls, towering bookshelves, brass chandeliers, haze, the crowd of wigged scholars packed around the stage. [Shot 1] During 00:00.000–00:02.500, before he starts rapping, his mouth stays closed while the camera pushes in from a wide view of the stage and settles on him. Then, during 00:02.500–00:05.000, the camera holds a chest-up three-quarter medium shot of <Subject 1> standing on the raised stage, on the right half of the frame, his face and lips large and readable, with the hall of <Picture 3> blurred behind him, rapping with lively syllable-by-syllable lip-sync to <Audio 1>, his free left arm stretched out pointing toward screen-left at his opponent off screen; at the end of this shot the camera pans left with large amplitude at fast speed, a whip pan with heavy motion blur. [Shot 2] At 00:05.200, the whip pan lands on a new shot. During 00:05.200–00:07.697, the camera holds a static chest-up medium close-up of <Subject 2> standing on the left side of the stage with rainbow prism spectra and brass chandeliers blurred behind him, facing the camera, mouth firmly closed, jaw tight, his face slowly darkening with anger while <Subject 1>'s voice continues from off screen. The lyric sung across the whole clip: <d>[English]Thirty years on alchemy, boiling mercury in a pot Chasing the Philosopher's Stone — look at the science you forgot</d> No subtitles, no on-screen text.\n\noverall_soundscape:\nClear, punchy foreground rap vocal performance from <Subject 1> during 00:02.500–00:07.697 synced 1:1 to <Audio 1> in a packed oak-panelled Royal Society hall full of roaring scholars, continuous across the cut.\n\nnon_diegetic_music:\nN/A — <Audio 1> is directly reused 1:1 as the target vocal track."
+ },
+ {
+  "id": "B07",
+  "kind": "rap",
+  "who": "b",
+  "line": 7,
+  "move": "CRASH",
+  "text": "I built a calculating machine and wrote in ones and zeros",
+  "audio": [
+   42.533,
+   45.178
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "alternating one raised finger and a closed fist of his free left hand for one and zero on the beat",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and long hair of <Subject 2> in the left foreground, <Subject 1> chest-up on the right facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from hairline to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "24mm wide-angle",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "B08",
+  "kind": "rap",
+  "who": "b",
+  "line": 8,
+  "move": "FACE",
+  "text": "Every computer on this planet runs on me, not English heroes",
+  "audio": [
+   45.128,
+   47.938
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "tapping his own temple with his free left hand, then sweeping his arm toward the cheering hall",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "A09",
+  "kind": "rap",
+  "who": "a",
+  "line": 9,
+  "move": "ECU",
+  "text": "Your brass calculator jammed — it couldn't even carry ten",
+  "audio": [
+   52.462,
+   55.141
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "miming turning a crank that suddenly jams with his free left hand, sneering down into the lens",
+  "two_shot": false,
+  "cam": "A handheld camera with a wide-angle lens is very close to his face and slightly below chin height, looking up at him: an extreme close-up where his face fills most of the 16:9 frame, the head of the microphone large and soft in the bottom foreground just below his chin; the camera pushes in with small amplitude at slow speed, the spotlight haze flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "lens": "24mm wide-angle"
+ },
+ {
+  "id": "A10",
+  "kind": "rap",
+  "who": "a",
+  "line": 10,
+  "move": "REVEAL",
+  "text": "And your binary was mystic dreams you scribbled with a pen",
+  "audio": [
+   55.098,
+   57.497
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "waving his free left fingers through the air as if brushing away mystic smoke, stepping in close",
+  "two_shot": true,
+  "cam": "The camera starts on a chest-up three-quarter medium close-up of <Subject 1> alone on the left half of the frame, facing right as he raps, then the camera pans right with small amplitude at slow speed, revealing <Subject 2> standing in profile at the right edge of the frame, and settles into a profile two-shot of the two men face to face, <Subject 1>'s lips and jaw clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> listens with his mouth firmly closed, a faint cold smile"
+ },
+ {
+  "id": "A11",
+  "kind": "rap",
+  "who": "a",
+  "line": 11,
+  "move": "FACE",
+  "text": "Bernoulli sent his fastest-curve challenge to catch me out / Six months for Europe — I solved it before supper, without doubt",
+  "audio": [
+   57.449,
+   62.559
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "tracing a steep downward curve in the air between their faces, then tapping his own temple effortlessly",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-left in profile facing right, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-right in profile facing left; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "A13",
+  "kind": "rap",
+  "who": "a",
+  "line": 13,
+  "move": "TQ",
+  "text": "Sent it back without a name — he knew \"the lion by his claw\"",
+  "audio": [
+   62.529,
+   65.093
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "curling the fingers of his free left hand like a lion's claw, eyes blazing",
+  "two_shot": false,
+  "cam": "The camera holds a chest-up three-quarter medium shot of <Subject 1> on the left half of the frame, facing right, shot on a handheld camera with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ]
+ },
+ {
+  "id": "A14",
+  "kind": "rap",
+  "who": "a",
+  "line": 14,
+  "move": "CRASH",
+  "text": "Master of the Mint and President — in London I'm the law",
+  "audio": [
+   65.063,
+   67.48
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "striking his chest with his free left hand and gesturing broadly like a judge on the bench",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and long hair of <Subject 2> in the right foreground, <Subject 1> chest-up on the left facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from hairline to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "35mm",
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "A15",
+  "kind": "rap",
+  "who": "a",
+  "line": 15,
+  "move": "FACEWIDE",
+  "text": "Your own prince took the British crown and left you back in Hanover",
+  "audio": [
+   67.439,
+   70.187
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing his free left thumb dismissively over his shoulder toward the distance, smirking",
+  "two_shot": true,
+  "cam": "The camera holds a waist-up medium profile two-shot at eye level: <Subject 1> on screen-left facing right, leaning toward <Subject 2> and rapping at him, <Subject 2> on screen-right facing left standing his ground, the crisp spotlight beam falling between the two men, <Subject 1>'s lips and jaw clearly readable in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his arms crossed and his mouth firmly closed"
+ },
+ {
+  "id": "A16",
+  "kind": "rap",
+  "who": "a",
+  "line": 16,
+  "move": "LONG",
+  "text": "Writing Duke family trees until your lonely days were over",
+  "audio": [
+   70.153,
+   72.956
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "miming flipping pages of a book slowly with his free left hand, shaking his head with icy contempt",
+  "two_shot": false,
+  "cam": "From the very first frame to the last, the camera holds a frontal head-and-shoulders close-up at eye level, shot on a handheld camera with a subtle natural sway, never a full-body or wide shot, his legs and the stage floor never in frame, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ]
+ },
+ {
+  "id": "B09",
+  "kind": "rap",
+  "who": "b",
+  "line": 9,
+  "move": "TQ",
+  "text": "\"You're the law\"? You stacked the jury in your own society",
+  "audio": [
+   74.339,
+   77.471
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing his free left hand around the gallery benches accusingly, jaw set",
+  "two_shot": false,
+  "cam": "The camera holds a chest-up three-quarter medium shot of <Subject 1> on the right half of the frame, facing left, shot on a handheld camera with a subtle natural sway, slowly arcing a few degrees around him, his face and lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B10",
+  "kind": "rap",
+  "who": "b",
+  "line": 10,
+  "move": "FACE",
+  "text": "Wrote the verdict by yourself and hid behind anonymity",
+  "audio": [
+   77.441,
+   80.023
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "holding his free left hand in front of his face like a mask, then pulling it away right in front of his opponent",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B11",
+  "kind": "rap",
+  "who": "b",
+  "line": 11,
+  "move": "LONG",
+  "text": "Lost twenty thousand pounds when the South Sea Bubble burst / \"Can't calculate the madness\"? Look inside the mirror first",
+  "audio": [
+   79.993,
+   84.968
+  ],
+  "lead": 2.5,
+  "frames": 192,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "lifting his free left hand like a rising bubble, snapping his fingers to pop it, then holding up an imaginary mirror",
+  "two_shot": false,
+  "cam": "During 00:00.000–00:02.500, before he starts rapping, his mouth stays closed while the camera pushes in with large amplitude at slow speed from a wide shot of him standing on the stage until it reaches the framing below; from 00:02.500 to the end of the shot it holds that framing. The framing is a frontal head-and-shoulders close-up at eye level, shot on a handheld camera with a subtle natural sway, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B13",
+  "kind": "rap",
+  "who": "b",
+  "line": 13,
+  "move": "ECU",
+  "text": "Bragged you broke my heart in Hanover after I was dead and gone",
+  "audio": [
+   84.911,
+   87.621
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pressing his free left hand over his heart in mock sorrow, then glaring straight into the lens",
+  "two_shot": false,
+  "cam": "A handheld camera with a wide-angle lens is very close to his face and slightly below chin height, looking up at him: an extreme close-up where his face fills most of the 16:9 frame, the head of the microphone large and soft in the bottom foreground just below his chin; the camera pushes in with small amplitude at slow speed, the spotlight haze flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "lens": "24mm wide-angle"
+ },
+ {
+  "id": "B14",
+  "kind": "rap",
+  "who": "b",
+  "line": 14,
+  "move": "FACE",
+  "text": "While your island kept your dots and watched the continent move on",
+  "audio": [
+   87.559,
+   89.909
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "waving his free left hand forward while staring straight into his opponent's eyes",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B15",
+  "kind": "rap",
+  "who": "b",
+  "line": 15,
+  "move": "FACEWIDE",
+  "text": "Every integral sign on every board is still the mark I drew",
+  "audio": [
+   89.879,
+   92.386
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "drawing a tall sweeping S-shaped integral sign in the air between them with his free left index finger",
+  "two_shot": true,
+  "cam": "The camera holds a waist-up medium profile two-shot at eye level: <Subject 1> on screen-right facing left, leaning toward <Subject 2> and rapping at him, <Subject 2> on screen-left facing right standing his ground, the crisp spotlight beam falling between the two men, <Subject 1>'s lips and jaw clearly readable in every frame, shot on a handheld camera with a subtle natural sway. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his arms crossed and his mouth firmly closed"
+ },
+ {
+  "id": "B16",
+  "kind": "rap",
+  "who": "b",
+  "line": 16,
+  "move": "CRASH",
+  "text": "You rigged the room in London — history calculates with me, not you",
+  "audio": [
+   92.348,
+   95.633
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing his free left index finger straight into the lens with a sharp, victorious smile",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and long hair of <Subject 2> in the left foreground, <Subject 1> chest-up on the right facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from hairline to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round stage: the crowd is on the hall floor below and behind him, lower than his chest, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "24mm wide-angle",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "R_L_BOOK",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Gottfried Wilhelm Leibniz (keep his exact face, tall voluminous dark-brown curled baroque hair, royal blue silk velvet coat with gold embroidery, gilded waistcoat and white linen cravat). Image 2 is Leibniz's side of the hall as seen from the stage (gleaming brass stepped-reckoner calculating gears, slate chalkboards with golden integral signs and dy/dx notation, chandeliers and the crowd).\n\nCinematic photoreal shot, 16:9. From the very first frame to the last, the camera holds a static tight head-and-shoulders close-up of Gottfried Wilhelm Leibniz (Image 1) alone, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the brass calculating gears and golden calculus chalkboards of his side of the hall (Image 2) glow softly blurred behind him, never a plain studio backdrop or a dark wall of people. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. One eyebrow slowly rises and the corner of his mouth lifts in a thin, sceptical smile.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_L_JAM",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Gottfried Wilhelm Leibniz (keep his exact face, tall voluminous dark-brown curled baroque hair, royal blue silk velvet coat with gold embroidery, gilded waistcoat and white linen cravat). Image 2 is Leibniz's side of the hall as seen from the stage (gleaming brass stepped-reckoner calculating gears, slate chalkboards with golden integral signs and dy/dx notation, chandeliers and the crowd).\n\nCinematic photoreal shot, 16:9. From the very first frame to the last, the camera holds a static tight head-and-shoulders close-up of Gottfried Wilhelm Leibniz (Image 1) alone, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the brass calculating gears and golden calculus chalkboards of his side of the hall (Image 2) glow softly blurred behind him, never a plain studio backdrop or a dark wall of people. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His eyes narrow for a moment and his jaw tightens, then he looks back up, cool and composed.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_L_CLAW",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Gottfried Wilhelm Leibniz (keep his exact face, tall voluminous dark-brown curled baroque hair, royal blue silk velvet coat with gold embroidery, gilded waistcoat and white linen cravat). Image 2 is Leibniz's side of the hall as seen from the stage (gleaming brass stepped-reckoner calculating gears, slate chalkboards with golden integral signs and dy/dx notation, chandeliers and the crowd).\n\nCinematic photoreal shot, 16:9. From the very first frame to the last, the camera holds a static tight head-and-shoulders close-up of Gottfried Wilhelm Leibniz (Image 1) alone, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the brass calculating gears and golden calculus chalkboards of his side of the hall (Image 2) glow softly blurred behind him, never a plain studio backdrop or a dark wall of people. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He tilts his head a few degrees and exhales through his nose, utterly unimpressed.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_N_DOTS",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Isaac Newton (keep his exact face, shoulder-length natural wavy ash-brown hair without any powdered wig, deep crimson velvet coat, gold-and-dark brocade waistcoat and white linen cravat). Image 2 is Newton's side of the hall as seen from the stage (glass prisms casting vivid rainbow spectra, brass reflecting telescope, bookshelves, chandeliers and the warmly lit wigged crowd).\n\nCinematic photoreal shot, 16:9. From the very first frame to the last, the camera holds a static tight head-and-shoulders close-up of Isaac Newton (Image 1) alone, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the rainbow prism spectra and brass chandeliers of his side of the hall (Image 2) glow softly blurred behind him, never a plain studio backdrop or a dark wall of people. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His imperious smirk fades and his eyes narrow, a muscle twitching in his cheek.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_N_JURY",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Isaac Newton (keep his exact face, shoulder-length natural wavy ash-brown hair without any powdered wig, deep crimson velvet coat, gold-and-dark brocade waistcoat and white linen cravat). Image 2 is Newton's side of the hall as seen from the stage (glass prisms casting vivid rainbow spectra, brass reflecting telescope, bookshelves, chandeliers and the warmly lit wigged crowd).\n\nCinematic photoreal shot, 16:9. From the very first frame to the last, the camera holds a static tight head-and-shoulders close-up of Isaac Newton (Image 1) alone, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the rainbow prism spectra and brass chandeliers of his side of the hall (Image 2) glow softly blurred behind him, never a plain studio backdrop or a dark wall of people. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He glances away to one side and swallows, then glares back, face darkening.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_N_FURY",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Isaac Newton (keep his exact face, shoulder-length natural wavy ash-brown hair without any powdered wig, deep crimson velvet coat, gold-and-dark brocade waistcoat and white linen cravat). Image 2 is Newton's side of the hall as seen from the stage (glass prisms casting vivid rainbow spectra, brass reflecting telescope, bookshelves, chandeliers and the warmly lit wigged crowd).\n\nCinematic photoreal shot, 16:9. From the very first frame to the last, the camera holds a static tight head-and-shoulders close-up of Isaac Newton (Image 1) alone, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the rainbow prism spectra and brass chandeliers of his side of the hall (Image 2) glow softly blurred behind him, never a plain studio backdrop or a dark wall of people. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He grinds his teeth, nostrils flaring, staring straight back in cold fury.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "OPEN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Isaac Newton (keep his exact face, shoulder-length natural wavy ash-brown hair without any powdered wig, deep crimson velvet coat, gold-and-dark brocade waistcoat and white linen cravat). Image 2 is Gottfried Wilhelm Leibniz (keep his exact face, tall voluminous dark-brown curled baroque hair, royal blue silk velvet coat with gold embroidery, gilded waistcoat and white linen cravat).\n\nCinematic photoreal shot, 16:9. Over-the-shoulder shot at eye level, handheld: the blurred dark-brown baroque wig and royal blue shoulder of Gottfried Wilhelm Leibniz (Image 2) fill the right foreground, and beyond him Isaac Newton (Image 1) stands chest-up on the left, facing the camera, lifting his microphone toward his chin with a cold imperious smirk, mouth closed, rainbow prism light glowing behind him; the camera pulls out with small amplitude at slow speed.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same crisp white spotlight beam from above as the key light, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background, and a raised round wooden stage in the middle; the two rappers always stand on top of this stage, above the crowd, who stand on the hall floor below and look up at them. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Nobody else stands inside the spotlit circle. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, one crisp white spotlight beam from above cutting through soft chalk dust and haze, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep every character's face, hairstyle, wig, costume and colors exactly as in their reference images. Newton always stands on the left side of the stage with the rainbow prisms behind him, Leibniz on the right with the brass calculating gears and calculus chalkboards behind him. Whenever Newton or Leibniz is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else."
+ },
+ {
+  "id": "DJ_FRONT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "dj"
+  ],
+  "prompt": "Image 1 is the 18th-century scholar DJ at his raised booth built on a carved oak presidential desk with brass clockwork gears.\n\nCinematic photoreal shot, 16:9. Frontal medium shot of exactly one person, the 18th-century scholar DJ (Image 1), alone behind his raised oak booth with brass clockwork gears, scratching a record with one hand and pressing one headphone to his ear with the other, warm amber indicator lamps glowing on the brass mixer, the wigged crowd bouncing in the candlelit haze behind him.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "DJ_HANDS",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "dj"
+  ],
+  "prompt": "Image 1 is the 18th-century scholar DJ at his raised booth built on a carved oak presidential desk with brass clockwork gears.\n\nCinematic photoreal shot, 16:9. Low-angle close shot across the turntables of the DJ booth (Image 1): the DJ's hands in white ruffled cuffs scratch a spinning record and ride a brass fader, his gold-embroidered waistcoat above, amber vacuum-tube lamps glowing on the brass mixer, haze and chandelier light behind.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_OOH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the crowd of early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars.\n\nCinematic photoreal shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close medium shot packed with four or five wigged Royal Society fellows from the front row (Image 1), their faces large and filling the 16:9 frame, handheld camera at their eye level, the chandelier lights only a blurred warm glow behind them. They react to a brutal punchline: one claps both hands over his mouth, one grabs his curled wig with wide eyes, one doubles over laughing and waves his rolled parchment manuscript. Energetic, joyful chaos.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_CHANT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the crowd of early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars.\n\nCinematic photoreal shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close medium shot of the front rows of the crowd (Image 1), handheld at their eye level, faces large and lit by warm amber chandelier light: wigged scholars and fellows chant together with their fists and rolled manuscripts pumping in rhythm, mouths wide open, haze. The camera trucks right with small amplitude at slow speed along the front row and stays on their faces.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_STARE",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the crowd of early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars.\n\nCinematic photoreal shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Medium close shot of three wigged fellows in the front row (Image 1), handheld at their eye level, warm chandelier light: they look up past the camera in tense silence, arms folded, one of them slowly letting out a low whistle and shaking his head.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_LAUGH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the crowd of early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars.\n\nCinematic photoreal shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close shot of one scholar in a curled wig in the front row (Image 1) throwing his head back and roaring with laughter, one fist punching the air, his colleagues cheering and clapping around him, warm amber light, handheld.\n\nThis shot must cut seamlessly with the rest of the film: same hall, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CURTAIN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 192,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Isaac Newton (keep his exact face, shoulder-length natural wavy ash-brown hair without any powdered wig, deep crimson velvet coat, gold-and-dark brocade waistcoat and white linen cravat). Image 2 is Gottfried Wilhelm Leibniz (keep his exact face, tall voluminous dark-brown curled baroque hair, royal blue silk velvet coat with gold embroidery, gilded waistcoat and white linen cravat).\n\nCinematic photoreal shot, 16:9. The shot starts as a waist-up medium two-shot of Isaac Newton (Image 1) on the left and Gottfried Wilhelm Leibniz (Image 2) on the right standing side by side on the stage, both facing the camera, both spreading their arms wide to the roaring crowd, mouths closed, Leibniz with a calm victorious smile and Newton with a grudging nod. Then the camera pulls out and pedestals up with large amplitude at slow speed, rising steadily backward and upward over the heads of the audience until it holds a high wide shot of the whole Royal Society lecture hall: the two men small in the spotlight at the center of the circular wooden stage, hundreds of cheering wigged scholars with raised fists and rolled manuscripts all around them, rainbow prism light on the left, golden calculus chalkboards and brass gears on the right. During the last second the camera smoothly decelerates and settles into a stationary shot.\n\nThis shot must cut seamlessly with the rest of the film: same venue, same crisp white spotlight beam from above as the key light, 35-50mm lens look. Setting: the grand oak-panelled lecture hall of the Royal Society in London in 1712 at night turned into an underground rap battle arena, tiered wooden gallery benches, brass candle chandeliers and towering leather-bound bookshelves; on the left side glowing glass prisms splitting white light into vivid rainbow spectra, a brass reflecting telescope and a red apple hanging above stacked Principia volumes, on the right side gleaming brass stepped-reckoner calculating gears and glowing golden integral signs and dy/dx chalkboards, a raised DJ booth built on a carved oak presidential desk in the center background, and a raised round wooden stage in the middle; the two rappers always stand on top of this stage, above the crowd, who stand on the hall floor below and look up at them. The crowd are early 18th-century European natural philosophers, wigged Royal Society fellows in dark velvet coats, and German court scholars. Nobody else stands inside the spotlit circle. Lighting: rich warm cinematic lighting, well-exposed faces: golden candlelight and warm amber chandelier glow as the key light, a vivid prismatic rainbow rim light on the left and warm brass glow on the right, one crisp white spotlight beam from above cutting through soft chalk dust and haze, glowing highlights, the crowd behind clearly lit by the warm lamps, shallow depth of field, fine 35mm film grain; warm and well exposed, never dark, murky or blue-grey. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some scholars jumping and waving their rolled manuscripts and tricorn hats.\n\nKeep every character's face, hairstyle, wig, costume and colors exactly as in their reference images. Newton always stands on the left side of the stage with the rainbow prisms behind him, Leibniz on the right with the brass calculating gears and calculus chalkboards behind him. Whenever Newton or Leibniz is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else.",
+  "closeup_lora": 0.0
+ }
+]

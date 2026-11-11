@@ -93,6 +93,10 @@ def main():
         pass
     wm = e.get("watermark", "")
 
+    is_en = e.get("language") == "en"
+    ai_tag = "AI GENERATED" if is_en else "AI 生成"
+    sub_prefix = "RAP BATTLE" if is_en else "说唱 Battle"
+
     # vertical 3:4
     W, H = 1080, 1440
     img = ImageEnhance.Brightness(ImageOps.fit(f, (W, H), Image.LANCZOS).filter(ImageFilter.GaussianBlur(28))).enhance(0.42)
@@ -107,10 +111,12 @@ def main():
     img.paste(sharp, (0, y0), m)
     row(img, W // 2, 225, [(A, ImageFont.truetype(brush, 150), GOLD, 6), ("VS", ImageFont.truetype(en, 150), RED, 6),
                            (B, ImageFont.truetype(brush, 150), GOLD, 6)], gap=18)
-    row(img, W // 2, y0 + fh + 70, [("说唱", ImageFont.truetype(brush, 140), GOLD, 6), ("Battle", ImageFont.truetype(en, 112), GOLD, 5)], gap=26)
+    row(img, W // 2, y0 + fh + 70,
+        ([("RAP", ImageFont.truetype(en, 112), GOLD, 5), ("BATTLE", ImageFont.truetype(en, 112), GOLD, 5)] if is_en else
+         [("说唱", ImageFont.truetype(brush, 140), GOLD, 6), ("Battle", ImageFont.truetype(en, 112), GOLD, 5)]), gap=26)
     if e.get("tagline"):
         fancy(img, (W // 2, y0 + fh + 185), e["tagline"], tag_f, CREAM, stroke=3, shadow=6)
-    small(img, (40, 52), "AI 生成", "lm", (230, 230, 230))
+    small(img, (40, 52), ai_tag, "lm", (230, 230, 230))
     if wm:
         small(img, (W - 40, 52), wm, "rm", (246, 200, 72))
     img.save(os.path.join(ep, "cover", "封面_竖版3x4.jpg"), quality=95)
@@ -125,13 +131,14 @@ def main():
     img.paste(Image.new("RGB", (W, H), (0, 0, 0)), (0, 0), shade)
     row(img, W // 2, 850, [(A, ImageFont.truetype(brush, 200), GOLD, 6), ("VS", ImageFont.truetype(en, 170), RED, 6),
                            (B, ImageFont.truetype(brush, 200), GOLD, 6)], gap=26)
-    fancy(img, (W // 2, 990), "说唱 Battle" + (" · " + e["tagline"] if e.get("tagline") else ""),
+    fancy(img, (W // 2, 990), sub_prefix + (" · " + e["tagline"] if e.get("tagline") else ""),
           ImageFont.truetype(font("serif_sc"), 50), CREAM, stroke=3, shadow=6)
-    small(img, (50, 60), "AI 生成", "lm", (230, 230, 230))
+    small(img, (50, 60), ai_tag, "lm", (230, 230, 230))
     if wm:
         small(img, (W - 50, 60), wm, "rm", (246, 200, 72))
     img.save(os.path.join(ep, "cover", "封面_横版16x9.jpg"), quality=95)
-    print("wrote cover/封面_竖版3x4.jpg and cover/封面_横版16x9.jpg")
+    img.save(os.path.join(ep, "cover", "cover_youtube_16x9.png"))
+    print("wrote cover/封面_竖版3x4.jpg, cover/封面_横版16x9.jpg, and cover/cover_youtube_16x9.png")
 
 
 if __name__ == "__main__":

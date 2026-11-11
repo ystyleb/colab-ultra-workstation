@@ -147,18 +147,41 @@ if not assignments and "{session}" in sessions:
     except Exception:
         pass
 has_session = "{session}" in sessions and bool(getattr(sessions["{session}"], "endpoint", None))
+active_names = [f"{{s.session_id}}({{getattr(s, 'accelerator', 'GPU')}})" for s in sessions.values() if getattr(s, "endpoint", None)]
 print(json.dumps({{
     "has_session": has_session,
     "assignments": len(assignments),
+    "active": active_names,
 }}))
 """
-    r = subprocess.run([sys.executable, "-c", check_code], capture_output=True, text=True, check=True)
-    info = json.loads(r.stdout.strip().splitlines()[-1])
-    if info["has_session"]:
-        print(f"⚡ Reusing active Colab G4 session '{session}'", flush=True)
-    else:
-        print(f"🚀 Connecting Colab G4 (96GB Blackwell) session '{session}'...", flush=True)
-        run_local([COLAB_BIN, "new", "-s", session, "--gpu", "G4"])
+    wait_t0 = time.time()
+    max_wait_s = int(os.environ.get("RAP_G4_WAIT_TIMEOUT", "3600"))
+    while True:
+        r = subprocess.run([sys.executable, "-c", check_code], capture_output=True, text=True, check=True)
+        info = json.loads(r.stdout.strip().splitlines()[-1])
+        if info["has_session"]:
+            print(f"⚡ Reusing active Colab G4 session '{session}'", flush=True)
+            break
+        if info["assignments"] >= 3:
+            elapsed = int(time.time() - wait_t0)
+            if elapsed > max_wait_s:
+                raise RuntimeError(f"Timed out after {elapsed}s waiting for a free G4 slot (active={info['active']})")
+            print(f"⏳ [{elapsed}s] {info['assignments']}/3 GPU slots in use ({', '.join(info['active'])}); waiting 30s for a slot to free up (0 CCU)...", flush=True)
+            time.sleep(30)
+            continue
+        print(f"🚀 Connecting Colab G4 (96GB Blackwell) session '{session}' (active={info['assignments']}/3)...", flush=True)
+        res = subprocess.run([COLAB_BIN, "new", "-s", session, "--gpu", "G4"], capture_output=True, text=True)
+        if res.returncode == 0:
+            if res.stdout:
+                print(res.stdout.strip(), flush=True)
+            break
+        err_msg = (res.stderr or res.stdout or "").strip()
+        elapsed = int(time.time() - wait_t0)
+        if elapsed < max_wait_s and any(k in err_msg.lower() for k in ("precondition failed", "allocation refused", "503", "unavailable", "capacity")):
+            print(f"⏳ [{elapsed}s] G4 allocation busy ({err_msg.splitlines()[-1] if err_msg else 'retry'}); retrying in 30s (0 CCU)...", flush=True)
+            time.sleep(30)
+            continue
+        raise RuntimeError(f"colab new failed ({res.returncode}): {err_msg}")
     run_local([sys.executable, str(ROOT_DIR / "scripts" / "colab_meter.py"), "start", "-s", session, "-g", "G4"], check=False)
 
     for attempt in range(3):
@@ -261,7 +284,7 @@ def pull_clips_from_drive(ep_dir: Path, title: str) -> int:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("ep", help="Path to episode directory")
+    ap.add_argument("ep", nargs="+", help="Path(s) to episode directory")
     ap.add_argument("--steps", type=int, default=8)
     ap.add_argument("--ids", nargs="*", default=None)
     ap.add_argument("--runner-args", default="", help="Extra args for h3_colab_runner.py, e.g. \"--fit --lock-strength 1.0 --tag lock\"")
@@ -269,21 +292,22 @@ def main():
     args = ap.parse_args()
     runner_extra = shlex.split(args.runner_args)
 
-    ep_dir = Path(args.ep).resolve()
-    ep_json = json.loads((ep_dir / "episode.json").read_text(encoding="utf-8"))
-    title = ep_json["title"]
+    ep_dirs = [Path(p).resolve() for p in args.ep]
+    titles = [json.loads((d / "episode.json").read_text(encoding="utf-8"))["title"] for d in ep_dirs]
 
     bundle_tar = Path("/tmp/rap_episode_bundle.tar.gz")
     with tarfile.open(bundle_tar, "w:gz") as tar:
-        tar.add(ep_dir / "episode.json", arcname="episode/episode.json")
-        for sub in ("refs", "work"):
-            for p in (ep_dir / sub).glob("*"):
-                if p.is_file() and p.suffix in (".png", ".json", ".wav", ".mp3"):
-                    tar.add(p, arcname=f"episode/{sub}/{p.name}")
+        for idx, d in enumerate(ep_dirs):
+            prefix = f"episode_{idx}"
+            tar.add(d / "episode.json", arcname=f"{prefix}/episode.json")
+            for sub in ("refs", "work"):
+                for p in (d / sub).glob("*"):
+                    if p.is_file() and p.suffix in (".png", ".json", ".wav", ".mp3"):
+                        tar.add(p, arcname=f"{prefix}/{sub}/{p.name}")
         for s_py in ("common.py", "qa.py", "h3_colab_runner.py"):
             tar.add(WF_DIR / "scripts" / s_py, arcname=f"scripts/{s_py}")
 
-    print(f"📦 Packed episode bundle -> {bundle_tar} ({bundle_tar.stat().st_size / 1048576:.2f} MB)", flush=True)
+    print(f"📦 Packed {len(ep_dirs)} episode bundle(s) -> {bundle_tar} ({bundle_tar.stat().st_size / 1048576:.2f} MB)", flush=True)
     bundle_file_id = None
 
     try:
@@ -322,23 +346,28 @@ Path("/tmp/rap_job_err.flag").unlink(missing_ok=True)
 
 wrapper = '''import subprocess, sys
 from pathlib import Path
-cmd = [sys.executable, "-u", "/tmp/rap_job/scripts/h3_colab_runner.py", "/tmp/rap_job/episode", "--steps", "{args.steps}"]
-ids = {json.dumps(ids_list)}
-if ids:
-    cmd.extend(["--ids"] + ids)
-cmd.extend({json.dumps(runner_extra)})
-p = subprocess.run(cmd)
+rc = 0
+for idx in range({len(ep_dirs)}):
+    cmd = [sys.executable, "-u", "/tmp/rap_job/scripts/h3_colab_runner.py", f"/tmp/rap_job/episode_{{idx}}", "--steps", "{args.steps}"]
+    ids = {json.dumps(ids_list)}
+    if ids:
+        cmd.extend(["--ids"] + ids)
+    cmd.extend({json.dumps(runner_extra)})
+    p = subprocess.run(cmd)
+    if p.returncode != 0:
+        rc = p.returncode
+        break
 subprocess.run(["sync"])
-if p.returncode == 0:
+if rc == 0:
     Path("/tmp/rap_job_done.flag").write_text("OK")
 else:
-    Path("/tmp/rap_job_err.flag").write_text(str(p.returncode))
+    Path("/tmp/rap_job_err.flag").write_text(str(rc))
 '''
 Path("/tmp/run_rap_wrapper.py").write_text(wrapper)
 subprocess.Popen("nohup python3 -u /tmp/run_rap_wrapper.py > /tmp/rap_battle_run.log 2>&1 < /dev/null &", shell=True)
 print("LAUNCHED_RAP_RUNNER_OK")
 """
-        print(f"\n🎬 [Step 3/4] Launching h3_colab_runner.py on G4 (steps={args.steps})...", flush=True)
+        print(f"\n🎬 [Step 3/4] Launching h3_colab_runner.py on G4 (steps={args.steps}, episodes={len(ep_dirs)})...", flush=True)
         out = colab_exec_py(SESSION_NAME, launch_py, timeout_s=45)
         if "LAUNCHED_RAP_RUNNER_OK" not in out:
             raise RuntimeError(f"Failed to launch h3_colab_runner.py: {out}")
@@ -388,15 +417,17 @@ print("DRIVE_SYNC_OK")
         run_local([sys.executable, str(ROOT_DIR / "scripts" / "colab_meter.py"), "stop", "-s", SESSION_NAME], check=False)
 
     print("\n⬇️ [0-CCU Post-Processing] Pulling rendered clips from Google Drive & packaging final video...", flush=True)
-    pull_clips_from_drive(ep_dir, title)
+    for ep_dir, title in zip(ep_dirs, titles):
+        pull_clips_from_drive(ep_dir, title)
     if args.no_post:
         print("✅ --no-post: clips pulled, skipping assemble/package.", flush=True)
         return
     local_py = shutil.which("python3") or "/opt/homebrew/bin/python3"
-    run_local([local_py, str(WF_DIR / "scripts" / "assemble.py"), str(ep_dir)])
-    run_local([local_py, str(WF_DIR / "scripts" / "package.py"), str(ep_dir), "--phone"])
-    run_local([local_py, str(WF_DIR / "scripts" / "cover.py"), str(ep_dir), "--frame", str(ep_dir / "cover" / "faceoff_frame.png"), "--no-mirror"])
-    print(f"\n🎉 Done! Final packaged video: {ep_dir / 'final' / (title + '_成片.mp4')}", flush=True)
+    for ep_dir, title in zip(ep_dirs, titles):
+        run_local([local_py, str(WF_DIR / "scripts" / "assemble.py"), str(ep_dir)])
+        run_local([local_py, str(WF_DIR / "scripts" / "package.py"), str(ep_dir), "--phone"])
+        run_local([local_py, str(WF_DIR / "scripts" / "cover.py"), str(ep_dir), "--frame", str(ep_dir / "cover" / "faceoff_frame.png"), "--no-mirror"])
+        print(f"\n🎉 Done! Final packaged video: {ep_dir / 'final' / (title + '_成片.mp4')}", flush=True)
 
 
 if __name__ == "__main__":

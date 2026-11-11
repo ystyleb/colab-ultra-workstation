@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 1,
+  "text": "\"First\"? You hid your papers in a desk for twenty years",
+  "start": 0.35,
+  "end": 2.454,
+  "bar": 27.429,
+  "heard": "First\"? You hid your papers in a desk for twenty years",
+  "orig_start": 48.538,
+  "orig_bar": 48.538
+ },
+ {
+  "who": "b",
+  "n": 2,
+  "text": "Sixteen eighty-four, I published — while you drowned in secret fears",
+  "start": 2.504,
+  "end": 4.905,
+  "bar": 29.583,
+  "heard": "Sixteen eighty-four, I published while you drowned in secret fears",
+  "orig_start": 50.692,
+  "orig_bar": 50.692
+ },
+ {
+  "who": "b",
+  "n": 3,
+  "text": "Your clumsy dots above a letter left your island far behind",
+  "start": 4.936,
+  "end": 7.516,
+  "bar": 32.015,
+  "heard": "Your clumsy dots above a letter left your island far behind",
+  "orig_start": 53.124,
+  "orig_bar": 53.124
+ },
+ {
+  "who": "b",
+  "n": 4,
+  "text": "Open any calculus book — my d-y d-x rules the mind",
+  "start": 7.566,
+  "end": 10.322,
+  "bar": 34.645,
+  "heard": "Open any calculus book my d-y d-x rules the mind",
+  "orig_start": 55.754,
+  "orig_bar": 55.754
+ }
+]

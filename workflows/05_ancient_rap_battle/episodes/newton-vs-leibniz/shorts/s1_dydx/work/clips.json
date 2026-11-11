@@ -1,0 +1,102 @@
+[
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "FULL",
+  "text": "\"First\"? You hid your papers in a desk for twenty years",
+  "audio": [
+   0.27,
+   2.454
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "miming locking something in a drawer and throwing away the key, eyebrow raised",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B02",
+  "kind": "rap",
+  "who": "b",
+  "line": 2,
+  "move": "FULL",
+  "text": "Sixteen eighty-four, I published — while you drowned in secret fears",
+  "audio": [
+   2.424,
+   4.905
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "spreading his hand open toward the crowd as if presenting a published book",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "FULL",
+  "text": "Your clumsy dots above a letter left your island far behind",
+  "audio": [
+   4.856,
+   7.516
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "tapping little imaginary dots in the air mockingly, then waving them away",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B04",
+  "kind": "rap",
+  "who": "b",
+  "line": 4,
+  "move": "FULL",
+  "text": "Open any calculus book — my d-y d-x rules the mind",
+  "audio": [
+   7.486,
+   10.322
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "drawing a bold fraction line in the air with his index finger, confident grin",
+  "two_shot": false,
+  "cam": "A handheld camera with a subtle natural sway starts on a vertical waist-up shot at eye level and gently creeps closer to a head-and-shoulders close-up, his face and lips large in the upper half of the tall 9:16 frame from the first frame",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

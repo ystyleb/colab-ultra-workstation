@@ -1,0 +1,102 @@
+[
+ {
+  "id": "A11",
+  "kind": "rap",
+  "who": "a",
+  "line": 11,
+  "move": "FULL",
+  "text": "Bernoulli sent his fastest-curve challenge to catch me out",
+  "audio": [
+   0.27,
+   2.736
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "sweeping a steep curve downward through the air with his finger",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A12",
+  "kind": "rap",
+  "who": "a",
+  "line": 12,
+  "move": "FULL",
+  "text": "Six months for Europe — I solved it before supper, without doubt",
+  "audio": [
+   2.706,
+   5.38
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "tapping his temple once, then gesturing effortlessly as if tossing off a note",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A13",
+  "kind": "rap",
+  "who": "a",
+  "line": 13,
+  "move": "FULL",
+  "text": "Sent it back without a name — he knew \"the lion by his claw\"",
+  "audio": [
+   5.35,
+   7.914
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "curling his fingers like a lion's claw, eyes blazing at the lens",
+  "two_shot": false,
+  "cam": "A handheld camera at eye level with a subtle natural sway holds a vertical waist-up shot of him, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A14",
+  "kind": "rap",
+  "who": "a",
+  "line": 14,
+  "move": "FULL",
+  "text": "Master of the Mint and President — in London I'm the law",
+  "audio": [
+   7.884,
+   10.301
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "standing tall and gesturing broadly across the hall like a judge on the bench",
+  "two_shot": false,
+  "cam": "A handheld camera with a subtle natural sway starts on a vertical waist-up shot at eye level and gently creeps closer to a head-and-shoulders close-up, his face and lips large in the upper half of the tall 9:16 frame from the first frame",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

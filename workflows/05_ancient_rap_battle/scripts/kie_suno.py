@@ -483,11 +483,30 @@ def main():
     jsave(os.path.join(work, "lines.json"), lines)
     # 词级时间轴（剪辑时间，含 [段落标签] 和观众喊词）：分镜脚本的「唱完才切」断言、assemble.py 的甩镜避让都读它
     # Suno 会把段落标签和下一个词粘成一个 token（"[Crowd reacts]\nOOOH!"），只留换行后的词，否则全大写判断认不出观众喊词
-    def _tok(s: str) -> str:
-        s = s.strip()
-        return s.rsplit("\n", 1)[1].strip() if "]" in s and "\n" in s else s
-    words_edit = [{"w": _tok(w["word"]), "t0": round(w["startS"] - trim_start, 3), "t1": round(w["endS"] - trim_start, 3)}
-                  for w in best_tr.get("alignedWords", []) if w.get("word", "").strip() and w["startS"] >= trim_start]
+    words_edit, in_tag = [], False
+    for w in best_tr.get("alignedWords", []):
+        raw = w.get("word", "")
+        if not raw.strip() or w["startS"] < trim_start:
+            for ch in raw:
+                if ch == "[":
+                    in_tag = True
+                elif ch == "]":
+                    in_tag = False
+            continue
+        s = re.sub(r"\[[^\]]*\]", "", raw)
+        if in_tag:
+            if "]" in s:
+                s = s.split("]", 1)[1]
+                in_tag = False
+            else:
+                s = ""
+        if "[" in s:
+            s = s.split("[", 1)[0]
+            in_tag = True
+        s = re.sub(r'\s*\n\s*"+\s*$', "", s).strip()
+        if not re.sub(r"[^a-zA-Z0-9\u4e00-\u9fff]", "", s):
+            continue
+        words_edit.append({"w": s, "t0": round(w["startS"] - trim_start, 3), "t1": round(w["endS"] - trim_start, 3)})
     jsave(os.path.join(work, "words_edit.json"), words_edit)
     verse_a_start = lines[0]["start"]
     verse_a_end = max(l["end"] for l in lines if l["who"] == "a")

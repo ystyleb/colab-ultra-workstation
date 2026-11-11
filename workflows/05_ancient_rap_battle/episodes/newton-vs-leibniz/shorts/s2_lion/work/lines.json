@@ -1,0 +1,46 @@
+[
+ {
+  "who": "a",
+  "n": 11,
+  "text": "Bernoulli sent his fastest-curve challenge to catch me out",
+  "start": 0.35,
+  "end": 2.736,
+  "bar": 57.529,
+  "heard": "Bernoulli sent his fastest-curve challenge to catch me out",
+  "orig_start": 78.638,
+  "orig_bar": 78.638
+ },
+ {
+  "who": "a",
+  "n": 12,
+  "text": "Six months for Europe — I solved it before supper, without doubt",
+  "start": 2.786,
+  "end": 5.38,
+  "bar": 59.965,
+  "heard": "Six months for Europe I solved it before supper, without doubt",
+  "orig_start": 81.074,
+  "orig_bar": 81.074
+ },
+ {
+  "who": "a",
+  "n": 13,
+  "text": "Sent it back without a name — he knew \"the lion by his claw\"",
+  "start": 5.43,
+  "end": 7.914,
+  "bar": 62.609,
+  "heard": "Sent it back without a name he knew the lion by his claw\"",
+  "orig_start": 83.718,
+  "orig_bar": 83.718
+ },
+ {
+  "who": "a",
+  "n": 14,
+  "text": "Master of the Mint and President — in London I'm the law",
+  "start": 7.964,
+  "end": 10.301,
+  "bar": 65.143,
+  "heard": "Master of the Mint and President in London I'm the law",
+  "orig_start": 86.252,
+  "orig_bar": 86.252
+ }
+]

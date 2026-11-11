@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 13,
+  "text": "Bragged you broke my heart in Hanover after I was dead and gone",
+  "start": 0.35,
+  "end": 2.978,
+  "bar": 84.991,
+  "heard": "Bragged you broke my heart in Hanover after I was dead and gone",
+  "orig_start": 106.1,
+  "orig_bar": 106.1
+ },
+ {
+  "who": "b",
+  "n": 14,
+  "text": "While your island kept your dots and watched the continent move on",
+  "start": 2.998,
+  "end": 5.268,
+  "bar": 87.639,
+  "heard": "While your island kept your dots and watched the continent move on",
+  "orig_start": 108.748,
+  "orig_bar": 108.748
+ },
+ {
+  "who": "b",
+  "n": 15,
+  "text": "Every integral sign on every board is still the mark I drew",
+  "start": 5.318,
+  "end": 7.745,
+  "bar": 89.959,
+  "heard": "Every integral sign on every board is still the mark I drew",
+  "orig_start": 111.068,
+  "orig_bar": 111.068
+ },
+ {
+  "who": "b",
+  "n": 16,
+  "text": "You rigged the room in London — history calculates with me, not you",
+  "start": 7.787,
+  "end": 10.992,
+  "bar": 92.428,
+  "heard": "You rigged the room in London history calculates with me, not you",
+  "orig_start": 113.537,
+  "orig_bar": 113.537
+ }
+]
