@@ -1,0 +1,17 @@
+{
+  "note": "PawMotif 引流版第 ③ 段：站长家杜宾的真实水彩画像（pawmotif.com 测试号生成，任务 f07a166f）动起来。首尾帧同图；顶部补了纸色留白给网址。",
+  "length": 192,
+  "steps": 10,
+  "style_mode": "stylized",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/pawmotif",
+  "jobs": [
+    {
+      "id": "PawMotif_LivingDoberman_T1",
+      "first": "../pawmotif/pawmotif_doberman_watercolor_768x1344.png",
+      "last": "../pawmotif/pawmotif_doberman_watercolor_768x1344.png",
+      "seed": 2026111131,
+      "prompt": "A hand-painted watercolor pet portrait of a red-brown Doberman with tall upright ears, sitting on cream watercolor paper, soft loose washes of ochre, sage and lavender around it and a sunlit window behind. A single continuous 8-second shot from a completely static, locked-off camera with no zoom and no camera movement. The painting gently comes to life while remaining a watercolor painting: the Doberman blinks slowly, its tall ears twitch and swivel independently, it tilts its head curiously to one side, its nose sniffs, its chest rises and falls with calm breathing, and the watercolor washes around it shimmer and bloom softly as if still wet. The paper texture, brushstrokes and colors stay exactly the same throughout, never turning photographic. Near the end the Doberman settles back into its original pose and gaze. Soft warm solo piano melody with a quiet, cozy room tone."
+    }
+  ]
+}

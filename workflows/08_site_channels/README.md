@@ -44,6 +44,8 @@ python3 workflows/08_site_channels/make_channel_assets.py --site pawmotif
 - [x] 2026-11-10 建频道 + 上传头像和横幅 + 填写简介、链接、关键词（ego-browser）
 - [x] 2026-11-11 PawMotif 样片 2 条（Living Portrait · 柯基植物系列，首尾帧都是网站首页现成成品），实耗约 2.4 CCU（G4 14 分 23 秒）
 - [x] 2026-11-11 Songifted 2 条（生日反应 + 网站示例歌）+ TryOnSwap 2 条（转身换装），一次开机，G4 22 分 14 秒，按时长折算 3.72 CCU（余额实际减少 3.03）。TryOnSwap 吊带裙那条作废（见下）
+- [x] 2026-11-11 三个站的引流版 Shorts 各 1 条（`promo_short.py`，本地合成 0 CCU），见下文「引流版 Shorts」
+- [x] 2026-11-11 PawMotif 用站长测试号完整走了一遍产品流程，问题记录在 `pawmotif/产品体验问题.md`
 - [ ] 三个站的页脚加上 YouTube 链接（在各站自己的仓库里改，不在本仓库）
 
 ## 样片出片（`render_samples.py` + `finish_sample.py`）
@@ -63,3 +65,25 @@ python3 workflows/08_site_channels/finish_sample.py -i <raw.mp4> -o <final.mp4> 
 - 动作幅度大的片子（Songifted、换装）帧差中位数在 3～8，不能用固定阈值找跳帧，要看帧差相对中位数的尖峰并抽帧目检。
 - Songifted 配乐：`finish_sample.py --audio samples/songifted/songifted_demo_birthday.mp3 --audio-start 24.70`，即首页示例歌唱到「Happy birthday, Sarah, this song belongs to you / Every single line of it is us saying thank you」那段（24.96～32.04 秒，mlx_whisper small 关掉 condition-on-previous-text 后定位；前 30 秒要单独截出来识别，不然会整段幻听成 ooh）。
 - 成片在 `out/samples/<site>/`（不进 git）。
+
+## 引流版 Shorts（`promo_short.py`）
+
+纯结果的样片只能说明「AI 能把图做动」：观众看不出是什么产品、自己能怎么用、去哪用。所以发出去的每条 Shorts 都按四段来剪：
+
+| 段 | 内容 | 素材来源 |
+|---|---|---|
+| ① 钩子 + 输入 | 一句大标题 + 用户要给的东西（本人照 / 一句话 / 宠物照） | 网站现成的输入示例或真实照片 |
+| ② 产品动作 | 还原站上的操作：上传框、风格选择、歌词确认，按钮文案照抄网站 | 网站素材 + 本地画的界面卡片 |
+| ③ 结果 | H3 样片（TryOnSwap、Songifted），或原照 → 画像的划屏（PawMotif，0 CCU） | `out/samples/` 或站上真实生成的结果 |
+| ④ 落版 | Logo + 网址 + 免费额度原文 +「Link on our channel page」 | 频道素材 |
+
+```bash
+python3 workflows/08_site_channels/promo_short.py {tryonswap|songifted|pawmotif}   # 产出 out/promo/<site>/
+```
+
+- **Shorts 的简介和评论里的链接点不开**，所以网址从第 ③ 段起常驻在画面顶部居中（右上角会被 Shorts 的搜索按钮挡住）；能点的入口只有频道主页的链接和关联长视频。
+- 安全区：关键文字放在 `STEP_Y=1450` 以上；底部约 20% 会被标题、频道名、音乐条盖住。
+- 免费额度的说法照搬网站原文，限定条件也照写（Songifted 的「for eligible first-time creators」）。
+- Songifted 的歌从示例歌第 `24.96 - 4.6` 秒开始放，这样第 ③ 段一开始正好唱到带名字的那句，歌词字幕里把 Sarah 高亮。
+- PawMotif 的原照是站长自家的杜宾（已去掉 EXIF/GPS）。画像用站长测试号在 pawmotif.com 真实生成并下载（无水印 1664×2512）；配乐借用柯基样片的原生音乐盒音轨。
+
