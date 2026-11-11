@@ -1,0 +1,102 @@
+[
+ {
+  "id": "B13",
+  "kind": "rap",
+  "who": "b",
+  "line": 13,
+  "move": "FULL",
+  "text": "Call me mediocre? Ask Beethoven, Schubert, Liszt",
+  "audio": [
+   0.27,
+   3.108
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "ticking off three legendary names on the fingers of his free left hand with commanding authority",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B14",
+  "kind": "rap",
+  "who": "b",
+  "line": 14,
+  "move": "FULL",
+  "text": "Taught them free of charge and put those legends on the list",
+  "audio": [
+   3.062,
+   5.233
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "opening his free left arm generously toward the orchestra pit below",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B15",
+  "kind": "rap",
+  "who": "b",
+  "line": 15,
+  "move": "FULL",
+  "text": "And when your Requiem stopped cold before the ink had dried",
+  "audio": [
+   5.189,
+   7.808
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "freezing his free left hand mid-conduct in the air as if the music suddenly stopped",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B16",
+  "kind": "rap",
+  "who": "b",
+  "line": 16,
+  "move": "FULL",
+  "text": "Your widow brought your own son to my door after you died",
+  "audio": [
+   7.757,
+   10.522
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "pointing straight down at the stage floor in front of him, then locking eyes dead-center into the lens",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera with a subtle natural sway starts on a vertical chest-up shot at eye level and gently creeps closer to a head-and-shoulders close-up at T2.2 shallow depth of field, his face and lips large in the upper half of the tall 9:16 frame from the first frame. He stands alone on top of the raised stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

@@ -20,18 +20,22 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from common import font, jload, load_episode  # noqa: E402
 from cover import CREAM, GOLD as GOLD_GRAD, RED as RED_GRAD, fancy, row  # noqa: E402
+from film_optics import film_grade_filter  # noqa: E402
 
 GOLD = (255, 228, 92, 255)       # bright: the darker (255, 210, 64) read dull on phones
+FILM_GOLD = (242, 214, 132, 246) # cinema DCP muted warm gold (less digital neon sticker glare)
 INK = (40, 22, 0, 255)
 GRADE = ("eq=contrast=1.04:saturation=0.92:brightness=0.01,colorbalance=rs=0.01:bs=-0.01,"
          "curves=all='0/0 0.25/0.24 0.6/0.6 0.85/0.8 1/0.92',cas=0.35,vignette=angle=PI/12,noise=alls=9:allf=t+u")
 
 
 class Sheet:
-    def __init__(self, w, h):
+    def __init__(self, w, h, film_mode=False):
         # landscape scales from a 1920 width; portrait (Shorts, 9:16) from a 1080 width so text stays readable
         self.W, self.H, self.S = w, h, (w / 1920 if w >= h else w / 1080)
         self.portrait = h > w
+        self.film_mode = film_mode
+        self.gold = FILM_GOLD if film_mode else GOLD
 
     def canvas(self):
         return Image.new("RGBA", (self.W, self.H), (0, 0, 0, 0))
@@ -60,7 +64,8 @@ class Sheet:
             x0 = int(rnd.uniform(0, 0.06) * w + (0.05 * w if i > h * 0.7 else 0))
             x1 = int(w - rnd.uniform(0, 0.12) * w - 0.18 * w * (i / h) ** 2)
             a = int(rnd.uniform(150, 235) * (0.55 if rnd.random() < 0.12 else 1))
-            d.line([(x0, int(h * 0.05) + i), (x1, int(h * 0.05) + i)], fill=(190, 18, 24, a))
+            fill = (174, 28, 32, int(a * 0.88)) if self.film_mode else (190, 18, 24, a)
+            d.line([(x0, int(h * 0.05) + i), (x1, int(h * 0.05) + i)], fill=fill)
         return im.filter(ImageFilter.GaussianBlur(1.2))
 
     def lyric(self, text, note, seed):
@@ -92,8 +97,8 @@ class Sheet:
         base = int(H * (0.896 if note else 0.94))  # lyric-only episodes sit the line lower, where the note used to be
         x = (W - wh - wt) / 2
         img.alpha_composite(self.brush(int(wt + 46 * S), int(52 * S), seed), (int(x + wh - 20 * S), int(base - 34 * S)))
-        d.text((x, base), head, font=fh, fill=GOLD, anchor="ls", stroke_width=int(3 * S), stroke_fill=INK)
-        d.text((x + wh, base), tail, font=ft, fill=GOLD, anchor="ls", stroke_width=int(4 * S), stroke_fill=INK)
+        d.text((x, base), head, font=fh, fill=self.gold, anchor="ls", stroke_width=int(3 * S), stroke_fill=INK)
+        d.text((x + wh, base), tail, font=ft, fill=self.gold, anchor="ls", stroke_width=int(4 * S), stroke_fill=INK)
         if note:
             fn = self.f(36)
             while d.textlength(note, font=fn) > W - 120 * S:
@@ -140,13 +145,13 @@ class Sheet:
         base2 = int(H * 0.775)
         base1 = base2 - int(size * 1.55 * S)
         if r1:
-            d.text(((W - w1) / 2, base1), r1, font=fh, fill=GOLD, anchor="ls", stroke_width=int(3 * S), stroke_fill=INK)
+            d.text(((W - w1) / 2, base1), r1, font=fh, fill=self.gold, anchor="ls", stroke_width=int(3 * S), stroke_fill=INK)
         x = (W - w2) / 2
         wr2 = d.textlength(r2 + " ", font=fh)
         wt = d.textlength(tail, font=ft)
         img.alpha_composite(self.brush(int(wt + 46 * S), int(52 * S), seed), (int(x + wr2 - 20 * S), int(base2 - 34 * S)))
-        d.text((x, base2), r2 + " ", font=fh, fill=GOLD, anchor="ls", stroke_width=int(3 * S), stroke_fill=INK)
-        d.text((x + wr2, base2), tail, font=ft, fill=GOLD, anchor="ls", stroke_width=int(4 * S), stroke_fill=INK)
+        d.text((x, base2), r2 + " ", font=fh, fill=self.gold, anchor="ls", stroke_width=int(3 * S), stroke_fill=INK)
+        d.text((x + wr2, base2), tail, font=ft, fill=self.gold, anchor="ls", stroke_width=int(4 * S), stroke_fill=INK)
         img.alpha_composite(self.shadowed(layer))
         return img
 
@@ -157,7 +162,7 @@ class Sheet:
         x = W - int(150 * S) if right else int(150 * S)
         anc = "rs" if right else "ls"          # B's card sits on the right, where B stands
         y0, y1 = (0.8125, 0.849) if not self.portrait else (0.20, 0.228)   # portrait: top, clear of the lyrics
-        d.text((x, int(H * y0)), "“%s”" % name, font=self.f(92), fill=GOLD, anchor=anc,
+        d.text((x, int(H * y0)), "“%s”" % name, font=self.f(92), fill=self.gold, anchor=anc,
                stroke_width=int(3 * S), stroke_fill=INK)
         if aka:
             d.text((x, int(H * y1)), "aka %s" % aka, font=self.f(36, "Bold"), fill=(250, 232, 180, 255), anchor=anc,
@@ -217,7 +222,8 @@ class Sheet:
     def watermark(self, text):
         S, W = self.S, self.W
         img, layer = self.canvas(), self.canvas()
-        ImageDraw.Draw(layer).text((W - int(56 * S), int(80 * S)), text, font=self.f(38, "Bold"), fill=(255, 228, 92, 215),
+        wm_fill = (242, 214, 132, 145) if self.film_mode else (255, 228, 92, 215)
+        ImageDraw.Draw(layer).text((W - int(56 * S), int(80 * S)), text, font=self.f(38, "Bold"), fill=wm_fill,
                                    anchor="rs", stroke_width=int(2 * S), stroke_fill=INK)
         img.alpha_composite(self.shadowed(layer))
         return img
@@ -238,14 +244,21 @@ def main():
     ap.add_argument("--watermark", default=None)
     ap.add_argument("--test", default=None, help="from:to seconds, renders only that part")
     ap.add_argument("--phone", action="store_true")
+    ap.add_argument("--film", action="store_true",
+                    help="Kodak Vision3 500T + Pro-Mist 1/4 optical halation + luma-only silver grain")
+    ap.add_argument("--1080p", dest="p1080", action="store_true",
+                    help="Upscale cleanly to 1920x1080 (or 1080x1920) before optical bloom & grain")
+    ap.add_argument("--out", default=None, help="Explicit output path (relative to episode_dir or absolute)")
     a = ap.parse_args()
     ep, e = a.ep, load_episode(a.ep)
+    film_mode = bool(a.film or e.get("film_look"))
     work = os.path.join(ep, "work")
-    tmp = os.path.join(work, "package")
+    tmp = os.path.join(work, "package_film" if film_mode else "package")
     os.makedirs(tmp, exist_ok=True)
     src = a.src or next(p for p in ("preview/成片_拼接.mp4", "preview/最终剪辑.mp4") if os.path.exists(os.path.join(ep, p)))
     W, H, fps, end = probe(os.path.join(ep, src))
-    sh = Sheet(W, H)
+    out_W, out_H = ((1080, 1920) if H > W else (1920, 1080)) if a.p1080 else (W, H)
+    sh = Sheet(out_W, out_H, film_mode=film_mode)
     L = jload(os.path.join(work, "lines.json"))
     # episode.json "show_notes": false keeps only the lyric line (no Chinese history note under it)
     notes = e.get("notes", {}) if e.get("show_notes", True) else {}
@@ -257,7 +270,8 @@ def main():
     disc = e.get("disclaimer")
     if e.get("title_card", True):   # Shorts open straight on the first bar
         sh.title(A["name_cn"], B["name_cn"], *([disc] if disc else [])).save(os.path.join(tmp, "title.png"))
-        layers.append(("title.png", 0.0, L[0]["start"] - 0.1, 0.3))
+        t_title_end = min(L[0]["start"] - 0.1, float(e["title_card_secs"])) if "title_card_secs" in e else (L[0]["start"] - 0.1)
+        layers.append(("title.png", 0.0, t_title_end, 0.3))
     hook = e.get("hook")   # Shorts: {"a": "EDISON", "b": "TESLA", "sub": "...", "secs": 2.6}
     if hook:
         sh.hook(hook["a"], hook["b"], hook["sub"]).save(os.path.join(tmp, "hook.png"))
@@ -299,7 +313,12 @@ def main():
               "-ss", "%.3f" % t_from, "-t", "%.3f" % (t_to - t_from), "-i", os.path.join(work, "music_final.wav")]
     # episode.json "grade": ffmpeg filter chain replacing the default GRADE ("null" = none). assemble.py already
     # grades once (work/live.json); the default second pass made the 2026-11-10 remake too dark and grey.
-    fc = ["[0:v]%s,format=yuv420p,setpts=PTS-STARTPTS[base]" % (e.get("grade") or GRADE)]
+    if film_mode:
+        fc = [film_grade_filter("0:v", "base", target_size=(out_W, out_H) if (out_W, out_H) != (W, H) else None)]
+    else:
+        scale_pre = (f"scale={out_W}:{out_H}:force_original_aspect_ratio=increase:flags=lanczos,crop={out_W}:{out_H},"
+                     if (out_W, out_H) != (W, H) else "")
+        fc = ["[0:v]%s%s,format=yuv420p,setpts=PTS-STARTPTS[base]" % (scale_pre, e.get("grade") or GRADE)]
     last, k = "base", 2
     for idx, (png, st, en, fade) in enumerate(layers):
         st, en = max(st, t_from) - t_from, min(en, t_to) - t_from
@@ -328,7 +347,14 @@ def main():
         k += 1
     fc.append("%samix=inputs=%d:normalize=0:duration=first,alimiter=limit=0.95[aout]" % ("".join(labels), len(labels)))
     os.makedirs(os.path.join(ep, "final"), exist_ok=True)
-    out = os.path.join(ep, "final", "%s_成片%s.mp4" % (e["title"], "_测试" if a.test else ""))
+    if a.out:
+        out = a.out if os.path.isabs(a.out) else os.path.join(ep, a.out)
+        os.makedirs(os.path.dirname(out), exist_ok=True)
+    elif film_mode:
+        tag = ("_1080p_胶片版" if a.p1080 else "_成片_胶片版") + ("_测试" if a.test else "")
+        out = os.path.join(ep, "final", "%s%s.mp4" % (e["title"], tag))
+    else:
+        out = os.path.join(ep, "final", "%s_成片%s.mp4" % (e["title"], "_测试" if a.test else ""))
     subprocess.run(["ffmpeg", "-y", "-v", "error"] + inputs +
                    ["-filter_complex", ";".join(fc), "-map", "[%s]" % last, "-map", "[aout]",
                     "-c:v", "libx264", "-preset", "medium", "-crf", "18", "-pix_fmt", "yuv420p", "-r", str(fps),

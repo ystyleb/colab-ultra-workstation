@@ -1,0 +1,4951 @@
+{
+ "taskId": "d29fb1024068aa93e55d5bf308b51ea2",
+ "tracks": [
+  {
+   "id": "c85b3f70-a0b5-4519-a5df-bbe3633a5c04",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/c85b3f70-a0b5-4519-a5df-bbe3633a5c04.mp3",
+   "duration": 144.32,
+   "title": "Mozart_vs_Salieri",
+   "local_mp3": "workflows/05_ancient_rap_battle/episodes/mozart-vs-salieri/work/suno_v1.mp3",
+   "alignedWords": [
+    {
+     "word": "[Intro: ",
+     "success": true,
+     "startS": 19.688,
+     "endS": 19.7067,
+     "palign": 0
+    },
+    {
+     "word": "short ",
+     "success": true,
+     "startS": 19.70937,
+     "endS": 19.72273,
+     "palign": 0
+    },
+    {
+     "word": "DJ ",
+     "success": true,
+     "startS": 19.7254,
+     "endS": 19.73074,
+     "palign": 0
+    },
+    {
+     "word": "scratch, ",
+     "success": true,
+     "startS": 19.73341,
+     "endS": 19.75478,
+     "palign": 0
+    },
+    {
+     "word": "dramatic ",
+     "success": true,
+     "startS": 19.75745,
+     "endS": 19.77882,
+     "palign": 0
+    },
+    {
+     "word": "Mozart ",
+     "success": true,
+     "startS": 19.78149,
+     "endS": 19.79752,
+     "palign": 0
+    },
+    {
+     "word": "Requiem ",
+     "success": true,
+     "startS": 19.80019,
+     "endS": 19.81889,
+     "palign": 0
+    },
+    {
+     "word": "strings ",
+     "success": true,
+     "startS": 19.82156,
+     "endS": 19.84026,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 19.84293,
+     "endS": 19.85095,
+     "palign": 0
+    },
+    {
+     "word": "harpsichord ",
+     "success": true,
+     "startS": 19.85362,
+     "endS": 19.883,
+     "palign": 0
+    },
+    {
+     "word": "stab]\n\n\n",
+     "success": true,
+     "startS": 19.88567,
+     "endS": 19.90437,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 1: bright razor-sharp energetic tenor male rapper]\nWriting ",
+     "success": true,
+     "startS": 19.90704,
+     "endS": 20.078,
+     "palign": 0
+    },
+    {
+     "word": "music ",
+     "success": true,
+     "startS": 20.1508,
+     "endS": 20.442,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 20.505,
+     "endS": 20.568,
+     "palign": 0
+    },
+    {
+     "word": "age ",
+     "success": true,
+     "startS": 20.626,
+     "endS": 20.742,
+     "palign": 0
+    },
+    {
+     "word": "five ",
+     "success": true,
+     "startS": 20.822,
+     "endS": 21.147,
+     "palign": 0
+    },
+    {
+     "word": "while ",
+     "success": true,
+     "startS": 21.175,
+     "endS": 21.287,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 21.347,
+     "endS": 21.467,
+     "palign": 0
+    },
+    {
+     "word": "were ",
+     "success": true,
+     "startS": 21.48675,
+     "endS": 21.546,
+     "palign": 0
+    },
+    {
+     "word": "learning ",
+     "success": true,
+     "startS": 21.57963,
+     "endS": 21.815,
+     "palign": 0
+    },
+    {
+     "word": "scales\n",
+     "success": true,
+     "startS": 21.9315,
+     "endS": 22.274,
+     "palign": 0
+    },
+    {
+     "word": "Played ",
+     "success": true,
+     "startS": 22.30733,
+     "endS": 22.474,
+     "palign": 0
+    },
+    {
+     "word": "blindfold ",
+     "success": true,
+     "startS": 22.5152,
+     "endS": 22.913,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 22.97033,
+     "endS": 23.085,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 23.114,
+     "endS": 23.172,
+     "palign": 0
+    },
+    {
+     "word": "Empress — ",
+     "success": true,
+     "startS": 23.19667,
+     "endS": 23.596,
+     "palign": 0
+    },
+    {
+     "word": "boy, ",
+     "success": true,
+     "startS": 23.644,
+     "endS": 23.77575,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 23.7905,
+     "endS": 23.82,
+     "palign": 0
+    },
+    {
+     "word": "prodigy ",
+     "success": true,
+     "startS": 23.86975,
+     "endS": 24.248,
+     "palign": 0
+    },
+    {
+     "word": "prevails\n",
+     "success": true,
+     "startS": 24.28067,
+     "endS": 24.727,
+     "palign": 0
+    },
+    {
+     "word": "The ",
+     "success": true,
+     "startS": 24.76567,
+     "endS": 24.843,
+     "palign": 0
+    },
+    {
+     "word": "Vatican ",
+     "success": true,
+     "startS": 24.923,
+     "endS": 25.216,
+     "palign": 0
+    },
+    {
+     "word": "hid ",
+     "success": true,
+     "startS": 25.296,
+     "endS": 25.46,
+     "palign": 0
+    },
+    {
+     "word": "Allegri's ",
+     "success": true,
+     "startS": 25.494,
+     "endS": 25.89,
+     "palign": 0
+    },
+    {
+     "word": "chant ",
+     "success": true,
+     "startS": 25.946,
+     "endS": 26.17,
+     "palign": 0
+    },
+    {
+     "word": "behind ",
+     "success": true,
+     "startS": 26.22717,
+     "endS": 26.513,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 26.537,
+     "endS": 26.537,
+     "palign": 0
+    },
+    {
+     "word": "locked-up ",
+     "success": true,
+     "startS": 26.58583,
+     "endS": 26.957,
+     "palign": 0
+    },
+    {
+     "word": "door\n",
+     "success": true,
+     "startS": 27.018,
+     "endS": 27.201,
+     "palign": 0
+    },
+    {
+     "word": "Fourteen ",
+     "success": true,
+     "startS": 27.222,
+     "endS": 27.617,
+     "palign": 0
+    },
+    {
+     "word": "years ",
+     "success": true,
+     "startS": 27.659,
+     "endS": 27.827,
+     "palign": 0
+    },
+    {
+     "word": "old, ",
+     "success": true,
+     "startS": 27.907,
+     "endS": 28.108,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 28.148,
+     "endS": 28.16,
+     "palign": 0
+    },
+    {
+     "word": "heard ",
+     "success": true,
+     "startS": 28.2014,
+     "endS": 28.367,
+     "palign": 0
+    },
+    {
+     "word": "it ",
+     "success": true,
+     "startS": 28.423,
+     "endS": 28.479,
+     "palign": 0
+    },
+    {
+     "word": "once ",
+     "success": true,
+     "startS": 28.53575,
+     "endS": 28.706,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 28.74367,
+     "endS": 28.819,
+     "palign": 0
+    },
+    {
+     "word": "memorized ",
+     "success": true,
+     "startS": 28.8594,
+     "endS": 29.338,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 29.34267,
+     "endS": 29.352,
+     "palign": 0
+    },
+    {
+     "word": "score\n",
+     "success": true,
+     "startS": 29.4132,
+     "endS": 29.658,
+     "palign": 0
+    },
+    {
+     "word": "Salzburg's ",
+     "success": true,
+     "startS": 29.716,
+     "endS": 30.358,
+     "palign": 0
+    },
+    {
+     "word": "Archbishop ",
+     "success": true,
+     "startS": 30.416,
+     "endS": 30.988,
+     "palign": 0
+    },
+    {
+     "word": "tried ",
+     "success": true,
+     "startS": 31.0334,
+     "endS": 31.215,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 31.253,
+     "endS": 31.291,
+     "palign": 0
+    },
+    {
+     "word": "keep ",
+     "success": true,
+     "startS": 31.35075,
+     "endS": 31.53,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 31.558,
+     "endS": 31.558,
+     "palign": 0
+    },
+    {
+     "word": "leash ",
+     "success": true,
+     "startS": 31.5945,
+     "endS": 31.832,
+     "palign": 0
+    },
+    {
+     "word": "around ",
+     "success": true,
+     "startS": 31.8685,
+     "endS": 32.051,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 32.1465,
+     "endS": 32.242,
+     "palign": 0
+    },
+    {
+     "word": "neck\n",
+     "success": true,
+     "startS": 32.322,
+     "endS": 32.577,
+     "palign": 0
+    },
+    {
+     "word": "Took ",
+     "success": true,
+     "startS": 32.63475,
+     "endS": 32.808,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 32.856,
+     "endS": 32.856,
+     "palign": 0
+    },
+    {
+     "word": "boot ",
+     "success": true,
+     "startS": 32.9115,
+     "endS": 33.078,
+     "palign": 0
+    },
+    {
+     "word": "out ",
+     "success": true,
+     "startS": 33.12267,
+     "endS": 33.212,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 33.273,
+     "endS": 33.334,
+     "palign": 0
+    },
+    {
+     "word": "Vienna — ",
+     "success": true,
+     "startS": 33.389,
+     "endS": 33.7654,
+     "palign": 0
+    },
+    {
+     "word": "put ",
+     "success": true,
+     "startS": 33.7946,
+     "endS": 33.853,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 33.85867,
+     "endS": 33.87,
+     "palign": 0
+    },
+    {
+     "word": "whole ",
+     "success": true,
+     "startS": 33.9134,
+     "endS": 34.087,
+     "palign": 0
+    },
+    {
+     "word": "empire ",
+     "success": true,
+     "startS": 34.168,
+     "endS": 34.593,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 34.651,
+     "endS": 34.709,
+     "palign": 0
+    },
+    {
+     "word": "check\n",
+     "success": true,
+     "startS": 34.7786,
+     "endS": 35.057,
+     "palign": 0
+    },
+    {
+     "word": "Figaro, ",
+     "success": true,
+     "startS": 35.137,
+     "endS": 35.5955,
+     "palign": 0
+    },
+    {
+     "word": "Don ",
+     "success": true,
+     "startS": 35.624,
+     "endS": 35.681,
+     "palign": 0
+    },
+    {
+     "word": "Giovanni — ",
+     "success": true,
+     "startS": 35.767,
+     "endS": 36.44514,
+     "palign": 0
+    },
+    {
+     "word": "every ",
+     "success": true,
+     "startS": 36.48171,
+     "endS": 36.628,
+     "palign": 0
+    },
+    {
+     "word": "melody's ",
+     "success": true,
+     "startS": 36.68,
+     "endS": 37.209,
+     "palign": 0
+    },
+    {
+     "word": "divine\n\"",
+     "success": true,
+     "startS": 37.289,
+     "endS": 37.75975,
+     "palign": 0
+    },
+    {
+     "word": "Too ",
+     "success": true,
+     "startS": 37.7975,
+     "endS": 37.873,
+     "palign": 0
+    },
+    {
+     "word": "many ",
+     "success": true,
+     "startS": 37.94825,
+     "endS": 38.174,
+     "palign": 0
+    },
+    {
+     "word": "notes\"? ",
+     "success": true,
+     "startS": 38.2382,
+     "endS": 38.54567,
+     "palign": 0
+    },
+    {
+     "word": "Tell ",
+     "success": true,
+     "startS": 38.571,
+     "endS": 38.647,
+     "palign": 0
+    },
+    {
+     "word": "Joseph ",
+     "success": true,
+     "startS": 38.70533,
+     "endS": 39.019,
+     "palign": 0
+    },
+    {
+     "word": "every ",
+     "success": true,
+     "startS": 39.0466,
+     "endS": 39.157,
+     "palign": 0
+    },
+    {
+     "word": "single ",
+     "success": true,
+     "startS": 39.20083,
+     "endS": 39.42,
+     "palign": 0
+    },
+    {
+     "word": "one ",
+     "success": true,
+     "startS": 39.51133,
+     "endS": 39.702,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 39.755,
+     "endS": 39.808,
+     "palign": 0
+    },
+    {
+     "word": "mine\n\n",
+     "success": true,
+     "startS": 39.888,
+     "endS": 40.87663,
+     "palign": 0
+    },
+    {
+     "word": "[Crowd reacts]\nOOOH!\n\n[",
+     "success": true,
+     "startS": 40.88926,
+     "endS": 42.32052,
+     "palign": 0
+    },
+    {
+     "word": "Verse 2: ",
+     "success": true,
+     "startS": 42.32403,
+     "endS": 42.35209,
+     "palign": 0
+    },
+    {
+     "word": "deep ",
+     "success": true,
+     "startS": 42.35559,
+     "endS": 42.36962,
+     "palign": 0
+    },
+    {
+     "word": "commanding ",
+     "success": true,
+     "startS": 42.37313,
+     "endS": 42.4082,
+     "palign": 0
+    },
+    {
+     "word": "aristocratic ",
+     "success": true,
+     "startS": 42.41171,
+     "endS": 42.4538,
+     "palign": 0
+    },
+    {
+     "word": "baritone ",
+     "success": true,
+     "startS": 42.4573,
+     "endS": 42.48536,
+     "palign": 0
+    },
+    {
+     "word": "male ",
+     "success": true,
+     "startS": 42.48887,
+     "endS": 42.5029,
+     "palign": 0
+    },
+    {
+     "word": "rapper]\n\"",
+     "success": true,
+     "startS": 42.50641,
+     "endS": 42.53446,
+     "palign": 0
+    },
+    {
+     "word": "Every ",
+     "success": true,
+     "startS": 42.53797,
+     "endS": 42.552,
+     "palign": 0
+    },
+    {
+     "word": "note ",
+     "success": true,
+     "startS": 42.60625,
+     "endS": 42.769,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 42.8425,
+     "endS": 42.916,
+     "palign": 0
+    },
+    {
+     "word": "yours\"? ",
+     "success": true,
+     "startS": 42.996,
+     "endS": 43.56043,
+     "palign": 0
+    },
+    {
+     "word": "Relax — ",
+     "success": true,
+     "startS": 43.61014,
+     "endS": 43.89167,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 43.933,
+     "endS": 43.954,
+     "palign": 0
+    },
+    {
+     "word": "ran ",
+     "success": true,
+     "startS": 43.99367,
+     "endS": 44.073,
+     "palign": 0
+    },
+    {
+     "word": "Vienna's ",
+     "success": true,
+     "startS": 44.12633,
+     "endS": 44.42,
+     "palign": 0
+    },
+    {
+     "word": "stage\n",
+     "success": true,
+     "startS": 44.5,
+     "endS": 44.84,
+     "palign": 0
+    },
+    {
+     "word": "Thirty-six ",
+     "success": true,
+     "startS": 44.87733,
+     "endS": 45.334,
+     "palign": 0
+    },
+    {
+     "word": "years ",
+     "success": true,
+     "startS": 45.3404,
+     "endS": 45.366,
+     "palign": 0
+    },
+    {
+     "word": "Kapellmeister ",
+     "success": true,
+     "startS": 45.535,
+     "endS": 46.233,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 46.287,
+     "endS": 46.341,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 46.37667,
+     "endS": 46.448,
+     "palign": 0
+    },
+    {
+     "word": "Emperor's ",
+     "success": true,
+     "startS": 46.48333,
+     "endS": 46.844,
+     "palign": 0
+    },
+    {
+     "word": "front ",
+     "success": true,
+     "startS": 46.8972,
+     "endS": 47.11,
+     "palign": 0
+    },
+    {
+     "word": "page\n",
+     "success": true,
+     "startS": 47.162,
+     "endS": 47.318,
+     "palign": 0
+    },
+    {
+     "word": "Joseph ",
+     "success": true,
+     "startS": 47.368,
+     "endS": 47.675,
+     "palign": 0
+    },
+    {
+     "word": "put ",
+     "success": true,
+     "startS": 47.70733,
+     "endS": 47.772,
+     "palign": 0
+    },
+    {
+     "word": "our ",
+     "success": true,
+     "startS": 47.818,
+     "endS": 47.91,
+     "palign": 0
+    },
+    {
+     "word": "operas ",
+     "success": true,
+     "startS": 47.95925,
+     "endS": 48.28,
+     "palign": 0
+    },
+    {
+     "word": "head-to-head ",
+     "success": true,
+     "startS": 48.30725,
+     "endS": 48.786,
+     "palign": 0
+    },
+    {
+     "word": "inside ",
+     "success": true,
+     "startS": 48.83483,
+     "endS": 49.079,
+     "palign": 0
+    },
+    {
+     "word": "his ",
+     "success": true,
+     "startS": 49.12533,
+     "endS": 49.218,
+     "palign": 0
+    },
+    {
+     "word": "palace ",
+     "success": true,
+     "startS": 49.269,
+     "endS": 49.49,
+     "palign": 0
+    },
+    {
+     "word": "hall\n",
+     "success": true,
+     "startS": 49.55125,
+     "endS": 49.735,
+     "palign": 0
+    },
+    {
+     "word": "Seventeen ",
+     "success": true,
+     "startS": 49.78733,
+     "endS": 50.206,
+     "palign": 0
+    },
+    {
+     "word": "eighty-six, ",
+     "success": true,
+     "startS": 50.2202,
+     "endS": 50.625,
+     "palign": 0
+    },
+    {
+     "word": "Vienna ",
+     "success": true,
+     "startS": 50.65,
+     "endS": 50.997,
+     "palign": 0
+    },
+    {
+     "word": "crowned ",
+     "success": true,
+     "startS": 51.0282,
+     "endS": 51.244,
+     "palign": 0
+    },
+    {
+     "word": "me ",
+     "success": true,
+     "startS": 51.294,
+     "endS": 51.344,
+     "palign": 0
+    },
+    {
+     "word": "winner ",
+     "success": true,
+     "startS": 51.39717,
+     "endS": 51.663,
+     "palign": 0
+    },
+    {
+     "word": "over ",
+     "success": true,
+     "startS": 51.75075,
+     "endS": 52.02,
+     "palign": 0
+    },
+    {
+     "word": "all\n",
+     "success": true,
+     "startS": 52.1,
+     "endS": 52.336,
+     "palign": 0
+    },
+    {
+     "word": "Paris ",
+     "success": true,
+     "startS": 52.397,
+     "endS": 52.641,
+     "palign": 0
+    },
+    {
+     "word": "packed ",
+     "success": true,
+     "startS": 52.6715,
+     "endS": 52.824,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 52.904,
+     "endS": 52.991,
+     "palign": 0
+    },
+    {
+     "word": "opera ",
+     "success": true,
+     "startS": 53.029,
+     "endS": 53.249,
+     "palign": 0
+    },
+    {
+     "word": "house ",
+     "success": true,
+     "startS": 53.3076,
+     "endS": 53.542,
+     "palign": 0
+    },
+    {
+     "word": "while ",
+     "success": true,
+     "startS": 53.5776,
+     "endS": 53.72,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 53.78333,
+     "endS": 53.91,
+     "palign": 0
+    },
+    {
+     "word": "begged ",
+     "success": true,
+     "startS": 53.94233,
+     "endS": 54.102,
+     "palign": 0
+    },
+    {
+     "word": "friends ",
+     "success": true,
+     "startS": 54.141,
+     "endS": 54.375,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 54.41933,
+     "endS": 54.508,
+     "palign": 0
+    },
+    {
+     "word": "loans\n",
+     "success": true,
+     "startS": 54.588,
+     "endS": 54.83,
+     "palign": 0
+    },
+    {
+     "word": "Blew ",
+     "success": true,
+     "startS": 54.87325,
+     "endS": 55.003,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 55.03275,
+     "endS": 55.122,
+     "palign": 0
+    },
+    {
+     "word": "cash ",
+     "success": true,
+     "startS": 55.154,
+     "endS": 55.445,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 55.525,
+     "endS": 55.65,
+     "palign": 0
+    },
+    {
+     "word": "billiards ",
+     "success": true,
+     "startS": 55.68475,
+     "endS": 56.008,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 56.01967,
+     "endS": 56.043,
+     "palign": 0
+    },
+    {
+     "word": "silk ",
+     "success": true,
+     "startS": 56.117,
+     "endS": 56.339,
+     "palign": 0
+    },
+    {
+     "word": "coats ",
+     "success": true,
+     "startS": 56.374,
+     "endS": 56.578,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 56.63333,
+     "endS": 56.744,
+     "palign": 0
+    },
+    {
+     "word": "couldn't ",
+     "success": true,
+     "startS": 56.74567,
+     "endS": 57.082,
+     "palign": 0
+    },
+    {
+     "word": "own\n",
+     "success": true,
+     "startS": 57.162,
+     "endS": 57.551,
+     "palign": 0
+    },
+    {
+     "word": "Crying ",
+     "success": true,
+     "startS": 57.61683,
+     "endS": 57.946,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 58.0155,
+     "endS": 58.085,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 58.12575,
+     "endS": 58.248,
+     "palign": 0
+    },
+    {
+     "word": "letters ",
+     "success": true,
+     "startS": 58.30257,
+     "endS": 58.63,
+     "palign": 0
+    },
+    {
+     "word": "that \"",
+     "success": true,
+     "startS": 58.65375,
+     "endS": 58.807,
+     "palign": 0
+    },
+    {
+     "word": "Salieri ",
+     "success": true,
+     "startS": 58.889,
+     "endS": 59.165,
+     "palign": 0
+    },
+    {
+     "word": "blocked ",
+     "success": true,
+     "startS": 59.19433,
+     "endS": 59.411,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 59.4975,
+     "endS": 59.584,
+     "palign": 0
+    },
+    {
+     "word": "way\"\n",
+     "success": true,
+     "startS": 59.664,
+     "endS": 59.9896,
+     "palign": 0
+    },
+    {
+     "word": "Quit ",
+     "success": true,
+     "startS": 60.0242,
+     "endS": 60.128,
+     "palign": 0
+    },
+    {
+     "word": "blaming ",
+     "success": true,
+     "startS": 60.1785,
+     "endS": 60.443,
+     "palign": 0
+    },
+    {
+     "word": "court ",
+     "success": true,
+     "startS": 60.484,
+     "endS": 60.648,
+     "palign": 0
+    },
+    {
+     "word": "cabals ",
+     "success": true,
+     "startS": 60.709,
+     "endS": 60.954,
+     "palign": 0
+    },
+    {
+     "word": "when ",
+     "success": true,
+     "startS": 61.00675,
+     "endS": 61.165,
+     "palign": 0
+    },
+    {
+     "word": "billiards ",
+     "success": true,
+     "startS": 61.1795,
+     "endS": 61.471,
+     "palign": 0
+    },
+    {
+     "word": "burned ",
+     "success": true,
+     "startS": 61.501,
+     "endS": 61.651,
+     "palign": 0
+    },
+    {
+     "word": "up ",
+     "success": true,
+     "startS": 61.709,
+     "endS": 61.767,
+     "palign": 0
+    },
+    {
+     "word": "all ",
+     "success": true,
+     "startS": 61.81567,
+     "endS": 61.913,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 61.94975,
+     "endS": 62.06,
+     "palign": 0
+    },
+    {
+     "word": "pay\n\n",
+     "success": true,
+     "startS": 62.14,
+     "endS": 62.41593,
+     "palign": 0
+    },
+    {
+     "word": "[Break: crowd chanting]\nROUND ",
+     "success": true,
+     "startS": 62.42487,
+     "endS": 62.675,
+     "palign": 0
+    },
+    {
+     "word": "TWO! ",
+     "success": true,
+     "startS": 62.755,
+     "endS": 63.661,
+     "palign": 0
+    },
+    {
+     "word": "ROUND ",
+     "success": true,
+     "startS": 63.716,
+     "endS": 63.936,
+     "palign": 0
+    },
+    {
+     "word": "TWO!\n\n",
+     "success": true,
+     "startS": 64.016,
+     "endS": 67.71375,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3: bright razor-sharp energetic tenor male rapper]\nBragging ",
+     "success": true,
+     "startS": 67.71662,
+     "endS": 68.055,
+     "palign": 0
+    },
+    {
+     "word": "'bout ",
+     "success": true,
+     "startS": 68.074,
+     "endS": 68.299,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 68.378,
+     "endS": 68.378,
+     "palign": 0
+    },
+    {
+     "word": "palace ",
+     "success": true,
+     "startS": 68.41967,
+     "endS": 68.653,
+     "palign": 0
+    },
+    {
+     "word": "vote? ",
+     "success": true,
+     "startS": 68.6885,
+     "endS": 68.98843,
+     "palign": 0
+    },
+    {
+     "word": "Nobody ",
+     "success": true,
+     "startS": 69.03786,
+     "endS": 69.285,
+     "palign": 0
+    },
+    {
+     "word": "hums ",
+     "success": true,
+     "startS": 69.347,
+     "endS": 69.533,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 69.5675,
+     "endS": 69.671,
+     "palign": 0
+    },
+    {
+     "word": "tune\n",
+     "success": true,
+     "startS": 69.73625,
+     "endS": 69.932,
+     "palign": 0
+    },
+    {
+     "word": "Forty ",
+     "success": true,
+     "startS": 70.0036,
+     "endS": 70.29,
+     "palign": 0
+    },
+    {
+     "word": "operas ",
+     "success": true,
+     "startS": 70.338,
+     "endS": 70.608,
+     "palign": 0
+    },
+    {
+     "word": "gather ",
+     "success": true,
+     "startS": 70.65683,
+     "endS": 70.901,
+     "palign": 0
+    },
+    {
+     "word": "dust ",
+     "success": true,
+     "startS": 70.9575,
+     "endS": 71.127,
+     "palign": 0
+    },
+    {
+     "word": "beneath ",
+     "success": true,
+     "startS": 71.16457,
+     "endS": 71.39,
+     "palign": 0
+    },
+    {
+     "word": "Vienna's ",
+     "success": true,
+     "startS": 71.44675,
+     "endS": 71.812,
+     "palign": 0
+    },
+    {
+     "word": "quiet ",
+     "success": true,
+     "startS": 71.8726,
+     "endS": 72.115,
+     "palign": 0
+    },
+    {
+     "word": "moon\n",
+     "success": true,
+     "startS": 72.195,
+     "endS": 72.46,
+     "palign": 0
+    },
+    {
+     "word": "Over ",
+     "success": true,
+     "startS": 72.51475,
+     "endS": 72.679,
+     "palign": 0
+    },
+    {
+     "word": "six ",
+     "success": true,
+     "startS": 72.759,
+     "endS": 73.018,
+     "palign": 0
+    },
+    {
+     "word": "hundred ",
+     "success": true,
+     "startS": 73.06357,
+     "endS": 73.337,
+     "palign": 0
+    },
+    {
+     "word": "masterpieces — ",
+     "success": true,
+     "startS": 73.39217,
+     "endS": 74.09867,
+     "palign": 0
+    },
+    {
+     "word": "dead ",
+     "success": true,
+     "startS": 74.124,
+     "endS": 74.2,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 74.2735,
+     "endS": 74.347,
+     "palign": 0
+    },
+    {
+     "word": "thirty-five\n",
+     "success": true,
+     "startS": 74.38883,
+     "endS": 74.972,
+     "palign": 0
+    },
+    {
+     "word": "Magic ",
+     "success": true,
+     "startS": 75.034,
+     "endS": 75.282,
+     "palign": 0
+    },
+    {
+     "word": "Flute ",
+     "success": true,
+     "startS": 75.3295,
+     "endS": 75.458,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 75.5035,
+     "endS": 75.549,
+     "palign": 0
+    },
+    {
+     "word": "Night ",
+     "success": true,
+     "startS": 75.6132,
+     "endS": 75.87,
+     "palign": 0
+    },
+    {
+     "word": "Music — ",
+     "success": true,
+     "startS": 75.95,
+     "endS": 76.36557,
+     "palign": 0
+    },
+    {
+     "word": "every ",
+     "success": true,
+     "startS": 76.39786,
+     "endS": 76.527,
+     "palign": 0
+    },
+    {
+     "word": "bar ",
+     "success": true,
+     "startS": 76.58367,
+     "endS": 76.697,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 76.747,
+     "endS": 76.797,
+     "palign": 0
+    },
+    {
+     "word": "still ",
+     "success": true,
+     "startS": 76.86,
+     "endS": 77.112,
+     "palign": 0
+    },
+    {
+     "word": "alive\n",
+     "success": true,
+     "startS": 77.1822,
+     "endS": 77.463,
+     "palign": 0
+    },
+    {
+     "word": "Rumors ",
+     "success": true,
+     "startS": 77.51167,
+     "endS": 77.808,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 77.888,
+     "endS": 77.984,
+     "palign": 0
+    },
+    {
+     "word": "Vienna ",
+     "success": true,
+     "startS": 78.028,
+     "endS": 78.301,
+     "palign": 0
+    },
+    {
+     "word": "swore ",
+     "success": true,
+     "startS": 78.3494,
+     "endS": 78.543,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 78.58267,
+     "endS": 78.662,
+     "palign": 0
+    },
+    {
+     "word": "slipped ",
+     "success": true,
+     "startS": 78.70029,
+     "endS": 78.93,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 78.97533,
+     "endS": 79.066,
+     "palign": 0
+    },
+    {
+     "word": "poison ",
+     "success": true,
+     "startS": 79.12017,
+     "endS": 79.391,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 79.437,
+     "endS": 79.483,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 79.5885,
+     "endS": 79.708,
+     "palign": 0
+    },
+    {
+     "word": "cup\n",
+     "success": true,
+     "startS": 79.788,
+     "endS": 79.977,
+     "palign": 0
+    },
+    {
+     "word": "Even ",
+     "success": true,
+     "startS": 80.0545,
+     "endS": 80.287,
+     "palign": 0
+    },
+    {
+     "word": "if ",
+     "success": true,
+     "startS": 80.367,
+     "endS": 80.449,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 80.4855,
+     "endS": 80.595,
+     "palign": 0
+    },
+    {
+     "word": "tale ",
+     "success": true,
+     "startS": 80.63825,
+     "endS": 80.768,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 80.807,
+     "endS": 80.846,
+     "palign": 0
+    },
+    {
+     "word": "fiction, ",
+     "success": true,
+     "startS": 80.923,
+     "endS": 81.31567,
+     "palign": 0
+    },
+    {
+     "word": "envy ",
+     "success": true,
+     "startS": 81.36533,
+     "endS": 81.547,
+     "palign": 0
+    },
+    {
+     "word": "tore ",
+     "success": true,
+     "startS": 81.59425,
+     "endS": 81.736,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 81.773,
+     "endS": 81.884,
+     "palign": 0
+    },
+    {
+     "word": "spirit ",
+     "success": true,
+     "startS": 81.95067,
+     "endS": 82.284,
+     "palign": 0
+    },
+    {
+     "word": "up\n",
+     "success": true,
+     "startS": 82.364,
+     "endS": 82.495,
+     "palign": 0
+    },
+    {
+     "word": "Check ",
+     "success": true,
+     "startS": 82.5632,
+     "endS": 82.836,
+     "palign": 0
+    },
+    {
+     "word": "every ",
+     "success": true,
+     "startS": 82.8946,
+     "endS": 83.129,
+     "palign": 0
+    },
+    {
+     "word": "concert ",
+     "success": true,
+     "startS": 83.172,
+     "endS": 83.405,
+     "palign": 0
+    },
+    {
+     "word": "hall ",
+     "success": true,
+     "startS": 83.4755,
+     "endS": 83.687,
+     "palign": 0
+    },
+    {
+     "word": "tonight ",
+     "success": true,
+     "startS": 83.71843,
+     "endS": 83.907,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 83.9525,
+     "endS": 84.089,
+     "palign": 0
+    },
+    {
+     "word": "Tokyo ",
+     "success": true,
+     "startS": 84.169,
+     "endS": 84.598,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 84.674,
+     "endS": 84.75,
+     "palign": 0
+    },
+    {
+     "word": "Rome\n",
+     "success": true,
+     "startS": 84.83,
+     "endS": 85.146,
+     "palign": 0
+    },
+    {
+     "word": "They ",
+     "success": true,
+     "startS": 85.19175,
+     "endS": 85.329,
+     "palign": 0
+    },
+    {
+     "word": "only ",
+     "success": true,
+     "startS": 85.387,
+     "endS": 85.561,
+     "palign": 0
+    },
+    {
+     "word": "know ",
+     "success": true,
+     "startS": 85.616,
+     "endS": 85.781,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 85.808,
+     "endS": 85.889,
+     "palign": 0
+    },
+    {
+     "word": "name ",
+     "success": true,
+     "startS": 85.969,
+     "endS": 86.213,
+     "palign": 0
+    },
+    {
+     "word": "because ",
+     "success": true,
+     "startS": 86.23829,
+     "endS": 86.39,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 86.4605,
+     "endS": 86.531,
+     "palign": 0
+    },
+    {
+     "word": "movie ",
+     "success": true,
+     "startS": 86.5984,
+     "endS": 86.868,
+     "palign": 0
+    },
+    {
+     "word": "brought ",
+     "success": true,
+     "startS": 86.89843,
+     "endS": 87.081,
+     "palign": 0
+    },
+    {
+     "word": "it ",
+     "success": true,
+     "startS": 87.1415,
+     "endS": 87.202,
+     "palign": 0
+    },
+    {
+     "word": "home\n\n",
+     "success": true,
+     "startS": 87.282,
+     "endS": 89.68678,
+     "palign": 0
+    },
+    {
+     "word": "[Crowd reacts]\nOOOH!\n\n[",
+     "success": true,
+     "startS": 89.69056,
+     "endS": 92.92844,
+     "palign": 0
+    },
+    {
+     "word": "Verse 4: ",
+     "success": true,
+     "startS": 92.93326,
+     "endS": 92.97177,
+     "palign": 0
+    },
+    {
+     "word": "deep ",
+     "success": true,
+     "startS": 92.97659,
+     "endS": 92.99584,
+     "palign": 0
+    },
+    {
+     "word": "commanding ",
+     "success": true,
+     "startS": 93.00066,
+     "endS": 93.0488,
+     "palign": 0
+    },
+    {
+     "word": "aristocratic ",
+     "success": true,
+     "startS": 93.05361,
+     "endS": 93.11139,
+     "palign": 0
+    },
+    {
+     "word": "baritone ",
+     "success": true,
+     "startS": 93.1162,
+     "endS": 93.15471,
+     "palign": 0
+    },
+    {
+     "word": "male ",
+     "success": true,
+     "startS": 93.15953,
+     "endS": 93.17879,
+     "palign": 0
+    },
+    {
+     "word": "rapper]\n\"",
+     "success": true,
+     "startS": 93.1836,
+     "endS": 93.22211,
+     "palign": 0
+    },
+    {
+     "word": "Poison ",
+     "success": true,
+     "startS": 93.22693,
+     "endS": 93.251,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 93.319,
+     "endS": 93.387,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 93.42875,
+     "endS": 93.554,
+     "palign": 0
+    },
+    {
+     "word": "cup\"? ",
+     "success": true,
+     "startS": 93.60033,
+     "endS": 93.711,
+     "palign": 0
+    },
+    {
+     "word": "That's ",
+     "success": true,
+     "startS": 93.72,
+     "endS": 93.89,
+     "palign": 0
+    },
+    {
+     "word": "Pushkin's ",
+     "success": true,
+     "startS": 93.89975,
+     "endS": 94.212,
+     "palign": 0
+    },
+    {
+     "word": "fairy ",
+     "success": true,
+     "startS": 94.2425,
+     "endS": 94.471,
+     "palign": 0
+    },
+    {
+     "word": "tale ",
+     "success": true,
+     "startS": 94.471,
+     "endS": 94.738,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 94.753,
+     "endS": 94.783,
+     "palign": 0
+    },
+    {
+     "word": "fools\n",
+     "success": true,
+     "startS": 94.8498,
+     "endS": 95.117,
+     "palign": 0
+    },
+    {
+     "word": "A ",
+     "success": true,
+     "startS": 95.2,
+     "endS": 95.2,
+     "palign": 0
+    },
+    {
+     "word": "rich ",
+     "success": true,
+     "startS": 95.26275,
+     "endS": 95.451,
+     "palign": 0
+    },
+    {
+     "word": "count ",
+     "success": true,
+     "startS": 95.5132,
+     "endS": 95.762,
+     "palign": 0
+    },
+    {
+     "word": "bought ",
+     "success": true,
+     "startS": 95.778,
+     "endS": 95.858,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 95.93525,
+     "endS": 96.167,
+     "palign": 0
+    },
+    {
+     "word": "Requiem ",
+     "success": true,
+     "startS": 96.21825,
+     "endS": 96.643,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 96.6695,
+     "endS": 96.696,
+     "palign": 0
+    },
+    {
+     "word": "cheat ",
+     "success": true,
+     "startS": 96.745,
+     "endS": 96.941,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 96.97233,
+     "endS": 97.035,
+     "palign": 0
+    },
+    {
+     "word": "credit ",
+     "success": true,
+     "startS": 97.07417,
+     "endS": 97.27,
+     "palign": 0
+    },
+    {
+     "word": "rules\n",
+     "success": true,
+     "startS": 97.3336,
+     "endS": 97.588,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 97.65,
+     "endS": 97.65,
+     "palign": 0
+    },
+    {
+     "word": "sat ",
+     "success": true,
+     "startS": 97.73733,
+     "endS": 97.912,
+     "palign": 0
+    },
+    {
+     "word": "beside ",
+     "success": true,
+     "startS": 97.953,
+     "endS": 98.158,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 98.21167,
+     "endS": 98.319,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 98.3505,
+     "endS": 98.382,
+     "palign": 0
+    },
+    {
+     "word": "Magic ",
+     "success": true,
+     "startS": 98.4232,
+     "endS": 98.588,
+     "palign": 0
+    },
+    {
+     "word": "Flute ",
+     "success": true,
+     "startS": 98.662,
+     "endS": 98.854,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 98.878,
+     "endS": 98.926,
+     "palign": 0
+    },
+    {
+     "word": "shouted \"",
+     "success": true,
+     "startS": 98.9676,
+     "endS": 99.3865,
+     "palign": 0
+    },
+    {
+     "word": "Bravo!\" ",
+     "success": true,
+     "startS": 99.431,
+     "endS": 99.92967,
+     "palign": 0
+    },
+    {
+     "word": "loud\n",
+     "success": true,
+     "startS": 99.983,
+     "endS": 100.234,
+     "palign": 0
+    },
+    {
+     "word": "Walked ",
+     "success": true,
+     "startS": 100.2735,
+     "endS": 100.471,
+     "palign": 0
+    },
+    {
+     "word": "behind ",
+     "success": true,
+     "startS": 100.51933,
+     "endS": 100.761,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 100.7885,
+     "endS": 100.871,
+     "palign": 0
+    },
+    {
+     "word": "coffin ",
+     "success": true,
+     "startS": 100.9735,
+     "endS": 101.506,
+     "palign": 0
+    },
+    {
+     "word": "when ",
+     "success": true,
+     "startS": 101.54575,
+     "endS": 101.665,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 101.72733,
+     "endS": 101.852,
+     "palign": 0
+    },
+    {
+     "word": "vanished ",
+     "success": true,
+     "startS": 101.89012,
+     "endS": 102.157,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 102.206,
+     "endS": 102.353,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 102.36933,
+     "endS": 102.402,
+     "palign": 0
+    },
+    {
+     "word": "crowd\n",
+     "success": true,
+     "startS": 102.4808,
+     "endS": 102.796,
+     "palign": 0
+    },
+    {
+     "word": "Call ",
+     "success": true,
+     "startS": 102.83575,
+     "endS": 102.955,
+     "palign": 0
+    },
+    {
+     "word": "me ",
+     "success": true,
+     "startS": 103.044,
+     "endS": 103.159,
+     "palign": 0
+    },
+    {
+     "word": "mediocre? ",
+     "success": true,
+     "startS": 103.2498,
+     "endS": 103.86125,
+     "palign": 0
+    },
+    {
+     "word": "Ask ",
+     "success": true,
+     "startS": 103.9215,
+     "endS": 104.096,
+     "palign": 0
+    },
+    {
+     "word": "Beethoven, ",
+     "success": true,
+     "startS": 104.125,
+     "endS": 104.666,
+     "palign": 0
+    },
+    {
+     "word": "Schubert, ",
+     "success": true,
+     "startS": 104.679,
+     "endS": 105.07525,
+     "palign": 0
+    },
+    {
+     "word": "Liszt\n",
+     "success": true,
+     "startS": 105.0985,
+     "endS": 105.312,
+     "palign": 0
+    },
+    {
+     "word": "Taught ",
+     "success": true,
+     "startS": 105.34517,
+     "endS": 105.511,
+     "palign": 0
+    },
+    {
+     "word": "them ",
+     "success": true,
+     "startS": 105.5415,
+     "endS": 105.633,
+     "palign": 0
+    },
+    {
+     "word": "free ",
+     "success": true,
+     "startS": 105.691,
+     "endS": 105.865,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 105.9315,
+     "endS": 105.998,
+     "palign": 0
+    },
+    {
+     "word": "charge ",
+     "success": true,
+     "startS": 106.07617,
+     "endS": 106.467,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 106.517,
+     "endS": 106.617,
+     "palign": 0
+    },
+    {
+     "word": "put ",
+     "success": true,
+     "startS": 106.66167,
+     "endS": 106.751,
+     "palign": 0
+    },
+    {
+     "word": "those ",
+     "success": true,
+     "startS": 106.7794,
+     "endS": 106.893,
+     "palign": 0
+    },
+    {
+     "word": "legends ",
+     "success": true,
+     "startS": 106.94786,
+     "endS": 107.277,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 107.365,
+     "endS": 107.489,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 107.504,
+     "endS": 107.534,
+     "palign": 0
+    },
+    {
+     "word": "list\n",
+     "success": true,
+     "startS": 107.59425,
+     "endS": 107.775,
+     "palign": 0
+    },
+    {
+     "word": "And ",
+     "success": true,
+     "startS": 107.80433,
+     "endS": 107.863,
+     "palign": 0
+    },
+    {
+     "word": "when ",
+     "success": true,
+     "startS": 107.90725,
+     "endS": 108.04,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 108.09075,
+     "endS": 108.243,
+     "palign": 0
+    },
+    {
+     "word": "Requiem ",
+     "success": true,
+     "startS": 108.29975,
+     "endS": 108.565,
+     "palign": 0
+    },
+    {
+     "word": "stopped ",
+     "success": true,
+     "startS": 108.608,
+     "endS": 108.864,
+     "palign": 0
+    },
+    {
+     "word": "cold ",
+     "success": true,
+     "startS": 108.95275,
+     "endS": 109.37,
+     "palign": 0
+    },
+    {
+     "word": "before ",
+     "success": true,
+     "startS": 109.41533,
+     "endS": 109.642,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 109.68833,
+     "endS": 109.781,
+     "palign": 0
+    },
+    {
+     "word": "ink ",
+     "success": true,
+     "startS": 109.834,
+     "endS": 109.94,
+     "palign": 0
+    },
+    {
+     "word": "had ",
+     "success": true,
+     "startS": 109.96933,
+     "endS": 110.028,
+     "palign": 0
+    },
+    {
+     "word": "dried\n",
+     "success": true,
+     "startS": 110.06833,
+     "endS": 110.371,
+     "palign": 0
+    },
+    {
+     "word": "Your ",
+     "success": true,
+     "startS": 110.3905,
+     "endS": 110.449,
+     "palign": 0
+    },
+    {
+     "word": "widow ",
+     "success": true,
+     "startS": 110.499,
+     "endS": 110.78,
+     "palign": 0
+    },
+    {
+     "word": "brought ",
+     "success": true,
+     "startS": 110.78386,
+     "endS": 110.807,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 110.886,
+     "endS": 111.137,
+     "palign": 0
+    },
+    {
+     "word": "own ",
+     "success": true,
+     "startS": 111.19333,
+     "endS": 111.306,
+     "palign": 0
+    },
+    {
+     "word": "son ",
+     "success": true,
+     "startS": 111.41733,
+     "endS": 111.692,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 111.7565,
+     "endS": 111.821,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 111.91,
+     "endS": 111.999,
+     "palign": 0
+    },
+    {
+     "word": "door ",
+     "success": true,
+     "startS": 112.04875,
+     "endS": 112.198,
+     "palign": 0
+    },
+    {
+     "word": "after ",
+     "success": true,
+     "startS": 112.2632,
+     "endS": 112.524,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 112.524,
+     "endS": 112.722,
+     "palign": 0
+    },
+    {
+     "word": "died\n\n",
+     "success": true,
+     "startS": 112.802,
+     "endS": 113.29207,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: crowd chanting]\nBRAVO! ",
+     "success": true,
+     "startS": 113.30014,
+     "endS": 113.97925,
+     "palign": 0
+    },
+    {
+     "word": "BRAVO!\n\n",
+     "success": true,
+     "startS": 114.0345,
+     "endS": 114.65572,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: crowd chanting]\nBRAVO! ",
+     "success": true,
+     "startS": 114.66059,
+     "endS": 123.20425,
+     "palign": 0
+    },
+    {
+     "word": "BRAVO!\n\n",
+     "success": true,
+     "startS": 123.2485,
+     "endS": 133.96124,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: crowd chanting]\nBRAVO! ",
+     "success": true,
+     "startS": 133.96786,
+     "endS": 135.667,
+     "palign": 0
+    },
+    {
+     "word": "BRAVO!\n\n[",
+     "success": true,
+     "startS": 135.719,
+     "endS": 135.94842,
+     "palign": 0
+    },
+    {
+     "word": "End]\n\n\n",
+     "success": true,
+     "startS": 135.9735,
+     "endS": 136.124,
+     "palign": 0
+    }
+   ]
+  },
+  {
+   "id": "950e93a9-fdb7-4acf-8aa5-8f8867989ae1",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/950e93a9-fdb7-4acf-8aa5-8f8867989ae1.mp3",
+   "duration": 165.92,
+   "title": "Mozart_vs_Salieri",
+   "local_mp3": "workflows/05_ancient_rap_battle/episodes/mozart-vs-salieri/work/suno_v2.mp3",
+   "alignedWords": [
+    {
+     "word": "[Intro: ",
+     "success": true,
+     "startS": 35.133,
+     "endS": 35.15184,
+     "palign": 0
+    },
+    {
+     "word": "short ",
+     "success": true,
+     "startS": 35.15453,
+     "endS": 35.16799,
+     "palign": 0
+    },
+    {
+     "word": "DJ ",
+     "success": true,
+     "startS": 35.17068,
+     "endS": 35.17607,
+     "palign": 0
+    },
+    {
+     "word": "scratch, ",
+     "success": true,
+     "startS": 35.17876,
+     "endS": 35.20029,
+     "palign": 0
+    },
+    {
+     "word": "dramatic ",
+     "success": true,
+     "startS": 35.20299,
+     "endS": 35.22452,
+     "palign": 0
+    },
+    {
+     "word": "Mozart ",
+     "success": true,
+     "startS": 35.22721,
+     "endS": 35.24336,
+     "palign": 0
+    },
+    {
+     "word": "Requiem ",
+     "success": true,
+     "startS": 35.24605,
+     "endS": 35.2649,
+     "palign": 0
+    },
+    {
+     "word": "strings ",
+     "success": true,
+     "startS": 35.26759,
+     "endS": 35.28643,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 35.28912,
+     "endS": 35.2972,
+     "palign": 0
+    },
+    {
+     "word": "harpsichord ",
+     "success": true,
+     "startS": 35.29989,
+     "endS": 35.3295,
+     "palign": 0
+    },
+    {
+     "word": "stab]\n\n\n",
+     "success": true,
+     "startS": 35.33219,
+     "endS": 35.35103,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 1: bright razor-sharp energetic tenor male rapper]\nWriting ",
+     "success": true,
+     "startS": 35.35373,
+     "endS": 35.526,
+     "palign": 0
+    },
+    {
+     "word": "music ",
+     "success": true,
+     "startS": 35.5986,
+     "endS": 35.889,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 35.95,
+     "endS": 36.011,
+     "palign": 0
+    },
+    {
+     "word": "age ",
+     "success": true,
+     "startS": 36.091,
+     "endS": 36.265,
+     "palign": 0
+    },
+    {
+     "word": "five ",
+     "success": true,
+     "startS": 36.345,
+     "endS": 36.734,
+     "palign": 0
+    },
+    {
+     "word": "while ",
+     "success": true,
+     "startS": 36.765,
+     "endS": 36.889,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 36.95067,
+     "endS": 37.074,
+     "palign": 0
+    },
+    {
+     "word": "were ",
+     "success": true,
+     "startS": 37.083,
+     "endS": 37.11,
+     "palign": 0
+    },
+    {
+     "word": "learning ",
+     "success": true,
+     "startS": 37.14113,
+     "endS": 37.359,
+     "palign": 0
+    },
+    {
+     "word": "scales\n",
+     "success": true,
+     "startS": 37.467,
+     "endS": 37.863,
+     "palign": 0
+    },
+    {
+     "word": "Played ",
+     "success": true,
+     "startS": 37.88517,
+     "endS": 37.996,
+     "palign": 0
+    },
+    {
+     "word": "blindfold ",
+     "success": true,
+     "startS": 38.0426,
+     "endS": 38.513,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 38.55333,
+     "endS": 38.634,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 38.67833,
+     "endS": 38.767,
+     "palign": 0
+    },
+    {
+     "word": "Empress — ",
+     "success": true,
+     "startS": 38.803,
+     "endS": 39.2464,
+     "palign": 0
+    },
+    {
+     "word": "boy, ",
+     "success": true,
+     "startS": 39.2866,
+     "endS": 39.38125,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 39.3955,
+     "endS": 39.424,
+     "palign": 0
+    },
+    {
+     "word": "prodigy ",
+     "success": true,
+     "startS": 39.474,
+     "endS": 39.877,
+     "palign": 0
+    },
+    {
+     "word": "prevails\n",
+     "success": true,
+     "startS": 39.89967,
+     "endS": 40.32,
+     "palign": 0
+    },
+    {
+     "word": "The ",
+     "success": true,
+     "startS": 40.357,
+     "endS": 40.431,
+     "palign": 0
+    },
+    {
+     "word": "Vatican ",
+     "success": true,
+     "startS": 40.511,
+     "endS": 40.817,
+     "palign": 0
+    },
+    {
+     "word": "hid ",
+     "success": true,
+     "startS": 40.88567,
+     "endS": 41.023,
+     "palign": 0
+    },
+    {
+     "word": "Allegri's ",
+     "success": true,
+     "startS": 41.091,
+     "endS": 41.509,
+     "palign": 0
+    },
+    {
+     "word": "chant ",
+     "success": true,
+     "startS": 41.5744,
+     "endS": 41.836,
+     "palign": 0
+    },
+    {
+     "word": "behind ",
+     "success": true,
+     "startS": 41.88333,
+     "endS": 42.12,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 42.155,
+     "endS": 42.155,
+     "palign": 0
+    },
+    {
+     "word": "locked-up ",
+     "success": true,
+     "startS": 42.2045,
+     "endS": 42.566,
+     "palign": 0
+    },
+    {
+     "word": "door\n",
+     "success": true,
+     "startS": 42.62575,
+     "endS": 42.805,
+     "palign": 0
+    },
+    {
+     "word": "Fourteen ",
+     "success": true,
+     "startS": 42.8455,
+     "endS": 43.244,
+     "palign": 0
+    },
+    {
+     "word": "years ",
+     "success": true,
+     "startS": 43.2774,
+     "endS": 43.411,
+     "palign": 0
+    },
+    {
+     "word": "old, ",
+     "success": true,
+     "startS": 43.491,
+     "endS": 43.75,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 43.79,
+     "endS": 43.803,
+     "palign": 0
+    },
+    {
+     "word": "heard ",
+     "success": true,
+     "startS": 43.8105,
+     "endS": 44.035,
+     "palign": 0
+    },
+    {
+     "word": "it ",
+     "success": true,
+     "startS": 44.092,
+     "endS": 44.149,
+     "palign": 0
+    },
+    {
+     "word": "once ",
+     "success": true,
+     "startS": 44.20275,
+     "endS": 44.364,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 44.392,
+     "endS": 44.448,
+     "palign": 0
+    },
+    {
+     "word": "memorized ",
+     "success": true,
+     "startS": 44.494,
+     "endS": 44.962,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 44.962,
+     "endS": 44.962,
+     "palign": 0
+    },
+    {
+     "word": "score\n",
+     "success": true,
+     "startS": 45.0242,
+     "endS": 45.273,
+     "palign": 0
+    },
+    {
+     "word": "Salzburg's ",
+     "success": true,
+     "startS": 45.34067,
+     "endS": 45.8296,
+     "palign": 0
+    },
+    {
+     "word": "Archbishop ",
+     "success": true,
+     "startS": 45.8762,
+     "endS": 46.348,
+     "palign": 0
+    },
+    {
+     "word": "tried ",
+     "success": true,
+     "startS": 46.3944,
+     "endS": 46.58,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 46.614,
+     "endS": 46.648,
+     "palign": 0
+    },
+    {
+     "word": "keep ",
+     "success": true,
+     "startS": 46.7075,
+     "endS": 46.886,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 46.949,
+     "endS": 46.949,
+     "palign": 0
+    },
+    {
+     "word": "leash ",
+     "success": true,
+     "startS": 46.97,
+     "endS": 47.195,
+     "palign": 0
+    },
+    {
+     "word": "around ",
+     "success": true,
+     "startS": 47.2315,
+     "endS": 47.414,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 47.509,
+     "endS": 47.604,
+     "palign": 0
+    },
+    {
+     "word": "neck\n",
+     "success": true,
+     "startS": 47.683,
+     "endS": 47.92,
+     "palign": 0
+    },
+    {
+     "word": "Took ",
+     "success": true,
+     "startS": 47.979,
+     "endS": 48.156,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 48.215,
+     "endS": 48.215,
+     "palign": 0
+    },
+    {
+     "word": "boot ",
+     "success": true,
+     "startS": 48.26925,
+     "endS": 48.432,
+     "palign": 0
+    },
+    {
+     "word": "out ",
+     "success": true,
+     "startS": 48.48133,
+     "endS": 48.58,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 48.66,
+     "endS": 48.757,
+     "palign": 0
+    },
+    {
+     "word": "Vienna — ",
+     "success": true,
+     "startS": 48.8295,
+     "endS": 49.3052,
+     "palign": 0
+    },
+    {
+     "word": "put ",
+     "success": true,
+     "startS": 49.3238,
+     "endS": 49.361,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 49.37533,
+     "endS": 49.404,
+     "palign": 0
+    },
+    {
+     "word": "whole ",
+     "success": true,
+     "startS": 49.4502,
+     "endS": 49.635,
+     "palign": 0
+    },
+    {
+     "word": "empire ",
+     "success": true,
+     "startS": 49.695,
+     "endS": 49.995,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 50.0705,
+     "endS": 50.146,
+     "palign": 0
+    },
+    {
+     "word": "check\n",
+     "success": true,
+     "startS": 50.211,
+     "endS": 50.471,
+     "palign": 0
+    },
+    {
+     "word": "Figaro, ",
+     "success": true,
+     "startS": 50.551,
+     "endS": 50.9765,
+     "palign": 0
+    },
+    {
+     "word": "Don ",
+     "success": true,
+     "startS": 51.027,
+     "endS": 51.128,
+     "palign": 0
+    },
+    {
+     "word": "Giovanni — ",
+     "success": true,
+     "startS": 51.2105,
+     "endS": 51.84843,
+     "palign": 0
+    },
+    {
+     "word": "every ",
+     "success": true,
+     "startS": 51.87714,
+     "endS": 51.992,
+     "palign": 0
+    },
+    {
+     "word": "melody's ",
+     "success": true,
+     "startS": 52.04217,
+     "endS": 52.497,
+     "palign": 0
+    },
+    {
+     "word": "divine\n\"",
+     "success": true,
+     "startS": 52.55783,
+     "endS": 52.8955,
+     "palign": 0
+    },
+    {
+     "word": "Too ",
+     "success": true,
+     "startS": 52.929,
+     "endS": 52.996,
+     "palign": 0
+    },
+    {
+     "word": "many ",
+     "success": true,
+     "startS": 53.0705,
+     "endS": 53.294,
+     "palign": 0
+    },
+    {
+     "word": "notes\"? ",
+     "success": true,
+     "startS": 53.374,
+     "endS": 53.75167,
+     "palign": 0
+    },
+    {
+     "word": "Tell ",
+     "success": true,
+     "startS": 53.777,
+     "endS": 53.853,
+     "palign": 0
+    },
+    {
+     "word": "Joseph ",
+     "success": true,
+     "startS": 53.93133,
+     "endS": 54.336,
+     "palign": 0
+    },
+    {
+     "word": "every ",
+     "success": true,
+     "startS": 54.3704,
+     "endS": 54.508,
+     "palign": 0
+    },
+    {
+     "word": "single ",
+     "success": true,
+     "startS": 54.564,
+     "endS": 54.844,
+     "palign": 0
+    },
+    {
+     "word": "one ",
+     "success": true,
+     "startS": 54.91467,
+     "endS": 55.056,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 55.111,
+     "endS": 55.166,
+     "palign": 0
+    },
+    {
+     "word": "mine\n\n",
+     "success": true,
+     "startS": 55.246,
+     "endS": 55.667,
+     "palign": 0
+    },
+    {
+     "word": "[Crowd reacts]\nOOOH!\n\n[",
+     "success": true,
+     "startS": 55.683,
+     "endS": 57.74622,
+     "palign": 0
+    },
+    {
+     "word": "Verse 2: ",
+     "success": true,
+     "startS": 57.74996,
+     "endS": 57.77987,
+     "palign": 0
+    },
+    {
+     "word": "deep ",
+     "success": true,
+     "startS": 57.78361,
+     "endS": 57.79857,
+     "palign": 0
+    },
+    {
+     "word": "commanding ",
+     "success": true,
+     "startS": 57.8023,
+     "endS": 57.8397,
+     "palign": 0
+    },
+    {
+     "word": "aristocratic ",
+     "success": true,
+     "startS": 57.84343,
+     "endS": 57.8883,
+     "palign": 0
+    },
+    {
+     "word": "baritone ",
+     "success": true,
+     "startS": 57.89204,
+     "endS": 57.92196,
+     "palign": 0
+    },
+    {
+     "word": "male ",
+     "success": true,
+     "startS": 57.9257,
+     "endS": 57.94065,
+     "palign": 0
+    },
+    {
+     "word": "rapper]\n\"",
+     "success": true,
+     "startS": 57.94439,
+     "endS": 57.9743,
+     "palign": 0
+    },
+    {
+     "word": "Every ",
+     "success": true,
+     "startS": 57.97804,
+     "endS": 57.993,
+     "palign": 0
+    },
+    {
+     "word": "note ",
+     "success": true,
+     "startS": 58.05275,
+     "endS": 58.232,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 58.3005,
+     "endS": 58.369,
+     "palign": 0
+    },
+    {
+     "word": "yours\"? ",
+     "success": true,
+     "startS": 58.449,
+     "endS": 59.08629,
+     "palign": 0
+    },
+    {
+     "word": "Relax — ",
+     "success": true,
+     "startS": 59.14343,
+     "endS": 59.5245,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 59.55875,
+     "endS": 59.593,
+     "palign": 0
+    },
+    {
+     "word": "ran ",
+     "success": true,
+     "startS": 59.593,
+     "endS": 59.804,
+     "palign": 0
+    },
+    {
+     "word": "Vienna's ",
+     "success": true,
+     "startS": 59.858,
+     "endS": 60.196,
+     "palign": 0
+    },
+    {
+     "word": "stage\n",
+     "success": true,
+     "startS": 60.2744,
+     "endS": 60.588,
+     "palign": 0
+    },
+    {
+     "word": "Thirty-six ",
+     "success": true,
+     "startS": 60.61683,
+     "endS": 61.04,
+     "palign": 0
+    },
+    {
+     "word": "years ",
+     "success": true,
+     "startS": 61.04975,
+     "endS": 61.212,
+     "palign": 0
+    },
+    {
+     "word": "Kapellmeister ",
+     "success": true,
+     "startS": 61.27367,
+     "endS": 61.853,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 61.933,
+     "endS": 62.053,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 62.105,
+     "endS": 62.209,
+     "palign": 0
+    },
+    {
+     "word": "Emperor's ",
+     "success": true,
+     "startS": 62.21833,
+     "endS": 62.594,
+     "palign": 0
+    },
+    {
+     "word": "front ",
+     "success": true,
+     "startS": 62.6454,
+     "endS": 62.851,
+     "palign": 0
+    },
+    {
+     "word": "page\n",
+     "success": true,
+     "startS": 62.90325,
+     "endS": 63.06,
+     "palign": 0
+    },
+    {
+     "word": "Joseph ",
+     "success": true,
+     "startS": 63.11467,
+     "endS": 63.471,
+     "palign": 0
+    },
+    {
+     "word": "put ",
+     "success": true,
+     "startS": 63.502,
+     "endS": 63.564,
+     "palign": 0
+    },
+    {
+     "word": "our ",
+     "success": true,
+     "startS": 63.62,
+     "endS": 63.732,
+     "palign": 0
+    },
+    {
+     "word": "operas ",
+     "success": true,
+     "startS": 63.7875,
+     "endS": 64.039,
+     "palign": 0
+    },
+    {
+     "word": "head-to-head ",
+     "success": true,
+     "startS": 64.08875,
+     "endS": 64.548,
+     "palign": 0
+    },
+    {
+     "word": "inside ",
+     "success": true,
+     "startS": 64.59417,
+     "endS": 64.825,
+     "palign": 0
+    },
+    {
+     "word": "his ",
+     "success": true,
+     "startS": 64.87633,
+     "endS": 64.979,
+     "palign": 0
+    },
+    {
+     "word": "palace ",
+     "success": true,
+     "startS": 65.02833,
+     "endS": 65.271,
+     "palign": 0
+    },
+    {
+     "word": "hall\n",
+     "success": true,
+     "startS": 65.33025,
+     "endS": 65.508,
+     "palign": 0
+    },
+    {
+     "word": "Seventeen ",
+     "success": true,
+     "startS": 65.55978,
+     "endS": 65.974,
+     "palign": 0
+    },
+    {
+     "word": "eighty-six, ",
+     "success": true,
+     "startS": 66.0008,
+     "endS": 66.492,
+     "palign": 0
+    },
+    {
+     "word": "Vienna ",
+     "success": true,
+     "startS": 66.555,
+     "endS": 66.823,
+     "palign": 0
+    },
+    {
+     "word": "crowned ",
+     "success": true,
+     "startS": 66.8544,
+     "endS": 67.053,
+     "palign": 0
+    },
+    {
+     "word": "me ",
+     "success": true,
+     "startS": 67.112,
+     "endS": 67.171,
+     "palign": 0
+    },
+    {
+     "word": "winner ",
+     "success": true,
+     "startS": 67.2285,
+     "endS": 67.516,
+     "palign": 0
+    },
+    {
+     "word": "over ",
+     "success": true,
+     "startS": 67.59825,
+     "endS": 67.845,
+     "palign": 0
+    },
+    {
+     "word": "all\n",
+     "success": true,
+     "startS": 67.925,
+     "endS": 68.183,
+     "palign": 0
+    },
+    {
+     "word": "Paris ",
+     "success": true,
+     "startS": 68.2332,
+     "endS": 68.434,
+     "palign": 0
+    },
+    {
+     "word": "packed ",
+     "success": true,
+     "startS": 68.47017,
+     "endS": 68.651,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 68.732,
+     "endS": 68.818,
+     "palign": 0
+    },
+    {
+     "word": "opera ",
+     "success": true,
+     "startS": 68.84175,
+     "endS": 69.094,
+     "palign": 0
+    },
+    {
+     "word": "house ",
+     "success": true,
+     "startS": 69.146,
+     "endS": 69.354,
+     "palign": 0
+    },
+    {
+     "word": "while ",
+     "success": true,
+     "startS": 69.3908,
+     "endS": 69.538,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 69.60067,
+     "endS": 69.726,
+     "palign": 0
+    },
+    {
+     "word": "begged ",
+     "success": true,
+     "startS": 69.73467,
+     "endS": 69.921,
+     "palign": 0
+    },
+    {
+     "word": "friends ",
+     "success": true,
+     "startS": 69.96314,
+     "endS": 70.216,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 70.26267,
+     "endS": 70.356,
+     "palign": 0
+    },
+    {
+     "word": "loans\n",
+     "success": true,
+     "startS": 70.384,
+     "endS": 70.659,
+     "palign": 0
+    },
+    {
+     "word": "Blew ",
+     "success": true,
+     "startS": 70.70325,
+     "endS": 70.836,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 70.85725,
+     "endS": 70.921,
+     "palign": 0
+    },
+    {
+     "word": "cash ",
+     "success": true,
+     "startS": 70.968,
+     "endS": 71.109,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 71.201,
+     "endS": 71.342,
+     "palign": 0
+    },
+    {
+     "word": "billiards ",
+     "success": true,
+     "startS": 71.3805,
+     "endS": 71.838,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 71.849,
+     "endS": 71.871,
+     "palign": 0
+    },
+    {
+     "word": "silk ",
+     "success": true,
+     "startS": 71.9415,
+     "endS": 72.153,
+     "palign": 0
+    },
+    {
+     "word": "coats ",
+     "success": true,
+     "startS": 72.2005,
+     "endS": 72.391,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 72.45533,
+     "endS": 72.584,
+     "palign": 0
+    },
+    {
+     "word": "couldn't ",
+     "success": true,
+     "startS": 72.58733,
+     "endS": 72.913,
+     "palign": 0
+    },
+    {
+     "word": "own\n",
+     "success": true,
+     "startS": 72.98767,
+     "endS": 73.137,
+     "palign": 0
+    },
+    {
+     "word": "Crying ",
+     "success": true,
+     "startS": 73.20017,
+     "endS": 73.516,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 73.593,
+     "endS": 73.67,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 73.69775,
+     "endS": 73.781,
+     "palign": 0
+    },
+    {
+     "word": "letters ",
+     "success": true,
+     "startS": 73.83657,
+     "endS": 74.17,
+     "palign": 0
+    },
+    {
+     "word": "that \"",
+     "success": true,
+     "startS": 74.20825,
+     "endS": 74.4055,
+     "palign": 0
+    },
+    {
+     "word": "Salieri ",
+     "success": true,
+     "startS": 74.488,
+     "endS": 74.779,
+     "palign": 0
+    },
+    {
+     "word": "blocked ",
+     "success": true,
+     "startS": 74.80033,
+     "endS": 75.053,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 75.132,
+     "endS": 75.211,
+     "palign": 0
+    },
+    {
+     "word": "way\"\n",
+     "success": true,
+     "startS": 75.291,
+     "endS": 75.533,
+     "palign": 0
+    },
+    {
+     "word": "Quit ",
+     "success": true,
+     "startS": 75.567,
+     "endS": 75.669,
+     "palign": 0
+    },
+    {
+     "word": "blaming ",
+     "success": true,
+     "startS": 75.694,
+     "endS": 75.975,
+     "palign": 0
+    },
+    {
+     "word": "court ",
+     "success": true,
+     "startS": 76.0148,
+     "endS": 76.174,
+     "palign": 0
+    },
+    {
+     "word": "cabals ",
+     "success": true,
+     "startS": 76.254,
+     "endS": 76.566,
+     "palign": 0
+    },
+    {
+     "word": "when ",
+     "success": true,
+     "startS": 76.59775,
+     "endS": 76.693,
+     "palign": 0
+    },
+    {
+     "word": "billiards ",
+     "success": true,
+     "startS": 76.71225,
+     "endS": 77.051,
+     "palign": 0
+    },
+    {
+     "word": "burned ",
+     "success": true,
+     "startS": 77.0825,
+     "endS": 77.24,
+     "palign": 0
+    },
+    {
+     "word": "up ",
+     "success": true,
+     "startS": 77.315,
+     "endS": 77.39,
+     "palign": 0
+    },
+    {
+     "word": "all ",
+     "success": true,
+     "startS": 77.46867,
+     "endS": 77.626,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 77.6755,
+     "endS": 77.824,
+     "palign": 0
+    },
+    {
+     "word": "pay\n\n",
+     "success": true,
+     "startS": 77.904,
+     "endS": 78.25703,
+     "palign": 0
+    },
+    {
+     "word": "[Break: crowd chanting]\nROUND ",
+     "success": true,
+     "startS": 78.26807,
+     "endS": 78.577,
+     "palign": 0
+    },
+    {
+     "word": "TWO! ",
+     "success": true,
+     "startS": 78.67467,
+     "endS": 79.56483,
+     "palign": 0
+    },
+    {
+     "word": "ROUND ",
+     "success": true,
+     "startS": 79.62167,
+     "endS": 79.849,
+     "palign": 0
+    },
+    {
+     "word": "TWO!\n\n",
+     "success": true,
+     "startS": 79.929,
+     "endS": 80.80452,
+     "palign": 0
+    },
+    {
+     "word": "[Break: crowd chanting]\nROUND ",
+     "success": true,
+     "startS": 80.81577,
+     "endS": 81.131,
+     "palign": 0
+    },
+    {
+     "word": "TWO! ",
+     "success": true,
+     "startS": 81.23433,
+     "endS": 83.3915,
+     "palign": 0
+    },
+    {
+     "word": "ROUND ",
+     "success": true,
+     "startS": 83.505,
+     "endS": 84.888,
+     "palign": 0
+    },
+    {
+     "word": "TWO!\n\n",
+     "success": true,
+     "startS": 84.97767,
+     "endS": 88.40344,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3: bright razor-sharp energetic tenor male rapper]\nBragging ",
+     "success": true,
+     "startS": 88.40567,
+     "endS": 88.698,
+     "palign": 0
+    },
+    {
+     "word": "'bout ",
+     "success": true,
+     "startS": 88.717,
+     "endS": 88.924,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 89.053,
+     "endS": 89.081,
+     "palign": 0
+    },
+    {
+     "word": "palace ",
+     "success": true,
+     "startS": 89.13033,
+     "endS": 89.41,
+     "palign": 0
+    },
+    {
+     "word": "vote? ",
+     "success": true,
+     "startS": 89.461,
+     "endS": 89.88714,
+     "palign": 0
+    },
+    {
+     "word": "Nobody ",
+     "success": true,
+     "startS": 89.95129,
+     "endS": 90.272,
+     "palign": 0
+    },
+    {
+     "word": "hums ",
+     "success": true,
+     "startS": 90.34425,
+     "endS": 90.561,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 90.5875,
+     "endS": 90.667,
+     "palign": 0
+    },
+    {
+     "word": "tune\n",
+     "success": true,
+     "startS": 90.736,
+     "endS": 90.943,
+     "palign": 0
+    },
+    {
+     "word": "Forty ",
+     "success": true,
+     "startS": 91.0094,
+     "endS": 91.275,
+     "palign": 0
+    },
+    {
+     "word": "operas ",
+     "success": true,
+     "startS": 91.3185,
+     "endS": 91.598,
+     "palign": 0
+    },
+    {
+     "word": "gather ",
+     "success": true,
+     "startS": 91.65,
+     "endS": 91.91,
+     "palign": 0
+    },
+    {
+     "word": "dust ",
+     "success": true,
+     "startS": 91.91,
+     "endS": 92.102,
+     "palign": 0
+    },
+    {
+     "word": "beneath ",
+     "success": true,
+     "startS": 92.14614,
+     "endS": 92.411,
+     "palign": 0
+    },
+    {
+     "word": "Vienna's ",
+     "success": true,
+     "startS": 92.465,
+     "endS": 92.846,
+     "palign": 0
+    },
+    {
+     "word": "quiet ",
+     "success": true,
+     "startS": 92.896,
+     "endS": 93.096,
+     "palign": 0
+    },
+    {
+     "word": "moon\n",
+     "success": true,
+     "startS": 93.176,
+     "endS": 93.481,
+     "palign": 0
+    },
+    {
+     "word": "Over ",
+     "success": true,
+     "startS": 93.539,
+     "endS": 93.713,
+     "palign": 0
+    },
+    {
+     "word": "six ",
+     "success": true,
+     "startS": 93.834,
+     "endS": 94.076,
+     "palign": 0
+    },
+    {
+     "word": "hundred ",
+     "success": true,
+     "startS": 94.11571,
+     "endS": 94.354,
+     "palign": 0
+    },
+    {
+     "word": "masterpieces — ",
+     "success": true,
+     "startS": 94.41183,
+     "endS": 95.15033,
+     "palign": 0
+    },
+    {
+     "word": "dead ",
+     "success": true,
+     "startS": 95.1755,
+     "endS": 95.251,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 95.313,
+     "endS": 95.375,
+     "palign": 0
+    },
+    {
+     "word": "thirty-five\n",
+     "success": true,
+     "startS": 95.41817,
+     "endS": 96.003,
+     "palign": 0
+    },
+    {
+     "word": "Magic ",
+     "success": true,
+     "startS": 96.0556,
+     "endS": 96.266,
+     "palign": 0
+    },
+    {
+     "word": "Flute ",
+     "success": true,
+     "startS": 96.326,
+     "endS": 96.588,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 96.63514,
+     "endS": 96.72943,
+     "palign": 0
+    },
+    {
+     "word": "Night ",
+     "success": true,
+     "startS": 96.77657,
+     "endS": 96.959,
+     "palign": 0
+    },
+    {
+     "word": "Music — ",
+     "success": true,
+     "startS": 97.0342,
+     "endS": 97.405,
+     "palign": 0
+    },
+    {
+     "word": "every ",
+     "success": true,
+     "startS": 97.44,
+     "endS": 97.58,
+     "palign": 0
+    },
+    {
+     "word": "bar ",
+     "success": true,
+     "startS": 97.63433,
+     "endS": 97.743,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 97.7945,
+     "endS": 97.846,
+     "palign": 0
+    },
+    {
+     "word": "still ",
+     "success": true,
+     "startS": 97.908,
+     "endS": 98.156,
+     "palign": 0
+    },
+    {
+     "word": "alive\n",
+     "success": true,
+     "startS": 98.2352,
+     "endS": 98.552,
+     "palign": 0
+    },
+    {
+     "word": "Rumors ",
+     "success": true,
+     "startS": 98.61233,
+     "endS": 98.916,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 98.995,
+     "endS": 99.074,
+     "palign": 0
+    },
+    {
+     "word": "Vienna ",
+     "success": true,
+     "startS": 99.12475,
+     "endS": 99.388,
+     "palign": 0
+    },
+    {
+     "word": "swore ",
+     "success": true,
+     "startS": 99.4352,
+     "endS": 99.624,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 99.675,
+     "endS": 99.777,
+     "palign": 0
+    },
+    {
+     "word": "slipped ",
+     "success": true,
+     "startS": 99.817,
+     "endS": 100.057,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 100.09633,
+     "endS": 100.175,
+     "palign": 0
+    },
+    {
+     "word": "poison ",
+     "success": true,
+     "startS": 100.22917,
+     "endS": 100.5,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 100.553,
+     "endS": 100.606,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 100.683,
+     "endS": 100.76,
+     "palign": 0
+    },
+    {
+     "word": "cup\n",
+     "success": true,
+     "startS": 100.84,
+     "endS": 101.09,
+     "palign": 0
+    },
+    {
+     "word": "Even ",
+     "success": true,
+     "startS": 101.16725,
+     "endS": 101.399,
+     "palign": 0
+    },
+    {
+     "word": "if ",
+     "success": true,
+     "startS": 101.479,
+     "endS": 101.581,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 101.61975,
+     "endS": 101.736,
+     "palign": 0
+    },
+    {
+     "word": "tale ",
+     "success": true,
+     "startS": 101.76975,
+     "endS": 101.871,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 101.9085,
+     "endS": 101.946,
+     "palign": 0
+    },
+    {
+     "word": "fiction, ",
+     "success": true,
+     "startS": 102.063,
+     "endS": 102.39267,
+     "palign": 0
+    },
+    {
+     "word": "envy ",
+     "success": true,
+     "startS": 102.43533,
+     "endS": 102.652,
+     "palign": 0
+    },
+    {
+     "word": "tore ",
+     "success": true,
+     "startS": 102.695,
+     "endS": 102.824,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 102.85325,
+     "endS": 102.941,
+     "palign": 0
+    },
+    {
+     "word": "spirit ",
+     "success": true,
+     "startS": 103.008,
+     "endS": 103.343,
+     "palign": 0
+    },
+    {
+     "word": "up\n",
+     "success": true,
+     "startS": 103.423,
+     "endS": 103.548,
+     "palign": 0
+    },
+    {
+     "word": "Check ",
+     "success": true,
+     "startS": 103.6012,
+     "endS": 103.814,
+     "palign": 0
+    },
+    {
+     "word": "every ",
+     "success": true,
+     "startS": 103.894,
+     "endS": 104.221,
+     "palign": 0
+    },
+    {
+     "word": "concert ",
+     "success": true,
+     "startS": 104.26533,
+     "endS": 104.522,
+     "palign": 0
+    },
+    {
+     "word": "hall ",
+     "success": true,
+     "startS": 104.5915,
+     "endS": 104.8,
+     "palign": 0
+    },
+    {
+     "word": "tonight ",
+     "success": true,
+     "startS": 104.83286,
+     "endS": 105.03,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 105.075,
+     "endS": 105.21,
+     "palign": 0
+    },
+    {
+     "word": "Tokyo ",
+     "success": true,
+     "startS": 105.29,
+     "endS": 105.712,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 105.786,
+     "endS": 105.86,
+     "palign": 0
+    },
+    {
+     "word": "Rome\n",
+     "success": true,
+     "startS": 105.94,
+     "endS": 106.288,
+     "palign": 0
+    },
+    {
+     "word": "They ",
+     "success": true,
+     "startS": 106.33725,
+     "endS": 106.485,
+     "palign": 0
+    },
+    {
+     "word": "only ",
+     "success": true,
+     "startS": 106.53925,
+     "endS": 106.702,
+     "palign": 0
+    },
+    {
+     "word": "know ",
+     "success": true,
+     "startS": 106.762,
+     "endS": 106.942,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 106.9625,
+     "endS": 107.024,
+     "palign": 0
+    },
+    {
+     "word": "name ",
+     "success": true,
+     "startS": 107.104,
+     "endS": 107.344,
+     "palign": 0
+    },
+    {
+     "word": "because ",
+     "success": true,
+     "startS": 107.36871,
+     "endS": 107.517,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 107.5865,
+     "endS": 107.656,
+     "palign": 0
+    },
+    {
+     "word": "movie ",
+     "success": true,
+     "startS": 107.722,
+     "endS": 107.986,
+     "palign": 0
+    },
+    {
+     "word": "brought ",
+     "success": true,
+     "startS": 108.02571,
+     "endS": 108.264,
+     "palign": 0
+    },
+    {
+     "word": "it ",
+     "success": true,
+     "startS": 108.324,
+     "endS": 108.384,
+     "palign": 0
+    },
+    {
+     "word": "home\n\n",
+     "success": true,
+     "startS": 108.464,
+     "endS": 108.845,
+     "palign": 0
+    },
+    {
+     "word": "[Crowd reacts]\nOOOH!\n\n[",
+     "success": true,
+     "startS": 108.861,
+     "endS": 110.89249,
+     "palign": 0
+    },
+    {
+     "word": "Verse 4: ",
+     "success": true,
+     "startS": 110.89831,
+     "endS": 110.94494,
+     "palign": 0
+    },
+    {
+     "word": "deep ",
+     "success": true,
+     "startS": 110.95077,
+     "endS": 110.97409,
+     "palign": 0
+    },
+    {
+     "word": "commanding ",
+     "success": true,
+     "startS": 110.97991,
+     "endS": 111.0382,
+     "palign": 0
+    },
+    {
+     "word": "aristocratic ",
+     "success": true,
+     "startS": 111.04403,
+     "endS": 111.11397,
+     "palign": 0
+    },
+    {
+     "word": "baritone ",
+     "success": true,
+     "startS": 111.1198,
+     "endS": 111.16643,
+     "palign": 0
+    },
+    {
+     "word": "male ",
+     "success": true,
+     "startS": 111.17226,
+     "endS": 111.19557,
+     "palign": 0
+    },
+    {
+     "word": "rapper]\n\"",
+     "success": true,
+     "startS": 111.2014,
+     "endS": 111.24803,
+     "palign": 0
+    },
+    {
+     "word": "Poison ",
+     "success": true,
+     "startS": 111.25386,
+     "endS": 111.283,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 111.367,
+     "endS": 111.451,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 111.482,
+     "endS": 111.575,
+     "palign": 0
+    },
+    {
+     "word": "cup\"? ",
+     "success": true,
+     "startS": 111.655,
+     "endS": 111.93833,
+     "palign": 0
+    },
+    {
+     "word": "That's ",
+     "success": true,
+     "startS": 111.941,
+     "endS": 112.141,
+     "palign": 0
+    },
+    {
+     "word": "Pushkin's ",
+     "success": true,
+     "startS": 112.1855,
+     "endS": 112.505,
+     "palign": 0
+    },
+    {
+     "word": "fairy ",
+     "success": true,
+     "startS": 112.5608,
+     "endS": 112.784,
+     "palign": 0
+    },
+    {
+     "word": "tale ",
+     "success": true,
+     "startS": 112.86675,
+     "endS": 113.115,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 113.153,
+     "endS": 113.229,
+     "palign": 0
+    },
+    {
+     "word": "fools\n",
+     "success": true,
+     "startS": 113.309,
+     "endS": 113.667,
+     "palign": 0
+    },
+    {
+     "word": "A ",
+     "success": true,
+     "startS": 113.773,
+     "endS": 113.773,
+     "palign": 0
+    },
+    {
+     "word": "rich ",
+     "success": true,
+     "startS": 113.83725,
+     "endS": 114.03,
+     "palign": 0
+    },
+    {
+     "word": "count ",
+     "success": true,
+     "startS": 114.094,
+     "endS": 114.35,
+     "palign": 0
+    },
+    {
+     "word": "bought ",
+     "success": true,
+     "startS": 114.3805,
+     "endS": 114.533,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 114.6,
+     "endS": 114.801,
+     "palign": 0
+    },
+    {
+     "word": "Requiem ",
+     "success": true,
+     "startS": 114.8535,
+     "endS": 115.243,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 115.256,
+     "endS": 115.269,
+     "palign": 0
+    },
+    {
+     "word": "cheat ",
+     "success": true,
+     "startS": 115.3282,
+     "endS": 115.565,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 115.57867,
+     "endS": 115.606,
+     "palign": 0
+    },
+    {
+     "word": "credit ",
+     "success": true,
+     "startS": 115.65233,
+     "endS": 115.884,
+     "palign": 0
+    },
+    {
+     "word": "rules\n",
+     "success": true,
+     "startS": 115.9418,
+     "endS": 116.173,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 116.253,
+     "endS": 116.287,
+     "palign": 0
+    },
+    {
+     "word": "sat ",
+     "success": true,
+     "startS": 116.352,
+     "endS": 116.482,
+     "palign": 0
+    },
+    {
+     "word": "beside ",
+     "success": true,
+     "startS": 116.53183,
+     "endS": 116.781,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 116.861,
+     "endS": 117.112,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 117.1675,
+     "endS": 117.223,
+     "palign": 0
+    },
+    {
+     "word": "Magic ",
+     "success": true,
+     "startS": 117.2822,
+     "endS": 117.519,
+     "palign": 0
+    },
+    {
+     "word": "Flute ",
+     "success": true,
+     "startS": 117.5725,
+     "endS": 117.707,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 117.74233,
+     "endS": 117.813,
+     "palign": 0
+    },
+    {
+     "word": "shouted \"",
+     "success": true,
+     "startS": 117.8562,
+     "endS": 118.21675,
+     "palign": 0
+    },
+    {
+     "word": "Bravo!\" ",
+     "success": true,
+     "startS": 118.2705,
+     "endS": 118.67267,
+     "palign": 0
+    },
+    {
+     "word": "loud\n",
+     "success": true,
+     "startS": 118.726,
+     "endS": 119.073,
+     "palign": 0
+    },
+    {
+     "word": "Walked ",
+     "success": true,
+     "startS": 119.1195,
+     "endS": 119.352,
+     "palign": 0
+    },
+    {
+     "word": "behind ",
+     "success": true,
+     "startS": 119.395,
+     "endS": 119.61,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 119.643,
+     "endS": 119.742,
+     "palign": 0
+    },
+    {
+     "word": "coffin ",
+     "success": true,
+     "startS": 119.8065,
+     "endS": 120.069,
+     "palign": 0
+    },
+    {
+     "word": "when ",
+     "success": true,
+     "startS": 120.10275,
+     "endS": 120.204,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 120.26967,
+     "endS": 120.401,
+     "palign": 0
+    },
+    {
+     "word": "vanished ",
+     "success": true,
+     "startS": 120.4385,
+     "endS": 120.701,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 120.7505,
+     "endS": 120.899,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 120.92367,
+     "endS": 120.973,
+     "palign": 0
+    },
+    {
+     "word": "crowd\n",
+     "success": true,
+     "startS": 121.053,
+     "endS": 121.385,
+     "palign": 0
+    },
+    {
+     "word": "Call ",
+     "success": true,
+     "startS": 121.41925,
+     "endS": 121.522,
+     "palign": 0
+    },
+    {
+     "word": "me ",
+     "success": true,
+     "startS": 121.608,
+     "endS": 121.71,
+     "palign": 0
+    },
+    {
+     "word": "mediocre? ",
+     "success": true,
+     "startS": 121.78775,
+     "endS": 122.43175,
+     "palign": 0
+    },
+    {
+     "word": "Ask ",
+     "success": true,
+     "startS": 122.4865,
+     "endS": 122.596,
+     "palign": 0
+    },
+    {
+     "word": "Beethoven, ",
+     "success": true,
+     "startS": 122.676,
+     "endS": 123.22875,
+     "palign": 0
+    },
+    {
+     "word": "Schubert, ",
+     "success": true,
+     "startS": 123.2435,
+     "endS": 123.671,
+     "palign": 0
+    },
+    {
+     "word": "Liszt\n",
+     "success": true,
+     "startS": 123.735,
+     "endS": 124.177,
+     "palign": 0
+    },
+    {
+     "word": "Taught ",
+     "success": true,
+     "startS": 124.21133,
+     "endS": 124.383,
+     "palign": 0
+    },
+    {
+     "word": "them ",
+     "success": true,
+     "startS": 124.405,
+     "endS": 124.471,
+     "palign": 0
+    },
+    {
+     "word": "free ",
+     "success": true,
+     "startS": 124.53175,
+     "endS": 124.714,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 124.7755,
+     "endS": 124.837,
+     "palign": 0
+    },
+    {
+     "word": "charge ",
+     "success": true,
+     "startS": 124.8785,
+     "endS": 125.086,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 125.13933,
+     "endS": 125.246,
+     "palign": 0
+    },
+    {
+     "word": "put ",
+     "success": true,
+     "startS": 125.27733,
+     "endS": 125.34,
+     "palign": 0
+    },
+    {
+     "word": "those ",
+     "success": true,
+     "startS": 125.3676,
+     "endS": 125.478,
+     "palign": 0
+    },
+    {
+     "word": "legends ",
+     "success": true,
+     "startS": 125.52943,
+     "endS": 125.838,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 125.902,
+     "endS": 125.966,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 126.006,
+     "endS": 126.086,
+     "palign": 0
+    },
+    {
+     "word": "list\n",
+     "success": true,
+     "startS": 126.14,
+     "endS": 126.302,
+     "palign": 0
+    },
+    {
+     "word": "And ",
+     "success": true,
+     "startS": 126.33767,
+     "endS": 126.409,
+     "palign": 0
+    },
+    {
+     "word": "when ",
+     "success": true,
+     "startS": 126.45125,
+     "endS": 126.578,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 126.63475,
+     "endS": 126.805,
+     "palign": 0
+    },
+    {
+     "word": "Requiem ",
+     "success": true,
+     "startS": 126.86075,
+     "endS": 127.165,
+     "palign": 0
+    },
+    {
+     "word": "stopped ",
+     "success": true,
+     "startS": 127.198,
+     "endS": 127.396,
+     "palign": 0
+    },
+    {
+     "word": "cold ",
+     "success": true,
+     "startS": 127.476,
+     "endS": 127.856,
+     "palign": 0
+    },
+    {
+     "word": "before ",
+     "success": true,
+     "startS": 127.91133,
+     "endS": 128.188,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 128.235,
+     "endS": 128.329,
+     "palign": 0
+    },
+    {
+     "word": "ink ",
+     "success": true,
+     "startS": 128.385,
+     "endS": 128.497,
+     "palign": 0
+    },
+    {
+     "word": "had ",
+     "success": true,
+     "startS": 128.52767,
+     "endS": 128.589,
+     "palign": 0
+    },
+    {
+     "word": "dried\n",
+     "success": true,
+     "startS": 128.642,
+     "endS": 128.877,
+     "palign": 0
+    },
+    {
+     "word": "Your ",
+     "success": true,
+     "startS": 128.9065,
+     "endS": 128.995,
+     "palign": 0
+    },
+    {
+     "word": "widow ",
+     "success": true,
+     "startS": 129.04633,
+     "endS": 129.291,
+     "palign": 0
+    },
+    {
+     "word": "brought ",
+     "success": true,
+     "startS": 129.31514,
+     "endS": 129.46,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 129.5055,
+     "endS": 129.642,
+     "palign": 0
+    },
+    {
+     "word": "own ",
+     "success": true,
+     "startS": 129.70167,
+     "endS": 129.821,
+     "palign": 0
+    },
+    {
+     "word": "son ",
+     "success": true,
+     "startS": 129.93833,
+     "endS": 130.193,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 130.267,
+     "endS": 130.341,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 130.4125,
+     "endS": 130.484,
+     "palign": 0
+    },
+    {
+     "word": "door ",
+     "success": true,
+     "startS": 130.5355,
+     "endS": 130.69,
+     "palign": 0
+    },
+    {
+     "word": "after ",
+     "success": true,
+     "startS": 130.7576,
+     "endS": 131.028,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 131.028,
+     "endS": 131.21,
+     "palign": 0
+    },
+    {
+     "word": "died\n\n",
+     "success": true,
+     "startS": 131.29,
+     "endS": 131.59057,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: crowd chanting]\nBRAVO! ",
+     "success": true,
+     "startS": 131.59914,
+     "endS": 132.8425,
+     "palign": 0
+    },
+    {
+     "word": "BRAVO!\n\n",
+     "success": true,
+     "startS": 132.905,
+     "endS": 134.09655,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: crowd chanting]\nBRAVO! ",
+     "success": true,
+     "startS": 134.10683,
+     "endS": 136.80325,
+     "palign": 0
+    },
+    {
+     "word": "BRAVO!\n\n[",
+     "success": true,
+     "startS": 136.9545,
+     "endS": 138.30017,
+     "palign": 0
+    },
+    {
+     "word": "End]\n\n\n",
+     "success": true,
+     "startS": 138.322,
+     "endS": 138.453,
+     "palign": 0
+    }
+   ]
+  }
+ ]
+}

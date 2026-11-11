@@ -1,0 +1,102 @@
+[
+ {
+  "id": "A01",
+  "kind": "rap",
+  "who": "a",
+  "line": 1,
+  "move": "FULL",
+  "text": "Writing music at age five while you were learning scales",
+  "audio": [
+   0.27,
+   2.859
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "spreading all five fingers of his free left hand proudly, then fluttering them like rapid piano keys",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A02",
+  "kind": "rap",
+  "who": "a",
+  "line": 2,
+  "move": "FULL",
+  "text": "Played blindfold for the Empress — boy, the prodigy prevails",
+  "audio": [
+   2.801,
+   5.316
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "sweeping his free left palm briefly across his eyes like a blindfold, then grinning straight at the lens",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A03",
+  "kind": "rap",
+  "who": "a",
+  "line": 3,
+  "move": "FULL",
+  "text": "The Vatican hid Allegri's chant behind a locked-up door",
+  "audio": [
+   5.273,
+   7.801
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "miming turning a heavy key in front of his chest with his free left hand, eyebrows raised playfully",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A04",
+  "kind": "rap",
+  "who": "a",
+  "line": 4,
+  "move": "FULL",
+  "text": "Fourteen years old, I heard it once and memorized the score",
+  "audio": [
+   7.762,
+   10.287
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "tapping his temple sharply with one left index finger, then scribbling across the air effortlessly",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera with a subtle natural sway starts on a vertical chest-up shot at eye level and gently creeps closer to a head-and-shoulders close-up at T2.2 shallow depth of field, his face and lips large in the upper half of the tall 9:16 frame from the first frame. He stands alone on top of the raised stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

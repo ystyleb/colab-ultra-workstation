@@ -60,7 +60,7 @@ def fx_chain(fx, t_from, src, dst):
     return ";".join(parts)
 
 
-def live_cam(live, seed, dur, push, whip_in, whip_out):
+def live_cam(live, seed, dur, push, whip_in, whip_out, film_mode=False):
     """Per-shot virtual camera operator (work/live.json): handheld sway + slow push/pull + whip pans.
     Sway is a sum of low-frequency sines (breathing / weight shifts, ~0.2-1.7 Hz), not jitter; each shot gets its own
     phases so consecutive shots don't move identically. Returns a filter fragment working on a WxH stream."""
@@ -68,9 +68,17 @@ def live_cam(live, seed, dur, push, whip_in, whip_out):
     import random
     r = random.Random(seed)
     px, drift, wd = live.get("handheld_px", 10), live.get("drift", 0.04), live.get("whip_secs", 0.12)
-    m = 1.0 + live.get("margin", 0.06)
+    if film_mode:
+        # Avoid 2-pixel quantized scaling shimmer & resolution loss when H3 clips already carry real camera motion
+        if not whip_in and not whip_out:
+            return ""
+        px, drift, m = 0.0, 0.0, 1.0
+    else:
+        m = 1.0 + live.get("margin", 0.06)
 
     def sway(amp):
+        if amp <= 0:
+            return "0"
         terms = []
         for f, a in ((0.23, 1.0), (0.61, 0.55), (1.7, 0.18)):
             terms.append("%.2f*sin(%.4f*t+%.3f)" % (amp * a, 2 * math.pi * f * r.uniform(0.8, 1.25), r.uniform(0, 6.283)))
@@ -90,7 +98,7 @@ def live_cam(live, seed, dur, push, whip_in, whip_out):
         wz.append("0.34*%s" % p)
     if wz:
         z += "+" + "+".join(wz)
-    s = ("scale=w='trunc(%d*(%s)/2)*2':h='trunc(%d*(%s)/2)*2':eval=frame,"
+    s = ("scale=w='trunc(%d*(%s)/2)*2':h='trunc(%d*(%s)/2)*2':eval=frame:flags=lanczos,"
          "crop=%d:%d:x='(iw-%d)/2+(%s)':y='(ih-%d)/2+(%s)'" % (W, z, H, z, W, H, W, dx, H, dy))
     for on, win in ((whip_out, "gte(t,%.3f)" % (dur - wd)), (whip_in, "lte(t,%.3f)" % wd)):
         if on:
@@ -119,12 +127,15 @@ def main():
     ap.add_argument("--to", dest="t1", type=float, default=None)
     ap.add_argument("--out", default="preview/草稿.mp4")
     ap.add_argument("--size", default=None, help="WxH output, e.g. 768x1344 for 9:16 Shorts (default 1344x768)")
+    ap.add_argument("--film", action="store_true", help="Clean lossless master for film optical grading in package.py (no 768p noise, no gamma crush, no digital crop wobble)")
     a = ap.parse_args()
     global W, H
     if a.size:
         W, H = (int(v) for v in a.size.lower().split("x"))
     ep = a.ep
     work = os.path.join(ep, "work")
+    ep_cfg_p = os.path.join(ep, "episode.json")
+    ep_cfg = jload(ep_cfg_p) if os.path.exists(ep_cfg_p) else {}
     edl = jload(os.path.join(work, "edl.json"))
     clips = {c["id"]: c for c in jload(os.path.join(work, "clips.json"))}
     picks = jload(os.path.join(work, "picks.json")) if os.path.exists(os.path.join(work, "picks.json")) else {}
@@ -132,6 +143,7 @@ def main():
     t_end = a.t1 if a.t1 is not None else edl[-1]["t1"]
     live_p = os.path.join(work, "live.json")
     live = jload(live_p) if os.path.exists(live_p) else None
+    film_mode = bool(a.film or ep_cfg.get("film_look") or (live and live.get("film_look")))
 
     def subject(x):
         c = clips.get(x["clip"].split("@")[0], {})
@@ -165,7 +177,8 @@ def main():
         # clips that already carry a real camera move ask for less virtual sway / drift (clip keys "sway", "drift")
         c = clips.get(x["clip"].split("@")[0], {})
         lv = dict(live, handheld_px=live.get("handheld_px", 10) * c.get("sway", 1.0), drift=c.get("drift", live.get("drift", 0.04)))
-        return "," + live_cam(lv, x["clip"] + str(i), dur, subj[i] != "react", w_in, w_out)
+        frag = live_cam(lv, x["clip"] + str(i), dur, subj[i] != "react", w_in, w_out, film_mode=film_mode)
+        return ("," + frag) if frag else ""
     inputs, filters, report, n = [], [], [], 0
     for i, x in enumerate(edl):
         st, en = max(x["t0"], a.t0), min(x["t1"], t_end)
@@ -206,14 +219,17 @@ def main():
     inputs += ["-ss", "%.3f" % a.t0, "-t", "%.3f" % (t_end - a.t0), "-i", os.path.join(work, "music_final.wav")]
     fc = ";".join(filters) + ";" + "".join("[v%d]" % i for i in range(n)) + "concat=n=%d:v=1:a=0[cat]" % n
     fx_p = os.path.join(work, "fx.json")
-    fc += ";" + fx_chain(jload(fx_p) if os.path.exists(fx_p) else [], a.t0, "cat", "fxo" if live else "v")
-    if live:
+    apply_live_grade = bool(live and not film_mode)
+    fc += ";" + fx_chain(jload(fx_p) if os.path.exists(fx_p) else [], a.t0, "cat", "fxo" if apply_live_grade else "v")
+    if apply_live_grade:
         grid = jload(os.path.join(work, "grid.json"))
         fc += ";[fxo]" + live_grade(live, a.t0, grid["beat0"], 60.0 / grid["bpm"]) + "[v]"
     out = os.path.join(ep, a.out)
     os.makedirs(os.path.dirname(out), exist_ok=True)
+    crf = "13" if film_mode else "20"
+    preset = "veryfast" if film_mode else "fast"
     subprocess.run(["ffmpeg", "-y", "-v", "error"] + inputs + ["-filter_complex", fc, "-map", "[v]", "-map", "%d:a" % n,
-                    "-c:v", "libx264", "-crf", "20", "-preset", "fast", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
+                    "-c:v", "libx264", "-crf", crf, "-preset", preset, "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k",
                     "-shortest", out], check=True)
     if a.out == "preview/草稿.mp4":
         import shutil

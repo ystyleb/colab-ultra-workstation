@@ -1,0 +1,13 @@
+{
+ "handheld_px": 10,
+ "drift": 0.04,
+ "margin": 0.06,
+ "whip": true,
+ "whip_secs": 0.12,
+ "contrast": 1.03,
+ "saturation": 1.0,
+ "beat_pulse": 0.02,
+ "grain": 4,
+ "vignette": 0,
+ "cool": false
+}

@@ -4,6 +4,7 @@
 > 节奏：**每周 2 集长视频 + 每集 3 条竖版 Shorts**，频道 YouTube **@makeitrap**（英文）。
 > 各环节「为什么这样做」和踩坑细节见 [经验沉淀_完整版样片.md](经验沉淀_完整版样片.md)，频道运营与文案模板见 [channel/频道方案.md](channel/频道方案.md)。
 > **2026-11-10 起有第二种拍法**（手持麦 + 真实运镜 + 一条口型镜头跨多句 + 句中切反应），第 4～7 节的分镜和出片方式不同，见 [经验沉淀_运镜拍法.md](经验沉淀_运镜拍法.md) 第 4、8 节，模板是 `episodes/edison-vs-tesla-remake/build_storyboard.py`。
+> **2026-11-11 起升级为 Realism V3 电影级实拍标准管线（不加 2.7K 超分，单集仍保持 ~12–16 CCU）**：参考图执行 `python3 scripts/film_optics.py episodes/<ep>` 预置 3200K 暖血色肌肤 + `r=16` 沸腾人群剪影与烛台光学散景；云端开启 `--steps 12 --runner-args "--fit --lock-strength 1.0 --mic handheld --realism-v2"`（调用 `Singularity v1.3` 去油光底模，**默认不加 `--tessera-2k`**，省去 2.7K 约 5 倍额外算力开销）；本地使用 `assemble.py --film` + `package.py --film --1080p` 单通直出 Kodak Vision3 500T + Pro-Mist 1/8 + `c0s=3` 细银盐颗粒 1080p 成片。根因诊断、三轮盲测参数边界与复用模板见 [经验沉淀_电影实拍质感升级.md](经验沉淀_电影实拍质感升级.md)。
 
 ---
 
@@ -39,7 +40,7 @@
    - `lyrics` + `notes`：两回合，每人每回合 8 句，每句一小节；每句配史实注释，传说和单方说法要标明
    - `structure`：intro → A1-8 → crowd → B1-8 → crowd → A9-16 → crowd → B9-16 → outro
    - 英文频道固定：`"show_notes": false`、`"disclaimer": "AI-GENERATED · FOR ENTERTAINMENT"`、`"end_question": "NEXT BATTLE|WHO DO YOU WANT TO SEE?"`、`"name_card_lines": 1`
-   - 每集的场景风格（第 2 集起）：`suno_style`（曲风/配器）、`light_en`（光线）、`arena_sound_en`、`crowd_motion_en`（台下观众怎么跟着音乐动）。不写就用第 1 集的默认值
+   - 每集的场景风格（第 2 集起）：`suno_style`（曲风/配器）、`light_en`（光线）、`arena_sound_en`、`crowd_motion_en`（台下观众怎么跟着音乐动）。**第 4 集起固定开启电影实拍质感**：设 `"film_look": true`、`"mic_en": "vintage chrome handheld microphone with a round mesh head"`，`light_en` 用「`3200K` 暖钨丝伦勃朗侧主光 + `5600K` 冷银顶逆发丝轮廓光 + `2700K` 暖烛台背景散景」双色温模板（直接从 [经验沉淀_电影实拍质感升级.md](经验沉淀_电影实拍质感升级.md) 第 3.3 节复制；避免单色冷光导致脸部青灰，或平光导致塑料感）
    - **两人固定站位**：A 永远在左、B 永远在右，`venue_en` 里左边只放 A 的元素、右边只放 B 的元素
    - **道具名就是提示词**：避开会把模型带偏的词（「laurel-leaf crown」被画成镶宝石王冠，改成「laurel wreath」才对）
 3. `line_actions.json`：32 句每句一个手势/动作（英文短语）。
@@ -64,6 +65,7 @@ python3 scripts/kie_suno.py episodes/<ep> --reuse  # 只重算双声线 / lines.
 - 人像直接生成 1024 见方的**单张无麦无道具**胸像，存成 `work/a_face_clean.png` / `b_face_clean.png`（也复制一份到 `refs/a_face.png`）。第 1 集是 2×2 四宫格裁出 512 小图放大，画质差
 - `refs/venue.png`（擂台全景，左边是 A 的元素、右边是 B 的）、`crowd.png`、`dj.png`，都是 1344×768
 - 统一背景：从 `venue.png` 左右各裁一块 768×768，作为 `work/stage_a.png` / `stage_b.png`
+- **Realism V3 光学预处理（必跑，0 CCU）**：`python3 scripts/film_optics.py episodes/<ep>`（自动备份原图至 `*_raw_orig.png`，将人像规整为 3200K 暖血色电影色域，并将 `stage_a/b.png` 转为 `r=16` T2.2 沸腾观众剪影 + 暖烛台圆盘散景，彻底消除背景 10px 清晰小假人）
 - `work/*.png` 被 gitignore，提交时要用 `git add -f`
 
 ## 4. 分镜（`episodes/<ep>/build_storyboard*.py`）
@@ -92,8 +94,8 @@ python3 scripts/kie_suno.py episodes/<ep> --reuse  # 只重算双声线 / lines.
 ## 5. 小样（必做）
 
 ```bash
-python3 run_rap_battle_remote.py episodes/<ep> --ids A01 B03 WIDE_OPEN \
-  --runner-args "--fit --lock-strength 1.0 --mic stand --static-cam --tag s1" --no-post
+python3 run_rap_battle_remote.py episodes/<ep> --ids A01 B03 WIDE_OPEN --steps 12 \
+  --runner-args "--fit --lock-strength 1.0 --mic handheld --realism-v2 --tag s1" --no-post
 ```
 
 - 挑一个口型近景、一个远景、一个大全景；新写法（新机位、新背景）一定先做小样
@@ -102,8 +104,9 @@ python3 run_rap_battle_remote.py episodes/<ep> --ids A01 B03 WIDE_OPEN \
 ## 6. 批量出片
 
 ```bash
-python3 run_rap_battle_remote.py episodes/<ep> \
-  --runner-args "--fit --lock-strength 1.0 --mic stand --static-cam" --no-post
+# Realism V3 标准生产模式（Singularity v1.3 12步，不加 --tessera-2k，高性价比直出）
+python3 run_rap_battle_remote.py episodes/<ep> --steps 12 \
+  --runner-args "--fit --lock-strength 1.0 --mic handheld --realism-v2" --no-post
 ```
 
 - 只渲染 `picks.json` 里没有的镜头；重抽某几个镜头：先从 `picks.json` 删掉，旧片段备份到 `clips_vN/`
@@ -124,12 +127,10 @@ python3 run_rap_battle_remote.py episodes/<ep> \
 ## 8. 合成 + 打包
 
 ```bash
-python3 scripts/assemble.py episodes/<ep>              # → preview/草稿.mp4
-python3 scripts/package.py episodes/<ep>               # → final/<title>_成片.mp4（字幕、铭牌、片头片尾）
-python3 scripts/package.py episodes/<ep> --phone       # → 手机预览版
-# 1080p 上传版（H3 原生 1344×768）
-ffmpeg -i final/<title>_成片.mp4 -vf "scale=1920:1097:flags=lanczos,crop=1920:1080:0:8,unsharp=5:5:0.35:5:5:0,setsar=1" \
-  -c:v libx264 -preset slow -crf 17 -maxrate 20M -bufsize 40M -pix_fmt yuv420p -movflags +faststart -c:a copy final/<title>_1080p_上传版.mp4
+# Realism V3 电影级单通 1080p 直出（消除多重锐化白边、死黑与彩噪，0 CCU）
+python3 scripts/assemble.py episodes/<ep> --film --out preview/草稿_胶片母带.mp4
+python3 scripts/package.py episodes/<ep> --src preview/草稿_胶片母带.mp4 --film --1080p --phone
+# 输出：final/<title>_1080p_胶片版.mp4（可直接上传 YouTube / B站）
 ```
 
 每 4 秒抽一帧拼图看全片；打开成片给用户验收。

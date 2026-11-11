@@ -1,0 +1,46 @@
+[
+ {
+  "who": "a",
+  "n": 1,
+  "text": "Writing music at age five while you were learning scales",
+  "start": 0.35,
+  "end": 2.859,
+  "bar": 35.354,
+  "heard": "Writing music at age five while you were learning scales",
+  "orig_start": 35.354,
+  "orig_bar": 35.354
+ },
+ {
+  "who": "a",
+  "n": 2,
+  "text": "Played blindfold for the Empress — boy, the prodigy prevails",
+  "start": 2.881,
+  "end": 5.316,
+  "bar": 37.885,
+  "heard": "Played blindfold for the Empress boy, the prodigy prevails",
+  "orig_start": 37.885,
+  "orig_bar": 37.885
+ },
+ {
+  "who": "a",
+  "n": 3,
+  "text": "The Vatican hid Allegri's chant behind a locked-up door",
+  "start": 5.353,
+  "end": 7.801,
+  "bar": 40.357,
+  "heard": "The Vatican hid Allegri's chant behind a locked-up door",
+  "orig_start": 40.357,
+  "orig_bar": 40.357
+ },
+ {
+  "who": "a",
+  "n": 4,
+  "text": "Fourteen years old, I heard it once and memorized the score",
+  "start": 7.842,
+  "end": 10.287,
+  "bar": 42.846,
+  "heard": "Fourteen years old, I heard it once and memorized the score",
+  "orig_start": 42.846,
+  "orig_bar": 42.846
+ }
+]

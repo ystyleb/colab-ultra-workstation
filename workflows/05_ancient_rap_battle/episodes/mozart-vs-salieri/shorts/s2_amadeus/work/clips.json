@@ -1,0 +1,102 @@
+[
+ {
+  "id": "A13",
+  "kind": "rap",
+  "who": "a",
+  "line": 13,
+  "move": "FULL",
+  "text": "Rumors in Vienna swore you slipped the poison in my cup",
+  "audio": [
+   0.27,
+   2.855
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "miming tipping a drop into an imaginary goblet with his left fingers, eyeing his rival sideways",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A14",
+  "kind": "rap",
+  "who": "a",
+  "line": 14,
+  "move": "FULL",
+  "text": "Even if that tale is fiction, envy tore your spirit up",
+  "audio": [
+   2.825,
+   5.289
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "pointing straight at his opponent's chest with a piercing, knowing glare",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A15",
+  "kind": "rap",
+  "who": "a",
+  "line": 15,
+  "move": "FULL",
+  "text": "Check every concert hall tonight from Tokyo to Rome",
+  "audio": [
+   5.259,
+   8.026
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "sweeping his free left arm in a wide arc across the entire candlelit opera house",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A16",
+  "kind": "rap",
+  "who": "a",
+  "line": 16,
+  "move": "FULL",
+  "text": "They only know your name because my movie brought it home",
+  "audio": [
+   7.995,
+   10.583
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "framing an imaginary movie screen in the air with his left hand and winking cockily at the camera",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera with a subtle natural sway starts on a vertical chest-up shot at eye level and gently creeps closer to a head-and-shoulders close-up at T2.2 shallow depth of field, his face and lips large in the upper half of the tall 9:16 frame from the first frame. He stands alone on top of the raised stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

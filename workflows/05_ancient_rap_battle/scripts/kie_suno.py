@@ -341,11 +341,11 @@ def pitch_shift_vocal(src_wav: str, semis: float, out_wav: str, role: str = "a")
         shutil.copy(src_wav, out_wav)
         return
     ratio = 2.0 ** (semis / 12.0)
-    if role == "a":
-        # Deep gritty baritone-bass warmth for Character A (Edison)
+    if semis < 0:
+        # Deep gritty baritone-bass warmth for lower-pitched vocal
         eq_chain = ",equalizer=f=210:t=q:w=1.1:g=3.2,equalizer=f=3200:t=q:w=1.4:g=-1.5"
     else:
-        # Crisp electric tenor presence for Character B (Tesla)
+        # Crisp bright tenor presence for higher-pitched vocal
         eq_chain = ",equalizer=f=190:t=q:w=1.2:g=-2.2,equalizer=f=3300:t=q:w=1.2:g=3.5"
     af = f"rubberband=pitch={ratio:.6f}:formant=shifted:pitchq=quality:transients=crisp{eq_chain}"
     subprocess.run(
@@ -358,6 +358,9 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("ep")
     ap.add_argument("--reuse", action="store_true", help="Reuse cached KIE Suno task in work/kie_suno.json if present")
+    ap.add_argument("--track", type=int, choices=[1, 2], default=None, help="Force selecting track 1 (v1) or 2 (v2)")
+    ap.add_argument("--intro-keep", default=None, help="Seconds before A01 to keep, or 'full' to start from 0.00s")
+    ap.add_argument("--outro-keep", type=float, default=None, help="Seconds after B's last line to keep (default 4.6)")
     args = ap.parse_args()
 
     ep = args.ep
@@ -426,7 +429,9 @@ def main():
     # tie-break: vocal span closest to one bar per line (+ one bar per crowd section); legacy 8 lines ~ 24 s
     n_crowd = sum(1 for sec in e.get("structure", []) if sec.get("type") == "crowd") if e.get("structure") else 1
     expected_span = 24.0 if not e.get("structure") else (len(sung_order(e)) + n_crowd) * bar
+    forced_track = args.track or e.get("suno_track")
     best_pick = None
+    forced_pick = None
     for idx, tr in enumerate(tracks):
         matched, avg_sc, clean_ws = match_lines_to_words(tr.get("alignedWords", []), e, bar)
         span = matched[-1]["orig_end"] - matched[0]["orig_start"] if matched else 999.0
@@ -434,24 +439,31 @@ def main():
         for m in matched:
             print(f"   {m['who'].upper()}{m['n']:02d} [{m['orig_start']:5.2f}s - {m['orig_end']:5.2f}s] (sc={m['score']:.2f}) heard: '{m['heard']}'")
         cand = (avg_sc, -abs(span - expected_span), idx, tr, matched, clean_ws)
+        if forced_track and (idx + 1) == int(forced_track):
+            forced_pick = cand
         if best_pick is None or cand[:2] > best_pick[:2]:
             best_pick = cand
 
-    _, _, best_idx, best_tr, matched, clean_ws = best_pick
-    print(f"\n🏆 Selected Track v{best_idx + 1} (audioId={best_tr['id']})")
+    _, _, best_idx, best_tr, matched, clean_ws = forced_pick or best_pick
+    print(f"\n🏆 Selected Track v{best_idx + 1} (audioId={best_tr['id']})" + (" [forced]" if forced_pick else ""))
     src_mp3 = best_tr["local_mp3"]
     shutil.copy(src_mp3, os.path.join(ep, "song.mp3"))
 
-    # Trim intro so A1 starts at ~2.53s (1 bar intro), and outro ends ~4.5s after B's last line
-    intro_keep = bar  # 2.526s before A1
-    outro_keep = 4.6  # 4.6s after B4 ends for END shot + crowd chant
+    # Trim intro (default: 1 bar ~2.53s before A1, or "full" / custom seconds) and outro (~4.6s default)
+    ik_cfg = args.intro_keep if args.intro_keep is not None else e.get("intro_keep")
+    outro_keep = float(args.outro_keep if args.outro_keep is not None else e.get("outro_keep", 4.6))
     a1_orig = matched[0]["orig_start"]
     b_last_orig = matched[-1]["orig_end"]
     probe_dur = float(subprocess.check_output([
         "ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", src_mp3
     ]).decode().strip())
 
-    trim_start = max(0.0, a1_orig - intro_keep)
+    if str(ik_cfg).lower() == "full":
+        trim_start = 0.0
+    elif ik_cfg is not None:
+        trim_start = max(0.0, a1_orig - float(ik_cfg))
+    else:
+        trim_start = max(0.0, a1_orig - bar)
     trim_end = min(probe_dur, b_last_orig + outro_keep)
     final_dur = round(trim_end - trim_start, 3)
     print(f"✂️ Trimming song [{trim_start:.2f}s .. {trim_end:.2f}s] -> {final_dur:.2f}s total")

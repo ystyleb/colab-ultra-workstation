@@ -1,0 +1,46 @@
+[
+ {
+  "who": "a",
+  "n": 13,
+  "text": "Rumors in Vienna swore you slipped the poison in my cup",
+  "start": 0.35,
+  "end": 2.855,
+  "bar": 98.612,
+  "heard": "Rumors in Vienna swore you slipped the poison in my cup",
+  "orig_start": 98.612,
+  "orig_bar": 98.612
+ },
+ {
+  "who": "a",
+  "n": 14,
+  "text": "Even if that tale is fiction, envy tore your spirit up",
+  "start": 2.905,
+  "end": 5.289,
+  "bar": 101.167,
+  "heard": "Even if that tale is fiction, envy tore your spirit up",
+  "orig_start": 101.167,
+  "orig_bar": 101.167
+ },
+ {
+  "who": "a",
+  "n": 15,
+  "text": "Check every concert hall tonight from Tokyo to Rome",
+  "start": 5.339,
+  "end": 8.026,
+  "bar": 103.601,
+  "heard": "Check every concert hall tonight from Tokyo to Rome",
+  "orig_start": 103.601,
+  "orig_bar": 103.601
+ },
+ {
+  "who": "a",
+  "n": 16,
+  "text": "They only know your name because my movie brought it home",
+  "start": 8.075,
+  "end": 10.583,
+  "bar": 106.337,
+  "heard": "They only know your name because my movie brought it home",
+  "orig_start": 106.337,
+  "orig_bar": 106.337
+ }
+]

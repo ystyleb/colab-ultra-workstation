@@ -31,9 +31,8 @@ if _uv_py.exists() and str(sys.executable) != str(_uv_py):
 ROOT_DIR = Path(__file__).resolve().parents[2]
 WF_DIR = Path(__file__).resolve().parent
 COLAB_BIN = str(Path.home() / ".local" / "bin" / "colab")
-# Unique per run: another local agent once ran its own job on our live "rap-g4" instance and stopped it by name
-# mid-batch (2026-11-09). A fresh name per run means nobody can borrow or stop it by remembering the name.
-SESSION_NAME = os.environ.get("RAP_G4_SESSION") or "rap-g4-" + time.strftime("%m%d-%H%M%S")
+# Unique per run (including PID so parallel workers launched in the same second never collide).
+SESSION_NAME = os.environ.get("RAP_G4_SESSION") or f"rap-g4-{time.strftime('%m%d-%H%M%S')}-{os.getpid() % 10000:04d}"
 
 
 def run_local(cmd: list, check: bool = True) -> subprocess.CompletedProcess:
@@ -251,7 +250,16 @@ def pull_clips_from_drive(ep_dir: Path, title: str) -> int:
 
     for jf in gdrive_list(f"'{ep_id}' in parents and trashed = false"):
         if jf["name"] in ("picks.json", "shifts.json"):
-            gdrive_download(jf["id"], ep_dir / "work" / jf["name"], timeout=60)
+            dst_j = ep_dir / "work" / jf["name"]
+            tmp_j = ep_dir / "work" / f".{jf['name']}.{os.getpid()}.tmp"
+            gdrive_download(jf["id"], tmp_j, timeout=60)
+            try:
+                remote_d = json.loads(tmp_j.read_text(encoding="utf-8"))
+                local_d = json.loads(dst_j.read_text(encoding="utf-8")) if dst_j.exists() else {}
+                merged = {**local_d, **remote_d}
+                dst_j.write_text(json.dumps(merged, indent=2, ensure_ascii=False), encoding="utf-8")
+            finally:
+                tmp_j.unlink(missing_ok=True)
 
     clip_folders = gdrive_list(f"'{ep_id}' in parents and name = 'clips' and mimeType = 'application/vnd.google-apps.folder' and trashed = false")
     if not clip_folders:
@@ -279,23 +287,39 @@ def pull_clips_from_drive(ep_dir: Path, title: str) -> int:
         gdrive_download(fmeta["id"], dst, timeout=120)
         count += 1
         print(f"   ⬇️ Pulled {dst.name} ({dst.stat().st_size / 1048576:.2f} MB)", flush=True)
+
+    # Parallel-worker safeguard: ensure every pulled <cid>_t1.mp4 is registered in local picks.json
+    picks_f = ep_dir / "work" / "picks.json"
+    picks_d = json.loads(picks_f.read_text(encoding="utf-8")) if picks_f.exists() else {}
+    changed = False
+    for mp4 in sorted(local_clips.glob("*_t1.mp4")):
+        cid = mp4.name[:-7]
+        if cid and cid not in picks_d:
+            picks_d[cid] = 1
+            changed = True
+    if changed:
+        picks_f.write_text(json.dumps(picks_d, indent=2, ensure_ascii=False), encoding="utf-8")
     return count
 
 
 def main():
+    global SESSION_NAME
     ap = argparse.ArgumentParser()
     ap.add_argument("ep", nargs="+", help="Path(s) to episode directory")
     ap.add_argument("--steps", type=int, default=8)
     ap.add_argument("--ids", nargs="*", default=None)
+    ap.add_argument("--session", default=None, help="Explicit Colab G4 session name (for parallel workers)")
     ap.add_argument("--runner-args", default="", help="Extra args for h3_colab_runner.py, e.g. \"--fit --lock-strength 1.0 --tag lock\"")
     ap.add_argument("--no-post", action="store_true", help="Only pull clips; skip assemble/package/cover (sample runs)")
     args = ap.parse_args()
+    if args.session:
+        SESSION_NAME = args.session
     runner_extra = shlex.split(args.runner_args)
 
     ep_dirs = [Path(p).resolve() for p in args.ep]
     titles = [json.loads((d / "episode.json").read_text(encoding="utf-8"))["title"] for d in ep_dirs]
 
-    bundle_tar = Path("/tmp/rap_episode_bundle.tar.gz")
+    bundle_tar = Path(f"/tmp/rap_episode_bundle_{SESSION_NAME}.tar.gz")
     with tarfile.open(bundle_tar, "w:gz") as tar:
         for idx, d in enumerate(ep_dirs):
             prefix = f"episode_{idx}"
@@ -410,6 +434,7 @@ print("DRIVE_SYNC_OK")
 """
         colab_exec_py(SESSION_NAME, flush_py, timeout_s=30, check=False)
     finally:
+        bundle_tar.unlink(missing_ok=True)
         delete_drive_file(bundle_file_id)
         print("\n🛑 [Step 4/4] Immediately stopping Colab G4 instance to stop CCU burn...", flush=True)
         subprocess.run([COLAB_BIN, "stop", "-s", SESSION_NAME], check=False)
@@ -424,10 +449,20 @@ print("DRIVE_SYNC_OK")
         return
     local_py = shutil.which("python3") or "/opt/homebrew/bin/python3"
     for ep_dir, title in zip(ep_dirs, titles):
-        run_local([local_py, str(WF_DIR / "scripts" / "assemble.py"), str(ep_dir)])
-        run_local([local_py, str(WF_DIR / "scripts" / "package.py"), str(ep_dir), "--phone"])
-        run_local([local_py, str(WF_DIR / "scripts" / "cover.py"), str(ep_dir), "--frame", str(ep_dir / "cover" / "faceoff_frame.png"), "--no-mirror"])
-        print(f"\n🎉 Done! Final packaged video: {ep_dir / 'final' / (title + '_成片.mp4')}", flush=True)
+        ep_cfg = json.loads((ep_dir / "episode.json").read_text(encoding="utf-8"))
+        use_film = bool(ep_cfg.get("film_look") or "--realism-v2" in runner_extra)
+        if use_film:
+            run_local([local_py, str(WF_DIR / "scripts" / "assemble.py"), str(ep_dir), "--film", "--out", "preview/草稿_胶片母带.mp4"])
+            run_local([local_py, str(WF_DIR / "scripts" / "package.py"), str(ep_dir), "--src", "preview/草稿_胶片母带.mp4", "--film", "--1080p", "--phone"])
+            out_file = ep_dir / "final" / f"{title}_1080p_胶片版.mp4"
+        else:
+            run_local([local_py, str(WF_DIR / "scripts" / "assemble.py"), str(ep_dir)])
+            run_local([local_py, str(WF_DIR / "scripts" / "package.py"), str(ep_dir), "--phone"])
+            out_file = ep_dir / "final" / f"{title}_成片.mp4"
+        faceoff_png = ep_dir / "cover" / "faceoff_frame.png"
+        if faceoff_png.exists():
+            run_local([local_py, str(WF_DIR / "scripts" / "cover.py"), str(ep_dir), "--frame", str(faceoff_png), "--no-mirror"])
+        print(f"\n🎉 Done! Final packaged video: {out_file}", flush=True)
 
 
 if __name__ == "__main__":

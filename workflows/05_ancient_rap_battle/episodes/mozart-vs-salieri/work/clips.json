@@ -1,0 +1,831 @@
+[
+ {
+  "id": "A01",
+  "kind": "rap",
+  "who": "a",
+  "line": 1,
+  "move": "ENTER",
+  "text": "Writing music at age five while you were learning scales / Played blindfold for the Empress — boy, the prodigy prevails",
+  "audio": [
+   35.274,
+   40.32
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "spreading all five fingers of his free left hand proudly, then sweeping his palm briefly across his eyes like a playful blindfold",
+  "two_shot": false,
+  "cam": "The camera starts behind the audience at head height: the backs of powdered wigs, velvet shoulders and raised hands of the packed Viennese opera crowd fill the lower half of the frame with the spotlit round stage small in the distance, then the camera pushes in with large amplitude at slow speed, gliding forward between the raised arms and over the shoulders of the spectators until it reaches the edge of the stage and settles on a chest-up medium shot of <Subject 1>; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans",
+  "wide": true,
+  "image_keys": [
+   "a_face_clean"
+  ],
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "A03",
+  "kind": "rap",
+  "who": "a",
+  "line": 3,
+  "move": "PUSH",
+  "text": "The Vatican hid Allegri's chant behind a locked-up door / Fourteen years old, I heard it once and memorized the score",
+  "audio": [
+   40.277,
+   45.291
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "miming turning a heavy lock key with his free left hand, then tapping his temple sharply with one finger",
+  "two_shot": false,
+  "cam": "The camera starts on a waist-up medium shot of <Subject 1> in the crisp spotlight beam, then the camera pushes in with large amplitude at slow speed, travelling steadily toward him until it settles on a head-and-shoulders close-up at Cooke Panchro T2.2 shallow depth of field, his face and lips large and clearly readable whenever he faces the camera. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "A05",
+  "kind": "rap",
+  "who": "a",
+  "line": 5,
+  "move": "ARC",
+  "text": "Salzburg's Archbishop tried to keep a leash around my neck / Took a boot out to Vienna — put the whole empire in check",
+  "audio": [
+   45.261,
+   50.501
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "tugging an imaginary collar away from his neck with his free left hand, then sweeping his arm outward in defiance",
+  "two_shot": true,
+  "cam": "The camera starts on a chest-up medium shot of <Subject 1> from the front as he raps, then the camera trucks left and pans right with large amplitude at slow speed, moving in an arc shot around his left shoulder, until it ends as an over-the-shoulder shot from behind him: the back of <Subject 1>'s head and his left shoulder softly blurred in the left foreground, and <Subject 2> in sharp focus a few steps away on screen-right, facing the camera. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his mouth firmly closed, hands clasped in front of him, watching him in silence",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "A07",
+  "kind": "rap",
+  "who": "a",
+  "line": 7,
+  "move": "ECU",
+  "text": "Figaro, Don Giovanni — every melody's divine",
+  "audio": [
+   50.471,
+   52.895
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "conducting a soaring grace note in the air with his free left hand, grinning straight into the lens",
+  "two_shot": false,
+  "cam": "A handheld 28mm cinema lens is close to his face and slightly below chin height, looking up at him: a tight close-up where his face fills most of the 16:9 frame, the chrome mesh head of the microphone softly foreshortened at the bottom edge of the frame just below his lower lip (never crossing his lips); the camera pushes in with small amplitude at slow speed, warm 2700K candle chandelier bokeh orbs flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "lens": "28mm wide-angle"
+ },
+ {
+  "id": "A08",
+  "kind": "rap",
+  "who": "a",
+  "line": 8,
+  "move": "FACE",
+  "text": "\"Too many notes\"? Tell Joseph every single one is mine",
+  "audio": [
+   52.849,
+   55.667
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "counting rapid invisible notes in the air between their faces with his left fingers, then pointing firmly at his own chest",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-left in profile facing right, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-right in profile facing left; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "ENTER",
+  "text": "\"Every note is yours\"? Relax — I ran Vienna's stage / Thirty-six years Kapellmeister on the Emperor's front page",
+  "audio": [
+   57.898,
+   63.065
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "raising his free left palm calmly to silence the hall, then tapping the golden Imperial medallion on his chest",
+  "two_shot": false,
+  "cam": "The camera starts behind the audience at head height: the backs of powdered wigs, velvet shoulders and raised hands of the packed Viennese opera crowd fill the lower half of the frame with the spotlit round stage small in the distance, then the camera pushes in with large amplitude at slow speed, gliding forward between the raised arms and over the shoulders of the spectators until it reaches the edge of the stage and settles on a chest-up medium shot of <Subject 1>; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans",
+  "wide": true,
+  "image_keys": [
+   "b_face_clean"
+  ],
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "LONG",
+  "text": "Joseph put our operas head-to-head inside his palace hall / Seventeen eighty-six, Vienna crowned me winner over all",
+  "audio": [
+   63.035,
+   68.183
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "holding his free left hand level like a scale weighing two operas, then lifting one index finger high in triumph",
+  "two_shot": false,
+  "cam": "From the very first frame to the last, the camera holds a frontal head-and-shoulders close-up at eye level at Cooke Panchro 50mm T2.2, shot on a handheld 35mm cinema camera with a subtle natural sway, never a full-body or wide shot, his legs and the stage floor never in frame, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B05",
+  "kind": "rap",
+  "who": "b",
+  "line": 5,
+  "move": "WHIP",
+  "text": "Paris packed my opera house while you begged friends for loans / Blew your cash on billiards and silk coats you couldn't own",
+  "audio": [
+   68.153,
+   73.15
+  ],
+  "lead": 2.5,
+  "frames": 192,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "raw": true,
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "closeup_lora": 0.2,
+  "prompt": "subject_definitions:\n<Subject 1> is Antonio Salieri (commanding Italian court composer of about 38 in his prime with sleek dark chestnut-brown hair swept back with silvering temples (no white powder), sharp patrician nose, intense dark eyes, clean-shaven, deep midnight-navy velvet Imperial court coat heavily embroidered with gold trim, a golden court medallion on his chest over a burgundy brocade waistcoat and white cravat) from <Picture 1>, real human skin with matte pores and zero plastic sheen.\n<Subject 2> is Wolfgang Amadeus Mozart (spirited Austrian composer of about 30 in his prime with a neat compact white powdered 1780s queue wig tied back with a black silk ribbon, bright expressive eyes, youthful clean-shaven face, vivid scarlet-red velvet Viennese frock coat with intricate gold brocade trim over an ivory silk waistcoat and white lace jabot) from <Picture 2>, real human skin with matte pores.\n<Picture 3> is the candlelit opera house stage backdrop behind <Subject 1> in [Shot 1]: gilded Imperial podium, brass organ pipes, warm 2700K chandeliers and softly blurred cheering Viennese spectators below.\n<Audio 1> is the target rap vocal track for <Subject 1>, providing his exact vocal timbre (commanding aristocratic continental male rapper, deep resonant baritone voice, measured cutting boom-bap flow) and syllable-by-syllable rhythm during 00:02.500–00:07.497, followed by silence.\n\nsummary:\n[reference generation + audio reuse] Inside a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring 18th-century Viennese crowd bouncing on the pit floor below, <Subject 1> performs an energetic English battle-rap couplet synced syllable-by-syllable to <Audio 1>, holding the vintage chrome handheld microphone with a round mesh head just below his lower lip angled upward at 45 degrees near the bottom edge of the frame, across 2 shots, with <Subject 2> listening in silence, while the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial bone structure, hairstyle and court coat from <Picture 1> with authentic matte skin.\n<Subject 2> (appears in [Shot 2]): fully_preserved - Strictly preserve exact facial structure, white powdered wig and scarlet coat from <Picture 2>, keeping his mouth closed in silent listening throughout this clip.\nBackground (appears in [Shot 1]): reference - Keep the stage environment of <Picture 3> softly out of focus at Cooke Panchro T2.2 shallow depth of field behind <Subject 1> with warm 2700K chandelier bokeh orbs while the cheering crowd silhouettes bounce.\n<Audio 1>: fully_copy - Reused 1:1 as the target vocal track; while <Subject 1>'s face is on screen his lip movements, jaw openings and syllable articulation are synchronized directly to <Audio 1>; after the camera leaves him the same vocal continues uninterrupted from off screen.\n\ndetailed_description:\nr34l1sm, Facial Realism, authentic live-action 35mm concert documentary film shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 prime lens on Kodak Vision3 500T film, natural matte human skin texture with real pores, zero oily shine, authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Both shots are in the same candlelit Vienna opera house: gilded crimson boxes, crystal chandeliers, light smoke, cheering crowd silhouettes packed below the stage. [Shot 1] During 00:00.000–00:02.500, before he starts rapping, his mouth stays closed while the camera pushes in from a wide view of the stage and settles on him. Then, during 00:02.500–00:05.050, the camera holds a chest-up three-quarter medium close-up of <Subject 1> standing on the raised stage, on the right half of the frame, his face and lips large and readable, holding the vintage chrome handheld microphone with a round mesh head in his right hand an inch below his lower lip angled upward at 45 degrees (never occluding his lips), with <Picture 3> blurred into T2.2 bokeh behind him, rapping with intense brow and cheek articulation synced syllable-by-syllable to <Audio 1>, his free left palm held out mockingly toward screen-left; at the end of this shot the camera pans left with large amplitude at fast speed, a whip pan with heavy motion blur. [Shot 2] At 00:05.250, the whip pan lands on a new shot. During 00:05.250–00:07.497, the camera holds a tight chest-up medium close-up of <Subject 2> standing on the left side of the stage with warm 2700K fortepiano candlelight bokeh blurred behind him at T2.2, facing the camera, mouth firmly closed, jaw tight, his cocky smile fading into stung irritation while <Subject 1>'s voice continues from off screen. The lyric sung across the whole clip: <d>[English]Paris packed my opera house while you begged friends for loans Blew your cash on billiards and silk coats you couldn't own</d> No subtitles, no on-screen text.\n\noverall_soundscape:\nClear, punchy foreground rap vocal performance from <Subject 1> during 00:02.500–00:07.497 synced 1:1 to <Audio 1> in a packed candlelit Vienna opera house full of roaring aristocrats and musicians, continuous across the cut.\n\nnon_diegetic_music:\nN/A — <Audio 1> is directly reused 1:1 as the target vocal track."
+ },
+ {
+  "id": "B07",
+  "kind": "rap",
+  "who": "b",
+  "line": 7,
+  "move": "CRASH",
+  "text": "Crying in your letters that \"Salieri blocked my way\"",
+  "audio": [
+   73.12,
+   75.533
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "miming scribbling a frantic whining letter on his left palm, eyes blazing with aristocratic disdain",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and hair of <Subject 2> in the left foreground, <Subject 1> chest-up on the right facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from hairline to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "28mm wide-angle",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "B08",
+  "kind": "rap",
+  "who": "b",
+  "line": 8,
+  "move": "FACE",
+  "text": "Quit blaming court cabals when billiards burned up all your pay",
+  "audio": [
+   75.487,
+   78.257
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "flicking his free left fingers forward between their faces as if tossing away wasted gold coins",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "A09",
+  "kind": "rap",
+  "who": "a",
+  "line": 9,
+  "move": "ECU",
+  "text": "Bragging 'bout a palace vote? Nobody hums your tune",
+  "audio": [
+   88.326,
+   90.959
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "cupping his free left hand behind his ear mockingly as if listening for silence, smirking down into the lens",
+  "two_shot": false,
+  "cam": "A handheld 28mm cinema lens is close to his face and slightly below chin height, looking up at him: a tight close-up where his face fills most of the 16:9 frame, the chrome mesh head of the microphone softly foreshortened at the bottom edge of the frame just below his lower lip (never crossing his lips); the camera pushes in with small amplitude at slow speed, warm 2700K candle chandelier bokeh orbs flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "lens": "28mm wide-angle"
+ },
+ {
+  "id": "A10",
+  "kind": "rap",
+  "who": "a",
+  "line": 10,
+  "move": "REVEAL",
+  "text": "Forty operas gather dust beneath Vienna's quiet moon",
+  "audio": [
+   90.929,
+   93.489
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "blowing imaginary dust off his open left palm toward his opponent, stepping in close",
+  "two_shot": true,
+  "cam": "The camera starts on a chest-up three-quarter medium close-up of <Subject 1> alone on the left half of the frame, facing right as he raps, then the camera pans right with small amplitude at slow speed, revealing <Subject 2> standing in profile at the right edge of the frame, and settles into a profile two-shot of the two men face to face, <Subject 1>'s lips and jaw clearly readable in every frame. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> listens with his mouth firmly closed, a faint cold smile"
+ },
+ {
+  "id": "A11",
+  "kind": "rap",
+  "who": "a",
+  "line": 11,
+  "move": "FACE",
+  "text": "Over six hundred masterpieces — dead at thirty-five / Magic Flute to Night Music — every bar is still alive",
+  "audio": [
+   93.459,
+   98.562
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "sweeping his free left arm wide to show a mountain of scores, then snapping his fingers cleanly on the beat",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-left in profile facing right, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-right in profile facing left; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "A13",
+  "kind": "rap",
+  "who": "a",
+  "line": 13,
+  "move": "TQ",
+  "text": "Rumors in Vienna swore you slipped the poison in my cup",
+  "audio": [
+   98.532,
+   101.117
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "miming tipping a drop into an imaginary goblet with his free left fingers, eyeing his rival sideways",
+  "two_shot": false,
+  "cam": "The camera holds a chest-up three-quarter medium close-up of <Subject 1> on the left half of the frame, facing right, shot on a handheld 35mm cinema camera with a subtle natural sway, slowly arcing a few degrees around him at T2.2 shallow depth of field, his face and lips large and clearly readable in every frame. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ]
+ },
+ {
+  "id": "A14",
+  "kind": "rap",
+  "who": "a",
+  "line": 14,
+  "move": "CRASH",
+  "text": "Even if that tale is fiction, envy tore your spirit up",
+  "audio": [
+   101.087,
+   103.551
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing his free left index finger straight toward his rival's chest with a piercing glare",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and hair of <Subject 2> in the right foreground, <Subject 1> chest-up on the left facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from hairline to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "35mm",
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "A15",
+  "kind": "rap",
+  "who": "a",
+  "line": 15,
+  "move": "FACEWIDE",
+  "text": "Check every concert hall tonight from Tokyo to Rome",
+  "audio": [
+   103.521,
+   106.288
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "sweeping his free left arm in a wide arc across the entire candlelit opera house",
+  "two_shot": true,
+  "cam": "The camera holds a waist-up medium profile two-shot at eye level: <Subject 1> on screen-left facing right, leaning toward <Subject 2> and rapping at him, <Subject 2> on screen-right facing left standing his ground, the crisp silver overhead spotlight beam falling between the two men while warm 2700K chandelier bokeh glows behind them, <Subject 1>'s lips and jaw clearly readable in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his arms crossed and his mouth firmly closed"
+ },
+ {
+  "id": "A16",
+  "kind": "rap",
+  "who": "a",
+  "line": 16,
+  "move": "LONG",
+  "text": "They only know your name because my movie brought it home",
+  "audio": [
+   106.257,
+   108.845
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "framing an imaginary cinema screen in the air with his free left hand and winking cockily at the camera",
+  "two_shot": false,
+  "cam": "From the very first frame to the last, the camera holds a frontal head-and-shoulders close-up at eye level at Cooke Panchro 50mm T2.2, shot on a handheld 35mm cinema camera with a subtle natural sway, never a full-body or wide shot, his legs and the stage floor never in frame, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ]
+ },
+ {
+  "id": "B09",
+  "kind": "rap",
+  "who": "b",
+  "line": 9,
+  "move": "TQ",
+  "text": "\"Poison in your cup\"? That's Pushkin's fairy tale for fools",
+  "audio": [
+   111.174,
+   113.723
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "slicing his free left hand sharply sideways to dismiss the poison fairy tale once and for all",
+  "two_shot": false,
+  "cam": "The camera holds a chest-up three-quarter medium close-up of <Subject 1> on the right half of the frame, facing left, shot on a handheld 35mm cinema camera with a subtle natural sway, slowly arcing a few degrees around him at T2.2 shallow depth of field, his face and lips large and clearly readable in every frame. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B10",
+  "kind": "rap",
+  "who": "b",
+  "line": 10,
+  "move": "FACE",
+  "text": "A rich count bought your Requiem to cheat the credit rules",
+  "audio": [
+   113.693,
+   116.203
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing his free left hand accusingly up toward the gilded royal opera boxes while staring straight into Mozart's eyes",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B11",
+  "kind": "rap",
+  "who": "b",
+  "line": 11,
+  "move": "LONG",
+  "text": "I sat beside you at Magic Flute and shouted \"Bravo!\" loud / Walked behind your coffin when you vanished from the crowd",
+  "audio": [
+   116.173,
+   121.385
+  ],
+  "lead": 2.5,
+  "frames": 209,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "clapping his free left hand against his chest in proud applause, then lowering his hand slowly in solemn respect",
+  "two_shot": false,
+  "cam": "During 00:00.000–00:02.500, before he starts rapping, his mouth stays closed while the camera pushes in with large amplitude at slow speed from a wide shot of him standing on the stage until it reaches the framing below; from 00:02.500 to the end of the shot it holds that framing. The framing is a frontal head-and-shoulders close-up at eye level at Cooke Panchro 50mm T2.2, shot on a handheld 35mm cinema camera with a subtle natural sway, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B13",
+  "kind": "rap",
+  "who": "b",
+  "line": 13,
+  "move": "ECU",
+  "text": "Call me mediocre? Ask Beethoven, Schubert, Liszt",
+  "audio": [
+   121.339,
+   124.177
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "ticking off three legendary names on the fingers of his free left hand right into the lens with commanding authority",
+  "two_shot": false,
+  "cam": "A handheld 28mm cinema lens is close to his face and slightly below chin height, looking up at him: a tight close-up where his face fills most of the 16:9 frame, the chrome mesh head of the microphone softly foreshortened at the bottom edge of the frame just below his lower lip (never crossing his lips); the camera pushes in with small amplitude at slow speed, warm 2700K candle chandelier bokeh orbs flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "lens": "28mm wide-angle"
+ },
+ {
+  "id": "B14",
+  "kind": "rap",
+  "who": "b",
+  "line": 14,
+  "move": "FACE",
+  "text": "Taught them free of charge and put those legends on the list",
+  "audio": [
+   124.131,
+   126.302
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "opening his free left arm toward the orchestra pit while glaring nose-to-nose at his rival",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B15",
+  "kind": "rap",
+  "who": "b",
+  "line": 15,
+  "move": "FACEWIDE",
+  "text": "And when your Requiem stopped cold before the ink had dried",
+  "audio": [
+   126.258,
+   128.877
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "freezing his free left hand mid-conduct in the air between them as if the Requiem suddenly stopped",
+  "two_shot": true,
+  "cam": "The camera holds a waist-up medium profile two-shot at eye level: <Subject 1> on screen-right facing left, leaning toward <Subject 2> and rapping at him, <Subject 2> on screen-left facing right standing his ground, the crisp silver overhead spotlight beam falling between the two men while warm 2700K chandelier bokeh glows behind them, <Subject 1>'s lips and jaw clearly readable in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his arms crossed and his mouth firmly closed"
+ },
+ {
+  "id": "B16",
+  "kind": "rap",
+  "who": "b",
+  "line": 16,
+  "move": "CRASH",
+  "text": "Your widow brought your own son to my door after you died",
+  "audio": [
+   128.826,
+   131.591
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing his free left index finger straight down at the stage floor in front of him, then locking eyes dead-center into the lens",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and hair of <Subject 2> in the left foreground, <Subject 1> chest-up on the right facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from hairline to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round stage: the cheering crowd silhouettes are on the opera pit floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "28mm wide-angle",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "R_S_SCORE",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Antonio Salieri (keep his exact patrician face, sleek dark chestnut-brown hair swept back with silvering temples and no white powder, deep midnight-navy velvet Imperial court coat with gold embroidery, golden court medallion and white cravat). Image 2 is Salieri's right side of the Vienna opera house as seen from the stage (softly blurred gilded Imperial podium, brass organ pipes, 2700K crystal chandelier bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Antonio Salieri (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm chandelier bokeh and brass organ pipes of his side of the house (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. One dark eyebrow slowly rises and the corner of his mouth lifts in a cold, sceptical courtier's smile.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_S_TUNE",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Antonio Salieri (keep his exact patrician face, sleek dark chestnut-brown hair swept back with silvering temples and no white powder, deep midnight-navy velvet Imperial court coat with gold embroidery, golden court medallion and white cravat). Image 2 is Salieri's right side of the Vienna opera house as seen from the stage (softly blurred gilded Imperial podium, brass organ pipes, 2700K crystal chandelier bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Antonio Salieri (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm chandelier bokeh and brass organ pipes of his side of the house (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His eyes narrow sharply and a muscle twitches in his jaw, then he lifts his chin with icy composure.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_S_CUP",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Antonio Salieri (keep his exact patrician face, sleek dark chestnut-brown hair swept back with silvering temples and no white powder, deep midnight-navy velvet Imperial court coat with gold embroidery, golden court medallion and white cravat). Image 2 is Salieri's right side of the Vienna opera house as seen from the stage (softly blurred gilded Imperial podium, brass organ pipes, 2700K crystal chandelier bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Antonio Salieri (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm chandelier bokeh and brass organ pipes of his side of the house (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He tilts his head slightly and exhales through his nose, shaking his head once in disdain at the slander.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_M_VOTE",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Wolfgang Amadeus Mozart (keep his exact youthful face, neat compact white powdered queue wig tied with a black silk ribbon, vivid scarlet-red velvet Viennese frock coat with gold brocade trim, ivory waistcoat and white lace jabot). Image 2 is Mozart's left side of the Vienna opera house as seen from the stage (softly blurred gilded crimson boxes, Viennese fortepiano, 2700K crystal chandelier bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Wolfgang Amadeus Mozart (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm chandelier bokeh and gilded crimson opera boxes of his side of the house (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His cocky smirk fades in an instant and his bright eyes narrow, leaning forward intensely.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_M_COUNT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Wolfgang Amadeus Mozart (keep his exact youthful face, neat compact white powdered queue wig tied with a black silk ribbon, vivid scarlet-red velvet Viennese frock coat with gold brocade trim, ivory waistcoat and white lace jabot). Image 2 is Mozart's left side of the Vienna opera house as seen from the stage (softly blurred gilded crimson boxes, Viennese fortepiano, 2700K crystal chandelier bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Wolfgang Amadeus Mozart (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm chandelier bokeh and gilded crimson opera boxes of his side of the house (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He glances sideways for half a beat and swallows, jaw tightening as his expression turns serious.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_M_FURY",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Wolfgang Amadeus Mozart (keep his exact youthful face, neat compact white powdered queue wig tied with a black silk ribbon, vivid scarlet-red velvet Viennese frock coat with gold brocade trim, ivory waistcoat and white lace jabot). Image 2 is Mozart's left side of the Vienna opera house as seen from the stage (softly blurred gilded crimson boxes, Viennese fortepiano, 2700K crystal chandelier bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Wolfgang Amadeus Mozart (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm chandelier bokeh and gilded crimson opera boxes of his side of the house (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He grinds his teeth, nostrils flaring, staring straight back in stung, defiant pride.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "VENUE_OPEN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "venue"
+  ],
+  "prompt": "Image 1 is the packed 1786 Vienna Imperial Court Opera House at night with an empty spotlit central round stage, fortepiano on the left and brass organ pipes on the right.\n\nCinematic photoreal 35mm film shot, 16:9. Wide establishing crane shot inside the candlelit 1786 Vienna Imperial Court Opera House at night (Image 1): tiered gilded crimson-velvet opera boxes, glowing 2700K crystal chandeliers, a crisp 5600K silver spotlight beam illuminating the empty round wooden stage in the center, Viennese fortepiano on the left, brass organ pipes on the right, and hundreds of 18th-century Viennese aristocrats and musicians packed around the stage; the camera pushes in smoothly at slow speed.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame.",
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "STAGE_STANDOFF",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Wolfgang Amadeus Mozart (keep his exact youthful face, neat compact white powdered queue wig tied with a black silk ribbon, vivid scarlet-red velvet Viennese frock coat with gold brocade trim, ivory waistcoat and white lace jabot). Image 2 is Antonio Salieri (keep his exact patrician face, sleek dark chestnut-brown hair swept back with silvering temples and no white powder, deep midnight-navy velvet Imperial court coat with gold embroidery, golden court medallion and white cravat).\n\nCinematic photoreal 35mm film shot, 16:9. Waist-up medium profile two-shot at eye level on the spotlit Vienna opera stage: Wolfgang Amadeus Mozart (Image 1) on the left in his scarlet coat and white powdered wig steps forward facing right, and Antonio Salieri (Image 2) on the right in his midnight-navy gold-embroidered court coat and dark hair steps forward facing left; neither is singing yet, mouths firmly closed, locking eyes nose-to-nose across the silver spotlight beam while warm 2700K chandelier bokeh and cheering crowd silhouettes bounce behind them; handheld 35mm camera slowly arcs a few degrees.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring 18th-century Viennese crowd bouncing on the pit floor below. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep every character's face, hairstyle, wig, costume and colors exactly as in their reference images. Mozart always stands on the left side of the stage in his scarlet coat and white powdered wig, Salieri on the right in his midnight-navy gold-embroidered court coat and dark hair. Whenever Mozart or Salieri is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else."
+ },
+ {
+  "id": "SALIERI_READY",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Antonio Salieri (keep his exact patrician face, sleek dark chestnut-brown hair swept back with silvering temples and no white powder, deep midnight-navy velvet Imperial court coat with gold embroidery, golden court medallion and white cravat). Image 2 is Salieri's right side of the Vienna opera house as seen from the stage (softly blurred gilded Imperial podium, brass organ pipes, 2700K crystal chandelier bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. Tight chest-up medium close-up of Antonio Salieri (Image 1) on the right side of the stage at Cooke Panchro 50mm T2.2 shallow depth of field, warm chandelier bokeh and brass organ pipes (Image 2) softly blurred behind him: his mouth stays closed in an icy aristocratic smirk as he nods slightly to the heavy boom-bap beat drop, touching the golden Imperial medallion on his chest with his left hand while holding the chrome microphone low in his right hand.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring 18th-century Viennese crowd bouncing on the pit floor below. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep every character's face, hairstyle, wig, costume and colors exactly as in their reference images. Mozart always stands on the left side of the stage in his scarlet coat and white powdered wig, Salieri on the right in his midnight-navy gold-embroidered court coat and dark hair. Whenever Mozart or Salieri is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else."
+ },
+ {
+  "id": "OPEN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Wolfgang Amadeus Mozart (keep his exact youthful face, neat compact white powdered queue wig tied with a black silk ribbon, vivid scarlet-red velvet Viennese frock coat with gold brocade trim, ivory waistcoat and white lace jabot). Image 2 is Antonio Salieri (keep his exact patrician face, sleek dark chestnut-brown hair swept back with silvering temples and no white powder, deep midnight-navy velvet Imperial court coat with gold embroidery, golden court medallion and white cravat).\n\nCinematic photoreal 35mm film shot, 16:9. Over-the-shoulder shot at eye level at T2.2 shallow depth of field, handheld: the blurred dark chestnut hair and midnight-navy gold-embroidered shoulder of Antonio Salieri (Image 2) fill the right foreground, and beyond him Wolfgang Amadeus Mozart (Image 1) stands chest-up on the left, facing the camera, raising his chrome handheld microphone toward his chin with a rebellious cocky grin, mouth closed, warm 2700K crystal chandelier bokeh glowing behind him; the camera pushes in with small amplitude at slow speed.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring 18th-century Viennese crowd bouncing on the pit floor below. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep every character's face, hairstyle, wig, costume and colors exactly as in their reference images. Mozart always stands on the left side of the stage in his scarlet coat and white powdered wig, Salieri on the right in his midnight-navy gold-embroidered court coat and dark hair. Whenever Mozart or Salieri is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else."
+ },
+ {
+  "id": "DJ_FRONT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "dj"
+  ],
+  "prompt": "Image 1 is the young 18th-century Viennese court musician DJ at his raised baroque harpsichord turntable booth.\n\nCinematic photoreal 35mm film shot, 16:9. Frontal medium shot of exactly one person, the young 18th-century Viennese court musician DJ (Image 1), alone behind his raised baroque harpsichord turntable booth, scratching a vinyl record with one hand and pressing one black headphone to his ear with the other, warm amber indicator lamps glowing on the brass mixer, the Viennese crowd silhouettes bouncing in the candlelit bokeh haze behind him.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "DJ_HANDS",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "dj"
+  ],
+  "prompt": "Image 1 is the young 18th-century Viennese court musician DJ at his raised baroque harpsichord turntable booth.\n\nCinematic photoreal 35mm film shot, 16:9. Low-angle close shot across the turntables of the baroque harpsichord DJ booth (Image 1): the DJ's hands in white lace cuffs scratch a spinning black vinyl record and ride a brass rotary fader, his gold-embroidered burgundy waistcoat above, warm 2700K chandelier bokeh glowing behind.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_OOH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the roaring Viennese crowd of late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers.\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close medium shot packed with four or five 18th-century Viennese aristocrats and musicians from the front row (Image 1), their faces large and filling the 16:9 frame at T2.2 shallow depth of field, handheld camera at their eye level, crystal chandeliers blurred into warm golden orbs behind them. They react to a brutal punchline: one claps both hands over his mouth, one grabs his powdered wig with wide eyes, one doubles over laughing and waves a rolled music score. Energetic, joyful chaos.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_CHANT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the roaring Viennese crowd of late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers.\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close medium shot of the front rows of the Viennese opera crowd (Image 1), handheld at their eye level, faces sculpted by warm 3200K chandelier light: aristocrats and court musicians chant together with raised fists and rolled sheet-music scores pumping in rhythm, mouths wide open, light stage haze. The camera trucks right with small amplitude at slow speed along the front row.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_STARE",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the roaring Viennese crowd of late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers.\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Medium close shot of three Viennese court gentlemen in the front row (Image 1), handheld at their eye level, warm chandelier light: they look up past the camera in stunned silence, arms folded, one slowly letting out a low whistle and shaking his head.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_LAUGH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the roaring Viennese crowd of late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers.\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close shot of one Viennese musician in a velvet coat in the front row (Image 1) throwing his head back and cheering with wide applause, one fist punching the air, spectators clapping and shouting around him, warm amber chandelier bokeh, handheld.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep the face, hairstyle, wig, costume and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CURTAIN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 192,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Wolfgang Amadeus Mozart (keep his exact youthful face, neat compact white powdered queue wig tied with a black silk ribbon, vivid scarlet-red velvet Viennese frock coat with gold brocade trim, ivory waistcoat and white lace jabot). Image 2 is Antonio Salieri (keep his exact patrician face, sleek dark chestnut-brown hair swept back with silvering temples and no white powder, deep midnight-navy velvet Imperial court coat with gold embroidery, golden court medallion and white cravat).\n\nCinematic photoreal 35mm film shot, 16:9. The shot starts as a waist-up medium two-shot of Wolfgang Amadeus Mozart (Image 1) on the left in his scarlet coat and Antonio Salieri (Image 2) on the right in his midnight-navy coat standing side by side on the stage, both facing the camera, both spreading their arms wide to the roaring opera house, mouths closed, Salieri with a composed triumphant nod and Mozart with a defiant smirk. Then the camera pulls out and pedestals up with large amplitude at slow speed, rising steadily backward and upward over the heads of the audience until it holds a high wide shot of the whole candlelit Vienna Imperial Opera House: the two men small in the silver spotlight at the center of the circular wooden stage, hundreds of cheering Viennese spectators waving scores and fists all around them, gilded fortepiano on the left, brass organ pipes and Imperial podium on the right. During the last second the camera smoothly decelerates and settles into a stationary shot.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed 1786 Vienna Imperial court opera house at night turned into an underground rap battle arena, tiered gilded crimson-velvet opera boxes, marble columns, warm glowing 2700K brass-and-crystal candle chandeliers overhead, light stage smoke; on the left side a Viennese walnut-and-gold fortepiano with glowing music manuscripts and golden theatre masks, on the right side a grand gilded Imperial conductor's podium with tall brass organ pipes and a Habsburg court crest, a raised DJ booth built into an ornate baroque harpsichord console in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring 18th-century Viennese crowd bouncing on the pit floor below. The crowd are late 18th-century Viennese aristocrats in velvet coats and powdered wigs, court musicians, and theatrical opera-goers. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K candle chandelier bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every beat, bodies bouncing and swaying, some spectators jumping and waving rolled sheet-music scores and opera fans.\n\nKeep every character's face, hairstyle, wig, costume and colors exactly as in their reference images. Mozart always stands on the left side of the stage in his scarlet coat and white powdered wig, Salieri on the right in his midnight-navy gold-embroidered court coat and dark hair. Whenever Mozart or Salieri is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else.",
+  "closeup_lora": 0.0
+ }
+]

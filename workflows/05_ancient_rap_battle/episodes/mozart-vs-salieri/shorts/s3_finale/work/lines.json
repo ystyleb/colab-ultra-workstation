@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 13,
+  "text": "Call me mediocre? Ask Beethoven, Schubert, Liszt",
+  "start": 0.35,
+  "end": 3.108,
+  "bar": 121.419,
+  "heard": "Call me mediocre? Ask Beethoven, Schubert, Liszt",
+  "orig_start": 121.419,
+  "orig_bar": 121.419
+ },
+ {
+  "who": "b",
+  "n": 14,
+  "text": "Taught them free of charge and put those legends on the list",
+  "start": 3.142,
+  "end": 5.233,
+  "bar": 124.211,
+  "heard": "Taught them free of charge and put those legends on the list",
+  "orig_start": 124.211,
+  "orig_bar": 124.211
+ },
+ {
+  "who": "b",
+  "n": 15,
+  "text": "And when your Requiem stopped cold before the ink had dried",
+  "start": 5.269,
+  "end": 7.808,
+  "bar": 126.338,
+  "heard": "And when your Requiem stopped cold before the ink had dried",
+  "orig_start": 126.338,
+  "orig_bar": 126.338
+ },
+ {
+  "who": "b",
+  "n": 16,
+  "text": "Your widow brought your own son to my door after you died",
+  "start": 7.837,
+  "end": 10.522,
+  "bar": 128.906,
+  "heard": "Your widow brought your own son to my door after you died",
+  "orig_start": 128.906,
+  "orig_bar": 128.906
+ }
+]
