@@ -1,0 +1,24 @@
+{
+  "note": "PawMotif 样片：Living Portrait。首尾帧都是 pawmotif.com 首页现成成品（/art/corgi-portrait.webp），裁成 768x1344，循环播放。",
+  "length": 192,
+  "steps": 10,
+  "style_mode": "stylized",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/pawmotif",
+  "jobs": [
+    {
+      "id": "PawMotif_LivingCorgi_T1",
+      "first": "pawmotif_corgi_botanical_768x1344.png",
+      "last": "pawmotif_corgi_botanical_768x1344.png",
+      "seed": 2026111101,
+      "prompt": "A hand-painted botanical pet portrait of a happy Pembroke Welsh Corgi on textured cream watercolor paper, rendered in soft gouache and fine colored-pencil fur strokes, framed by sage-green and ochre painted leaves. A single continuous 8-second shot from a completely static, locked-off camera with no zoom and no camera movement. The painting gently comes to life while remaining a painting: the corgi blinks slowly, its big ears twitch and swivel, it tilts its head slightly to one side and pants happily with its pink tongue, its painted fur strokes ripple softly as if in a light breeze, and the painted leaves sway subtly around it. The paper texture, brushstrokes and colors stay exactly the same throughout, never turning photographic. Near the end the corgi settles back into its original pose and gaze. Soft warm music-box melody with a quiet, cozy room tone."
+    },
+    {
+      "id": "PawMotif_LivingCorgi_T2",
+      "first": "pawmotif_corgi_botanical_768x1344.png",
+      "last": "pawmotif_corgi_botanical_768x1344.png",
+      "seed": 2026111102,
+      "prompt": "A hand-painted botanical pet portrait of a happy Pembroke Welsh Corgi on textured cream watercolor paper, rendered in soft gouache and fine colored-pencil fur strokes, framed by sage-green and ochre painted leaves. A single continuous 8-second shot from a completely static, locked-off camera with no zoom and no camera movement. The painting gently comes to life while remaining a painting: the corgi blinks slowly, its big ears twitch and swivel, it tilts its head slightly to one side and pants happily with its pink tongue, its painted fur strokes ripple softly as if in a light breeze, and the painted leaves sway subtly around it. The paper texture, brushstrokes and colors stay exactly the same throughout, never turning photographic. Near the end the corgi settles back into its original pose and gaze. Soft warm music-box melody with a quiet, cozy room tone."
+    }
+  ]
+}

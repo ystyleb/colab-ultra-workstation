@@ -1,0 +1,25 @@
+{
+  "note": "TryOnSwap 样片：首帧 model-a（网站首页原始模特图），尾帧分别是同一模特的试穿结果 r-outfit / r-dress-swap，背景一致。转身那一下换装。",
+  "length": 192,
+  "steps": 10,
+  "style_mode": "photorealistic",
+  "realism_lora_strength": 0.7,
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/tryonswap",
+  "jobs": [
+    {
+      "id": "TryOnSwap_SpinSwap_Coat",
+      "first": "tryonswap_model-a_768x1344.png",
+      "last": "tryonswap_r-outfit_768x1344.png",
+      "seed": 2026111121,
+      "prompt": "r34l1sm, Clean e-commerce fashion studio video on a full-frame camera, natural soft matte skin texture with fine pores, zero oily shine, warm natural light. A single continuous 8-second full-body head-to-toe shot from a static locked-off camera with no zoom and no cuts, against a seamless light-grey paper studio backdrop with soft even studio lighting. A young woman with shoulder-length dark brown hair starts standing relaxed facing the camera in a white tank top, light-wash straight-leg jeans and white sneakers. She does one smooth, unhurried full turn in place, and as she turns back to face the camera her outfit has become a long camel wool coat worn open over a cream cable-knit sweater, charcoal wide-leg trousers and black leather loafers. She settles into a calm, natural standing pose facing the camera exactly as at the end. Her face, hair and the backdrop stay identical throughout, and her entire body from head to shoes stays in frame. Quiet studio room tone with soft fabric rustle."
+    },
+    {
+      "id": "TryOnSwap_SpinSwap_SlipDress",
+      "first": "tryonswap_model-a_768x1344.png",
+      "last": "tryonswap_r-dress-swap_768x1344.png",
+      "seed": 2026111122,
+      "prompt": "r34l1sm, Clean e-commerce fashion studio video on a full-frame camera, natural soft matte skin texture with fine pores, zero oily shine, warm natural light. A single continuous 8-second full-body head-to-toe shot from a static locked-off camera with no zoom and no cuts, against a seamless light-grey paper studio backdrop with soft even studio lighting. A young woman with shoulder-length dark brown hair starts standing relaxed facing the camera in a white tank top, light-wash straight-leg jeans and white sneakers. She does one smooth, unhurried full turn in place, and as she turns back to face the camera her outfit has become a black satin bias-cut midi slip dress with thin straps and white sneakers. She settles into a calm, natural standing pose facing the camera exactly as at the end. Her face, hair and the backdrop stay identical throughout, and her entire body from head to shoes stays in frame. Quiet studio room tone with soft fabric rustle."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "note": "Songifted 样片：首尾帧都是 songifted.com 首页的 /imgs/generated/photo-birthday.jpg（AI 生成场景图），竖裁。配乐后期换成网站示例歌 /demos/birthday.mp3。必须标注 AI dramatization。",
+  "length": 192,
+  "steps": 10,
+  "style_mode": "photorealistic",
+  "realism_lora_strength": 0.7,
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/songifted",
+  "jobs": [
+    {
+      "id": "Songifted_BirthdayReaction_T1",
+      "first": "songifted_birthday_768x1344.png",
+      "last": "songifted_birthday_768x1344.png",
+      "seed": 2026111111,
+      "prompt": "r34l1sm, Realistic candid 35mm photography, natural soft matte skin texture with fine pores, zero oily shine, warm natural light. A single continuous 8-second shot from a static locked-off camera with no zoom and no cuts, in a cozy living room lit by warm lamps and birthday candles. A young woman with long wavy dark hair and a floral blouse sits behind a white birthday cake with lit candles, both hands pressed over her mouth in happy surprise as her friends lean in beside her. She slowly lowers her hands to reveal a huge, tearful, joyful smile, laughs and shakes her head in disbelief, touches her chest with one hand, while the friends beside her grin and clap. The candle flames flicker softly. Near the end she raises both hands back over her mouth, overwhelmed, returning to the same pose as the start. Warm room ambience with soft laughter and quiet clapping."
+    },
+    {
+      "id": "Songifted_BirthdayReaction_T2",
+      "first": "songifted_birthday_768x1344.png",
+      "last": "songifted_birthday_768x1344.png",
+      "seed": 2026111112,
+      "prompt": "r34l1sm, Realistic candid 35mm photography, natural soft matte skin texture with fine pores, zero oily shine, warm natural light. A single continuous 8-second shot from a static locked-off camera with no zoom and no cuts, in a cozy living room lit by warm lamps and birthday candles. A young woman with long wavy dark hair and a floral blouse sits behind a white birthday cake with lit candles, both hands pressed over her mouth in happy surprise as her friends lean in beside her. She slowly lowers her hands to reveal a huge, tearful, joyful smile, laughs and shakes her head in disbelief, touches her chest with one hand, while the friends beside her grin and clap. The candle flames flicker softly. Near the end she raises both hands back over her mouth, overwhelmed, returning to the same pose as the start. Warm room ambience with soft laughter and quiet clapping."
+    }
+  ]
+}
