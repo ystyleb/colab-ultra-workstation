@@ -47,7 +47,7 @@ python3 workflows/08_site_channels/make_channel_assets.py --site pawmotif
 - [x] 2026-11-11 三个站的引流版 Shorts 各 1 条（`promo_short.py`，本地合成 0 CCU），见下文「引流版 Shorts」
 - [x] 2026-11-11 PawMotif 用站长测试号完整走了一遍产品流程，问题记录在 `pawmotif/产品体验问题.md`
 - [x] 2026-11-11 上线：Songifted `W4t3RBjlIA0`、TryOnSwap `cGNfbJA6eFo`（公开，oEmbed 200 核验）
-- [x] 2026-11-11 杜宾水彩画像 H3 Living Portrait 1 条（G4 12 分 11 秒，余额实际减少 1.67 CCU），已剪进 PawMotif 引流版（17.2 秒，待上传）
+- [x] 2026-11-11 杜宾水彩画像 H3 Living Portrait 1 条（G4 12 分 11 秒，余额实际减少 1.67 CCU），已剪进 PawMotif 引流版（17.2 秒），上线 `eQuDr1kLsHc`（公开，oEmbed 200）
 - [ ] 三个站的页脚加上 YouTube 链接（在各站自己的仓库里改，不在本仓库）
 
 ## 样片出片（`render_samples.py` + `finish_sample.py`）
