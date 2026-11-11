@@ -46,6 +46,8 @@ python3 workflows/08_site_channels/make_channel_assets.py --site pawmotif
 - [x] 2026-11-11 Songifted 2 条（生日反应 + 网站示例歌）+ TryOnSwap 2 条（转身换装），一次开机，G4 22 分 14 秒，按时长折算 3.72 CCU（余额实际减少 3.03）。TryOnSwap 吊带裙那条作废（见下）
 - [x] 2026-11-11 三个站的引流版 Shorts 各 1 条（`promo_short.py`，本地合成 0 CCU），见下文「引流版 Shorts」
 - [x] 2026-11-11 PawMotif 用站长测试号完整走了一遍产品流程，问题记录在 `pawmotif/产品体验问题.md`
+- [x] 2026-11-11 上线：Songifted `W4t3RBjlIA0`、TryOnSwap `cGNfbJA6eFo`（公开，oEmbed 200 核验）
+- [x] 2026-11-11 杜宾水彩画像 H3 Living Portrait 1 条（G4 12 分 11 秒，余额实际减少 1.67 CCU），已剪进 PawMotif 引流版（17.2 秒，待上传）
 - [ ] 三个站的页脚加上 YouTube 链接（在各站自己的仓库里改，不在本仓库）
 
 ## 样片出片（`render_samples.py` + `finish_sample.py`）
@@ -65,6 +67,8 @@ python3 workflows/08_site_channels/finish_sample.py -i <raw.mp4> -o <final.mp4> 
 - 动作幅度大的片子（Songifted、换装）帧差中位数在 3～8，不能用固定阈值找跳帧，要看帧差相对中位数的尖峰并抽帧目检。
 - Songifted 配乐：`finish_sample.py --audio samples/songifted/songifted_demo_birthday.mp3 --audio-start 24.70`，即首页示例歌唱到「Happy birthday, Sarah, this song belongs to you / Every single line of it is us saying thank you」那段（24.96～32.04 秒，mlx_whisper small 关掉 condition-on-previous-text 后定位；前 30 秒要单独截出来识别，不然会整段幻听成 ooh）。
 - 成片在 `out/samples/<site>/`（不进 git）。
+- **colab CLI 有新版本时，升级提示会打到 stdout 第一行**（2026-11-11 发布 0.8.0 当天）。`colab dfs token` 的输出因此不是纯 JSON，`render_samples.py` 当时拉回失败，但渲染本身是成功的，片子还在 Drive 上。现在只截取 `{…}` 部分来解析。其他工作流里凡是解析 colab 输出 JSON 的地方，都可能踩到同一个坑。
+- 杜宾画像（seed 2026111131）：头部从侧向转到正面再转回，始终保持水彩质感，首尾没有定格跳帧。帧差每隔 4 帧有一个小鼓包，是 H3 潜空间按 4 帧一组压缩造成的，柯基样片也一样，肉眼看是连续动作。
 
 ## 引流版 Shorts（`promo_short.py`）
 
@@ -85,5 +89,5 @@ python3 workflows/08_site_channels/promo_short.py {tryonswap|songifted|pawmotif}
 - 安全区：关键文字放在 `STEP_Y=1450` 以上；底部约 20% 会被标题、频道名、音乐条盖住。
 - 免费额度的说法照搬网站原文，限定条件也照写（Songifted 的「for eligible first-time creators」）。
 - Songifted 的歌从示例歌第 `24.96 - 4.6` 秒开始放，这样第 ③ 段一开始正好唱到带名字的那句，歌词字幕里把 Sarah 高亮。
-- PawMotif 的原照是站长自家的杜宾（已去掉 EXIF/GPS）。画像用站长测试号在 pawmotif.com 真实生成并下载（无水印 1664×2512）；配乐借用柯基样片的原生音乐盒音轨。
+- PawMotif 的原照是站长自家的杜宾（已去掉 EXIF/GPS）。画像用站长测试号在 pawmotif.com 真实生成并下载（无水印 1664×2512）。H3 输入图在顶部补了纸色留白（`pawmotif_doberman_watercolor_768x1344.png`），给网址腾出位置；划屏的终点画面就是 H3 的第一帧，衔接无缝。配乐用 H3 原生的钢琴音轨，相位对齐到画面开始动的那一刻（`PM_MOTION_T`）。`promo_short.py pawmotif-static` 是不用 H3 的 0 CCU 版本。
 

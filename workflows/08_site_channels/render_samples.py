@@ -82,7 +82,9 @@ def pull_from_drive(name: str, out_dir: Path, rrr) -> Path | None:
     import urllib.parse
     import urllib.request
 
-    tok = json.loads(subprocess.check_output([rrr.COLAB_BIN, "dfs", "token"], text=True, env=rrr.ENV))["access_token"]
+    raw = subprocess.check_output([rrr.COLAB_BIN, "dfs", "token"], text=True, env=rrr.ENV)
+    # colab CLI 有新版本时会把升级提示打到 stdout 第一行（2026-11-11 0.8.0 发布当天踩到），只取 JSON 部分
+    tok = json.loads(raw[raw.index("{"): raw.rindex("}") + 1])["access_token"]
     q = urllib.parse.urlencode(
         {"q": f"trashed = false and name = '{name}'", "fields": "files(id,name,size,modifiedTime)", "orderBy": "modifiedTime desc", "pageSize": 3}
     )

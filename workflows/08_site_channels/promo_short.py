@@ -327,6 +327,8 @@ def songifted_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
 
 # ---------------- PawMotif ----------------
 PM = {"ink": (48, 60, 51), "paper": (248, 246, 240), "cream": (238, 235, 224), "olive": (82, 99, 75), "muted": (121, 126, 112), "white": (255, 255, 255)}
+# ①52 帧 + ②57 帧 + 原照停留 12 帧 + 划屏 36 帧之后 H3 出现（与 pawmotif_frames 里的段长保持一致）
+PM_MOTION_T = (int(2.2 * FPS) + int(2.4 * FPS) + int(0.5 * FPS) + int(1.5 * FPS)) / FPS
 GEORGIA = Path("/System/Library/Fonts/Supplemental/Georgia.ttf")
 GEORGIA_I = Path("/System/Library/Fonts/Supplemental/Georgia Italic.ttf")
 
@@ -337,7 +339,12 @@ def pm_serif(n: int, italic: bool = False):
 
 
 def pawmotif_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
-    """原照 → 选风格 → 划屏变成水彩 → 落版。不用 H3（0 CCU）；clip 只借柯基样片的音乐盒原生音轨。"""
+    """原照 → 选风格 → 划屏变成水彩 → （H3 让画动起来）→ 落版。
+
+    clip_end > clip_start 时，clip 是杜宾画像的 H3 Living Portrait：划屏的终点画面就是 H3 的输入图（同位置），
+    划完直接接 H3 帧，无缝。否则退回 0 CCU 版：划屏后在静态画上慢推。
+    """
+    motion = clip_end > clip_start
     photo = Image.open(src / "pawmotif_doberman_src.jpg").convert("RGB")
     art = Image.open(src / "pawmotif_doberman_watercolor_full.jpg").convert("RGB")
     cache = HERE / ".cache" / "pawmotif"
@@ -358,6 +365,12 @@ def pawmotif_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
 
     photo_full = on_paper(photo, 400)  # 1536x2048 → 1080x1440，占 400–1840
     art_full = on_paper(art, 290)  # 1664x2512 → 1080x1630，占 290–1920
+    if motion:
+        # 与 clip_frames 的 1080x1890 居中摆放一致，保证划屏终点 == H3 第一帧
+        h3_in = Image.open(src / "pawmotif_doberman_watercolor_768x1344.png").convert("RGB")
+        ch = round(1344 * W / 768) + round(1344 * W / 768) % 2
+        art_full = Image.new("RGB", (W, H), PM["paper"])
+        art_full.paste(h3_in.resize((W, ch), Image.LANCZOS), (0, (H - ch) // 2))
 
     def url_badge(d):
         pill(d, W // 2, 190, "pawmotif.com", sans(44, "Bold"), PM["white"], PM["ink"] + (235,), pad=(36, 18))
@@ -407,12 +420,24 @@ def pawmotif_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
         pill(d, W // 2, 1510, "2  Choose from 6 art styles", sans(40), PM["white"], PM["ink"])
         yield img.convert("RGB")
 
-    # ③ 结果：原照 → 水彩 划屏，然后在画上慢推
+    # ③ 结果：原照 → 水彩 划屏；然后 H3 让画动起来（或 0 CCU 版：在静态画上慢推）
     n3h, n3w, n3p = int(0.5 * FPS), int(1.5 * FPS), int(4.3 * FPS)
-    for i in range(n3h + n3w + n3p):
+    motion_frames = clip_frames(clip, clip_start, clip_end) if motion else None
+
+    def overlay(img: Image.Image, i: int) -> Image.Image:
+        d = ImageDraw.Draw(img)
+        url_badge(d)
+        if i >= n3h + n3w // 2:
+            a = int(255 * min(1.0, (i - n3h - n3w // 2) / 6))
+            pill(d, W // 2, STEP_Y, "3  Your portrait in about a minute", sans(42), PM["white"] + (a,), PM["ink"] + (min(a, 240),))
+        pill(d, W // 2, STEP_Y + 85, "Real photo → PawMotif watercolor portrait" + ("  ·  Motion: AI video" if motion and i >= n3h + n3w else ""),
+             sans(26, "Medium"), PM["ink"], PM["paper"] + (210,), pad=(20, 8))
+        return img.convert("RGB")
+
+    for i in range(n3h + n3w):
         if i < n3h:
             img = photo_full.copy().convert("RGBA")
-        elif i < n3h + n3w:
+        else:
             t = ease_out((i - n3h) / n3w) * 1.12
             edge = int(t * (W + 240)) - 120
             mask = Image.new("L", (W, H), 0)
@@ -425,19 +450,19 @@ def pawmotif_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
                 glow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
                 ImageDraw.Draw(glow).rectangle((edge - 3, 0, edge + 3, H), fill=(255, 255, 255, 170))
                 img.alpha_composite(glow)
-        else:
-            k = (i - n3h - n3w) / n3p
-            z = 1.0 + 0.07 * k
+        yield overlay(img, i)
+    if motion:
+        for k, fr in enumerate(motion_frames):
+            img = Image.new("RGBA", (W, H), PM["paper"] + (255,))
+            img.paste(fr, (0, (H - fr.height) // 2))
+            yield overlay(img, n3h + n3w + k)
+    else:
+        for k in range(n3p):
+            z = 1.0 + 0.07 * k / n3p
             fw, fh = int(W / z), int(H / z)
             x0, y0 = (W - fw) // 2, int((H - fh) * 0.3)
             img = art_full.crop((x0, y0, x0 + fw, y0 + fh)).resize((W, H), Image.LANCZOS).convert("RGBA")
-        d = ImageDraw.Draw(img)
-        url_badge(d)
-        if i >= n3h + n3w // 2:
-            a = int(255 * min(1.0, (i - n3h - n3w // 2) / 6))
-            pill(d, W // 2, STEP_Y, "3  Your portrait in about a minute", sans(42), PM["white"] + (a,), PM["ink"] + (min(a, 240),))
-        pill(d, W // 2, STEP_Y + 85, "Real photo → PawMotif watercolor portrait", sans(26, "Medium"), PM["ink"], PM["paper"] + (210,), pad=(20, 8))
-        yield img.convert("RGB")
+            yield overlay(img, n3h + n3w + k)
 
     # ④ 落版
     n4 = int(2.8 * FPS)
@@ -458,9 +483,17 @@ RECIPES = {
         src="samples/tryonswap", clip="out/samples/tryonswap/TryOnSwap_SpinSwap_Coat_Master.mp4", start=1, end=188,
         out="out/promo/tryonswap/TryOnSwap_Promo_Coat_1080x1920.mp4", frames=tryonswap_frames,
     ),
+    # H3 杜宾 Living Portrait（seed 2026111131）首尾无定格跳帧，整段 0–187 都能用。
+    # 画面里 H3 从第 PM_MOTION_T 秒出现；H3 原生钢琴音轨循环铺满全片，相位对齐到这一刻从头播放
     "pawmotif": dict(
-        src="samples/pawmotif", clip="out/samples/pawmotif/PawMotif_LivingCorgi_T1_Master.mp4", start=0, end=0,
+        src="samples/pawmotif", clip="out/samples/pawmotif/PawMotif_LivingDoberman_T1_Master.mp4", start=0, end=187,
         out="out/promo/pawmotif/PawMotif_Promo_Doberman_1080x1920.mp4", frames=pawmotif_frames,
+        audio_start=(-PM_MOTION_T) % 8.0,
+    ),
+    # 0 CCU 版（不用 H3）：划屏后静态画慢推，借柯基样片的音乐盒音轨
+    "pawmotif-static": dict(
+        src="samples/pawmotif", clip="out/samples/pawmotif/PawMotif_LivingCorgi_T1_Master.mp4", start=0, end=0,
+        out="out/promo/pawmotif/PawMotif_Promo_Doberman_static_1080x1920.mp4", frames=pawmotif_frames,
     ),
     "songifted": dict(
         src="samples/songifted", clip="out/samples/songifted/Songifted_BirthdayReaction_T1_Master.mp4", start=0, end=181,
@@ -495,8 +528,8 @@ def main() -> None:
     # 首尾淡入淡出，开头不留静音（Shorts 开头静音会掉留存）
     if r.get("audio"):
         a_in, a0 = ["-i", str(HERE / r["audio"])], float(r.get("audio_start", 0.0))
-    else:
-        a_in, a0 = ["-stream_loop", "-1", "-i", str(clip)], 0.0
+    else:  # 用 clip 的原生音轨循环铺满；audio_start 可让循环相位对齐到画面里 clip 出现的时刻
+        a_in, a0 = ["-stream_loop", "-1", "-i", str(clip)], float(r.get("audio_start", 0.0))
     subprocess.run(
         ["ffmpeg", "-v", "error", "-y", "-i", str(tmp_v), *a_in,
          "-filter_complex", f"[1:a]atrim={a0:.3f}:{a0 + dur:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.1,afade=t=out:st={dur - 0.8:.3f}:d=0.8[a]",
