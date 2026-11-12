@@ -15,7 +15,7 @@ import argparse
 import subprocess
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 HERE = Path(__file__).resolve().parent
 FONTS = HERE / "fonts"
@@ -203,6 +203,140 @@ def tryonswap_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
         yield img.convert("RGB")
 
 
+TS_SCENES = [  # (文件后缀, 站上 Scene 预设名；Studio 原名 "Studio · professional")
+    ("studio", "Studio"), ("street", "Street style"), ("casual", "Casual lifestyle"),
+    ("formal", "Formal event"), ("luxury", "Luxury editorial"), ("cinematic", "Cinematic"),
+]
+
+
+def tryonswap_campaign_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
+    """One Photo, a Campaign：同一位模特 + 毛衣 + 阔腿裤，在 TryOnSwap 的 6 个 Scene 预设里各出一张（站长账号真实生成，2K 9:16，0 CCU）。
+
+    ① 模特照 + 两件平铺单品 → ② 选场景预设 + Generate → ③ 6 张轮播（顶部场景标签高亮）→ 3×2 拼图 → ④ 落版。
+    """
+    model = Image.open(src / "tryonswap_model-a-1200.webp").convert("RGB")
+    garments = [Image.open(src / f"tryonswap_g-{g}.webp").convert("RGB") for g in ("knit", "trousers")]
+    shots = [(Image.open(src / "campaign" / f"tryonswap_knit_{k}_2k.jpg").convert("RGB"), name) for k, name in TS_SCENES]
+    icon = Image.open(src / "tryonswap_icon_512.png").convert("RGBA").resize((220, 220), Image.LANCZOS)
+    serif = lambda n: font("cormorant", n, "SemiBold")  # noqa: E731
+    sans = lambda n, w="SemiBold": font("manrope", n, w)  # noqa: E731
+
+    def base():
+        return Image.new("RGBA", (W, H), TS["bg"] + (255,))
+
+    def url_badge(d):
+        pill(d, W // 2, 150, "tryonswap.com", sans(44, "Bold"), TS["bg"], TS["ivory"] + (235,), pad=(36, 18))
+
+    # ① 钩子 + 输入：模特 + 两件平铺单品
+    n1 = int(2.2 * FPS)
+    mcard = rounded(cover_fit(model, 440, 770, 0.2), 26)
+    gcards = [rounded(contain(g, 300, 360, (246, 243, 237)), 22) for g in garments]
+    for i in range(n1):
+        img = base()
+        d = ImageDraw.Draw(img)
+        a = int(255 * ease_out(i / 8))
+        d.text((W // 2, 230), "One sweater.", font=serif(140), fill=TS["ivory"] + (a,), anchor="mm")
+        d.text((W // 2, 370), "Six photoshoots.", font=serif(140), fill=TS["gold"] + (a,), anchor="mm")
+        paste_scaled(img, mcard, 300, 900, ease_out(i / 6))
+        d.text((300, 1315), "Model", font=sans(34), fill=TS["muted"], anchor="mm")
+        d.text((560, 900), "+", font=sans(90, "Bold"), fill=TS["gold"], anchor="mm")
+        for k, card in enumerate(gcards):
+            paste_scaled(img, card, 790, 700 + k * 400, ease_out_back((i - 5 - k * 5) / 9))
+        d.text((790, 1315), "Garments", font=sans(34), fill=TS["muted"], anchor="mm")
+        pill(d, W // 2, STEP_Y, "1  Upload a model + your garments", sans(42), TS["bg"], TS["ivory"] + (240,))
+        yield img.convert("RGB")
+
+    # ② 产品动作：站上 SCENE 预设按钮（原文）+ Generate（站上是黑底按钮，这里在深色底上反色）
+    n2 = int(1.9 * FPS)
+    chip_f = sans(36, "SemiBold")
+    for i in range(n2):
+        img = base()
+        d = ImageDraw.Draw(img)
+        d.text((W // 2, 250), "Pick a scene.", font=serif(130), fill=TS["ivory"], anchor="mm")
+        d.text((W // 2, 380), "No photoshoot.", font=serif(130), fill=TS["gold"], anchor="mm")
+        d.text((150, 560), "SCENE", font=sans(30, "Bold"), fill=TS["muted"], anchor="lm")
+        for k, (_, name) in enumerate(TS_SCENES):
+            cx, cy = 300 + (k % 2) * 480, 680 + (k // 2) * 150
+            s = ease_out_back((i - k * 2) / 8)
+            on = i > 14 + k * 2  # 依次点亮 = 6 个都选
+            chip = Image.new("RGBA", (440, 120), (0, 0, 0, 0))
+            cd = ImageDraw.Draw(chip)
+            cd.rounded_rectangle((0, 0, 439, 119), radius=14, fill=TS["gold"] if on else (32, 30, 28), outline=TS["gold"], width=3)
+            cd.text((220, 60), "Studio · professional" if k == 0 else name, font=chip_f, fill=TS["bg"] if on else TS["ivory"], anchor="mm")
+            paste_scaled(img, chip, cx, cy, s)
+        if i > n2 - 14:
+            btn = Image.new("RGBA", (560, 120), (0, 0, 0, 0))
+            bd = ImageDraw.Draw(btn)
+            bd.rounded_rectangle((0, 0, 559, 119), radius=10, fill=TS["ivory"])
+            bd.text((280, 60), "Generate", font=sans(50, "Bold"), fill=TS["bg"], anchor="mm")
+            paste_scaled(img, btn, W // 2, 1230, ease_out_back((i - (n2 - 14)) / 8))
+        pill(d, W // 2, STEP_Y, "2  Choose a scene, hit Generate", sans(42), TS["bg"], TS["ivory"])
+        yield img.convert("RGB")
+
+    # ③ 结果：6 张轮播，照片卡 700 宽（头部不撞顶部文字），顶部场景名 + 标签高亮
+    per, xf = int(1.35 * FPS), 5
+    CARD_W, CARD_CY = 680, 1062  # 卡片 y≈453–1671，上沿离第二排标签约 50px
+    cards = [rounded(s.resize((CARD_W, round(CARD_W * s.height / s.width)), Image.LANCZOS), 22) for s, _ in shots]
+    cf = sans(28, "SemiBold")
+    cw = [int(ImageDraw.Draw(base()).textlength(n, font=cf)) + 32 for _, n in TS_SCENES]
+
+    def chips(d, active):
+        for r, idx in enumerate(([0, 1, 2], [3, 4, 5])):
+            tw = sum(cw[k] for k in idx) + 12 * 2
+            x = (W - tw) // 2
+            for k in idx:
+                y = 318 + r * 58
+                on = k == active
+                d.rounded_rectangle((x, y - 23, x + cw[k], y + 23), radius=23, fill=TS["gold"] if on else TS["bg"],
+                                    outline=TS["gold"] if on else TS["muted"], width=2)
+                d.text((x + cw[k] // 2, y), TS_SCENES[k][1], font=cf, fill=TS["bg"] if on else TS["muted"], anchor="mm")
+                x += cw[k] + 12
+
+    for k in range(len(shots)):
+        for i in range(per):
+            img = base()
+            if k > 0 and i < xf:
+                paste_scaled(img, cards[k - 1], W // 2, CARD_CY, 1.02, 1 - i / xf)
+            paste_scaled(img, cards[k], W // 2, CARD_CY, 0.98 + 0.03 * i / per, min(1.0, i / xf) if k > 0 else ease_out(i / 4))
+            d = ImageDraw.Draw(img)
+            url_badge(d)
+            d.text((W // 2, 245), shots[k][1], font=serif(84), fill=TS["ivory"], anchor="mm")
+            chips(d, k)
+            if k < 2:
+                pill(d, W // 2, STEP_Y, "3  Same garment, every scene", sans(42), TS["bg"], TS["ivory"] + (240,))
+            pill(d, W // 2, CARD_CY - cards[k].height // 2 + 40, f"{k + 1}/6  ·  Every photo straight from TryOnSwap", sans(24, "Medium"),
+                 TS["ivory"], (12, 11, 10, 170), pad=(18, 8))  # 压在照片顶部：卡片下方会被 Shorts 底栏挡住
+            yield img.convert("RGB")
+
+    # 拼图：3×2，「一次上传，一整套 lookbook」
+    n_grid = int(2.3 * FPS)
+    cell_w = 300
+    minis = [rounded(s.resize((cell_w, round(cell_w * s.height / s.width)), Image.LANCZOS), 14) for s, _ in shots]
+    for i in range(n_grid):
+        img = base()
+        d = ImageDraw.Draw(img)
+        url_badge(d)
+        d.text((W // 2, 280), "One upload.", font=serif(110), fill=TS["ivory"], anchor="mm")
+        d.text((W // 2, 390), "A whole lookbook.", font=serif(110), fill=TS["gold"], anchor="mm")
+        for k, m in enumerate(minis):
+            cx, cy = 210 + (k % 3) * 330, 760 + (k // 3) * 560
+            paste_scaled(img, m, cx, cy, ease_out_back((i - k * 1.5) / 7))
+        yield img.convert("RGB")
+
+    # ④ 落版
+    n4 = int(2.8 * FPS)
+    for i in range(n4):
+        img = base()
+        d = ImageDraw.Draw(img)
+        paste_scaled(img, icon, W // 2, 560, ease_out_back(i / 10))
+        d.text((W // 2, 800), "TryOnSwap", font=serif(150), fill=TS["ivory"], anchor="mm")
+        d.text((W // 2, 950), "tryonswap.com", font=sans(78, "Bold"), fill=TS["gold"], anchor="mm")
+        d.text((W // 2, 1110), "On-model photos in any scene.", font=sans(46, "Medium"), fill=TS["ivory"], anchor="mm")
+        pill(d, W // 2, 1260, "12 free credits on sign-up", sans(46, "Bold"), TS["bg"], TS["ivory"], pad=(40, 20))
+        d.text((W // 2, 1420), "Link on our channel page", font=sans(36, "Medium"), fill=TS["muted"], anchor="mm")
+        yield img.convert("RGB")
+
+
 # ---------------- Songifted ----------------
 SG = {"coral": (210, 93, 64), "ink": (43, 29, 22), "cream": (253, 246, 238), "cream2": (243, 226, 209), "muted": (122, 97, 82), "white": (255, 255, 255)}
 SG_LEAD = 4.6  # ①② 两段总时长；示例歌从 (副歌起点 - SG_LEAD) 开始放，结果段一开始正好唱到 "Happy birthday Sarah"
@@ -319,6 +453,145 @@ def songifted_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
         d.text((W // 2, 790), "Songifted", font=serif(150), fill=SG["ink"], anchor="mm")
         d.text((W // 2, 940), "songifted.com", font=sans(78, "Bold"), fill=SG["coral"], anchor="mm")
         d.text((W // 2, 1090), "A song with their name in it.", font=sans(46, "Medium"), fill=SG["ink"], anchor="mm")
+        pill(d, W // 2, 1240, "Free 45-second preview", sans(46, "Bold"), SG["white"], SG["coral"], pad=(40, 20))
+        d.text((W // 2, 1340), "for eligible first-time creators", font=sans(32, "Medium"), fill=SG["muted"], anchor="mm")
+        d.text((W // 2, 1420), "Link on our channel page", font=sans(36, "Medium"), fill=SG["muted"], anchor="mm")
+        yield img.convert("RGB")
+
+
+SGM_LEAD = 6.5  # ①② 总时长；歌从 34.46 秒起放 = 片头唱 "Every good thing in me, mom"，③ 一开始接副歌 "Everything you gave me, Linda"
+SGM_CHORUS = 40.96
+# /demos/for-mom.mp3（站上 /birthday-song-for-mom 的示例歌「Everything You Gave Me (for Linda)」，虚构人物），mlx_whisper small 段级时间
+SGM_LYRICS = [(40.96, 44.36, "Everything you gave me, Linda"), (45.04, 47.56, "I carry it with pride"),
+              (48.48, 51.42, "The strength inside your quiet hands"), (51.42, 53.84, "The love you'll never hide")]
+
+
+def songifted_mom_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
+    """Happy Birthday Mom：① 钩子 + 场景照 → ② 站上真实表单（手机截图三连）→ 歌词确认 → ③ 副歌 + 卡拉 OK 歌词（Linda 高亮）→ ④ 落版。0 CCU。"""
+    icon = rounded(Image.open(HERE / "out" / "songifted" / "avatar_800.png").convert("RGB").resize((200, 200), Image.LANCZOS), 100)
+    serif = lambda n, w="SemiBold": font("fraunces", n, w)  # noqa: E731
+    sans = lambda n, w="SemiBold": font("dmsans", n, w)  # noqa: E731
+    bg = Image.new("RGBA", (W, H))
+    for y in range(H):
+        t = y / H
+        ImageDraw.Draw(bg).line((0, y, W, y), fill=tuple(int(a + (b - a) * t) for a, b in zip(SG["cream"], SG["cream2"])) + (255,))
+    scene = Image.open(HERE / ".cache" / "songifted" / "photo-mom.jpg").convert("RGB")  # 站首页的 AI 场景图 960x720
+
+    def photo_card(w: int) -> Image.Image:
+        im = scene.resize((w, round(w * scene.height / scene.width)), Image.LANCZOS)
+        c = Image.new("RGBA", (im.width + 36, im.height + 36), (0, 0, 0, 0))
+        ImageDraw.Draw(c).rounded_rectangle((8, 14, c.width - 1, c.height - 1), radius=40, fill=(120, 80, 60, 50))
+        c.alpha_composite(rounded(im, 34), (10, 6))
+        return c
+
+    big = photo_card(960)
+    url = lambda d: pill(d, W // 2, 190, "songifted.com", sans(44, "Bold"), SG["white"], SG["coral"], pad=(36, 18))  # noqa: E731
+
+    # ① 钩子：送妈妈的生日礼物 → 一首唱着她名字的歌
+    n1 = int(2.0 * FPS)
+    for i in range(n1):
+        img = bg.copy()
+        d = ImageDraw.Draw(img)
+        a = int(255 * ease_out(i / 8))
+        d.text((W // 2, 250), "Mom's birthday gift:", font=serif(84), fill=SG["ink"] + (a,), anchor="mm")
+        d.text((W // 2, 370), "a song with her name.", font=serif(84), fill=SG["coral"] + (a,), anchor="mm")
+        paste_scaled(img, big, W // 2, 860, 0.97 + 0.03 * i / n1)
+        pill(d, W // 2, STEP_Y, "1  Tell us about her", sans(42), SG["white"], SG["ink"])
+        yield img.convert("RGB")
+
+    # ② 产品动作 a：站上 /create 的真实手机界面，三屏依次滑入（名字 → 音乐风格 → 她的细节）
+    shots = [rounded(Image.open(src / "ui" / f).convert("RGB").resize((440, 952), Image.LANCZOS), 38)
+             for f in ("create_step1_who_m.jpg", "create_step3_sound_m.jpg", "create_step4_details_m.jpg")]
+    caps = ["Her name", "The sound", "What makes her, her"]
+    n2a = int(2.3 * FPS)
+    for i in range(n2a):
+        img = bg.copy()
+        d = ImageDraw.Draw(img)
+        d.text((W // 2, 250), "5 quick questions,", font=serif(84), fill=SG["ink"], anchor="mm")
+        d.text((W // 2, 370), "about a minute.", font=serif(84), fill=SG["coral"], anchor="mm")
+        cur = min(2, i // (n2a // 3))
+        for k in sorted(range(3), key=lambda k: k == cur):  # 当前这张最后画，压在两侧上面
+            off = k - cur
+            t = ease_out((i % (n2a // 3)) / 7) if k == cur else 1.0
+            cx = W // 2 + off * 600 + (int((1 - t) * 300) if k == cur and cur > 0 else 0)
+            s = 1.0 if off == 0 else 0.82
+            paste_scaled(img, shots[k], cx, 905, s, 1.0 if off == 0 else 0.45)
+        pill(d, W // 2, STEP_Y, f"1  {caps[cur]}", sans(42), SG["white"], SG["ink"])
+        yield img.convert("RGB")
+
+    # ② 产品动作 b：我们写词，你确认（站首页原话：You approve the lyrics before we sing it）
+    n2b = int(SGM_LEAD * FPS) - n1 - n2a
+    lyr = [l for _, _, l in SGM_LYRICS]
+    for i in range(n2b):
+        img = bg.copy()
+        d = ImageDraw.Draw(img)
+        d.text((W // 2, 250), "We write the lyrics.", font=serif(84), fill=SG["ink"], anchor="mm")
+        d.text((W // 2, 370), "You approve them.", font=serif(84), fill=SG["coral"], anchor="mm")
+        d.rounded_rectangle((96, 570, W - 84, 1290), radius=34, fill=(120, 80, 60, 40))
+        d.rounded_rectangle((90, 560, W - 90, 1280), radius=34, fill=SG["white"] + (255,))
+        d.text((146, 622), "Your lyrics", font=sans(34, "Bold"), fill=SG["muted"], anchor="lm")
+        f = serif(46, "Regular")
+        for j, line in enumerate(lyr):
+            a = int(255 * ease_out((i - j * 3) / 6))
+            y = 730 + j * 90
+            if "Linda" in line:
+                pre = line.split("Linda")[0]
+                d.text((146, y), pre, font=f, fill=SG["ink"] + (a,), anchor="la")
+                d.text((146 + d.textlength(pre, font=f), y), "Linda", font=serif(46, "Bold"), fill=SG["coral"] + (a,), anchor="la")
+            else:
+                d.text((146, y), line, font=f, fill=SG["ink"] + (a,), anchor="la")
+        if i > n2b - 22:
+            btn = Image.new("RGBA", (460, 110), (0, 0, 0, 0))
+            bd = ImageDraw.Draw(btn)
+            bd.rounded_rectangle((0, 0, 459, 109), radius=55, fill=SG["coral"])
+            bd.text((230, 55), "Approve lyrics", font=sans(44, "Bold"), fill=SG["white"], anchor="mm")
+            paste_scaled(img, btn, W // 2, 1170, ease_out_back((i - (n2b - 22)) / 10))
+        pill(d, W // 2, STEP_Y, "2  Approve the lyrics", sans(42), SG["white"], SG["ink"])
+        yield img.convert("RGB")
+
+    # ③ 结果：副歌，场景照 + 大字卡拉 OK（逐句出现，Linda 高亮），网址常驻顶部
+    n3 = int((SGM_LYRICS[-1][1] - SGM_CHORUS + 0.4) * FPS)
+    for i in range(n3):
+        img = bg.copy()
+        d = ImageDraw.Draw(img)
+        url(d)
+        paste_scaled(img, big, W // 2, 640, 1.0 + 0.04 * i / n3)
+        t_song = SGM_CHORUS + i / FPS
+        # 当前句和下一句，两行一组：(0,1) / (2,3)
+        grp = 0 if t_song < SGM_LYRICS[2][0] - 0.3 else 2
+        for row in range(2):
+            a0, _, line = SGM_LYRICS[grp + row]
+            on = t_song >= a0 - 0.15
+            col = SG["ink"] if on else (200, 180, 165)
+            sz = 66
+            while sz > 44 and d.textlength(line, font=serif(sz, "Bold")) > W - 140:  # 长句自动缩字号
+                sz -= 2
+            f = serif(sz, "SemiBold")
+            y = 1160 + row * 110
+            if "Linda" in line:
+                pre = line.split("Linda")[0]
+                tw = d.textlength(pre, font=f) + d.textlength("Linda", font=serif(sz, "Bold"))
+                x = (W - tw) / 2
+                d.text((x, y), pre, font=f, fill=col, anchor="lm")
+                d.text((x + d.textlength(pre, font=f), y), "Linda", font=serif(sz, "Bold"), fill=SG["coral"] if on else col, anchor="lm")
+            else:
+                d.text((W // 2, y), line, font=f, fill=col, anchor="mm")
+        if i < int(2.5 * FPS):
+            a = int(255 * min(1.0, i / 6))
+            pill(d, W // 2, STEP_Y, "3  Her song, ready in minutes", sans(42), SG["white"] + (a,), SG["coral"] + (a,))
+        d.text((W // 2, STEP_Y + 78), "Example song from songifted.com (for Linda)  ·  Scene: AI-generated", font=sans(26, "Medium"),
+               fill=SG["muted"], anchor="mm")
+        yield img.convert("RGB")
+
+    # ④ 落版
+    n4 = int(2.8 * FPS)
+    for i in range(n4):
+        img = bg.copy()
+        d = ImageDraw.Draw(img)
+        paste_scaled(img, icon, W // 2, 560, ease_out_back(i / 10))
+        d.text((W // 2, 790), "Songifted", font=serif(150), fill=SG["ink"], anchor="mm")
+        d.text((W // 2, 940), "songifted.com", font=sans(78, "Bold"), fill=SG["coral"], anchor="mm")
+        d.text((W // 2, 1090), "A birthday song with Mom's name in it.", font=sans(44, "Medium"), fill=SG["ink"], anchor="mm")
         pill(d, W // 2, 1240, "Free 45-second preview", sans(46, "Bold"), SG["white"], SG["coral"], pad=(40, 20))
         d.text((W // 2, 1340), "for eligible first-time creators", font=sans(32, "Medium"), fill=SG["muted"], anchor="mm")
         d.text((W // 2, 1420), "Link on our channel page", font=sans(36, "Medium"), fill=SG["muted"], anchor="mm")
@@ -478,10 +751,158 @@ def pawmotif_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
         yield img.convert("RGB")
 
 
+PM_STYLES = [  # (文件后缀, 网站上的画风名)。顺序 = 片中出场顺序，单色收尾（深底最有冲击力）
+    ("watercolor", "Watercolor"), ("oil", "Old World Oil"), ("gouache", "Modern Gouache"),
+    ("pencil", "Colored Pencil"), ("botanical", "Botanical"), ("peek", "Monochrome"),
+]
+
+
+def framed(im: Image.Image, box_w: int, box_h: int, mat: int = 26, border: int = 10) -> Image.Image:
+    """把画像装进「墨绿细框 + 白卡纸 + 投影」，整体不超过 box_w × box_h。返回 RGBA。"""
+    pad = mat + border
+    s = min((box_w - 2 * pad - 40) / im.width, (box_h - 2 * pad - 40) / im.height)
+    art = im.convert("RGB").resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
+    fw, fh = art.width + 2 * pad, art.height + 2 * pad
+    out = Image.new("RGBA", (fw + 40, fh + 40), (0, 0, 0, 0))
+    sh = Image.new("RGBA", out.size, (0, 0, 0, 0))
+    ImageDraw.Draw(sh).rectangle((26, 30, 26 + fw, 30 + fh), fill=(40, 40, 30, 70))
+    out.alpha_composite(sh.filter(ImageFilter.GaussianBlur(12)))
+    d = ImageDraw.Draw(out)
+    d.rectangle((20, 20, 20 + fw - 1, 20 + fh - 1), fill=PM["ink"])
+    d.rectangle((20 + border, 20 + border, 20 + fw - 1 - border, 20 + fh - 1 - border), fill=(252, 251, 247))
+    out.paste(art, (20 + pad, 20 + pad))
+    return out
+
+
+def pawmotif_styles_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
+    """One Pet, 6 Styles：同一张手机照片，在 PawMotif 上做成全部 6 种画风（全部站上真实生成，0 CCU，无 AI 视频）。
+
+    ① 原照 + 钩子 → ② 照片放进上传卡，按下站上原文按钮 → ③ 6 幅画轮播（顶部风格标签跟着高亮 = 产品动作）
+    → 2×3 拼图问「Which one is him?」引评论 → ④ 落版。
+    """
+    # 用全身照：头部特写照（pawmotif_doberman_src.jpg）配全身模板会画成大头小身子（2026-11-12 实测油画/水粉/彩铅都中招）
+    photo = Image.open(src / "pawmotif_doberman_fullbody_src.jpg").convert("RGB")  # 车牌已打码、EXIF 已去
+    arts = [(Image.open(src / f"pawmotif_doberman_fb_{k}_full.jpg").convert("RGB"), name) for k, name in PM_STYLES]
+    icon = rounded(Image.open(HERE / "out" / "pawmotif" / "avatar_800.png").convert("RGB").resize((210, 210), Image.LANCZOS), 105)
+    sans = lambda n, w="SemiBold": font("dmsans", n, w)  # noqa: E731
+    AREA_CY, AREA_W, AREA_H = 880, 1040, 900  # 画框区域：y 490–1390，避开顶部网址/画风名和底部步骤条
+
+    def base() -> Image.Image:
+        return Image.new("RGBA", (W, H), PM["paper"] + (255,))
+
+    def url_badge(d):
+        pill(d, W // 2, 190, "pawmotif.com", sans(44, "Bold"), PM["white"], PM["ink"] + (235,), pad=(36, 18))
+
+    # ① 钩子 + 输入：原照装在相片框里，慢推
+    n1 = int(2.0 * FPS)
+    ph_card = framed(photo, 1040, 1100, mat=18, border=0)
+    for i in range(n1):
+        img = base()
+        d = ImageDraw.Draw(img)
+        a = int(255 * ease_out(i / 8))
+        d.text((W // 2, 200), "One phone photo.", font=pm_serif(96), fill=PM["ink"] + (a,), anchor="mm")
+        d.text((W // 2, 315), "Six portraits.", font=pm_serif(96, True), fill=PM["olive"] + (a,), anchor="mm")
+        paste_scaled(img, ph_card, W // 2, 900, 0.96 + 0.04 * i / n1)
+        pill(d, W // 2, STEP_Y, "1  Upload one photo of your pet", sans(42), PM["white"], PM["ink"] + (240,))
+        yield img.convert("RGB")
+
+    # ② 产品动作：照片缩进上传卡（站上原文 "Change your photo"），弹出并按下 "Create my free preview →"
+    n2 = int(1.6 * FPS)
+    thumb = framed(photo, 420, 540, mat=12, border=0)
+    btn = Image.new("RGBA", (640, 110), (0, 0, 0, 0))
+    bd = ImageDraw.Draw(btn)
+    bd.rounded_rectangle((0, 0, 639, 109), radius=8, fill=PM["olive"])
+    bd.text((320, 55), "Create my free preview  →", font=sans(42, "Bold"), fill=PM["white"], anchor="mm")
+    for i in range(n2):
+        img = base()
+        d = ImageDraw.Draw(img)
+        d.text((W // 2, 230), "Pick a style,", font=pm_serif(96), fill=PM["ink"], anchor="mm")
+        d.text((W // 2, 345), "preview it free", font=pm_serif(96, True), fill=PM["olive"], anchor="mm")
+        t = ease_out(i / 10)
+        paste_scaled(img, ph_card, W // 2, int(900 - 160 * t), 1.0 - 0.5 * t)
+        if i > 8:
+            d.text((W // 2, 1060), "my_doberman.jpg", font=sans(34, "Medium"), fill=PM["muted"], anchor="mm")
+        press = 0.94 if n2 - 10 <= i < n2 - 6 else 1.0  # 按下的那一下
+        paste_scaled(img, btn, W // 2, 1230, ease_out_back((i - 10) / 8) * press)
+        pill(d, W // 2, STEP_Y, "2  Choose a style  ·  free preview", sans(40), PM["white"], PM["ink"])
+        yield img.convert("RGB")
+
+    # ③ 结果：6 幅画轮播，交叉淡化 + 轻微推近；顶部画风名 + 6 个标签，当前画风高亮
+    per, xf = int(1.35 * FPS), 6
+    cards = [framed(a, AREA_W, AREA_H) for a, _ in arts]
+    chip_f = sans(31, "Medium")
+    chip_w = [int(ImageDraw.Draw(base()).textlength(n, font=chip_f)) + 30 for _, n in arts]
+
+    def chips(d, active: int):
+        rows = [list(range(0, 3)), list(range(3, 6))]
+        for r, idx in enumerate(rows):
+            tw = sum(chip_w[k] for k in idx) + 12 * (len(idx) - 1)
+            x = (W - tw) // 2
+            for k in idx:
+                on = k == active
+                y = 384 + r * 60
+                d.rounded_rectangle((x, y - 25, x + chip_w[k], y + 25), radius=25,
+                                    fill=PM["olive"] if on else PM["paper"], outline=PM["olive"] if on else PM["muted"], width=2)
+                d.text((x + chip_w[k] // 2, y), arts[k][1], font=chip_f, fill=PM["white"] if on else PM["muted"], anchor="mm")
+                x += chip_w[k] + 12
+
+    for k in range(len(arts)):
+        for i in range(per):
+            img = base()
+            if k > 0 and i < xf:  # 上一幅淡出
+                prev = cards[k - 1]
+                paste_scaled(img, prev, W // 2, AREA_CY + 60, 1.03, 1 - i / xf)
+            paste_scaled(img, cards[k], W // 2, AREA_CY + 60, 0.97 + 0.04 * i / per, min(1.0, i / xf) if k > 0 else ease_out(i / 4))
+            d = ImageDraw.Draw(img)
+            url_badge(d)
+            d.text((W // 2, 300), arts[k][1], font=pm_serif(78), fill=PM["ink"], anchor="mm")
+            chips(d, k)
+            pill(d, W // 2, STEP_Y, "3  One photo, every style", sans(42), PM["white"], PM["ink"] + (240,))
+            pill(d, W // 2, STEP_Y + 78, f"{k + 1}/6  ·  Made by PawMotif from that one phone photo", sans(26, "Medium"),
+                 PM["ink"], PM["paper"] + (230,), pad=(20, 8))
+            yield img.convert("RGB")
+
+    # 拼图：2×3，编号 1–6，问观众选哪幅（评论区数字 = 画风人气数据）
+    n_grid = int(2.4 * FPS)
+    cell_w, cell_h = 470, 360
+    minis = [framed(a, cell_w, cell_h, mat=10, border=5) for a, _ in arts]
+    for i in range(n_grid):
+        img = base()
+        d = ImageDraw.Draw(img)
+        url_badge(d)
+        d.text((W // 2, 320), "Which one is him?", font=pm_serif(84), fill=PM["ink"], anchor="mm")
+        for k, m in enumerate(minis):
+            cx, cy = 290 + (k % 2) * 500, 560 + (k // 2) * 330
+            paste_scaled(img, m, cx, cy, ease_out_back((i - k * 1.5) / 7))
+            if i - k * 1.5 > 4:
+                d.ellipse((cx - 190 - 24, cy - 130 - 24, cx - 190 + 24, cy - 130 + 24), fill=PM["olive"])
+                d.text((cx - 190, cy - 130), str(k + 1), font=sans(30, "Bold"), fill=PM["white"], anchor="mm")
+        pill(d, W // 2, STEP_Y, "Comment your pick: 1–6", sans(42, "Bold"), PM["white"], PM["olive"])
+        yield img.convert("RGB")
+
+    # ④ 落版
+    n4 = int(2.8 * FPS)
+    for i in range(n4):
+        img = base()
+        d = ImageDraw.Draw(img)
+        paste_scaled(img, icon, W // 2, 560, ease_out_back(i / 10))
+        d.text((W // 2, 800), "PawMotif", font=pm_serif(150), fill=PM["ink"], anchor="mm")
+        d.text((W // 2, 950), "pawmotif.com", font=sans(78, "Bold"), fill=PM["olive"], anchor="mm")
+        d.text((W // 2, 1095), "Your pet, in 6 art styles", font=sans(44, "Medium"), fill=PM["ink"], anchor="mm")
+        pill(d, W // 2, 1240, "Free preview  ·  $29 only if you love it", sans(42, "Bold"), PM["white"], PM["olive"], pad=(40, 20))
+        d.text((W // 2, 1380), "Link on our channel page", font=sans(36, "Medium"), fill=PM["muted"], anchor="mm")
+        yield img.convert("RGB")
+
+
 RECIPES = {
     "tryonswap": dict(
         src="samples/tryonswap", clip="out/samples/tryonswap/TryOnSwap_SpinSwap_Coat_Master.mp4", start=1, end=188,
         out="out/promo/tryonswap/TryOnSwap_Promo_Coat_1080x1920.mp4", frames=tryonswap_frames,
+    ),
+    # One Photo, a Campaign：6 个 Scene 预设全部是站长账号在 tryonswap.com 真实生成（2026-11-12）；借大衣 H3 样片的音轨
+    "tryonswap-campaign": dict(
+        src="samples/tryonswap", clip="out/samples/tryonswap/TryOnSwap_SpinSwap_Coat_Master.mp4", start=0, end=0,
+        out="out/promo/tryonswap/TryOnSwap_Promo_6Scenes_1080x1920.mp4", frames=tryonswap_campaign_frames,
     ),
     # H3 杜宾 Living Portrait（seed 2026111131）首尾无定格跳帧，整段 0–187 都能用。
     # 画面里 H3 从第 PM_MOTION_T 秒出现；H3 原生钢琴音轨循环铺满全片，相位对齐到这一刻从头播放
@@ -494,6 +915,17 @@ RECIPES = {
     "pawmotif-static": dict(
         src="samples/pawmotif", clip="out/samples/pawmotif/PawMotif_LivingCorgi_T1_Master.mp4", start=0, end=0,
         out="out/promo/pawmotif/PawMotif_Promo_Doberman_static_1080x1920.mp4", frames=pawmotif_frames,
+    ),
+    # One Pet, 6 Styles：6 幅画全部是站长测试号在 pawmotif.com 用同一张全身照真实生成的（2026-11-12）；借杜宾 H3 的钢琴音轨
+    "pawmotif-styles": dict(
+        src="samples/pawmotif", clip="out/samples/pawmotif/PawMotif_LivingDoberman_T1_Master.mp4", start=0, end=0,
+        out="out/promo/pawmotif/PawMotif_Promo_6Styles_1080x1920.mp4", frames=pawmotif_styles_frames,
+    ),
+    # 站上 /birthday-song-for-mom 的现成示例歌（不另外生成）；clip 不用，只占位
+    "songifted-mom": dict(
+        src="samples/songifted", clip="samples/songifted/demos/for-mom.mp3", start=0, end=0,
+        out="out/promo/songifted/Songifted_Promo_Mom_1080x1920.mp4", frames=songifted_mom_frames,
+        audio="samples/songifted/demos/for-mom.mp3", audio_start=SGM_CHORUS - SGM_LEAD,
     ),
     "songifted": dict(
         src="samples/songifted", clip="out/samples/songifted/Songifted_BirthdayReaction_T1_Master.mp4", start=0, end=181,

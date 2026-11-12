@@ -5,11 +5,18 @@
 
 | 站点 | 卖什么 | 频道名 / Handle / 频道 ID | 方案 |
 |---|---|---|---|
-| songifted.com | 写进对方名字的定制礼物歌，$49 起，首次可免费试听 45 秒 | **Songifted** · `@songifted` · `UCzeTUCqNXgBSFFpE_iOsZjQ` | [`songifted/频道方案.md`](songifted/频道方案.md) |
-| pawmotif.com | 用宠物照片画肖像，6 种画风，$29 | **PawMotif** · `@pawmotif` · `UC8M9W5_TlNenrilxQBTkBJw` | [`pawmotif/频道方案.md`](pawmotif/频道方案.md) |
-| tryonswap.com | AI 虚拟试衣（衣服穿到模特身上），按张计费 | **TryOnSwap** · `@tryonswap` · `UCxXCgsXBIbSJ3_naKqeQNvw` | [`tryonswap/频道方案.md`](tryonswap/频道方案.md) |
+| songifted.com | 写进对方名字的定制礼物歌，$49 起，首次可免费试听 45 秒 | **Songifted** · `@songifted` · `UCzeTUCqNXgBSFFpE_iOsZjQ` | `site-social-ops/brands/songifted/频道方案-youtube.md` |
+| pawmotif.com | 用宠物照片画肖像，6 种画风，$29 | **PawMotif** · `@pawmotif` · `UC8M9W5_TlNenrilxQBTkBJw` | `site-social-ops/brands/pawmotif/频道方案-youtube.md` |
+| tryonswap.com | AI 虚拟试衣（衣服穿到模特身上），按张计费 | **TryOnSwap** · `@tryonswap` · `UCxXCgsXBIbSJ3_naKqeQNvw` | `site-social-ops/brands/tryonswap/频道方案-youtube.md` |
 
 三个频道都在 2026-11-10 建好，都是挂在 `winsonaibuilder@gmail.com` 下的品牌账号。头像、横幅、简介、2 个 UTM 链接、8 个关键词都已发布，并从公开页核验过（TryOnSwap 的关键词在 Studio 里已保存，公开页同步比较慢）。还没有上传视频；所在国家/地区、联系邮箱、视频水印都没设置。
+
+## 发布与运营已迁到 site-social-ops（2026-11-12）
+
+本目录只管**制作**：频道美术、H3 样片、引流版 Shorts 合成。**发布、跨平台分发（YouTube / Pinterest / Instagram / Facebook）、社区运营、产品体验问题记录**都在 `/Volumes/WorkData/Workspace/projects/site-social-ops`：
+
+- 频道方案、产品体验问题、YouTube Studio 上传流程：`brands/<site>/`、`docs/platforms/youtube.md`
+- 交接方式：本目录合成母版（`out/promo/<site>/*.mp4`），在 site-social-ops 的 `releases/<id>/release.json` 里写 `source.master` 指向它，再用 `python3 -m ops import` 拷过去
 
 ## 频道素材
 
@@ -45,9 +52,14 @@ python3 workflows/08_site_channels/make_channel_assets.py --site pawmotif
 - [x] 2026-11-11 PawMotif 样片 2 条（Living Portrait · 柯基植物系列，首尾帧都是网站首页现成成品），实耗约 2.4 CCU（G4 14 分 23 秒）
 - [x] 2026-11-11 Songifted 2 条（生日反应 + 网站示例歌）+ TryOnSwap 2 条（转身换装），一次开机，G4 22 分 14 秒，按时长折算 3.72 CCU（余额实际减少 3.03）。TryOnSwap 吊带裙那条作废（见下）
 - [x] 2026-11-11 三个站的引流版 Shorts 各 1 条（`promo_short.py`，本地合成 0 CCU），见下文「引流版 Shorts」
-- [x] 2026-11-11 PawMotif 用站长测试号完整走了一遍产品流程，问题记录在 `pawmotif/产品体验问题.md`
+- [x] 2026-11-11 PawMotif 用站长测试号完整走了一遍产品流程，问题记录在 `site-social-ops/brands/pawmotif/产品体验问题.md`
 - [x] 2026-11-11 上线：Songifted `W4t3RBjlIA0`、TryOnSwap `cGNfbJA6eFo`（公开，oEmbed 200 核验）
 - [x] 2026-11-11 杜宾水彩画像 H3 Living Portrait 1 条（G4 12 分 11 秒，余额实际减少 1.67 CCU），已剪进 PawMotif 引流版（17.2 秒），上线 `eQuDr1kLsHc`（公开，oEmbed 200）
+- [x] 2026-11-12 第二批引流 Shorts 各 1 条（全部站上真实产出，0 CCU），公开上线并用 oEmbed 核验：
+  - PawMotif `l5EfuX47GDM`「One Pet, 6 Styles」：测试号用杜宾全身照生成全部 6 种画风（`promo_short.py pawmotif-styles`）
+  - Songifted `0S8IrjXonjs`「Happy Birthday Mom」：站上 /birthday-song-for-mom 的现成示例歌 + /create 真实手机截图（`songifted-mom`）
+  - TryOnSwap `ZDOXYAwCRT4`「One sweater, six photoshoots」：站长账号 6 个 Scene 预设各 1 张 2K 9:16，扣 60 credits（`tryonswap-campaign`）
+  - 三个站的产品问题分别记在 `site-social-ops/brands/<site>/产品体验问题.md`
 - [ ] 三个站的页脚加上 YouTube 链接（在各站自己的仓库里改，不在本仓库）
 
 ## 样片出片（`render_samples.py` + `finish_sample.py`）
@@ -82,12 +94,16 @@ python3 workflows/08_site_channels/finish_sample.py -i <raw.mp4> -o <final.mp4> 
 | ④ 落版 | Logo + 网址 + 免费额度原文 +「Link on our channel page」 | 频道素材 |
 
 ```bash
-python3 workflows/08_site_channels/promo_short.py {tryonswap|songifted|pawmotif}   # 产出 out/promo/<site>/
+python3 workflows/08_site_channels/promo_short.py {tryonswap|songifted|pawmotif}                        # 第一批
+python3 workflows/08_site_channels/promo_short.py {pawmotif-styles|songifted-mom|tryonswap-campaign}   # 第二批，产出 out/promo/<site>/
 ```
 
 - **Shorts 的简介和评论里的链接点不开**，所以网址从第 ③ 段起常驻在画面顶部居中（右上角会被 Shorts 的搜索按钮挡住）；能点的入口只有频道主页的链接和关联长视频。
 - 安全区：关键文字放在 `STEP_Y=1450` 以上；底部约 20% 会被标题、频道名、音乐条盖住。
 - 免费额度的说法照搬网站原文，限定条件也照写（Songifted 的「for eligible first-time creators」）。
 - Songifted 的歌从示例歌第 `24.96 - 4.6` 秒开始放，这样第 ③ 段一开始正好唱到带名字的那句，歌词字幕里把 Sarah 高亮。
+- **Songifted 不另外生成歌**：站上每个场合页都有现成示例歌（`/demos/<occasion>.mp3`，11 首英文，已下载到 `samples/songifted/demos/`），直接用。`/create` 最后一步有 Cloudflare 人机验证，自动化不要碰。
+- **PawMotif 原照要和画风构图匹配**：头部特写配全身构图的画风（油画趴卧、水粉坐椅、彩铅蜷睡、水彩坐姿）会画成大头小身子。「6 种画风」用全身照（`pawmotif_doberman_fullbody_src.jpg`，车牌已打码、EXIF 已去）。用之前先看头身比。
+- **TryOnSwap 场景合集**：Scene try-on 可以连续提交排队，2K 一张约 25 秒，结果原图就是缩略图背后的 `/api/tryon/asset/<id>`。偶发失败（Needs attention）会自动退款，重试一次即可。
 - PawMotif 的原照是站长自家的杜宾（已去掉 EXIF/GPS）。画像用站长测试号在 pawmotif.com 真实生成并下载（无水印 1664×2512）。H3 输入图在顶部补了纸色留白（`pawmotif_doberman_watercolor_768x1344.png`），给网址腾出位置；划屏的终点画面就是 H3 的第一帧，衔接无缝。配乐用 H3 原生的钢琴音轨，相位对齐到画面开始动的那一刻（`PM_MOTION_T`）。`promo_short.py pawmotif-static` 是不用 H3 的 0 CCU 版本。
 
