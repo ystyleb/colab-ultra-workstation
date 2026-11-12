@@ -1,0 +1,102 @@
+[
+ {
+  "id": "B13",
+  "kind": "rap",
+  "who": "b",
+  "line": 13,
+  "move": "FULL",
+  "text": "My next-gen patch runs sixty smooth; they left you locked at thirty",
+  "audio": [
+   0.27,
+   2.999
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "flicking his free left fingers rapidly forward to contrast smooth motion with a frozen frame",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame from frame zero. Tight portrait framing from the very first frame (0.0s) to the final frame with zero wide shot or bare floor: warm 2700K medieval torch bokeh orbs and softly blurred crowd silhouettes glow out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no other performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B14",
+  "kind": "rap",
+  "who": "b",
+  "line": 14,
+  "move": "FULL",
+  "text": "Players held your funeral — your studio did you dirty",
+  "audio": [
+   2.964,
+   5.468
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "lowering his head briefly in mock mourning with his free left hand over his chest, eyes gleaming",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame from frame zero. Tight portrait framing from the very first frame (0.0s) to the final frame with zero wide shot or bare floor: warm 2700K medieval torch bokeh orbs and softly blurred crowd silhouettes glow out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no other performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B15",
+  "kind": "rap",
+  "who": "b",
+  "line": 15,
+  "move": "FULL",
+  "text": "Silver's meant for monsters, steel puts outlaws in the clay",
+  "audio": [
+   5.421,
+   8.087
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "drawing an imaginary blade diagonal across the air with his free left hand",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame from frame zero. Tight portrait framing from the very first frame (0.0s) to the final frame with zero wide shot or bare floor: warm 2700K medieval torch bokeh orbs and softly blurred crowd silhouettes glow out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no other performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B16",
+  "kind": "rap",
+  "who": "b",
+  "line": 16,
+  "move": "FULL",
+  "text": "Toss a coin to Rivia's Wolf — your sun has set today",
+  "audio": [
+   8.046,
+   10.7
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "flipping an imaginary coin upward with his left thumb, then pointing dead-center into the camera lens",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical head-and-shoulders close-up shot of him at T2.2 shallow depth of field and gently pushes even closer on the final bar, his face and lips large in the upper half of the tall 9:16 frame from frame zero. Tight portrait framing from the very first frame (0.0s) to the final frame with zero wide shot or bare floor: warm 2700K medieval torch bokeh orbs and softly blurred crowd silhouettes glow out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no other performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

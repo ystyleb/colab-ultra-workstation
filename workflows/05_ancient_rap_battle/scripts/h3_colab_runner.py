@@ -322,15 +322,17 @@ def _adapt_prompt(c: dict, e: dict, total_dur: float, mic: str, static_cam: bool
     if c.get("bg"):  # shared stage plate so every shot of this singer sits in the same place of the same arena
         k = c["image_keys"].index(c["bg"]) + 1
         if realism_v2 and not wide:
+            bg_bokeh = e.get("bg_bokeh_en", "warm glowing 2700K candle chandeliers and out-of-focus cheering scholar silhouettes")
+            bg_lights = e.get("bg_lights_en", "warm 2700K amber chandelier bokeh")
             subj_lines.append(
-                f"<Picture {k}> is the packed underground battle arena behind <Subject 1> rendered at shallow T2.2 optical bokeh: warm glowing 2700K candle chandeliers and out-of-focus cheering scholar silhouettes below the stage."
+                f"<Picture {k}> is the packed underground battle arena behind <Subject 1> rendered at shallow T2.2 optical bokeh: {bg_bokeh} below the stage."
             )
             ret_lines.append(
-                f"Background (appears in [Shot 1]): reference - Keep the warm 2700K amber chandelier bokeh and packed arena atmosphere of <Picture {k}> softly out of focus at shallow T2.2 depth of field behind <Subject 1>; the out-of-focus crowd silhouettes below stage level are alive and continuously bouncing, nodding heads, and pumping raised arms and hats on every boom-bap beat (softly blurred optical bokeh silhouettes only, never razor-sharp background faces, never an empty black wall)."
+                f"Background (appears in [Shot 1]): reference - Keep the {bg_lights} and packed arena atmosphere of <Picture {k}> softly out of focus at shallow T2.2 depth of field behind <Subject 1>; the out-of-focus crowd silhouettes below stage level are alive and continuously bouncing, nodding heads, and pumping raised arms and hats on every boom-bap beat (softly blurred optical bokeh silhouettes only, never razor-sharp background faces, never an empty black wall)."
             )
             bg_clause = (
                 f" Behind him, the packed arena from <Picture {k}> sits in creamy shallow T2.2 Cooke optical bokeh "
-                "where warm 2700K candle chandelier bokeh orbs glow overhead and softly blurred crowd silhouettes below the stage bounce, sway, and pump their raised arms continuously to the boom-bap beat without any sharp background faces."
+                f"where {bg_lights} orbs glow overhead and softly blurred crowd silhouettes below the stage bounce, sway, and pump their raised arms continuously to the boom-bap beat without any sharp background faces."
             )
         else:
             subj_lines.append(f"<Picture {k}> is the arena environment directly behind <Subject 1>: the same set, lights and "

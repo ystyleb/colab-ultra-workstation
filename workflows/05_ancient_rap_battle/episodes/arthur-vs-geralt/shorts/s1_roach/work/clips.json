@@ -1,0 +1,102 @@
+[
+ {
+  "id": "A05",
+  "kind": "rap",
+  "who": "a",
+  "line": 5,
+  "move": "FULL",
+  "text": "My horses chew through mountain storms — pure living, breathing proof",
+  "audio": [
+   0.27,
+   2.992
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "patting his own chest proudly with an open left palm, chin steady beneath his leather hat brim",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame from frame zero. Tight portrait framing from the very first frame (0.0s) to the final frame with zero wide shot or bare floor: warm 2700K saloon oil-lantern bokeh orbs and softly blurred crowd silhouettes glow out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no other performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A06",
+  "kind": "rap",
+  "who": "a",
+  "line": 6,
+  "move": "FULL",
+  "text": "Yours spooks at a picket fence and spawns upon a roof",
+  "audio": [
+   2.959,
+   5.511
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "pointing his left index finger straight up toward the rafters while laughing at a horse on a roof",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame from frame zero. Tight portrait framing from the very first frame (0.0s) to the final frame with zero wide shot or bare floor: warm 2700K saloon oil-lantern bokeh orbs and softly blurred crowd silhouettes glow out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no other performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A07",
+  "kind": "rap",
+  "who": "a",
+  "line": 7,
+  "move": "FULL",
+  "text": "Drop four feet off a porch and watch the mighty Witcher fold",
+  "audio": [
+   5.479,
+   8.075
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "dropping his free left palm sharply downward a few inches to mock a tiny porch fall",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame from frame zero. Tight portrait framing from the very first frame (0.0s) to the final frame with zero wide shot or bare floor: warm 2700K saloon oil-lantern bokeh orbs and softly blurred crowd silhouettes glow out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no other performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A08",
+  "kind": "rap",
+  "who": "a",
+  "line": 8,
+  "move": "FULL",
+  "text": "A peasant with a pitchfork laid the Butcher out cold",
+  "audio": [
+   8.045,
+   11.106
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "thrusting his free left hand forward like a three-pronged farmer's pitchfork with ruthless grit",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical head-and-shoulders close-up shot of him at T2.2 shallow depth of field and gently pushes even closer on the final bar, his face and lips large in the upper half of the tall 9:16 frame from frame zero. Tight portrait framing from the very first frame (0.0s) to the final frame with zero wide shot or bare floor: warm 2700K saloon oil-lantern bokeh orbs and softly blurred crowd silhouettes glow out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no other performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

@@ -1,0 +1,820 @@
+[
+ {
+  "id": "A01",
+  "kind": "rap",
+  "who": "a",
+  "line": 1,
+  "move": "ENTER",
+  "text": "Nineteen eighty-six, I painted Ocean Drive in gold / First voice in the franchise — watch a real mob boss unfold",
+  "audio": [
+   10.03,
+   16.131
+  ],
+  "lead": 0.0,
+  "frames": 158,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "sweeping his free left arm wide across the club as if showcasing Ocean Drive, then tapping his throat proudly with two fingers",
+  "two_shot": false,
+  "cam": "The camera starts behind the audience at head height: the backs of snapback caps, hoodie shoulders and raised hands of the packed underground hip-hop crowd fill the lower half of the frame with the spotlit round wooden stage small in the distance, then the camera pushes in with large amplitude at slow speed, gliding forward between the raised arms and over the shoulders of the spectators until it reaches the edge of the stage and settles on a chest-up medium shot of <Subject 1>; the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air",
+  "wide": true,
+  "image_keys": [
+   "a_face_clean"
+  ],
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "A03",
+  "kind": "rap",
+  "who": "a",
+  "line": 3,
+  "move": "PUSH",
+  "text": "Did fifteen up in Harwood, never snitched a single name / Took Diaz's whole mansion and I owned the city's game",
+  "audio": [
+   16.072,
+   20.651
+  ],
+  "lead": 0.0,
+  "frames": 124,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "holding up spread fingers on his free left hand with cold mobster grit, then gesturing toward his own chest to claim the city",
+  "two_shot": false,
+  "cam": "The camera starts on a waist-up medium shot of <Subject 1> in the crisp spotlight beam, then the camera pushes in with large amplitude at slow speed, travelling steadily toward him until it settles on a head-and-shoulders close-up at Cooke Panchro T2.2 shallow depth of field, his face and lips large and clearly readable whenever he faces the camera. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "A05",
+  "kind": "rap",
+  "who": "a",
+  "line": 5,
+  "move": "ARC",
+  "text": "Fled to Liberty City when your brother took the fall / Came home on a kid's bike while Tenpenny owned you all",
+  "audio": [
+   20.621,
+   25.789
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "flicking his free left hand backward dismissively, then miming gripping tiny kids' bicycle handlebars with a mocking grin",
+  "two_shot": true,
+  "cam": "The camera starts on a chest-up medium shot of <Subject 1> from the front as he raps, then the camera trucks left and pans right with large amplitude at slow speed, moving in an arc shot around his left shoulder, until it ends as an over-the-shoulder shot from behind him: the back of <Subject 1>'s head and his left shoulder softly blurred in the left foreground, and <Subject 2> in sharp focus a few steps away on screen-right, facing the camera. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his mouth firmly closed, arms relaxed at his side, watching him in silence",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "A07",
+  "kind": "rap",
+  "who": "a",
+  "line": 7,
+  "move": "ECU",
+  "text": "Big Smoke sold your family out for drive-thru number nines",
+  "audio": [
+   25.759,
+   28.318
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "counting off fast-food orders on his free left fingers right into the lens with a ruthless laugh",
+  "two_shot": false,
+  "cam": "A handheld 28mm cinema lens is close to his face and slightly below chin height, looking up at him: a tight close-up where his face fills most of the 16:9 frame, the chrome mesh head of the microphone softly foreshortened at the bottom edge of the frame just below his lower lip (never crossing his lips); the camera pushes in with small amplitude at slow speed, warm 2700K amber festoon bulb bokeh orbs flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "lens": "28mm wide-angle"
+ },
+ {
+  "id": "A08",
+  "kind": "rap",
+  "who": "a",
+  "line": 8,
+  "move": "FACE",
+  "text": "\"All you had to do was follow that damn train\" down the lines",
+  "audio": [
+   28.278,
+   31.005
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing his free left index finger straight between their faces as if tracing railway tracks",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-left in profile facing right, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-right in profile facing left; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "ENTER",
+  "text": "\"Here we go again\" — man, you talkin' 'bout a train? / Step three feet in the ocean and you drown inside the rain",
+  "audio": [
+   33.097,
+   38.383
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "rolling his bare left shoulder in his iconic alley walk swagger, then dropping his free left hand straight down like a sinking stone",
+  "two_shot": false,
+  "cam": "The camera starts behind the audience at head height: the backs of snapback caps, hoodie shoulders and raised hands of the packed underground hip-hop crowd fill the lower half of the frame with the spotlit round wooden stage small in the distance, then the camera pushes in with large amplitude at slow speed, gliding forward between the raised arms and over the shoulders of the spectators until it reaches the edge of the stage and settles on a chest-up medium shot of <Subject 1>; the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air",
+  "wide": true,
+  "image_keys": [
+   "b_face_clean"
+  ],
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "LONG",
+  "text": "King of Vice Beach? Homie, you sink just like a stone / I swim, skydive, and jetpack through three cities of my own",
+  "audio": [
+   38.35,
+   43.427
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "miming plugging his nose playfully with his left hand, then counting three cities cleanly on his fingers and sweeping skyward",
+  "two_shot": false,
+  "cam": "From the very first frame to the last, the camera holds a frontal head-and-shoulders close-up at eye level at Cooke Panchro 50mm T2.2, shot on a handheld 35mm cinema camera with a subtle natural sway, never a full-body or wide shot, his legs and the stage floor never in frame, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B05",
+  "kind": "rap",
+  "who": "b",
+  "line": 5,
+  "move": "WHIP",
+  "text": "Two flat tourist islands — that's the tiny map you ran / Crying at toy choppers up in \"Demolition Man\"",
+  "audio": [
+   43.397,
+   48.514
+  ],
+  "lead": 2.5,
+  "frames": 192,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "raw": true,
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "closeup_lora": 0.2,
+  "prompt": "subject_definitions:\n<Subject 1> is Carl Johnson (24-year-old African-American street protagonist Carl CJ Johnson from 1992 Los Santos, lean slim-athletic build, ultra-short cropped black Caesar haircut with a straight clean hairline, dark brown expressive eyes, light subtle mustache and chin shadow, bare warm-brown shoulders and arms, wearing his iconic plain crisp white sleeveless ribbed cotton tank top undershirt (A-shirt) with no jacket or shirt over it, baggy blue denim jeans, and black canvas sneakers) from <Picture 1>, real human skin with matte pores and zero plastic sheen.\n<Subject 2> is Tommy Vercetti (35-year-old Italian-American mobster Tommy Vercetti from 1986 Vice City, slim-athletic build, thick dark-brown almost-black hair neatly slicked back in a 1980s style, strong angular jaw and high cheekbones with a rugged five-o'clock shadow across jawline and upper lip, intense dark brown eyes, tanned olive skin, wearing his iconic vibrant turquoise-cyan short-sleeve button-down Hawaiian shirt covered in dark-navy palm-tree silhouettes unbuttoned at the top over a thin gold bead chain necklace, classic stonewashed blue denim jeans, white low-top sneakers, and a gold watch on his left wrist) from <Picture 2>, real human skin with matte pores.\n<Picture 3> is the underground warehouse club backdrop behind <Subject 1> in [Shot 1]: emerald-green lowrider bokeh, boomboxes, warm 2700K festoon bulbs and softly blurred cheering hip-hop spectators below.\n<Audio 1> is the target rap vocal track for <Subject 1>, providing his exact vocal timbre (charismatic 1990s West Coast street male rapper, smooth razor-sharp mid-tenor voice, bouncy nimble G-funk boom-bap flow) and syllable-by-syllable rhythm during 00:02.500–00:07.617, followed by silence.\n\nsummary:\n[reference generation + audio reuse] Inside a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring underground crowd bouncing on the concrete floor below, <Subject 1> performs an energetic English battle-rap couplet synced syllable-by-syllable to <Audio 1>, holding the vintage chrome handheld microphone with a round mesh head just below his lower lip angled upward at 45 degrees near the bottom edge of the frame, across 2 shots, with <Subject 2> listening in silence, while the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial bone structure, short black Caesar haircut and plain white sleeveless ribbed tank top from <Picture 1> with authentic matte skin.\n<Subject 2> (appears in [Shot 2]): fully_preserved - Strictly preserve exact facial structure, dark slicked-back 1980s hair and turquoise palm-tree Hawaiian shirt from <Picture 2>, keeping his mouth closed in silent listening throughout this clip.\nBackground (appears in [Shot 1]): reference - Keep the stage environment of <Picture 3> softly out of focus at Cooke Panchro T2.2 shallow depth of field behind <Subject 1> with warm 2700K festoon bulb bokeh orbs while the cheering crowd silhouettes bounce.\n<Audio 1>: fully_copy - Reused 1:1 as the target vocal track; while <Subject 1>'s face is on screen his lip movements, jaw openings and syllable articulation are synchronized directly to <Audio 1>; after the camera leaves him the same vocal continues uninterrupted from off screen.\n\ndetailed_description:\nr34l1sm, Facial Realism, authentic live-action 35mm concert documentary film shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 prime lens on Kodak Vision3 500T film, natural matte human skin texture with real pores, zero oily shine, authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Both shots are in the same underground brick warehouse rap club: warm 2700K festoon bulbs, light stage smoke, cheering hip-hop crowd silhouettes packed below the stage. [Shot 1] During 00:00.000–00:02.500, before he starts rapping, his mouth stays closed while the camera pushes in from a wide view of the stage and settles on him. Then, during 00:02.500–00:05.090, the camera holds a chest-up three-quarter medium close-up of <Subject 1> standing on the raised stage, on the right half of the frame, his face and lips large and readable, holding the vintage chrome handheld microphone with a round mesh head in his right hand an inch below his lower lip angled upward at 45 degrees (never occluding his lips), with <Picture 3> blurred into T2.2 bokeh behind him, rapping with intense brow and cheek articulation synced syllable-by-syllable to <Audio 1>, his free left thumb and index finger pinched close together to mock a tiny map toward screen-left; at the end of this shot the camera pans left with large amplitude at fast speed, a whip pan with heavy motion blur. [Shot 2] At 00:05.290, the whip pan lands on a new shot. During 00:05.290–00:07.617, the camera holds a tight chest-up medium close-up of <Subject 2> standing on the left side of the stage with warm 2700K amber festoon bulb and neon palm bokeh blurred behind him at T2.2, facing the camera, mouth firmly closed, jaw clenched tight, his tough smirk turning into stung irritation at the RC helicopter roast while <Subject 1>'s voice continues from off screen. The lyric sung across the whole clip: <d>[English]Two flat tourist islands — that's the tiny map you ran Crying at toy choppers up in \"Demolition Man\"</d> No subtitles, no on-screen text.\n\noverall_soundscape:\nClear, punchy foreground rap vocal performance from <Subject 1> during 00:02.500–00:07.617 synced 1:1 to <Audio 1> in a packed underground warehouse rap club full of roaring hip-hop fans, continuous across the cut.\n\nnon_diegetic_music:\nN/A — <Audio 1> is directly reused 1:1 as the target vocal track."
+ },
+ {
+  "id": "B07",
+  "kind": "rap",
+  "who": "b",
+  "line": 7,
+  "move": "CRASH",
+  "text": "Twenty-seven million copies — check the PlayStation throne",
+  "audio": [
+   48.468,
+   50.877
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "holding his free left palm high above his head like hoisting the PlayStation championship crown",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and head of <Subject 2> in the left foreground, <Subject 1> chest-up on the right facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from hairline to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "28mm wide-angle",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "B08",
+  "kind": "rap",
+  "who": "b",
+  "line": 8,
+  "move": "FACE",
+  "text": "While you borrowed Tony Montana's suit, mansion, and tone",
+  "audio": [
+   50.825,
+   53.553
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "smoothing down an imaginary pinstripe lapel on his chest with sarcastic flair right in Tommy's face",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "A09",
+  "kind": "rap",
+  "who": "a",
+  "line": 9,
+  "move": "ECU",
+  "text": "\"Borrowed Tony's mansion\"? Kid, I made the eighties mine",
+  "audio": [
+   63.948,
+   66.187
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "brushing his turquoise Hawaiian shirt collar cleanly with his free left hand, glaring down into the lens",
+  "two_shot": false,
+  "cam": "A handheld 28mm cinema lens is close to his face and slightly below chin height, looking up at him: a tight close-up where his face fills most of the 16:9 frame, the chrome mesh head of the microphone softly foreshortened at the bottom edge of the frame just below his lower lip (never crossing his lips); the camera pushes in with small amplitude at slow speed, warm 2700K amber festoon bulb bokeh orbs flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "lens": "28mm wide-angle"
+ },
+ {
+  "id": "A10",
+  "kind": "rap",
+  "who": "a",
+  "line": 10,
+  "move": "REVEAL",
+  "text": "Malibu Club to Print Works — every dollar's by design",
+  "audio": [
+   66.157,
+   68.642
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "rubbing his left thumb and fingers together in a crisp money gesture as he steps toward CJ",
+  "two_shot": true,
+  "cam": "The camera starts on a chest-up three-quarter medium close-up of <Subject 1> alone on the left half of the frame, facing right as he raps, then the camera pans right with small amplitude at slow speed, revealing <Subject 2> standing in profile at the right edge of the frame, and settles into a profile two-shot of the two men face to face, <Subject 1>'s lips and jaw clearly readable in every frame. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> listens with his mouth firmly closed, a faint cold smirk"
+ },
+ {
+  "id": "A11",
+  "kind": "rap",
+  "who": "a",
+  "line": 11,
+  "move": "FACE",
+  "text": "Sonny brought the Forellis — left 'em laying on my floor / You were Toreno's errand boy and Catalina's chore",
+  "audio": [
+   68.612,
+   73.673
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "sweeping his free left hand palm-down to clear the stairs, then rolling his hand in a mocking errand gesture at CJ",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-left in profile facing right, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-right in profile facing left; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "A13",
+  "kind": "rap",
+  "who": "a",
+  "line": 13,
+  "move": "TQ",
+  "text": "Stole a military jetpack, still got played like a pawn",
+  "audio": [
+   73.643,
+   76.085
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "jerking his free left thumb over his shoulder mockingly, eyes narrowed",
+  "two_shot": false,
+  "cam": "The camera holds a chest-up three-quarter medium close-up of <Subject 1> on the left half of the frame, facing right, shot on a handheld 35mm cinema camera with a subtle natural sway, slowly arcing a few degrees around him at T2.2 shallow depth of field, his face and lips large and clearly readable in every frame. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ]
+ },
+ {
+  "id": "A14",
+  "kind": "rap",
+  "who": "a",
+  "line": 14,
+  "move": "CRASH",
+  "text": "Let Ryder and Big Smoke fool your whole hood till dawn",
+  "audio": [
+   76.055,
+   78.755
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "shaking his free left index finger slowly side to side with cold mobster judgement",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and head of <Subject 2> in the right foreground, <Subject 1> chest-up on the left facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from hairline to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "35mm",
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "A15",
+  "kind": "rap",
+  "who": "a",
+  "line": 15,
+  "move": "FACEWIDE",
+  "text": "Check the calendar right now — the whole world's back in line",
+  "audio": [
+   78.725,
+   81.244
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "tapping his gold watch on his left wrist urgently, eyes blazing across the spotlight",
+  "two_shot": true,
+  "cam": "The camera holds a waist-up medium profile two-shot at eye level: <Subject 1> on screen-left facing right, leaning toward <Subject 2> and rapping at him, <Subject 2> on screen-right facing left standing his ground, the crisp silver overhead spotlight beam falling between the two men while warm 2700K amber festoon bulb bokeh glows behind them, <Subject 1>'s lips and jaw clearly readable in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his arms crossed and his mouth firmly closed"
+ },
+ {
+  "id": "A16",
+  "kind": "rap",
+  "who": "a",
+  "line": 16,
+  "move": "LONG",
+  "text": "GTA Six comes home to Vice — not your ninety-two shrine",
+  "audio": [
+   81.214,
+   84.002
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing triumphantly toward his Miami neon palm side of the club, chin held high",
+  "two_shot": false,
+  "cam": "From the very first frame to the last, the camera holds a frontal head-and-shoulders close-up at eye level at Cooke Panchro 50mm T2.2, shot on a handheld 35mm cinema camera with a subtle natural sway, never a full-body or wide shot, his legs and the stage floor never in frame, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ]
+ },
+ {
+  "id": "B09",
+  "kind": "rap",
+  "who": "b",
+  "line": 9,
+  "move": "TQ",
+  "text": "Yeah, Rockstar's back in Vice — and your name isn't on the list",
+  "audio": [
+   85.663,
+   88.943
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "holding up an imaginary guest list in his left palm and flicking it away with a razor-sharp smirk",
+  "two_shot": false,
+  "cam": "The camera holds a chest-up three-quarter medium close-up of <Subject 1> on the right half of the frame, facing left, shot on a handheld 35mm cinema camera with a subtle natural sway, slowly arcing a few degrees around him at T2.2 shallow depth of field, his face and lips large and clearly readable in every frame. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B10",
+  "kind": "rap",
+  "who": "b",
+  "line": 10,
+  "move": "FACE",
+  "text": "Jason and Lucia run your beach like you don't exist",
+  "audio": [
+   88.913,
+   91.404
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing two left fingers back and forth between them to signal two new bosses running Vice Beach",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B11",
+  "kind": "rap",
+  "who": "b",
+  "line": 11,
+  "move": "LONG",
+  "text": "Ghosted after eighty-six — you vanished from the hall / Left poor Ken in Vegas begging Tommy for a call",
+  "audio": [
+   91.359,
+   96.419
+  ],
+  "lead": 2.5,
+  "frames": 192,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "waving his free left palm across his face in a clean vanishing gesture, then holding his thumb and pinky to his ear like an unanswered phone",
+  "two_shot": false,
+  "cam": "During 00:00.000–00:02.500, before he starts rapping, his mouth stays closed while the camera pushes in with large amplitude at slow speed from a wide shot of him standing on the stage until it reaches the framing below; from 00:02.500 to the end of the shot it holds that framing. The framing is a frontal head-and-shoulders close-up at eye level at Cooke Panchro 50mm T2.2, shot on a handheld 35mm cinema camera with a subtle natural sway, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B13",
+  "kind": "rap",
+  "who": "b",
+  "line": 13,
+  "move": "ECU",
+  "text": "Robbed Caligula's Casino, burned the crooked badges down",
+  "audio": [
+   96.346,
+   98.971
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "slapping his free left fist cleanly against his chest right into the lens with hard street authority",
+  "two_shot": false,
+  "cam": "A handheld 28mm cinema lens is close to his face and slightly below chin height, looking up at him: a tight close-up where his face fills most of the 16:9 frame, the chrome mesh head of the microphone softly foreshortened at the bottom edge of the frame just below his lower lip (never crossing his lips); the camera pushes in with small amplitude at slow speed, warm 2700K amber festoon bulb bokeh orbs flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "lens": "28mm wide-angle"
+ },
+ {
+  "id": "B14",
+  "kind": "rap",
+  "who": "b",
+  "line": 14,
+  "move": "FACE",
+  "text": "Took the crown from Grove Street out to every rival town",
+  "audio": [
+   98.941,
+   101.514
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "sweeping his free left arm wide toward the crowd while staring nose-to-nose into Tommy's eyes",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B15",
+  "kind": "rap",
+  "who": "b",
+  "line": 15,
+  "move": "FACEWIDE",
+  "text": "Twenty years of mods and memes — watch a legend replay",
+  "audio": [
+   101.484,
+   104.005
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "bouncing his free left hand smoothly on the G-funk beat between them, owning the stage",
+  "two_shot": true,
+  "cam": "The camera holds a waist-up medium profile two-shot at eye level: <Subject 1> on screen-right facing left, leaning toward <Subject 2> and rapping at him, <Subject 2> on screen-left facing right standing his ground, the crisp silver overhead spotlight beam falling between the two men while warm 2700K amber festoon bulb bokeh glows behind them, <Subject 1>'s lips and jaw clearly readable in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his arms crossed and his mouth firmly closed"
+ },
+ {
+  "id": "B16",
+  "kind": "rap",
+  "who": "b",
+  "line": 16,
+  "move": "CRASH",
+  "text": "Grove Street is home forever — remember the name, CJ",
+  "audio": [
+   103.952,
+   108.35
+  ],
+  "lead": 0.0,
+  "frames": 124,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "tapping his heart twice over his white ribbed tank top, then pointing his left index finger dead-center into the lens",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and head of <Subject 2> in the left foreground, <Subject 1> chest-up on the right facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from hairline to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round wooden stage: the cheering crowd silhouettes are on the concrete club floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "28mm wide-angle",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "R_CJ_GAME",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Carl CJ Johnson (keep his exact 24-year-old face, ultra-short cropped black Caesar haircut with sharp rectangular hairline, thin mustache and small chin goatee, bare warm-brown shoulders and plain crisp white sleeveless ribbed cotton tank top with no jacket). Image 2 is CJ's right side of the underground warehouse club as seen from the stage (softly blurred green lowrider and boombox glow, 2700K festoon bulb bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Carl CJ Johnson (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm festoon bulb bokeh and streetlamp glow of his side of the club (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. One eyebrow slowly rises and the corner of his mouth lifts in a sceptical West Coast smirk, nodding slightly on the beat.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_CJ_EIGHTIES",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Carl CJ Johnson (keep his exact 24-year-old face, ultra-short cropped black Caesar haircut with sharp rectangular hairline, thin mustache and small chin goatee, bare warm-brown shoulders and plain crisp white sleeveless ribbed cotton tank top with no jacket). Image 2 is CJ's right side of the underground warehouse club as seen from the stage (softly blurred green lowrider and boombox glow, 2700K festoon bulb bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Carl CJ Johnson (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm festoon bulb bokeh and streetlamp glow of his side of the club (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His smirk tightens and his dark eyes narrow sharply, leaning forward half an inch as he sizes Tommy up.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_CJ_PAWN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Carl CJ Johnson (keep his exact 24-year-old face, ultra-short cropped black Caesar haircut with sharp rectangular hairline, thin mustache and small chin goatee, bare warm-brown shoulders and plain crisp white sleeveless ribbed cotton tank top with no jacket). Image 2 is CJ's right side of the underground warehouse club as seen from the stage (softly blurred green lowrider and boombox glow, 2700K festoon bulb bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Carl CJ Johnson (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm festoon bulb bokeh and streetlamp glow of his side of the club (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He tilts his head slightly and exhales through his nose, shaking his head once in cold street disdain.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_T_SWIM",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Tommy Vercetti (keep his exact rugged Italian-American face, thick dark-brown slicked-back 1980s hair, five-o'clock jaw stubble, turquoise-cyan short-sleeve Hawaiian shirt with dark-navy palm-tree silhouettes and thin gold bead chain). Image 2 is Tommy's left side of the underground warehouse club as seen from the stage (softly blurred neon palm glow, 2700K festoon bulb bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Tommy Vercetti (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm festoon bulb bokeh and Miami neon glow of his side of the club (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His tough mobster grin vanishes in an instant and a muscle twitches in his stubbled jaw, glaring straight ahead.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_T_GHOST",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Tommy Vercetti (keep his exact rugged Italian-American face, thick dark-brown slicked-back 1980s hair, five-o'clock jaw stubble, turquoise-cyan short-sleeve Hawaiian shirt with dark-navy palm-tree silhouettes and thin gold bead chain). Image 2 is Tommy's left side of the underground warehouse club as seen from the stage (softly blurred neon palm glow, 2700K festoon bulb bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Tommy Vercetti (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm festoon bulb bokeh and Miami neon glow of his side of the club (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He glances sideways for half a beat and swallows hard, jaw clenching as his expression turns deadly serious.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_T_FURY",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Tommy Vercetti (keep his exact rugged Italian-American face, thick dark-brown slicked-back 1980s hair, five-o'clock jaw stubble, turquoise-cyan short-sleeve Hawaiian shirt with dark-navy palm-tree silhouettes and thin gold bead chain). Image 2 is Tommy's left side of the underground warehouse club as seen from the stage (softly blurred neon palm glow, 2700K festoon bulb bokeh and cheering crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Tommy Vercetti (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm festoon bulb bokeh and Miami neon glow of his side of the club (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He grinds his teeth, nostrils flaring, staring straight back in stung, defiant mobster pride.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "VENUE_OPEN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "venue"
+  ],
+  "prompt": "Image 1 is the packed underground brick warehouse rap battle club at night with an empty spotlit central round stage, neon palm and white 80s wedge car on the left, green 90s lowrider and boomboxes on the right.\n\nCinematic photoreal 35mm film shot, 16:9. Wide establishing crane shot inside the packed red-brick underground warehouse rap battle club at night (Image 1): glowing 2700K tungsten festoon string bulbs overhead, a crisp 5600K silver spotlight beam illuminating the empty round wooden stage in the center, glowing neon palm sign and white 1980s wedge supercar fender on the left, emerald-green 1990s lowrider hood and boomboxes on the right, and hundreds of hip-hop fans packed around the stage; the camera pushes in smoothly at slow speed.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame.",
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "STAGE_STANDOFF",
+  "kind": "still",
+  "move": "V2",
+  "frames": 141,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Tommy Vercetti (keep his exact rugged Italian-American face, thick dark-brown slicked-back 1980s hair, five-o'clock jaw stubble, turquoise-cyan short-sleeve Hawaiian shirt with dark-navy palm-tree silhouettes and thin gold bead chain). Image 2 is Carl CJ Johnson (keep his exact 24-year-old face, ultra-short cropped black Caesar haircut with sharp rectangular hairline, thin mustache and small chin goatee, bare warm-brown shoulders and plain crisp white sleeveless ribbed cotton tank top with no jacket).\n\nCinematic photoreal 35mm film shot, 16:9. Waist-up medium profile two-shot at eye level on the spotlit underground club stage: Tommy Vercetti (Image 1) on the left in his turquoise palm-tree Hawaiian shirt steps forward facing right, and Carl CJ Johnson (Image 2) on the right in his plain white sleeveless ribbed tank top steps forward facing left; neither is singing yet, mouths firmly closed, locking eyes nose-to-nose across the silver spotlight beam while warm 2700K festoon bulb bokeh and cheering crowd silhouettes bounce behind them; handheld 35mm camera slowly arcs a few degrees.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring underground crowd bouncing on the concrete floor below. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep every character's face, hairstyle, facial hair, clothing and colors exactly as in their reference images. Tommy Vercetti always stands on the left side of the stage in his turquoise palm-tree Hawaiian shirt, Carl CJ Johnson on the right in his plain white sleeveless ribbed tank top with bare brown shoulders. Whenever Tommy or CJ is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else."
+ },
+ {
+  "id": "OPEN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Tommy Vercetti (keep his exact rugged Italian-American face, thick dark-brown slicked-back 1980s hair, five-o'clock jaw stubble, turquoise-cyan short-sleeve Hawaiian shirt with dark-navy palm-tree silhouettes and thin gold bead chain). Image 2 is Carl CJ Johnson (keep his exact 24-year-old face, ultra-short cropped black Caesar haircut with sharp rectangular hairline, thin mustache and small chin goatee, bare warm-brown shoulders and plain crisp white sleeveless ribbed cotton tank top with no jacket).\n\nCinematic photoreal 35mm film shot, 16:9. Over-the-shoulder shot at eye level at T2.2 shallow depth of field, handheld: the blurred black Caesar haircut and bare brown shoulder in a white tank strap of Carl CJ Johnson (Image 2) fill the right foreground, and beyond him Tommy Vercetti (Image 1) stands chest-up on the left in his turquoise Hawaiian shirt, facing the camera, raising his chrome handheld microphone toward his chin with a ruthless mobster smirk, mouth closed, warm 2700K festoon bulb bokeh glowing behind him; the camera pushes in with small amplitude at slow speed.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring underground crowd bouncing on the concrete floor below. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep every character's face, hairstyle, facial hair, clothing and colors exactly as in their reference images. Tommy Vercetti always stands on the left side of the stage in his turquoise palm-tree Hawaiian shirt, Carl CJ Johnson on the right in his plain white sleeveless ribbed tank top with bare brown shoulders. Whenever Tommy or CJ is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else."
+ },
+ {
+  "id": "DJ_FRONT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "dj"
+  ],
+  "prompt": "Image 1 is the charismatic 1990s underground hip-hop DJ in backwards snapback and bomber jacket at his raised dual-turntable booth.\n\nCinematic photoreal 35mm film shot, 16:9. Frontal medium shot of exactly one person, the charismatic 1990s underground hip-hop DJ (Image 1), alone behind his raised dual-turntable booth, scratching a vinyl record with one hand and pressing one headphone cup to his ear with the other, warm amber VU meters glowing on the mixer, cheering crowd silhouettes bouncing in the tungsten bokeh haze behind him.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "DJ_HANDS",
+  "kind": "still",
+  "move": "V2",
+  "frames": 158,
+  "image_keys": [
+   "dj"
+  ],
+  "prompt": "Image 1 is the charismatic 1990s underground hip-hop DJ in backwards snapback and bomber jacket at his raised dual-turntable booth.\n\nCinematic photoreal 35mm film shot, 16:9. Low-angle close shot across the direct-drive turntables of the underground DJ booth (Image 1): the DJ's hands scratch a spinning black 12-inch vinyl record and snap the battle mixer crossfader, his dark bomber jacket above, warm 2700K tungsten bokeh glowing behind.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_OOH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 90,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the roaring underground hip-hop crowd of underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets.\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close medium shot packed with four or five 1990s underground hip-hop fans in hoodies, flannels and snapbacks from the front row (Image 1), their faces large and filling the 16:9 frame at T2.2 shallow depth of field, handheld camera at their eye level, tungsten festoon bulbs blurred into warm golden orbs behind them. They react to a brutal punchline: one claps both hands over his mouth, one grabs his snapback cap with wide eyes, one leans back laughing and throwing a hand in the air. Energetic, joyful chaos.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_CHANT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the roaring underground hip-hop crowd of underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets.\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close medium shot of the front rows of the underground warehouse hip-hop crowd (Image 1), handheld at their eye level, faces sculpted by warm 3200K tungsten light: fans in hoodies, leather jackets and caps chant together with raised hands and fists pumping in rhythm on every boom-bap beat, mouths wide open, light stage haze. The camera trucks right with small amplitude at slow speed along the front row.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_STARE",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the roaring underground hip-hop crowd of underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets.\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Medium close shot of three hip-hop heads in streetwear in the front row (Image 1), handheld at their eye level, warm tungsten light: they look up past the camera in stunned appreciation, arms folded, one slowly nodding hard and letting out a low whistle.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_LAUGH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the roaring underground hip-hop crowd of underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets.\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close shot of one hip-hop fan in a snapback and jacket in the front row (Image 1) throwing his head back and laughing with hype applause, one fist punching the air, spectators cheering and bouncing around him, warm amber bulb bokeh, handheld.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CURTAIN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 192,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Tommy Vercetti (keep his exact rugged Italian-American face, thick dark-brown slicked-back 1980s hair, five-o'clock jaw stubble, turquoise-cyan short-sleeve Hawaiian shirt with dark-navy palm-tree silhouettes and thin gold bead chain). Image 2 is Carl CJ Johnson (keep his exact 24-year-old face, ultra-short cropped black Caesar haircut with sharp rectangular hairline, thin mustache and small chin goatee, bare warm-brown shoulders and plain crisp white sleeveless ribbed cotton tank top with no jacket).\n\nCinematic photoreal 35mm film shot, 16:9. The shot starts as a waist-up medium two-shot of Tommy Vercetti (Image 1) on the left in his turquoise Hawaiian shirt and Carl CJ Johnson (Image 2) on the right in his plain white sleeveless tank top standing side by side on the stage, both facing the camera, both raising their arms to salute the roaring underground club, mouths closed, CJ with a confident West Coast grin and Tommy with a tough respectful nod. Then the camera pulls out and pedestals up with large amplitude at slow speed, rising steadily backward and upward over the heads of the audience until it holds a high wide shot of the whole red-brick warehouse arena: the two men small in the silver spotlight at the center of the circular wooden stage, hundreds of cheering hip-hop fans waving hands all around them, neon palm and white 80s wedge car on the left, green 90s lowrider and boomboxes on the right. During the last second the camera smoothly decelerates and settles into a stationary shot.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty brick-and-steel underground warehouse club at night turned into a rap battle arena, warm glowing 2700K festoon string bulbs and vintage brass warehouse lamps overhead, light atmospheric stage haze; on the left side a glowing vintage Miami Art-Deco neon palm-tree sign, stacked retro leather cash briefcases and the sleek front fender of a classic white 1980s wedge supercar, on the right side a warm Los Santos streetlamp, stacked boomboxes, brick graffiti murals and the gleaming hood of an emerald-green 1990s lowrider on chrome wire wheels, a raised DJ booth with dual vinyl turntables and towering club speaker stacks in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring underground crowd bouncing on the concrete floor below. The crowd are underground hip-hop fans in 1990s West Coast streetwear hoodies and snapbacks alongside 1980s Miami clubgoers in retro open-collar shirts and leather jackets. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair and shoulders, and warm 2700K amber festoon bulb bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and hands bouncing up and down on every boom-bap beat, bodies swaying, spectators waving snapback caps and throwing hip-hop hands in the air.\n\nKeep every character's face, hairstyle, facial hair, clothing and colors exactly as in their reference images. Tommy Vercetti always stands on the left side of the stage in his turquoise palm-tree Hawaiian shirt, Carl CJ Johnson on the right in his plain white sleeveless ribbed tank top with bare brown shoulders. Whenever Tommy or CJ is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else.",
+  "closeup_lora": 0.0
+ }
+]

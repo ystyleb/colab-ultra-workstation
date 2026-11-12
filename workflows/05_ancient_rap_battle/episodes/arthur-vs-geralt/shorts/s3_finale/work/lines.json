@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 13,
+  "text": "My next-gen patch runs sixty smooth; they left you locked at thirty",
+  "start": 0.35,
+  "end": 2.999,
+  "bar": 101.812,
+  "heard": "My next-gen patch runs sixty smooth; they left you locked at thirty",
+  "orig_start": 112.138,
+  "orig_bar": 112.138
+ },
+ {
+  "who": "b",
+  "n": 14,
+  "text": "Players held your funeral — your studio did you dirty",
+  "start": 3.044,
+  "end": 5.468,
+  "bar": 104.506,
+  "heard": "Players held your funeral your studio did you dirty",
+  "orig_start": 114.832,
+  "orig_bar": 114.832
+ },
+ {
+  "who": "b",
+  "n": 15,
+  "text": "Silver's meant for monsters, steel puts outlaws in the clay",
+  "start": 5.501,
+  "end": 8.087,
+  "bar": 106.963,
+  "heard": "Silver's meant for monsters, steel puts outlaws in the clay",
+  "orig_start": 117.289,
+  "orig_bar": 117.289
+ },
+ {
+  "who": "b",
+  "n": 16,
+  "text": "Toss a coin to Rivia's Wolf — your sun has set today",
+  "start": 8.126,
+  "end": 10.7,
+  "bar": 109.588,
+  "heard": "Toss a coin to Rivia's Wolf your sun has set today",
+  "orig_start": 119.914,
+  "orig_bar": 119.914
+ }
+]

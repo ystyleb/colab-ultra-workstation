@@ -1,0 +1,46 @@
+[
+ {
+  "who": "a",
+  "n": 5,
+  "text": "My horses chew through mountain storms — pure living, breathing proof",
+  "start": 0.35,
+  "end": 2.992,
+  "bar": 20.064,
+  "heard": "My horses chew through mountain storms pure living, breathing proof",
+  "orig_start": 30.39,
+  "orig_bar": 30.39
+ },
+ {
+  "who": "a",
+  "n": 6,
+  "text": "Yours spooks at a picket fence and spawns upon a roof",
+  "start": 3.039,
+  "end": 5.511,
+  "bar": 22.753,
+  "heard": "Yours spooks at a picket fence and spawns upon a roof",
+  "orig_start": 33.079,
+  "orig_bar": 33.079
+ },
+ {
+  "who": "a",
+  "n": 7,
+  "text": "Drop four feet off a porch and watch the mighty Witcher fold",
+  "start": 5.559,
+  "end": 8.075,
+  "bar": 25.273,
+  "heard": "Drop four feet off a porch and watch the mighty Witcher fold",
+  "orig_start": 35.599,
+  "orig_bar": 35.599
+ },
+ {
+  "who": "a",
+  "n": 8,
+  "text": "A peasant with a pitchfork laid the Butcher out cold",
+  "start": 8.125,
+  "end": 11.106,
+  "bar": 27.839,
+  "heard": "A peasant with a pitchfork laid the Butcher out cold",
+  "orig_start": 38.165,
+  "orig_bar": 38.165
+ }
+]

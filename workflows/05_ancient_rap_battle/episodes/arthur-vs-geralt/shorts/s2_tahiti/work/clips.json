@@ -1,0 +1,102 @@
+[
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "FULL",
+  "text": "Wind's howling, and your chest is too — so catch your breath, Black Lung",
+  "audio": [
+   0.27,
+   2.952
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "cupping his free left hand lightly in the air to feel the wind, amber eyes locked coldly on Arthur",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame from frame zero. Tight portrait framing from the very first frame (0.0s) to the final frame with zero wide shot or bare floor: warm 2700K medieval torch bokeh orbs and softly blurred crowd silhouettes glow out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no other performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B02",
+  "kind": "rap",
+  "who": "b",
+  "line": 2,
+  "move": "FULL",
+  "text": "Dutch's lap dog for two decades since back when you were young",
+  "audio": [
+   2.886,
+   5.452
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "holding up two fingers on his free left hand and shaking his head with icy disdain",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame from frame zero. Tight portrait framing from the very first frame (0.0s) to the final frame with zero wide shot or bare floor: warm 2700K medieval torch bokeh orbs and softly blurred crowd silhouettes glow out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no other performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "FULL",
+  "text": "One more score, one more plan — next stop is warm Tahiti",
+  "audio": [
+   5.422,
+   8.099
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "spreading his free left palm grandly in the air to mock Dutch's endless tropical speeches",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame from frame zero. Tight portrait framing from the very first frame (0.0s) to the final frame with zero wide shot or bare floor: warm 2700K medieval torch bokeh orbs and softly blurred crowd silhouettes glow out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no other performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B04",
+  "kind": "rap",
+  "who": "b",
+  "line": 4,
+  "move": "FULL",
+  "text": "You bled for Dutch's fairy tale, and I damn near feel pity",
+  "audio": [
+   8.069,
+   10.589
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "tilting his head slightly with a cold dry smirk, left palm turned up in mock sympathy",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical head-and-shoulders close-up shot of him at T2.2 shallow depth of field and gently pushes even closer on the final bar, his face and lips large in the upper half of the tall 9:16 frame from frame zero. Tight portrait framing from the very first frame (0.0s) to the final frame with zero wide shot or bare floor: warm 2700K medieval torch bokeh orbs and softly blurred crowd silhouettes glow out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no other performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

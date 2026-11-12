@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 1,
+  "text": "\"Here we go again\" — man, you talkin' 'bout a train?",
+  "start": 0.35,
+  "end": 2.995,
+  "bar": 33.177,
+  "heard": "Here we go again\" man, you talkin' 'bout a train?",
+  "orig_start": 49.538,
+  "orig_bar": 49.538
+ },
+ {
+  "who": "b",
+  "n": 2,
+  "text": "Step three feet in the ocean and you drown inside the rain",
+  "start": 3.041,
+  "end": 5.556,
+  "bar": 35.868,
+  "heard": "Step three feet in the ocean and you drown inside the rain",
+  "orig_start": 52.229,
+  "orig_bar": 52.229
+ },
+ {
+  "who": "b",
+  "n": 3,
+  "text": "King of Vice Beach? Homie, you sink just like a stone",
+  "start": 5.603,
+  "end": 7.98,
+  "bar": 38.43,
+  "heard": "King of Vice Beach? Homie, you sink just like a stone",
+  "orig_start": 54.791,
+  "orig_bar": 54.791
+ },
+ {
+  "who": "b",
+  "n": 4,
+  "text": "I swim, skydive, and jetpack through three cities of my own",
+  "start": 8.03,
+  "end": 10.6,
+  "bar": 40.857,
+  "heard": "I swim, skydive, and jetpack through three cities of my own",
+  "orig_start": 57.218,
+  "orig_bar": 57.218
+ }
+]

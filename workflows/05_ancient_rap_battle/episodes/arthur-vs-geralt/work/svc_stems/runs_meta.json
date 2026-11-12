@@ -1,0 +1,38 @@
+[
+  {
+    "idx": 0,
+    "who": "a",
+    "i0": 437913,
+    "i1": 1370187,
+    "t_s": 9.93,
+    "t_e": 31.07,
+    "slice": "/content/svc_work/slice_0_a.wav"
+  },
+  {
+    "idx": 1,
+    "who": "b",
+    "i0": 1442687,
+    "i1": 2364862,
+    "t_s": 32.714,
+    "t_e": 53.625,
+    "slice": "/content/svc_work/slice_1_b.wav"
+  },
+  {
+    "idx": 2,
+    "who": "a",
+    "i0": 3018998,
+    "i1": 3946553,
+    "t_s": 68.458,
+    "t_e": 89.491,
+    "slice": "/content/svc_work/slice_2_a.wav"
+  },
+  {
+    "idx": 3,
+    "who": "b",
+    "i0": 4026595,
+    "i1": 4957369,
+    "t_s": 91.306,
+    "t_e": 112.412,
+    "slice": "/content/svc_work/slice_3_b.wav"
+  }
+]

@@ -1,0 +1,102 @@
+[
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "FULL",
+  "text": "\"Here we go again\" — man, you talkin' 'bout a train?",
+  "audio": [
+   0.27,
+   2.995
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "rolling his shoulders forward in his iconic alley walk posture and waving his free left hand smoothly",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised dark-wood stage: the cheering underground hip-hop crowd silhouettes are on the warehouse floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B02",
+  "kind": "rap",
+  "who": "b",
+  "line": 2,
+  "move": "FULL",
+  "text": "Step three feet in the ocean and you drown inside the rain",
+  "audio": [
+   2.961,
+   5.556
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "dropping his free left hand straight down like a sinking stone while grinning at Tommy",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised dark-wood stage: the cheering underground hip-hop crowd silhouettes are on the warehouse floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "FULL",
+  "text": "King of Vice Beach? Homie, you sink just like a stone",
+  "audio": [
+   5.523,
+   7.98
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "miming plugging his nose and sinking downward slightly with playful West Coast swagger",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised dark-wood stage: the cheering underground hip-hop crowd silhouettes are on the warehouse floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B04",
+  "kind": "rap",
+  "who": "b",
+  "line": 4,
+  "move": "FULL",
+  "text": "I swim, skydive, and jetpack through three cities of my own",
+  "audio": [
+   7.95,
+   10.6
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "counting three cities cleanly on his left fingers, then sweeping his arm skyward",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera with a subtle natural sway starts on a vertical chest-up shot at eye level and gently creeps closer to a head-and-shoulders close-up at T2.2 shallow depth of field, his face and lips large in the upper half of the tall 9:16 frame from the first frame. He stands alone on top of the raised dark-wood stage: the cheering underground hip-hop crowd silhouettes are on the warehouse floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

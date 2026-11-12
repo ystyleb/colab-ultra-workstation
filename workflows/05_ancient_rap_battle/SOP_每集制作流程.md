@@ -5,6 +5,7 @@
 > 各环节「为什么这样做」和踩坑细节见 [经验沉淀_完整版样片.md](经验沉淀_完整版样片.md)，频道运营与文案模板见 [channel/频道方案.md](channel/频道方案.md)。
 > **2026-11-10 起有第二种拍法**（手持麦 + 真实运镜 + 一条口型镜头跨多句 + 句中切反应），第 4～7 节的分镜和出片方式不同，见 [经验沉淀_运镜拍法.md](经验沉淀_运镜拍法.md) 第 4、8 节，模板是 `episodes/edison-vs-tesla-remake/build_storyboard.py`。
 > **2026-11-11 起升级为 Realism V3 电影级实拍标准管线（不加 2.7K 超分，单集仍保持 ~12–16 CCU）**：参考图执行 `python3 scripts/film_optics.py episodes/<ep>` 预置 3200K 暖血色肌肤 + `r=16` 沸腾人群剪影与烛台光学散景；云端开启 `--steps 12 --runner-args "--fit --lock-strength 1.0 --mic handheld --realism-v2"`（调用 `Singularity v1.3` 去油光底模，**默认不加 `--tessera-2k`**，省去 2.7K 约 5 倍额外算力开销）；本地使用 `assemble.py --film` + `package.py --film --1080p` 单通直出 Kodak Vision3 500T + Pro-Mist 1/8 + `c0s=3` 细银盐颗粒 1080p 成片。根因诊断、三轮盲测参数边界与复用模板见 [经验沉淀_电影实拍质感升级.md](经验沉淀_电影实拍质感升级.md)。
+> **2026-11-12 起升级音乐制作与人物原声还原管线（第 5 集 `tommy-vs-cj` / 第 6 集 `arthur-vs-geralt`）**：歌词初稿先调 Kie Suno `ai-music-api/generate-lyrics`（`0.40` 额度）做 Boom-Bap 律动与地道俚语润色；游戏/影视等有经典配音原声的角色，在 `kie_suno.py` 生成底曲后用 `scripts/run_game_voice_remote.py` 开 Colab L4（仅 `~0.55 CCU`）跑 `Demucs htdemucs_ft` 四轨分离 + 专属 `RVC v2` / `Seed-VC` 声纹还原与毫秒互相关对齐。完整参数边界与避坑铁律见 [经验沉淀_音乐制作与游戏原声还原.md](经验沉淀_音乐制作与游戏原声还原.md)。
 
 ---
 
@@ -12,8 +13,8 @@
 
 | # | 环节 | 产出 | 花费 | 用时 | 谁做 |
 |---|---|---|---|---|---|
-| 1 | 选题 + 歌词 | `episode.json`、`歌词_完整版.md`、`line_actions.json` | 0 | 1 小时 | Claude 写，**用户确认** |
-| 2 | 生成歌曲 | `work/kie_suno.json`、`lines.json`、`words_edit.json`、`grid.json` | Kie 约 13 额度 | 10 分钟 | Claude |
+| 1 | 选题 + 歌词 | `episode.json`、`歌词_完整版.md`、`line_actions.json` | 0（润色 0.4 Kie） | 1 小时 | Claude 写 + Suno 润色，**用户确认** |
+| 2 | 生成歌曲 + 原声还原 | `work/kie_suno.json`、`lines.json`、`音乐_最终.wav`、`vocals_final.wav` | Kie 约 13 额度（+ L4 约 0.55 CCU） | 15～25 分钟 | Claude（**用户听歌确认**） |
 | 3 | 参考图 | `refs/*.png`、`work/*_face_clean.png`、`work/stage_a/b.png` | 0（复用）或生图 | 30 分钟 | Claude |
 | 4 | 分镜 | `work/clips.json`、`edl.json`、`fx.json`、`live.json` | 0 | 30 分钟 | Claude |
 | 5 | 小样 | 2～3 个镜头的对比片 | 约 1 CCU | 15 分钟 | Claude，**用户看片** |
@@ -44,18 +45,26 @@
    - **两人固定站位**：A 永远在左、B 永远在右，`venue_en` 里左边只放 A 的元素、右边只放 B 的元素
    - **道具名就是提示词**：避开会把模型带偏的词（「laurel-leaf crown」被画成镶宝石王冠，改成「laurel wreath」才对）
 3. `line_actions.json`：32 句每句一个手势/动作（英文短语）。
-4. 写 `歌词_完整版.md` 给用户确认。**歌词里避开像制作人署名的词**（如 "fifty grand"），Suno 会拒收。
+4. 先调 Kie `ai-music-api/generate-lyrics`（`0.40` 额度）对 32 句初稿做内韵与俚语律动打磨，再写 `歌词_完整版.md` 给用户确认。**歌词里避开像制作人署名的词**（如 "fifty grand"），Suno 会拒收。
 
-## 2. 生成歌曲
+## 2. 生成歌曲与人物原声还原
 
 ```bash
-python3 scripts/kie_suno.py episodes/<ep>          # 生成 2 版，自动挑词级对齐最好的一版
-python3 scripts/kie_suno.py episodes/<ep> --reuse  # 只重算双声线 / lines.json，不重新花钱
+# 1) Suno V6 生成 2 版底曲 + 词级对齐（约 13 Kie 额度，0 CCU）
+python3 scripts/kie_suno.py episodes/<ep>
+python3 scripts/kie_suno.py episodes/<ep> --reuse   # 微调 suno_track / intro_keep / outro_keep 重算，不重新花钱
+
+# 2) 游戏/影视等具象原声角色：准备 24s 纯净单人干音（work/<role>_ref_clean.wav）与已校验 RVC v2 链接，跑 L4 原声还原（~0.55 CCU）
+python3 scripts/run_game_voice_remote.py episodes/<ep>
+
+# 3) 本地 0 CCU 自由混搭 A/B 最优音高档位并写入正式音轨（work/vocals_final.wav、work/music_final.wav、音乐_最终.wav）
+python3 scripts/run_game_voice_remote.py episodes/<ep> --remaster-only --pair-a rvc --pair-b rvc_fifth --out-tag rvc_best
 ```
 
-检查：
-- `work/lines.json` 有 32 句，每句的 `start/end` 合理（一小节约 2.5 秒）
-- `work/words_edit.json`（词级时间轴）由脚本自动写出，分镜断言和甩镜避让都靠它
+检查（详见 [经验沉淀_音乐制作与游戏原声还原.md](经验沉淀_音乐制作与游戏原声还原.md)）：
+- `work/lines.json` 有 32 句，每句的 `start/end` 合理（90–96 BPM 下一小节约 2.5 秒）；**不能只看总 `match_score`**，若某一版 `B16`/`A16` 被拉长到 10～30 秒则切另一版
+- `work/words_edit.json`（词级时间轴）由脚本自动写出，分镜断言和甩镜避让都靠它；**`song.mp3` 必须保留未裁剪原始曲**，原声母带只覆盖 `音乐_最终.wav`、`work/music_final.wav` 与 `work/vocals_final.wav`
+- 参考干音必须过 `P15 < -37 dBFS` 无配乐门限与低通稳频单说话人 `F0` 门控，杜绝混入 BGM 或第二说话人
 - Suno 可能跳过写好的观众段，导致上一个词被拉长（第 1 集 A16 的 "for?" 拉到 2.9 秒，第 2 集 A16 的 "blood" 拉到 3.3 秒，都是第四段前那个 OOOH）。这种情况镜头保持在歌手身上，不要切走
 
 ## 3. 参考图

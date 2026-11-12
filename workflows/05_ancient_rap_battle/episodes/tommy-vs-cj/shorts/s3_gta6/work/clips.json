@@ -1,0 +1,102 @@
+[
+ {
+  "id": "B09",
+  "kind": "rap",
+  "who": "b",
+  "line": 9,
+  "move": "FULL",
+  "text": "Yeah, Rockstar's back in Vice — and your name isn't on the list",
+  "audio": [
+   0.27,
+   3.55
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "holding up an imaginary guest list in his left palm and flicking it away with a smirk",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised dark-wood stage: the cheering underground hip-hop crowd silhouettes are on the warehouse floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B10",
+  "kind": "rap",
+  "who": "b",
+  "line": 10,
+  "move": "FULL",
+  "text": "Jason and Lucia run your beach like you don't exist",
+  "audio": [
+   3.52,
+   6.011
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "pointing two left fingers back and forth toward the beach side to signal two new bosses in town",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised dark-wood stage: the cheering underground hip-hop crowd silhouettes are on the warehouse floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B11",
+  "kind": "rap",
+  "who": "b",
+  "line": 11,
+  "move": "FULL",
+  "text": "Ghosted after eighty-six — you vanished from the hall",
+  "audio": [
+   5.966,
+   8.6
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "waving his free left palm across his face in a clean vanishing gesture",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised dark-wood stage: the cheering underground hip-hop crowd silhouettes are on the warehouse floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B12",
+  "kind": "rap",
+  "who": "b",
+  "line": 12,
+  "move": "FULL",
+  "text": "Left poor Ken in Vegas begging Tommy for a call",
+  "audio": [
+   8.57,
+   11.026
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "holding his left thumb and pinky to his ear like a ringing phone that nobody answers",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera with a subtle natural sway starts on a vertical chest-up shot at eye level and gently creeps closer to a head-and-shoulders close-up at T2.2 shallow depth of field, his face and lips large in the upper half of the tall 9:16 frame from the first frame. He stands alone on top of the raised dark-wood stage: the cheering underground hip-hop crowd silhouettes are on the warehouse floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

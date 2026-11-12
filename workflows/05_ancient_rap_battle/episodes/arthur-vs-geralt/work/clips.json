@@ -1,0 +1,809 @@
+[
+ {
+  "id": "A01",
+  "kind": "rap",
+  "who": "a",
+  "line": 1,
+  "move": "ENTER",
+  "text": "Eighteen ninety-nine, Dead Eye fixed upon your chest / Eighty-nine million strong — Wild West put yours to the test",
+  "audio": [
+   10.03,
+   15.123
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "aiming two left fingers forward in a sharp gunslinger draw onto Geralt's chest, then sweeping his free left arm wide across the roaring tavern hall",
+  "two_shot": false,
+  "cam": "The camera starts behind the audience at head height: the backs of weathered Stetson cowboy hats, leather vests, medieval hoods and raised wooden tankards of the packed underground tavern crowd fill the lower half of the frame with the spotlit round dark-wood stage small in the distance, then the camera pushes in with large amplitude at slow speed, gliding forward between the raised fists and over the shoulders of the spectators until it reaches the edge of the stage and settles on a chest-up medium shot of <Subject 1>; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air",
+  "wide": true,
+  "image_keys": [
+   "a_face_clean"
+  ],
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "A03",
+  "kind": "rap",
+  "who": "a",
+  "line": 3,
+  "move": "PUSH",
+  "text": "Ciri flees through frozen lands, every ounce of courage spent / While you stall in every tavern for another round of Gwent",
+  "audio": [
+   15.093,
+   20.014
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "pointing off into the frozen distance with furrowed brow, then fanning his free left fingers out like a hand of Gwent cards with a mocking cowboy grin",
+  "two_shot": false,
+  "cam": "The camera starts on a waist-up medium shot of <Subject 1> in the crisp spotlight beam, then the camera pushes in with large amplitude at slow speed, travelling steadily toward him until it settles on a head-and-shoulders close-up at Cooke Panchro T2.2 shallow depth of field, his face and lips large and clearly readable whenever he faces the camera. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "A05",
+  "kind": "rap",
+  "who": "a",
+  "line": 5,
+  "move": "ARC",
+  "text": "My horses chew through mountain storms — pure living, breathing proof / Yours spooks at a picket fence and spawns upon a roof",
+  "audio": [
+   19.984,
+   25.225
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "patting his buckskin chest proudly with his free left palm, then pointing his left index finger straight up toward the rafters laughing at a horse on a roof",
+  "two_shot": true,
+  "cam": "The camera starts on a chest-up medium shot of <Subject 1> from the front as he raps, then the camera trucks left and pans right with large amplitude at slow speed, moving in an arc shot around his left shoulder, until it ends as an over-the-shoulder shot from behind him: the back of <Subject 1>'s head and his left shoulder softly blurred in the left foreground, and <Subject 2> in sharp focus a few steps away on screen-right, facing the camera. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his mouth firmly closed, arms relaxed at his side, amber eyes watching him in silence",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "A07",
+  "kind": "rap",
+  "who": "a",
+  "line": 7,
+  "move": "ECU",
+  "text": "Drop four feet off a porch and watch the mighty Witcher fold",
+  "audio": [
+   25.193,
+   27.789
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "dropping his free left palm sharply downward a few inches right into the lens to mock a tiny four-foot porch fall",
+  "two_shot": false,
+  "cam": "A handheld 28mm cinema lens is close to his face and slightly below chin height, looking up at him: a tight close-up where his face fills most of the 16:9 frame, the chrome mesh head of the microphone softly foreshortened at the bottom edge of the frame just below his lower lip (never crossing his lips); the camera pushes in with small amplitude at slow speed, warm 2700K amber lantern and torch bokeh orbs flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "lens": "28mm wide-angle"
+ },
+ {
+  "id": "A08",
+  "kind": "rap",
+  "who": "a",
+  "line": 8,
+  "move": "FACE",
+  "text": "A peasant with a pitchfork laid the Butcher out cold",
+  "audio": [
+   27.759,
+   30.82
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "thrusting three spread left fingers forward between their faces like a peasant's pitchfork with ruthless outlaw grit",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-left in profile facing right, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-right in profile facing left; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "ENTER",
+  "text": "Wind's howling, and your chest is too — so catch your breath, Black Lung / Dutch's lap dog for two decades since back when you were young",
+  "audio": [
+   32.814,
+   37.996
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "cupping his free left hand lightly in the air to feel the howling wind, then holding up two fingers and shaking his head with icy Witcher disdain",
+  "two_shot": false,
+  "cam": "The camera starts behind the audience at head height: the backs of weathered Stetson cowboy hats, leather vests, medieval hoods and raised wooden tankards of the packed underground tavern crowd fill the lower half of the frame with the spotlit round dark-wood stage small in the distance, then the camera pushes in with large amplitude at slow speed, gliding forward between the raised fists and over the shoulders of the spectators until it reaches the edge of the stage and settles on a chest-up medium shot of <Subject 1>; the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air",
+  "wide": true,
+  "image_keys": [
+   "b_face_clean"
+  ],
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "LONG",
+  "text": "One more score, one more plan — next stop is warm Tahiti / You bled for Dutch's fairy tale, and I damn near feel pity",
+  "audio": [
+   37.966,
+   43.133
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "spreading his free left palm grandly to mock Dutch's Tahiti speeches, then tilting his head with a cold dry smirk of mock pity",
+  "two_shot": false,
+  "cam": "From the very first frame to the last, the camera holds a frontal head-and-shoulders close-up at eye level at Cooke Panchro 50mm T2.2, shot on a handheld 35mm cinema camera with a subtle natural sway, never a full-body or wide shot, his legs and the stage floor never in frame, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B05",
+  "kind": "rap",
+  "who": "b",
+  "line": 5,
+  "move": "WHIP",
+  "text": "You hollered Lenny! blacked out drunk, then washed up broke in Guarma / Beat a dying farmer for some cash — that's karma, partner, karma",
+  "audio": [
+   43.103,
+   48.295
+  ],
+  "lead": 2.5,
+  "frames": 209,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "raw": true,
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "closeup_lora": 0.2,
+  "prompt": "subject_definitions:\n<Subject 1> is Geralt of Rivia (battle-hardened monster hunter Geralt of Rivia appearing as a rugged 40-year-old warrior in his prime, lean powerful athletic build, long snow-white hair half-tied back with loose white strands framing his chiseled weathered face, striking amber-gold cat-like Witcher eyes, a vertical healed pale scar running across his left eyebrow and cheek, neat short silver-white beard stubble leaving his mouth and lips completely uncovered, wearing his iconic dark charcoal-and-brown Kaer Morhen fitted studded leather chest armor with steel chainmail shoulder guards, a gleaming silver Wolf-head Witcher medallion hanging on a chain at his collarbone, and twin sword hilts rising behind his right shoulder) from <Picture 1>, real human skin with matte pores and zero plastic sheen.\n<Subject 2> is Arthur Morgan (36-year-old rugged American frontier outlaw Arthur Morgan from 1899, broad-shouldered muscular build, sun-weathered warm tan skin with fine crow's feet and realistic pores, piercing pale blue-green eyes, sandy dark-blond hair under his iconic worn black leather gambler's hat with a braided leather rope hatband tilted slightly back so his full face and brow are clearly lit, short trimmed sandy-brown frontier beard and mustache neatly clear of his lips, wearing a distressed tan-brown buckskin leather gunslinger jacket with dark brown collar lapels over a faded slate-blue buttoned work shirt, a loosely knotted black silk neckerchief, and a weathered leather bandolier strap across his chest) from <Picture 2>, real human skin with matte pores.\n<Picture 3> is the medieval Novigrad stone-and-torch side of the underground tavern arena behind <Subject 1> in [Shot 1]: glowing amber potion flasks, warm 2700K wall torches and softly blurred cheering tavern spectators below.\n<Audio 1> is the target rap vocal track for <Subject 1>, providing his exact vocal timbre (deep raspy gravelly monster-hunter male rapper, cold dry deadpan gravel growl, surgical boom-bap flow) and syllable-by-syllable rhythm during 00:02.500–00:07.692, followed by silence.\n\nsummary:\n[reference generation + audio reuse] Inside a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring tavern crowd bouncing on the plank floor below, <Subject 1> performs an energetic English battle-rap couplet synced syllable-by-syllable to <Audio 1>, holding the vintage chrome handheld microphone with a round mesh head just below his lower lip angled upward at 45 degrees near the bottom edge of the frame, across 2 shots, with <Subject 2> listening in silence, while the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial bone structure, snow-white half-tied hair, amber cat eyes, left-brow scar, silver Wolf medallion and dark studded leather armor from <Picture 1> with authentic matte skin.\n<Subject 2> (appears in [Shot 2]): fully_preserved - Strictly preserve exact weathered facial structure, worn black leather gambler's hat tilted back, short sandy beard clear of lips, and tan buckskin leather gunslinger jacket from <Picture 2>, keeping his mouth closed in silent listening throughout this clip.\nBackground (appears in [Shot 1]): reference - Keep the stage environment of <Picture 3> softly out of focus at Cooke Panchro T2.2 shallow depth of field behind <Subject 1> with warm 2700K torch bokeh orbs while the cheering crowd silhouettes bounce.\n<Audio 1>: fully_copy - Reused 1:1 as the target vocal track; while <Subject 1>'s face is on screen his lip movements, jaw openings and syllable articulation are synchronized directly to <Audio 1>; after the camera leaves him the same vocal continues uninterrupted from off screen.\n\ndetailed_description:\nr34l1sm, Facial Realism, authentic live-action 35mm concert documentary film shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 prime lens on Kodak Vision3 500T film, natural matte human skin texture with real pores, zero oily shine, authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Both shots are in the same underground timber-and-stone tavern rap arena: warm 2700K lanterns and torches, light hearth smoke, cheering cowboy and tavern crowd silhouettes packed below the stage. [Shot 1] During 00:00.000–00:02.500, before he starts rapping, his mouth stays closed while the camera pushes in from a wide view of the stage and settles on him. Then, during 00:02.500–00:05.170, the camera holds a chest-up three-quarter medium close-up of <Subject 1> standing on the raised stage, on the right half of the frame, his face and lips large and readable, holding the vintage chrome handheld microphone with a round mesh head in his right hand an inch below his lower lip angled upward at 45 degrees (never occluding his lips), with <Picture 3> blurred into T2.2 bokeh behind him, rapping with intense brow and cheek articulation synced syllable-by-syllable to <Audio 1>, raising his free left hand in a mocking drunken tavern toast toward screen-left; at the end of this shot the camera pans left with large amplitude at fast speed, a whip pan with heavy motion blur. [Shot 2] At 00:05.370, the whip pan lands on a new shot. During 00:05.370–00:07.692, the camera holds a tight chest-up medium close-up of <Subject 2> standing on the left side of the stage with warm 2700K amber saloon oil-lantern bokeh blurred behind him at T2.2, facing the camera beneath his black leather hat brim, mouth firmly closed, jaw clenching hard, his weathered blue-green eyes darkening in stung silence at the Thomas Downes karma line while <Subject 1>'s voice continues from off screen. The lyric sung across the whole clip: <d>[English]You hollered Lenny! blacked out drunk, then washed up broke in Guarma Beat a dying farmer for some cash — that's karma, partner, karma</d> No subtitles, no on-screen text.\n\noverall_soundscape:\nClear, punchy foreground rap vocal performance from <Subject 1> during 00:02.500–00:07.692 synced 1:1 to <Audio 1> in a packed timber-and-stone underground tavern arena full of roaring outlaws and tavern-goers, continuous across the cut.\n\nnon_diegetic_music:\nN/A — <Audio 1> is directly reused 1:1 as the target vocal track."
+ },
+ {
+  "id": "B07",
+  "kind": "rap",
+  "who": "b",
+  "line": 7,
+  "move": "CRASH",
+  "text": "Eighty-nine million copies sold, yet when they called the crown",
+  "audio": [
+   48.241,
+   50.737
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "lifting his free left hand high above his white hair like hoisting the Game of the Year crown",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and head of <Subject 2> in the left foreground, <Subject 1> chest-up on the right facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from brow to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "28mm wide-angle",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "B08",
+  "kind": "rap",
+  "who": "b",
+  "line": 8,
+  "move": "FACE",
+  "text": "I swept Game of the Year while Kratos stomped your cowboy down",
+  "audio": [
+   50.707,
+   53.375
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "chopping his free left hand decisively downward right in Arthur's face with cold monster-hunter authority",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "A09",
+  "kind": "rap",
+  "who": "a",
+  "line": 9,
+  "move": "ECU",
+  "text": "Cold mutant with no feelings? Boy, quit talking battle-worn",
+  "audio": [
+   68.558,
+   71.219
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "tapping the left side of his buckskin chest over his heart with a skeptical frontier sneer right into the lens",
+  "two_shot": false,
+  "cam": "A handheld 28mm cinema lens is close to his face and slightly below chin height, looking up at him: a tight close-up where his face fills most of the 16:9 frame, the chrome mesh head of the microphone softly foreshortened at the bottom edge of the frame just below his lower lip (never crossing his lips); the camera pushes in with small amplitude at slow speed, warm 2700K amber lantern and torch bokeh orbs flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "lens": "28mm wide-angle"
+ },
+ {
+  "id": "A10",
+  "kind": "rap",
+  "who": "a",
+  "line": 10,
+  "move": "REVEAL",
+  "text": "Triss and Yen both cuffed your wrists beside that unicorn",
+  "audio": [
+   71.166,
+   73.618
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "turning his left wrist upward to mock iron handcuffs beside a unicorn with a wry outlaw grin as he steps toward Geralt",
+  "two_shot": true,
+  "cam": "The camera starts on a chest-up three-quarter medium close-up of <Subject 1> alone on the left half of the frame, facing right as he raps, then the camera pans right with small amplitude at slow speed, revealing <Subject 2> standing in profile at the right edge of the frame, and settles into a profile two-shot of the two men face to face, <Subject 1>'s lips and jaw clearly readable in every frame. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> listens with his mouth firmly closed, a faint cold smirk"
+ },
+ {
+  "id": "A11",
+  "kind": "rap",
+  "who": "a",
+  "line": 11,
+  "move": "FACE",
+  "text": "You gulp those toxic potions down and dodge-roll through the mire / Reach to loot a treasure chest — set candlesticks on fire",
+  "audio": [
+   73.588,
+   78.855
+  ],
+  "lead": 0.0,
+  "frames": 141,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "miming tossing back toxic potion vials with his left hand, then flicking his left fingers upward like an accidental candle spark",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-left in profile facing right, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-right in profile facing left; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "A13",
+  "kind": "rap",
+  "who": "a",
+  "line": 13,
+  "move": "TQ",
+  "text": "My redemption broke the net — pure cinema and art",
+  "audio": [
+   78.825,
+   81.31
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "placing his free left hand firmly over his bandolier and heart with raw weathered outlaw conviction",
+  "two_shot": false,
+  "cam": "The camera holds a chest-up three-quarter medium close-up of <Subject 1> on the left half of the frame, facing right, shot on a handheld 35mm cinema camera with a subtle natural sway, slowly arcing a few degrees around him at T2.2 shallow depth of field, his face and lips large and clearly readable in every frame. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ]
+ },
+ {
+  "id": "A14",
+  "kind": "rap",
+  "who": "a",
+  "line": 14,
+  "move": "CRASH",
+  "text": "Your TV show got butchered till your hero quit the part",
+  "audio": [
+   81.262,
+   83.844
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "slicing his free left hand sideways across the air in a ruthless director's cut cancellation gesture",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and head of <Subject 2> in the right foreground, <Subject 1> chest-up on the left facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from brow to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "35mm",
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "A15",
+  "kind": "rap",
+  "who": "a",
+  "line": 15,
+  "move": "FACEWIDE",
+  "text": "Now Witcher Four's on deck, partner — time to step aside",
+  "audio": [
+   83.814,
+   86.598
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "tipping the front brim of his black leather gambler's hat lightly with two left fingers across the spotlight",
+  "two_shot": true,
+  "cam": "The camera holds a waist-up medium profile two-shot at eye level: <Subject 1> on screen-left facing right, leaning toward <Subject 2> and rapping at him, <Subject 2> on screen-right facing left standing his ground, the crisp silver overhead spotlight beam falling between the two men while warm 2700K amber oil-lantern and torch bokeh glows behind them, <Subject 1>'s lips and jaw clearly readable in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean",
+   "stage_a"
+  ],
+  "listener_side": "screen-right",
+  "listener": " while <Subject 2> stands with his arms crossed and his mouth firmly closed"
+ },
+ {
+  "id": "A16",
+  "kind": "rap",
+  "who": "a",
+  "line": 16,
+  "move": "LONG",
+  "text": "Ciri took your billing — left the White Wolf's pride denied",
+  "audio": [
+   86.568,
+   89.241
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "jerking his free left thumb sideways to usher the White Wolf off the stage, chin held high",
+  "two_shot": false,
+  "cam": "From the very first frame to the last, the camera holds a frontal head-and-shoulders close-up at eye level at Cooke Panchro 50mm T2.2, shot on a handheld 35mm cinema camera with a subtle natural sway, never a full-body or wide shot, his legs and the stage floor never in frame, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ]
+ },
+ {
+  "id": "B09",
+  "kind": "rap",
+  "who": "b",
+  "line": 9,
+  "move": "TQ",
+  "text": "Shelved the Wolf? That's legacy — I trained her for the throne",
+  "audio": [
+   91.406,
+   94.167
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "tapping the gleaming silver Wolf medallion on his chest with two left fingers, jaw set with fierce pride",
+  "two_shot": false,
+  "cam": "The camera holds a chest-up three-quarter medium close-up of <Subject 1> on the right half of the frame, facing left, shot on a handheld 35mm cinema camera with a subtle natural sway, slowly arcing a few degrees around him at T2.2 shallow depth of field, his face and lips large and clearly readable in every frame. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B10",
+  "kind": "rap",
+  "who": "b",
+  "line": 10,
+  "move": "FACE",
+  "text": "Sipping crimson vineyard wine on land I call my own",
+  "audio": [
+   94.135,
+   96.72
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "raising his free left hand smoothly between them as if swirling a goblet of crimson Toussaint vineyard wine",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B11",
+  "kind": "rap",
+  "who": "b",
+  "line": 11,
+  "move": "LONG",
+  "text": "Hearts of Stone and Blood and Wine — two crowns upon my head / Rockstar axed your DLC and left your Online mode for dead",
+  "audio": [
+   96.673,
+   101.78
+  ],
+  "lead": 2.5,
+  "frames": 192,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "holding up two steady left fingers for two expansion crowns, then sweeping his flat left palm sideways in a ruthless Rockstar axe slash",
+  "two_shot": false,
+  "cam": "During 00:00.000–00:02.500, before he starts rapping, his mouth stays closed while the camera pushes in with large amplitude at slow speed from a wide shot of him standing on the stage until it reaches the framing below; from 00:02.500 to the end of the shot it holds that framing. The framing is a frontal head-and-shoulders close-up at eye level at Cooke Panchro 50mm T2.2, shot on a handheld 35mm cinema camera with a subtle natural sway, and pushes in with small amplitude at slow speed across the whole shot; his face fills the upper two thirds of the 16:9 frame, his lips large and clearly readable in every frame. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ]
+ },
+ {
+  "id": "B13",
+  "kind": "rap",
+  "who": "b",
+  "line": 13,
+  "move": "ECU",
+  "text": "My next-gen patch runs sixty smooth; they left you locked at thirty",
+  "audio": [
+   101.732,
+   104.461
+  ],
+  "lead": 0.0,
+  "frames": 90,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "flicking his free left fingers rapidly forward into the lens to contrast silky sixty-frame motion with a frozen thirty",
+  "two_shot": false,
+  "cam": "A handheld 28mm cinema lens is close to his face and slightly below chin height, looking up at him: a tight close-up where his face fills most of the 16:9 frame, the chrome mesh head of the microphone softly foreshortened at the bottom edge of the frame just below his lower lip (never crossing his lips); the camera pushes in with small amplitude at slow speed, warm 2700K amber lantern and torch bokeh orbs flaring behind his head, his lips large and clearly readable in every frame. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "lens": "28mm wide-angle"
+ },
+ {
+  "id": "B14",
+  "kind": "rap",
+  "who": "b",
+  "line": 14,
+  "move": "FACE",
+  "text": "Players held your funeral — your studio did you dirty",
+  "audio": [
+   104.426,
+   106.93
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "lowering his head briefly in mock mourning with his left hand over his chest while staring nose-to-nose into Arthur's eyes",
+  "two_shot": true,
+  "cam": "The camera holds a tight eye-level profile two-shot of the two men standing face to face, almost nose to nose, a foot apart: <Subject 1> on screen-right in profile facing left, leaning in and rapping straight into <Subject 2>'s face, <Subject 2> on screen-left in profile facing right; both from the chest up, and the camera pushes in with small amplitude at slow speed until their two faces fill the frame at T2.2 shallow depth of field, <Subject 1>'s lips and jaw clearly readable in profile in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> keeps his mouth firmly closed and stares back at him without blinking"
+ },
+ {
+  "id": "B15",
+  "kind": "rap",
+  "who": "b",
+  "line": 15,
+  "move": "FACEWIDE",
+  "text": "Silver's meant for monsters, steel puts outlaws in the clay",
+  "audio": [
+   106.883,
+   109.549
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "drawing an imaginary silver sword diagonal across the air between them with lethal Witcher precision",
+  "two_shot": true,
+  "cam": "The camera holds a waist-up medium profile two-shot at eye level: <Subject 1> on screen-right facing left, leaning toward <Subject 2> and rapping at him, <Subject 2> on screen-left facing right standing his ground, the crisp silver overhead spotlight beam falling between the two men while warm 2700K amber oil-lantern and torch bokeh glows behind them, <Subject 1>'s lips and jaw clearly readable in every frame, shot on a handheld 35mm cinema camera with a subtle natural sway. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his arms crossed and his mouth firmly closed"
+ },
+ {
+  "id": "B16",
+  "kind": "rap",
+  "who": "b",
+  "line": 16,
+  "move": "CRASH",
+  "text": "Toss a coin to Rivia's Wolf — your sun has set today",
+  "audio": [
+   109.508,
+   112.162
+  ],
+  "lead": 0.0,
+  "frames": 73,
+  "static": false,
+  "sway": 0.5,
+  "drift": 0.0,
+  "action": "flipping an imaginary coin upward with his left thumb, then pointing his left index finger dead-center into the camera lens",
+  "two_shot": true,
+  "cam": "The camera starts on an over-the-shoulder medium shot: the blurred shoulder and head of <Subject 2> in the left foreground, <Subject 1> chest-up on the right facing the camera, then the camera pushes in with large amplitude at fast speed past the shoulder, a sudden crash push-in that lands on a tight close-up where his whole face from brow to chin fills the frame, never closer than that, and shakes slightly as it lands, his lips large and clearly readable. He stands on top of the raised round dark-wood stage: the cheering tavern crowd silhouettes are on the plank floor below and behind him, lower than his chest, softly out of focus at T2.2, and nobody stands at his own level except his opponent",
+  "bg": "stage_b",
+  "image_keys": [
+   "b_face_clean",
+   "a_face_clean",
+   "stage_b"
+  ],
+  "listener_side": "screen-left",
+  "listener": " while <Subject 2> stands with his back to the camera in the foreground, motionless",
+  "lens": "28mm wide-angle",
+  "closeup_lora": 0.2
+ },
+ {
+  "id": "R_G_GWENT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Geralt of Rivia (keep his exact rugged chiseled warrior face, snow-white half-tied hair, amber-gold cat eyes, vertical left-brow scar, short silver-white stubble clear of lips, dark studded Kaer Morhen leather armor with chainmail shoulders, silver Wolf medallion and twin sword hilts behind right shoulder). Image 2 is Geralt's right 1272 Novigrad side of the underground tavern arena as seen from the stage (softly blurred flickering wall torchlight, amber potion flask glow and cheering medieval tavern crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Geralt of Rivia (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm flickering torch and amber potion bokeh of his medieval side of the tavern (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. One scarred pale eyebrow slowly rises and his amber cat eyes narrow with a dry deadpan Witcher half-smirk, nodding slightly on the beat.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_G_UNICORN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Geralt of Rivia (keep his exact rugged chiseled warrior face, snow-white half-tied hair, amber-gold cat eyes, vertical left-brow scar, short silver-white stubble clear of lips, dark studded Kaer Morhen leather armor with chainmail shoulders, silver Wolf medallion and twin sword hilts behind right shoulder). Image 2 is Geralt's right 1272 Novigrad side of the underground tavern arena as seen from the stage (softly blurred flickering wall torchlight, amber potion flask glow and cheering medieval tavern crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Geralt of Rivia (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm flickering torch and amber potion bokeh of his medieval side of the tavern (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. His deadpan expression flickers for half a beat, jaw tightening slightly as his amber eyes glint sharply under the silver spotlight.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_G_SHOW",
+  "kind": "still",
+  "move": "V2",
+  "frames": 73,
+  "image_keys": [
+   "b_face_clean",
+   "stage_b"
+  ],
+  "prompt": "Image 1 is Geralt of Rivia (keep his exact rugged chiseled warrior face, snow-white half-tied hair, amber-gold cat eyes, vertical left-brow scar, short silver-white stubble clear of lips, dark studded Kaer Morhen leather armor with chainmail shoulders, silver Wolf medallion and twin sword hilts behind right shoulder). Image 2 is Geralt's right 1272 Novigrad side of the underground tavern arena as seen from the stage (softly blurred flickering wall torchlight, amber potion flask glow and cheering medieval tavern crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Geralt of Rivia (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm flickering torch and amber potion bokeh of his medieval side of the tavern (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He exhales slowly through his nose and shakes his white-haired head once in cold monster-hunter disdain, mouth firmly closed.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_A_DLC",
+  "kind": "still",
+  "move": "V2",
+  "frames": 90,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Arthur Morgan (keep his exact rugged 36-year-old sun-weathered face, piercing blue-green eyes, worn black leather gambler's hat with braided rope band tilted slightly back, short sandy-brown beard clear of lips, tan buckskin leather gunslinger jacket over slate-blue shirt, black neckerchief and leather bandolier). Image 2 is Arthur's left 1899 saloon side of the underground tavern arena as seen from the stage (softly blurred brass oil-lantern glow, whiskey barrels and cheering cowboy crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Arthur Morgan (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm brass oil-lantern bokeh of his saloon side of the tavern (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He glances sideways for half a beat and swallows hard, jaw clenching tight beneath his hat brim as his blue-green eyes turn ice-cold.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "R_A_FURY",
+  "kind": "still",
+  "move": "V2",
+  "frames": 107,
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "prompt": "Image 1 is Arthur Morgan (keep his exact rugged 36-year-old sun-weathered face, piercing blue-green eyes, worn black leather gambler's hat with braided rope band tilted slightly back, short sandy-brown beard clear of lips, tan buckskin leather gunslinger jacket over slate-blue shirt, black neckerchief and leather bandolier). Image 2 is Arthur's left 1899 saloon side of the underground tavern arena as seen from the stage (softly blurred brass oil-lantern glow, whiskey barrels and cheering cowboy crowd silhouettes).\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last, the camera holds a tight head-and-shoulders close-up of Arthur Morgan (Image 1) alone at Cooke Panchro 50mm T2.2 shallow depth of field, frontal, at eye level: his face fills the upper two thirds of the frame, his hands and arms are out of frame, and the warm brass oil-lantern bokeh of his saloon side of the tavern (Image 2) glow softly blurred into warm 2700K bokeh orbs behind him, never a sharp wall of tiny faces. He is listening to his opponent, not rapping: his mouth stays firmly closed the whole time. He grinds his teeth, nostrils flaring, staring straight back in stung, defiant frontier outlaw pride.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "VENUE_OPEN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "venue"
+  ],
+  "prompt": "Image 1 is the packed underground timber-and-stone tavern rap battle arena at night with an empty spotlit central round stage, 1899 Wild West saloon side on the left, 1272 medieval Novigrad stone-and-torch side on the right.\n\nCinematic photoreal 35mm film shot, 16:9. Wide establishing crane shot inside the packed timber-and-stone underground tavern rap battle arena at night (Image 1): glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, a crisp 5600K silver spotlight beam illuminating the empty round dark-wood stage in the center, 1899 Wild West saloon whiskey barrels and pine walls on the left, 1272 medieval Novigrad stone arches, wall torches and glowing potion flasks on the right, and hundreds of cowboys and tavern-goers packed around the stage; the camera pushes in smoothly at slow speed.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame.",
+  "closeup_lora": 0.0
+ },
+ {
+  "id": "STAGE_STANDOFF",
+  "kind": "still",
+  "move": "V2",
+  "frames": 141,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Arthur Morgan (keep his exact rugged 36-year-old sun-weathered face, piercing blue-green eyes, worn black leather gambler's hat with braided rope band tilted slightly back, short sandy-brown beard clear of lips, tan buckskin leather gunslinger jacket over slate-blue shirt, black neckerchief and leather bandolier). Image 2 is Geralt of Rivia (keep his exact rugged chiseled warrior face, snow-white half-tied hair, amber-gold cat eyes, vertical left-brow scar, short silver-white stubble clear of lips, dark studded Kaer Morhen leather armor with chainmail shoulders, silver Wolf medallion and twin sword hilts behind right shoulder).\n\nCinematic photoreal 35mm film shot, 16:9. Waist-up medium profile two-shot at eye level on the spotlit underground tavern stage: Arthur Morgan (Image 1) on the left in his black leather gambler's hat and tan buckskin jacket steps forward facing right, and Geralt of Rivia (Image 2) on the right with his snow-white hair, silver Wolf medallion and studded leather armor steps forward facing left; neither is singing yet, mouths firmly closed, locking eyes nose-to-nose across the silver spotlight beam while warm 2700K lantern and torch bokeh and cheering crowd silhouettes bounce behind them; handheld 35mm camera slowly arcs a few degrees.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring tavern crowd bouncing on the plank floor below. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep every character's face, hairstyle, facial hair, clothing and colors exactly as in their reference images. Arthur Morgan always stands on the left side of the stage in his black leather gambler's hat and tan buckskin jacket, Geralt of Rivia on the right in his snow-white half-tied hair, dark studded leather armor and silver Wolf medallion. Whenever Arthur or Geralt is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else."
+ },
+ {
+  "id": "OPEN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 124,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Arthur Morgan (keep his exact rugged 36-year-old sun-weathered face, piercing blue-green eyes, worn black leather gambler's hat with braided rope band tilted slightly back, short sandy-brown beard clear of lips, tan buckskin leather gunslinger jacket over slate-blue shirt, black neckerchief and leather bandolier). Image 2 is Geralt of Rivia (keep his exact rugged chiseled warrior face, snow-white half-tied hair, amber-gold cat eyes, vertical left-brow scar, short silver-white stubble clear of lips, dark studded Kaer Morhen leather armor with chainmail shoulders, silver Wolf medallion and twin sword hilts behind right shoulder).\n\nCinematic photoreal 35mm film shot, 16:9. Over-the-shoulder shot at eye level at T2.2 shallow depth of field, handheld: the blurred snow-white half-tied hair and chainmail-and-leather shoulder with twin sword hilts of Geralt of Rivia (Image 2) fill the right foreground, and beyond him Arthur Morgan (Image 1) stands chest-up on the left in his black leather hat and tan buckskin jacket, facing the camera, raising his chrome handheld microphone toward his chin with a stoic outlaw smirk, mouth closed, warm 2700K saloon lantern bokeh glowing behind him; the camera pushes in with small amplitude at slow speed.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring tavern crowd bouncing on the plank floor below. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep every character's face, hairstyle, facial hair, clothing and colors exactly as in their reference images. Arthur Morgan always stands on the left side of the stage in his black leather gambler's hat and tan buckskin jacket, Geralt of Rivia on the right in his snow-white half-tied hair, dark studded leather armor and silver Wolf medallion. Whenever Arthur or Geralt is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else."
+ },
+ {
+  "id": "DJ_FRONT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 141,
+  "image_keys": [
+   "dj"
+  ],
+  "prompt": "Image 1 is the charismatic frontier-tavern hip-hop DJ in flat-brim gambler hat, dark leather vest and brass-and-leather headphones at his raised dual-turntable booth.\n\nCinematic photoreal 35mm film shot, 16:9. Frontal medium shot of exactly one person, the charismatic frontier-tavern hip-hop DJ (Image 1), alone behind his raised rustic timber-and-iron dual-turntable booth, scratching a vinyl record with one hand and pressing one brass-and-leather headphone cup to his ear with the other, warm amber VU meters glowing on the mixer, cheering crowd silhouettes bouncing in the lantern bokeh haze behind him.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "DJ_HANDS",
+  "kind": "still",
+  "move": "V2",
+  "frames": 158,
+  "image_keys": [
+   "dj"
+  ],
+  "prompt": "Image 1 is the charismatic frontier-tavern hip-hop DJ in flat-brim gambler hat, dark leather vest and brass-and-leather headphones at his raised dual-turntable booth.\n\nCinematic photoreal 35mm film shot, 16:9. Low-angle close shot across the direct-drive turntables of the rustic timber-and-iron DJ booth (Image 1): the DJ's hands scratch a spinning black 12-inch vinyl record and snap the battle mixer crossfader, his dark leather vest above, warm 2700K lantern bokeh glowing behind.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_OOH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 90,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the roaring underground tavern crowd of rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk.\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close medium shot packed with four or five frontier cowboys in Stetsons and medieval tavern patrons from the front row (Image 1), their faces large and filling the 16:9 frame at T2.2 shallow depth of field, handheld camera at their eye level, brass lanterns and torches blurred into warm golden orbs behind them. They react to a brutal punchline: one cowboy grabs the brim of his Stetson with wide eyes, a bearded tavern patron claps a hand over his mouth, another leans back laughing and raising a wooden tankard in the air. Energetic, joyful chaos.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_CHANT",
+  "kind": "still",
+  "move": "V2",
+  "frames": 141,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the roaring underground tavern crowd of rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk.\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close medium shot of the front rows of the underground tavern crowd (Image 1), handheld at their eye level, faces sculpted by warm 3200K lantern and torch light: cowboys in leather vests and Stetsons alongside hooded townsfolk chant together with raised fists and wooden tankards pumping in rhythm on every boom-bap beat, mouths wide open, light hearth smoke. The camera trucks right with small amplitude at slow speed along the front row.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_STARE",
+  "kind": "still",
+  "move": "V2",
+  "frames": 141,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the roaring underground tavern crowd of rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk.\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Medium close shot of three rugged cowboys and tavern-goers in the front row (Image 1), handheld at their eye level, warm golden lantern light: they look up past the camera in stunned appreciation, arms folded, one slowly nodding hard under his Stetson hat.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CROWD_LAUGH",
+  "kind": "still",
+  "move": "V2",
+  "frames": 107,
+  "image_keys": [
+   "crowd"
+  ],
+  "prompt": "Image 1 is the roaring underground tavern crowd of rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk.\n\nCinematic photoreal 35mm film shot, 16:9. From the very first frame to the last this is a close shot of the audience only: the camera stands with its back to the stage, so the stage and the two rappers are never in frame. Close shot of one weathered cowboy and a tavern bard in the front row (Image 1) throwing their heads back and laughing with hype applause, fists and hats punching the air, spectators cheering and bouncing around them, warm amber lantern bokeh, handheld.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep the face, hairstyle, facial hair, clothing and colors exactly as in the reference images. There is no stage, no spotlit platform and no performer anywhere in the background of this shot. No subtitles, no on-screen text, no logos, no watermark. Nobody in this shot holds a microphone: there is no microphone anywhere in the frame."
+ },
+ {
+  "id": "CURTAIN",
+  "kind": "still",
+  "move": "V2",
+  "frames": 192,
+  "image_keys": [
+   "a_face_clean",
+   "b_face_clean"
+  ],
+  "prompt": "Image 1 is Arthur Morgan (keep his exact rugged 36-year-old sun-weathered face, piercing blue-green eyes, worn black leather gambler's hat with braided rope band tilted slightly back, short sandy-brown beard clear of lips, tan buckskin leather gunslinger jacket over slate-blue shirt, black neckerchief and leather bandolier). Image 2 is Geralt of Rivia (keep his exact rugged chiseled warrior face, snow-white half-tied hair, amber-gold cat eyes, vertical left-brow scar, short silver-white stubble clear of lips, dark studded Kaer Morhen leather armor with chainmail shoulders, silver Wolf medallion and twin sword hilts behind right shoulder).\n\nCinematic photoreal 35mm film shot, 16:9. The shot starts as a waist-up medium two-shot of Arthur Morgan (Image 1) on the left in his black leather gambler's hat and buckskin jacket and Geralt of Rivia (Image 2) on the right with his snow-white hair and studded Wolf armor standing side by side on the stage, both facing the camera, both raising their arms to salute the roaring underground tavern hall, mouths closed, Arthur tipping a respectful outlaw nod and Geralt giving a rare faint warrior smirk. Then the camera pulls out and pedestals up with large amplitude at slow speed, rising steadily backward and upward over the heads of the audience until it holds a high wide shot of the whole timber-and-stone tavern arena: the two men small in the silver spotlight at the center of the circular wooden stage, hundreds of cheering cowboys and medieval townsfolk waving hats and tankards all around them, saloon whiskey barrels on the left, medieval stone torches and potion shelves on the right. During the last second the camera smoothly decelerates and settles into a stationary shot.\n\nAuthentic live-action 35mm cinema shot on ARRI Alexa Mini LF with Cooke Panchro T2.2 lens on Kodak Vision3 500T film, natural matte human skin with fine pores (zero plastic sheen). Setting: a packed gritty timber-and-stone underground tavern hall at night turned into a rap battle arena, warm glowing 2700K wrought-iron candle chandeliers and brass oil lanterns overhead, light atmospheric hearth smoke; on the left side warm 1899 Wild West saloon rough-cut pine walls, a weathered paper bounty board, stacked oak whiskey barrels, a coiled leather lasso and brass lever-action rifles on a timber rack, on the right side medieval 1272 Novigrad stone arches with flickering iron wall torches, oak shelves of glowing amber alchemy potion flasks, a carved Wolf-head Witcher crest on a stone pillar and twin steel-and-silver longswords mounted on a dark oak rack, a raised rustic timber-and-iron DJ booth with dual vinyl turntables and towering club speaker stacks in the center background, and a raised round dark-wood stage in the middle; the two rappers always stand on top of this stage, above the roaring tavern crowd bouncing on the plank floor below. The crowd are rugged 1890s frontier cowboys in weathered Stetsons and dusters alongside medieval tavern patrons, bards, and hooded northern townsfolk. Lighting: authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber Rembrandt side-key light sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K cool-silver overhead back-spotlight beam tracing silver rim highlights along hair, hat brim and shoulders, and warm 2700K amber oil-lantern and torch bokeh orbs glowing behind the softly blurred cheering crowd. Whenever the crowd is in frame, the packed crowd moves with the music the whole time, heads nodding and fists pumping on every boom-bap beat, bodies swaying, spectators waving cowboy hats and wooden tavern tankards in the air.\n\nKeep every character's face, hairstyle, facial hair, clothing and colors exactly as in their reference images. Arthur Morgan always stands on the left side of the stage in his black leather gambler's hat and tan buckskin jacket, Geralt of Rivia on the right in his snow-white half-tied hair, dark studded leather armor and silver Wolf medallion. Whenever Arthur or Geralt is in frame he stands on top of the raised round stage, above the crowd. No subtitles, no on-screen text, no logos, no watermark. Each of the two men holds one vintage chrome handheld microphone with a round mesh head in his right hand and nothing else.",
+  "closeup_lora": 0.0
+ }
+]

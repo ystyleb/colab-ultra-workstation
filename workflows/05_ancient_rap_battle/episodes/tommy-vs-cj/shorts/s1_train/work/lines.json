@@ -1,0 +1,46 @@
+[
+ {
+  "who": "a",
+  "n": 5,
+  "text": "Fled to Liberty City when your brother took the fall",
+  "start": 0.35,
+  "end": 2.806,
+  "bar": 20.701,
+  "heard": "Fled to Liberty City when your brother took the fall",
+  "orig_start": 37.062,
+  "orig_bar": 37.062
+ },
+ {
+  "who": "a",
+  "n": 6,
+  "text": "Came home on a kid's bike while Tenpenny owned you all",
+  "start": 2.856,
+  "end": 5.438,
+  "bar": 23.207,
+  "heard": "Came home on a kid's bike while Tenpenny owned you all",
+  "orig_start": 39.568,
+  "orig_bar": 39.568
+ },
+ {
+  "who": "a",
+  "n": 7,
+  "text": "Big Smoke sold your family out for drive-thru number nines",
+  "start": 5.488,
+  "end": 7.967,
+  "bar": 25.839,
+  "heard": "Big Smoke sold your family out for drive-thru number nines",
+  "orig_start": 42.2,
+  "orig_bar": 42.2
+ },
+ {
+  "who": "a",
+  "n": 8,
+  "text": "\"All you had to do was follow that damn train\" down the lines",
+  "start": 8.007,
+  "end": 10.654,
+  "bar": 28.358,
+  "heard": "All you had to do was follow that damn train\" down the lines",
+  "orig_start": 44.719,
+  "orig_bar": 44.719
+ }
+]

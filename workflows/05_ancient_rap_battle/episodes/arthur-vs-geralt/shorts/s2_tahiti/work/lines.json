@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 1,
+  "text": "Wind's howling, and your chest is too — so catch your breath, Black Lung",
+  "start": 0.35,
+  "end": 2.946,
+  "bar": 32.894,
+  "heard": "Wind's howling, and your chest is too so catch your breath, Black Lung",
+  "orig_start": 43.22,
+  "orig_bar": 43.22
+ },
+ {
+  "who": "b",
+  "n": 2,
+  "text": "Dutch's lap dog for two decades since back when you were young",
+  "start": 2.966,
+  "end": 5.452,
+  "bar": 35.51,
+  "heard": "Dutch's lap dog for two decades since back when you were young",
+  "orig_start": 45.836,
+  "orig_bar": 45.836
+ },
+ {
+  "who": "b",
+  "n": 3,
+  "text": "One more score, one more plan — next stop is warm Tahiti",
+  "start": 5.502,
+  "end": 8.099,
+  "bar": 38.046,
+  "heard": "One more score, one more plan next stop is warm Tahiti",
+  "orig_start": 48.372,
+  "orig_bar": 48.372
+ },
+ {
+  "who": "b",
+  "n": 4,
+  "text": "You bled for Dutch's fairy tale, and I damn near feel pity",
+  "start": 8.149,
+  "end": 10.589,
+  "bar": 40.693,
+  "heard": "You bled for Dutch's fairy tale, and I damn near feel pity",
+  "orig_start": 51.019,
+  "orig_bar": 51.019
+ }
+]

@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 9,
+  "text": "Yeah, Rockstar's back in Vice — and your name isn't on the list",
+  "start": 0.35,
+  "end": 3.55,
+  "bar": 85.743,
+  "heard": "Yeah, Rockstar's back in Vice and your name isn't on the list",
+  "orig_start": 102.104,
+  "orig_bar": 102.104
+ },
+ {
+  "who": "b",
+  "n": 10,
+  "text": "Jason and Lucia run your beach like you don't exist",
+  "start": 3.6,
+  "end": 6.011,
+  "bar": 88.993,
+  "heard": "Jason and Lucia run your beach like you don't exist",
+  "orig_start": 105.354,
+  "orig_bar": 105.354
+ },
+ {
+  "who": "b",
+  "n": 11,
+  "text": "Ghosted after eighty-six — you vanished from the hall",
+  "start": 6.046,
+  "end": 8.6,
+  "bar": 91.439,
+  "heard": "Ghosted after eighty-six you vanished from the hall",
+  "orig_start": 107.8,
+  "orig_bar": 107.8
+ },
+ {
+  "who": "b",
+  "n": 12,
+  "text": "Left poor Ken in Vegas begging Tommy for a call",
+  "start": 8.65,
+  "end": 11.013,
+  "bar": 94.043,
+  "heard": "Left poor Ken in Vegas begging Tommy for a call",
+  "orig_start": 110.404,
+  "orig_bar": 110.404
+ }
+]

@@ -90,33 +90,41 @@ def get_drive_token() -> str:
 
 
 def upload_bundle_to_drive(local_path: Path) -> str:
-    """Upload bundle tar.gz via Google Drive v3 resumable upload and return file_id."""
-    token = get_drive_token()
-    init_req = urllib.request.Request(
-        "https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable",
-        data=json.dumps({"name": local_path.name}).encode("utf-8"),
-        headers={
-            "Authorization": f"Bearer {token}",
-            "Content-Type": "application/json; charset=UTF-8",
-        },
-        method="POST",
-    )
-    with urllib.request.urlopen(init_req, timeout=30) as resp:
-        upload_url = resp.headers["Location"]
-
+    """Upload bundle tar.gz via Google Drive v3 resumable upload and return file_id (with proxy TLS retry)."""
     raw_bytes = local_path.read_bytes()
-    put_req = urllib.request.Request(
-        upload_url,
-        data=raw_bytes,
-        headers={
-            "Content-Length": str(len(raw_bytes)),
-            "Content-Type": "application/gzip",
-        },
-        method="PUT",
-    )
-    with urllib.request.urlopen(put_req, timeout=120) as resp:
-        meta = json.loads(resp.read().decode("utf-8"))
-    return meta["id"]
+    for attempt in range(4):
+        try:
+            token = get_drive_token()
+            init_req = urllib.request.Request(
+                "https://www.googleapis.com/upload/drive/v3/files?uploadType=resumable",
+                data=json.dumps({"name": local_path.name}).encode("utf-8"),
+                headers={
+                    "Authorization": f"Bearer {token}",
+                    "Content-Type": "application/json; charset=UTF-8",
+                },
+                method="POST",
+            )
+            with urllib.request.urlopen(init_req, timeout=30) as resp:
+                upload_url = resp.headers["Location"]
+
+            put_req = urllib.request.Request(
+                upload_url,
+                data=raw_bytes,
+                headers={
+                    "Content-Length": str(len(raw_bytes)),
+                    "Content-Type": "application/gzip",
+                },
+                method="PUT",
+            )
+            with urllib.request.urlopen(put_req, timeout=120) as resp:
+                meta = json.loads(resp.read().decode("utf-8"))
+            return meta["id"]
+        except (urllib.error.URLError, ConnectionError, TimeoutError) as err:
+            if attempt == 3:
+                raise
+            print(f"⚠️ Drive bundle upload TLS retry {attempt + 1}/3 ({err})...", flush=True)
+            time.sleep(3 * (attempt + 1))
+    raise RuntimeError("Unreachable")
 
 
 def delete_drive_file(file_id: str | None) -> None:
@@ -156,7 +164,14 @@ print(json.dumps({{
     wait_t0 = time.time()
     max_wait_s = int(os.environ.get("RAP_G4_WAIT_TIMEOUT", "3600"))
     while True:
-        r = subprocess.run([sys.executable, "-c", check_code], capture_output=True, text=True, check=True)
+        r = None
+        for _chk_try in range(4):
+            r = subprocess.run([sys.executable, "-c", check_code], capture_output=True, text=True)
+            if r.returncode == 0 and r.stdout.strip():
+                break
+            time.sleep(3 * (_chk_try + 1))
+        if r is None or r.returncode != 0:
+            raise RuntimeError(f"state.sync_sessions failed: {r.stderr if r else ''}")
         info = json.loads(r.stdout.strip().splitlines()[-1])
         if info["has_session"]:
             print(f"⚡ Reusing active Colab G4 session '{session}'", flush=True)
@@ -230,7 +245,7 @@ def pull_clips_from_drive(ep_dir: Path, title: str) -> int:
         return retry(lambda: json.loads(urllib.request.urlopen(req, timeout=30).read().decode())["files"], "Drive list")
 
     def gdrive_download(file_id: str, dst: Path, timeout: int) -> None:
-        tmp = dst.with_name(dst.name + ".part")
+        tmp = dst.with_name(f"{dst.name}.{os.getpid()}.part")
         req = urllib.request.Request(f"https://www.googleapis.com/drive/v3/files/{file_id}?alt=media", headers=headers)
 
         def _dl():

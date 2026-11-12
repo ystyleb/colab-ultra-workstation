@@ -1,0 +1,102 @@
+[
+ {
+  "id": "A05",
+  "kind": "rap",
+  "who": "a",
+  "line": 5,
+  "move": "FULL",
+  "text": "Fled to Liberty City when your brother took the fall",
+  "audio": [
+   0.27,
+   2.806
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "flicking his free left hand backward dismissively as if shooing away a runaway kid",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised dark-wood stage: the cheering underground hip-hop crowd silhouettes are on the warehouse floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A06",
+  "kind": "rap",
+  "who": "a",
+  "line": 6,
+  "move": "FULL",
+  "text": "Came home on a kid's bike while Tenpenny owned you all",
+  "audio": [
+   2.776,
+   5.438
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "miming gripping tiny bicycle handlebars in the air with a mocking smirk",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised dark-wood stage: the cheering underground hip-hop crowd silhouettes are on the warehouse floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A07",
+  "kind": "rap",
+  "who": "a",
+  "line": 7,
+  "move": "FULL",
+  "text": "Big Smoke sold your family out for drive-thru number nines",
+  "audio": [
+   5.408,
+   7.967
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "counting off fast-food orders on his left fingers while laughing coldly at his rival",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a vertical chest-up close-up shot of him at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. He stands alone on top of the raised dark-wood stage: the cheering underground hip-hop crowd silhouettes are on the warehouse floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A08",
+  "kind": "rap",
+  "who": "a",
+  "line": 8,
+  "move": "FULL",
+  "text": "\"All you had to do was follow that damn train\" down the lines",
+  "audio": [
+   7.927,
+   10.654
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "action": "pointing straight down an imaginary railway track toward CJ with a ruthless grin",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera with a subtle natural sway starts on a vertical chest-up shot at eye level and gently creeps closer to a head-and-shoulders close-up at T2.2 shallow depth of field, his face and lips large in the upper half of the tall 9:16 frame from the first frame. He stands alone on top of the raised dark-wood stage: the cheering underground hip-hop crowd silhouettes are on the warehouse floor below and behind him, lower than his chest, softly out of focus at Cooke Panchro T2.2, and there is no other stage or performer in the background",
+  "static": false,
+  "bg": "stage_a",
+  "image_keys": [
+   "a_face_clean",
+   "stage_a"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]
