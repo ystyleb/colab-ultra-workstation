@@ -201,6 +201,9 @@ def match_lines_to_words(words: list, e: dict, bar_sec: float = 240.0 / 95.0):
         parts = [p for p in cw.split() if norm_token(p)]
         if not parts:
             continue
+        # Suno's aligner occasionally glues a long instrumental [Intro]/[Verse ...] gap onto the first word
+        if ("[" in raw_w or "]" in raw_w) and (e_t - s_t) > 2.5:
+            s_t = max(s_t, e_t - 0.55 * len(parts))
         dur = max(0.05, e_t - s_t) / len(parts)
         for idx, p in enumerate(parts):
             clean_ws.append({
@@ -518,7 +521,11 @@ def main():
         s = re.sub(r'\s*\n\s*"+\s*$', "", s).strip()
         if not re.sub(r"[^a-zA-Z0-9\u4e00-\u9fff]", "", s):
             continue
-        words_edit.append({"w": s, "t0": round(w["startS"] - trim_start, 3), "t1": round(w["endS"] - trim_start, 3)})
+        t0_w = float(w["startS"])
+        t1_w = float(w["endS"])
+        if ("[" in raw or "]" in raw) and (t1_w - t0_w) > 2.5:
+            t0_w = max(t0_w, t1_w - 0.55)
+        words_edit.append({"w": s, "t0": round(t0_w - trim_start, 3), "t1": round(t1_w - trim_start, 3)})
     jsave(os.path.join(work, "words_edit.json"), words_edit)
     verse_a_start = lines[0]["start"]
     verse_a_end = max(l["end"] for l in lines if l["who"] == "a")

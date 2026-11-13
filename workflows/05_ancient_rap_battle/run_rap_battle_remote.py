@@ -10,6 +10,8 @@ Follows all Zero-Burn Iron Rules:
 """
 import argparse
 import base64
+from contextlib import contextmanager
+import fcntl
 import json
 import shlex
 import os
@@ -33,6 +35,19 @@ WF_DIR = Path(__file__).resolve().parent
 COLAB_BIN = str(Path.home() / ".local" / "bin" / "colab")
 # Unique per run (including PID so parallel workers launched in the same second never collide).
 SESSION_NAME = os.environ.get("RAP_G4_SESSION") or f"rap-g4-{time.strftime('%m%d-%H%M%S')}-{os.getpid() % 10000:04d}"
+STATE_LOCK_FILE = Path("/tmp/rap_colab_cli_state.lock")
+
+
+@contextmanager
+def local_state_lock():
+    """Serialize local colab-cli state.json / session_tracker.json / picks.json updates across parallel workers."""
+    STATE_LOCK_FILE.touch(exist_ok=True)
+    with STATE_LOCK_FILE.open("r+") as lf:
+        fcntl.flock(lf.fileno(), fcntl.LOCK_EX)
+        try:
+            yield
+        finally:
+            fcntl.flock(lf.fileno(), fcntl.LOCK_UN)
 
 
 def run_local(cmd: list, check: bool = True) -> subprocess.CompletedProcess:
@@ -164,18 +179,31 @@ print(json.dumps({{
     wait_t0 = time.time()
     max_wait_s = int(os.environ.get("RAP_G4_WAIT_TIMEOUT", "3600"))
     while True:
-        r = None
-        for _chk_try in range(4):
-            r = subprocess.run([sys.executable, "-c", check_code], capture_output=True, text=True)
-            if r.returncode == 0 and r.stdout.strip():
+        with local_state_lock():
+            r = None
+            for _chk_try in range(4):
+                r = subprocess.run([sys.executable, "-c", check_code], capture_output=True, text=True)
+                if r.returncode == 0 and r.stdout.strip():
+                    break
+                time.sleep(3 * (_chk_try + 1))
+            if r is None or r.returncode != 0:
+                raise RuntimeError(f"state.sync_sessions failed: {r.stderr if r else ''}")
+            info = json.loads(r.stdout.strip().splitlines()[-1])
+            if info["has_session"]:
+                print(f"⚡ Reusing active Colab G4 session '{session}'", flush=True)
                 break
-            time.sleep(3 * (_chk_try + 1))
-        if r is None or r.returncode != 0:
-            raise RuntimeError(f"state.sync_sessions failed: {r.stderr if r else ''}")
-        info = json.loads(r.stdout.strip().splitlines()[-1])
-        if info["has_session"]:
-            print(f"⚡ Reusing active Colab G4 session '{session}'", flush=True)
-            break
+            if info["assignments"] < 3:
+                print(f"🚀 Connecting Colab G4 (96GB Blackwell) session '{session}' (active={info['assignments']}/3)...", flush=True)
+                res = subprocess.run([COLAB_BIN, "new", "-s", session, "--gpu", "G4"], capture_output=True, text=True)
+                if res.returncode == 0:
+                    if res.stdout:
+                        print(res.stdout.strip(), flush=True)
+                    run_local([sys.executable, str(ROOT_DIR / "scripts" / "colab_meter.py"), "start", "-s", session, "-g", "G4"], check=False)
+                    break
+                err_msg = (res.stderr or res.stdout or "").strip()
+            else:
+                res = None
+                err_msg = ""
         if info["assignments"] >= 3:
             elapsed = int(time.time() - wait_t0)
             if elapsed > max_wait_s:
@@ -183,20 +211,12 @@ print(json.dumps({{
             print(f"⏳ [{elapsed}s] {info['assignments']}/3 GPU slots in use ({', '.join(info['active'])}); waiting 30s for a slot to free up (0 CCU)...", flush=True)
             time.sleep(30)
             continue
-        print(f"🚀 Connecting Colab G4 (96GB Blackwell) session '{session}' (active={info['assignments']}/3)...", flush=True)
-        res = subprocess.run([COLAB_BIN, "new", "-s", session, "--gpu", "G4"], capture_output=True, text=True)
-        if res.returncode == 0:
-            if res.stdout:
-                print(res.stdout.strip(), flush=True)
-            break
-        err_msg = (res.stderr or res.stdout or "").strip()
         elapsed = int(time.time() - wait_t0)
         if elapsed < max_wait_s and any(k in err_msg.lower() for k in ("precondition failed", "allocation refused", "503", "unavailable", "capacity")):
             print(f"⏳ [{elapsed}s] G4 allocation busy ({err_msg.splitlines()[-1] if err_msg else 'retry'}); retrying in 30s (0 CCU)...", flush=True)
             time.sleep(30)
             continue
-        raise RuntimeError(f"colab new failed ({res.returncode}): {err_msg}")
-    run_local([sys.executable, str(ROOT_DIR / "scripts" / "colab_meter.py"), "start", "-s", session, "-g", "G4"], check=False)
+        raise RuntimeError(f"colab new failed ({res.returncode if res else -1}): {err_msg}")
 
     for attempt in range(3):
         chk = colab_exec_py(
@@ -270,9 +290,10 @@ def pull_clips_from_drive(ep_dir: Path, title: str) -> int:
             gdrive_download(jf["id"], tmp_j, timeout=60)
             try:
                 remote_d = json.loads(tmp_j.read_text(encoding="utf-8"))
-                local_d = json.loads(dst_j.read_text(encoding="utf-8")) if dst_j.exists() else {}
-                merged = {**local_d, **remote_d}
-                dst_j.write_text(json.dumps(merged, indent=2, ensure_ascii=False), encoding="utf-8")
+                with local_state_lock():
+                    local_d = json.loads(dst_j.read_text(encoding="utf-8")) if dst_j.exists() else {}
+                    merged = {**local_d, **remote_d}
+                    dst_j.write_text(json.dumps(merged, indent=2, ensure_ascii=False), encoding="utf-8")
             finally:
                 tmp_j.unlink(missing_ok=True)
 
@@ -304,16 +325,17 @@ def pull_clips_from_drive(ep_dir: Path, title: str) -> int:
         print(f"   ⬇️ Pulled {dst.name} ({dst.stat().st_size / 1048576:.2f} MB)", flush=True)
 
     # Parallel-worker safeguard: ensure every pulled <cid>_t1.mp4 is registered in local picks.json
-    picks_f = ep_dir / "work" / "picks.json"
-    picks_d = json.loads(picks_f.read_text(encoding="utf-8")) if picks_f.exists() else {}
-    changed = False
-    for mp4 in sorted(local_clips.glob("*_t1.mp4")):
-        cid = mp4.name[:-7]
-        if cid and cid not in picks_d:
-            picks_d[cid] = 1
-            changed = True
-    if changed:
-        picks_f.write_text(json.dumps(picks_d, indent=2, ensure_ascii=False), encoding="utf-8")
+    with local_state_lock():
+        picks_f = ep_dir / "work" / "picks.json"
+        picks_d = json.loads(picks_f.read_text(encoding="utf-8")) if picks_f.exists() else {}
+        changed = False
+        for mp4 in sorted(local_clips.glob("*_t1.mp4")):
+            cid = mp4.name[:-7]
+            if cid and cid not in picks_d:
+                picks_d[cid] = 1
+                changed = True
+        if changed:
+            picks_f.write_text(json.dumps(picks_d, indent=2, ensure_ascii=False), encoding="utf-8")
     return count
 
 
@@ -339,10 +361,20 @@ def main():
         for idx, d in enumerate(ep_dirs):
             prefix = f"episode_{idx}"
             tar.add(d / "episode.json", arcname=f"{prefix}/episode.json")
+            has_voc_final = (d / "work" / "vocals_final.wav").is_file()
+            has_mus_final = (d / "work" / "music_final.wav").is_file()
             for sub in ("refs", "work"):
                 for p in (d / sub).glob("*"):
-                    if p.is_file() and p.suffix in (".png", ".json", ".wav", ".mp3"):
-                        tar.add(p, arcname=f"{prefix}/{sub}/{p.name}")
+                    if not p.is_file() or p.suffix not in (".png", ".json", ".wav", ".mp3"):
+                        continue
+                    if sub == "work":
+                        if p.name.endswith("_raw_orig.png") or p.suffix == ".mp3":
+                            continue
+                        if p.suffix == ".wav":
+                            keep_wav = "vocals_final.wav" if has_voc_final else ("music_final.wav" if has_mus_final else p.name)
+                            if p.name != keep_wav:
+                                continue
+                    tar.add(p, arcname=f"{prefix}/{sub}/{p.name}")
         for s_py in ("common.py", "qa.py", "h3_colab_runner.py"):
             tar.add(WF_DIR / "scripts" / s_py, arcname=f"scripts/{s_py}")
 
@@ -452,9 +484,10 @@ print("DRIVE_SYNC_OK")
         bundle_tar.unlink(missing_ok=True)
         delete_drive_file(bundle_file_id)
         print("\n🛑 [Step 4/4] Immediately stopping Colab G4 instance to stop CCU burn...", flush=True)
-        subprocess.run([COLAB_BIN, "stop", "-s", SESSION_NAME], check=False)
-        time.sleep(2)
-        run_local([sys.executable, str(ROOT_DIR / "scripts" / "colab_meter.py"), "stop", "-s", SESSION_NAME], check=False)
+        with local_state_lock():
+            subprocess.run([COLAB_BIN, "stop", "-s", SESSION_NAME], check=False)
+            time.sleep(2)
+            run_local([sys.executable, str(ROOT_DIR / "scripts" / "colab_meter.py"), "stop", "-s", SESSION_NAME], check=False)
 
     print("\n⬇️ [0-CCU Post-Processing] Pulling rendered clips from Google Drive & packaging final video...", flush=True)
     for ep_dir, title in zip(ep_dirs, titles):

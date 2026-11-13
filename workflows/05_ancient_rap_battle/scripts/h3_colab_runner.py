@@ -247,6 +247,8 @@ def _adapt_prompt(c: dict, e: dict, total_dur: float, mic: str, static_cam: bool
     who = c.get("who", "a")
     me = e[who]
     them = e["b" if who == "a" else "a"]
+    me_helmeted = bool(me.get("helmeted") or c.get("helmeted"))
+    them_helmeted = bool(them.get("helmeted"))
     two_shot = bool(c.get("two_shot"))
     wide = bool(c.get("wide"))  # wide / reverse shots: deep focus, no fixed screen side, not singing into the lens
     lang_tag = "English" if lang == "en" else "Mandarin"
@@ -257,7 +259,18 @@ def _adapt_prompt(c: dict, e: dict, total_dur: float, mic: str, static_cam: bool
     ts_total_str = f"00:0{total_dur:05.3f}"
     ts_start_str = f"00:0{t_start:05.3f}"
     ts_end_str = f"00:0{t_end:05.3f}"
-    if mic == "stand":
+    eff_mic = c.get("mic") or ("none" if e.get("mic_en") == "none" else mic)
+    if eff_mic == "none" and me_helmeted:
+        mic_summary = ("performing with both armored gauntleted hands completely free (no microphone and no weapon anywhere in the frame), "
+                       "keeping his full-face Spartan helmet and opaque reflective visor permanently sealed")
+        mic_detail = ("with both armored gauntleted hands completely free and expressive (there is no microphone and no weapon anywhere "
+                      "in the frame, and his full-face helmet and opaque visor remain permanently sealed over his entire head)")
+    elif eff_mic == "none":
+        mic_summary = ("performing with both hands completely free (no microphone anywhere in the frame) like a pure live-action "
+                       "cinema music video, keeping his mouth, lips, and jaw 100% unobstructed")
+        mic_detail = ("with both hands completely free and expressive (there is no microphone anywhere in the frame, "
+                      "so his upper lip, lower lip, mouth corners, and jaw stay 100% unobstructed and visible)")
+    elif eff_mic == "stand":
         mic_summary = ("rapping into a vintage chrome microphone on a floor stand that stands at mid-chest height slightly to one side, "
                        "well below his chin, never in front of his mouth; both hands are free")
         mic_detail = ("with a vintage chrome microphone on a floor stand placed at mid-chest height slightly to one side of him "
@@ -273,16 +286,23 @@ def _adapt_prompt(c: dict, e: dict, total_dur: float, mic: str, static_cam: bool
         mic_summary = f"holding the {e.get('mic_en', 'vintage microphone')} at upper-chest height below his chin so his mouth and lips remain 100% uncovered"
         mic_detail = (f"holding the {e.get('mic_en', 'silver corded microphone')} in his right hand at upper-chest height a few inches below his chin "
                       "(completely clear of his face so his mouth, lips, and jaw are 100% unobstructed and visible)")
-    venue_desc = e.get("venue_en", "an 1890s industrial power plant rap battle arena")
-    crowd_motion = e.get("crowd_motion_en", "")
-    light_desc = e.get("light_en", "dramatic low-key 1890s spotlighting with warm amber glow against cool electric blue haze")
+    venue_desc = c.get("venue_en") or e.get("venue_en", "an 1890s industrial power plant rap battle arena")
+    crowd_motion = c.get("crowd_motion_en") if c.get("crowd_motion_en") is not None else e.get("crowd_motion_en", "")
+    light_desc = c.get("light_en") or e.get("light_en", "dramatic low-key 1890s spotlighting with warm amber glow against cool electric blue haze")
     action_desc = c.get("action") or "fierce and confident, his free hand chopping the air on the beat"
     if realism_v2:
-        action_desc += (
-            ", brows knitting and lifting fiercely on stressed syllables, eyes narrowing with raw live-action intensity, "
-            "subtle skin creases flexing at the bridge of his nose, jaw and neck muscles tensing visibly, faint sweat sheen "
-            "catching the backlight on his brow and cheekbones, torso leaning forward 15 degrees with natural boom-bap head nods on every beat"
-        )
+        if me_helmeted:
+            action_desc += (
+                ", helmet tilting decisively on stressed syllables with commanding Spartan-II military poise, heavy titanium "
+                "shoulders bracing and shifting weight on strong beats, sharp chest-level gauntlet gestures punctuating key rhymes, "
+                "fiery light reflections and subtle blue energy-shield static shimmering across his opaque reflective visor"
+            )
+        else:
+            action_desc += (
+                ", brows knitting and lifting fiercely on stressed syllables, eyes narrowing with raw live-action intensity, "
+                "subtle skin creases flexing at the bridge of his nose, jaw and neck muscles tensing visibly, faint sweat sheen "
+                "catching the backlight on his brow and cheekbones, torso leaning forward 15 degrees with natural boom-bap head nods on every beat"
+            )
     move = c.get("move", "M3")
 
     if c.get("static") is not None:  # per-shot override of --static-cam (handheld / moving-camera shots)
@@ -305,25 +325,59 @@ def _adapt_prompt(c: dict, e: dict, total_dur: float, mic: str, static_cam: bool
             "framing <Subject 1> turned three-quarters toward the lens with his face and lips large and clearly readable"
         )
 
-    subj_lines = [
-        f"<Subject 1> is {me['name_en']} ({me['look']}) from <Picture 1>, warm natural lifelike human skin tone with fine pores."
-    ]
-    ret_lines = [
-        f"<Subject 1> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial bone structure, warm natural blood-toned skin, hairstyle, facial hair (or lack of it), outfit, and {me.get('prop', 'prop')} from <Picture 1>."
-    ]
+    me_look = c.get("look_me") or me["look"]
+    them_look = c.get("look_them") or them["look"]
+    if me_helmeted:
+        subj_lines = [
+            f"<Subject 1> is {me['name_en']} ({me_look}) from <Picture 1> — his full-face battle-scarred olive-drab green helmet and opaque reflective metallic gold visor stay 100% sealed over his head (NEVER removed, NO bare human face, NO exposed eyes or mouth)."
+        ]
+        ret_lines = [
+            f"<Subject 1> (appears in [Shot 1]): fully_preserved - Strictly preserve the exact battle-scarred helmet silhouette, opaque reflective gold visor, heavy shoulder pauldrons, and chest armor markings from <Picture 1>; NEVER expose a bare human face, eyes, nose, lips, or skin."
+        ]
+    else:
+        subj_lines = [
+            f"<Subject 1> is {me['name_en']} ({me_look}) from <Picture 1>, warm natural lifelike human skin tone with fine pores."
+        ]
+        ret_lines = [
+            f"<Subject 1> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial bone structure, warm natural blood-toned skin, hairstyle, facial hair (or lack of it), and outfit from <Picture 1>."
+            if eff_mic == "none"
+            else f"<Subject 1> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial bone structure, warm natural blood-toned skin, hairstyle, facial hair (or lack of it), outfit, and {me.get('prop', 'prop')} from <Picture 1>."
+        ]
     if two_shot:
-        subj_lines.append(
-            f"<Subject 2> is {them['name_en']} ({them['look']}) from <Picture 2>, warm natural lifelike human skin tone with fine pores."
-        )
-        ret_lines.append(
-            f"<Subject 2> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial structure, warm natural skin tone, and outfit from <Picture 2>{'' if wide else ' on ' + c.get('listener_side', 'screen-right')}, keeping his mouth closed in silent listening throughout this clip."
-        )
+        if them_helmeted:
+            subj_lines.append(
+                f"<Subject 2> is {them['name_en']} ({them_look}) from <Picture 2> — full-face helmet and opaque gold visor permanently sealed (no bare human face)."
+            )
+            ret_lines.append(
+                f"<Subject 2> (appears in [Shot 1]): fully_preserved - Strictly preserve the exact sealed helmet, opaque reflective visor, and armored silhouette from <Picture 2>{'' if wide else ' on ' + c.get('listener_side', 'screen-right')}, standing motionless in silent readiness without ever removing the helmet."
+            )
+        else:
+            subj_lines.append(
+                f"<Subject 2> is {them['name_en']} ({them_look}) from <Picture 2>, warm natural lifelike human skin tone with fine pores."
+            )
+            ret_lines.append(
+                f"<Subject 2> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial structure, warm natural skin tone, and outfit from <Picture 2>{'' if wide else ' on ' + c.get('listener_side', 'screen-right')}, keeping his mouth closed in silent listening throughout this clip."
+            )
     bg_clause = ""
-    if c.get("bg"):  # shared stage plate so every shot of this singer sits in the same place of the same arena
+    if c.get("bg"):  # shared stage/location plate so every shot of this singer sits in the same place
         k = c["image_keys"].index(c["bg"]) + 1
-        if realism_v2 and not wide:
-            bg_bokeh = e.get("bg_bokeh_en", "warm glowing 2700K candle chandeliers and out-of-focus cheering scholar silhouettes")
-            bg_lights = e.get("bg_lights_en", "warm 2700K amber chandelier bokeh")
+        if c.get("bg_exterior") and realism_v2 and not wide:
+            bg_desc = c.get("bg_desc_en", "the real-world exterior cinema location behind <Subject 1>")
+            bg_lights = c.get("bg_lights_en") or e.get("bg_lights_en", "warm 2700K amber cinema bokeh")
+            bg_motion = c.get("bg_motion_en", "subtle atmospheric motion in the out-of-focus background")
+            subj_lines.append(
+                f"<Picture {k}> is {bg_desc} rendered at shallow Cooke Panchro T2.2 optical bokeh."
+            )
+            ret_lines.append(
+                f"Background (appears in [Shot 1]): reference - Keep the {bg_lights} and real exterior cinema atmosphere of <Picture {k}> softly out of focus at shallow T2.2 depth of field behind <Subject 1>, with {bg_motion} (no concert stage, no audience crowd)."
+            )
+            bg_clause = (
+                f" Behind him, {bg_desc} from <Picture {k}> sits in creamy shallow T2.2 Cooke optical bokeh "
+                f"where {bg_lights} glow softly and {bg_motion}."
+            )
+        elif realism_v2 and not wide:
+            bg_bokeh = c.get("bg_bokeh_en") or e.get("bg_bokeh_en", "warm glowing 2700K candle chandeliers and out-of-focus cheering scholar silhouettes")
+            bg_lights = c.get("bg_lights_en") or e.get("bg_lights_en", "warm 2700K amber chandelier bokeh")
             subj_lines.append(
                 f"<Picture {k}> is the packed underground battle arena behind <Subject 1> rendered at shallow T2.2 optical bokeh: {bg_bokeh} below the stage."
             )
@@ -354,35 +408,58 @@ def _adapt_prompt(c: dict, e: dict, total_dur: float, mic: str, static_cam: bool
     subj_lines.append(
         f"<Audio 1> is the target rap vocal track for <Subject 1>, providing his exact vocal timbre ({me.get('voice', 'male rapper')}) and syllable-by-syllable rhythm during {ts_start_str}–{ts_end_str}, followed by silence."
     )
-    ret_lines.append(
-        f"<Audio 1>: fully_copy - Reused 1:1 as the target vocal track; synchronize <Subject 1>'s lip movements, jaw openings, and syllable articulation directly to <Audio 1> during {ts_start_str}–{ts_end_str}."
-    )
+    if me_helmeted:
+        ret_lines.append(
+            f"<Audio 1>: fully_copy - Reused 1:1 as the target helmet-comms vocal track; synchronize <Subject 1>'s rhythmic helmet nods, decisive head turns, and armored gauntlet gestures to <Audio 1> during {ts_start_str}–{ts_end_str} while keeping his sealed helmet and opaque gold visor locked on."
+        )
+    else:
+        ret_lines.append(
+            f"<Audio 1>: fully_copy - Reused 1:1 as the target vocal track; synchronize <Subject 1>'s lip movements, jaw openings, and syllable articulation directly to <Audio 1> during {ts_start_str}–{ts_end_str}."
+        )
 
+    default_listener = (
+        f" while <Subject 2> stands on screen-right facing left with his sealed helmet motionless, watching silently"
+        if them_helmeted else
+        f" while <Subject 2> stands on screen-right facing left with his mouth completely closed, watching silently"
+    )
     listener_clause = (
         c.get("listener")
-        or (f" while <Subject 2> stands on screen-right facing left with his mouth completely closed, watching silently"
-            if two_shot else "")
+        or (default_listener if two_shot else "")
     )
 
-    cinema_header = (
-        f"[Shot 1] r34l1sm, Facial Realism, live-action 35mm cinema film shot on ARRI Alexa Mini LF with vintage Cooke Panchro/i Classic {c.get('lens', '50mm')} prime lens at T2.2, crisp optical contrast with deep solid blacks (zero milky grey haze), Kodak Vision3 500T 5219 color negative film stock, warm natural blood-toned human skin with fine pores and micro-texture, zero CGI plastic sheen, {light_desc}."
-        if realism_v2 else
-        f"[Shot 1] r34l1sm, Facial Realism, realistic ARRI Alexa Mini LF {c.get('lens', '50mm')} lens cinematography, Kodak Vision3 500T film look, natural soft matte skin texture with fine pores, zero oily shine, {light_desc}."
-    )
+    if me_helmeted:
+        cinema_header = (
+            f"[Shot 1] r34l1sm, live-action 35mm cinema film shot on ARRI Alexa Mini LF with vintage Cooke Panchro/i Classic {c.get('lens', '50mm')} prime lens at T2.2, crisp optical contrast with deep solid blacks (zero milky grey haze), Kodak Vision3 500T 5219 color negative film stock, photorealistic battle-scarred painted titanium armor and reflective metallic gold visor micro-texture, zero CGI plastic sheen, {light_desc}."
+            if realism_v2 else
+            f"[Shot 1] r34l1sm, realistic ARRI Alexa Mini LF {c.get('lens', '50mm')} lens cinematography, Kodak Vision3 500T film look, battle-scarred painted titanium armor and metallic gold visor, {light_desc}."
+        )
+        perf_body = (
+            f"During {ts_start_str}–{ts_end_str}, {mic_detail}, <Subject 1> delivers his lines through his helmet speaker {'toward his opponent' if wide else 'directly toward the camera'} with commanding Spartan-II tactical head nods, sharp helmet tilts, and assertive armored gauntlet gestures synced to <Audio 1>, keeping his helmet and opaque gold visor 100% sealed (NO bare face, NO exposed eyes or mouth), {action_desc}{listener_clause}: <d>[{lang_tag}]{c['text']}</d> "
+            + f"Immediately during {ts_end_str}–{ts_total_str}, <Subject 1> steadies his sealed helmeted stance and holds a cold, unyielding stare through his opaque reflective amber-gold visor {'at his opponent' if wide else 'into the lens'}{listener_clause}. No subtitles, no on-screen text.\n\n"
+        )
+    else:
+        cinema_header = (
+            f"[Shot 1] r34l1sm, Facial Realism, live-action 35mm cinema film shot on ARRI Alexa Mini LF with vintage Cooke Panchro/i Classic {c.get('lens', '50mm')} prime lens at T2.2, crisp optical contrast with deep solid blacks (zero milky grey haze), Kodak Vision3 500T 5219 color negative film stock, warm natural blood-toned human skin with fine pores and micro-texture, zero CGI plastic sheen, {light_desc}."
+            if realism_v2 else
+            f"[Shot 1] r34l1sm, Facial Realism, realistic ARRI Alexa Mini LF {c.get('lens', '50mm')} lens cinematography, Kodak Vision3 500T film look, natural soft matte skin texture with fine pores, zero oily shine, {light_desc}."
+        )
+        perf_body = (
+            f"During {ts_start_str}–{ts_end_str}, {mic_detail}, <Subject 1> raps {'out toward the arena' if wide else 'directly into the camera'} with lively, unmistakable syllable-by-syllable lip-sync and expressive jaw articulation matching <Audio 1>, {action_desc}{listener_clause}: <d>[{lang_tag}]{c['text']}</d> "
+            + f"Immediately during {ts_end_str}–{ts_total_str}, <Subject 1> closes his mouth naturally and holds a fierce, confident stare {'at his opponent' if wide else 'into the lens'}{listener_clause}. No subtitles, no on-screen text.\n\n"
+        )
 
     return (
         "subject_definitions:\n"
         + "\n".join(subj_lines)
         + "\n\nsummary:\n"
-        + f"[reference generation + audio reuse] Inside {venue_desc}, <Subject 1> performs an energetic {lang_tag} battle-rap line synced syllable-by-syllable to <Audio 1>, {mic_summary}{listener_clause}"
+        + f"[reference generation + audio reuse] Inside {venue_desc}, <Subject 1> performs an energetic {lang_tag} battle-rap line synced {'to <Audio 1> cadence' if me_helmeted else 'syllable-by-syllable to <Audio 1>'}, {mic_summary}{listener_clause}"
         + (f", while {crowd_motion}" if crowd_motion else "")
         + ".\n\n"
         + "retention_analysis:\n"
         + "\n".join(ret_lines)
         + "\n\ndetailed_description:\n"
         + f"{cinema_header} {cam_desc}.{bg_clause} "
-        + f"During {ts_start_str}–{ts_end_str}, {mic_detail}, <Subject 1> raps {'out toward the arena' if wide else 'directly into the camera'} with lively, unmistakable syllable-by-syllable lip-sync and expressive jaw articulation matching <Audio 1>, {action_desc}{listener_clause}: <d>[{lang_tag}]{c['text']}</d> "
-        + f"Immediately during {ts_end_str}–{ts_total_str}, <Subject 1> closes his mouth naturally and holds a fierce, confident stare {'at his opponent' if wide else 'into the lens'}{listener_clause}. No subtitles, no on-screen text.\n\n"
+        + perf_body
         + "overall_soundscape:\n"
         + f"Clear, punchy foreground rap vocal performance from <Subject 1> during {ts_start_str}–{ts_end_str} synced 1:1 to <Audio 1> in {e.get('arena_sound_en', 'an underground industrial arena')}.\n\n"
         + "non_diegetic_music:\n"
@@ -892,7 +969,7 @@ def main():
     ap.add_argument("--fit", action="store_true", help="Size each rap clip to its line (17k+5 frames) instead of fixed 124")
     ap.add_argument("--tag", default=None, help="Sample mode: write clips/<id>_<tag>.mp4 and leave picks/shifts untouched")
     ap.add_argument("--seed", type=int, default=None, help="Base seed (default 2026110600)")
-    ap.add_argument("--mic", choices=["handheld", "stand"], default="handheld", help="Microphone staging for rap shots")
+    ap.add_argument("--mic", choices=["handheld", "stand", "none"], default="handheld", help="Microphone staging for rap shots")
     ap.add_argument("--static-cam", action="store_true", help="Locked-off chest-up framing for rap shots (no push-in)")
     ap.add_argument("--realism-v2", action="store_true",
                     help="Live-action 35mm cinema upgrade: Singularity v1.3 + Cooke T2.2 bokeh + warm Rembrandt lighting + lip-level mic")

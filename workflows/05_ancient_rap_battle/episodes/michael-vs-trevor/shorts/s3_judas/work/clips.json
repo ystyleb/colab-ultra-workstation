@@ -1,0 +1,138 @@
+[
+ {
+  "id": "B13",
+  "kind": "rap",
+  "who": "b",
+  "line": 13,
+  "move": "FULL",
+  "text": "Drop you off that tower while your family cheers below",
+  "audio": [
+   0.27,
+   2.569
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "mic": "none",
+  "look_me": "late-40s unhinged outlaw with receding unkempt hair dusted with snowflakes, wild intense eyes, coarse stubble, wearing a heavy worn brown leather winter parka with a thick beige sheepskin shearling collar",
+  "venue_en": "the snow-covered Ludendorff cemetery in North Yankton at night during a heavy snowfall beside an open grave",
+  "light_en": "strong warm 3200K amber halogen pickup-truck headlights from the side sculpting healthy warm human skin tones (zero cyan cast on faces), paired with crisp 6500K icy silver rim light on falling snowflakes and steaming breath",
+  "crowd_motion_en": "",
+  "bg_exterior": true,
+  "bg_desc_en": "the snow-blanketed Ludendorff graveyard at night with warm amber pickup-truck headlight beams and falling snow",
+  "bg_lights_en": "warm 3200K amber pickup-truck headlight bokeh and distant church lantern glow through falling snow",
+  "bg_motion_en": "wind-driven white snowflakes and steaming cold breath drifting continuously through the headlight beams",
+  "action": "sweeping his hand sharply from high overhead straight down toward the frozen ground like a body plummeting off a tower",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of <Subject 1> at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. Tight vertical 9:16 portrait framing from frame zero (0.0s) to the final frame with zero wide shot: warm 3200K amber pickup-truck headlight bokeh and distant church lantern glow through falling snow glow softly out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no microphone and no other person in the frame",
+  "static": false,
+  "bg": "stage_yankton_v",
+  "image_keys": [
+   "b_face_winter",
+   "stage_yankton_v"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B14",
+  "kind": "rap",
+  "who": "b",
+  "line": 14,
+  "move": "FULL",
+  "text": "Two fake graves for Townley — now lay permanently low!",
+  "audio": [
+   2.539,
+   5.35
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "mic": "none",
+  "look_me": "late-40s unhinged outlaw with receding unkempt hair dusted with snowflakes, wild intense eyes, coarse stubble, wearing a heavy worn brown leather winter parka with a thick beige sheepskin shearling collar",
+  "venue_en": "the snow-covered Ludendorff cemetery in North Yankton at night during a heavy snowfall beside an open grave",
+  "light_en": "strong warm 3200K amber halogen pickup-truck headlights from the side sculpting healthy warm human skin tones (zero cyan cast on faces), paired with crisp 6500K icy silver rim light on falling snowflakes and steaming breath",
+  "crowd_motion_en": "",
+  "bg_exterior": true,
+  "bg_desc_en": "the snow-blanketed Ludendorff graveyard at night with warm amber pickup-truck headlight beams and falling snow",
+  "bg_lights_en": "warm 3200K amber pickup-truck headlight bokeh and distant church lantern glow through falling snow",
+  "bg_motion_en": "wind-driven white snowflakes and steaming cold breath drifting continuously through the headlight beams",
+  "action": "gripping the wooden handle of the iron shovel planted in the snowbank and driving it down an inch deeper with a cold stare",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of <Subject 1> at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. Tight vertical 9:16 portrait framing from frame zero (0.0s) to the final frame with zero wide shot: warm 3200K amber pickup-truck headlight bokeh and distant church lantern glow through falling snow glow softly out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no microphone and no other person in the frame",
+  "static": false,
+  "bg": "stage_yankton_v",
+  "image_keys": [
+   "b_face_winter",
+   "stage_yankton_v"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B15",
+  "kind": "rap",
+  "who": "b",
+  "line": 15,
+  "move": "FULL",
+  "text": "Two-thirty million sold — next week Vice City takes the throne",
+  "audio": [
+   5.32,
+   8.139
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "mic": "none",
+  "look_me": "late-40s unhinged outlaw with receding unkempt hair dusted with snowflakes, wild intense eyes, coarse stubble, wearing a heavy worn brown leather winter parka with a thick beige sheepskin shearling collar",
+  "venue_en": "the snow-covered Ludendorff cemetery in North Yankton at night during a heavy snowfall beside an open grave",
+  "light_en": "strong warm 3200K amber halogen pickup-truck headlights from the side sculpting healthy warm human skin tones (zero cyan cast on faces), paired with crisp 6500K icy silver rim light on falling snowflakes and steaming breath",
+  "crowd_motion_en": "",
+  "bg_exterior": true,
+  "bg_desc_en": "the snow-blanketed Ludendorff graveyard at night with warm amber pickup-truck headlight beams and falling snow",
+  "bg_lights_en": "warm 3200K amber pickup-truck headlight bokeh and distant church lantern glow through falling snow",
+  "bg_motion_en": "wind-driven white snowflakes and steaming cold breath drifting continuously through the headlight beams",
+  "action": "holding up two fingers then sweeping his arm toward the horizon as an entire thirteen-year era closes behind them",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of <Subject 1> at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. Tight vertical 9:16 portrait framing from frame zero (0.0s) to the final frame with zero wide shot: warm 3200K amber pickup-truck headlight bokeh and distant church lantern glow through falling snow glow softly out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no microphone and no other person in the frame",
+  "static": false,
+  "bg": "stage_yankton_v",
+  "image_keys": [
+   "b_face_winter",
+   "stage_yankton_v"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B16",
+  "kind": "rap",
+  "who": "b",
+  "line": 16,
+  "move": "FULL",
+  "text": "Keep your mansion, Judas — die a traitor, die alone!",
+  "audio": [
+   8.109,
+   11.204
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "mic": "none",
+  "look_me": "late-40s unhinged outlaw with receding unkempt hair dusted with snowflakes, wild intense eyes, coarse stubble, wearing a heavy worn brown leather winter parka with a thick beige sheepskin shearling collar",
+  "venue_en": "the snow-covered Ludendorff cemetery in North Yankton at night during a heavy snowfall beside an open grave",
+  "light_en": "strong warm 3200K amber halogen pickup-truck headlights from the side sculpting healthy warm human skin tones (zero cyan cast on faces), paired with crisp 6500K icy silver rim light on falling snowflakes and steaming breath",
+  "crowd_motion_en": "",
+  "bg_exterior": true,
+  "bg_desc_en": "the snow-blanketed Ludendorff graveyard at night with warm amber pickup-truck headlight beams and falling snow",
+  "bg_lights_en": "warm 3200K amber pickup-truck headlight bokeh and distant church lantern glow through falling snow",
+  "bg_motion_en": "wind-driven white snowflakes and steaming cold breath drifting continuously through the headlight beams",
+  "action": "dropping all manic movement into terrifyingly still, ice-cold sanity, staring dead into the lens and pointing one final finger at Michael",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical head-and-shoulders close-up shot of <Subject 1> at T2.2 shallow depth of field and pushes fiercely closer on the final punchline, his face and lips large and centered in the upper half of the tall 9:16 frame. Tight vertical 9:16 portrait framing from frame zero (0.0s) to the final frame with zero wide shot: warm 3200K amber pickup-truck headlight bokeh and distant church lantern glow through falling snow glow softly out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no microphone and no other person in the frame",
+  "static": false,
+  "bg": "stage_yankton_v",
+  "image_keys": [
+   "b_face_winter",
+   "stage_yankton_v"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

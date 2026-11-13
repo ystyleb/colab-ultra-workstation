@@ -1,0 +1,14 @@
+Use your image generation tool to create ONE horizontal YouTube video thumbnail (16:9 landscape), then save it in the current directory as thumb_remastered.png. The final file must be exactly 1280x720 pixels and FULL-BLEED: the picture must fill the whole canvas edge to edge. Do NOT add black or dark borders, frames or padding; if the generated image is not 16:9, crop/scale it to cover 1280x720 instead of padding. Do not ask questions; just produce the file.
+
+Base the picture on the FIRST attached image (a frame from our video): the SAME two men in a nose-to-nose face-off, in profile, facing each other.
+- Left: Thomas Edison as portrayed in our video (the second attached image is his face reference): stocky older man, greying swept-back hair, heavy jowls, dark wool frock coat, white wing collar and black bow tie, holding a vintage chrome microphone, mouth open mid-insult.
+- Right: Nikola Tesla as portrayed in our video (the third attached image is his face reference): tall thin man, slicked black hair parted in the middle, thin dark moustache, sharp cheekbones, black frock coat, white high collar, cold hard stare.
+Keep their faces exactly like the references. Do not invent different people. Background: the same 1890s generator hall from the frame, brass dynamos and flywheels, hundreds of warm hanging Edison bulbs above, a violet Tesla-coil arc on the right side, a cheering crowd of workers below, haze and volumetric light. Warm amber on Edison's side, cool violet-blue on Tesla's side.
+
+Layout: match the FOURTH attached image (the previous thumbnail of this series) for title treatment and placement:
+- Small gold rounded badge at the top-left: "AI RAP BATTLE" in black condensed caps.
+- Small red-orange (#f26a1b) rounded badge at the top-right: "REMASTERED" in white condensed caps.
+- Lower half, centred, very large: "EDISON VS TESLA" on one line. EDISON and TESLA in bold golden-yellow (#f5c518) condensed caps with an orange drop shadow, "VS" in red-orange (#f26a1b), exactly like the fourth image.
+- Below it, smaller white condensed caps: "WHO REALLY LIT UP THE WORLD?" (exact spelling).
+- Both faces must stay fully visible above the title, not covered by any text.
+Cinematic high contrast, slight vignette, readable at phone size. No other text, no watermarks, no logos.

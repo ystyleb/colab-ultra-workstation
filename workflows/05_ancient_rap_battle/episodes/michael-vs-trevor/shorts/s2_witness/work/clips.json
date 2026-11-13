@@ -1,0 +1,138 @@
+[
+ {
+  "id": "B01",
+  "kind": "rap",
+  "who": "b",
+  "line": 1,
+  "move": "FULL",
+  "text": "\"Witness protection\"?! For WHAT?! Nobody took the stand!",
+  "audio": [
+   0.27,
+   2.925
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "mic": "none",
+  "look_me": "late-40s unhinged Sandy Shores outlaw with receding thinning dark unkempt hair, wild intense hazel-brown eyes, coarse five-o'clock stubble, faint dotted neck tattoo, wearing a sweat-stained dirty off-white crew-neck pocket t-shirt",
+  "venue_en": "a gritty sun-scorched Sandy Shores desert trailer park and dusty dirt airfield at fiery golden-amber dusk",
+  "light_en": "fiery 3000K golden-hour sunset side-key light and warm 2700K porch-bulb glow sculpting gritty natural skin texture, sweat sheen, and stubble",
+  "crowd_motion_en": "",
+  "bg_exterior": true,
+  "bg_desc_en": "the battered Sandy Shores mobile home, neon beer sign, and dusty desert airfield at sunset",
+  "bg_lights_en": "warm 2700K trailer porch-bulb and fiery golden-amber desert sunset bokeh orbs",
+  "bg_motion_en": "golden desert dust and dry heat-haze drifting across the airfield",
+  "action": "lunging aggressively toward the wide-angle lens outside his Sandy Shores trailer, throwing both arms wide with bug-eyed manic disbelief on 'For WHAT?!'",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of <Subject 1> at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. Tight vertical 9:16 portrait framing from frame zero (0.0s) to the final frame with zero wide shot: warm 2700K trailer porch-bulb and fiery golden-amber desert sunset bokeh orbs glow softly out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no microphone and no other person in the frame",
+  "static": false,
+  "bg": "stage_desert_v",
+  "image_keys": [
+   "b_face_clean",
+   "stage_desert_v"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B02",
+  "kind": "rap",
+  "who": "b",
+  "line": 2,
+  "move": "FULL",
+  "text": "You're Davey's crooked F.I.B. rat paying on demand!",
+  "audio": [
+   2.861,
+   5.734
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "mic": "none",
+  "look_me": "late-40s unhinged Sandy Shores outlaw with receding thinning dark unkempt hair, wild intense hazel-brown eyes, coarse five-o'clock stubble, faint dotted neck tattoo, wearing a sweat-stained dirty off-white crew-neck pocket t-shirt",
+  "venue_en": "a gritty sun-scorched Sandy Shores desert trailer park and dusty dirt airfield at fiery golden-amber dusk",
+  "light_en": "fiery 3000K golden-hour sunset side-key light and warm 2700K porch-bulb glow sculpting gritty natural skin texture, sweat sheen, and stubble",
+  "crowd_motion_en": "",
+  "bg_exterior": true,
+  "bg_desc_en": "the battered Sandy Shores mobile home, neon beer sign, and dusty desert airfield at sunset",
+  "bg_lights_en": "warm 2700K trailer porch-bulb and fiery golden-amber desert sunset bokeh orbs",
+  "bg_motion_en": "golden desert dust and dry heat-haze drifting across the airfield",
+  "action": "stabbing his right index finger repeatedly toward the camera while rubbing his left thumb and fingers together to mock dirty FIB bribe cash",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of <Subject 1> at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. Tight vertical 9:16 portrait framing from frame zero (0.0s) to the final frame with zero wide shot: warm 2700K trailer porch-bulb and fiery golden-amber desert sunset bokeh orbs glow softly out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no microphone and no other person in the frame",
+  "static": false,
+  "bg": "stage_desert_v",
+  "image_keys": [
+   "b_face_clean",
+   "stage_desert_v"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B03",
+  "kind": "rap",
+  "who": "b",
+  "line": 3,
+  "move": "FULL",
+  "text": "Paying off your shrink to hear you whine about your life",
+  "audio": [
+   5.694,
+   8.095
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "mic": "none",
+  "look_me": "late-40s unhinged Sandy Shores outlaw with receding thinning dark unkempt hair, wild intense hazel-brown eyes, coarse five-o'clock stubble, faint dotted neck tattoo, wearing a sweat-stained dirty off-white crew-neck pocket t-shirt",
+  "venue_en": "a gritty sun-scorched Sandy Shores desert trailer park and dusty dirt airfield at fiery golden-amber dusk",
+  "light_en": "fiery 3000K golden-hour sunset side-key light and warm 2700K porch-bulb glow sculpting gritty natural skin texture, sweat sheen, and stubble",
+  "crowd_motion_en": "",
+  "bg_exterior": true,
+  "bg_desc_en": "the battered Sandy Shores mobile home, neon beer sign, and dusty desert airfield at sunset",
+  "bg_lights_en": "warm 2700K trailer porch-bulb and fiery golden-amber desert sunset bokeh orbs",
+  "bg_motion_en": "golden desert dust and dry heat-haze drifting across the airfield",
+  "action": "slumping his shoulders in an exaggerated, mocking impression of Michael whining on a therapist's couch before snapping upright with a feral grin",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of <Subject 1> at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. Tight vertical 9:16 portrait framing from frame zero (0.0s) to the final frame with zero wide shot: warm 2700K trailer porch-bulb and fiery golden-amber desert sunset bokeh orbs glow softly out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no microphone and no other person in the frame",
+  "static": false,
+  "bg": "stage_desert_v",
+  "image_keys": [
+   "b_face_clean",
+   "stage_desert_v"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "B04",
+  "kind": "rap",
+  "who": "b",
+  "line": 4,
+  "move": "FULL",
+  "text": "While Fabien and the tennis coach are stretching out your wife!",
+  "audio": [
+   8.048,
+   10.582
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "mic": "none",
+  "look_me": "late-40s unhinged Sandy Shores outlaw with receding thinning dark unkempt hair, wild intense hazel-brown eyes, coarse five-o'clock stubble, faint dotted neck tattoo, wearing a sweat-stained dirty off-white crew-neck pocket t-shirt",
+  "venue_en": "a gritty sun-scorched Sandy Shores desert trailer park and dusty dirt airfield at fiery golden-amber dusk",
+  "light_en": "fiery 3000K golden-hour sunset side-key light and warm 2700K porch-bulb glow sculpting gritty natural skin texture, sweat sheen, and stubble",
+  "crowd_motion_en": "",
+  "bg_exterior": true,
+  "bg_desc_en": "the battered Sandy Shores mobile home, neon beer sign, and dusty desert airfield at sunset",
+  "bg_lights_en": "warm 2700K trailer porch-bulb and fiery golden-amber desert sunset bokeh orbs",
+  "bg_motion_en": "golden desert dust and dry heat-haze drifting across the airfield",
+  "action": "stretching both sinewy tattooed arms wide apart in a vulgar, mocking yoga pose while cackling wildly in the desert dusk",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical head-and-shoulders close-up shot of <Subject 1> at T2.2 shallow depth of field and pushes fiercely closer on the final punchline, his face and lips large and centered in the upper half of the tall 9:16 frame. Tight vertical 9:16 portrait framing from frame zero (0.0s) to the final frame with zero wide shot: warm 2700K trailer porch-bulb and fiery golden-amber desert sunset bokeh orbs glow softly out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no microphone and no other person in the frame",
+  "static": false,
+  "bg": "stage_desert_v",
+  "image_keys": [
+   "b_face_clean",
+   "stage_desert_v"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

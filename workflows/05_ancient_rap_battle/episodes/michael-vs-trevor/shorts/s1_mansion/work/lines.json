@@ -1,0 +1,46 @@
+[
+ {
+  "who": "a",
+  "n": 1,
+  "text": "Rockford Hills terrace — pouring scotch upon my throne",
+  "start": 0.35,
+  "end": 3.401,
+  "bar": 10.0,
+  "heard": "Rockford Hills terrace pouring scotch upon my throne",
+  "orig_start": 30.967,
+  "orig_bar": 30.967
+ },
+ {
+  "who": "a",
+  "n": 2,
+  "text": "You wake up in a dress, wearing dirt like cologne",
+  "start": 3.451,
+  "end": 5.923,
+  "bar": 13.101,
+  "heard": "You wake up in a dress, wearing dirt like cologne",
+  "orig_start": 34.068,
+  "orig_bar": 34.068
+ },
+ {
+  "who": "a",
+  "n": 3,
+  "text": "Vinewood producer — got the mansion and the gated lane",
+  "start": 5.973,
+  "end": 8.482,
+  "bar": 15.623,
+  "heard": "Vinewood producer got the mansion and the gated lane",
+  "orig_start": 36.59,
+  "orig_bar": 36.59
+ },
+ {
+  "who": "a",
+  "n": 4,
+  "text": "Your whole \"enterprise\" is Ron and Wade and cheap propane",
+  "start": 8.51,
+  "end": 11.025,
+  "bar": 18.16,
+  "heard": "Your whole enterprise\" is Ron and Wade and cheap propane",
+  "orig_start": 39.127,
+  "orig_bar": 39.127
+ }
+]

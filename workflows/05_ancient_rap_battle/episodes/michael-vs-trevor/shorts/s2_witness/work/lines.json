@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 1,
+  "text": "\"Witness protection\"?! For WHAT?! Nobody took the stand!",
+  "start": 0.35,
+  "end": 2.921,
+  "bar": 46.786,
+  "heard": "Witness protection\"?! For WHAT?! Nobody took the stand!",
+  "orig_start": 67.753,
+  "orig_bar": 67.753
+ },
+ {
+  "who": "b",
+  "n": 2,
+  "text": "You're Davey's crooked F.I.B. rat paying on demand!",
+  "start": 2.941,
+  "end": 5.734,
+  "bar": 49.377,
+  "heard": "You're Davey's crooked F. I. B. rat paying on demand!",
+  "orig_start": 70.344,
+  "orig_bar": 70.344
+ },
+ {
+  "who": "b",
+  "n": 3,
+  "text": "Paying off your shrink to hear you whine about your life",
+  "start": 5.774,
+  "end": 8.095,
+  "bar": 52.21,
+  "heard": "Paying off your shrink to hear you whine about your life",
+  "orig_start": 73.177,
+  "orig_bar": 73.177
+ },
+ {
+  "who": "b",
+  "n": 4,
+  "text": "While Fabien and the tennis coach are stretching out your wife!",
+  "start": 8.128,
+  "end": 10.582,
+  "bar": 54.564,
+  "heard": "While Fabien and the tennis coach are stretching out your wife!",
+  "orig_start": 75.531,
+  "orig_bar": 75.531
+ }
+]

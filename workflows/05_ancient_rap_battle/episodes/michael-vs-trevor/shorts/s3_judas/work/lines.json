@@ -1,0 +1,46 @@
+[
+ {
+  "who": "b",
+  "n": 13,
+  "text": "Drop you off that tower while your family cheers below",
+  "start": 0.35,
+  "end": 2.569,
+  "bar": 133.096,
+  "heard": "Drop you off that tower while your family cheers below",
+  "orig_start": 154.063,
+  "orig_bar": 154.063
+ },
+ {
+  "who": "b",
+  "n": 14,
+  "text": "Two fake graves for Townley — now lay permanently low!",
+  "start": 2.619,
+  "end": 5.35,
+  "bar": 135.365,
+  "heard": "Two fake graves for Townley now lay permanently low!",
+  "orig_start": 156.332,
+  "orig_bar": 156.332
+ },
+ {
+  "who": "b",
+  "n": 15,
+  "text": "Two-thirty million sold — next week Vice City takes the throne",
+  "start": 5.4,
+  "end": 8.139,
+  "bar": 138.146,
+  "heard": "Two-thirty million sold next week Vice City takes the throne",
+  "orig_start": 159.113,
+  "orig_bar": 159.113
+ },
+ {
+  "who": "b",
+  "n": 16,
+  "text": "Keep your mansion, Judas — die a traitor, die alone!",
+  "start": 8.189,
+  "end": 11.204,
+  "bar": 140.935,
+  "heard": "Keep your mansion, Judas die a traitor, die alone!",
+  "orig_start": 161.902,
+  "orig_bar": 161.902
+ }
+]

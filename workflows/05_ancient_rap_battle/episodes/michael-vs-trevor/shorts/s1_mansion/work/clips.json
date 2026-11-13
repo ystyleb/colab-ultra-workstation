@@ -1,0 +1,138 @@
+[
+ {
+  "id": "A01",
+  "kind": "rap",
+  "who": "a",
+  "line": 1,
+  "move": "FULL",
+  "text": "Rockford Hills terrace — pouring scotch upon my throne",
+  "audio": [
+   0.27,
+   3.401
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "mic": "none",
+  "look_me": "late-40s retired Los Santos bank-heist kingpin with neatly combed dark-brown hair graying at the temples, subtle crow's feet, wearing a tailored charcoal-grey luxury suit over an unbuttoned slate-blue dress shirt",
+  "venue_en": "a luxury Rockford Hills mansion pool terrace at night overlooking the glittering Los Santos city skyline",
+  "light_en": "warm 3200K architectural tungsten terrace key light sculpting natural human skin tones with 5600K cool silver moonlight hair rim light and deep rich night shadows",
+  "crowd_motion_en": "",
+  "bg_exterior": true,
+  "bg_desc_en": "the luxury Rockford Hills mansion pool terrace and glittering Los Santos night skyline",
+  "bg_lights_en": "glittering golden-amber and cool sapphire Los Santos city skyline bokeh orbs",
+  "bg_motion_en": "shimmering pool water reflections and distant freeway city lights glimmering softly out of focus",
+  "action": "leaning casually against the glass balcony railing overlooking the glittering Los Santos night skyline while swirling amber scotch in a crystal rocks glass with his right hand",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of <Subject 1> at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. Tight vertical 9:16 portrait framing from frame zero (0.0s) to the final frame with zero wide shot: glittering golden-amber and cool sapphire Los Santos city skyline bokeh orbs glow softly out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no microphone and no other person in the frame",
+  "static": false,
+  "bg": "stage_mansion_v",
+  "image_keys": [
+   "a_face_clean",
+   "stage_mansion_v"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A02",
+  "kind": "rap",
+  "who": "a",
+  "line": 2,
+  "move": "FULL",
+  "text": "You wake up in a dress, wearing dirt like cologne",
+  "audio": [
+   3.371,
+   5.923
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "mic": "none",
+  "look_me": "late-40s retired Los Santos bank-heist kingpin with neatly combed dark-brown hair graying at the temples, subtle crow's feet, wearing a tailored charcoal-grey luxury suit over an unbuttoned slate-blue dress shirt",
+  "venue_en": "a luxury Rockford Hills mansion pool terrace at night overlooking the glittering Los Santos city skyline",
+  "light_en": "warm 3200K architectural tungsten terrace key light sculpting natural human skin tones with 5600K cool silver moonlight hair rim light and deep rich night shadows",
+  "crowd_motion_en": "",
+  "bg_exterior": true,
+  "bg_desc_en": "the luxury Rockford Hills mansion pool terrace and glittering Los Santos night skyline",
+  "bg_lights_en": "glittering golden-amber and cool sapphire Los Santos city skyline bokeh orbs",
+  "bg_motion_en": "shimmering pool water reflections and distant freeway city lights glimmering softly out of focus",
+  "action": "pointing a mocking left index finger down toward the ground with a disgusted grimace while tilting his whiskey glass in his right hand",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of <Subject 1> at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. Tight vertical 9:16 portrait framing from frame zero (0.0s) to the final frame with zero wide shot: glittering golden-amber and cool sapphire Los Santos city skyline bokeh orbs glow softly out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no microphone and no other person in the frame",
+  "static": false,
+  "bg": "stage_mansion_v",
+  "image_keys": [
+   "a_face_clean",
+   "stage_mansion_v"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A03",
+  "kind": "rap",
+  "who": "a",
+  "line": 3,
+  "move": "FULL",
+  "text": "Vinewood producer — got the mansion and the gated lane",
+  "audio": [
+   5.893,
+   8.482
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "mic": "none",
+  "look_me": "late-40s retired Los Santos bank-heist kingpin with neatly combed dark-brown hair graying at the temples, subtle crow's feet, wearing a tailored charcoal-grey luxury suit over an unbuttoned slate-blue dress shirt",
+  "venue_en": "a luxury Rockford Hills mansion pool terrace at night overlooking the glittering Los Santos city skyline",
+  "light_en": "warm 3200K architectural tungsten terrace key light sculpting natural human skin tones with 5600K cool silver moonlight hair rim light and deep rich night shadows",
+  "crowd_motion_en": "",
+  "bg_exterior": true,
+  "bg_desc_en": "the luxury Rockford Hills mansion pool terrace and glittering Los Santos night skyline",
+  "bg_lights_en": "glittering golden-amber and cool sapphire Los Santos city skyline bokeh orbs",
+  "bg_motion_en": "shimmering pool water reflections and distant freeway city lights glimmering softly out of focus",
+  "action": "adjusting the charcoal lapel of his tailored luxury suit with both hands and sweeping his left arm proudly across his Rockford Hills mansion terrace",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical chest-up close-up shot of <Subject 1> at T2.2 shallow depth of field, slowly arcing a few degrees around him, his face and lips large in the upper half of the tall 9:16 frame. Tight vertical 9:16 portrait framing from frame zero (0.0s) to the final frame with zero wide shot: glittering golden-amber and cool sapphire Los Santos city skyline bokeh orbs glow softly out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no microphone and no other person in the frame",
+  "static": false,
+  "bg": "stage_mansion_v",
+  "image_keys": [
+   "a_face_clean",
+   "stage_mansion_v"
+  ],
+  "sway": 0.5,
+  "drift": 0.02
+ },
+ {
+  "id": "A04",
+  "kind": "rap",
+  "who": "a",
+  "line": 4,
+  "move": "FULL",
+  "text": "Your whole \"enterprise\" is Ron and Wade and cheap propane",
+  "audio": [
+   8.43,
+   11.025
+  ],
+  "lead": 0.0,
+  "aspect": "9:16",
+  "mic": "none",
+  "look_me": "late-40s retired Los Santos bank-heist kingpin with neatly combed dark-brown hair graying at the temples, subtle crow's feet, wearing a tailored charcoal-grey luxury suit over an unbuttoned slate-blue dress shirt",
+  "venue_en": "a luxury Rockford Hills mansion pool terrace at night overlooking the glittering Los Santos city skyline",
+  "light_en": "warm 3200K architectural tungsten terrace key light sculpting natural human skin tones with 5600K cool silver moonlight hair rim light and deep rich night shadows",
+  "crowd_motion_en": "",
+  "bg_exterior": true,
+  "bg_desc_en": "the luxury Rockford Hills mansion pool terrace and glittering Los Santos night skyline",
+  "bg_lights_en": "glittering golden-amber and cool sapphire Los Santos city skyline bokeh orbs",
+  "bg_motion_en": "shimmering pool water reflections and distant freeway city lights glimmering softly out of focus",
+  "action": "making dismissive air-quotes with both hands on 'enterprise' while shaking his head with condescending Vinewood arrogance",
+  "two_shot": false,
+  "cam": "A handheld 35mm cinema camera at eye level with a subtle natural sway holds a tight vertical head-and-shoulders close-up shot of <Subject 1> at T2.2 shallow depth of field and pushes fiercely closer on the final punchline, his face and lips large and centered in the upper half of the tall 9:16 frame. Tight vertical 9:16 portrait framing from frame zero (0.0s) to the final frame with zero wide shot: glittering golden-amber and cool sapphire Los Santos city skyline bokeh orbs glow softly out of focus behind his shoulders at Cooke Panchro T2.2 shallow depth of field, with no microphone and no other person in the frame",
+  "static": false,
+  "bg": "stage_mansion_v",
+  "image_keys": [
+   "a_face_clean",
+   "stage_mansion_v"
+  ],
+  "sway": 0.5,
+  "drift": 0.0
+ }
+]

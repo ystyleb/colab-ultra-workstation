@@ -1,0 +1,5161 @@
+{
+ "taskId": "e59311d78b7d1ba37d7a9ec35c365ce3",
+ "tracks": [
+  {
+   "id": "3bb35b52-2964-49ff-84e4-06326a72ee26",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/3bb35b52-2964-49ff-84e4-06326a72ee26.mp3",
+   "duration": 201.6,
+   "title": "Michael_vs_Trevor",
+   "local_mp3": "workflows/05_ancient_rap_battle/episodes/michael-vs-trevor/work/suno_v1.mp3",
+   "alignedWords": [
+    {
+     "word": "[Intro: ",
+     "success": true,
+     "startS": 30.912,
+     "endS": 30.91602,
+     "palign": 0
+    },
+    {
+     "word": "police ",
+     "success": true,
+     "startS": 30.9166,
+     "endS": 30.92004,
+     "palign": 0
+    },
+    {
+     "word": "scanner ",
+     "success": true,
+     "startS": 30.92062,
+     "endS": 30.92464,
+     "palign": 0
+    },
+    {
+     "word": "crackle, 80",
+     "success": true,
+     "startS": 30.92521,
+     "endS": 30.93096,
+     "palign": 0
+    },
+    {
+     "word": "s ",
+     "success": true,
+     "startS": 30.93153,
+     "endS": 30.93211,
+     "palign": 0
+    },
+    {
+     "word": "heist ",
+     "success": true,
+     "startS": 30.93268,
+     "endS": 30.93555,
+     "palign": 0
+    },
+    {
+     "word": "synth ",
+     "success": true,
+     "startS": 30.93613,
+     "endS": 30.939,
+     "palign": 0
+    },
+    {
+     "word": "arpeggio ",
+     "success": true,
+     "startS": 30.93957,
+     "endS": 30.94417,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 30.94474,
+     "endS": 30.94647,
+     "palign": 0
+    },
+    {
+     "word": "smooth 92 ",
+     "success": true,
+     "startS": 30.94704,
+     "endS": 30.95221,
+     "palign": 0
+    },
+    {
+     "word": "BPM ",
+     "success": true,
+     "startS": 30.95279,
+     "endS": 30.95451,
+     "palign": 0
+    },
+    {
+     "word": "G-Funk ",
+     "success": true,
+     "startS": 30.95509,
+     "endS": 30.95853,
+     "palign": 0
+    },
+    {
+     "word": "bass ",
+     "success": true,
+     "startS": 30.95911,
+     "endS": 30.9614,
+     "palign": 0
+    },
+    {
+     "word": "drop]\n\n\n",
+     "success": true,
+     "startS": 30.96198,
+     "endS": 30.966,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 1: Smooth 90s West Coast G-Funk groove, laid-back condescending mob-boss baritone]\nRockford ",
+     "success": true,
+     "startS": 30.96657,
+     "endS": 31.258,
+     "palign": 0
+    },
+    {
+     "word": "Hills ",
+     "success": true,
+     "startS": 31.3284,
+     "endS": 31.61,
+     "palign": 0
+    },
+    {
+     "word": "terrace — ",
+     "success": true,
+     "startS": 31.6552,
+     "endS": 32.57756,
+     "palign": 0
+    },
+    {
+     "word": "pouring ",
+     "success": true,
+     "startS": 32.59433,
+     "endS": 32.695,
+     "palign": 0
+    },
+    {
+     "word": "scotch ",
+     "success": true,
+     "startS": 32.842,
+     "endS": 33.252,
+     "palign": 0
+    },
+    {
+     "word": "upon ",
+     "success": true,
+     "startS": 33.27525,
+     "endS": 33.345,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 33.4315,
+     "endS": 33.518,
+     "palign": 0
+    },
+    {
+     "word": "throne\n",
+     "success": true,
+     "startS": 33.598,
+     "endS": 34.015,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 34.068,
+     "endS": 34.174,
+     "palign": 0
+    },
+    {
+     "word": "wake ",
+     "success": true,
+     "startS": 34.226,
+     "endS": 34.382,
+     "palign": 0
+    },
+    {
+     "word": "up ",
+     "success": true,
+     "startS": 34.4725,
+     "endS": 34.563,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 34.648,
+     "endS": 34.734,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 34.85,
+     "endS": 34.85,
+     "palign": 0
+    },
+    {
+     "word": "dress, ",
+     "success": true,
+     "startS": 34.9138,
+     "endS": 35.21787,
+     "palign": 0
+    },
+    {
+     "word": "wearing ",
+     "success": true,
+     "startS": 35.26675,
+     "endS": 35.56,
+     "palign": 0
+    },
+    {
+     "word": "dirt ",
+     "success": true,
+     "startS": 35.625,
+     "endS": 35.82,
+     "palign": 0
+    },
+    {
+     "word": "like ",
+     "success": true,
+     "startS": 35.86675,
+     "endS": 36.007,
+     "palign": 0
+    },
+    {
+     "word": "cologne\n",
+     "success": true,
+     "startS": 36.048,
+     "endS": 36.528,
+     "palign": 0
+    },
+    {
+     "word": "Vinewood ",
+     "success": true,
+     "startS": 36.59025,
+     "endS": 37.019,
+     "palign": 0
+    },
+    {
+     "word": "producer — ",
+     "success": true,
+     "startS": 37.0686,
+     "endS": 37.5566,
+     "palign": 0
+    },
+    {
+     "word": "got ",
+     "success": true,
+     "startS": 37.5884,
+     "endS": 37.652,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 37.69067,
+     "endS": 37.768,
+     "palign": 0
+    },
+    {
+     "word": "mansion ",
+     "success": true,
+     "startS": 37.80675,
+     "endS": 38.194,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 38.24033,
+     "endS": 38.333,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 38.37133,
+     "endS": 38.448,
+     "palign": 0
+    },
+    {
+     "word": "gated ",
+     "success": true,
+     "startS": 38.654,
+     "endS": 38.82,
+     "palign": 0
+    },
+    {
+     "word": "lane\n",
+     "success": true,
+     "startS": 38.88975,
+     "endS": 39.099,
+     "palign": 0
+    },
+    {
+     "word": "Your ",
+     "success": true,
+     "startS": 39.1265,
+     "endS": 39.209,
+     "palign": 0
+    },
+    {
+     "word": "whole \"",
+     "success": true,
+     "startS": 39.2578,
+     "endS": 39.49017,
+     "palign": 0
+    },
+    {
+     "word": "enterprise\" ",
+     "success": true,
+     "startS": 39.52733,
+     "endS": 39.97533,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 40.01167,
+     "endS": 40.048,
+     "palign": 0
+    },
+    {
+     "word": "Ron ",
+     "success": true,
+     "startS": 40.117,
+     "endS": 40.255,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 40.30133,
+     "endS": 40.394,
+     "palign": 0
+    },
+    {
+     "word": "Wade ",
+     "success": true,
+     "startS": 40.493,
+     "endS": 40.616,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 40.65333,
+     "endS": 40.728,
+     "palign": 0
+    },
+    {
+     "word": "cheap ",
+     "success": true,
+     "startS": 40.7956,
+     "endS": 41.066,
+     "palign": 0
+    },
+    {
+     "word": "propane\n",
+     "success": true,
+     "startS": 41.12675,
+     "endS": 41.621,
+     "palign": 0
+    },
+    {
+     "word": "Stomping ",
+     "success": true,
+     "startS": 41.692,
+     "endS": 42.092,
+     "palign": 0
+    },
+    {
+     "word": "out ",
+     "success": true,
+     "startS": 42.16733,
+     "endS": 42.318,
+     "palign": 0
+    },
+    {
+     "word": "Johnny ",
+     "success": true,
+     "startS": 42.38017,
+     "endS": 42.691,
+     "palign": 0
+    },
+    {
+     "word": "won't ",
+     "success": true,
+     "startS": 42.69533,
+     "endS": 42.882,
+     "palign": 0
+    },
+    {
+     "word": "disguise ",
+     "success": true,
+     "startS": 42.92575,
+     "endS": 43.232,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 43.235,
+     "endS": 43.241,
+     "palign": 0
+    },
+    {
+     "word": "truth ",
+     "success": true,
+     "startS": 43.297,
+     "endS": 43.521,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 43.56167,
+     "endS": 43.643,
+     "palign": 0
+    },
+    {
+     "word": "can't ",
+     "success": true,
+     "startS": 43.664,
+     "endS": 43.902,
+     "palign": 0
+    },
+    {
+     "word": "destroy\n",
+     "success": true,
+     "startS": 43.96543,
+     "endS": 44.346,
+     "palign": 0
+    },
+    {
+     "word": "One ",
+     "success": true,
+     "startS": 44.39867,
+     "endS": 44.504,
+     "palign": 0
+    },
+    {
+     "word": "word ",
+     "success": true,
+     "startS": 44.541,
+     "endS": 44.781,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 44.833,
+     "endS": 44.989,
+     "palign": 0
+    },
+    {
+     "word": "Mommy ",
+     "success": true,
+     "startS": 45.0412,
+     "endS": 45.25,
+     "palign": 0
+    },
+    {
+     "word": "leaves ",
+     "success": true,
+     "startS": 45.283,
+     "endS": 45.448,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 45.498,
+     "endS": 45.598,
+     "palign": 0
+    },
+    {
+     "word": "fetal ",
+     "success": true,
+     "startS": 45.636,
+     "endS": 45.939,
+     "palign": 0
+    },
+    {
+     "word": "like ",
+     "success": true,
+     "startS": 45.98,
+     "endS": 46.103,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 46.241,
+     "endS": 46.241,
+     "palign": 0
+    },
+    {
+     "word": "broken ",
+     "success": true,
+     "startS": 46.30383,
+     "endS": 46.618,
+     "palign": 0
+    },
+    {
+     "word": "boy\n",
+     "success": true,
+     "startS": 46.73667,
+     "endS": 47.002,
+     "palign": 0
+    },
+    {
+     "word": "Every ",
+     "success": true,
+     "startS": 47.027,
+     "endS": 47.127,
+     "palign": 0
+    },
+    {
+     "word": "score ",
+     "success": true,
+     "startS": 47.1882,
+     "endS": 47.433,
+     "palign": 0
+    },
+    {
+     "word": "went ",
+     "success": true,
+     "startS": 47.461,
+     "endS": 47.545,
+     "palign": 0
+    },
+    {
+     "word": "sideways ",
+     "success": true,
+     "startS": 47.625,
+     "endS": 48.254,
+     "palign": 0
+    },
+    {
+     "word": "'cause ",
+     "success": true,
+     "startS": 48.254,
+     "endS": 48.419,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 48.484,
+     "endS": 48.614,
+     "palign": 0
+    },
+    {
+     "word": "couldn't ",
+     "success": true,
+     "startS": 48.616,
+     "endS": 48.857,
+     "palign": 0
+    },
+    {
+     "word": "hold ",
+     "success": true,
+     "startS": 48.9115,
+     "endS": 49.075,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 49.116,
+     "endS": 49.239,
+     "palign": 0
+    },
+    {
+     "word": "gun\n",
+     "success": true,
+     "startS": 49.30667,
+     "endS": 49.442,
+     "palign": 0
+    },
+    {
+     "word": "Smart ",
+     "success": true,
+     "startS": 49.497,
+     "endS": 49.717,
+     "palign": 0
+    },
+    {
+     "word": "men ",
+     "success": true,
+     "startS": 49.79333,
+     "endS": 49.946,
+     "palign": 0
+    },
+    {
+     "word": "cut ",
+     "success": true,
+     "startS": 50.00833,
+     "endS": 50.133,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 50.224,
+     "endS": 50.224,
+     "palign": 0
+    },
+    {
+     "word": "deal ",
+     "success": true,
+     "startS": 50.2845,
+     "endS": 50.466,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 50.511,
+     "endS": 50.556,
+     "palign": 0
+    },
+    {
+     "word": "live — ",
+     "success": true,
+     "startS": 50.636,
+     "endS": 50.9846,
+     "palign": 0
+    },
+    {
+     "word": "mad ",
+     "success": true,
+     "startS": 51.0344,
+     "endS": 51.138,
+     "palign": 0
+    },
+    {
+     "word": "dogs ",
+     "success": true,
+     "startS": 51.23675,
+     "endS": 51.537,
+     "palign": 0
+    },
+    {
+     "word": "die ",
+     "success": true,
+     "startS": 51.63733,
+     "endS": 51.838,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 51.9255,
+     "endS": 52.048,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 52.08367,
+     "endS": 52.155,
+     "palign": 0
+    },
+    {
+     "word": "run\n\n",
+     "success": true,
+     "startS": 52.26667,
+     "endS": 53.85967,
+     "palign": 0
+    },
+    {
+     "word": "[Beat Switch: vinyl brake screech, alarm siren, sudden heavy distorted 808 Trap Metal and desert punk guitar drop]\nOOOH!\n\n[",
+     "success": true,
+     "startS": 53.86233,
+     "endS": 67.67494,
+     "palign": 0
+    },
+    {
+     "word": "Verse 2: ",
+     "success": true,
+     "startS": 67.67558,
+     "endS": 67.68074,
+     "palign": 0
+    },
+    {
+     "word": "Distorted ",
+     "success": true,
+     "startS": 67.68139,
+     "endS": 67.68719,
+     "palign": 0
+    },
+    {
+     "word": "Trap ",
+     "success": true,
+     "startS": 67.68784,
+     "endS": 67.69042,
+     "palign": 0
+    },
+    {
+     "word": "Metal 808 ",
+     "success": true,
+     "startS": 67.69106,
+     "endS": 67.69687,
+     "palign": 0
+    },
+    {
+     "word": "bass ",
+     "success": true,
+     "startS": 67.69752,
+     "endS": 67.7001,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 67.70074,
+     "endS": 67.70268,
+     "palign": 0
+    },
+    {
+     "word": "desert ",
+     "success": true,
+     "startS": 67.70332,
+     "endS": 67.70719,
+     "palign": 0
+    },
+    {
+     "word": "punk ",
+     "success": true,
+     "startS": 67.70784,
+     "endS": 67.71042,
+     "palign": 0
+    },
+    {
+     "word": "guitar, ",
+     "success": true,
+     "startS": 67.71106,
+     "endS": 67.71558,
+     "palign": 0
+    },
+    {
+     "word": "unhinged ",
+     "success": true,
+     "startS": 67.71623,
+     "endS": 67.72139,
+     "palign": 0
+    },
+    {
+     "word": "snarling ",
+     "success": true,
+     "startS": 67.72203,
+     "endS": 67.72719,
+     "palign": 0
+    },
+    {
+     "word": "raspy ",
+     "success": true,
+     "startS": 67.72784,
+     "endS": 67.73106,
+     "palign": 0
+    },
+    {
+     "word": "male ",
+     "success": true,
+     "startS": 67.73171,
+     "endS": 67.73429,
+     "palign": 0
+    },
+    {
+     "word": "rapper, ",
+     "success": true,
+     "startS": 67.73494,
+     "endS": 67.73945,
+     "palign": 0
+    },
+    {
+     "word": "explosive ",
+     "success": true,
+     "startS": 67.7401,
+     "endS": 67.7459,
+     "palign": 0
+    },
+    {
+     "word": "cadence]\n\"",
+     "success": true,
+     "startS": 67.74655,
+     "endS": 67.75235,
+     "palign": 0
+    },
+    {
+     "word": "Witness ",
+     "success": true,
+     "startS": 67.753,
+     "endS": 68.098,
+     "palign": 0
+    },
+    {
+     "word": "protection\"?! ",
+     "success": true,
+     "startS": 68.1544,
+     "endS": 68.7635,
+     "palign": 0
+    },
+    {
+     "word": "For ",
+     "success": true,
+     "startS": 68.79733,
+     "endS": 68.865,
+     "palign": 0
+    },
+    {
+     "word": "WHAT?! ",
+     "success": true,
+     "startS": 68.945,
+     "endS": 69.39125,
+     "palign": 0
+    },
+    {
+     "word": "Nobody ",
+     "success": true,
+     "startS": 69.45188,
+     "endS": 69.755,
+     "palign": 0
+    },
+    {
+     "word": "took ",
+     "success": true,
+     "startS": 69.80975,
+     "endS": 69.974,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 69.986,
+     "endS": 70.01,
+     "palign": 0
+    },
+    {
+     "word": "stand!\n",
+     "success": true,
+     "startS": 70.0704,
+     "endS": 70.32775,
+     "palign": 0
+    },
+    {
+     "word": "You're ",
+     "success": true,
+     "startS": 70.3435,
+     "endS": 70.515,
+     "palign": 0
+    },
+    {
+     "word": "Davey's ",
+     "success": true,
+     "startS": 70.5515,
+     "endS": 70.833,
+     "palign": 0
+    },
+    {
+     "word": "crooked ",
+     "success": true,
+     "startS": 70.878,
+     "endS": 71.148,
+     "palign": 0
+    },
+    {
+     "word": "F.",
+     "success": true,
+     "startS": 71.241,
+     "endS": 71.241,
+     "palign": 0
+    },
+    {
+     "word": "I.",
+     "success": true,
+     "startS": 71.453,
+     "endS": 71.459,
+     "palign": 0
+    },
+    {
+     "word": "B. ",
+     "success": true,
+     "startS": 71.613,
+     "endS": 71.66975,
+     "palign": 0
+    },
+    {
+     "word": "rat ",
+     "success": true,
+     "startS": 71.7265,
+     "endS": 71.84,
+     "palign": 0
+    },
+    {
+     "word": "paying ",
+     "success": true,
+     "startS": 71.89633,
+     "endS": 72.178,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 72.258,
+     "endS": 72.461,
+     "palign": 0
+    },
+    {
+     "word": "demand!\n",
+     "success": true,
+     "startS": 72.541,
+     "endS": 73.13657,
+     "palign": 0
+    },
+    {
+     "word": "Paying ",
+     "success": true,
+     "startS": 73.17714,
+     "endS": 73.38,
+     "palign": 0
+    },
+    {
+     "word": "off ",
+     "success": true,
+     "startS": 73.44167,
+     "endS": 73.565,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 73.5755,
+     "endS": 73.607,
+     "palign": 0
+    },
+    {
+     "word": "shrink ",
+     "success": true,
+     "startS": 73.639,
+     "endS": 73.975,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 74.0425,
+     "endS": 74.11,
+     "palign": 0
+    },
+    {
+     "word": "hear ",
+     "success": true,
+     "startS": 74.139,
+     "endS": 74.226,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 74.281,
+     "endS": 74.391,
+     "palign": 0
+    },
+    {
+     "word": "whine ",
+     "success": true,
+     "startS": 74.4435,
+     "endS": 74.724,
+     "palign": 0
+    },
+    {
+     "word": "about ",
+     "success": true,
+     "startS": 74.7602,
+     "endS": 74.905,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 74.937,
+     "endS": 75.033,
+     "palign": 0
+    },
+    {
+     "word": "life\n",
+     "success": true,
+     "startS": 75.113,
+     "endS": 75.498,
+     "palign": 0
+    },
+    {
+     "word": "While ",
+     "success": true,
+     "startS": 75.531,
+     "endS": 75.663,
+     "palign": 0
+    },
+    {
+     "word": "Fabien ",
+     "success": true,
+     "startS": 75.743,
+     "endS": 76.037,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 76.092,
+     "endS": 76.202,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 76.243,
+     "endS": 76.325,
+     "palign": 0
+    },
+    {
+     "word": "tennis ",
+     "success": true,
+     "startS": 76.38467,
+     "endS": 76.652,
+     "palign": 0
+    },
+    {
+     "word": "coach ",
+     "success": true,
+     "startS": 76.6975,
+     "endS": 76.82,
+     "palign": 0
+    },
+    {
+     "word": "are ",
+     "success": true,
+     "startS": 76.853,
+     "endS": 76.919,
+     "palign": 0
+    },
+    {
+     "word": "stretching ",
+     "success": true,
+     "startS": 76.9608,
+     "endS": 77.372,
+     "palign": 0
+    },
+    {
+     "word": "out ",
+     "success": true,
+     "startS": 77.428,
+     "endS": 77.54,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 77.57725,
+     "endS": 77.689,
+     "palign": 0
+    },
+    {
+     "word": "wife!\n",
+     "success": true,
+     "startS": 77.75425,
+     "endS": 77.985,
+     "palign": 0
+    },
+    {
+     "word": "Jimmy ",
+     "success": true,
+     "startS": 78.02,
+     "endS": 78.229,
+     "palign": 0
+    },
+    {
+     "word": "spiked ",
+     "success": true,
+     "startS": 78.2725,
+     "endS": 78.532,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 78.557,
+     "endS": 78.632,
+     "palign": 0
+    },
+    {
+     "word": "drink ",
+     "success": true,
+     "startS": 78.712,
+     "endS": 79.103,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 79.14933,
+     "endS": 79.242,
+     "palign": 0
+    },
+    {
+     "word": "dumped ",
+     "success": true,
+     "startS": 79.302,
+     "endS": 79.496,
+     "palign": 0
+    },
+    {
+     "word": "his ",
+     "success": true,
+     "startS": 79.55533,
+     "endS": 79.674,
+     "palign": 0
+    },
+    {
+     "word": "daddy ",
+     "success": true,
+     "startS": 79.7272,
+     "endS": 79.94,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 80.02,
+     "endS": 80.104,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 80.12933,
+     "endS": 80.18,
+     "palign": 0
+    },
+    {
+     "word": "street\n",
+     "success": true,
+     "startS": 80.23133,
+     "endS": 80.488,
+     "palign": 0
+    },
+    {
+     "word": "Tracey's ",
+     "success": true,
+     "startS": 80.528,
+     "endS": 80.896,
+     "palign": 0
+    },
+    {
+     "word": "grinding ",
+     "success": true,
+     "startS": 80.9315,
+     "endS": 81.18,
+     "palign": 0
+    },
+    {
+     "word": "Lazlow's ",
+     "success": true,
+     "startS": 81.2175,
+     "endS": 81.59,
+     "palign": 0
+    },
+    {
+     "word": "leg ",
+     "success": true,
+     "startS": 81.64567,
+     "endS": 81.757,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 81.845,
+     "endS": 81.958,
+     "palign": 0
+    },
+    {
+     "word": "prime-time ",
+     "success": true,
+     "startS": 82.021,
+     "endS": 82.509,
+     "palign": 0
+    },
+    {
+     "word": "cable ",
+     "success": true,
+     "startS": 82.725,
+     "endS": 82.935,
+     "palign": 0
+    },
+    {
+     "word": "heat!\n",
+     "success": true,
+     "startS": 82.99375,
+     "endS": 83.21,
+     "palign": 0
+    },
+    {
+     "word": "Yeah, ",
+     "success": true,
+     "startS": 83.25,
+     "endS": 83.3775,
+     "palign": 0
+    },
+    {
+     "word": "I'm ",
+     "success": true,
+     "startS": 83.385,
+     "endS": 83.475,
+     "palign": 0
+    },
+    {
+     "word": "filthy ",
+     "success": true,
+     "startS": 83.545,
+     "endS": 83.883,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 83.93433,
+     "endS": 84.037,
+     "palign": 0
+    },
+    {
+     "word": "unhinged — ",
+     "success": true,
+     "startS": 84.0715,
+     "endS": 84.811,
+     "palign": 0
+    },
+    {
+     "word": "wear ",
+     "success": true,
+     "startS": 84.8425,
+     "endS": 84.937,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 85.0275,
+     "endS": 85.118,
+     "palign": 0
+    },
+    {
+     "word": "chaos ",
+     "success": true,
+     "startS": 85.1938,
+     "endS": 85.497,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 85.5785,
+     "endS": 85.66,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 85.7335,
+     "endS": 85.807,
+     "palign": 0
+    },
+    {
+     "word": "chest\n",
+     "success": true,
+     "startS": 85.8712,
+     "endS": 86.128,
+     "palign": 0
+    },
+    {
+     "word": "You're ",
+     "success": true,
+     "startS": 86.15233,
+     "endS": 86.336,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 86.358,
+     "endS": 86.358,
+     "palign": 0
+    },
+    {
+     "word": "silk-suit ",
+     "success": true,
+     "startS": 86.4215,
+     "endS": 86.862,
+     "palign": 0
+    },
+    {
+     "word": "parasite ",
+     "success": true,
+     "startS": 86.9104,
+     "endS": 87.428,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 87.491,
+     "endS": 87.617,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 87.651,
+     "endS": 87.753,
+     "palign": 0
+    },
+    {
+     "word": "own ",
+     "success": true,
+     "startS": 87.81167,
+     "endS": 87.929,
+     "palign": 0
+    },
+    {
+     "word": "blood ",
+     "success": true,
+     "startS": 87.96,
+     "endS": 88.084,
+     "palign": 0
+    },
+    {
+     "word": "hates ",
+     "success": true,
+     "startS": 88.12075,
+     "endS": 88.28425,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 88.3375,
+     "endS": 88.444,
+     "palign": 0
+    },
+    {
+     "word": "best!\n\n",
+     "success": true,
+     "startS": 88.524,
+     "endS": 88.79643,
+     "palign": 0
+    },
+    {
+     "word": "[Bridge: howling blizzard wind, shovel thud on wood coffin, dark synth choir and war drums]\nROUND ",
+     "success": true,
+     "startS": 88.79915,
+     "endS": 89.06,
+     "palign": 0
+    },
+    {
+     "word": "TWO! ",
+     "success": true,
+     "startS": 89.164,
+     "endS": 92.72667,
+     "palign": 0
+    },
+    {
+     "word": "ROUND ",
+     "success": true,
+     "startS": 92.79333,
+     "endS": 98.79,
+     "palign": 0
+    },
+    {
+     "word": "TWO!\n\n",
+     "success": true,
+     "startS": 98.87,
+     "endS": 99.41655,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3: Dark icy heist synth over hard boom-bap drums, cold ruthless mask-off male baritone]\nDragged ",
+     "success": true,
+     "startS": 99.41732,
+     "endS": 99.661,
+     "palign": 0
+    },
+    {
+     "word": "us ",
+     "success": true,
+     "startS": 99.7365,
+     "endS": 99.812,
+     "palign": 0
+    },
+    {
+     "word": "back ",
+     "success": true,
+     "startS": 99.8725,
+     "endS": 100.054,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 100.1185,
+     "endS": 100.183,
+     "palign": 0
+    },
+    {
+     "word": "Ludendorff ",
+     "success": true,
+     "startS": 100.207,
+     "endS": 100.728,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 100.7775,
+     "endS": 100.827,
+     "palign": 0
+    },
+    {
+     "word": "dig ",
+     "success": true,
+     "startS": 100.89333,
+     "endS": 101.026,
+     "palign": 0
+    },
+    {
+     "word": "inside ",
+     "success": true,
+     "startS": 101.07167,
+     "endS": 101.3,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 101.31533,
+     "endS": 101.346,
+     "palign": 0
+    },
+    {
+     "word": "snow?\n",
+     "success": true,
+     "startS": 101.4345,
+     "endS": 101.77767,
+     "palign": 0
+    },
+    {
+     "word": "Stare ",
+     "success": true,
+     "startS": 101.84533,
+     "endS": 102.116,
+     "palign": 0
+    },
+    {
+     "word": "into ",
+     "success": true,
+     "startS": 102.16875,
+     "endS": 102.327,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 102.372,
+     "endS": 102.507,
+     "palign": 0
+    },
+    {
+     "word": "open ",
+     "success": true,
+     "startS": 102.5715,
+     "endS": 102.765,
+     "palign": 0
+    },
+    {
+     "word": "grave — ",
+     "success": true,
+     "startS": 102.8446,
+     "endS": 103.18967,
+     "palign": 0
+    },
+    {
+     "word": "here's ",
+     "success": true,
+     "startS": 103.203,
+     "endS": 103.435,
+     "palign": 0
+    },
+    {
+     "word": "everything ",
+     "success": true,
+     "startS": 103.4871,
+     "endS": 103.956,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 104.041,
+     "endS": 104.126,
+     "palign": 0
+    },
+    {
+     "word": "know\n",
+     "success": true,
+     "startS": 104.206,
+     "endS": 104.707,
+     "palign": 0
+    },
+    {
+     "word": "Brad ",
+     "success": true,
+     "startS": 104.7415,
+     "endS": 105.012,
+     "palign": 0
+    },
+    {
+     "word": "caught ",
+     "success": true,
+     "startS": 105.054,
+     "endS": 105.264,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 105.30233,
+     "endS": 105.379,
+     "palign": 0
+    },
+    {
+     "word": "bullet ",
+     "success": true,
+     "startS": 105.43783,
+     "endS": 105.732,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 105.77175,
+     "endS": 105.891,
+     "palign": 0
+    },
+    {
+     "word": "was ",
+     "success": true,
+     "startS": 105.94033,
+     "endS": 106.039,
+     "palign": 0
+    },
+    {
+     "word": "meant ",
+     "success": true,
+     "startS": 106.0802,
+     "endS": 106.245,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 106.325,
+     "endS": 106.44,
+     "palign": 0
+    },
+    {
+     "word": "put ",
+     "success": true,
+     "startS": 106.45833,
+     "endS": 106.495,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 106.56767,
+     "endS": 106.713,
+     "palign": 0
+    },
+    {
+     "word": "down\n",
+     "success": true,
+     "startS": 106.793,
+     "endS": 107.036,
+     "palign": 0
+    },
+    {
+     "word": "Leaving ",
+     "success": true,
+     "startS": 107.07343,
+     "endS": 107.298,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 107.346,
+     "endS": 107.442,
+     "palign": 0
+    },
+    {
+     "word": "still ",
+     "success": true,
+     "startS": 107.487,
+     "endS": 107.667,
+     "palign": 0
+    },
+    {
+     "word": "breathing ",
+     "success": true,
+     "startS": 107.70478,
+     "endS": 108.007,
+     "palign": 0
+    },
+    {
+     "word": "was ",
+     "success": true,
+     "startS": 108.0725,
+     "endS": 108.208,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 108.249,
+     "endS": 108.29,
+     "palign": 0
+    },
+    {
+     "word": "worst ",
+     "success": true,
+     "startS": 108.3608,
+     "endS": 108.644,
+     "palign": 0
+    },
+    {
+     "word": "mistake ",
+     "success": true,
+     "startS": 108.688,
+     "endS": 108.952,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 109.069,
+     "endS": 109.186,
+     "palign": 0
+    },
+    {
+     "word": "town\n",
+     "success": true,
+     "startS": 109.266,
+     "endS": 109.547,
+     "palign": 0
+    },
+    {
+     "word": "Kidnapped ",
+     "success": true,
+     "startS": 109.57633,
+     "endS": 109.839,
+     "palign": 0
+    },
+    {
+     "word": "Madrazo's ",
+     "success": true,
+     "startS": 109.88433,
+     "endS": 110.352,
+     "palign": 0
+    },
+    {
+     "word": "wife ",
+     "success": true,
+     "startS": 110.4225,
+     "endS": 110.634,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 110.68025,
+     "endS": 110.819,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 110.875,
+     "endS": 110.931,
+     "palign": 0
+    },
+    {
+     "word": "beg ",
+     "success": true,
+     "startS": 111.001,
+     "endS": 111.141,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 111.169,
+     "endS": 111.225,
+     "palign": 0
+    },
+    {
+     "word": "someone's ",
+     "success": true,
+     "startS": 111.268,
+     "endS": 111.649,
+     "palign": 0
+    },
+    {
+     "word": "care\n",
+     "success": true,
+     "startS": 111.669,
+     "endS": 112.016,
+     "palign": 0
+    },
+    {
+     "word": "When ",
+     "success": true,
+     "startS": 112.056,
+     "endS": 112.176,
+     "palign": 0
+    },
+    {
+     "word": "Franklin ",
+     "success": true,
+     "startS": 112.2158,
+     "endS": 112.524,
+     "palign": 0
+    },
+    {
+     "word": "lights ",
+     "success": true,
+     "startS": 112.56617,
+     "endS": 112.777,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 112.80225,
+     "endS": 112.878,
+     "palign": 0
+    },
+    {
+     "word": "gasoline, ",
+     "success": true,
+     "startS": 112.94137,
+     "endS": 113.43914,
+     "palign": 0
+    },
+    {
+     "word": "nobody ",
+     "success": true,
+     "startS": 113.49329,
+     "endS": 113.764,
+     "palign": 0
+    },
+    {
+     "word": "says ",
+     "success": true,
+     "startS": 113.84625,
+     "endS": 114.108,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 114.188,
+     "endS": 114.192,
+     "palign": 0
+    },
+    {
+     "word": "prayer\n",
+     "success": true,
+     "startS": 114.24133,
+     "endS": 114.488,
+     "palign": 0
+    },
+    {
+     "word": "Rockstar ",
+     "success": true,
+     "startS": 114.52725,
+     "endS": 114.788,
+     "palign": 0
+    },
+    {
+     "word": "scrapped ",
+     "success": true,
+     "startS": 114.8065,
+     "endS": 115.108,
+     "palign": 0
+    },
+    {
+     "word": "your \"",
+     "success": true,
+     "startS": 115.139,
+     "endS": 115.26267,
+     "palign": 0
+    },
+    {
+     "word": "Agent ",
+     "success": true,
+     "startS": 115.29333,
+     "endS": 115.483,
+     "palign": 0
+    },
+    {
+     "word": "Trevor\" — ",
+     "success": true,
+     "startS": 115.54067,
+     "endS": 115.953,
+     "palign": 0
+    },
+    {
+     "word": "left ",
+     "success": true,
+     "startS": 115.981,
+     "endS": 116.065,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 116.0935,
+     "endS": 116.179,
+     "palign": 0
+    },
+    {
+     "word": "files ",
+     "success": true,
+     "startS": 116.2205,
+     "endS": 116.645,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 116.729,
+     "endS": 116.825,
+     "palign": 0
+    },
+    {
+     "word": "rot\n",
+     "success": true,
+     "startS": 116.93,
+     "endS": 117.268,
+     "palign": 0
+    },
+    {
+     "word": "While ",
+     "success": true,
+     "startS": 117.3044,
+     "endS": 117.45,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 117.588,
+     "endS": 117.588,
+     "palign": 0
+    },
+    {
+     "word": "came ",
+     "success": true,
+     "startS": 117.638,
+     "endS": 117.788,
+     "palign": 0
+    },
+    {
+     "word": "back ",
+     "success": true,
+     "startS": 117.838,
+     "endS": 117.988,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 118.061,
+     "endS": 118.134,
+     "palign": 0
+    },
+    {
+     "word": "Vinewood ",
+     "success": true,
+     "startS": 118.17625,
+     "endS": 118.394,
+     "palign": 0
+    },
+    {
+     "word": "Hills ",
+     "success": true,
+     "startS": 118.427,
+     "endS": 118.649,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 118.68267,
+     "endS": 118.75,
+     "palign": 0
+    },
+    {
+     "word": "closed ",
+     "success": true,
+     "startS": 118.7965,
+     "endS": 119.029,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 119.04467,
+     "endS": 119.076,
+     "palign": 0
+    },
+    {
+     "word": "final ",
+     "success": true,
+     "startS": 119.156,
+     "endS": 119.502,
+     "palign": 0
+    },
+    {
+     "word": "plot\n\n",
+     "success": true,
+     "startS": 119.582,
+     "endS": 120.48888,
+     "palign": 0
+    },
+    {
+     "word": "[Final Drop: gun cocking click, maximum distorted hardcore sub-bass and roaring guitar climax]\nOOOH!\n\n",
+     "success": true,
+     "startS": 120.48975,
+     "endS": 142.90782,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 4: Ferocious hardcore hip-hop climax, raw roaring raspy vocal dropping into ice-cold final bars]\nNine ",
+     "success": true,
+     "startS": 142.91073,
+     "endS": 143.241,
+     "palign": 0
+    },
+    {
+     "word": "years ",
+     "success": true,
+     "startS": 143.282,
+     "endS": 143.446,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 143.526,
+     "endS": 143.604,
+     "palign": 0
+    },
+    {
+     "word": "mourned ",
+     "success": true,
+     "startS": 143.6245,
+     "endS": 143.757,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 143.8075,
+     "endS": 143.959,
+     "palign": 0
+    },
+    {
+     "word": "ghost ",
+     "success": true,
+     "startS": 144.0228,
+     "endS": 144.278,
+     "palign": 0
+    },
+    {
+     "word": "with ",
+     "success": true,
+     "startS": 144.31625,
+     "endS": 144.431,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 144.47775,
+     "endS": 144.618,
+     "palign": 0
+    },
+    {
+     "word": "name ",
+     "success": true,
+     "startS": 144.69325,
+     "endS": 144.919,
+     "palign": 0
+    },
+    {
+     "word": "inked ",
+     "success": true,
+     "startS": 144.949,
+     "endS": 145.241,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 145.3275,
+     "endS": 145.414,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 145.512,
+     "endS": 145.61,
+     "palign": 0
+    },
+    {
+     "word": "skin!\n",
+     "success": true,
+     "startS": 145.69,
+     "endS": 146.054,
+     "palign": 0
+    },
+    {
+     "word": "While ",
+     "success": true,
+     "startS": 146.077,
+     "endS": 146.169,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 146.22633,
+     "endS": 146.341,
+     "palign": 0
+    },
+    {
+     "word": "forged ",
+     "success": true,
+     "startS": 146.39333,
+     "endS": 146.655,
+     "palign": 0
+    },
+    {
+     "word": "dead ",
+     "success": true,
+     "startS": 146.70275,
+     "endS": 146.846,
+     "palign": 0
+    },
+    {
+     "word": "Brad's ",
+     "success": true,
+     "startS": 146.889,
+     "endS": 147.161,
+     "palign": 0
+    },
+    {
+     "word": "letters ",
+     "success": true,
+     "startS": 147.20671,
+     "endS": 147.481,
+     "palign": 0
+    },
+    {
+     "word": "sipping ",
+     "success": true,
+     "startS": 147.53957,
+     "endS": 147.891,
+     "palign": 0
+    },
+    {
+     "word": "poolside ",
+     "success": true,
+     "startS": 147.939,
+     "endS": 148.322,
+     "palign": 0
+    },
+    {
+     "word": "gin!\n",
+     "success": true,
+     "startS": 148.40567,
+     "endS": 148.6118,
+     "palign": 0
+    },
+    {
+     "word": "When ",
+     "success": true,
+     "startS": 148.6416,
+     "endS": 148.731,
+     "palign": 0
+    },
+    {
+     "word": "Franklin ",
+     "success": true,
+     "startS": 148.731,
+     "endS": 149.095,
+     "palign": 0
+    },
+    {
+     "word": "called ",
+     "success": true,
+     "startS": 149.13317,
+     "endS": 149.324,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 149.3815,
+     "endS": 149.439,
+     "palign": 0
+    },
+    {
+     "word": "kill ",
+     "success": true,
+     "startS": 149.48375,
+     "endS": 149.618,
+     "palign": 0
+    },
+    {
+     "word": "you, ",
+     "success": true,
+     "startS": 149.69633,
+     "endS": 149.8705,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 149.888,
+     "endS": 149.888,
+     "palign": 0
+    },
+    {
+     "word": "refused ",
+     "success": true,
+     "startS": 149.904,
+     "endS": 150.349,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 150.4065,
+     "endS": 150.464,
+     "palign": 0
+    },
+    {
+     "word": "take ",
+     "success": true,
+     "startS": 150.5145,
+     "endS": 150.666,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 150.70033,
+     "endS": 150.769,
+     "palign": 0
+    },
+    {
+     "word": "shot!\n",
+     "success": true,
+     "startS": 150.849,
+     "endS": 151.29825,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 151.3335,
+     "endS": 151.404,
+     "palign": 0
+    },
+    {
+     "word": "brought ",
+     "success": true,
+     "startS": 151.43457,
+     "endS": 151.618,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 151.733,
+     "endS": 151.733,
+     "palign": 0
+    },
+    {
+     "word": "gun ",
+     "success": true,
+     "startS": 151.813,
+     "endS": 151.981,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 152.026,
+     "endS": 152.071,
+     "palign": 0
+    },
+    {
+     "word": "burn ",
+     "success": true,
+     "startS": 152.111,
+     "endS": 152.231,
+     "palign": 0
+    },
+    {
+     "word": "me — ",
+     "success": true,
+     "startS": 152.322,
+     "endS": 152.43067,
+     "palign": 0
+    },
+    {
+     "word": "that's ",
+     "success": true,
+     "startS": 152.4355,
+     "endS": 152.611,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 152.63867,
+     "endS": 152.694,
+     "palign": 0
+    },
+    {
+     "word": "crooked ",
+     "success": true,
+     "startS": 152.73229,
+     "endS": 152.962,
+     "palign": 0
+    },
+    {
+     "word": "soul ",
+     "success": true,
+     "startS": 153.045,
+     "endS": 153.297,
+     "palign": 0
+    },
+    {
+     "word": "you've ",
+     "success": true,
+     "startS": 153.32333,
+     "endS": 153.538,
+     "palign": 0
+    },
+    {
+     "word": "got!\n",
+     "success": true,
+     "startS": 153.618,
+     "endS": 154.0198,
+     "palign": 0
+    },
+    {
+     "word": "Drop ",
+     "success": true,
+     "startS": 154.0626,
+     "endS": 154.191,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 154.24,
+     "endS": 154.338,
+     "palign": 0
+    },
+    {
+     "word": "off ",
+     "success": true,
+     "startS": 154.417,
+     "endS": 154.575,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 154.6105,
+     "endS": 154.717,
+     "palign": 0
+    },
+    {
+     "word": "tower ",
+     "success": true,
+     "startS": 154.7838,
+     "endS": 155.051,
+     "palign": 0
+    },
+    {
+     "word": "while ",
+     "success": true,
+     "startS": 155.078,
+     "endS": 155.186,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 155.221,
+     "endS": 155.326,
+     "palign": 0
+    },
+    {
+     "word": "family ",
+     "success": true,
+     "startS": 155.36983,
+     "endS": 155.589,
+     "palign": 0
+    },
+    {
+     "word": "cheers ",
+     "success": true,
+     "startS": 155.647,
+     "endS": 155.911,
+     "palign": 0
+    },
+    {
+     "word": "below\n",
+     "success": true,
+     "startS": 155.9826,
+     "endS": 156.269,
+     "palign": 0
+    },
+    {
+     "word": "Two ",
+     "success": true,
+     "startS": 156.33233,
+     "endS": 156.459,
+     "palign": 0
+    },
+    {
+     "word": "fake ",
+     "success": true,
+     "startS": 156.53175,
+     "endS": 156.75,
+     "palign": 0
+    },
+    {
+     "word": "graves ",
+     "success": true,
+     "startS": 156.82,
+     "endS": 157.103,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 157.158,
+     "endS": 157.268,
+     "palign": 0
+    },
+    {
+     "word": "Townley — ",
+     "success": true,
+     "startS": 157.311,
+     "endS": 157.6786,
+     "palign": 0
+    },
+    {
+     "word": "now ",
+     "success": true,
+     "startS": 157.7174,
+     "endS": 157.795,
+     "palign": 0
+    },
+    {
+     "word": "lay ",
+     "success": true,
+     "startS": 157.85767,
+     "endS": 157.983,
+     "palign": 0
+    },
+    {
+     "word": "permanently ",
+     "success": true,
+     "startS": 158.02933,
+     "endS": 158.617,
+     "palign": 0
+    },
+    {
+     "word": "low!\n",
+     "success": true,
+     "startS": 158.697,
+     "endS": 159.05575,
+     "palign": 0
+    },
+    {
+     "word": "Two-thirty ",
+     "success": true,
+     "startS": 159.1135,
+     "endS": 159.514,
+     "palign": 0
+    },
+    {
+     "word": "million ",
+     "success": true,
+     "startS": 159.56086,
+     "endS": 159.842,
+     "palign": 0
+    },
+    {
+     "word": "sold — ",
+     "success": true,
+     "startS": 159.925,
+     "endS": 160.25633,
+     "palign": 0
+    },
+    {
+     "word": "next ",
+     "success": true,
+     "startS": 160.297,
+     "endS": 160.419,
+     "palign": 0
+    },
+    {
+     "word": "week ",
+     "success": true,
+     "startS": 160.46025,
+     "endS": 160.584,
+     "palign": 0
+    },
+    {
+     "word": "Vice ",
+     "success": true,
+     "startS": 160.6065,
+     "endS": 160.804,
+     "palign": 0
+    },
+    {
+     "word": "City ",
+     "success": true,
+     "startS": 160.8835,
+     "endS": 161.122,
+     "palign": 0
+    },
+    {
+     "word": "takes ",
+     "success": true,
+     "startS": 161.1734,
+     "endS": 161.379,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 161.41333,
+     "endS": 161.482,
+     "palign": 0
+    },
+    {
+     "word": "throne\n",
+     "success": true,
+     "startS": 161.5435,
+     "endS": 161.851,
+     "palign": 0
+    },
+    {
+     "word": "Keep ",
+     "success": true,
+     "startS": 161.90225,
+     "endS": 162.056,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 162.084,
+     "endS": 162.168,
+     "palign": 0
+    },
+    {
+     "word": "mansion, ",
+     "success": true,
+     "startS": 162.21325,
+     "endS": 162.553,
+     "palign": 0
+    },
+    {
+     "word": "Judas — ",
+     "success": true,
+     "startS": 162.587,
+     "endS": 162.9078,
+     "palign": 0
+    },
+    {
+     "word": "die ",
+     "success": true,
+     "startS": 162.9282,
+     "endS": 162.969,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 163.051,
+     "endS": 163.051,
+     "palign": 0
+    },
+    {
+     "word": "traitor, ",
+     "success": true,
+     "startS": 163.15867,
+     "endS": 163.66975,
+     "palign": 0
+    },
+    {
+     "word": "die ",
+     "success": true,
+     "startS": 163.7845,
+     "endS": 164.014,
+     "palign": 0
+    },
+    {
+     "word": "alone!\n\n",
+     "success": true,
+     "startS": 164.0958,
+     "endS": 172.04245,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: heavy bass slam and fading siren echo]\nWASTED! ",
+     "success": true,
+     "startS": 172.05118,
+     "endS": 181.75433,
+     "palign": 0
+    },
+    {
+     "word": "WASTED!\n\n[",
+     "success": true,
+     "startS": 181.78767,
+     "endS": 182.08767,
+     "palign": 0
+    },
+    {
+     "word": "End]\n\n\n",
+     "success": true,
+     "startS": 182.121,
+     "endS": 182.321,
+     "palign": 0
+    }
+   ]
+  },
+  {
+   "id": "5f2a1d59-5522-49e9-9fa8-33c54a289d35",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/5f2a1d59-5522-49e9-9fa8-33c54a289d35.mp3",
+   "duration": 194.0,
+   "title": "Michael_vs_Trevor",
+   "local_mp3": "workflows/05_ancient_rap_battle/episodes/michael-vs-trevor/work/suno_v2.mp3",
+   "alignedWords": [
+    {
+     "word": "[Intro: ",
+     "success": true,
+     "startS": 33.059,
+     "endS": 33.06552,
+     "palign": 0
+    },
+    {
+     "word": "police ",
+     "success": true,
+     "startS": 33.06645,
+     "endS": 33.07203,
+     "palign": 0
+    },
+    {
+     "word": "scanner ",
+     "success": true,
+     "startS": 33.07296,
+     "endS": 33.07948,
+     "palign": 0
+    },
+    {
+     "word": "crackle, 80",
+     "success": true,
+     "startS": 33.08041,
+     "endS": 33.08972,
+     "palign": 0
+    },
+    {
+     "word": "s ",
+     "success": true,
+     "startS": 33.09065,
+     "endS": 33.09158,
+     "palign": 0
+    },
+    {
+     "word": "heist ",
+     "success": true,
+     "startS": 33.09251,
+     "endS": 33.09716,
+     "palign": 0
+    },
+    {
+     "word": "synth ",
+     "success": true,
+     "startS": 33.0981,
+     "endS": 33.10275,
+     "palign": 0
+    },
+    {
+     "word": "arpeggio ",
+     "success": true,
+     "startS": 33.10368,
+     "endS": 33.11113,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 33.11206,
+     "endS": 33.11485,
+     "palign": 0
+    },
+    {
+     "word": "smooth 92 ",
+     "success": true,
+     "startS": 33.11578,
+     "endS": 33.12416,
+     "palign": 0
+    },
+    {
+     "word": "BPM ",
+     "success": true,
+     "startS": 33.12509,
+     "endS": 33.12788,
+     "palign": 0
+    },
+    {
+     "word": "G-Funk ",
+     "success": true,
+     "startS": 33.12881,
+     "endS": 33.1344,
+     "palign": 0
+    },
+    {
+     "word": "bass ",
+     "success": true,
+     "startS": 33.13533,
+     "endS": 33.13905,
+     "palign": 0
+    },
+    {
+     "word": "drop]\n\n\n",
+     "success": true,
+     "startS": 33.13998,
+     "endS": 33.1465,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 1: Smooth 90s West Coast G-Funk groove, laid-back condescending mob-boss baritone]\nRockford ",
+     "success": true,
+     "startS": 33.14743,
+     "endS": 33.49,
+     "palign": 0
+    },
+    {
+     "word": "Hills ",
+     "success": true,
+     "startS": 33.5634,
+     "endS": 33.857,
+     "palign": 0
+    },
+    {
+     "word": "terrace — ",
+     "success": true,
+     "startS": 33.91033,
+     "endS": 34.83589,
+     "palign": 0
+    },
+    {
+     "word": "pouring ",
+     "success": true,
+     "startS": 34.85533,
+     "endS": 34.972,
+     "palign": 0
+    },
+    {
+     "word": "scotch ",
+     "success": true,
+     "startS": 35.046,
+     "endS": 35.294,
+     "palign": 0
+    },
+    {
+     "word": "upon ",
+     "success": true,
+     "startS": 35.374,
+     "endS": 35.585,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 35.67,
+     "endS": 35.755,
+     "palign": 0
+    },
+    {
+     "word": "throne\n",
+     "success": true,
+     "startS": 35.835,
+     "endS": 36.245,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 36.302,
+     "endS": 36.416,
+     "palign": 0
+    },
+    {
+     "word": "wake ",
+     "success": true,
+     "startS": 36.45475,
+     "endS": 36.571,
+     "palign": 0
+    },
+    {
+     "word": "up ",
+     "success": true,
+     "startS": 36.652,
+     "endS": 36.755,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 36.835,
+     "endS": 36.919,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 37.014,
+     "endS": 37.014,
+     "palign": 0
+    },
+    {
+     "word": "dress, ",
+     "success": true,
+     "startS": 37.08,
+     "endS": 37.39125,
+     "palign": 0
+    },
+    {
+     "word": "wearing ",
+     "success": true,
+     "startS": 37.4385,
+     "endS": 37.722,
+     "palign": 0
+    },
+    {
+     "word": "dirt ",
+     "success": true,
+     "startS": 37.78675,
+     "endS": 37.981,
+     "palign": 0
+    },
+    {
+     "word": "like ",
+     "success": true,
+     "startS": 38.03675,
+     "endS": 38.204,
+     "palign": 0
+    },
+    {
+     "word": "cologne\n",
+     "success": true,
+     "startS": 38.23533,
+     "endS": 38.698,
+     "palign": 0
+    },
+    {
+     "word": "Vinewood ",
+     "success": true,
+     "startS": 38.76975,
+     "endS": 39.215,
+     "palign": 0
+    },
+    {
+     "word": "producer — ",
+     "success": true,
+     "startS": 39.275,
+     "endS": 39.7588,
+     "palign": 0
+    },
+    {
+     "word": "got ",
+     "success": true,
+     "startS": 39.7962,
+     "endS": 39.871,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 39.88933,
+     "endS": 39.926,
+     "palign": 0
+    },
+    {
+     "word": "mansion ",
+     "success": true,
+     "startS": 39.989,
+     "endS": 40.37,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 40.41767,
+     "endS": 40.513,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 40.543,
+     "endS": 40.603,
+     "palign": 0
+    },
+    {
+     "word": "gated ",
+     "success": true,
+     "startS": 40.809,
+     "endS": 40.891,
+     "palign": 0
+    },
+    {
+     "word": "lane\n",
+     "success": true,
+     "startS": 40.9605,
+     "endS": 41.169,
+     "palign": 0
+    },
+    {
+     "word": "Your ",
+     "success": true,
+     "startS": 41.19575,
+     "endS": 41.276,
+     "palign": 0
+    },
+    {
+     "word": "whole \"",
+     "success": true,
+     "startS": 41.3372,
+     "endS": 41.62567,
+     "palign": 0
+    },
+    {
+     "word": "enterprise\" ",
+     "success": true,
+     "startS": 41.66933,
+     "endS": 42.14967,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 42.19233,
+     "endS": 42.235,
+     "palign": 0
+    },
+    {
+     "word": "Ron ",
+     "success": true,
+     "startS": 42.29867,
+     "endS": 42.426,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 42.47567,
+     "endS": 42.575,
+     "palign": 0
+    },
+    {
+     "word": "Wade ",
+     "success": true,
+     "startS": 42.655,
+     "endS": 42.8,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 42.82833,
+     "endS": 42.885,
+     "palign": 0
+    },
+    {
+     "word": "cheap ",
+     "success": true,
+     "startS": 42.9512,
+     "endS": 43.216,
+     "palign": 0
+    },
+    {
+     "word": "propane\n",
+     "success": true,
+     "startS": 43.296,
+     "endS": 43.793,
+     "palign": 0
+    },
+    {
+     "word": "Stomping ",
+     "success": true,
+     "startS": 43.843,
+     "endS": 44.201,
+     "palign": 0
+    },
+    {
+     "word": "out ",
+     "success": true,
+     "startS": 44.281,
+     "endS": 44.478,
+     "palign": 0
+    },
+    {
+     "word": "Johnny ",
+     "success": true,
+     "startS": 44.53783,
+     "endS": 44.837,
+     "palign": 0
+    },
+    {
+     "word": "won't ",
+     "success": true,
+     "startS": 44.85833,
+     "endS": 45.057,
+     "palign": 0
+    },
+    {
+     "word": "disguise ",
+     "success": true,
+     "startS": 45.10013,
+     "endS": 45.402,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 45.40733,
+     "endS": 45.418,
+     "palign": 0
+    },
+    {
+     "word": "truth ",
+     "success": true,
+     "startS": 45.4658,
+     "endS": 45.657,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 45.694,
+     "endS": 45.768,
+     "palign": 0
+    },
+    {
+     "word": "can't ",
+     "success": true,
+     "startS": 45.779,
+     "endS": 45.983,
+     "palign": 0
+    },
+    {
+     "word": "destroy\n",
+     "success": true,
+     "startS": 46.03543,
+     "endS": 46.35,
+     "palign": 0
+    },
+    {
+     "word": "One ",
+     "success": true,
+     "startS": 46.38633,
+     "endS": 46.459,
+     "palign": 0
+    },
+    {
+     "word": "word ",
+     "success": true,
+     "startS": 46.4975,
+     "endS": 46.613,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 46.66575,
+     "endS": 46.824,
+     "palign": 0
+    },
+    {
+     "word": "Mommy ",
+     "success": true,
+     "startS": 46.8748,
+     "endS": 47.078,
+     "palign": 0
+    },
+    {
+     "word": "leaves ",
+     "success": true,
+     "startS": 47.10733,
+     "endS": 47.254,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 47.31233,
+     "endS": 47.429,
+     "palign": 0
+    },
+    {
+     "word": "fetal ",
+     "success": true,
+     "startS": 47.489,
+     "endS": 47.771,
+     "palign": 0
+    },
+    {
+     "word": "like ",
+     "success": true,
+     "startS": 47.81175,
+     "endS": 47.934,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 48.058,
+     "endS": 48.058,
+     "palign": 0
+    },
+    {
+     "word": "broken ",
+     "success": true,
+     "startS": 48.11333,
+     "endS": 48.39,
+     "palign": 0
+    },
+    {
+     "word": "boy\n",
+     "success": true,
+     "startS": 48.48133,
+     "endS": 48.785,
+     "palign": 0
+    },
+    {
+     "word": "Every ",
+     "success": true,
+     "startS": 48.8048,
+     "endS": 48.884,
+     "palign": 0
+    },
+    {
+     "word": "score ",
+     "success": true,
+     "startS": 48.9484,
+     "endS": 49.206,
+     "palign": 0
+    },
+    {
+     "word": "went ",
+     "success": true,
+     "startS": 49.25,
+     "endS": 49.382,
+     "palign": 0
+    },
+    {
+     "word": "sideways ",
+     "success": true,
+     "startS": 49.462,
+     "endS": 50.049,
+     "palign": 0
+    },
+    {
+     "word": "'cause ",
+     "success": true,
+     "startS": 50.093,
+     "endS": 50.166,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 50.24033,
+     "endS": 50.389,
+     "palign": 0
+    },
+    {
+     "word": "couldn't ",
+     "success": true,
+     "startS": 50.40133,
+     "endS": 50.621,
+     "palign": 0
+    },
+    {
+     "word": "hold ",
+     "success": true,
+     "startS": 50.68625,
+     "endS": 50.882,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 50.92025,
+     "endS": 51.035,
+     "palign": 0
+    },
+    {
+     "word": "gun\n",
+     "success": true,
+     "startS": 51.09667,
+     "endS": 51.22,
+     "palign": 0
+    },
+    {
+     "word": "Smart ",
+     "success": true,
+     "startS": 51.277,
+     "endS": 51.505,
+     "palign": 0
+    },
+    {
+     "word": "men ",
+     "success": true,
+     "startS": 51.57167,
+     "endS": 51.705,
+     "palign": 0
+    },
+    {
+     "word": "cut ",
+     "success": true,
+     "startS": 51.763,
+     "endS": 51.879,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 51.984,
+     "endS": 51.984,
+     "palign": 0
+    },
+    {
+     "word": "deal ",
+     "success": true,
+     "startS": 52.04725,
+     "endS": 52.237,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 52.2885,
+     "endS": 52.34,
+     "palign": 0
+    },
+    {
+     "word": "live — ",
+     "success": true,
+     "startS": 52.4155,
+     "endS": 52.738,
+     "palign": 0
+    },
+    {
+     "word": "mad ",
+     "success": true,
+     "startS": 52.786,
+     "endS": 52.904,
+     "palign": 0
+    },
+    {
+     "word": "dogs ",
+     "success": true,
+     "startS": 53.0015,
+     "endS": 53.298,
+     "palign": 0
+    },
+    {
+     "word": "die ",
+     "success": true,
+     "startS": 53.38367,
+     "endS": 53.597,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 53.685,
+     "endS": 53.796,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 53.837,
+     "endS": 53.919,
+     "palign": 0
+    },
+    {
+     "word": "run\n\n",
+     "success": true,
+     "startS": 54.03667,
+     "endS": 64.55936,
+     "palign": 0
+    },
+    {
+     "word": "[Beat Switch: vinyl brake screech, alarm siren, sudden heavy distorted 808 Trap Metal and desert punk guitar drop]\nOOOH!\n\n[",
+     "success": true,
+     "startS": 64.56071,
+     "endS": 67.08127,
+     "palign": 0
+    },
+    {
+     "word": "Verse 2: ",
+     "success": true,
+     "startS": 67.08235,
+     "endS": 67.09106,
+     "palign": 0
+    },
+    {
+     "word": "Distorted ",
+     "success": true,
+     "startS": 67.09215,
+     "endS": 67.10195,
+     "palign": 0
+    },
+    {
+     "word": "Trap ",
+     "success": true,
+     "startS": 67.10304,
+     "endS": 67.1074,
+     "palign": 0
+    },
+    {
+     "word": "Metal 808 ",
+     "success": true,
+     "startS": 67.10848,
+     "endS": 67.11828,
+     "palign": 0
+    },
+    {
+     "word": "bass ",
+     "success": true,
+     "startS": 67.11937,
+     "endS": 67.12373,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 67.12481,
+     "endS": 67.12808,
+     "palign": 0
+    },
+    {
+     "word": "desert ",
+     "success": true,
+     "startS": 67.12917,
+     "endS": 67.1357,
+     "palign": 0
+    },
+    {
+     "word": "punk ",
+     "success": true,
+     "startS": 67.13679,
+     "endS": 67.14115,
+     "palign": 0
+    },
+    {
+     "word": "guitar, ",
+     "success": true,
+     "startS": 67.14223,
+     "endS": 67.14985,
+     "palign": 0
+    },
+    {
+     "word": "unhinged ",
+     "success": true,
+     "startS": 67.15094,
+     "endS": 67.15965,
+     "palign": 0
+    },
+    {
+     "word": "snarling ",
+     "success": true,
+     "startS": 67.16074,
+     "endS": 67.16945,
+     "palign": 0
+    },
+    {
+     "word": "raspy ",
+     "success": true,
+     "startS": 67.17054,
+     "endS": 67.17598,
+     "palign": 0
+    },
+    {
+     "word": "male ",
+     "success": true,
+     "startS": 67.17707,
+     "endS": 67.18143,
+     "palign": 0
+    },
+    {
+     "word": "rapper, ",
+     "success": true,
+     "startS": 67.18252,
+     "endS": 67.19014,
+     "palign": 0
+    },
+    {
+     "word": "explosive ",
+     "success": true,
+     "startS": 67.19123,
+     "endS": 67.20102,
+     "palign": 0
+    },
+    {
+     "word": "cadence]\n\"",
+     "success": true,
+     "startS": 67.20211,
+     "endS": 67.21191,
+     "palign": 0
+    },
+    {
+     "word": "Witness ",
+     "success": true,
+     "startS": 67.213,
+     "endS": 67.478,
+     "palign": 0
+    },
+    {
+     "word": "protection\"?! ",
+     "success": true,
+     "startS": 67.5437,
+     "endS": 68.2205,
+     "palign": 0
+    },
+    {
+     "word": "For ",
+     "success": true,
+     "startS": 68.249,
+     "endS": 68.306,
+     "palign": 0
+    },
+    {
+     "word": "WHAT?! ",
+     "success": true,
+     "startS": 68.386,
+     "endS": 68.8235,
+     "palign": 0
+    },
+    {
+     "word": "Nobody ",
+     "success": true,
+     "startS": 68.88425,
+     "endS": 69.188,
+     "palign": 0
+    },
+    {
+     "word": "took ",
+     "success": true,
+     "startS": 69.23175,
+     "endS": 69.363,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 69.372,
+     "endS": 69.39,
+     "palign": 0
+    },
+    {
+     "word": "stand!\n",
+     "success": true,
+     "startS": 69.445,
+     "endS": 69.68625,
+     "palign": 0
+    },
+    {
+     "word": "You're ",
+     "success": true,
+     "startS": 69.7075,
+     "endS": 69.869,
+     "palign": 0
+    },
+    {
+     "word": "Davey's ",
+     "success": true,
+     "startS": 69.9,
+     "endS": 70.201,
+     "palign": 0
+    },
+    {
+     "word": "crooked ",
+     "success": true,
+     "startS": 70.25086,
+     "endS": 70.55,
+     "palign": 0
+    },
+    {
+     "word": "F.",
+     "success": true,
+     "startS": 70.632,
+     "endS": 70.632,
+     "palign": 0
+    },
+    {
+     "word": "I.",
+     "success": true,
+     "startS": 70.813,
+     "endS": 70.841,
+     "palign": 0
+    },
+    {
+     "word": "B. ",
+     "success": true,
+     "startS": 70.974,
+     "endS": 71.056,
+     "palign": 0
+    },
+    {
+     "word": "rat ",
+     "success": true,
+     "startS": 71.116,
+     "endS": 71.248,
+     "palign": 0
+    },
+    {
+     "word": "paying ",
+     "success": true,
+     "startS": 71.30567,
+     "endS": 71.594,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 71.6785,
+     "endS": 71.883,
+     "palign": 0
+    },
+    {
+     "word": "demand!\n",
+     "success": true,
+     "startS": 71.963,
+     "endS": 72.51771,
+     "palign": 0
+    },
+    {
+     "word": "Paying ",
+     "success": true,
+     "startS": 72.55743,
+     "endS": 72.756,
+     "palign": 0
+    },
+    {
+     "word": "off ",
+     "success": true,
+     "startS": 72.82067,
+     "endS": 72.95,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 72.975,
+     "endS": 73.05,
+     "palign": 0
+    },
+    {
+     "word": "shrink ",
+     "success": true,
+     "startS": 73.09433,
+     "endS": 73.378,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 73.414,
+     "endS": 73.45,
+     "palign": 0
+    },
+    {
+     "word": "hear ",
+     "success": true,
+     "startS": 73.4805,
+     "endS": 73.572,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 73.63767,
+     "endS": 73.769,
+     "palign": 0
+    },
+    {
+     "word": "whine ",
+     "success": true,
+     "startS": 73.8075,
+     "endS": 74.042,
+     "palign": 0
+    },
+    {
+     "word": "about ",
+     "success": true,
+     "startS": 74.0934,
+     "endS": 74.299,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 74.33675,
+     "endS": 74.45,
+     "palign": 0
+    },
+    {
+     "word": "life\n",
+     "success": true,
+     "startS": 74.53,
+     "endS": 74.867,
+     "palign": 0
+    },
+    {
+     "word": "While ",
+     "success": true,
+     "startS": 74.9024,
+     "endS": 75.044,
+     "palign": 0
+    },
+    {
+     "word": "Fabien ",
+     "success": true,
+     "startS": 75.124,
+     "endS": 75.712,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 75.774,
+     "endS": 75.898,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 75.93033,
+     "endS": 75.995,
+     "palign": 0
+    },
+    {
+     "word": "tennis ",
+     "success": true,
+     "startS": 76.06,
+     "endS": 76.337,
+     "palign": 0
+    },
+    {
+     "word": "coach ",
+     "success": true,
+     "startS": 76.382,
+     "endS": 76.524,
+     "palign": 0
+    },
+    {
+     "word": "are ",
+     "success": true,
+     "startS": 76.573,
+     "endS": 76.671,
+     "palign": 0
+    },
+    {
+     "word": "stretching ",
+     "success": true,
+     "startS": 76.7116,
+     "endS": 77.085,
+     "palign": 0
+    },
+    {
+     "word": "out ",
+     "success": true,
+     "startS": 77.121,
+     "endS": 77.193,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 77.242,
+     "endS": 77.389,
+     "palign": 0
+    },
+    {
+     "word": "wife!\n",
+     "success": true,
+     "startS": 77.46325,
+     "endS": 77.72475,
+     "palign": 0
+    },
+    {
+     "word": "Jimmy ",
+     "success": true,
+     "startS": 77.7635,
+     "endS": 77.933,
+     "palign": 0
+    },
+    {
+     "word": "spiked ",
+     "success": true,
+     "startS": 77.9615,
+     "endS": 78.195,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 78.225,
+     "endS": 78.315,
+     "palign": 0
+    },
+    {
+     "word": "drink ",
+     "success": true,
+     "startS": 78.3574,
+     "endS": 78.527,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 78.574,
+     "endS": 78.668,
+     "palign": 0
+    },
+    {
+     "word": "dumped ",
+     "success": true,
+     "startS": 78.748,
+     "endS": 78.879,
+     "palign": 0
+    },
+    {
+     "word": "his ",
+     "success": true,
+     "startS": 78.93333,
+     "endS": 79.042,
+     "palign": 0
+    },
+    {
+     "word": "daddy ",
+     "success": true,
+     "startS": 79.0946,
+     "endS": 79.305,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 79.3775,
+     "endS": 79.45,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 79.481,
+     "endS": 79.543,
+     "palign": 0
+    },
+    {
+     "word": "street\n",
+     "success": true,
+     "startS": 79.5945,
+     "endS": 79.852,
+     "palign": 0
+    },
+    {
+     "word": "Tracey's ",
+     "success": true,
+     "startS": 79.898,
+     "endS": 80.235,
+     "palign": 0
+    },
+    {
+     "word": "grinding ",
+     "success": true,
+     "startS": 80.282,
+     "endS": 80.551,
+     "palign": 0
+    },
+    {
+     "word": "Lazlow's ",
+     "success": true,
+     "startS": 80.598,
+     "endS": 80.924,
+     "palign": 0
+    },
+    {
+     "word": "leg ",
+     "success": true,
+     "startS": 81.00233,
+     "endS": 81.159,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 81.239,
+     "endS": 81.324,
+     "palign": 0
+    },
+    {
+     "word": "prime-time ",
+     "success": true,
+     "startS": 81.371,
+     "endS": 81.858,
+     "palign": 0
+    },
+    {
+     "word": "cable ",
+     "success": true,
+     "startS": 82.089,
+     "endS": 82.27,
+     "palign": 0
+    },
+    {
+     "word": "heat!\n",
+     "success": true,
+     "startS": 82.3275,
+     "endS": 82.5438,
+     "palign": 0
+    },
+    {
+     "word": "Yeah, ",
+     "success": true,
+     "startS": 82.5876,
+     "endS": 82.722,
+     "palign": 0
+    },
+    {
+     "word": "I'm ",
+     "success": true,
+     "startS": 82.725,
+     "endS": 82.835,
+     "palign": 0
+    },
+    {
+     "word": "filthy ",
+     "success": true,
+     "startS": 82.90633,
+     "endS": 83.256,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 83.29767,
+     "endS": 83.381,
+     "palign": 0
+    },
+    {
+     "word": "unhinged — ",
+     "success": true,
+     "startS": 83.4225,
+     "endS": 83.876,
+     "palign": 0
+    },
+    {
+     "word": "wear ",
+     "success": true,
+     "startS": 83.9065,
+     "endS": 83.998,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 84.0835,
+     "endS": 84.169,
+     "palign": 0
+    },
+    {
+     "word": "chaos ",
+     "success": true,
+     "startS": 84.2412,
+     "endS": 84.53,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 84.586,
+     "endS": 84.642,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 84.7105,
+     "endS": 84.779,
+     "palign": 0
+    },
+    {
+     "word": "chest\n",
+     "success": true,
+     "startS": 84.8468,
+     "endS": 85.118,
+     "palign": 0
+    },
+    {
+     "word": "You're ",
+     "success": true,
+     "startS": 85.12533,
+     "endS": 85.4,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 85.422,
+     "endS": 85.422,
+     "palign": 0
+    },
+    {
+     "word": "silk-suit ",
+     "success": true,
+     "startS": 85.4635,
+     "endS": 85.816,
+     "palign": 0
+    },
+    {
+     "word": "parasite ",
+     "success": true,
+     "startS": 85.867,
+     "endS": 86.434,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 86.488,
+     "endS": 86.596,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 86.63975,
+     "endS": 86.771,
+     "palign": 0
+    },
+    {
+     "word": "own ",
+     "success": true,
+     "startS": 86.83133,
+     "endS": 86.952,
+     "palign": 0
+    },
+    {
+     "word": "blood ",
+     "success": true,
+     "startS": 86.9874,
+     "endS": 87.129,
+     "palign": 0
+    },
+    {
+     "word": "hates ",
+     "success": true,
+     "startS": 87.163,
+     "endS": 87.395,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 87.473,
+     "endS": 87.629,
+     "palign": 0
+    },
+    {
+     "word": "best!\n\n",
+     "success": true,
+     "startS": 87.709,
+     "endS": 88.08975,
+     "palign": 0
+    },
+    {
+     "word": "[Bridge: howling blizzard wind, shovel thud on wood coffin, dark synth choir and war drums]\nROUND ",
+     "success": true,
+     "startS": 88.09312,
+     "endS": 88.417,
+     "palign": 0
+    },
+    {
+     "word": "TWO! ",
+     "success": true,
+     "startS": 88.497,
+     "endS": 90.69433,
+     "palign": 0
+    },
+    {
+     "word": "ROUND ",
+     "success": true,
+     "startS": 90.75167,
+     "endS": 90.981,
+     "palign": 0
+    },
+    {
+     "word": "TWO!\n\n",
+     "success": true,
+     "startS": 91.061,
+     "endS": 103.982,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3: Dark icy heist synth over hard boom-bap drums, cold ruthless mask-off male baritone]\nDragged ",
+     "success": true,
+     "startS": 103.982,
+     "endS": 104.163,
+     "palign": 0
+    },
+    {
+     "word": "us ",
+     "success": true,
+     "startS": 104.2665,
+     "endS": 104.37,
+     "palign": 0
+    },
+    {
+     "word": "back ",
+     "success": true,
+     "startS": 104.42975,
+     "endS": 104.609,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 104.649,
+     "endS": 104.689,
+     "palign": 0
+    },
+    {
+     "word": "Ludendorff ",
+     "success": true,
+     "startS": 104.789,
+     "endS": 105.297,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 105.3445,
+     "endS": 105.392,
+     "palign": 0
+    },
+    {
+     "word": "dig ",
+     "success": true,
+     "startS": 105.457,
+     "endS": 105.587,
+     "palign": 0
+    },
+    {
+     "word": "inside ",
+     "success": true,
+     "startS": 105.63367,
+     "endS": 105.867,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 105.88,
+     "endS": 105.906,
+     "palign": 0
+    },
+    {
+     "word": "snow?\n",
+     "success": true,
+     "startS": 105.995,
+     "endS": 106.31917,
+     "palign": 0
+    },
+    {
+     "word": "Stare ",
+     "success": true,
+     "startS": 106.37633,
+     "endS": 106.605,
+     "palign": 0
+    },
+    {
+     "word": "into ",
+     "success": true,
+     "startS": 106.66025,
+     "endS": 106.826,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 106.8685,
+     "endS": 106.996,
+     "palign": 0
+    },
+    {
+     "word": "open ",
+     "success": true,
+     "startS": 107.06475,
+     "endS": 107.271,
+     "palign": 0
+    },
+    {
+     "word": "grave — ",
+     "success": true,
+     "startS": 107.3292,
+     "endS": 107.57167,
+     "palign": 0
+    },
+    {
+     "word": "here's ",
+     "success": true,
+     "startS": 107.5765,
+     "endS": 107.718,
+     "palign": 0
+    },
+    {
+     "word": "everything ",
+     "success": true,
+     "startS": 107.779,
+     "endS": 108.328,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 108.3905,
+     "endS": 108.453,
+     "palign": 0
+    },
+    {
+     "word": "know\n",
+     "success": true,
+     "startS": 108.533,
+     "endS": 109.217,
+     "palign": 0
+    },
+    {
+     "word": "Brad ",
+     "success": true,
+     "startS": 109.2765,
+     "endS": 109.547,
+     "palign": 0
+    },
+    {
+     "word": "caught ",
+     "success": true,
+     "startS": 109.59,
+     "endS": 109.805,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 109.85,
+     "endS": 109.94,
+     "palign": 0
+    },
+    {
+     "word": "bullet ",
+     "success": true,
+     "startS": 109.99833,
+     "endS": 110.29,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 110.3215,
+     "endS": 110.416,
+     "palign": 0
+    },
+    {
+     "word": "was ",
+     "success": true,
+     "startS": 110.465,
+     "endS": 110.563,
+     "palign": 0
+    },
+    {
+     "word": "meant ",
+     "success": true,
+     "startS": 110.6032,
+     "endS": 110.764,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 110.844,
+     "endS": 110.938,
+     "palign": 0
+    },
+    {
+     "word": "put ",
+     "success": true,
+     "startS": 110.95867,
+     "endS": 111.0,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 111.08,
+     "endS": 111.24,
+     "palign": 0
+    },
+    {
+     "word": "down\n",
+     "success": true,
+     "startS": 111.31825,
+     "endS": 111.553,
+     "palign": 0
+    },
+    {
+     "word": "Leaving ",
+     "success": true,
+     "startS": 111.60086,
+     "endS": 111.888,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 111.954,
+     "endS": 112.086,
+     "palign": 0
+    },
+    {
+     "word": "still ",
+     "success": true,
+     "startS": 112.1654,
+     "endS": 112.483,
+     "palign": 0
+    },
+    {
+     "word": "breathing ",
+     "success": true,
+     "startS": 112.52511,
+     "endS": 112.862,
+     "palign": 0
+    },
+    {
+     "word": "was ",
+     "success": true,
+     "startS": 112.91867,
+     "endS": 113.032,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 113.0915,
+     "endS": 113.151,
+     "palign": 0
+    },
+    {
+     "word": "worst ",
+     "success": true,
+     "startS": 113.1874,
+     "endS": 113.333,
+     "palign": 0
+    },
+    {
+     "word": "mistake ",
+     "success": true,
+     "startS": 113.38875,
+     "endS": 113.667,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 113.667,
+     "endS": 113.776,
+     "palign": 0
+    },
+    {
+     "word": "town\n",
+     "success": true,
+     "startS": 113.83175,
+     "endS": 113.999,
+     "palign": 0
+    },
+    {
+     "word": "Kidnapped ",
+     "success": true,
+     "startS": 114.093,
+     "endS": 114.32,
+     "palign": 0
+    },
+    {
+     "word": "Madrazo's ",
+     "success": true,
+     "startS": 114.35967,
+     "endS": 114.905,
+     "palign": 0
+    },
+    {
+     "word": "wife ",
+     "success": true,
+     "startS": 114.985,
+     "endS": 115.428,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 115.48975,
+     "endS": 115.675,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 115.74,
+     "endS": 115.805,
+     "palign": 0
+    },
+    {
+     "word": "beg ",
+     "success": true,
+     "startS": 115.85833,
+     "endS": 115.965,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 115.991,
+     "endS": 116.043,
+     "palign": 0
+    },
+    {
+     "word": "someone's ",
+     "success": true,
+     "startS": 116.08425,
+     "endS": 116.447,
+     "palign": 0
+    },
+    {
+     "word": "care\n",
+     "success": true,
+     "startS": 116.4915,
+     "endS": 116.625,
+     "palign": 0
+    },
+    {
+     "word": "When ",
+     "success": true,
+     "startS": 116.65325,
+     "endS": 116.738,
+     "palign": 0
+    },
+    {
+     "word": "Franklin ",
+     "success": true,
+     "startS": 116.7724,
+     "endS": 117.074,
+     "palign": 0
+    },
+    {
+     "word": "lights ",
+     "success": true,
+     "startS": 117.1274,
+     "endS": 117.362,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 117.3805,
+     "endS": 117.436,
+     "palign": 0
+    },
+    {
+     "word": "gasoline, ",
+     "success": true,
+     "startS": 117.49713,
+     "endS": 117.98186,
+     "palign": 0
+    },
+    {
+     "word": "nobody ",
+     "success": true,
+     "startS": 118.03871,
+     "endS": 118.323,
+     "palign": 0
+    },
+    {
+     "word": "says ",
+     "success": true,
+     "startS": 118.4055,
+     "endS": 118.655,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 118.744,
+     "endS": 118.799,
+     "palign": 0
+    },
+    {
+     "word": "prayer\n",
+     "success": true,
+     "startS": 118.85583,
+     "endS": 119.14,
+     "palign": 0
+    },
+    {
+     "word": "Rockstar ",
+     "success": true,
+     "startS": 119.18,
+     "endS": 119.621,
+     "palign": 0
+    },
+    {
+     "word": "scrapped ",
+     "success": true,
+     "startS": 119.64925,
+     "endS": 119.958,
+     "palign": 0
+    },
+    {
+     "word": "your \"",
+     "success": true,
+     "startS": 119.99,
+     "endS": 120.12633,
+     "palign": 0
+    },
+    {
+     "word": "Agent ",
+     "success": true,
+     "startS": 120.16667,
+     "endS": 120.356,
+     "palign": 0
+    },
+    {
+     "word": "Trevor\" — ",
+     "success": true,
+     "startS": 120.42033,
+     "endS": 120.79929,
+     "palign": 0
+    },
+    {
+     "word": "left ",
+     "success": true,
+     "startS": 120.82571,
+     "endS": 120.905,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 120.92925,
+     "endS": 121.002,
+     "palign": 0
+    },
+    {
+     "word": "files ",
+     "success": true,
+     "startS": 121.05633,
+     "endS": 121.356,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 121.4385,
+     "endS": 121.521,
+     "palign": 0
+    },
+    {
+     "word": "rot\n",
+     "success": true,
+     "startS": 121.61233,
+     "endS": 121.825,
+     "palign": 0
+    },
+    {
+     "word": "While ",
+     "success": true,
+     "startS": 121.8572,
+     "endS": 121.986,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 122.127,
+     "endS": 122.127,
+     "palign": 0
+    },
+    {
+     "word": "came ",
+     "success": true,
+     "startS": 122.17875,
+     "endS": 122.334,
+     "palign": 0
+    },
+    {
+     "word": "back ",
+     "success": true,
+     "startS": 122.38425,
+     "endS": 122.535,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 122.5905,
+     "endS": 122.646,
+     "palign": 0
+    },
+    {
+     "word": "Vinewood ",
+     "success": true,
+     "startS": 122.69475,
+     "endS": 122.931,
+     "palign": 0
+    },
+    {
+     "word": "Hills ",
+     "success": true,
+     "startS": 122.9912,
+     "endS": 123.232,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 123.255,
+     "endS": 123.301,
+     "palign": 0
+    },
+    {
+     "word": "closed ",
+     "success": true,
+     "startS": 123.35283,
+     "endS": 123.612,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 123.621,
+     "endS": 123.639,
+     "palign": 0
+    },
+    {
+     "word": "final ",
+     "success": true,
+     "startS": 123.733,
+     "endS": 124.196,
+     "palign": 0
+    },
+    {
+     "word": "plot\n\n",
+     "success": true,
+     "startS": 124.21,
+     "endS": 124.2552,
+     "palign": 0
+    },
+    {
+     "word": "[Final Drop: gun cocking click, maximum distorted hardcore sub-bass and roaring guitar climax]\nOOOH!\n\n",
+     "success": true,
+     "startS": 124.2584,
+     "endS": 137.712,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 4: Ferocious hardcore hip-hop climax, raw roaring raspy vocal dropping into ice-cold final bars]\nNine ",
+     "success": true,
+     "startS": 137.7145,
+     "endS": 137.982,
+     "palign": 0
+    },
+    {
+     "word": "years ",
+     "success": true,
+     "startS": 138.0252,
+     "endS": 138.198,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 138.333,
+     "endS": 138.333,
+     "palign": 0
+    },
+    {
+     "word": "mourned ",
+     "success": true,
+     "startS": 138.3495,
+     "endS": 138.554,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 138.59325,
+     "endS": 138.711,
+     "palign": 0
+    },
+    {
+     "word": "ghost ",
+     "success": true,
+     "startS": 138.7722,
+     "endS": 139.017,
+     "palign": 0
+    },
+    {
+     "word": "with ",
+     "success": true,
+     "startS": 139.05825,
+     "endS": 139.182,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 139.22625,
+     "endS": 139.359,
+     "palign": 0
+    },
+    {
+     "word": "name ",
+     "success": true,
+     "startS": 139.40025,
+     "endS": 139.524,
+     "palign": 0
+    },
+    {
+     "word": "inked ",
+     "success": true,
+     "startS": 139.55367,
+     "endS": 139.658,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 139.7415,
+     "endS": 139.825,
+     "palign": 0
+    },
+    {
+     "word": "my ",
+     "success": true,
+     "startS": 139.878,
+     "endS": 139.931,
+     "palign": 0
+    },
+    {
+     "word": "skin!\n",
+     "success": true,
+     "startS": 140.011,
+     "endS": 140.354,
+     "palign": 0
+    },
+    {
+     "word": "While ",
+     "success": true,
+     "startS": 140.378,
+     "endS": 140.474,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 140.52333,
+     "endS": 140.622,
+     "palign": 0
+    },
+    {
+     "word": "forged ",
+     "success": true,
+     "startS": 140.6625,
+     "endS": 140.865,
+     "palign": 0
+    },
+    {
+     "word": "dead ",
+     "success": true,
+     "startS": 140.89625,
+     "endS": 140.99,
+     "palign": 0
+    },
+    {
+     "word": "Brad's ",
+     "success": true,
+     "startS": 141.025,
+     "endS": 141.249,
+     "palign": 0
+    },
+    {
+     "word": "letters ",
+     "success": true,
+     "startS": 141.30057,
+     "endS": 141.61,
+     "palign": 0
+    },
+    {
+     "word": "sipping ",
+     "success": true,
+     "startS": 141.67014,
+     "endS": 142.031,
+     "palign": 0
+    },
+    {
+     "word": "poolside ",
+     "success": true,
+     "startS": 142.091,
+     "endS": 142.563,
+     "palign": 0
+    },
+    {
+     "word": "gin!\n",
+     "success": true,
+     "startS": 142.655,
+     "endS": 143.0658,
+     "palign": 0
+    },
+    {
+     "word": "When ",
+     "success": true,
+     "startS": 143.1006,
+     "endS": 143.205,
+     "palign": 0
+    },
+    {
+     "word": "Franklin ",
+     "success": true,
+     "startS": 143.247,
+     "endS": 143.579,
+     "palign": 0
+    },
+    {
+     "word": "called ",
+     "success": true,
+     "startS": 143.61,
+     "endS": 143.765,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 143.833,
+     "endS": 143.901,
+     "palign": 0
+    },
+    {
+     "word": "kill ",
+     "success": true,
+     "startS": 143.94125,
+     "endS": 144.062,
+     "palign": 0
+    },
+    {
+     "word": "you, ",
+     "success": true,
+     "startS": 144.138,
+     "endS": 144.3215,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 144.353,
+     "endS": 144.353,
+     "palign": 0
+    },
+    {
+     "word": "refused ",
+     "success": true,
+     "startS": 144.40033,
+     "endS": 144.798,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 144.827,
+     "endS": 144.856,
+     "palign": 0
+    },
+    {
+     "word": "take ",
+     "success": true,
+     "startS": 144.90675,
+     "endS": 145.059,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 145.07467,
+     "endS": 145.106,
+     "palign": 0
+    },
+    {
+     "word": "shot!\n",
+     "success": true,
+     "startS": 145.186,
+     "endS": 145.4695,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 145.493,
+     "endS": 145.54,
+     "palign": 0
+    },
+    {
+     "word": "brought ",
+     "success": true,
+     "startS": 145.57171,
+     "endS": 145.762,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 145.841,
+     "endS": 145.841,
+     "palign": 0
+    },
+    {
+     "word": "gun ",
+     "success": true,
+     "startS": 145.921,
+     "endS": 146.082,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 146.145,
+     "endS": 146.208,
+     "palign": 0
+    },
+    {
+     "word": "burn ",
+     "success": true,
+     "startS": 146.25425,
+     "endS": 146.393,
+     "palign": 0
+    },
+    {
+     "word": "me — ",
+     "success": true,
+     "startS": 146.483,
+     "endS": 146.81667,
+     "palign": 0
+    },
+    {
+     "word": "that's ",
+     "success": true,
+     "startS": 146.8275,
+     "endS": 147.033,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 147.053,
+     "endS": 147.093,
+     "palign": 0
+    },
+    {
+     "word": "crooked ",
+     "success": true,
+     "startS": 147.13371,
+     "endS": 147.378,
+     "palign": 0
+    },
+    {
+     "word": "soul ",
+     "success": true,
+     "startS": 147.4555,
+     "endS": 147.688,
+     "palign": 0
+    },
+    {
+     "word": "you've ",
+     "success": true,
+     "startS": 147.71167,
+     "endS": 147.92,
+     "palign": 0
+    },
+    {
+     "word": "got!\n",
+     "success": true,
+     "startS": 148.0,
+     "endS": 148.4758,
+     "palign": 0
+    },
+    {
+     "word": "Drop ",
+     "success": true,
+     "startS": 148.5226,
+     "endS": 148.663,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 148.714,
+     "endS": 148.816,
+     "palign": 0
+    },
+    {
+     "word": "off ",
+     "success": true,
+     "startS": 148.87933,
+     "endS": 149.006,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 149.03325,
+     "endS": 149.115,
+     "palign": 0
+    },
+    {
+     "word": "tower ",
+     "success": true,
+     "startS": 149.1988,
+     "endS": 149.534,
+     "palign": 0
+    },
+    {
+     "word": "while ",
+     "success": true,
+     "startS": 149.562,
+     "endS": 149.674,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 149.704,
+     "endS": 149.794,
+     "palign": 0
+    },
+    {
+     "word": "family ",
+     "success": true,
+     "startS": 149.845,
+     "endS": 150.1,
+     "palign": 0
+    },
+    {
+     "word": "cheers ",
+     "success": true,
+     "startS": 150.154,
+     "endS": 150.394,
+     "palign": 0
+    },
+    {
+     "word": "below\n",
+     "success": true,
+     "startS": 150.4604,
+     "endS": 150.726,
+     "palign": 0
+    },
+    {
+     "word": "Two ",
+     "success": true,
+     "startS": 150.77967,
+     "endS": 150.887,
+     "palign": 0
+    },
+    {
+     "word": "fake ",
+     "success": true,
+     "startS": 150.93025,
+     "endS": 151.06,
+     "palign": 0
+    },
+    {
+     "word": "graves ",
+     "success": true,
+     "startS": 151.09867,
+     "endS": 151.249,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 151.30933,
+     "endS": 151.43,
+     "palign": 0
+    },
+    {
+     "word": "Townley — ",
+     "success": true,
+     "startS": 151.47325,
+     "endS": 151.829,
+     "palign": 0
+    },
+    {
+     "word": "now ",
+     "success": true,
+     "startS": 151.877,
+     "endS": 152.117,
+     "palign": 0
+    },
+    {
+     "word": "lay ",
+     "success": true,
+     "startS": 152.197,
+     "endS": 152.412,
+     "palign": 0
+    },
+    {
+     "word": "permanently ",
+     "success": true,
+     "startS": 152.46189,
+     "endS": 152.961,
+     "palign": 0
+    },
+    {
+     "word": "low!\n",
+     "success": true,
+     "startS": 153.041,
+     "endS": 153.26175,
+     "palign": 0
+    },
+    {
+     "word": "Two-thirty ",
+     "success": true,
+     "startS": 153.3085,
+     "endS": 153.68,
+     "palign": 0
+    },
+    {
+     "word": "million ",
+     "success": true,
+     "startS": 153.72886,
+     "endS": 154.022,
+     "palign": 0
+    },
+    {
+     "word": "sold — ",
+     "success": true,
+     "startS": 154.0985,
+     "endS": 154.39867,
+     "palign": 0
+    },
+    {
+     "word": "next ",
+     "success": true,
+     "startS": 154.434,
+     "endS": 154.54,
+     "palign": 0
+    },
+    {
+     "word": "week ",
+     "success": true,
+     "startS": 154.5795,
+     "endS": 154.698,
+     "palign": 0
+    },
+    {
+     "word": "Vice ",
+     "success": true,
+     "startS": 154.749,
+     "endS": 154.948,
+     "palign": 0
+    },
+    {
+     "word": "City ",
+     "success": true,
+     "startS": 155.04075,
+     "endS": 155.319,
+     "palign": 0
+    },
+    {
+     "word": "takes ",
+     "success": true,
+     "startS": 155.3626,
+     "endS": 155.537,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 155.568,
+     "endS": 155.63,
+     "palign": 0
+    },
+    {
+     "word": "throne\n",
+     "success": true,
+     "startS": 155.6945,
+     "endS": 156.017,
+     "palign": 0
+    },
+    {
+     "word": "Keep ",
+     "success": true,
+     "startS": 156.0635,
+     "endS": 156.203,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 156.23375,
+     "endS": 156.326,
+     "palign": 0
+    },
+    {
+     "word": "mansion, ",
+     "success": true,
+     "startS": 156.3675,
+     "endS": 156.72575,
+     "palign": 0
+    },
+    {
+     "word": "Judas — ",
+     "success": true,
+     "startS": 156.7695,
+     "endS": 157.1818,
+     "palign": 0
+    },
+    {
+     "word": "die ",
+     "success": true,
+     "startS": 157.2152,
+     "endS": 157.282,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 157.389,
+     "endS": 157.389,
+     "palign": 0
+    },
+    {
+     "word": "traitor, ",
+     "success": true,
+     "startS": 157.48333,
+     "endS": 157.98825,
+     "palign": 0
+    },
+    {
+     "word": "die ",
+     "success": true,
+     "startS": 158.0725,
+     "endS": 158.241,
+     "palign": 0
+    },
+    {
+     "word": "alone!\n\n",
+     "success": true,
+     "startS": 158.321,
+     "endS": 165.23627,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: heavy bass slam and fading siren echo]\nWASTED! ",
+     "success": true,
+     "startS": 165.24791,
+     "endS": 166.58586,
+     "palign": 0
+    },
+    {
+     "word": "WASTED!\n\n",
+     "success": true,
+     "startS": 166.68071,
+     "endS": 168.1954,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: heavy bass slam and fading siren echo]\nWASTED! ",
+     "success": true,
+     "startS": 168.2056,
+     "endS": 168.91644,
+     "palign": 0
+    },
+    {
+     "word": "WASTED!\n\n[",
+     "success": true,
+     "startS": 168.94789,
+     "endS": 169.23089,
+     "palign": 0
+    },
+    {
+     "word": "End]\n\n\n",
+     "success": true,
+     "startS": 169.26233,
+     "endS": 169.451,
+     "palign": 0
+    }
+   ]
+  }
+ ]
+}

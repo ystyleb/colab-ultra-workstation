@@ -1,0 +1,5476 @@
+{
+ "taskId": "5f79860c5a5d066db5653d0d94f33ea7",
+ "tracks": [
+  {
+   "id": "7842883c-3cf8-4904-a0b6-fe1fab8fdc2d",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/7842883c-3cf8-4904-a0b6-fe1fab8fdc2d.mp3",
+   "duration": 184.8,
+   "title": "Kratos_vs_Master_Chief",
+   "local_mp3": "workflows/05_ancient_rap_battle/episodes/kratos-vs-master-chief/work/suno_v1.mp3",
+   "alignedWords": [
+    {
+     "word": "[Intro: ",
+     "success": true,
+     "startS": 12.428,
+     "endS": 12.44378,
+     "palign": 0
+    },
+    {
+     "word": "UNSC ",
+     "success": true,
+     "startS": 12.44604,
+     "endS": 12.45506,
+     "palign": 0
+    },
+    {
+     "word": "slipspace ",
+     "success": true,
+     "startS": 12.45731,
+     "endS": 12.47761,
+     "palign": 0
+    },
+    {
+     "word": "static, ",
+     "success": true,
+     "startS": 12.47986,
+     "endS": 12.49565,
+     "palign": 0
+    },
+    {
+     "word": "Mjolnir ",
+     "success": true,
+     "startS": 12.4979,
+     "endS": 12.51369,
+     "palign": 0
+    },
+    {
+     "word": "energy ",
+     "success": true,
+     "startS": 12.51594,
+     "endS": 12.52947,
+     "palign": 0
+    },
+    {
+     "word": "shield ",
+     "success": true,
+     "startS": 12.53173,
+     "endS": 12.54526,
+     "palign": 0
+    },
+    {
+     "word": "recharge ",
+     "success": true,
+     "startS": 12.54751,
+     "endS": 12.56555,
+     "palign": 0
+    },
+    {
+     "word": "hum, ",
+     "success": true,
+     "startS": 12.56781,
+     "endS": 12.57683,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 12.57908,
+     "endS": 12.58585,
+     "palign": 0
+    },
+    {
+     "word": "heavy 808 ",
+     "success": true,
+     "startS": 12.5881,
+     "endS": 12.6084,
+     "palign": 0
+    },
+    {
+     "word": "synth ",
+     "success": true,
+     "startS": 12.61065,
+     "endS": 12.62193,
+     "palign": 0
+    },
+    {
+     "word": "drop]\n\n\n",
+     "success": true,
+     "startS": 12.62418,
+     "endS": 12.63997,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 1 (Round 1 - Master Chief): Ice-cold robotic precision male rapper over heavy 808 sub-bass, sci-fi synth pulse, and mechanical shield-charge clicks]\nSpartan ",
+     "success": true,
+     "startS": 12.64222,
+     "endS": 26.327,
+     "palign": 0
+    },
+    {
+     "word": "one-one-seven — ",
+     "success": true,
+     "startS": 26.407,
+     "endS": 27.28033,
+     "palign": 0
+    },
+    {
+     "word": "Mjolnir ",
+     "success": true,
+     "startS": 27.307,
+     "endS": 27.886,
+     "palign": 0
+    },
+    {
+     "word": "locked, ",
+     "success": true,
+     "startS": 27.93367,
+     "endS": 28.23371,
+     "palign": 0
+    },
+    {
+     "word": "target ",
+     "success": true,
+     "startS": 28.29543,
+     "endS": 28.604,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 28.6685,
+     "endS": 28.733,
+     "palign": 0
+    },
+    {
+     "word": "frame\n",
+     "success": true,
+     "startS": 28.813,
+     "endS": 29.217,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 29.27667,
+     "endS": 29.396,
+     "palign": 0
+    },
+    {
+     "word": "burned ",
+     "success": true,
+     "startS": 29.42767,
+     "endS": 29.586,
+     "palign": 0
+    },
+    {
+     "word": "down ",
+     "success": true,
+     "startS": 29.63375,
+     "endS": 29.777,
+     "palign": 0
+    },
+    {
+     "word": "whole ",
+     "success": true,
+     "startS": 29.826,
+     "endS": 30.022,
+     "palign": 0
+    },
+    {
+     "word": "Olympus ",
+     "success": true,
+     "startS": 30.147,
+     "endS": 30.564,
+     "palign": 0
+    },
+    {
+     "word": "over ",
+     "success": true,
+     "startS": 30.64175,
+     "endS": 30.875,
+     "palign": 0
+    },
+    {
+     "word": "rage ",
+     "success": true,
+     "startS": 30.964,
+     "endS": 31.174,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 31.23833,
+     "endS": 31.367,
+     "palign": 0
+    },
+    {
+     "word": "couldn't ",
+     "success": true,
+     "startS": 31.375,
+     "endS": 31.712,
+     "palign": 0
+    },
+    {
+     "word": "tame\n",
+     "success": true,
+     "startS": 31.792,
+     "endS": 32.092,
+     "palign": 0
+    },
+    {
+     "word": "Gray ",
+     "success": true,
+     "startS": 32.1405,
+     "endS": 32.286,
+     "palign": 0
+    },
+    {
+     "word": "beard ",
+     "success": true,
+     "startS": 32.3085,
+     "endS": 32.468,
+     "palign": 0
+    },
+    {
+     "word": "yelling \"",
+     "success": true,
+     "startS": 32.52357,
+     "endS": 32.9525,
+     "palign": 0
+    },
+    {
+     "word": "BOY!\" ",
+     "success": true,
+     "startS": 33.048,
+     "endS": 33.33557,
+     "palign": 0
+    },
+    {
+     "word": "again — ",
+     "success": true,
+     "startS": 33.38386,
+     "endS": 33.71267,
+     "palign": 0
+    },
+    {
+     "word": "same ",
+     "success": true,
+     "startS": 33.7805,
+     "endS": 33.984,
+     "palign": 0
+    },
+    {
+     "word": "tantrum, ",
+     "success": true,
+     "startS": 34.0355,
+     "endS": 34.4967,
+     "palign": 0
+    },
+    {
+     "word": "different ",
+     "success": true,
+     "startS": 34.5294,
+     "endS": 34.791,
+     "palign": 0
+    },
+    {
+     "word": "mold\n",
+     "success": true,
+     "startS": 34.791,
+     "endS": 35.199,
+     "palign": 0
+    },
+    {
+     "word": "Rowing ",
+     "success": true,
+     "startS": 35.25167,
+     "endS": 35.572,
+     "palign": 0
+    },
+    {
+     "word": "boats ",
+     "success": true,
+     "startS": 35.6275,
+     "endS": 35.865,
+     "palign": 0
+    },
+    {
+     "word": "with ",
+     "success": true,
+     "startS": 35.896,
+     "endS": 35.989,
+     "palign": 0
+    },
+    {
+     "word": "Mimir's ",
+     "success": true,
+     "startS": 36.029,
+     "endS": 36.361,
+     "palign": 0
+    },
+    {
+     "word": "head — ",
+     "success": true,
+     "startS": 36.4305,
+     "endS": 36.68733,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 36.7115,
+     "endS": 36.784,
+     "palign": 0
+    },
+    {
+     "word": "dad ",
+     "success": true,
+     "startS": 36.849,
+     "endS": 36.979,
+     "palign": 0
+    },
+    {
+     "word": "act's ",
+     "success": true,
+     "startS": 36.99533,
+     "endS": 37.196,
+     "palign": 0
+    },
+    {
+     "word": "getting ",
+     "success": true,
+     "startS": 37.242,
+     "endS": 37.518,
+     "palign": 0
+    },
+    {
+     "word": "old\n",
+     "success": true,
+     "startS": 37.60233,
+     "endS": 37.948,
+     "palign": 0
+    },
+    {
+     "word": "Mjolnir ",
+     "success": true,
+     "startS": 37.978,
+     "endS": 38.344,
+     "palign": 0
+    },
+    {
+     "word": "armor ",
+     "success": true,
+     "startS": 38.4096,
+     "endS": 38.672,
+     "palign": 0
+    },
+    {
+     "word": "eats ",
+     "success": true,
+     "startS": 38.734,
+     "endS": 38.8916,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 38.9252,
+     "endS": 39.026,
+     "palign": 0
+    },
+    {
+     "word": "blades — ",
+     "success": true,
+     "startS": 39.0595,
+     "endS": 39.5175,
+     "palign": 0
+    },
+    {
+     "word": "energy ",
+     "success": true,
+     "startS": 39.56225,
+     "endS": 39.786,
+     "palign": 0
+    },
+    {
+     "word": "shields ",
+     "success": true,
+     "startS": 39.82283,
+     "endS": 40.238,
+     "palign": 0
+    },
+    {
+     "word": "block ",
+     "success": true,
+     "startS": 40.2884,
+     "endS": 40.49,
+     "palign": 0
+    },
+    {
+     "word": "every ",
+     "success": true,
+     "startS": 40.5486,
+     "endS": 40.783,
+     "palign": 0
+    },
+    {
+     "word": "blow\n",
+     "success": true,
+     "startS": 40.863,
+     "endS": 41.222,
+     "palign": 0
+    },
+    {
+     "word": "My ",
+     "success": true,
+     "startS": 41.2905,
+     "endS": 41.359,
+     "palign": 0
+    },
+    {
+     "word": "M-A-five ",
+     "success": true,
+     "startS": 41.497,
+     "endS": 42.076,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 42.11467,
+     "endS": 42.192,
+     "palign": 0
+    },
+    {
+     "word": "plasma ",
+     "success": true,
+     "startS": 42.2105,
+     "endS": 42.563,
+     "palign": 0
+    },
+    {
+     "word": "blade ",
+     "success": true,
+     "startS": 42.6144,
+     "endS": 42.82,
+     "palign": 0
+    },
+    {
+     "word": "lay ",
+     "success": true,
+     "startS": 42.874,
+     "endS": 42.982,
+     "palign": 0
+    },
+    {
+     "word": "ancient ",
+     "success": true,
+     "startS": 43.035,
+     "endS": 43.353,
+     "palign": 0
+    },
+    {
+     "word": "gods ",
+     "success": true,
+     "startS": 43.43375,
+     "endS": 43.676,
+     "palign": 0
+    },
+    {
+     "word": "below\n",
+     "success": true,
+     "startS": 43.7556,
+     "endS": 44.074,
+     "palign": 0
+    },
+    {
+     "word": "Dropped ",
+     "success": true,
+     "startS": 44.10257,
+     "endS": 44.274,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 44.335,
+     "endS": 44.518,
+     "palign": 0
+    },
+    {
+     "word": "orbit, ",
+     "success": true,
+     "startS": 44.598,
+     "endS": 44.9604,
+     "palign": 0
+    },
+    {
+     "word": "blew ",
+     "success": true,
+     "startS": 45.0088,
+     "endS": 45.154,
+     "palign": 0
+    },
+    {
+     "word": "up ",
+     "success": true,
+     "startS": 45.202,
+     "endS": 45.25,
+     "palign": 0
+    },
+    {
+     "word": "Halo, ",
+     "success": true,
+     "startS": 45.3405,
+     "endS": 45.66,
+     "palign": 0
+    },
+    {
+     "word": "saved ",
+     "success": true,
+     "startS": 45.708,
+     "endS": 45.9,
+     "palign": 0
+    },
+    {
+     "word": "humanity ",
+     "success": true,
+     "startS": 45.989,
+     "endS": 46.612,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 46.675,
+     "endS": 46.864,
+     "palign": 0
+    },
+    {
+     "word": "doom\n",
+     "success": true,
+     "startS": 46.944,
+     "endS": 47.249,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 47.31067,
+     "endS": 47.434,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 47.4685,
+     "endS": 47.572,
+     "palign": 0
+    },
+    {
+     "word": "mashed ",
+     "success": true,
+     "startS": 47.587,
+     "endS": 47.882,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 47.947,
+     "endS": 47.947,
+     "palign": 0
+    },
+    {
+     "word": "circle ",
+     "success": true,
+     "startS": 48.025,
+     "endS": 48.415,
+     "palign": 0
+    },
+    {
+     "word": "button, ",
+     "success": true,
+     "startS": 48.46933,
+     "endS": 48.78688,
+     "palign": 0
+    },
+    {
+     "word": "leaving ",
+     "success": true,
+     "startS": 48.83275,
+     "endS": 49.108,
+     "palign": 0
+    },
+    {
+     "word": "Greece ",
+     "success": true,
+     "startS": 49.12967,
+     "endS": 49.43,
+     "palign": 0
+    },
+    {
+     "word": "inside ",
+     "success": true,
+     "startS": 49.49133,
+     "endS": 49.798,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 49.933,
+     "endS": 49.975,
+     "palign": 0
+    },
+    {
+     "word": "tomb\n\n",
+     "success": true,
+     "startS": 50.055,
+     "endS": 51.65991,
+     "palign": 0
+    },
+    {
+     "word": "[Beat Switch: Mjolnir shield overload shatter, colossal Nordic war horn blast, heavy Taiko and Spartan war-drum drop]\nOOOH!\n\n",
+     "success": true,
+     "startS": 51.67082,
+     "endS": 53.70108,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 2 (Round 2 - Kratos): Ultra-deep chest-resonant gravelly bass male rapper, pounding Nordic war drums, heavy low brass, escalating battle rage]\nStolen ",
+     "success": true,
+     "startS": 53.70411,
+     "endS": 54.236,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 54.333,
+     "endS": 54.444,
+     "palign": 0
+    },
+    {
+     "word": "six ",
+     "success": true,
+     "startS": 54.617,
+     "endS": 54.963,
+     "palign": 0
+    },
+    {
+     "word": "by ",
+     "success": true,
+     "startS": 55.0885,
+     "endS": 55.235,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 55.363,
+     "endS": 55.363,
+     "palign": 0
+    },
+    {
+     "word": "lab ",
+     "success": true,
+     "startS": 55.43333,
+     "endS": 55.574,
+     "palign": 0
+    },
+    {
+     "word": "coat — ",
+     "success": true,
+     "startS": 55.63425,
+     "endS": 55.878,
+     "palign": 0
+    },
+    {
+     "word": "stripped ",
+     "success": true,
+     "startS": 55.9095,
+     "endS": 56.187,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 56.248,
+     "endS": 56.309,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 56.34825,
+     "endS": 56.466,
+     "palign": 0
+    },
+    {
+     "word": "name ",
+     "success": true,
+     "startS": 56.529,
+     "endS": 56.718,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 56.748,
+     "endS": 56.808,
+     "palign": 0
+    },
+    {
+     "word": "soul\n",
+     "success": true,
+     "startS": 56.89525,
+     "endS": 57.2,
+     "palign": 0
+    },
+    {
+     "word": "Locked ",
+     "success": true,
+     "startS": 57.24733,
+     "endS": 57.484,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 57.546,
+     "endS": 57.608,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 57.751,
+     "endS": 57.751,
+     "palign": 0
+    },
+    {
+     "word": "green ",
+     "success": true,
+     "startS": 57.8094,
+     "endS": 58.043,
+     "palign": 0
+    },
+    {
+     "word": "metal ",
+     "success": true,
+     "startS": 58.123,
+     "endS": 58.46,
+     "palign": 0
+    },
+    {
+     "word": "bucket — ",
+     "success": true,
+     "startS": 58.5485,
+     "endS": 58.942,
+     "palign": 0
+    },
+    {
+     "word": "puppet ",
+     "success": true,
+     "startS": 58.9695,
+     "endS": 59.255,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 59.3355,
+     "endS": 59.416,
+     "palign": 0
+    },
+    {
+     "word": "full ",
+     "success": true,
+     "startS": 59.4825,
+     "endS": 59.682,
+     "palign": 0
+    },
+    {
+     "word": "control\n",
+     "success": true,
+     "startS": 59.75557,
+     "endS": 60.197,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 60.24833,
+     "endS": 60.351,
+     "palign": 0
+    },
+    {
+     "word": "lost ",
+     "success": true,
+     "startS": 60.431,
+     "endS": 60.709,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 60.812,
+     "endS": 60.812,
+     "palign": 0
+    },
+    {
+     "word": "blue ",
+     "success": true,
+     "startS": 60.892,
+     "endS": 61.148,
+     "palign": 0
+    },
+    {
+     "word": "hologram — ",
+     "success": true,
+     "startS": 61.22033,
+     "endS": 61.872,
+     "palign": 0
+    },
+    {
+     "word": "Cortana ",
+     "success": true,
+     "startS": 61.9455,
+     "endS": 62.308,
+     "palign": 0
+    },
+    {
+     "word": "vanished ",
+     "success": true,
+     "startS": 62.365,
+     "endS": 62.764,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 62.81,
+     "endS": 62.856,
+     "palign": 0
+    },
+    {
+     "word": "thin ",
+     "success": true,
+     "startS": 62.90475,
+     "endS": 63.051,
+     "palign": 0
+    },
+    {
+     "word": "air\n",
+     "success": true,
+     "startS": 63.131,
+     "endS": 63.299,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 63.352,
+     "endS": 63.458,
+     "palign": 0
+    },
+    {
+     "word": "cloned \"",
+     "success": true,
+     "startS": 63.49,
+     "endS": 63.7805,
+     "palign": 0
+    },
+    {
+     "word": "The ",
+     "success": true,
+     "startS": 63.808,
+     "endS": 63.863,
+     "palign": 0
+    },
+    {
+     "word": "Weapon\" ",
+     "success": true,
+     "startS": 63.926,
+     "endS": 64.2926,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 64.3442,
+     "endS": 64.499,
+     "palign": 0
+    },
+    {
+     "word": "her ",
+     "success": true,
+     "startS": 64.53533,
+     "endS": 64.608,
+     "palign": 0
+    },
+    {
+     "word": "code ",
+     "success": true,
+     "startS": 64.7145,
+     "endS": 65.034,
+     "palign": 0
+    },
+    {
+     "word": "like ",
+     "success": true,
+     "startS": 65.06775,
+     "endS": 65.169,
+     "palign": 0
+    },
+    {
+     "word": "grief ",
+     "success": true,
+     "startS": 65.2502,
+     "endS": 65.575,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 65.635,
+     "endS": 65.815,
+     "palign": 0
+    },
+    {
+     "word": "needs ",
+     "success": true,
+     "startS": 65.8624,
+     "endS": 66.052,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 66.095,
+     "endS": 66.095,
+     "palign": 0
+    },
+    {
+     "word": "spare\n",
+     "success": true,
+     "startS": 66.1566,
+     "endS": 66.403,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 66.483,
+     "endS": 66.626,
+     "palign": 0
+    },
+    {
+     "word": "butchered ",
+     "success": true,
+     "startS": 66.63167,
+     "endS": 66.868,
+     "palign": 0
+    },
+    {
+     "word": "Olympus ",
+     "success": true,
+     "startS": 66.926,
+     "endS": 67.247,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 67.28533,
+     "endS": 67.362,
+     "palign": 0
+    },
+    {
+     "word": "broke ",
+     "success": true,
+     "startS": 67.4164,
+     "endS": 67.634,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 67.674,
+     "endS": 67.754,
+     "palign": 0
+    },
+    {
+     "word": "Nine — ",
+     "success": true,
+     "startS": 67.82275,
+     "endS": 68.10386,
+     "palign": 0
+    },
+    {
+     "word": "frost ",
+     "success": true,
+     "startS": 68.14129,
+     "endS": 68.291,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 68.371,
+     "endS": 68.459,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 68.492,
+     "endS": 68.558,
+     "palign": 0
+    },
+    {
+     "word": "axe ",
+     "success": true,
+     "startS": 68.653,
+     "endS": 68.759,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 68.865,
+     "endS": 68.865,
+     "palign": 0
+    },
+    {
+     "word": "swing\n",
+     "success": true,
+     "startS": 68.945,
+     "endS": 69.472,
+     "palign": 0
+    },
+    {
+     "word": "Leviathan ",
+     "success": true,
+     "startS": 69.5285,
+     "endS": 69.957,
+     "palign": 0
+    },
+    {
+     "word": "cracks ",
+     "success": true,
+     "startS": 70.01617,
+     "endS": 70.312,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 70.33775,
+     "endS": 70.415,
+     "palign": 0
+    },
+    {
+     "word": "shield ",
+     "success": true,
+     "startS": 70.46383,
+     "endS": 70.708,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 70.739,
+     "endS": 70.77,
+     "palign": 0
+    },
+    {
+     "word": "splinters ",
+     "success": true,
+     "startS": 70.80333,
+     "endS": 71.293,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 71.33133,
+     "endS": 71.408,
+     "palign": 0
+    },
+    {
+     "word": "broken ",
+     "success": true,
+     "startS": 71.47683,
+     "endS": 71.821,
+     "palign": 0
+    },
+    {
+     "word": "rings\n",
+     "success": true,
+     "startS": 71.9076,
+     "endS": 72.283,
+     "palign": 0
+    },
+    {
+     "word": "A ",
+     "success": true,
+     "startS": 72.386,
+     "endS": 72.386,
+     "palign": 0
+    },
+    {
+     "word": "broken ",
+     "success": true,
+     "startS": 72.43983,
+     "endS": 72.709,
+     "palign": 0
+    },
+    {
+     "word": "ring ",
+     "success": true,
+     "startS": 72.77475,
+     "endS": 72.972,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 73.012,
+     "endS": 73.092,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 73.183,
+     "endS": 73.183,
+     "palign": 0
+    },
+    {
+     "word": "ten-year ",
+     "success": true,
+     "startS": 73.26133,
+     "endS": 73.575,
+     "palign": 0
+    },
+    {
+     "word": "wait — ",
+     "success": true,
+     "startS": 73.626,
+     "endS": 73.80867,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 73.832,
+     "endS": 73.902,
+     "palign": 0
+    },
+    {
+     "word": "makers ",
+     "success": true,
+     "startS": 73.99233,
+     "endS": 74.357,
+     "palign": 0
+    },
+    {
+     "word": "rebranded ",
+     "success": true,
+     "startS": 74.411,
+     "endS": 74.98,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 75.0145,
+     "endS": 75.049,
+     "palign": 0
+    },
+    {
+     "word": "shame\n",
+     "success": true,
+     "startS": 75.129,
+     "endS": 75.472,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 75.583,
+     "endS": 75.583,
+     "palign": 0
+    },
+    {
+     "word": "swept ",
+     "success": true,
+     "startS": 75.6385,
+     "endS": 75.848,
+     "palign": 0
+    },
+    {
+     "word": "Game ",
+     "success": true,
+     "startS": 75.9115,
+     "endS": 76.102,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 76.1465,
+     "endS": 76.191,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 76.22267,
+     "endS": 76.286,
+     "palign": 0
+    },
+    {
+     "word": "Year ",
+     "success": true,
+     "startS": 76.34475,
+     "endS": 76.521,
+     "palign": 0
+    },
+    {
+     "word": "while ",
+     "success": true,
+     "startS": 76.5418,
+     "endS": 76.625,
+     "palign": 0
+    },
+    {
+     "word": "Xbox ",
+     "success": true,
+     "startS": 76.793,
+     "endS": 77.062,
+     "palign": 0
+    },
+    {
+     "word": "gave ",
+     "success": true,
+     "startS": 77.1275,
+     "endS": 77.324,
+     "palign": 0
+    },
+    {
+     "word": "up ",
+     "success": true,
+     "startS": 77.404,
+     "endS": 77.493,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 77.53433,
+     "endS": 77.617,
+     "palign": 0
+    },
+    {
+     "word": "console ",
+     "success": true,
+     "startS": 77.70367,
+     "endS": 78.247,
+     "palign": 0
+    },
+    {
+     "word": "game\n\n",
+     "success": true,
+     "startS": 78.327,
+     "endS": 79.38816,
+     "palign": 0
+    },
+    {
+     "word": "[Bridge (Final Clash): Nordic war horns colliding with Covenant plasma sirens, Blades of Chaos chains rattling into fused 808 and war-drum beat]\nROUND ",
+     "success": true,
+     "startS": 79.39132,
+     "endS": 80.207,
+     "palign": 0
+    },
+    {
+     "word": "THREE! ",
+     "success": true,
+     "startS": 80.2886,
+     "endS": 81.357,
+     "palign": 0
+    },
+    {
+     "word": "FINAL ",
+     "success": true,
+     "startS": 81.437,
+     "endS": 81.757,
+     "palign": 0
+    },
+    {
+     "word": "CLASH!\n\n",
+     "success": true,
+     "startS": 82.076,
+     "endS": 94.06643,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3A (Final Clash - Master Chief): Fused sci-fi 808 and war drums, cold sharp tactical baritone firing back]\nTalk ",
+     "success": true,
+     "startS": 94.06965,
+     "endS": 94.446,
+     "palign": 0
+    },
+    {
+     "word": "about ",
+     "success": true,
+     "startS": 94.5196,
+     "endS": 94.814,
+     "palign": 0
+    },
+    {
+     "word": "puppets? ",
+     "success": true,
+     "startS": 94.83225,
+     "endS": 95.301,
+     "palign": 0
+    },
+    {
+     "word": "Ares ",
+     "success": true,
+     "startS": 95.35,
+     "endS": 95.561,
+     "palign": 0
+    },
+    {
+     "word": "chained ",
+     "success": true,
+     "startS": 95.5826,
+     "endS": 95.855,
+     "palign": 0
+    },
+    {
+     "word": "those ",
+     "success": true,
+     "startS": 95.8808,
+     "endS": 95.984,
+     "palign": 0
+    },
+    {
+     "word": "blades ",
+     "success": true,
+     "startS": 96.0125,
+     "endS": 96.223,
+     "palign": 0
+    },
+    {
+     "word": "right ",
+     "success": true,
+     "startS": 96.2786,
+     "endS": 96.501,
+     "palign": 0
+    },
+    {
+     "word": "into ",
+     "success": true,
+     "startS": 96.57125,
+     "endS": 96.782,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 96.8075,
+     "endS": 96.884,
+     "palign": 0
+    },
+    {
+     "word": "skin\n",
+     "success": true,
+     "startS": 96.964,
+     "endS": 97.29,
+     "palign": 0
+    },
+    {
+     "word": "Ashes ",
+     "success": true,
+     "startS": 97.3866,
+     "endS": 97.802,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 97.8535,
+     "endS": 97.905,
+     "palign": 0
+    },
+    {
+     "word": "family ",
+     "success": true,
+     "startS": 97.97133,
+     "endS": 98.303,
+     "palign": 0
+    },
+    {
+     "word": "baked ",
+     "success": true,
+     "startS": 98.331,
+     "endS": 98.521,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 98.5835,
+     "endS": 98.646,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 98.672,
+     "endS": 98.75,
+     "palign": 0
+    },
+    {
+     "word": "chest — ",
+     "success": true,
+     "startS": 98.8204,
+     "endS": 99.17925,
+     "palign": 0
+    },
+    {
+     "word": "living ",
+     "success": true,
+     "startS": 99.21788,
+     "endS": 99.411,
+     "palign": 0
+    },
+    {
+     "word": "proof ",
+     "success": true,
+     "startS": 99.478,
+     "endS": 99.746,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 99.811,
+     "endS": 99.876,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 99.90125,
+     "endS": 99.977,
+     "palign": 0
+    },
+    {
+     "word": "sin\n",
+     "success": true,
+     "startS": 100.07833,
+     "endS": 100.475,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 100.532,
+     "endS": 100.646,
+     "palign": 0
+    },
+    {
+     "word": "ran ",
+     "success": true,
+     "startS": 100.72833,
+     "endS": 100.938,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 100.997,
+     "endS": 101.056,
+     "palign": 0
+    },
+    {
+     "word": "Midgard ",
+     "success": true,
+     "startS": 101.10767,
+     "endS": 101.49,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 101.5665,
+     "endS": 101.643,
+     "palign": 0
+    },
+    {
+     "word": "dodge ",
+     "success": true,
+     "startS": 101.66333,
+     "endS": 101.826,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 101.843,
+     "endS": 101.995,
+     "palign": 0
+    },
+    {
+     "word": "ghosts, ",
+     "success": true,
+     "startS": 102.075,
+     "endS": 102.56075,
+     "palign": 0
+    },
+    {
+     "word": "pretending ",
+     "success": true,
+     "startS": 102.6175,
+     "endS": 102.958,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 103.00333,
+     "endS": 103.094,
+     "palign": 0
+    },
+    {
+     "word": "found ",
+     "success": true,
+     "startS": 103.1576,
+     "endS": 103.412,
+     "palign": 0
+    },
+    {
+     "word": "peace\n",
+     "success": true,
+     "startS": 103.4806,
+     "endS": 103.755,
+     "palign": 0
+    },
+    {
+     "word": "I'm ",
+     "success": true,
+     "startS": 103.763,
+     "endS": 103.931,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 103.959,
+     "endS": 104.015,
+     "palign": 0
+    },
+    {
+     "word": "Spartan ",
+     "success": true,
+     "startS": 104.0655,
+     "endS": 104.484,
+     "palign": 0
+    },
+    {
+     "word": "who ",
+     "success": true,
+     "startS": 104.547,
+     "endS": 104.673,
+     "palign": 0
+    },
+    {
+     "word": "holds ",
+     "success": true,
+     "startS": 104.7368,
+     "endS": 104.992,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 105.021,
+     "endS": 105.079,
+     "palign": 0
+    },
+    {
+     "word": "line — ",
+     "success": true,
+     "startS": 105.159,
+     "endS": 105.4996,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 105.5174,
+     "endS": 105.553,
+     "palign": 0
+    },
+    {
+     "word": "fled ",
+     "success": true,
+     "startS": 105.593,
+     "endS": 105.87,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 105.92,
+     "endS": 106.07,
+     "palign": 0
+    },
+    {
+     "word": "burning ",
+     "success": true,
+     "startS": 106.11157,
+     "endS": 106.361,
+     "palign": 0
+    },
+    {
+     "word": "Greece\n\n",
+     "success": true,
+     "startS": 106.42267,
+     "endS": 106.72997,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3B (Final Clash - Kratos): Fused war drums and heavy 808 sub-bass, booming furious chest-resonance counter]\nI ",
+     "success": true,
+     "startS": 106.73093,
+     "endS": 106.842,
+     "palign": 0
+    },
+    {
+     "word": "broke ",
+     "success": true,
+     "startS": 106.8998,
+     "endS": 107.131,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 107.14367,
+     "endS": 107.169,
+     "palign": 0
+    },
+    {
+     "word": "chains ",
+     "success": true,
+     "startS": 107.22717,
+     "endS": 107.518,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 107.589,
+     "endS": 107.66,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 107.699,
+     "endS": 107.777,
+     "palign": 0
+    },
+    {
+     "word": "gods ",
+     "success": true,
+     "startS": 107.8565,
+     "endS": 108.095,
+     "palign": 0
+    },
+    {
+     "word": "themselves — ",
+     "success": true,
+     "startS": 108.1367,
+     "endS": 108.65933,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 108.733,
+     "endS": 108.748,
+     "palign": 0
+    },
+    {
+     "word": "own ",
+     "success": true,
+     "startS": 108.823,
+     "endS": 108.973,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 109.00367,
+     "endS": 109.065,
+     "palign": 0
+    },
+    {
+     "word": "scars ",
+     "success": true,
+     "startS": 109.14225,
+     "endS": 109.4,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 109.534,
+     "endS": 109.578,
+     "palign": 0
+    },
+    {
+     "word": "bear\n",
+     "success": true,
+     "startS": 109.62275,
+     "endS": 109.757,
+     "palign": 0
+    },
+    {
+     "word": "You're ",
+     "success": true,
+     "startS": 109.75933,
+     "endS": 109.94,
+     "palign": 0
+    },
+    {
+     "word": "owned ",
+     "success": true,
+     "startS": 109.95067,
+     "endS": 110.179,
+     "palign": 0
+    },
+    {
+     "word": "by ",
+     "success": true,
+     "startS": 110.2305,
+     "endS": 110.282,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 110.31867,
+     "endS": 110.392,
+     "palign": 0
+    },
+    {
+     "word": "U.",
+     "success": true,
+     "startS": 110.53,
+     "endS": 110.53,
+     "palign": 0
+    },
+    {
+     "word": "N.",
+     "success": true,
+     "startS": 110.68,
+     "endS": 110.68,
+     "palign": 0
+    },
+    {
+     "word": "S.",
+     "success": true,
+     "startS": 110.844,
+     "endS": 110.844,
+     "palign": 0
+    },
+    {
+     "word": "C. — ",
+     "success": true,
+     "startS": 111.2,
+     "endS": 111.38857,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 111.42143,
+     "endS": 111.52,
+     "palign": 0
+    },
+    {
+     "word": "hardware ",
+     "success": true,
+     "startS": 111.5725,
+     "endS": 112.048,
+     "palign": 0
+    },
+    {
+     "word": "they ",
+     "success": true,
+     "startS": 112.14775,
+     "endS": 112.447,
+     "palign": 0
+    },
+    {
+     "word": "repair\n",
+     "success": true,
+     "startS": 112.48275,
+     "endS": 112.82,
+     "palign": 0
+    },
+    {
+     "word": "Real ",
+     "success": true,
+     "startS": 112.857,
+     "endS": 112.968,
+     "palign": 0
+    },
+    {
+     "word": "Spartans ",
+     "success": true,
+     "startS": 113.044,
+     "endS": 113.432,
+     "palign": 0
+    },
+    {
+     "word": "bleed ",
+     "success": true,
+     "startS": 113.4752,
+     "endS": 113.648,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 113.715,
+     "endS": 113.782,
+     "palign": 0
+    },
+    {
+     "word": "Laconia's ",
+     "success": true,
+     "startS": 113.7945,
+     "endS": 114.296,
+     "palign": 0
+    },
+    {
+     "word": "dust, ",
+     "success": true,
+     "startS": 114.3385,
+     "endS": 114.51225,
+     "palign": 0
+    },
+    {
+     "word": "not ",
+     "success": true,
+     "startS": 114.5585,
+     "endS": 114.651,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 114.732,
+     "endS": 114.834,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 114.937,
+     "endS": 114.937,
+     "palign": 0
+    },
+    {
+     "word": "scientist's ",
+     "success": true,
+     "startS": 114.99867,
+     "endS": 115.542,
+     "palign": 0
+    },
+    {
+     "word": "wire\n",
+     "success": true,
+     "startS": 115.62425,
+     "endS": 115.948,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 116.108,
+     "endS": 116.108,
+     "palign": 0
+    },
+    {
+     "word": "shattered ",
+     "success": true,
+     "startS": 116.14522,
+     "endS": 116.443,
+     "palign": 0
+    },
+    {
+     "word": "Fate ",
+     "success": true,
+     "startS": 116.506,
+     "endS": 116.695,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 116.73967,
+     "endS": 116.829,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 116.851,
+     "endS": 116.895,
+     "palign": 0
+    },
+    {
+     "word": "Sisters' ",
+     "success": true,
+     "startS": 116.92783,
+     "endS": 117.272,
+     "palign": 0
+    },
+    {
+     "word": "loom — ",
+     "success": true,
+     "startS": 117.314,
+     "endS": 117.6054,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 117.6366,
+     "endS": 117.699,
+     "palign": 0
+    },
+    {
+     "word": "follow ",
+     "success": true,
+     "startS": 117.764,
+     "endS": 118.089,
+     "palign": 0
+    },
+    {
+     "word": "orders ",
+     "success": true,
+     "startS": 118.142,
+     "endS": 118.44,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 118.49967,
+     "endS": 118.619,
+     "palign": 0
+    },
+    {
+     "word": "hire\n\n",
+     "success": true,
+     "startS": 118.809,
+     "endS": 119.02973,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3C (Final Clash - Master Chief): Stoic resolute guardian baritone over swelling synth and drums]\nNo ",
+     "success": true,
+     "startS": 119.03146,
+     "endS": 119.229,
+     "palign": 0
+    },
+    {
+     "word": "backup ",
+     "success": true,
+     "startS": 119.28725,
+     "endS": 119.667,
+     "palign": 0
+    },
+    {
+     "word": "left, ",
+     "success": true,
+     "startS": 119.747,
+     "endS": 120.0864,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 120.1308,
+     "endS": 120.264,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 120.351,
+     "endS": 120.351,
+     "palign": 0
+    },
+    {
+     "word": "single ",
+     "success": true,
+     "startS": 120.42233,
+     "endS": 120.779,
+     "palign": 0
+    },
+    {
+     "word": "round — ",
+     "success": true,
+     "startS": 120.859,
+     "endS": 122.94733,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 122.983,
+     "endS": 122.983,
+     "palign": 0
+    },
+    {
+     "word": "stood ",
+     "success": true,
+     "startS": 123.0504,
+     "endS": 123.32,
+     "palign": 0
+    },
+    {
+     "word": "when ",
+     "success": true,
+     "startS": 123.3575,
+     "endS": 123.47,
+     "palign": 0
+    },
+    {
+     "word": "worlds ",
+     "success": true,
+     "startS": 123.51817,
+     "endS": 123.759,
+     "palign": 0
+    },
+    {
+     "word": "would ",
+     "success": true,
+     "startS": 123.7956,
+     "endS": 123.942,
+     "palign": 0
+    },
+    {
+     "word": "fall\n",
+     "success": true,
+     "startS": 124.022,
+     "endS": 125.637,
+     "palign": 0
+    },
+    {
+     "word": "Protector ",
+     "success": true,
+     "startS": 125.68943,
+     "endS": 126.201,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 126.2915,
+     "endS": 126.382,
+     "palign": 0
+    },
+    {
+     "word": "humanity — ",
+     "success": true,
+     "startS": 126.47975,
+     "endS": 128.80233,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 128.844,
+     "endS": 128.844,
+     "palign": 0
+    },
+    {
+     "word": "fought ",
+     "success": true,
+     "startS": 128.924,
+     "endS": 129.501,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 129.552,
+     "endS": 129.603,
+     "palign": 0
+    },
+    {
+     "word": "save ",
+     "success": true,
+     "startS": 129.7055,
+     "endS": 130.015,
+     "palign": 0
+    },
+    {
+     "word": "them ",
+     "success": true,
+     "startS": 130.0495,
+     "endS": 130.153,
+     "palign": 0
+    },
+    {
+     "word": "all\n\n",
+     "success": true,
+     "startS": 130.23833,
+     "endS": 131.4706,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3D (Final Clash - Kratos): Thundering fate-breaker roar over heavy brass and war drums]\nYou ",
+     "success": true,
+     "startS": 131.47219,
+     "endS": 131.627,
+     "palign": 0
+    },
+    {
+     "word": "guard ",
+     "success": true,
+     "startS": 131.6782,
+     "endS": 131.883,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 131.915,
+     "endS": 131.979,
+     "palign": 0
+    },
+    {
+     "word": "cage ",
+     "success": true,
+     "startS": 132.0425,
+     "endS": 132.233,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 132.3015,
+     "endS": 132.37,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 132.45,
+     "endS": 132.489,
+     "palign": 0
+    },
+    {
+     "word": "dying ",
+     "success": true,
+     "startS": 132.5446,
+     "endS": 132.767,
+     "palign": 0
+    },
+    {
+     "word": "fleet, ",
+     "success": true,
+     "startS": 132.803,
+     "endS": 133.11333,
+     "palign": 0
+    },
+    {
+     "word": "obedient ",
+     "success": true,
+     "startS": 133.14367,
+     "endS": 133.851,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 133.932,
+     "endS": 134.013,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 134.066,
+     "endS": 134.172,
+     "palign": 0
+    },
+    {
+     "word": "end\n",
+     "success": true,
+     "startS": 134.25233,
+     "endS": 134.574,
+     "palign": 0
+    },
+    {
+     "word": "Breaker ",
+     "success": true,
+     "startS": 134.6158,
+     "endS": 134.979,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 135.0375,
+     "endS": 135.096,
+     "palign": 0
+    },
+    {
+     "word": "fate ",
+     "success": true,
+     "startS": 135.16075,
+     "endS": 135.355,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 135.404,
+     "endS": 135.502,
+     "palign": 0
+    },
+    {
+     "word": "prophecy — ",
+     "success": true,
+     "startS": 135.56733,
+     "endS": 136.2345,
+     "palign": 0
+    },
+    {
+     "word": "no ",
+     "success": true,
+     "startS": 136.27975,
+     "endS": 136.325,
+     "palign": 0
+    },
+    {
+     "word": "knee ",
+     "success": true,
+     "startS": 136.39175,
+     "endS": 136.592,
+     "palign": 0
+    },
+    {
+     "word": "will ",
+     "success": true,
+     "startS": 136.6425,
+     "endS": 136.794,
+     "palign": 0
+    },
+    {
+     "word": "ever ",
+     "success": true,
+     "startS": 136.874,
+     "endS": 137.146,
+     "palign": 0
+    },
+    {
+     "word": "bend\n\n",
+     "success": true,
+     "startS": 137.226,
+     "endS": 137.50218,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3E (Final Clash - Master Chief): Climax stoic finisher over roaring 808 synth]\nGive ",
+     "success": true,
+     "startS": 137.50335,
+     "endS": 137.608,
+     "palign": 0
+    },
+    {
+     "word": "me ",
+     "success": true,
+     "startS": 137.6805,
+     "endS": 137.753,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 137.854,
+     "endS": 137.865,
+     "palign": 0
+    },
+    {
+     "word": "weapon ",
+     "success": true,
+     "startS": 137.9235,
+     "endS": 138.216,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 138.24633,
+     "endS": 138.307,
+     "palign": 0
+    },
+    {
+     "word": "point ",
+     "success": true,
+     "startS": 138.351,
+     "endS": 138.527,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 138.6,
+     "endS": 138.673,
+     "palign": 0
+    },
+    {
+     "word": "hell — ",
+     "success": true,
+     "startS": 138.753,
+     "endS": 139.04967,
+     "palign": 0
+    },
+    {
+     "word": "I'll ",
+     "success": true,
+     "startS": 139.052,
+     "endS": 139.248,
+     "palign": 0
+    },
+    {
+     "word": "finish ",
+     "success": true,
+     "startS": 139.31567,
+     "endS": 139.654,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 139.67567,
+     "endS": 139.719,
+     "palign": 0
+    },
+    {
+     "word": "fight ",
+     "success": true,
+     "startS": 139.7894,
+     "endS": 140.071,
+     "palign": 0
+    },
+    {
+     "word": "alone\n",
+     "success": true,
+     "startS": 140.1364,
+     "endS": 140.398,
+     "palign": 0
+    },
+    {
+     "word": "One ",
+     "success": true,
+     "startS": 140.43833,
+     "endS": 140.519,
+     "palign": 0
+    },
+    {
+     "word": "Spartan ",
+     "success": true,
+     "startS": 140.5615,
+     "endS": 140.958,
+     "palign": 0
+    },
+    {
+     "word": "standing ",
+     "success": true,
+     "startS": 141.00625,
+     "endS": 141.344,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 141.42333,
+     "endS": 141.582,
+     "palign": 0
+    },
+    {
+     "word": "humankind — ",
+     "success": true,
+     "startS": 141.71733,
+     "endS": 142.463,
+     "palign": 0
+    },
+    {
+     "word": "unbreakable ",
+     "success": true,
+     "startS": 142.477,
+     "endS": 143.071,
+     "palign": 0
+    },
+    {
+     "word": "flesh ",
+     "success": true,
+     "startS": 143.1274,
+     "endS": 143.353,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 143.412,
+     "endS": 143.53,
+     "palign": 0
+    },
+    {
+     "word": "bone\n\n",
+     "success": true,
+     "startS": 143.61,
+     "endS": 143.95731,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3F (Final Clash - Kratos): Maximum intensity deep gravelly knockout bar over Nordic choir and bass drop]\nYour ",
+     "success": true,
+     "startS": 143.95862,
+     "endS": 144.109,
+     "palign": 0
+    },
+    {
+     "word": "fight ",
+     "success": true,
+     "startS": 144.1614,
+     "endS": 144.371,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 144.4505,
+     "endS": 144.53,
+     "palign": 0
+    },
+    {
+     "word": "over, ",
+     "success": true,
+     "startS": 144.61,
+     "endS": 144.97025,
+     "palign": 0
+    },
+    {
+     "word": "tin ",
+     "success": true,
+     "startS": 145.0365,
+     "endS": 145.169,
+     "palign": 0
+    },
+    {
+     "word": "soldier — ",
+     "success": true,
+     "startS": 145.24086,
+     "endS": 145.78343,
+     "palign": 0
+    },
+    {
+     "word": "Chaos ",
+     "success": true,
+     "startS": 145.83914,
+     "endS": 146.062,
+     "palign": 0
+    },
+    {
+     "word": "burns ",
+     "success": true,
+     "startS": 146.1074,
+     "endS": 146.289,
+     "palign": 0
+    },
+    {
+     "word": "through ",
+     "success": true,
+     "startS": 146.31471,
+     "endS": 146.469,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 146.50475,
+     "endS": 146.612,
+     "palign": 0
+    },
+    {
+     "word": "core\n",
+     "success": true,
+     "startS": 146.69625,
+     "endS": 147.073,
+     "palign": 0
+    },
+    {
+     "word": "Only ",
+     "success": true,
+     "startS": 147.14975,
+     "endS": 147.38,
+     "palign": 0
+    },
+    {
+     "word": "one ",
+     "success": true,
+     "startS": 147.433,
+     "endS": 147.539,
+     "palign": 0
+    },
+    {
+     "word": "Spartan ",
+     "success": true,
+     "startS": 147.5915,
+     "endS": 147.993,
+     "palign": 0
+    },
+    {
+     "word": "claims ",
+     "success": true,
+     "startS": 148.0232,
+     "endS": 148.307,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 148.31667,
+     "endS": 148.336,
+     "palign": 0
+    },
+    {
+     "word": "crown — ",
+     "success": true,
+     "startS": 148.416,
+     "endS": 148.9504,
+     "palign": 0
+    },
+    {
+     "word": "bow ",
+     "success": true,
+     "startS": 149.0256,
+     "endS": 149.176,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 149.275,
+     "endS": 149.382,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 149.42167,
+     "endS": 149.501,
+     "palign": 0
+    },
+    {
+     "word": "God ",
+     "success": true,
+     "startS": 149.58133,
+     "endS": 149.742,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 149.808,
+     "endS": 149.874,
+     "palign": 0
+    },
+    {
+     "word": "War!\n\n",
+     "success": true,
+     "startS": 149.955,
+     "endS": 150.22395,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3F (Final Clash - Kratos): Maximum intensity deep gravelly knockout bar over Nordic choir and bass drop]\nYour ",
+     "success": true,
+     "startS": 150.22492,
+     "endS": 150.337,
+     "palign": 0
+    },
+    {
+     "word": "fight ",
+     "success": true,
+     "startS": 150.386,
+     "endS": 150.582,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 150.66,
+     "endS": 150.738,
+     "palign": 0
+    },
+    {
+     "word": "over, ",
+     "success": true,
+     "startS": 150.818,
+     "endS": 151.191,
+     "palign": 0
+    },
+    {
+     "word": "tin ",
+     "success": true,
+     "startS": 151.261,
+     "endS": 151.401,
+     "palign": 0
+    },
+    {
+     "word": "soldier — ",
+     "success": true,
+     "startS": 151.472,
+     "endS": 152.00257,
+     "palign": 0
+    },
+    {
+     "word": "Chaos ",
+     "success": true,
+     "startS": 152.05486,
+     "endS": 152.264,
+     "palign": 0
+    },
+    {
+     "word": "burns ",
+     "success": true,
+     "startS": 152.3132,
+     "endS": 152.51,
+     "palign": 0
+    },
+    {
+     "word": "through ",
+     "success": true,
+     "startS": 152.53686,
+     "endS": 152.698,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 152.73075,
+     "endS": 152.829,
+     "palign": 0
+    },
+    {
+     "word": "core\n",
+     "success": true,
+     "startS": 152.92425,
+     "endS": 153.275,
+     "palign": 0
+    },
+    {
+     "word": "Only ",
+     "success": true,
+     "startS": 153.3525,
+     "endS": 153.585,
+     "palign": 0
+    },
+    {
+     "word": "one ",
+     "success": true,
+     "startS": 153.64867,
+     "endS": 153.776,
+     "palign": 0
+    },
+    {
+     "word": "Spartan ",
+     "success": true,
+     "startS": 153.8325,
+     "endS": 154.205,
+     "palign": 0
+    },
+    {
+     "word": "claims ",
+     "success": true,
+     "startS": 154.2432,
+     "endS": 154.487,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 154.51333,
+     "endS": 154.566,
+     "palign": 0
+    },
+    {
+     "word": "crown — ",
+     "success": true,
+     "startS": 154.6608,
+     "endS": 155.1736,
+     "palign": 0
+    },
+    {
+     "word": "bow ",
+     "success": true,
+     "startS": 155.2404,
+     "endS": 155.376,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 155.495,
+     "endS": 155.622,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 155.661,
+     "endS": 155.739,
+     "palign": 0
+    },
+    {
+     "word": "God ",
+     "success": true,
+     "startS": 155.82333,
+     "endS": 155.992,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 156.0885,
+     "endS": 156.185,
+     "palign": 0
+    },
+    {
+     "word": "War!\n\n",
+     "success": true,
+     "startS": 156.31733,
+     "endS": 156.87602,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: Blades of Chaos chain slam, Mjolnir shield power-down whine, epic Nordic choir and fading 808 boom]\nSPARTAN! ",
+     "success": true,
+     "startS": 156.87703,
+     "endS": 158.434,
+     "palign": 0
+    },
+    {
+     "word": "SPARTAN!\n\n",
+     "success": true,
+     "startS": 158.472,
+     "endS": 159.91096,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: Blades of Chaos chain slam, Mjolnir shield power-down whine, epic Nordic choir and fading 808 boom]\nSPARTAN! ",
+     "success": true,
+     "startS": 159.91195,
+     "endS": 161.4815,
+     "palign": 0
+    },
+    {
+     "word": "SPARTAN!\n\n",
+     "success": true,
+     "startS": 161.531,
+     "endS": 164.63611,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: Blades of Chaos chain slam, Mjolnir shield power-down whine, epic Nordic choir and fading 808 boom]\nSPARTAN! ",
+     "success": true,
+     "startS": 164.63716,
+     "endS": 166.184,
+     "palign": 0
+    },
+    {
+     "word": "SPARTAN!\n\n[",
+     "success": true,
+     "startS": 166.221,
+     "endS": 167.61642,
+     "palign": 0
+    },
+    {
+     "word": "End]\n\n\n",
+     "success": true,
+     "startS": 167.7435,
+     "endS": 168.506,
+     "palign": 0
+    }
+   ]
+  },
+  {
+   "id": "d4fa6741-c936-4140-a7fa-bb818f867caf",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/d4fa6741-c936-4140-a7fa-bb818f867caf.mp3",
+   "duration": 194.0,
+   "title": "Kratos_vs_Master_Chief",
+   "local_mp3": "workflows/05_ancient_rap_battle/episodes/kratos-vs-master-chief/work/suno_v2.mp3",
+   "alignedWords": [
+    {
+     "word": "[Intro: ",
+     "success": true,
+     "startS": 10.229,
+     "endS": 10.23219,
+     "palign": 0
+    },
+    {
+     "word": "UNSC ",
+     "success": true,
+     "startS": 10.23265,
+     "endS": 10.23448,
+     "palign": 0
+    },
+    {
+     "word": "slipspace ",
+     "success": true,
+     "startS": 10.23493,
+     "endS": 10.23904,
+     "palign": 0
+    },
+    {
+     "word": "static, ",
+     "success": true,
+     "startS": 10.2395,
+     "endS": 10.24269,
+     "palign": 0
+    },
+    {
+     "word": "Mjolnir ",
+     "success": true,
+     "startS": 10.24315,
+     "endS": 10.24634,
+     "palign": 0
+    },
+    {
+     "word": "energy ",
+     "success": true,
+     "startS": 10.2468,
+     "endS": 10.24954,
+     "palign": 0
+    },
+    {
+     "word": "shield ",
+     "success": true,
+     "startS": 10.24999,
+     "endS": 10.25273,
+     "palign": 0
+    },
+    {
+     "word": "recharge ",
+     "success": true,
+     "startS": 10.25319,
+     "endS": 10.25684,
+     "palign": 0
+    },
+    {
+     "word": "hum, ",
+     "success": true,
+     "startS": 10.25729,
+     "endS": 10.25912,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 10.25958,
+     "endS": 10.26094,
+     "palign": 0
+    },
+    {
+     "word": "heavy 808 ",
+     "success": true,
+     "startS": 10.2614,
+     "endS": 10.26551,
+     "palign": 0
+    },
+    {
+     "word": "synth ",
+     "success": true,
+     "startS": 10.26596,
+     "endS": 10.26825,
+     "palign": 0
+    },
+    {
+     "word": "drop]\n\n\n",
+     "success": true,
+     "startS": 10.2687,
+     "endS": 10.2719,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 1 (Round 1 - Master Chief): Ice-cold robotic precision male rapper over heavy 808 sub-bass, sci-fi synth pulse, and mechanical shield-charge clicks]\nSpartan ",
+     "success": true,
+     "startS": 10.27235,
+     "endS": 10.785,
+     "palign": 0
+    },
+    {
+     "word": "one-one-seven — ",
+     "success": true,
+     "startS": 10.865,
+     "endS": 20.26033,
+     "palign": 0
+    },
+    {
+     "word": "Mjolnir ",
+     "success": true,
+     "startS": 20.303,
+     "endS": 21.919,
+     "palign": 0
+    },
+    {
+     "word": "locked, ",
+     "success": true,
+     "startS": 21.95933,
+     "endS": 22.20957,
+     "palign": 0
+    },
+    {
+     "word": "target ",
+     "success": true,
+     "startS": 22.25814,
+     "endS": 22.501,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 22.542,
+     "endS": 22.583,
+     "palign": 0
+    },
+    {
+     "word": "frame\n",
+     "success": true,
+     "startS": 22.663,
+     "endS": 23.016,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 23.063,
+     "endS": 23.157,
+     "palign": 0
+    },
+    {
+     "word": "burned ",
+     "success": true,
+     "startS": 23.18217,
+     "endS": 23.308,
+     "palign": 0
+    },
+    {
+     "word": "down ",
+     "success": true,
+     "startS": 23.338,
+     "endS": 23.428,
+     "palign": 0
+    },
+    {
+     "word": "whole ",
+     "success": true,
+     "startS": 23.4752,
+     "endS": 23.664,
+     "palign": 0
+    },
+    {
+     "word": "Olympus ",
+     "success": true,
+     "startS": 23.717,
+     "endS": 24.163,
+     "palign": 0
+    },
+    {
+     "word": "over ",
+     "success": true,
+     "startS": 24.2205,
+     "endS": 24.393,
+     "palign": 0
+    },
+    {
+     "word": "rage ",
+     "success": true,
+     "startS": 24.4535,
+     "endS": 24.635,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 24.686,
+     "endS": 24.788,
+     "palign": 0
+    },
+    {
+     "word": "couldn't ",
+     "success": true,
+     "startS": 24.79933,
+     "endS": 25.061,
+     "palign": 0
+    },
+    {
+     "word": "tame\n",
+     "success": true,
+     "startS": 25.135,
+     "endS": 25.357,
+     "palign": 0
+    },
+    {
+     "word": "Gray ",
+     "success": true,
+     "startS": 25.40625,
+     "endS": 25.554,
+     "palign": 0
+    },
+    {
+     "word": "beard ",
+     "success": true,
+     "startS": 25.5945,
+     "endS": 25.705,
+     "palign": 0
+    },
+    {
+     "word": "yelling \"",
+     "success": true,
+     "startS": 25.75429,
+     "endS": 26.12975,
+     "palign": 0
+    },
+    {
+     "word": "BOY!\" ",
+     "success": true,
+     "startS": 26.2095,
+     "endS": 26.43671,
+     "palign": 0
+    },
+    {
+     "word": "again — ",
+     "success": true,
+     "startS": 26.47057,
+     "endS": 26.71133,
+     "palign": 0
+    },
+    {
+     "word": "same ",
+     "success": true,
+     "startS": 26.764,
+     "endS": 26.922,
+     "palign": 0
+    },
+    {
+     "word": "tantrum, ",
+     "success": true,
+     "startS": 26.96825,
+     "endS": 27.3754,
+     "palign": 0
+    },
+    {
+     "word": "different ",
+     "success": true,
+     "startS": 27.4018,
+     "endS": 27.613,
+     "palign": 0
+    },
+    {
+     "word": "mold\n",
+     "success": true,
+     "startS": 27.693,
+     "endS": 27.942,
+     "palign": 0
+    },
+    {
+     "word": "Rowing ",
+     "success": true,
+     "startS": 27.994,
+     "endS": 28.264,
+     "palign": 0
+    },
+    {
+     "word": "boats ",
+     "success": true,
+     "startS": 28.306,
+     "endS": 28.45,
+     "palign": 0
+    },
+    {
+     "word": "with ",
+     "success": true,
+     "startS": 28.4695,
+     "endS": 28.528,
+     "palign": 0
+    },
+    {
+     "word": "Mimir's ",
+     "success": true,
+     "startS": 28.5435,
+     "endS": 28.924,
+     "palign": 0
+    },
+    {
+     "word": "head — ",
+     "success": true,
+     "startS": 28.985,
+     "endS": 29.216,
+     "palign": 0
+    },
+    {
+     "word": "that ",
+     "success": true,
+     "startS": 29.24,
+     "endS": 29.312,
+     "palign": 0
+    },
+    {
+     "word": "dad ",
+     "success": true,
+     "startS": 29.392,
+     "endS": 29.569,
+     "palign": 0
+    },
+    {
+     "word": "act's ",
+     "success": true,
+     "startS": 29.59,
+     "endS": 29.832,
+     "palign": 0
+    },
+    {
+     "word": "getting ",
+     "success": true,
+     "startS": 29.87929,
+     "endS": 30.163,
+     "palign": 0
+    },
+    {
+     "word": "old\n",
+     "success": true,
+     "startS": 30.243,
+     "endS": 30.513,
+     "palign": 0
+    },
+    {
+     "word": "Mjolnir ",
+     "success": true,
+     "startS": 30.531,
+     "endS": 30.838,
+     "palign": 0
+    },
+    {
+     "word": "armor ",
+     "success": true,
+     "startS": 30.9072,
+     "endS": 31.184,
+     "palign": 0
+    },
+    {
+     "word": "eats ",
+     "success": true,
+     "startS": 31.18667,
+     "endS": 31.289,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 31.31875,
+     "endS": 31.408,
+     "palign": 0
+    },
+    {
+     "word": "blades — ",
+     "success": true,
+     "startS": 31.4505,
+     "endS": 31.866,
+     "palign": 0
+    },
+    {
+     "word": "energy ",
+     "success": true,
+     "startS": 31.919,
+     "endS": 32.184,
+     "palign": 0
+    },
+    {
+     "word": "shields ",
+     "success": true,
+     "startS": 32.22367,
+     "endS": 32.569,
+     "palign": 0
+    },
+    {
+     "word": "block ",
+     "success": true,
+     "startS": 32.613,
+     "endS": 32.789,
+     "palign": 0
+    },
+    {
+     "word": "every ",
+     "success": true,
+     "startS": 32.828,
+     "endS": 32.984,
+     "palign": 0
+    },
+    {
+     "word": "blow\n",
+     "success": true,
+     "startS": 33.04925,
+     "endS": 33.245,
+     "palign": 0
+    },
+    {
+     "word": "My ",
+     "success": true,
+     "startS": 33.3045,
+     "endS": 33.364,
+     "palign": 0
+    },
+    {
+     "word": "M-A-five ",
+     "success": true,
+     "startS": 33.5,
+     "endS": 33.919,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 33.94333,
+     "endS": 33.992,
+     "palign": 0
+    },
+    {
+     "word": "plasma ",
+     "success": true,
+     "startS": 34.0025,
+     "endS": 34.304,
+     "palign": 0
+    },
+    {
+     "word": "blade ",
+     "success": true,
+     "startS": 34.3458,
+     "endS": 34.513,
+     "palign": 0
+    },
+    {
+     "word": "lay ",
+     "success": true,
+     "startS": 34.56867,
+     "endS": 34.68,
+     "palign": 0
+    },
+    {
+     "word": "ancient ",
+     "success": true,
+     "startS": 34.72171,
+     "endS": 34.972,
+     "palign": 0
+    },
+    {
+     "word": "gods ",
+     "success": true,
+     "startS": 35.03125,
+     "endS": 35.209,
+     "palign": 0
+    },
+    {
+     "word": "below\n",
+     "success": true,
+     "startS": 35.2802,
+     "endS": 35.565,
+     "palign": 0
+    },
+    {
+     "word": "Dropped ",
+     "success": true,
+     "startS": 35.58686,
+     "endS": 35.718,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 35.76825,
+     "endS": 35.919,
+     "palign": 0
+    },
+    {
+     "word": "orbit, ",
+     "success": true,
+     "startS": 36.006,
+     "endS": 36.2912,
+     "palign": 0
+    },
+    {
+     "word": "blew ",
+     "success": true,
+     "startS": 36.3274,
+     "endS": 36.436,
+     "palign": 0
+    },
+    {
+     "word": "up ",
+     "success": true,
+     "startS": 36.4885,
+     "endS": 36.541,
+     "palign": 0
+    },
+    {
+     "word": "Halo, ",
+     "success": true,
+     "startS": 36.621,
+     "endS": 36.851,
+     "palign": 0
+    },
+    {
+     "word": "saved ",
+     "success": true,
+     "startS": 36.892,
+     "endS": 37.056,
+     "palign": 0
+    },
+    {
+     "word": "humanity ",
+     "success": true,
+     "startS": 37.12937,
+     "endS": 37.643,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 37.70375,
+     "endS": 37.886,
+     "palign": 0
+    },
+    {
+     "word": "doom\n",
+     "success": true,
+     "startS": 37.95125,
+     "endS": 38.147,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 38.19533,
+     "endS": 38.292,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 38.31,
+     "endS": 38.364,
+     "palign": 0
+    },
+    {
+     "word": "mashed ",
+     "success": true,
+     "startS": 38.41233,
+     "endS": 38.671,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 38.741,
+     "endS": 38.741,
+     "palign": 0
+    },
+    {
+     "word": "circle ",
+     "success": true,
+     "startS": 38.80667,
+     "endS": 39.135,
+     "palign": 0
+    },
+    {
+     "word": "button, ",
+     "success": true,
+     "startS": 39.18283,
+     "endS": 39.45587,
+     "palign": 0
+    },
+    {
+     "word": "leaving ",
+     "success": true,
+     "startS": 39.48975,
+     "endS": 39.693,
+     "palign": 0
+    },
+    {
+     "word": "Greece ",
+     "success": true,
+     "startS": 39.70533,
+     "endS": 39.992,
+     "palign": 0
+    },
+    {
+     "word": "inside ",
+     "success": true,
+     "startS": 40.0385,
+     "endS": 40.271,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 40.351,
+     "endS": 40.426,
+     "palign": 0
+    },
+    {
+     "word": "tomb\n\n",
+     "success": true,
+     "startS": 40.506,
+     "endS": 41.3866,
+     "palign": 0
+    },
+    {
+     "word": "[Beat Switch: Mjolnir shield overload shatter, colossal Nordic war horn blast, heavy Taiko and Spartan war-drum drop]\nOOOH!\n\n",
+     "success": true,
+     "startS": 41.3892,
+     "endS": 43.06404,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 2 (Round 2 - Kratos): Ultra-deep chest-resonant gravelly bass male rapper, pounding Nordic war drums, heavy low brass, escalating battle rage]\nStolen ",
+     "success": true,
+     "startS": 43.06756,
+     "endS": 43.646,
+     "palign": 0
+    },
+    {
+     "word": "at ",
+     "success": true,
+     "startS": 43.717,
+     "endS": 43.788,
+     "palign": 0
+    },
+    {
+     "word": "six ",
+     "success": true,
+     "startS": 43.93267,
+     "endS": 44.222,
+     "palign": 0
+    },
+    {
+     "word": "by ",
+     "success": true,
+     "startS": 44.302,
+     "endS": 44.444,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 44.573,
+     "endS": 44.59,
+     "palign": 0
+    },
+    {
+     "word": "lab ",
+     "success": true,
+     "startS": 44.65933,
+     "endS": 44.798,
+     "palign": 0
+    },
+    {
+     "word": "coat — ",
+     "success": true,
+     "startS": 44.87,
+     "endS": 45.11833,
+     "palign": 0
+    },
+    {
+     "word": "stripped ",
+     "success": true,
+     "startS": 45.1345,
+     "endS": 45.383,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 45.449,
+     "endS": 45.515,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 45.55175,
+     "endS": 45.662,
+     "palign": 0
+    },
+    {
+     "word": "name ",
+     "success": true,
+     "startS": 45.73125,
+     "endS": 45.939,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 45.96567,
+     "endS": 46.019,
+     "palign": 0
+    },
+    {
+     "word": "soul\n",
+     "success": true,
+     "startS": 46.134,
+     "endS": 48.24,
+     "palign": 0
+    },
+    {
+     "word": "Locked ",
+     "success": true,
+     "startS": 48.31283,
+     "endS": 48.677,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 48.751,
+     "endS": 48.825,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 48.973,
+     "endS": 48.989,
+     "palign": 0
+    },
+    {
+     "word": "green ",
+     "success": true,
+     "startS": 49.0462,
+     "endS": 49.275,
+     "palign": 0
+    },
+    {
+     "word": "metal ",
+     "success": true,
+     "startS": 49.3484,
+     "endS": 49.642,
+     "palign": 0
+    },
+    {
+     "word": "bucket — ",
+     "success": true,
+     "startS": 49.702,
+     "endS": 50.075,
+     "palign": 0
+    },
+    {
+     "word": "puppet ",
+     "success": true,
+     "startS": 50.0985,
+     "endS": 50.363,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 50.443,
+     "endS": 50.54,
+     "palign": 0
+    },
+    {
+     "word": "full ",
+     "success": true,
+     "startS": 50.62,
+     "endS": 51.114,
+     "palign": 0
+    },
+    {
+     "word": "control\n",
+     "success": true,
+     "startS": 51.194,
+     "endS": 53.259,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 53.309,
+     "endS": 53.409,
+     "palign": 0
+    },
+    {
+     "word": "lost ",
+     "success": true,
+     "startS": 53.48775,
+     "endS": 53.724,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 53.823,
+     "endS": 53.823,
+     "palign": 0
+    },
+    {
+     "word": "blue ",
+     "success": true,
+     "startS": 53.89175,
+     "endS": 54.098,
+     "palign": 0
+    },
+    {
+     "word": "hologram — ",
+     "success": true,
+     "startS": 54.14533,
+     "endS": 54.83933,
+     "palign": 0
+    },
+    {
+     "word": "Cortana ",
+     "success": true,
+     "startS": 54.8885,
+     "endS": 55.187,
+     "palign": 0
+    },
+    {
+     "word": "vanished ",
+     "success": true,
+     "startS": 55.23262,
+     "endS": 55.552,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 55.613,
+     "endS": 55.674,
+     "palign": 0
+    },
+    {
+     "word": "thin ",
+     "success": true,
+     "startS": 55.72475,
+     "endS": 55.877,
+     "palign": 0
+    },
+    {
+     "word": "air\n",
+     "success": true,
+     "startS": 55.957,
+     "endS": 56.168,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 56.1715,
+     "endS": 56.308,
+     "palign": 0
+    },
+    {
+     "word": "cloned \"",
+     "success": true,
+     "startS": 56.3525,
+     "endS": 56.57975,
+     "palign": 0
+    },
+    {
+     "word": "The ",
+     "success": true,
+     "startS": 56.6035,
+     "endS": 56.651,
+     "palign": 0
+    },
+    {
+     "word": "Weapon\" ",
+     "success": true,
+     "startS": 56.70183,
+     "endS": 56.993,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 57.03,
+     "endS": 57.141,
+     "palign": 0
+    },
+    {
+     "word": "her ",
+     "success": true,
+     "startS": 57.162,
+     "endS": 57.204,
+     "palign": 0
+    },
+    {
+     "word": "code ",
+     "success": true,
+     "startS": 57.26225,
+     "endS": 57.437,
+     "palign": 0
+    },
+    {
+     "word": "like ",
+     "success": true,
+     "startS": 57.475,
+     "endS": 57.589,
+     "palign": 0
+    },
+    {
+     "word": "grief ",
+     "success": true,
+     "startS": 57.6302,
+     "endS": 57.795,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 57.82325,
+     "endS": 57.908,
+     "palign": 0
+    },
+    {
+     "word": "needs ",
+     "success": true,
+     "startS": 57.9548,
+     "endS": 58.142,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 58.193,
+     "endS": 58.193,
+     "palign": 0
+    },
+    {
+     "word": "spare\n",
+     "success": true,
+     "startS": 58.2512,
+     "endS": 58.484,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 58.564,
+     "endS": 58.643,
+     "palign": 0
+    },
+    {
+     "word": "butchered ",
+     "success": true,
+     "startS": 58.66433,
+     "endS": 59.014,
+     "palign": 0
+    },
+    {
+     "word": "Olympus ",
+     "success": true,
+     "startS": 59.039,
+     "endS": 59.411,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 59.44867,
+     "endS": 59.524,
+     "palign": 0
+    },
+    {
+     "word": "broke ",
+     "success": true,
+     "startS": 59.5654,
+     "endS": 59.731,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 59.77167,
+     "endS": 59.853,
+     "palign": 0
+    },
+    {
+     "word": "Nine — ",
+     "success": true,
+     "startS": 59.90325,
+     "endS": 60.13543,
+     "palign": 0
+    },
+    {
+     "word": "frost ",
+     "success": true,
+     "startS": 60.17614,
+     "endS": 60.339,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 60.419,
+     "endS": 60.536,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 60.575,
+     "endS": 60.653,
+     "palign": 0
+    },
+    {
+     "word": "axe ",
+     "success": true,
+     "startS": 60.725,
+     "endS": 60.921,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 61.061,
+     "endS": 61.061,
+     "palign": 0
+    },
+    {
+     "word": "swing\n",
+     "success": true,
+     "startS": 61.1402,
+     "endS": 61.457,
+     "palign": 0
+    },
+    {
+     "word": "Leviathan ",
+     "success": true,
+     "startS": 61.5285,
+     "endS": 61.954,
+     "palign": 0
+    },
+    {
+     "word": "cracks ",
+     "success": true,
+     "startS": 62.0065,
+     "endS": 62.269,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 62.28675,
+     "endS": 62.34,
+     "palign": 0
+    },
+    {
+     "word": "shield ",
+     "success": true,
+     "startS": 62.388,
+     "endS": 62.628,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 62.6515,
+     "endS": 62.675,
+     "palign": 0
+    },
+    {
+     "word": "splinters ",
+     "success": true,
+     "startS": 62.717,
+     "endS": 63.13,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 63.151,
+     "endS": 63.193,
+     "palign": 0
+    },
+    {
+     "word": "broken ",
+     "success": true,
+     "startS": 63.2585,
+     "endS": 63.586,
+     "palign": 0
+    },
+    {
+     "word": "rings\n",
+     "success": true,
+     "startS": 63.6438,
+     "endS": 63.875,
+     "palign": 0
+    },
+    {
+     "word": "A ",
+     "success": true,
+     "startS": 63.991,
+     "endS": 63.991,
+     "palign": 0
+    },
+    {
+     "word": "broken ",
+     "success": true,
+     "startS": 64.054,
+     "endS": 64.369,
+     "palign": 0
+    },
+    {
+     "word": "ring ",
+     "success": true,
+     "startS": 64.443,
+     "endS": 64.665,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 64.718,
+     "endS": 64.824,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 64.892,
+     "endS": 64.892,
+     "palign": 0
+    },
+    {
+     "word": "ten-year ",
+     "success": true,
+     "startS": 64.972,
+     "endS": 65.285,
+     "palign": 0
+    },
+    {
+     "word": "wait — ",
+     "success": true,
+     "startS": 65.33025,
+     "endS": 65.501,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 65.5185,
+     "endS": 65.571,
+     "palign": 0
+    },
+    {
+     "word": "makers ",
+     "success": true,
+     "startS": 65.63533,
+     "endS": 65.922,
+     "palign": 0
+    },
+    {
+     "word": "rebranded ",
+     "success": true,
+     "startS": 65.991,
+     "endS": 66.451,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 66.467,
+     "endS": 66.483,
+     "palign": 0
+    },
+    {
+     "word": "shame\n",
+     "success": true,
+     "startS": 66.563,
+     "endS": 66.888,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 66.94,
+     "endS": 66.94,
+     "palign": 0
+    },
+    {
+     "word": "swept ",
+     "success": true,
+     "startS": 66.9895,
+     "endS": 67.176,
+     "palign": 0
+    },
+    {
+     "word": "Game ",
+     "success": true,
+     "startS": 67.22975,
+     "endS": 67.391,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 67.4195,
+     "endS": 67.448,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 67.468,
+     "endS": 67.508,
+     "palign": 0
+    },
+    {
+     "word": "Year ",
+     "success": true,
+     "startS": 67.555,
+     "endS": 67.696,
+     "palign": 0
+    },
+    {
+     "word": "while ",
+     "success": true,
+     "startS": 67.7324,
+     "endS": 67.878,
+     "palign": 0
+    },
+    {
+     "word": "Xbox ",
+     "success": true,
+     "startS": 68.005,
+     "endS": 68.128,
+     "palign": 0
+    },
+    {
+     "word": "gave ",
+     "success": true,
+     "startS": 68.208,
+     "endS": 68.458,
+     "palign": 0
+    },
+    {
+     "word": "up ",
+     "success": true,
+     "startS": 68.5555,
+     "endS": 68.693,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 68.72167,
+     "endS": 68.779,
+     "palign": 0
+    },
+    {
+     "word": "console ",
+     "success": true,
+     "startS": 68.823,
+     "endS": 69.134,
+     "palign": 0
+    },
+    {
+     "word": "game\n\n",
+     "success": true,
+     "startS": 69.214,
+     "endS": 71.59245,
+     "palign": 0
+    },
+    {
+     "word": "[Bridge (Final Clash): Nordic war horns colliding with Covenant plasma sirens, Blades of Chaos chains rattling into fused 808 and war-drum beat]\nROUND ",
+     "success": true,
+     "startS": 71.5949,
+     "endS": 71.96,
+     "palign": 0
+    },
+    {
+     "word": "THREE! ",
+     "success": true,
+     "startS": 72.04,
+     "endS": 73.556,
+     "palign": 0
+    },
+    {
+     "word": "FINAL ",
+     "success": true,
+     "startS": 73.605,
+     "endS": 73.964,
+     "palign": 0
+    },
+    {
+     "word": "CLASH!\n\n",
+     "success": true,
+     "startS": 74.009,
+     "endS": 94.24667,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3A (Final Clash - Master Chief): Fused sci-fi 808 and war drums, cold sharp tactical baritone firing back]\nTalk ",
+     "success": true,
+     "startS": 94.2495,
+     "endS": 94.581,
+     "palign": 0
+    },
+    {
+     "word": "about ",
+     "success": true,
+     "startS": 94.661,
+     "endS": 95.02,
+     "palign": 0
+    },
+    {
+     "word": "puppets? ",
+     "success": true,
+     "startS": 95.04025,
+     "endS": 95.638,
+     "palign": 0
+    },
+    {
+     "word": "Ares ",
+     "success": true,
+     "startS": 95.678,
+     "endS": 95.875,
+     "palign": 0
+    },
+    {
+     "word": "chained ",
+     "success": true,
+     "startS": 95.912,
+     "endS": 96.134,
+     "palign": 0
+    },
+    {
+     "word": "those ",
+     "success": true,
+     "startS": 96.1694,
+     "endS": 96.311,
+     "palign": 0
+    },
+    {
+     "word": "blades ",
+     "success": true,
+     "startS": 96.3455,
+     "endS": 96.589,
+     "palign": 0
+    },
+    {
+     "word": "right ",
+     "success": true,
+     "startS": 96.6654,
+     "endS": 96.971,
+     "palign": 0
+    },
+    {
+     "word": "into ",
+     "success": true,
+     "startS": 97.02775,
+     "endS": 97.198,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 97.24075,
+     "endS": 97.369,
+     "palign": 0
+    },
+    {
+     "word": "skin\n",
+     "success": true,
+     "startS": 97.475,
+     "endS": 99.358,
+     "palign": 0
+    },
+    {
+     "word": "Ashes ",
+     "success": true,
+     "startS": 99.4412,
+     "endS": 99.823,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 99.894,
+     "endS": 99.965,
+     "palign": 0
+    },
+    {
+     "word": "family ",
+     "success": true,
+     "startS": 100.0445,
+     "endS": 100.442,
+     "palign": 0
+    },
+    {
+     "word": "baked ",
+     "success": true,
+     "startS": 100.464,
+     "endS": 100.74,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 100.8475,
+     "endS": 100.955,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 100.98375,
+     "endS": 101.07,
+     "palign": 0
+    },
+    {
+     "word": "chest — ",
+     "success": true,
+     "startS": 101.15,
+     "endS": 101.74625,
+     "palign": 0
+    },
+    {
+     "word": "living ",
+     "success": true,
+     "startS": 101.78387,
+     "endS": 101.972,
+     "palign": 0
+    },
+    {
+     "word": "proof ",
+     "success": true,
+     "startS": 102.0374,
+     "endS": 102.299,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 102.3465,
+     "endS": 102.394,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 102.446,
+     "endS": 102.602,
+     "palign": 0
+    },
+    {
+     "word": "sin\n",
+     "success": true,
+     "startS": 102.72067,
+     "endS": 104.456,
+     "palign": 0
+    },
+    {
+     "word": "You ",
+     "success": true,
+     "startS": 104.51467,
+     "endS": 104.632,
+     "palign": 0
+    },
+    {
+     "word": "ran ",
+     "success": true,
+     "startS": 104.70367,
+     "endS": 104.847,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 104.9095,
+     "endS": 104.972,
+     "palign": 0
+    },
+    {
+     "word": "Midgard ",
+     "success": true,
+     "startS": 105.079,
+     "endS": 105.654,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 105.731,
+     "endS": 105.808,
+     "palign": 0
+    },
+    {
+     "word": "dodge ",
+     "success": true,
+     "startS": 105.842,
+     "endS": 106.089,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 106.127,
+     "endS": 106.241,
+     "palign": 0
+    },
+    {
+     "word": "ghosts, ",
+     "success": true,
+     "startS": 106.321,
+     "endS": 106.85936,
+     "palign": 0
+    },
+    {
+     "word": "pretending ",
+     "success": true,
+     "startS": 106.89873,
+     "endS": 107.253,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 107.33067,
+     "endS": 107.486,
+     "palign": 0
+    },
+    {
+     "word": "found ",
+     "success": true,
+     "startS": 107.566,
+     "endS": 107.888,
+     "palign": 0
+    },
+    {
+     "word": "peace\n",
+     "success": true,
+     "startS": 107.968,
+     "endS": 109.769,
+     "palign": 0
+    },
+    {
+     "word": "I'm ",
+     "success": true,
+     "startS": 109.787,
+     "endS": 109.928,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 109.95667,
+     "endS": 110.014,
+     "palign": 0
+    },
+    {
+     "word": "Spartan ",
+     "success": true,
+     "startS": 110.06,
+     "endS": 110.74,
+     "palign": 0
+    },
+    {
+     "word": "who ",
+     "success": true,
+     "startS": 110.796,
+     "endS": 110.908,
+     "palign": 0
+    },
+    {
+     "word": "holds ",
+     "success": true,
+     "startS": 110.984,
+     "endS": 111.288,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 111.33367,
+     "endS": 111.425,
+     "palign": 0
+    },
+    {
+     "word": "line — ",
+     "success": true,
+     "startS": 111.509,
+     "endS": 112.7884,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 112.8266,
+     "endS": 112.903,
+     "palign": 0
+    },
+    {
+     "word": "fled ",
+     "success": true,
+     "startS": 112.984,
+     "endS": 113.396,
+     "palign": 0
+    },
+    {
+     "word": "from ",
+     "success": true,
+     "startS": 113.4715,
+     "endS": 113.698,
+     "palign": 0
+    },
+    {
+     "word": "burning ",
+     "success": true,
+     "startS": 113.78086,
+     "endS": 114.328,
+     "palign": 0
+    },
+    {
+     "word": "Greece\n\n",
+     "success": true,
+     "startS": 114.372,
+     "endS": 115.16606,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3B (Final Clash - Kratos): Fused war drums and heavy 808 sub-bass, booming furious chest-resonance counter]\nI ",
+     "success": true,
+     "startS": 115.16712,
+     "endS": 115.289,
+     "palign": 0
+    },
+    {
+     "word": "broke ",
+     "success": true,
+     "startS": 115.3368,
+     "endS": 115.528,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 115.565,
+     "endS": 115.639,
+     "palign": 0
+    },
+    {
+     "word": "chains ",
+     "success": true,
+     "startS": 115.7025,
+     "endS": 116.02,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 116.0805,
+     "endS": 116.141,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 116.16967,
+     "endS": 116.227,
+     "palign": 0
+    },
+    {
+     "word": "gods ",
+     "success": true,
+     "startS": 116.31375,
+     "endS": 116.574,
+     "palign": 0
+    },
+    {
+     "word": "themselves — ",
+     "success": true,
+     "startS": 116.6023,
+     "endS": 116.894,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 116.908,
+     "endS": 116.966,
+     "palign": 0
+    },
+    {
+     "word": "own ",
+     "success": true,
+     "startS": 117.02233,
+     "endS": 117.135,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 117.144,
+     "endS": 117.162,
+     "palign": 0
+    },
+    {
+     "word": "scars ",
+     "success": true,
+     "startS": 117.23425,
+     "endS": 117.482,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 117.614,
+     "endS": 117.639,
+     "palign": 0
+    },
+    {
+     "word": "bear\n",
+     "success": true,
+     "startS": 117.6865,
+     "endS": 117.829,
+     "palign": 0
+    },
+    {
+     "word": "You're ",
+     "success": true,
+     "startS": 117.83633,
+     "endS": 117.954,
+     "palign": 0
+    },
+    {
+     "word": "owned ",
+     "success": true,
+     "startS": 118.0014,
+     "endS": 118.191,
+     "palign": 0
+    },
+    {
+     "word": "by ",
+     "success": true,
+     "startS": 118.238,
+     "endS": 118.285,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 118.32567,
+     "endS": 118.407,
+     "palign": 0
+    },
+    {
+     "word": "U.",
+     "success": true,
+     "startS": 118.548,
+     "endS": 118.548,
+     "palign": 0
+    },
+    {
+     "word": "N.",
+     "success": true,
+     "startS": 118.671,
+     "endS": 118.671,
+     "palign": 0
+    },
+    {
+     "word": "S.",
+     "success": true,
+     "startS": 118.818,
+     "endS": 118.818,
+     "palign": 0
+    },
+    {
+     "word": "C. — ",
+     "success": true,
+     "startS": 119.053,
+     "endS": 119.14829,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 119.17371,
+     "endS": 119.25,
+     "palign": 0
+    },
+    {
+     "word": "hardware ",
+     "success": true,
+     "startS": 119.314,
+     "endS": 119.693,
+     "palign": 0
+    },
+    {
+     "word": "they ",
+     "success": true,
+     "startS": 119.7655,
+     "endS": 119.983,
+     "palign": 0
+    },
+    {
+     "word": "repair\n",
+     "success": true,
+     "startS": 120.02125,
+     "endS": 120.297,
+     "palign": 0
+    },
+    {
+     "word": "Real ",
+     "success": true,
+     "startS": 120.328,
+     "endS": 120.421,
+     "palign": 0
+    },
+    {
+     "word": "Spartans ",
+     "success": true,
+     "startS": 120.4915,
+     "endS": 120.863,
+     "palign": 0
+    },
+    {
+     "word": "bleed ",
+     "success": true,
+     "startS": 120.8886,
+     "endS": 120.991,
+     "palign": 0
+    },
+    {
+     "word": "in ",
+     "success": true,
+     "startS": 121.0605,
+     "endS": 121.13,
+     "palign": 0
+    },
+    {
+     "word": "Laconia's ",
+     "success": true,
+     "startS": 121.18,
+     "endS": 121.778,
+     "palign": 0
+    },
+    {
+     "word": "dust, ",
+     "success": true,
+     "startS": 121.817,
+     "endS": 121.976,
+     "palign": 0
+    },
+    {
+     "word": "not ",
+     "success": true,
+     "startS": 122.018,
+     "endS": 122.102,
+     "palign": 0
+    },
+    {
+     "word": "on ",
+     "success": true,
+     "startS": 122.182,
+     "endS": 122.28,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 122.36,
+     "endS": 122.36,
+     "palign": 0
+    },
+    {
+     "word": "scientist's ",
+     "success": true,
+     "startS": 122.42633,
+     "endS": 122.927,
+     "palign": 0
+    },
+    {
+     "word": "wire\n",
+     "success": true,
+     "startS": 122.9955,
+     "endS": 123.201,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 123.306,
+     "endS": 123.306,
+     "palign": 0
+    },
+    {
+     "word": "shattered ",
+     "success": true,
+     "startS": 123.34189,
+     "endS": 123.629,
+     "palign": 0
+    },
+    {
+     "word": "Fate ",
+     "success": true,
+     "startS": 123.684,
+     "endS": 123.849,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 123.87567,
+     "endS": 123.929,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 123.93733,
+     "endS": 123.954,
+     "palign": 0
+    },
+    {
+     "word": "Sisters' ",
+     "success": true,
+     "startS": 123.986,
+     "endS": 124.337,
+     "palign": 0
+    },
+    {
+     "word": "loom — ",
+     "success": true,
+     "startS": 124.3685,
+     "endS": 124.538,
+     "palign": 0
+    },
+    {
+     "word": "you ",
+     "success": true,
+     "startS": 124.538,
+     "endS": 124.657,
+     "palign": 0
+    },
+    {
+     "word": "follow ",
+     "success": true,
+     "startS": 124.711,
+     "endS": 124.981,
+     "palign": 0
+    },
+    {
+     "word": "orders ",
+     "success": true,
+     "startS": 125.03567,
+     "endS": 125.269,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 125.31433,
+     "endS": 125.405,
+     "palign": 0
+    },
+    {
+     "word": "hire\n\n",
+     "success": true,
+     "startS": 125.526,
+     "endS": 125.76046,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3C (Final Clash - Master Chief): Stoic resolute guardian baritone over swelling synth and drums]\nNo ",
+     "success": true,
+     "startS": 125.76192,
+     "endS": 125.915,
+     "palign": 0
+    },
+    {
+     "word": "backup ",
+     "success": true,
+     "startS": 125.966,
+     "endS": 126.287,
+     "palign": 0
+    },
+    {
+     "word": "left, ",
+     "success": true,
+     "startS": 126.36325,
+     "endS": 126.6258,
+     "palign": 0
+    },
+    {
+     "word": "just ",
+     "success": true,
+     "startS": 126.6596,
+     "endS": 126.761,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 126.838,
+     "endS": 126.838,
+     "palign": 0
+    },
+    {
+     "word": "single ",
+     "success": true,
+     "startS": 126.88683,
+     "endS": 127.131,
+     "palign": 0
+    },
+    {
+     "word": "round — ",
+     "success": true,
+     "startS": 127.1836,
+     "endS": 127.44,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 127.463,
+     "endS": 127.463,
+     "palign": 0
+    },
+    {
+     "word": "stood ",
+     "success": true,
+     "startS": 127.5104,
+     "endS": 127.7,
+     "palign": 0
+    },
+    {
+     "word": "when ",
+     "success": true,
+     "startS": 127.72625,
+     "endS": 127.805,
+     "palign": 0
+    },
+    {
+     "word": "worlds ",
+     "success": true,
+     "startS": 127.83717,
+     "endS": 127.998,
+     "palign": 0
+    },
+    {
+     "word": "would ",
+     "success": true,
+     "startS": 128.0228,
+     "endS": 128.122,
+     "palign": 0
+    },
+    {
+     "word": "fall\n",
+     "success": true,
+     "startS": 128.19075,
+     "endS": 128.397,
+     "palign": 0
+    },
+    {
+     "word": "Protector ",
+     "success": true,
+     "startS": 128.44514,
+     "endS": 128.827,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 128.8965,
+     "endS": 128.966,
+     "palign": 0
+    },
+    {
+     "word": "humanity — ",
+     "success": true,
+     "startS": 129.046,
+     "endS": 129.614,
+     "palign": 0
+    },
+    {
+     "word": "I ",
+     "success": true,
+     "startS": 129.619,
+     "endS": 129.713,
+     "palign": 0
+    },
+    {
+     "word": "fought ",
+     "success": true,
+     "startS": 129.7605,
+     "endS": 129.998,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 129.999,
+     "endS": 130.0,
+     "palign": 0
+    },
+    {
+     "word": "save ",
+     "success": true,
+     "startS": 130.072,
+     "endS": 130.288,
+     "palign": 0
+    },
+    {
+     "word": "them ",
+     "success": true,
+     "startS": 130.32275,
+     "endS": 130.427,
+     "palign": 0
+    },
+    {
+     "word": "all\n\n",
+     "success": true,
+     "startS": 130.49867,
+     "endS": 130.64222,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3D (Final Clash - Kratos): Thundering fate-breaker roar over heavy brass and war drums]\nYou ",
+     "success": true,
+     "startS": 130.64245,
+     "endS": 130.807,
+     "palign": 0
+    },
+    {
+     "word": "guard ",
+     "success": true,
+     "startS": 130.84,
+     "endS": 130.972,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 131.015,
+     "endS": 131.101,
+     "palign": 0
+    },
+    {
+     "word": "cage ",
+     "success": true,
+     "startS": 131.181,
+     "endS": 131.425,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 131.505,
+     "endS": 131.59,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 131.67,
+     "endS": 131.727,
+     "palign": 0
+    },
+    {
+     "word": "dying ",
+     "success": true,
+     "startS": 131.7746,
+     "endS": 131.965,
+     "palign": 0
+    },
+    {
+     "word": "fleet, ",
+     "success": true,
+     "startS": 132.007,
+     "endS": 132.28533,
+     "palign": 0
+    },
+    {
+     "word": "obedient ",
+     "success": true,
+     "startS": 132.32367,
+     "endS": 132.893,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 132.973,
+     "endS": 133.069,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 133.10933,
+     "endS": 133.19,
+     "palign": 0
+    },
+    {
+     "word": "end\n",
+     "success": true,
+     "startS": 133.27333,
+     "endS": 133.44,
+     "palign": 0
+    },
+    {
+     "word": "Breaker ",
+     "success": true,
+     "startS": 133.4854,
+     "endS": 133.798,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 133.8485,
+     "endS": 133.899,
+     "palign": 0
+    },
+    {
+     "word": "fate ",
+     "success": true,
+     "startS": 133.95525,
+     "endS": 134.124,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 134.157,
+     "endS": 134.223,
+     "palign": 0
+    },
+    {
+     "word": "prophecy — ",
+     "success": true,
+     "startS": 134.276,
+     "endS": 134.8585,
+     "palign": 0
+    },
+    {
+     "word": "no ",
+     "success": true,
+     "startS": 134.90375,
+     "endS": 134.949,
+     "palign": 0
+    },
+    {
+     "word": "knee ",
+     "success": true,
+     "startS": 134.996,
+     "endS": 135.137,
+     "palign": 0
+    },
+    {
+     "word": "will ",
+     "success": true,
+     "startS": 135.17725,
+     "endS": 135.298,
+     "palign": 0
+    },
+    {
+     "word": "ever ",
+     "success": true,
+     "startS": 135.35525,
+     "endS": 135.527,
+     "palign": 0
+    },
+    {
+     "word": "bend\n\n",
+     "success": true,
+     "startS": 135.607,
+     "endS": 135.90412,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3E (Final Clash - Master Chief): Climax stoic finisher over roaring 808 synth]\nGive ",
+     "success": true,
+     "startS": 135.90524,
+     "endS": 136.005,
+     "palign": 0
+    },
+    {
+     "word": "me ",
+     "success": true,
+     "startS": 136.0605,
+     "endS": 136.116,
+     "palign": 0
+    },
+    {
+     "word": "a ",
+     "success": true,
+     "startS": 136.188,
+     "endS": 136.188,
+     "palign": 0
+    },
+    {
+     "word": "weapon ",
+     "success": true,
+     "startS": 136.23017,
+     "endS": 136.441,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 136.48833,
+     "endS": 136.583,
+     "palign": 0
+    },
+    {
+     "word": "point ",
+     "success": true,
+     "startS": 136.6134,
+     "endS": 136.735,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 136.766,
+     "endS": 136.797,
+     "palign": 0
+    },
+    {
+     "word": "hell — ",
+     "success": true,
+     "startS": 136.81025,
+     "endS": 136.974,
+     "palign": 0
+    },
+    {
+     "word": "I'll ",
+     "success": true,
+     "startS": 137.037,
+     "endS": 137.165,
+     "palign": 0
+    },
+    {
+     "word": "finish ",
+     "success": true,
+     "startS": 137.18567,
+     "endS": 137.547,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 137.57233,
+     "endS": 137.623,
+     "palign": 0
+    },
+    {
+     "word": "fight ",
+     "success": true,
+     "startS": 137.6986,
+     "endS": 138.001,
+     "palign": 0
+    },
+    {
+     "word": "alone\n",
+     "success": true,
+     "startS": 138.0524,
+     "endS": 138.258,
+     "palign": 0
+    },
+    {
+     "word": "One ",
+     "success": true,
+     "startS": 138.289,
+     "endS": 138.351,
+     "palign": 0
+    },
+    {
+     "word": "Spartan ",
+     "success": true,
+     "startS": 138.4115,
+     "endS": 138.741,
+     "palign": 0
+    },
+    {
+     "word": "standing ",
+     "success": true,
+     "startS": 138.78425,
+     "endS": 139.087,
+     "palign": 0
+    },
+    {
+     "word": "for ",
+     "success": true,
+     "startS": 139.14733,
+     "endS": 139.268,
+     "palign": 0
+    },
+    {
+     "word": "humankind — ",
+     "success": true,
+     "startS": 139.367,
+     "endS": 139.8345,
+     "palign": 0
+    },
+    {
+     "word": "unbreakable ",
+     "success": true,
+     "startS": 139.83975,
+     "endS": 140.266,
+     "palign": 0
+    },
+    {
+     "word": "flesh ",
+     "success": true,
+     "startS": 140.3214,
+     "endS": 140.543,
+     "palign": 0
+    },
+    {
+     "word": "and ",
+     "success": true,
+     "startS": 140.583,
+     "endS": 140.663,
+     "palign": 0
+    },
+    {
+     "word": "bone\n\n",
+     "success": true,
+     "startS": 140.72275,
+     "endS": 140.90272,
+     "palign": 0
+    },
+    {
+     "word": "[Verse 3F (Final Clash - Kratos): Maximum intensity deep gravelly knockout bar over Nordic choir and bass drop]\nYour ",
+     "success": true,
+     "startS": 140.90344,
+     "endS": 140.986,
+     "palign": 0
+    },
+    {
+     "word": "fight ",
+     "success": true,
+     "startS": 141.0338,
+     "endS": 141.225,
+     "palign": 0
+    },
+    {
+     "word": "is ",
+     "success": true,
+     "startS": 141.2925,
+     "endS": 141.36,
+     "palign": 0
+    },
+    {
+     "word": "over, ",
+     "success": true,
+     "startS": 141.43425,
+     "endS": 141.712,
+     "palign": 0
+    },
+    {
+     "word": "tin ",
+     "success": true,
+     "startS": 141.767,
+     "endS": 141.877,
+     "palign": 0
+    },
+    {
+     "word": "soldier — ",
+     "success": true,
+     "startS": 141.93914,
+     "endS": 142.41857,
+     "palign": 0
+    },
+    {
+     "word": "Chaos ",
+     "success": true,
+     "startS": 142.47186,
+     "endS": 142.685,
+     "palign": 0
+    },
+    {
+     "word": "burns ",
+     "success": true,
+     "startS": 142.7332,
+     "endS": 142.926,
+     "palign": 0
+    },
+    {
+     "word": "through ",
+     "success": true,
+     "startS": 142.94986,
+     "endS": 143.093,
+     "palign": 0
+    },
+    {
+     "word": "your ",
+     "success": true,
+     "startS": 143.13075,
+     "endS": 143.244,
+     "palign": 0
+    },
+    {
+     "word": "core\n",
+     "success": true,
+     "startS": 143.32025,
+     "endS": 143.549,
+     "palign": 0
+    },
+    {
+     "word": "Only ",
+     "success": true,
+     "startS": 143.59825,
+     "endS": 143.746,
+     "palign": 0
+    },
+    {
+     "word": "one ",
+     "success": true,
+     "startS": 143.78367,
+     "endS": 143.859,
+     "palign": 0
+    },
+    {
+     "word": "Spartan ",
+     "success": true,
+     "startS": 143.917,
+     "endS": 144.185,
+     "palign": 0
+    },
+    {
+     "word": "claims ",
+     "success": true,
+     "startS": 144.2112,
+     "endS": 144.449,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 144.46067,
+     "endS": 144.484,
+     "palign": 0
+    },
+    {
+     "word": "crown — ",
+     "success": true,
+     "startS": 144.5604,
+     "endS": 145.13,
+     "palign": 0
+    },
+    {
+     "word": "bow ",
+     "success": true,
+     "startS": 145.262,
+     "endS": 145.526,
+     "palign": 0
+    },
+    {
+     "word": "to ",
+     "success": true,
+     "startS": 145.61,
+     "endS": 145.703,
+     "palign": 0
+    },
+    {
+     "word": "the ",
+     "success": true,
+     "startS": 145.74233,
+     "endS": 145.821,
+     "palign": 0
+    },
+    {
+     "word": "God ",
+     "success": true,
+     "startS": 145.93433,
+     "endS": 146.161,
+     "palign": 0
+    },
+    {
+     "word": "of ",
+     "success": true,
+     "startS": 146.297,
+     "endS": 146.433,
+     "palign": 0
+    },
+    {
+     "word": "War!\n\n",
+     "success": true,
+     "startS": 146.54567,
+     "endS": 147.04798,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: Blades of Chaos chain slam, Mjolnir shield power-down whine, epic Nordic choir and fading 808 boom]\nSPARTAN! ",
+     "success": true,
+     "startS": 147.04897,
+     "endS": 150.32567,
+     "palign": 0
+    },
+    {
+     "word": "SPARTAN!\n\n",
+     "success": true,
+     "startS": 150.47633,
+     "endS": 165.04675,
+     "palign": 0
+    },
+    {
+     "word": "[Outro: Blades of Chaos chain slam, Mjolnir shield power-down whine, epic Nordic choir and fading 808 boom]\nSPARTAN! ",
+     "success": true,
+     "startS": 165.04762,
+     "endS": 176.68167,
+     "palign": 0
+    },
+    {
+     "word": "SPARTAN!\n\n[",
+     "success": true,
+     "startS": 176.71333,
+     "endS": 187.59508,
+     "palign": 0
+    },
+    {
+     "word": "End]\n\n\n",
+     "success": true,
+     "startS": 187.6255,
+     "endS": 187.808,
+     "palign": 0
+    }
+   ]
+  }
+ ]
+}

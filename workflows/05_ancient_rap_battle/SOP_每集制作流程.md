@@ -5,7 +5,10 @@
 > 各环节「为什么这样做」和踩坑细节见 [经验沉淀_完整版样片.md](经验沉淀_完整版样片.md)，频道运营与文案模板见 [channel/频道方案.md](channel/频道方案.md)。
 > **2026-11-10 起有第二种拍法**（手持麦 + 真实运镜 + 一条口型镜头跨多句 + 句中切反应），第 4～7 节的分镜和出片方式不同，见 [经验沉淀_运镜拍法.md](经验沉淀_运镜拍法.md) 第 4、8 节，模板是 `episodes/edison-vs-tesla-remake/build_storyboard.py`。
 > **2026-11-11 起升级为 Realism V3 电影级实拍标准管线（不加 2.7K 超分，单集仍保持 ~12–16 CCU）**：参考图执行 `python3 scripts/film_optics.py episodes/<ep>` 预置 3200K 暖血色肌肤 + `r=16` 沸腾人群剪影与烛台光学散景；云端开启 `--steps 12 --runner-args "--fit --lock-strength 1.0 --mic handheld --realism-v2"`（调用 `Singularity v1.3` 去油光底模，**默认不加 `--tessera-2k`**，省去 2.7K 约 5 倍额外算力开销）；本地使用 `assemble.py --film` + `package.py --film --1080p` 单通直出 Kodak Vision3 500T + Pro-Mist 1/8 + `c0s=3` 细银盐颗粒 1080p 成片。根因诊断、三轮盲测参数边界与复用模板见 [经验沉淀_电影实拍质感升级.md](经验沉淀_电影实拍质感升级.md)。
-> **2026-11-12 起升级音乐制作与人物原声还原管线（第 5 集 `tommy-vs-cj` / 第 6 集 `arthur-vs-geralt`）**：歌词初稿先调 Kie Suno `ai-music-api/generate-lyrics`（`0.40` 额度）做 Boom-Bap 律动与地道俚语润色；游戏/影视等有经典配音原声的角色，在 `kie_suno.py` 生成底曲后用 `scripts/run_game_voice_remote.py` 开 Colab L4（仅 `~0.55 CCU`）跑 `Demucs htdemucs_ft` 四轨分离 + 专属 `RVC v2` / `Seed-VC` 声纹还原与毫秒互相关对齐。完整参数边界与避坑铁律见 [经验沉淀_音乐制作与游戏原声还原.md](经验沉淀_音乐制作与游戏原声还原.md)。
+> **2026-11-12 ~ 11-13 升级音乐制作（Beat Switch + 咆哮原声）与无麦电影 MV / V2 Shorts 管线（第 5～7 集）**：
+> - **音频 V2**：歌词初稿调 Kie Suno `ai-music-api/generate-lyrics`（`0.40` 额度）提取地道俚语、缩写打点（`F.I.B.`）与内生曲风碰撞词条；支持**单曲多幕剧烈 Beat Switch**（如 90s G-Funk ⇄ 失真 808 Trap Metal）；Colab L4（实耗仅 **`0.11–0.55 CCU`**）单次跑完主备双槽 `RVC v2`（含狂暴嗓 `protect=0.44` 防电音档 `rvc_grit`）+ `Seed-VC` 并本地毫秒对齐。详见 [经验沉淀_音乐制作与游戏原声还原.md](经验沉淀_音乐制作与游戏原声还原.md)。
+> - **无麦纯电影实景模式 & 多 G4 并行**：支持 `"mic_en": "none"` 解放双手表演 + 三场景叙事切换，且 `run_rap_battle_remote.py` 支持文件锁并发开 3 台 G4 将全集渲染墙钟时间压缩至 ~30 分钟（包体积瘦身至 ~43 MB）。
+> - **Battle Shorts V2（`0 CCU` 双雄对轰高转化模板）**：以 `episodes/michael-vs-trevor/build_shorts_v2.py` 为标准，直接复用正片电影镜头零算力合成 `1080×1920` 竖版（`0.0s` 上下分屏双雄对峙 + 多机位反应切镜 + `words_edit.json` 逐词弹跳大字幕 + 结尾前 `3.0s` 左下角金色箭头指引导流条 + 唱完 `+0.14s` 零静音无缝循环）；网站引流独立栏目方案见 [channel/MakeYourOwnShorts_网站引流计划.md](channel/MakeYourOwnShorts_网站引流计划.md)。
 
 ---
 
@@ -14,14 +17,14 @@
 | # | 环节 | 产出 | 花费 | 用时 | 谁做 |
 |---|---|---|---|---|---|
 | 1 | 选题 + 歌词 | `episode.json`、`歌词_完整版.md`、`line_actions.json` | 0（润色 0.4 Kie） | 1 小时 | Claude 写 + Suno 润色，**用户确认** |
-| 2 | 生成歌曲 + 原声还原 | `work/kie_suno.json`、`lines.json`、`音乐_最终.wav`、`vocals_final.wav` | Kie 约 13 额度（+ L4 约 0.55 CCU） | 15～25 分钟 | Claude（**用户听歌确认**） |
+| 2 | 生成歌曲 + 原声还原 | `work/kie_suno.json`、`lines.json`、`音乐_最终.wav`、`vocals_final.wav` | Kie 约 13 额度（+ L4 约 `0.11–0.55 CCU`） | 12～20 分钟 | Claude（**用户听歌确认**） |
 | 3 | 参考图 | `refs/*.png`、`work/*_face_clean.png`、`work/stage_a/b.png` | 0（复用）或生图 | 30 分钟 | Claude |
 | 4 | 分镜 | `work/clips.json`、`edl.json`、`fx.json`、`live.json` | 0 | 30 分钟 | Claude |
-| 5 | 小样 | 2～3 个镜头的对比片 | 约 1 CCU | 15 分钟 | Claude，**用户看片** |
-| 6 | 批量出片 | 32 个口型镜头 + 非口型镜头 | 约 5～7 CCU | 30～40 分钟 | Claude |
+| 5 | 小样 | 2～3 个镜头的对比片 | 约 1.5 CCU | 15 分钟 | Claude，**用户看片** |
+| 6 | 批量出片 | 32 个口型镜头 + 非口型镜头（支持 3 台 G4 锁并发） | 约 12～14 CCU | ~30 分钟 | Claude |
 | 7 | 质检 + 重抽 | 拼帧图、音轨相关度 | 每轮约 1～2 CCU | 按需 | Claude，**用户看片** |
-| 8 | 合成 + 打包 | `final/*_成片.mp4`、1080p 上传版 | 0 | 5 分钟 | Claude |
-| 9 | Shorts × 3 | 3 条 9:16 成片 + 1080×1920 上传版 | 约 4 CCU | 40 分钟 | Claude |
+| 8 | 合成 + 打包 | `final/*_1080p_胶片版.mp4`、手机预览版 | 0 | 5 分钟 | Claude |
+| 9 | Shorts V2 × 3 | 3 条 `1080×1920` 双雄对轰胶片版 + 6 帧质检图 | **0 CCU** | 2 分钟 | Claude |
 | 10 | 封面 | 横版缩略图 + 3 张 Shorts 封面 | 0（Codex 用 ChatGPT 账号） | 30 分钟 | Claude |
 | 11 | 上传发布 | 1 个长视频 + 3 条 Shorts，置顶评论 | 0 | 30 分钟 | Claude 浏览器操作，**用户批准发布** |
 | 12 | 提交 + 记录 | git commit、经验更新 | 0 | 10 分钟 | Claude，**用户说「提交」** |
@@ -45,7 +48,11 @@
    - **两人固定站位**：A 永远在左、B 永远在右，`venue_en` 里左边只放 A 的元素、右边只放 B 的元素
    - **道具名就是提示词**：避开会把模型带偏的词（「laurel-leaf crown」被画成镶宝石王冠，改成「laurel wreath」才对）
 3. `line_actions.json`：32 句每句一个手势/动作（英文短语）。
-4. 先调 Kie `ai-music-api/generate-lyrics`（`0.40` 额度）对 32 句初稿做内韵与俚语律动打磨，再写 `歌词_完整版.md` 给用户确认。**歌词里避开像制作人署名的词**（如 "fifty grand"），Suno 会拒收。
+4. **固定执行 Suno 歌词审校与润色（`0.40` Kie 额度，`0 CCU`）**：先在本地写好 32 句初稿骨架（`episode.json` 的 `lyrics` 与可选 `lyrics_polish_prompt`），随后运行：
+   ```bash
+   python3 workflows/05_ancient_rap_battle/scripts/polish_lyrics_suno.py workflows/05_ancient_rap_battle/episodes/<ep>
+   ```
+   调 Kie `ai-music-api/generate-lyrics` 生成两版润色稿（自动存档于 `work/suno_lyrics_polish.json`），从中提取地道母语狠词、内韵双押、缩写打点（如 `U.N.S.C.`、`F.I.B.`）与 Suno 内生曲风碰撞 `tags` 回填 `episode.json`，再更新 `歌词_完整版.md` 给用户确认。**歌词里避开像制作人署名的词**（如 "fifty grand"），Suno 会拒收。
 
 ## 2. 生成歌曲与人物原声还原
 
@@ -144,17 +151,20 @@ python3 scripts/package.py episodes/<ep> --src preview/草稿_胶片母带.mp4 -
 
 每 4 秒抽一帧拼图看全片；打开成片给用户验收。
 
-## 9. Shorts × 3
+## 9. Shorts × 3（V2 双雄对轰零算力标准版）
 
-1. 在 `build_shorts.py` 里定义 3 段（每段一个人连续 4 句，选最狠的），以及每条的引子文案 `HOOK_SUB`
-2. 构建迷你剧集：`python3 episodes/<ep>/build_shorts.py`（重跑不会清掉已渲染的 picks）
-3. 渲染竖版（每条约 1.3 CCU）：
+> **2026-11-13 起默认采用 V2 双人对轰模板（`0 CCU`，耗时约 2 分钟）**，替代早期单人站桩 13 秒 + 1.8 秒静音挡脸尾卡的 V1 模板（V1 实测划走率 64.9% 且破坏循环重播）。
+
+1. 复制 `episodes/michael-vs-trevor/build_shorts_v2.py` 到新剧集目录，挑选 **3 组最具冲突感的双人交锋段落**（A 铺垫 2 句 → 鼓点相位对齐 `100ms` 升余弦桥接过门 → B 狂暴反杀 4 句 + 对手破防反应切镜，总长 `16–19s`）。
+2. 本地一键渲染 3 条 `1080×1920` 胶片级成片与 6 帧质检拼图（`0 CCU`）：
    ```bash
-   python3 run_rap_battle_remote.py episodes/<ep>/shorts/<sid> --runner-args "--fit --lock-strength 1.0 --mic stand --static-cam" --no-post
+   python3 episodes/<ep>/build_shorts_v2.py
    ```
-4. 合成打包：`assemble.py shorts/<sid> --size 768x1344` → `package.py shorts/<sid>`
-5. 1080×1920 上传版：`scale=1098:1920:flags=lanczos,crop=1080:1920,unsharp=...`，码率封顶 16M
-6. 检查：开头 2.6 秒有「A VS B」引子；结尾最后一句歌词消失后才出「FULL BATTLE ON THE CHANNEL」
+3. 逐帧核验 `preview/qa_shorts_v2_s{1,2,3}.jpg`：
+   - **`0.0s–1.15s` 上下分屏双雄同框开场**：人物脸部无遮挡、无多余麦克风；
+   - **逐词弹跳大字幕**：严格落在安全区 `x ∈ [44, 900], y ∈ [1160, 1390]`，避开右侧点赞栏与底部 UI，无豆腐块缺字；
+   - **导流条与无缝循环**：最后 `3.0s` 左下角金底箭头条 `TAP RELATED VIDEO BELOW FOR FULL BATTLE` 位于 `@makeitrap` 上方（`y ∈ [1470, 1555]`）；最后一句实唱词结束后 `+0.14s` 直接收尾循环，**严禁保留静音傻站尾卡**。
+4. **Shorts 文案铁律**：YouTube 已禁用 Shorts 简介与评论区超链接点击，因此 Shorts 简介中**不放 `https://` 裸链接**，改为 `MakeItRap.com` 极短品牌词 + 引导点击下方关联视频胶囊及 `@makeitrap` 主页首链；上传后**必须在 Studio 编辑页将「相关视频（Related video）」绑定到本集横版长视频并保存**。
 
 ## 10. 封面
 
@@ -171,9 +181,10 @@ python3 scripts/package.py episodes/<ep> --src preview/草稿_胶片母带.mp4 -
 前提：浏览器当前身份是 **MakeItRap**（右上角头像 → 切换账号）。频道已完成手机号验证。
 
 **长视频**
-- 标题、简介（第一行放带 UTM 的网站链接；章节时间戳；THE HISTORY BEHIND THE BARS 史实出处；AI 声明）、缩略图
+- 标题、简介（第一行放带 UTM 的网站剧集页链接 `https://makeitrap.com/battles/<slug>?utm_source=youtube&utm_medium=video&utm_campaign=<ep>`；章节时间戳；THE HISTORY BEHIND THE BARS 史实出处；AI 声明）、缩略图
 - 不面向儿童、无付费宣传、**AI 内容：是**、标签、语言英语、类别娱乐
 - 公开发布 → 发置顶评论（Team A or Team B? + 网站链接）
+- **网站同款舞台底图导出（可选，`0 CCU`、<5 秒）**：若本集适合作为 `makeitrap.com` 专属舞台模板，运行 `python3 scripts/export_web_arena_plate.py episodes/<ep> --slug <stage-id>` 自动裁除裸露地板并生成 `768×1344` `r=16` 散景底图到网站 `public/template-assets/<stage-id>-reference.jpg`
 
 **Shorts**（每条）
 - 标题带 `#shorts`，简介首行引导看完整版，同样的 AI 声明和链接

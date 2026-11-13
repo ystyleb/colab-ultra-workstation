@@ -1,0 +1,257 @@
+{
+  "title": "Kratos_vs_Master_Chief",
+  "language": "en",
+  "mode": "full",
+  "performance_mode": "cinematic_mv_no_mic",
+  "song": "song.mp3",
+  "era_en": "2552 Halo Installation 04 Forerunner ring battlefield colliding across a space-time rift with burning ancient Greek Olympus temple ruins and snowy Midgard",
+  "commoners_en": "no studio crowd — pure live-action sci-fi and mythological cinema music video across three battlefields",
+  "venue_en": "a cinematic three-location sci-fi meets mythology live-action battleground: a scorched Halo Installation 04 Forerunner titanium cliff overlooking the towering glowing Halo ring arc in twilight, burning ancient Greek marble temple ruins dusted with Midgard ash and bronze fire braziers, and a fractured space-time rift bridge where shattered Doric marble columns and burning Greek braziers on the right collide directly with Forerunner alloy monoliths and glowing Covenant plasma embers on the left",
+  "light_en": "authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber motivated side-key light (burning wreckage flames / bronze fire braziers / rift ember glow) sculpting realistic weathered skin pores and battle-scarred armor plates on the lit side while the off-key side falls into deep rich 4:1 chiaroscuro shadow (zero grey haze, zero flat CGI sheen), paired with a crisp 5600K–6500K cool-silver rim light tracing helmet contours, beard, and pauldrons, and rich warm 2700K ember and plasma bokeh in the out-of-focus background",
+  "bg_bokeh_en": "warm 2700K burning wreckage embers, flickering bronze temple brazier flames, and electric blue-gold Halo ring horizon bokeh",
+  "bg_lights_en": "warm 2700K fire brazier and cool 5600K plasma arc bokeh",
+  "arena_sound_en": "a colossal space-time battlefield reverberating with Nordic war drums, Mjolnir shield hums, and crisp close-mic battle rap vocals",
+  "crowd_motion_en": "",
+  "scenes": {
+    "halo": {
+      "name": "Halo Ring Battlefield (Twilight Wreckage)",
+      "verses": ["A01-A08"],
+      "venue_en": "a war-torn Halo Installation Forerunner titanium ridge at twilight, battle-scarred metallic hexagonal deck plates, smoldering UNSC drop-pod wreckage casting warm 3200K orange flames on the ground, drifting Covenant purple plasma sparks, and the colossal illuminated Halo ring arc curving high into the bruised twilight sky behind",
+      "light_en": "authentic mixed-temperature 35mm sci-fi war cinema lighting: warm 3200K burning wreckage fire side-key light sculpting realistic scratched olive-drab Mjolnir armor plates and reflecting fiery amber highlights across the metallic gold visor with deep 4:1 shadow contrast, paired with crisp 5600K–6500K cool starlight and Halo ring rim light tracing his helmet ridge and heavy armored shoulders"
+    },
+    "olympus": {
+      "name": "Burning Olympus Ruins & Midgard Ash (Night)",
+      "verses": ["B01-B08"],
+      "venue_en": "shattered ancient Greek marble temple ruins blanketed in swirling volcanic ash and light Midgard frost at night, broken fluted Doric columns, roaring 2700K bronze fire braziers casting warm flickering light, drifting glowing embers, and icy frost crystals clinging to stone rubble",
+      "light_en": "authentic mixed-temperature 35mm mythological epic cinema lighting: intense warm 3200K bronze fire-brazier Rembrandt side-key light sculpting natural weathered ash-pale skin pores, deep forehead scars, crimson Spartan tattoo, and thick salt-and-pepper beard with dramatic 4:1 chiaroscuro shadow falloff (zero CGI plastic sheen, zero cyan skin cast), paired with crisp 6500K icy blue-silver moonlight rim light catching frost particles and broad armored shoulder"
+    },
+    "clash": {
+      "name": "Greek Ruins × Halo Ring Space-Time Rift (Final Clash)",
+      "verses": ["A09-A16", "B09-B16"],
+      "venue_en": "a dramatic fractured space-time rift bridge where ancient Greek Olympus ruins collide directly with a Halo Forerunner ring battlefield: on the left side, scarred Forerunner metal monoliths, glowing blue Slipspace energy arcs, and UNSC ammo crates; on the right side, cracked marble Corinthian pillars, roaring 2700K bronze fire braziers, and drifting snow-ash; overhead, the massive Halo ring arc bisects a storm-lit mythological sky",
+      "light_en": "authentic mixed-temperature 35mm cinema lighting: warm 3200K brazier and plasma-fire side-key light sculpting weathered human skin and scarred Mjolnir armor on the lit side with deep 4:1 shadow contrast (zero grey haze, zero cyan skin cast), paired with crisp 5600K–6500K silver-blue rift rim highlights along armor edges, beard, and weapons, plus rich 2700K fire-ember bokeh behind them"
+    }
+  },
+  "tagline": "HALO RING 04 · OLYMPUS & MIDGARD",
+  "outro_chant": "SPARTAN",
+  "watermark": "AI RAP BATTLE",
+  "end_question": "TEAM CHIEF OR TEAM KRATOS?|DROP YOUR PICK BELOW",
+  "lyrics_polish_prompt": "32-line English battle rap: Round 1 Master Chief (cold futuristic 808 synth + Mjolnir shield hum, military precision), Beat Switch to Round 2 Kratos (thunderous Nordic war drums + heavy brass + deep gravel bass vocal), Final Round alternating 4/4/2/2/2/2 clash fusing 808s and war drums. Chief roasts Kratos's Olympus rage, graying Norse dad yelling BOY, rowing boats with Mimir, Mjolnir shields & MA5/Energy Sword vs blades, mashing circle QTEs. Kratos roasts Chief kidnapped at 6 in a UNSC lab, hiding in a green tin helmet puppet, failing to save Cortana & cloning The Weapon, Leviathan Axe shattering shields, 343 rebranding & Xbox losing exclusives vs God of War GOTY. Final clash: Ares chains & family ashes vs UNSC hardware, protector of humanity vs breaker of fate. Tight AABB, 11-14 syllables, savage punchlines.",
+  "suno_style": "Battle rap at 94 BPM with cold futuristic 808 synths, subtle tactical helmet radio comms grit, and a Mjolnir shield hum in Round 1, then a sharp beat switch into thunderous Nordic war drums, heavy low brass, and a deep gravel chest-resonant bass vocal for Round 2; Final Round alternates 4/4/2/2/2/2 phrases over fused 808s and war drums. Verse 1 rides clipped military precision, Verse 2 hits slower and heavier, final clash tightens with snarling doubles, airlock risers, shield-hum flickers, axe-whip swells, and impact silences keeping transitions sharp, bright brutal cinematic mix, two contrasting deep male rappers, crisp English diction",
+  "a": {
+    "name_cn": "MASTER CHIEF",
+    "name_en": "Master Chief",
+    "aka": "Spartan-117",
+    "helmeted": true,
+    "look": "iconic live-action 6-foot-10 Spartan-II supersoldier Master Chief Petty Officer John-117 wearing his heavily battle-scarred olive-drab green Mjolnir Mark VI powered assault armor, iconic angled green Spartan helmet permanently worn with a gleaming reflective metallic amber-gold visor (helmet NEVER removed, NO bare face), scratched chest plate with '117' stenciled subtly in white, thick titanium shoulder pauldrons, black tactical undersuit seams, both heavy armored gauntlets completely empty and free (NO gun, NO rifle, NO sword, NO microphone)",
+    "voice": "ice-cold stoic deep military baritone male rapper with subtle tactical helmet radio comms filter, calm mechanical precision, sharp double-rhyme cadence",
+    "pitch": -1.5,
+    "prop": "Mjolnir Mark VI helmet and armored gauntlets",
+    "prop_desc": "an olive-drab Mjolnir Mark VI helmet with reflective gold visor and scarred titanium chestplate",
+    "look_cn": "《光环》士官长约翰-117 经典实拍战甲造型：高大魁梧的穿甲超级战士体型、永不摘下的橄榄绿雷神锤 Mark VI 斯巴达头盔与反光琥珀金护目面甲、战损划痕胸甲（胸口 117 编号）与厚重钛合金护肩、战术黑内衬，双手护甲空手纯电影动作表演（不持枪、不持麦）",
+    "listen_cn": "纹丝不动如人形兵器般冷静微偏头盔，反光金面甲映出对方火光，肩膀护甲能量盾蓄能微闪"
+  },
+  "b": {
+    "name_cn": "KRATOS",
+    "name_en": "Kratos",
+    "aka": "Ghost of Sparta",
+    "look": "live-action Norse-era Kratos, towering heavily muscled weathered Spartan demigod warrior in his fifties with hyper-real matte ash-pale skin covered in fine pores, battle scars and dirt (zero CGI sheen), completely bald head, iconic thick crimson-red Spartan war-paint stripe sweeping vertically over his left eye and down his bare torso, deep vertical scar over his right eye, thick bushy dark-brown-and-silver full beard and mustache neatly trimmed clear of his lips so his mouth, teeth, and jaw remain 100% readable, wearing a rugged dark-brown leather Norse shoulder pauldron strap, scarred bronze-and-iron bracers, chain scars around his forearms, both massive hands completely free (NO axe, NO blades, NO microphone)",
+    "voice": "ultra-deep chest-resonant gravelly bass-baritone warrior male rapper, thundering authoritative rasp escalating into ferocious Spartan battle rage",
+    "pitch": -3.0,
+    "prop": "Norse leather shoulder strap and scarred bronze bracers",
+    "prop_desc": "the rugged leather Norse pauldron strap and scarred bronze-and-iron forearm bracers",
+    "look_cn": "《战神》北欧篇奎托斯经典电影实拍造型：魁梧如山的五十余岁斯巴达半神战士、布满真实毛孔与伤疤的灰白肤色（绝无塑料 CG 感）、光头、左眼贯穿躯干的标志性深红战纹、右眼旧刀疤、浓密微霜深棕络腮胡（嘴唇周围修整清晰确保口型100%可见）、单肩北欧厚皮护肩甲、前臂铁链烙痕与青铜护腕，双手空手纯电影表情动作表演（不持武器、不持麦）",
+    "listen_cn": "双眉如铁铸般沉沉压低、青筋在光头与颈侧暴起、冷眼死盯这个躲在铁壳里的士兵，双拳微握蓄势待发"
+  },
+  "svc": {
+    "ref_a": "chief_ref_clean.wav",
+    "ref_b": "kratos_ref_clean.wav",
+    "rvc_a_urls": [
+      "https://huggingface.co/Homiebear/MasterChiefV2/resolve/main/MasterChief.zip",
+      "https://huggingface.co/WoomyPearl/RVC-Model-Palace/resolve/main/MasterChiefBungieTrilogy.zip"
+    ],
+    "rvc_b_urls": [
+      "https://huggingface.co/TheGreasyGamer/GoWKratosV2/resolve/main/GoWKratosV2.zip",
+      "https://huggingface.co/Goldeath/Gow/resolve/main/KratosOG.zip"
+    ],
+    "rvc_a_alt_urls": [
+      "https://huggingface.co/WoomyPearl/RVC-Model-Palace/resolve/main/MasterChiefBungieTrilogy.zip"
+    ],
+    "rvc_b_alt_urls": [
+      "https://huggingface.co/Goldeath/Gow/resolve/main/KratosOG.zip"
+    ],
+    "rvc_passes": [
+      {"tag": "rvc", "pitch_a": -1, "pitch_b": -3, "protect_b": 0.42},
+      {"tag": "rvc_grit", "pitch_a": 0, "pitch_b": -2, "protect_b": 0.44},
+      {"tag": "rvc_deep", "pitch_a": -2, "pitch_b": -5, "protect_b": 0.40},
+      {"tag": "rvc_alt", "pitch_a": -1, "pitch_b": -3, "alt_a": true, "alt_b": true, "protect_b": 0.42},
+      {"tag": "rvc_alt_grit", "pitch_a": 0, "pitch_b": -2, "alt_a": true, "alt_b": true, "protect_b": 0.44}
+    ],
+    "eq_a": "highpass=f=180,lowpass=f=4800,equalizer=f=320:t=q:w=1.1:g=2.0,equalizer=f=2400:t=q:w=1.3:g=3.2",
+    "eq_b": "highpass=f=72,equalizer=f=145:t=q:w=1.1:g=3.4,equalizer=f=2200:t=q:w=1.2:g=1.8,equalizer=f=3400:t=q:w=1.2:g=2.4"
+  },
+  "lyrics": {
+    "a": [
+      "Spartan one-one-seven — Mjolnir locked, target in frame",
+      "You burned down whole Olympus over rage you couldn't tame",
+      "Gray beard yelling \"BOY!\" again — same tantrum, different mold",
+      "Rowing boats with Mimir's head — that dad act's getting old",
+      "Mjolnir armor eats your blades — energy shields block every blow",
+      "My M-A-five and plasma blade lay ancient gods below",
+      "Dropped from orbit, blew up Halo, saved humanity from doom",
+      "You just mashed a circle button, leaving Greece inside a tomb",
+      "Talk about puppets? Ares chained those blades right into your skin",
+      "Ashes of family baked on your chest — living proof of your sin",
+      "You ran to Midgard to dodge your ghosts, pretending you found peace",
+      "I'm the Spartan who holds the line — you fled from burning Greece",
+      "No backup left, just a single round — I stood when worlds would fall",
+      "Protector of humanity — I fought to save them all",
+      "Give me a weapon and point to hell — I'll finish the fight alone",
+      "One Spartan standing for humankind — unbreakable flesh and bone"
+    ],
+    "b": [
+      "Stolen at six by a lab coat — stripped of your name and soul",
+      "Locked in a green metal bucket — puppet on full control",
+      "You lost a blue hologram — Cortana vanished in thin air",
+      "You cloned \"The Weapon\" from her code like grief just needs a spare",
+      "I butchered Olympus and broke the Nine — frost on the axe I swing",
+      "Leviathan cracks your shield to splinters and broken rings",
+      "A broken ring and a ten-year wait — your makers rebranded in shame",
+      "I swept Game of the Year while Xbox gave up the console game",
+      "I broke the chains of the gods themselves — I own the scars I bear",
+      "You're owned by the U.N.S.C. — just hardware they repair",
+      "Real Spartans bleed in Laconia's dust, not on a scientist's wire",
+      "I shattered Fate and the Sisters' loom — you follow orders for hire",
+      "You guard the cage of a dying fleet, obedient to the end",
+      "Breaker of fate and prophecy — no knee will ever bend",
+      "Your fight is over, tin soldier — Chaos burns through your core",
+      "Only one Spartan claims the crown — bow to the God of War!"
+    ]
+  },
+  "notes": {
+    "a": [
+      "代号对位：士官长本名约翰-117（John-117），身穿「雷神锤（Mjolnir）」Mark VI 动力装甲，以绝对冷静的军令级精准著称。",
+      "黑历史吐槽：希腊三部曲中，奎托斯在复仇狂怒驱使下屠戮了几乎整个奥林匹斯神系，顺带引发洪水、瘟疫与日蚀毁灭希腊世界。",
+      "头号玩家热梗：2018《战神》北欧篇中，老迈蓄须的奎托斯一路用低沉沙哑的嗓音对儿子阿特柔斯怒吼「BOY!」，成为全球游戏圈最洗脑名梗。",
+      "北欧划船日常：奎托斯不再单枪匹马无双，而是整天在九界之湖慢悠悠划木船，听腰间挂着的密米尔（Mimir）砍下来的脑袋讲故事。",
+      "护甲压制：雷神锤装甲自带可快速充能的能量护盾，设定上能硬吃等离子炮火与近战劈砍，正面对抗冷兵器。",
+      "未来火力：标配 UNSC MA5 突击步枪与星盟标志性近战兵器「能量剑（Energy Sword）」，硬科幻火力降维打击冷兵器神话。",
+      "传奇战绩：《光环》正传中士官长多次炸毁先行者环带、从外太空高空坠落生还（《光环3》开场），亲手阻止人类灭绝。",
+      "QTE 名梗：早期《战神》三部曲标志性的「按圆圈键（Circle Button / QTE）」机制——无论是残暴处决神明还是著名小游戏，全靠疯狂按 O 键。",
+      "锁链反噬：揭开奎托斯最深的伤疤——他当年向战神阿瑞斯（Ares）宣誓效忠，混沌之刃的铁链被永久烙进双臂皮肉中。",
+      "斯巴达之魂由来：奎托斯受阿瑞斯欺骗亲手误杀妻女，神谕将其妻女的骨灰永久焊在他的皮肤上，从此浑身惨白、人称「斯巴达之魂（Ghost of Sparta）」。",
+      "逃避过往：奎托斯在希腊众神覆灭后渡海隐居北欧米德加尔特（Midgard），试图压抑怒火、重新做人。",
+      "斯巴达正名：士官长反驳——真正的斯巴达战士是像自己一样死守防线、永不退缩，而非像奎托斯那样毁掉家园后逃到北方。",
+      "孤胆守护：《光环：无限》开局飞船被毁、战友失散，士官长在 Zeta 环带独自漂浮太空半年后苏醒，面对绝境依旧孤身应战。",
+      "精神内核：士官长从未为私仇而战，他扛起的是整个人类文明存亡的宿命——「永不退缩的人类守护者」。",
+      "经典台词双杀：融合《光环 2》神级台词「I need a weapon」与《光环 3》名言「Sir, finishing this fight」。",
+      "终极宣言：作为人类最后一道防线，以钢铁意志与血肉之躯完成对人类王座的守护。"
+    ],
+    "b": [
+      "斯巴达-II 期残酷真相：哈尔西博士（Dr. Halsey）在士官长 6 岁时将其秘密绑架，用注定短命的克隆体偷梁换柱，军方实验室强行改造，折损率过半。",
+      "面具傀儡暴击：讽刺士官长二十余年永远藏在绿色金属头盔后，从不敢以真面目示人（唯一摘头盔的派拉蒙真人剧版《光环》还被粉丝骂惨）。",
+      "科塔娜痛点：士官长最致命的软肋——他在《光环 4》眼睁睁看着灵魂伴侣 AI 科塔娜消逝，在《光环 5》又面对她黑化陨落。",
+      "复制品替代：到了《光环：无限》，士官长连一个虚拟程序都救不回来，只能带着科塔娜的衍生复制体「The Weapon」自我安慰。",
+      "弑神履历：从奥林匹斯十二主神到北欧阿萨神族，奎托斯手刃宙斯、波塞冬、赫尔墨斯与海姆达尔，战绩碾压外星军团。",
+      "武器特写对决：北欧神兵「利维坦之斧（Leviathan Axe）」的绝对寒霜冻裂雷神锤能源核心与护盾，正面对撞科幻护甲。",
+      "IP 衰落暴击：直戳《光环》玩家近年最大痛点——《光环：无限》空洞开放世界与漫长跳票、分屏合作食言，开发商 343 Industries 更在 2024 年被迫更名为 Halo Studios。",
+      "主机战争绝杀：2018《战神》在 TGA 击败《大镖客 2》斩获年度最佳游戏（GOTY）；反观微软 Xbox 独占壁垒瓦解，连《光环》等第一方王牌都陆续传出登陆 PlayStation 平台。",
+      "打破枷锁：奎托斯正面回击——自己早就亲手斩断了阿瑞斯与奥林匹斯的铁链，每一道伤疤都是自由意志的勋章。",
+      "军方耗材：回敬士官长——你至今仍是 UNSC 军方资产表里的一件制式装备（hardware），连呼吸都要受制于军方维护。",
+      "斯巴达血统：真正的斯巴达人来自古希腊拉科尼亚（Laconia）的血与火，而不是冷冰冰的实验室基因与神经接驳线。",
+      "反抗命运：在《战神 2》中，奎托斯亲手屠杀掌控万物生死的命运三女神（Sisters of Fate），彻底撕碎既定命运的织布机。",
+      "忠诚的牢笼：刺穿士官长的宿命困境——即使被当作工具消耗，他依然站在军令划定的牢笼里忠诚到死。",
+      "反抗者宣言：奎托斯的灵魂内核——打破预言、撕裂命运，绝不向任何神明或强权弯下膝盖。",
+      "混沌之刃终结：炽热的混沌双刃（Blades of Chaos）斩穿动力装甲核心，终结科幻铁皮兵。",
+      "战神加冕：两代「斯巴达」对决的最终宣判——只有一个名字配称战神，跪伏在奎托斯面前。"
+    ]
+  },
+  "name_card_lines": 1,
+  "end_card_secs": 3.8,
+  "structure": [
+    {
+      "type": "intro",
+      "tag": "Intro: UNSC slipspace static, Mjolnir energy shield recharge hum, and heavy 808 synth drop"
+    },
+    {
+      "type": "verse",
+      "who": "a",
+      "from": 1,
+      "to": 8,
+      "tag": "Verse 1 (Round 1 - Master Chief): Ice-cold robotic precision male rapper over heavy 808 sub-bass, sci-fi synth pulse, and mechanical shield-charge clicks"
+    },
+    {
+      "type": "crowd",
+      "tag": "Beat Switch: Mjolnir shield overload shatter, colossal Nordic war horn blast, heavy Taiko and Spartan war-drum drop",
+      "text": "OOOH!"
+    },
+    {
+      "type": "verse",
+      "who": "b",
+      "from": 1,
+      "to": 8,
+      "tag": "Verse 2 (Round 2 - Kratos): Ultra-deep chest-resonant gravelly bass male rapper, pounding Nordic war drums, heavy low brass, escalating battle rage"
+    },
+    {
+      "type": "crowd",
+      "tag": "Bridge (Final Clash): Nordic war horns colliding with Covenant plasma sirens, Blades of Chaos chains rattling into fused 808 and war-drum beat",
+      "text": "ROUND THREE! FINAL CLASH!"
+    },
+    {
+      "type": "verse",
+      "who": "a",
+      "from": 9,
+      "to": 12,
+      "tag": "Verse 3A (Final Clash - Master Chief): Fused sci-fi 808 and war drums, cold sharp tactical baritone firing back"
+    },
+    {
+      "type": "verse",
+      "who": "b",
+      "from": 9,
+      "to": 12,
+      "tag": "Verse 3B (Final Clash - Kratos): Fused war drums and heavy 808 sub-bass, booming furious chest-resonance counter"
+    },
+    {
+      "type": "verse",
+      "who": "a",
+      "from": 13,
+      "to": 14,
+      "tag": "Verse 3C (Final Clash - Master Chief): Stoic resolute guardian baritone over swelling synth and drums"
+    },
+    {
+      "type": "verse",
+      "who": "b",
+      "from": 13,
+      "to": 14,
+      "tag": "Verse 3D (Final Clash - Kratos): Thundering fate-breaker roar over heavy brass and war drums"
+    },
+    {
+      "type": "verse",
+      "who": "a",
+      "from": 15,
+      "to": 16,
+      "tag": "Verse 3E (Final Clash - Master Chief): Climax stoic finisher over roaring 808 synth"
+    },
+    {
+      "type": "verse",
+      "who": "b",
+      "from": 15,
+      "to": 16,
+      "tag": "Verse 3F (Final Clash - Kratos): Maximum intensity deep gravelly knockout bar over Nordic choir and bass drop"
+    },
+    {
+      "type": "outro",
+      "tag": "Outro: Blades of Chaos chain slam, Mjolnir shield power-down whine, epic Nordic choir and fading 808 boom",
+      "text": "SPARTAN! SPARTAN!"
+    }
+  ],
+  "show_notes": false,
+  "disclaimer": "AI-GENERATED · FOR ENTERTAINMENT",
+  "grade": "cas=0.25",
+  "mic_en": "none",
+  "film_look": true,
+  "suno_track": 1,
+  "intro_keep": 6.5,
+  "outro_keep": 12.0,
+  "title_card_secs": 4.5
+}

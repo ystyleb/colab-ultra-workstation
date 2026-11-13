@@ -68,6 +68,37 @@ EPISODE_SVC_PRESETS = {
         "eq_a": "highpass=f=85,equalizer=f=195:t=q:w=1.1:g=2.4,equalizer=f=3000:t=q:w=1.2:g=2.5",
         "eq_b": "highpass=f=85,equalizer=f=160:t=q:w=1.1:g=2.0,equalizer=f=3250:t=q:w=1.2:g=3.0",
     },
+    "michael-vs-trevor": {
+        "ref_a": "michael_ref_clean.wav",
+        "ref_b": "trevor_ref_clean.wav",
+        "rvc_a_urls": [
+            "https://huggingface.co/grandtheftauto/Michael_De_Santa/resolve/main/michaeldesanta.zip",
+            "https://huggingface.co/lilyrpa/lilyrpaModels/resolve/main/michaeldesanta.zip",
+            "https://huggingface.co/thisisafdssdfa/michaeldesanta/resolve/main/michaeldesanta.zip",
+        ],
+        "rvc_b_urls": [
+            "https://huggingface.co/Tsuinzues/trevorphilips/resolve/main/trevorphilips.zip",
+            "https://huggingface.co/notiscBalbalEko/myrvcmodel/resolve/main/GTA5Trevor_e501_s3997.zip",
+            "https://huggingface.co/lilyrpa/lilyrpaModels/resolve/main/trevorphilips.zip",
+        ],
+        "rvc_a_alt_urls": [
+            "https://huggingface.co/lilyrpa/lilyrpaModels/resolve/main/michaeldesanta.zip",
+        ],
+        "rvc_b_alt_urls": [
+            "https://huggingface.co/notiscBalbalEko/myrvcmodel/resolve/main/GTA5Trevor_e501_s3997.zip",
+            "https://huggingface.co/lilyrpa/lilyrpaModels/resolve/main/trevorphilips.zip",
+        ],
+        "rvc_passes": [
+            {"tag": "rvc", "pitch_a": -1, "pitch_b": 0, "protect_b": 0.40},
+            {"tag": "rvc_raw0", "pitch_a": 0, "pitch_b": 0, "protect_b": 0.38},
+            {"tag": "rvc_grit", "pitch_a": -2, "pitch_b": 1, "protect_b": 0.44},
+            {"tag": "rvc_deep", "pitch_a": -3, "pitch_b": -2, "protect_b": 0.38},
+            {"tag": "rvc_alt", "pitch_a": -1, "pitch_b": 0, "alt_a": True, "alt_b": True, "protect_b": 0.40},
+            {"tag": "rvc_alt_grit", "pitch_a": -2, "pitch_b": 1, "alt_a": True, "alt_b": True, "protect_b": 0.44},
+        ],
+        "eq_a": "highpass=f=88,equalizer=f=195:t=q:w=1.1:g=2.2,equalizer=f=3150:t=q:w=1.2:g=2.6",
+        "eq_b": "highpass=f=98,equalizer=f=210:t=q:w=1.15:g=1.6,equalizer=f=2450:t=q:w=1.3:g=1.6,equalizer=f=3550:t=q:w=1.2:g=2.8",
+    },
 }
 
 
@@ -342,45 +373,59 @@ try:
 
     rvc_dir = WORK / "rvc_models"
     rvc_dir.mkdir(exist_ok=True)
-    role_urls = {"a": CFG["rvc_a_urls"], "b": CFG["rvc_b_urls"]}
-    loaded_paths = {}
-    for role, urls in role_urls.items():
-        mdir = rvc_dir / f"role_{role}"
+
+    def _dl_rvc_slot(slot_key: str, urls: list[str]):
+        mdir = rvc_dir / f"role_{slot_key}"
         mdir.mkdir(exist_ok=True)
-        zpath = rvc_dir / f"role_{role}.zip"
+        zpath = rvc_dir / f"role_{slot_key}.zip"
         ok_dl = False
         for u in urls:
             res = subprocess.run(["curl", "-sL", "--fail", "-o", str(zpath), u])
             if res.returncode == 0 and zpath.exists() and zpath.stat().st_size > 1_000_000:
                 ok_dl = True
-                print(f"   ⬇️ Downloaded RVC [{role}] from {u} ({zpath.stat().st_size / 1048576:.1f} MB)", flush=True)
+                print(f"   ⬇️ Downloaded RVC [{slot_key}] from {u} ({zpath.stat().st_size / 1048576:.1f} MB)", flush=True)
                 break
         if not ok_dl:
-            raise RuntimeError(f"Failed to download RVC zip for role {role}")
+            raise RuntimeError(f"Failed to download RVC zip for slot {slot_key}")
         with zipfile.ZipFile(zpath, "r") as zf:
             zf.extractall(mdir)
         pths = sorted(mdir.rglob("*.pth"), key=lambda p: p.stat().st_size, reverse=True)
         idxs = [p for p in mdir.rglob("*.index") if "trained" not in p.name.lower()] or list(mdir.rglob("*.index"))
-        print(f"   RVC [{role}]: pth={pths[0]} idx={idxs[0] if idxs else None}", flush=True)
-        loaded_paths[role] = (str(pths[0]), str(idxs[0]) if idxs else "")
+        print(f"   RVC [{slot_key}]: pth={pths[0]} idx={idxs[0] if idxs else None}", flush=True)
+        return (str(pths[0]), str(idxs[0]) if idxs else "")
+
+    loaded_paths = {
+        "a": _dl_rvc_slot("a", CFG["rvc_a_urls"]),
+        "b": _dl_rvc_slot("b", CFG["rvc_b_urls"]),
+    }
+    for role in ("a", "b"):
+        alt_urls = CFG.get(f"rvc_{role}_alt_urls") or []
+        if alt_urls:
+            try:
+                loaded_paths[f"{role}_alt"] = _dl_rvc_slot(f"{role}_alt", alt_urls)
+            except Exception as alt_e:
+                print(f"   ⚠️ Optional alt RVC [{role}_alt] skipped: {alt_e}", flush=True)
 
     from infer_rvc_python import BaseLoader
     converter = BaseLoader(only_cpu=False, hubert_path=None, rmvpe_path=None)
     for pass_cfg in CFG.get("rvc_passes", [{"tag": "rvc", "pitch_a": 0, "pitch_b": 0}]):
         ptag = pass_cfg["tag"]
         for role in ("a", "b"):
-            pth_p, idx_p = loaded_paths[role]
+            slot = f"{role}_alt" if (pass_cfg.get(f"alt_{role}") and f"{role}_alt" in loaded_paths) else role
+            pth_p, idx_p = loaded_paths[slot]
             plvl = int(pass_cfg.get(f"pitch_{role}", 0))
+            prot = float(pass_cfg.get(f"protect_{role}", pass_cfg.get("protect", 0.33)))
+            idx_inf = float(pass_cfg.get(f"index_{role}", pass_cfg.get("index", 0.68))) if idx_p else 0.0
             converter.apply_conf(
                 tag=f"{ptag}_{role}",
                 file_model=pth_p,
                 pitch_algo="rmvpe+",
                 pitch_lvl=plvl,
                 file_index=idx_p,
-                index_influence=0.68 if idx_p else 0.0,
+                index_influence=idx_inf,
                 respiration_median_filtering=3,
-                envelope_ratio=0.25,
-                consonant_breath_protection=0.33,
+                envelope_ratio=float(pass_cfg.get("envelope_ratio", 0.25)),
+                consonant_breath_protection=prot,
             )
         for rm in run_meta:
             idx, who = rm["idx"], rm["who"]

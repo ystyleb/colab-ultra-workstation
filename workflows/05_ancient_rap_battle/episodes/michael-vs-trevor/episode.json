@@ -1,0 +1,236 @@
+{
+  "title": "Michael_vs_Trevor",
+  "language": "en",
+  "mode": "full",
+  "performance_mode": "cinematic_mv_no_mic",
+  "song": "song.mp3",
+  "era_en": "2013 Los Santos & North Yankton, three iconic crime cinema locations across night, desert dusk, and blizzard graveyard",
+  "commoners_en": "no studio crowd — pure live-action crime cinema music video on real locations",
+  "venue_en": "a cinematic three-location Grand Theft Auto crime thriller music video: Rockford Hills luxury mansion pool terrace overlooking the glowing Los Santos night skyline, Sandy Shores dusty desert trailer park and airfield at fiery amber dusk, and Ludendorff North Yankton snow-covered graveyard at night illuminated by warm 3200K pickup truck headlights cutting through swirling blizzard snow",
+  "light_en": "authentic mixed-temperature live-action 35mm cinema lighting: warm 3200K tungsten-amber motivated side-key light (mansion terrace sconces / desert sunset / pickup truck halogen headlights) sculpting natural, healthy warm blood-toned human skin on the lit cheek while the off-key side falls into deep rich solid 4:1 chiaroscuro shadow (zero grey haze, zero cyan skin cast), paired with a crisp 5600K–6500K cool-silver rim light tracing hair and shoulders, and rich warm 2700K bokeh highlights in the out-of-focus background",
+  "bg_bokeh_en": "warm glowing 2700K Los Santos city skyline lights, fiery desert airfield floodlights, and warm amber truck headlight beams through falling snow",
+  "bg_lights_en": "warm 2700K amber cinema bokeh",
+  "arena_sound_en": "a gritty cinematic crime thriller soundstage with crisp close-mic studio rap vocals",
+  "crowd_motion_en": "",
+  "scenes": {
+    "mansion": {
+      "name": "Rockford Hills Mansion Pool Terrace (Night)",
+      "verses": ["A01-A08"],
+      "venue_en": "a luxurious Rockford Hills hillside mansion terrace and infinity pool deck at night, sleek glass balcony railing, a crystal rocks glass of amber scotch on a marble outdoor bar, palm tree silhouettes, and the sprawling glittering Los Santos downtown skyscraper skyline glowing in warm 2700K gold and neon bokeh far below",
+      "light_en": "authentic mixed-temperature 35mm night exterior cinema lighting: warm 3200K tungsten mansion terrace wall-sconce side-key light sculpting healthy warm blood-toned skin with 4:1 chiaroscuro shadow, paired with cool 5600K moonlight silver rim light along hair and suit shoulders, and warm 2700K glittering Los Santos skyline bokeh behind him"
+    },
+    "desert": {
+      "name": "Sandy Shores Trailer & Dusty Airfield (Dusk)",
+      "verses": ["B01-B08"],
+      "venue_en": "a gritty sun-scorched Sandy Shores desert trailer yard and dusty dirt airfield at fiery dusk, a battered corrugated-metal mobile home with a rusted neon beer sign in the window, red steel jerrycans, rusted oil drums, Joshua trees, and a parked rusty red off-road pickup truck kicking up golden-amber dust haze",
+      "light_en": "authentic mixed-temperature 35mm desert dusk cinema lighting: intense warm 3200K low-angle golden-amber sunset and trailer porch bulb side-key light sculpting raw weathered skin texture and sweat sheen with deep 4:1 shadow contrast, paired with crisp 5600K twilight sky rim light on hair and shoulders, and warm 2700K airfield floodlight bokeh through desert dust"
+    },
+    "yankton": {
+      "name": "North Yankton Ludendorff Snowy Graveyard (Blizzard Night)",
+      "verses": ["A09-A16", "B09-B16"],
+      "venue_en": "a remote snow-blanketed Ludendorff cemetery in North Yankton during a midnight winter snowfall, weathered stone headstones, bare frost-covered trees, a freshly dug open grave in the snow with a wooden coffin lid and an iron shovel driven into the snowbank, illuminated from the side by the twin warm 3200K halogen headlights of a parked red pickup truck cutting through swirling snow and visible warm breath vapor",
+      "light_en": "authentic mixed-temperature 35mm winter night cinema lighting: strong warm 3200K amber halogen pickup-truck headlight beam from the side sculpting natural warm blood-toned human skin on the lit cheek with dramatic 4:1 shadow falloff (zero cyan or dead-grey skin cast), paired with crisp 6500K icy blue-silver moonlight rim highlights catching falling snowflakes and steaming breath, and warm 2700K sodium church-lantern bokeh glowing softly in the snowy distance"
+    }
+  },
+  "tagline": "LOS SANTOS · NORTH YANKTON",
+  "outro_chant": "WASTED",
+  "watermark": "AI RAP BATTLE",
+  "end_question": "TEAM MICHAEL OR TEAM TREVOR?|DROP YOUR PICK BELOW",
+  "suno_style": "Battle rap, 90s G-Funk swagger colliding with trap-metal fury, 92 BPM mid-tempo swing with hard snap boom-bap drums and distorted 808 sub drops; Michael's verses ride slick West Coast G-Funk pocket and 80s heist analog synth, Trevor's verses detonate in jagged trap-metal aggression with gritty desert punk guitar; siren risers, sharp turntable cuts between rounds, two contrasting male rappers, crisp English diction",
+  "a": {
+    "name_cn": "MICHAEL",
+    "name_en": "Michael De Santa",
+    "aka": "Kingpin in Retirement",
+    "look": "45-year-old retired American bank robber Michael De Santa in 2013 Los Santos, heavyset-athletic middle-aged build, short neatly combed dark-brown hair with subtle silver-grey at the temples, weathered square-jawed face with realistic pores, fine forehead lines and crow's feet, cynical tired hazel-brown eyes, clean-shaven jaw with faint five-o'clock shadow leaving his lips 100% clear, wearing his iconic tailored charcoal-grey two-button luxury suit jacket over a crisp slate-blue open-collar dress shirt (no tie) and a silver luxury wristwatch",
+    "look_winter": "45-year-old Michael De Santa in winter North Yankton, short neatly combed dark-brown hair with silver temples catching tiny snowflakes, weathered square-jawed face with natural warm skin tone in headlight glow, wearing a heavy dark navy-black wool overcoat with popped collar over a charcoal sweater, faint warm breath mist in the cold air",
+    "voice": "smooth condescending middle-aged East-meets-West Coast mobster male rapper, cynical world-weary heavy baritone, steady surgical boom-bap delivery",
+    "pitch": -1.5,
+    "prop": "crystal rocks glass of amber whiskey",
+    "prop_desc": "a crystal whiskey glass on a sleek Rockford Hills balcony overlooking Los Santos lights",
+    "look_cn": "游戏原版麦克·迪圣塔经典造型：45岁微发福结实中年硬汉面孔、鬓角微斑白的整齐深棕短发、眼角细纹与疲惫玩世不恭眼神、刮净胡须的下颌（嘴唇100%无遮挡）、经典炭灰色修身定制西装敞领搭灰蓝衬衫与银色名表；Round 2雪地换穿深藏青厚羊毛翻领大衣；无麦克风纯电影实景表演",
+    "listen_cn": "眉头紧锁、下颌咬紧、眼神里交织着被戳穿伪善的恼怒与老狐狸的冷酷算计"
+  },
+  "b": {
+    "name_cn": "TREVOR",
+    "name_en": "Trevor Philips",
+    "aka": "CEO of Chaos",
+    "look": "46-year-old unhinged desert outlaw Trevor Philips in 2013 Sandy Shores, lean sinewy wiry build, receding balding hairline with messy greased-back dark-brown side hair and bare sun-weathered forehead, deep furrowed brow ridges, wild piercing crazed dark eyes, gaunt weathered cheekbones with realistic pores and sweat sheen, short scraggly dark stubble neatly clear of his upper and lower lips, faint dotted line tattoo with small 'CUT HERE' mark at the base of his neck, wearing his iconic sweat-stained off-white crew-neck pocket T-shirt, faded dirty cargo pants, and black tattoos along his left forearm",
+    "look_winter": "46-year-old unhinged outlaw Trevor Philips in winter North Yankton, receding balding hairline with messy dark side hair dusted with snow, wild glaring eyes and deeply furrowed brow, short scraggly stubble clear of his lips, wearing a rugged worn brown sheepskin-lined winter parka jacket unzipped at the throat over his dirty off-white T-shirt, steaming breath in the freezing night",
+    "voice": "unhinged explosive gravelly mid-range male rapper, erratic stop-and-go snarling rasp with sudden ferocious emphasis and mocking dark-comedy venom",
+    "pitch": 1.0,
+    "prop": "rusted red steel gasoline jerrycan and iron snow shovel",
+    "prop_desc": "a battered Sandy Shores trailer neon sign, red steel gasoline jerrycan, and an iron shovel driven into snow",
+    "look_cn": "游戏原版崔佛·菲利普经典造型：46岁精瘦强悍疯批悍匪面孔、标志性M字谢顶两侧杂乱深棕头发、深陷眉弓与癫狂凶狠眼神、不遮嘴唇的粗糙短胡茬、脖颈虚线刺青与左小臂纹身、泛黄污渍圆领白T恤；Round 2雪地换穿做旧棕色羊羔绒冬装派克夹克；无麦克风纯电影实景表演",
+    "listen_cn": "歪着脖子神经质抽动嘴角、眼珠死死瞪着麦克、随时要扑上去咬断喉咙的疯狗压迫感"
+  },
+  "svc": {
+    "ref_a": "michael_ref_clean.wav",
+    "ref_b": "trevor_ref_clean.wav",
+    "rvc_a_urls": [
+      "https://huggingface.co/grandtheftauto/Michael_De_Santa/resolve/main/michaeldesanta.zip",
+      "https://huggingface.co/lilyrpa/lilyrpaModels/resolve/main/michaeldesanta.zip",
+      "https://huggingface.co/thisisafdssdfa/michaeldesanta/resolve/main/michaeldesanta.zip"
+    ],
+    "rvc_b_urls": [
+      "https://huggingface.co/Tsuinzues/trevorphilips/resolve/main/trevorphilips.zip",
+      "https://huggingface.co/notiscBalbalEko/myrvcmodel/resolve/main/GTA5Trevor_e501_s3997.zip",
+      "https://huggingface.co/lilyrpa/lilyrpaModels/resolve/main/trevorphilips.zip"
+    ],
+    "rvc_a_alt_urls": [
+      "https://huggingface.co/lilyrpa/lilyrpaModels/resolve/main/michaeldesanta.zip"
+    ],
+    "rvc_b_alt_urls": [
+      "https://huggingface.co/notiscBalbalEko/myrvcmodel/resolve/main/GTA5Trevor_e501_s3997.zip",
+      "https://huggingface.co/lilyrpa/lilyrpaModels/resolve/main/trevorphilips.zip"
+    ],
+    "rvc_passes": [
+      {"tag": "rvc", "pitch_a": -1, "pitch_b": 0, "protect_b": 0.40},
+      {"tag": "rvc_raw0", "pitch_a": 0, "pitch_b": 0, "protect_b": 0.38},
+      {"tag": "rvc_grit", "pitch_a": -2, "pitch_b": 1, "protect_b": 0.44},
+      {"tag": "rvc_deep", "pitch_a": -3, "pitch_b": -2, "protect_b": 0.38},
+      {"tag": "rvc_alt", "pitch_a": -1, "pitch_b": 0, "alt_a": true, "alt_b": true, "protect_b": 0.40},
+      {"tag": "rvc_alt_grit", "pitch_a": -2, "pitch_b": 1, "alt_a": true, "alt_b": true, "protect_b": 0.44}
+    ]
+  },
+  "lyrics": {
+    "a": [
+      "Rockford Hills terrace — pouring scotch upon my throne",
+      "You wake up in a dress, wearing dirt like cologne",
+      "Vinewood producer — got the mansion and the gated lane",
+      "Your whole \"enterprise\" is Ron and Wade and cheap propane",
+      "Stomping out Johnny won't disguise the truth you can't destroy",
+      "One word from Mommy leaves you fetal like a broken boy",
+      "Every score went sideways 'cause you couldn't hold your gun",
+      "Smart men cut a deal to live — mad dogs die on the run",
+      "Dragged us back to Ludendorff to dig inside the snow?",
+      "Stare into that open grave — here's everything to know",
+      "Brad caught the bullet that was meant to put you down",
+      "Leaving you still breathing was my worst mistake in town",
+      "Kidnapped Madrazo's wife just to beg for someone's care",
+      "When Franklin lights that gasoline, nobody says a prayer",
+      "Rockstar scrapped your \"Agent Trevor\" — left your files to rot",
+      "While I came back to Vinewood Hills and closed the final plot"
+    ],
+    "b": [
+      "\"Witness protection\"?! For WHAT?! Nobody took the stand!",
+      "You're Davey's crooked F.I.B. rat paying on demand!",
+      "Paying off your shrink to hear you whine about your life",
+      "While Fabien and the tennis coach are stretching out your wife!",
+      "Jimmy spiked your drink and dumped his daddy in the street",
+      "Tracey's grinding Lazlow's leg on prime-time cable heat!",
+      "Yeah, I'm filthy and unhinged — wear my chaos on my chest",
+      "You're a silk-suit parasite and your own blood hates you best!",
+      "Nine years I mourned your ghost with your name inked in my skin!",
+      "While you forged dead Brad's letters sipping poolside gin!",
+      "When Franklin called to kill you, I refused to take the shot!",
+      "You brought a gun to burn me — that's the crooked soul you've got!",
+      "Drop you off that tower while your family cheers below",
+      "Two fake graves for Townley — now lay permanently low!",
+      "Two-thirty million sold — next week Vice City takes the throne",
+      "Keep your mansion, Judas — die a traitor, die alone!"
+    ]
+  },
+  "notes": {
+    "a": [
+      "阶级反差开场：麦克隐退后居住在洛圣都顶级富人区罗克福德山（Rockford Hills，原型比佛利山庄）带无边泳池的豪宅中，日常端着威士忌晒太阳。",
+      "切人唤醒名场面：玩家在《GTA V》中切换到崔佛时，经常撞见他醉倒在奇利亚德山顶穿一条碎花连衣裙（「Less of a man? No!」），或在门廊嗅汽油抹布。",
+      "好麦坞制片人梦：麦克结识偶像所罗门·理查兹（Solomon Richards）后如愿成为好麦坞电影联合制片人，拼命维持上流中产体面。",
+      "荒漠草台班子：讽刺崔佛自封的「菲利普企业」（Trevor Philips Enterprises），核心员工只有阴谋论邻居老罗（Ron）与满脸油彩的傻小弟韦德（Wade）在拖车里熬制冰毒。",
+      "登场踩头阴影：崔佛首次登场任务〈Mr. Philips〉中一脚踩爆前作《失落与诅咒》硬汉主角强尼（Johnny Klebitz）的脑袋，立下全系列最残暴疯狗形象。",
+      "巨婴恋母死穴：隐藏通关任务〈Mrs. Philips〉中，天不怕地不怕的崔佛一见到刻薄亲妈瞬间崩溃跪地抱腿痛哭，乖乖跑去偷止痛药货车讨好母亲。",
+      "劫案失控指控：麦克始终把当年抢劫团伙走向覆灭归咎于崔佛不可预测的狂暴杀戮欲。",
+      "伪善生存哲学：麦克为自己当年私通 FIB 设局假死辩护——聪明人做交易保命上岸，疯狗只配亡命天涯。",
+      "名场面转场：主线最高潮任务〈真相大白〉（Bury the Hatchet），崔佛逼迫麦克重返九年前抢劫案发地——冰天雪地的北杨克顿卢登道夫（Ludendorff）墓园。",
+      "掘坟对质：崔佛亲手刨开刻着「Michael Townley」假名的坟墓，撬开棺材盖揭穿长达九年的惊天骗局。",
+      "北杨克顿血腥真相：2004 年设局当天，FIB 狙击手戴夫·诺顿（Dave Norton）原本瞄准的是不可控的崔佛，却阴差阳错一枪打死了挡在前面的同伙布莱德（Brad Snider）。",
+      "撕破面具摊牌：麦克收起所有伪装直接诛心——当年没让那一枪把崔佛一起留在雪地里，才是自己最大的失误。",
+      "斯德哥尔摩黄昏恋：崔佛绑架毒枭马丁·玛德拉索的妻子帕特里夏（Patricia）后竟对其百依百顺陷入畸形母性依恋，送还人质时还一路抹眼泪。",
+      "结局 A〈明智之举〉（Something Sensible）：若玩家选择杀崔佛，富兰克林与麦克会将浑身汽油的崔佛点燃活活烧死在油罐车残骸前。",
+      "幕后砍单痛点：演员 Steven Ogg 与 Dan Houser 均证实，拍到一半的单人特工资料片《Agent Trevor》被 Rockstar 腰斩，资产被拆解塞进多人模式。",
+      "2025 年底正史绝杀：2025 年 12 月 10 日《GTA Online：山中安全屋》（A Safehouse in the Hills）压轴更新中，麦克时隔十二年风光回归好麦坞豪宅区收束终章剧情（一语双关 plot：豪宅地皮与终极剧本）。"
+    ],
+    "b": [
+      "宇宙级考据名梗：精准引爆海外顶流主播 DarkViperAU 最出圈咆哮梗「Witness protection for what?! No one was convicted of anything!」——麦克根本不在官方证人保护计划里！",
+      "FIB 脏钱真相：麦克所谓的「证人保护」实则是私下每月给腐败 FIB 探员戴夫·诺顿（Davey）打黑钱买命，帮戴夫冒领击毙头号通缉犯的功劳。",
+      "心理医生提款机：麦克每周向黑心心理医生费兰德（Dr. Friedlander）缴纳高昂诊费倒苦水，对方却只想着拿他的犯罪隐私出书圈钱。",
+      "绿帽双杀暴击：老婆阿曼达（Amanda）不仅在家与网球教练偷情（导致麦克怒拆黑帮大佬豪宅），还在泳池边与法国瑜伽教练法比安（Fabien）摆出不堪入目的双人姿势。",
+      "逆子坑爹名场面：任务〈有人提到瑜伽吗？〉中，废柴儿子吉米（Jimmy）给麦克冰沙里下致幻剂，直接把亲爹一脚踹下车并搬空存款离家。",
+      "女儿电视社死：任务〈出名或出丑〉（Fame or Shame）中，女儿崔西（Tracey）跑上全国直播选秀节目对着猥琐主持人拉兹洛（Lazlow）大跳热辣贴身舞。",
+      "真小人胜伪君子：崔佛坦然承认自己肮脏癫狂、把恶魔穿在胸口，绝不像麦克那样既当婊子又立牌坊。",
+      "改名换姓众叛亲离：讽刺麦克把真姓氏「Townley」改成虚伪的「De Santa」，结果中期连亲老婆儿女都集体搬走抛弃他。",
+      "九年守孝刺青：崔佛左臂真的纹着纪念死去好兄弟的「Michael — R.I.P. Brother」纹身，整整九年真心为假死的麦克悲痛守义。",
+      "伪造狱中信件：这九年间麦克与戴夫一直在幕后冒充早已腐烂在棺材里的布莱德，给崔佛发虚假的「狱中电子邮件」稳住他，自己却在泳池边喝金酒享乐。",
+      "结局 B 道德绝杀：在结局 B〈大限将至〉中，富兰克林打电话邀崔佛一起杀麦克，崔佛当场严词拒绝并痛骂富兰克林是背叛兄弟的犹大——守住了江湖义气的最后底线。",
+      "结局 A 诛心对比：反观结局 A 里富兰克林约杀崔佛时，麦克不仅满口答应，甚至在富兰克林犹豫不忍开枪时亲手抢先扣扳机点燃汽油烧死昔日挚友！",
+      "高塔坠亡结局：直指结局 B 名场面——麦克在帕默-泰勒发电厂高塔顶刚接到阿曼达电话，便从高空坠落摔死，死前众叛亲离。",
+      "两座假坟清算：九年前麦克在卢登道夫立了一块假墓碑并办了假葬礼；崔佛冷血宣判这次让他真正躺进土里永世不得翻身。",
+      "2026 年 11 月实时王座交接：截至 2026 年三季度《GTA V》全球狂销近 2.35 亿套；而就在下周（2026 年 11 月 19 日），《GTA VI》即将携罪恶都市（Vice City）正式接管王座！",
+      "终极审判收尾：把豪宅留给这个背叛兄弟的犹大（Judas），用最冰冷清醒的诅咒完成对十三年恩怨的绝杀。"
+    ]
+  },
+  "name_card_lines": 1,
+  "end_card_secs": 2.3,
+  "structure": [
+    {
+      "type": "intro",
+      "tag": "Intro: police scanner crackle, 80s heist synth arpeggio and smooth 92 BPM G-Funk bass drop"
+    },
+    {
+      "type": "verse",
+      "who": "a",
+      "from": 1,
+      "to": 8,
+      "tag": "Verse 1: Smooth 90s West Coast G-Funk groove, laid-back condescending mob-boss baritone"
+    },
+    {
+      "type": "crowd",
+      "tag": "Beat Switch: vinyl brake screech, alarm siren, sudden heavy distorted 808 Trap Metal and desert punk guitar drop",
+      "text": "OOOH!"
+    },
+    {
+      "type": "verse",
+      "who": "b",
+      "from": 1,
+      "to": 8,
+      "tag": "Verse 2: Distorted Trap Metal 808 bass and desert punk guitar, unhinged snarling raspy male rapper, explosive cadence"
+    },
+    {
+      "type": "crowd",
+      "tag": "Bridge: howling blizzard wind, shovel thud on wood coffin, dark synth choir and war drums",
+      "text": "ROUND TWO! ROUND TWO!"
+    },
+    {
+      "type": "verse",
+      "who": "a",
+      "from": 9,
+      "to": 16,
+      "tag": "Verse 3: Dark icy heist synth over hard boom-bap drums, cold ruthless mask-off male baritone"
+    },
+    {
+      "type": "crowd",
+      "tag": "Final Drop: gun cocking click, maximum distorted hardcore sub-bass and roaring guitar climax",
+      "text": "OOOH!"
+    },
+    {
+      "type": "verse",
+      "who": "b",
+      "from": 9,
+      "to": 16,
+      "tag": "Verse 4: Ferocious hardcore hip-hop climax, raw roaring raspy vocal dropping into ice-cold final bars"
+    },
+    {
+      "type": "outro",
+      "tag": "Outro: heavy bass slam and fading siren echo",
+      "text": "WASTED! WASTED!"
+    }
+  ],
+  "show_notes": false,
+  "disclaimer": "AI-GENERATED · FOR ENTERTAINMENT",
+  "grade": "cas=0.25",
+  "mic_en": "none",
+  "film_look": true,
+  "suno_track": 1,
+  "intro_keep": 10.0,
+  "outro_keep": 11.2,
+  "title_card_secs": 4.9
+}

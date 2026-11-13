@@ -1,0 +1,74 @@
+[
+  {
+    "idx": 0,
+    "who": "a",
+    "i0": 278712,
+    "i1": 1439115,
+    "t_s": 6.32,
+    "t_e": 32.633,
+    "slice": "/content/svc_work/slice_0_a.wav"
+  },
+  {
+    "idx": 1,
+    "who": "b",
+    "i0": 1510293,
+    "i1": 2661920,
+    "t_s": 34.247,
+    "t_e": 60.361,
+    "slice": "/content/svc_work/slice_1_b.wav"
+  },
+  {
+    "idx": 2,
+    "who": "a",
+    "i0": 3290433,
+    "i1": 3867702,
+    "t_s": 74.613,
+    "t_e": 87.703,
+    "slice": "/content/svc_work/slice_2_a.wav"
+  },
+  {
+    "idx": 3,
+    "who": "b",
+    "i0": 3848783,
+    "i1": 4410132,
+    "t_s": 87.27399999999999,
+    "t_e": 100.003,
+    "slice": "/content/svc_work/slice_3_b.wav"
+  },
+  {
+    "idx": 4,
+    "who": "a",
+    "i0": 4391213,
+    "i1": 4958780,
+    "t_s": 99.574,
+    "t_e": 112.444,
+    "slice": "/content/svc_work/slice_4_a.wav"
+  },
+  {
+    "idx": 5,
+    "who": "b",
+    "i0": 4939861,
+    "i1": 5224748,
+    "t_s": 112.01499999999999,
+    "t_e": 118.475,
+    "slice": "/content/svc_work/slice_5_b.wav"
+  },
+  {
+    "idx": 6,
+    "who": "a",
+    "i0": 5205829,
+    "i1": 5509413,
+    "t_s": 118.04599999999999,
+    "t_e": 124.93,
+    "slice": "/content/svc_work/slice_6_a.wav"
+  },
+  {
+    "idx": 7,
+    "who": "b",
+    "i0": 5490538,
+    "i1": 5785788,
+    "t_s": 124.502,
+    "t_e": 131.197,
+    "slice": "/content/svc_work/slice_7_b.wav"
+  }
+]
