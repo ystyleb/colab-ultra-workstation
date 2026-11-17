@@ -1,0 +1,226 @@
+{
+  "project_meta": {
+    "workflow_id": "10_ai_influencer_matrix",
+    "drive_output_dir": "AI_Influencer_Matrix",
+    "tts_session": "inf-tts-l4",
+    "video_session": "inf-h3-g4",
+    "legal_h3_frames": [
+      90,
+      107,
+      124,
+      141,
+      158,
+      175,
+      192,
+      209,
+      226,
+      243,
+      260,
+      277,
+      294,
+      311,
+      328,
+      345,
+      362
+    ]
+  },
+  "h3_defaults": {
+    "width": 768,
+    "height": 1344,
+    "fps": 24.0,
+    "steps": 10,
+    "realism_v2": true,
+    "unet": "Minimax-h3_Singularity_ref2va_Pruned_v1.3_int8.safetensors",
+    "clip": "qwen3vl_32b_heretic_minimax_h3_nvfp4.safetensors",
+    "video_vae": "minimax_h3_video_vae_fp16.safetensors",
+    "audio_vae": "minimax_h3_audio_vae_fp32.safetensors",
+    "realism_lora": "h3-realism-people-t2v-i2v-r2v.safetensors",
+    "realism_strength": 0.75,
+    "closeup_lora": "minimax-h3-facial-realism-closeup-cp2000.safetensors",
+    "closeup_strength": 0.4,
+    "turbo_lora": "minimax_h3_ref2v_turbo_8step_v1.1_768p_comfyui_bf16.safetensors",
+    "turbo_strength": 0.75,
+    "bunny_adapter": "BUNNY_H3_ActionLogic_Bridge_V2.safetensors",
+    "bunny_alpha": 0.12,
+    "audio_lock_strength": 0.9
+  },
+  "personas": {
+    "vivian": {
+      "display_name": "Grandma Vivian Sterling",
+      "handle": "@vivian.oldmoney",
+      "niche": "Money, Spending & Boundaries",
+      "age_desc": "78-year-old grandmother from a comfortable family who, at 34, personally untangled the household ledger after her first husband's appearance spending nearly sank them",
+      "look_en": "78-year-old poised aristocratic white woman with elegant silver-champagne swept-up hair, natural fine mature facial lines and skin pores, sharp intelligent green-grey eyes, pearl stud earrings",
+      "bio_lines": [
+        "78yo AI grandmother 💐 Money, manners & saying no",
+        "Gentle with people, sharp with the rules",
+        "Comment RULES or tap below for the Free Approval Tax Audit 👇"
+      ],
+      "manychat_keyword": "RULES",
+      "voice": {
+        "language": "English",
+        "f0_range_hz": [
+          145.0,
+          182.0
+        ],
+        "seeds": [
+          105,
+          206,
+          307,
+          408
+        ],
+        "instruct": "A composed 78-year-old American grandmother speaking in a warm, low mid-Atlantic alto, unhurried and dry-witted, crisp clean sentence endings, kind rather than cold, zero hype.",
+        "seed_text": "Darling, I'm not telling you to stop spending. I'm asking who you're spending it for. Flowers for yourself are one thing. A show for strangers is another."
+      },
+      "scenes": {
+        "library": {
+          "image": "ref_vivian_library_768x1344.png",
+          "bg_en": "a sunlit Old-Money mahogany home library with leather-bound book spines, a warm brass banker desk lamp and wood-paneled walls",
+          "outfit_en": "a crisp cream silk ascot blouse beneath a tailored charcoal-tweed blazer"
+        },
+        "flowers": {
+          "image": "ref_vivian_flowers_768x1344.png",
+          "bg_en": "a sunlit glass conservatory room filled with buckets of fresh peonies, garden roses and seasonal stems in soft morning light",
+          "outfit_en": "a soft dove-grey cashmere cardigan over a cream silk blouse"
+        }
+      },
+      "products": {
+        "free": {
+          "title": "The Approval Tax Audit",
+          "subtitle": "72 Hours of Noticing What You Spend to Be Seen",
+          "pdf": "products/vivian_free_approval_tax_audit.pdf",
+          "price_usd": 0.0,
+          "cta": "Get the Free Approval Tax Audit"
+        },
+        "paid": {
+          "title": "The Quiet Money Rules",
+          "subtitle": "Spending Choices, Money Talk & Boundaries",
+          "pdf": "products/vivian_paid_quiet_money_rules.pdf",
+          "anchor_price_usd": 24.0,
+          "price_usd": 15.0,
+          "bump_title": "Money Talk Cards: Raises, Loans & Splitting the Bill",
+          "bump_price_usd": 9.0,
+          "cta": "Get The Quiet Money Rules"
+        }
+      }
+    },
+    "june": {
+      "display_name": "June Whitaker",
+      "handle": "@june.noticing",
+      "niche": "Relationships & Small Gestures",
+      "age_desc": "61-year-old retired wedding photographer (34 years, about 1,100 weddings), divorced once and open about it",
+      "look_en": "61-year-old white American woman from the Midwest with a short salt-and-pepper curly bob, warm brown eyes with natural laugh lines and fine skin pores, tortoiseshell reading glasses hanging on a thin cord",
+      "bio_lines": [
+        "61yo AI wedding photographer 📷 Small moments, honest notes",
+        "Watch what happens when no one's posing",
+        "Comment NOTICE or tap below for the Free 3-Day Notice Journal 👇"
+      ],
+      "manychat_keyword": "NOTICE",
+      "voice": {
+        "language": "English",
+        "f0_range_hz": [
+          160.0,
+          198.0
+        ],
+        "seeds": [
+          113,
+          214,
+          315,
+          416
+        ],
+        "instruct": "A warm 61-year-old American woman from the Midwest speaking in a gentle mid-range voice, unhurried and plainspoken, with small natural pauses before a tender detail, zero theatrical drama.",
+        "seed_text": "Watch what happens when nobody's posing. That's usually where the real picture is, in the small things two people do for each other."
+      },
+      "scenes": {
+        "studio": {
+          "image": "ref_june_studio_768x1344.png",
+          "bg_en": "a natural-light old photography studio with contact sheets pinned on a cork wall, a magnifying loupe and an old film camera on a wooden worktable",
+          "outfit_en": "a faded denim shirt with rolled sleeves over a cream tee"
+        },
+        "kitchen": {
+          "image": "ref_june_kitchen_768x1344.png",
+          "bg_en": "a warm lived-in Midwestern kitchen with an open wedding photo album and a mug on the table, soft window daylight",
+          "outfit_en": "a soft oatmeal knit sweater"
+        }
+      },
+      "products": {
+        "free": {
+          "title": "The 3-Day Notice Journal",
+          "subtitle": "Three Small Moments Worth Writing Down",
+          "pdf": "products/june_free_3day_notice_journal.pdf",
+          "price_usd": 0.0,
+          "cta": "Get the Free Notice Journal"
+        },
+        "paid": {
+          "title": "The Contact Sheet",
+          "subtitle": "From Noticing to One Honest Conversation · Dating & Partnered Editions",
+          "pdf": "products/june_paid_contact_sheet.pdf",
+          "anchor_price_usd": 19.0,
+          "price_usd": 14.0,
+          "bump_title": "50 Deep Conversation Cards",
+          "bump_price_usd": 9.0,
+          "cta": "Get The Contact Sheet"
+        }
+      }
+    },
+    "wen": {
+      "display_name": "Henry Wen",
+      "handle": "@wen.teashop",
+      "niche": "Rest & Measure for Busy Lives",
+      "age_desc": "71-year-old Chinese-American tea shop owner in San Francisco since 1978, a lay reader of Zhuangzi and Lao Tzu (not a monk or teacher), who burned out in his forties and learned to close for a nap",
+      "look_en": "71-year-old Chinese-American man with short neatly combed grey hair, a calm lined face with natural skin pores and faint age spots, warm dark-brown eyes, clean-shaven so his mouth is fully visible",
+      "bio_lines": [
+        "71yo AI tea shop owner 🍵 Zhuangzi & doing a little less",
+        "Rest and measure for busy lives · not therapy",
+        "Comment TEA or tap below for The Tea Drawer 👇"
+      ],
+      "manychat_keyword": "TEA",
+      "voice": {
+        "language": "English",
+        "f0_range_hz": [
+          88.0,
+          125.0
+        ],
+        "seeds": [
+          117,
+          218,
+          319,
+          420
+        ],
+        "instruct": "A calm 71-year-old Chinese-American man who has lived in San Francisco for decades, speaking clear American English in a low, unhurried, warm voice with a slight natural lilt and dry gentle humor, pausing briefly after each story; never an exaggerated or stereotyped accent.",
+        "seed_text": "Every afternoon at two, I close the shop and take a nap. The tea will still be here when I wake up, and so will the work."
+      },
+      "scenes": {
+        "counter": {
+          "image": "ref_wen_counter_768x1344.png",
+          "bg_en": "a small San Francisco tea shop counter with a wall of tea tins, a steaming clay teapot and soft window daylight",
+          "outfit_en": "a navy cotton cardigan over a white collared shirt"
+        },
+        "chess": {
+          "image": "ref_wen_chess_768x1344.png",
+          "bg_en": "a quiet back room with a wooden xiangqi board on a small table by a window, a handwritten 'Closed for nap' sign hanging in the window",
+          "outfit_en": "a soft grey wool vest over a light-blue collared shirt"
+        }
+      },
+      "products": {
+        "free": {
+          "title": "The Tea Drawer",
+          "subtitle": "20 Pause Cards, Picked by Situation · No Streaks",
+          "pdf": "products/wen_free_tea_drawer.pdf",
+          "price_usd": 0.0,
+          "cta": "Get The Tea Drawer"
+        },
+        "paid": {
+          "title": "Doing Less, Case by Case",
+          "subtitle": "One Story, One Small Step, One Thing to Skip",
+          "pdf": "products/wen_paid_doing_less_case_by_case.pdf",
+          "anchor_price_usd": 19.0,
+          "price_usd": 14.0,
+          "bump_title": "30 Tao Te Ching Cards (Original + English)",
+          "bump_price_usd": 9.0,
+          "cta": "Get Doing Less, Case by Case"
+        }
+      }
+    }
+  }
+}

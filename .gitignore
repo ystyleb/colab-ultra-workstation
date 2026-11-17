@@ -41,3 +41,8 @@ tts_takes/
 workflows/08_site_channels/out/
 workflows/08_site_channels/fonts/
 workflows/08_site_channels/.cache/
+
+# 10 ai influencer matrix: local preview/raw/work caches stay ignored (sample_inputs/*.png & products/*.pdf stay tracked)
+workflows/10_ai_influencer_matrix/out/
+workflows/10_ai_influencer_matrix/fonts/
+workflows/10_ai_influencer_matrix/work/

@@ -1,0 +1,52 @@
+{
+  "style": "35mm cinema still shot on ARRI Alexa Mini LF with Cooke Panchro 50mm T2.2 prime lens, organic natural human skin micro-texture with fine pores, subtle film grain, authentic candid color grading, natural optical bokeh, zero synthetic smoothing.",
+  "frames": [
+    {
+      "name": "ref_vivian_jet",
+      "persona": "vivian",
+      "scene": "jet",
+      "prompt": "Chest-up medium close-up portrait of a poised 78-year-old aristocratic white American matriarch seated comfortably in a warm cognac-leather private aviation cabin club seat. Elegant silver-champagne hair swept neatly up, realistic mature facial lines and fine skin pores, sharp intelligent green-grey eyes looking straight into the camera lens, calm closed-mouth composed expression with 100% unobstructed lips and jawline. Wearing modest pearl stud earrings, an emerald-green silk blouse under an ivory cashmere coat draped on her shoulders. Soft diffused afternoon sunlight through an oval cabin window and understated walnut veneer trim in creamy T2.2 shallow optical bokeh behind her. Both hands rest out of frame below her chest.",
+      "note": "jet 场景已退役，只作为 Vivian 的身份基准图保留"
+    },
+    {
+      "name": "ref_vivian_library",
+      "persona": "vivian",
+      "scene": "library",
+      "identity_of": "ref_vivian_jet",
+      "prompt": "Place this exact same 78-year-old aristocratic matriarch in a sunlit Old-Money mahogany home library. She wears a crisp cream silk ascot blouse beneath a tailored charcoal-tweed blazer and subtle pearl stud earrings, looking straight into the camera lens with poised direct gaze and calm closed lips. Behind her in rich T2.2 optical bokeh are leather-bound book spines, a warm glowing brass banker desk lamp, and wood-paneled walls. Any porcelain espresso cup stays far below the bottom edge out of frame; nothing touches or obscures her chin, mouth, or neck."
+    },
+    {
+      "name": "ref_vivian_flowers",
+      "persona": "vivian",
+      "scene": "flowers",
+      "identity_of": "ref_vivian_jet",
+      "prompt": "Place this exact same 78-year-old woman in a sunlit glass conservatory full of fresh flowers on a spring morning. She wears a soft dove-grey cashmere cardigan over a cream silk blouse and modest pearl stud earrings, looking straight into the camera lens with a warm, composed, closed-mouth half-smile, lips and jawline 100% unobstructed. Behind her in creamy T2.2 shallow optical bokeh are zinc buckets of peonies, garden roses and eucalyptus stems, white-painted window mullions and soft morning sunlight. No flowers or stems cross her face or chin. Both hands rest out of frame below her chest."
+    },
+    {
+      "name": "ref_june_studio",
+      "persona": "june",
+      "scene": "studio",
+      "prompt": "Chest-up medium close-up portrait of a 61-year-old white American woman from the Midwest in a natural-light old photography studio. Short salt-and-pepper curly bob, warm brown eyes with natural laugh lines and fine skin pores, tortoiseshell reading glasses hanging on a thin cord at her chest, a faded denim shirt with rolled sleeves over a cream tee. She looks straight into the camera lens with a gentle, attentive closed-mouth smile, lips and jawline 100% unobstructed. Behind her in creamy T2.2 shallow optical bokeh: black-and-white contact sheets pinned on a cork wall, a wooden worktable edge with a magnifying loupe and an old film camera, soft north-window daylight. Not a darkroom, no red light. Both hands rest out of frame below her chest."
+    },
+    {
+      "name": "ref_june_kitchen",
+      "persona": "june",
+      "scene": "kitchen",
+      "identity_of": "ref_june_studio",
+      "prompt": "Place this exact same 61-year-old woman at her lived-in Midwestern kitchen table on a quiet afternoon. She wears a soft oatmeal knit sweater, reading glasses on a cord, looking straight into the camera lens with a warm, honest closed-mouth expression, lips and jawline 100% unobstructed. Behind her in creamy T2.2 shallow optical bokeh: a window with soft daylight, a few potted herbs on the sill, open shelving with mismatched mugs; an open wedding photo album sits at the very bottom edge of the frame, well below her chin. Both hands rest out of frame below her chest."
+    },
+    {
+      "name": "ref_wen_counter",
+      "persona": "wen",
+      "scene": "counter",
+      "prompt": "Chest-up medium close-up portrait of a 71-year-old Chinese-American man standing behind the wooden counter of his small, old San Francisco tea shop. Short neatly combed grey hair, a calm lined face with natural skin pores and faint age spots, warm dark-brown eyes, clean-shaven, mouth fully visible. He wears a navy cotton cardigan over a white collared shirt. He looks straight into the camera lens with a calm, faintly amused closed-mouth expression, lips and jawline 100% unobstructed. Behind him in creamy T2.2 shallow optical bokeh: a full wall of tea tins and paper-labelled jars, a steaming clay teapot on the counter far below his chin, soft window daylight. An ordinary neighborhood shop: no temple, no incense smoke, no gongs, no mystical decor. Both hands rest out of frame below his chest."
+    },
+    {
+      "name": "ref_wen_chess",
+      "persona": "wen",
+      "scene": "chess",
+      "identity_of": "ref_wen_counter",
+      "prompt": "Place this exact same 71-year-old man seated in the quiet back room of his tea shop in the early afternoon. He wears a soft grey wool vest over a light-blue collared shirt, looking straight into the camera lens with a relaxed, slightly rueful closed-mouth smile, lips and jawline 100% unobstructed. Behind him in creamy T2.2 shallow optical bokeh: a window with soft daylight and a small handwritten cardboard sign hanging in it (lettering blurred and unreadable), a shelf with a thermos and a few books; the edge of a wooden xiangqi board sits at the very bottom of the frame, well below his chin. Both hands rest out of frame below his chest."
+    }
+  ]
+}
