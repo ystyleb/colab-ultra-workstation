@@ -67,9 +67,13 @@
           105,
           206,
           307,
-          408
+          408,
+          509,
+          610,
+          711,
+          812
         ],
-        "instruct": "A composed 78-year-old American grandmother speaking in a warm, low mid-Atlantic alto, unhurried and dry-witted, crisp clean sentence endings, kind rather than cold, zero hype.",
+        "instruct": "A composed 78-year-old American grandmother with a clear, warm mezzo-soprano voice and mid-Atlantic diction, unhurried and dry-witted, crisp clean sentence endings, kind rather than cold, zero hype.",
         "seed_text": "Darling, I'm not telling you to stop spending. I'm asking who you're spending it for. Flowers for yourself are one thing. A show for strangers is another."
       },
       "scenes": {

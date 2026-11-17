@@ -125,6 +125,20 @@ def mount_drive(session: str) -> None:
         subprocess.run([COLAB_BIN, "dfs", "mount", "-s", session], check=True, env=ENV)
 
 
+def merge_tts_manifest(local_path: Path, new_bytes: bytes) -> bytes:
+    """局部重跑（如只重做 V01）时，云端清单只含本次的条目；与本地清单按 id / persona 合并，
+    否则其余条目的 h3_frames 会丢失，出片时退回 default_frames，造成画面比配音长。"""
+    new = json.loads(new_bytes.decode("utf-8"))
+    if not local_path.exists():
+        return new_bytes
+    old = json.loads(local_path.read_text(encoding="utf-8"))
+    seeds = {**old.get("seeds", {}), **new.get("seeds", {})}
+    clips = {c["id"]: c for c in old.get("clips", [])}
+    clips.update({c["id"]: c for c in new.get("clips", [])})
+    merged = {"mode": new.get("mode", old.get("mode")), "seeds": seeds, "clips": sorted(clips.values(), key=lambda c: c["id"])}
+    return json.dumps(merged, indent=2).encode("utf-8")
+
+
 def pull_tts_from_drive(filenames: list[str]) -> list[Path]:
     LOCAL_TTS_DIR.mkdir(parents=True, exist_ok=True)
     tok = parse_colab_token_json(subprocess.check_output([COLAB_BIN, "dfs", "token"], text=True, env=ENV))
@@ -155,6 +169,8 @@ def pull_tts_from_drive(filenames: list[str]) -> list[Path]:
         )
         data = urlopen_retry(dl_req, timeout=60).read()
         dst = LOCAL_TTS_DIR / name
+        if name == "tts_manifest.json":
+            data = merge_tts_manifest(dst, data)
         dst.write_bytes(data)
         pulled.append(dst)
         print(f"⬇️ Pulled {name} ({len(data) / 1024:.1f} KB)", flush=True)
