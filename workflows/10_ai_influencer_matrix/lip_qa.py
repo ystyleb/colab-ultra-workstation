@@ -40,6 +40,8 @@ def latest_raw(clip_id: str) -> Path | None:
 
 def score(clip_id: str) -> dict:
     raw, wav = latest_raw(clip_id), TTS_DIR / f"{clip_id}.wav"
+    if not wav.exists():  # broll 形式的说话段（如 V06talk）配音在 work/tts/broll/
+        wav = TTS_DIR / "broll" / f"{clip_id}.wav"
     if raw is None or not wav.exists():
         return {"id": clip_id, "ok": False, "reason": "missing raw mp4 or wav"}
     r = subprocess.run(

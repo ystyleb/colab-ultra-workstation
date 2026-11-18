@@ -140,9 +140,11 @@ def build_workflow(
     prompt_text: str,
     frames: int,
     seed: int,
+    overrides: dict | None = None,
 ) -> dict:
-    # 人设级 h3_overrides 覆盖全局默认（例：Vivian 关掉 closeup LoRA，它会把机位往大特写推）
-    d = {**cfg["h3_defaults"], **cfg["personas"][item["persona"]].get("h3_overrides", {})}
+    # 人设级 h3_overrides 覆盖全局默认（例：Vivian 关掉 closeup LoRA，它会把机位往大特写推）；
+    # 任务级 overrides 再覆盖一层（空镜/开场镜头不要 closeup LoRA）
+    d = {**cfg["h3_defaults"], **cfg["personas"][item["persona"]].get("h3_overrides", {}), **(overrides or {})}
     assert (frames - 5) % 17 == 0, f"Illegal frame count {frames} (must be 17k+5)"
     wf = {
         "1": {"class_type": "UNETLoader", "inputs": {"unet_name": d["unet"], "weight_dtype": "default"}},
@@ -249,6 +251,7 @@ def main() -> None:
     ap.add_argument("--tts-manifest", default="")
     ap.add_argument("--ids", default="")
     ap.add_argument("--seed-base", type=int, default=2026111700)
+    ap.add_argument("--jobs", default="", help="任务清单 JSON（本地 broll_plan.py 生成）：每条自带 image/audio/frames/prompt，用于开场动作、插入空镜和分段说话")
     args = ap.parse_args()
 
     cfg = json.loads(Path(args.config).read_text(encoding="utf-8"))
@@ -258,9 +261,10 @@ def main() -> None:
         tm = json.loads(Path(args.tts_manifest).read_text(encoding="utf-8"))
         tts_map = {c["id"]: c for c in tm.get("clips", [])}
 
+    jobs = json.loads(Path(args.jobs).read_text(encoding="utf-8")) if args.jobs else None
     sel = {x.strip() for x in args.ids.split(",") if x.strip()} if args.ids else None
     tasks = [s for s in manifest["scripts"] if (not sel or s["id"] in sel)]
-    if not tasks:
+    if not tasks and not jobs:
         raise SystemExit("❌ No matching script IDs.")
 
     ensure_comfy_running()
@@ -281,6 +285,10 @@ def main() -> None:
             for f in stage_dir.glob("*"):
                 if f.is_file() and f.suffix.lower() in (".png", ".wav"):
                     shutil.copy2(f, comfy_in / f.name)
+
+    if jobs:
+        run_jobs(cfg, jobs, comfy_in, args.seed_base)
+        return
 
     for idx, item in enumerate(tasks):
         pk = item["persona"]
@@ -305,6 +313,23 @@ def main() -> None:
         dst_drive = DRIVE_RAW_OUT / out_mp4.name
         shutil.copy2(out_mp4, dst_drive)
         print(f"✅ [{item['id']}] Finished in {time.time() - t0:.1f}s -> {dst_drive.name} ({dst_drive.stat().st_size / 1e6:.2f} MB)", flush=True)
+
+
+def run_jobs(cfg: dict, jobs: list[dict], comfy_in: Path, seed_base: int) -> None:
+    """按任务清单逐条出片。提示词在本地拼好，云端只负责渲染，改提示词不用改云端脚本。"""
+    for idx, job in enumerate(jobs):
+        for f in (job["image"], job["audio"]):
+            if not (comfy_in / f).exists():
+                raise FileNotFoundError(f"Missing staged input {f} in {comfy_in}.")
+        seed = seed_base + idx + 1
+        item = {"id": job["job_id"], "persona": job["persona"]}
+        wf = build_workflow(cfg, item, job["image"], job["audio"], job["prompt"], int(job["frames"]), seed, job.get("h3_overrides"))
+        t0 = time.time()
+        print(f"🎬 [{idx + 1}/{len(jobs)}] Rendering {job['job_id']} ({job['kind']}, {job['frames']}f, seed={seed})...", flush=True)
+        out_mp4 = submit_and_wait(wf)
+        dst_drive = DRIVE_RAW_OUT / out_mp4.name
+        shutil.copy2(out_mp4, dst_drive)
+        print(f"✅ [{job['job_id']}] Finished in {time.time() - t0:.1f}s -> {dst_drive.name} ({dst_drive.stat().st_size / 1e6:.2f} MB)", flush=True)
 
 
 if __name__ == "__main__":

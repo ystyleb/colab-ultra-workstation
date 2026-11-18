@@ -109,6 +109,10 @@
       },
       "h3_overrides": {
         "closeup_strength": 0.0
+      },
+      "cta": {
+        "keyword": "RULES",
+        "benefit": "Get my free Approval Tax Audit in your DMs"
       }
     },
     "june": {
@@ -168,6 +172,10 @@
           "bump_price_usd": 9.0,
           "cta": "Get The Contact Sheet"
         }
+      },
+      "cta": {
+        "keyword": "NOTICE",
+        "benefit": "Get my free 3-Day Notice Journal in your DMs"
       }
     },
     "wen": {
@@ -227,6 +235,10 @@
           "bump_price_usd": 9.0,
           "cta": "Get Doing Less, Case by Case"
         }
+      },
+      "cta": {
+        "keyword": "TEA",
+        "benefit": "Get 20 free pause cards in your DMs"
       }
     }
   },
@@ -247,6 +259,11 @@
       "min_seg_sec": 3.0,
       "min_tail_sec": 1.0,
       "face_anchor_y": 0.32
+    },
+    "cta_card": {
+      "enabled": true,
+      "card_sec": 1.8,
+      "_note": "口播结尾的 'Comment X.' 听起来像 'common'，也没说评论能拿到什么。成片在 work/tts/cta_cut.json 的剪点处截掉这句，换成字卡。剪点 = whisper 词时间戳定位 Comment + 落在真实静音段里。"
     }
   }
 }

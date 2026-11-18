@@ -104,6 +104,20 @@ COMPOSE_PROMPT = (
 )
 
 
+# ---- 空镜 / 动作开场首帧（2026-11-18）：不是对镜说话，没有胸像、直视镜头那套规则 ----
+BROLL_PROMPT = (
+    "Use your image generation tool to create ONE photorealistic live-action 35mm cinema frame in vertical 2:3 orientation "
+    "(1024x1536), then save it in the current directory as {name}.png (PNG). Do not ask questions; just produce the file.\n"
+    "This is a B-roll frame from the same short film as the attached reference image(s), NOT a portrait and NOT a talking-head shot.\n"
+    "{ref_line}"
+)
+BROLL_PERSON_REF = (
+    "The attached {ref}.png shows the person, outfit and location of this film. If the shot below includes that person, preserve "
+    "EXACTLY their face, bone structure, eye color, skin, age lines, hairstyle, hair color, jewelry and the outfit they wear in {ref}.png, "
+    "in the same room with the same light and palette. The person is busy with the action below, NOT looking into the lens, mouth closed.\n"
+)
+
+
 def _attach(work: Path, dep: str) -> Path | None:
     src = WORK_DIR / f"{dep}_raw.png"
     if not src.exists():
@@ -144,6 +158,9 @@ def run_one(fr: dict, style: str) -> tuple[str, bool, str]:
         prompt = PLATE_PROMPT.format(name=name, ref_line=ref_line)
     elif kind == "composite":
         prompt = COMPOSE_PROMPT.format(name=name, plate=fr["edit_of"], sheet=fr["sheet_of"])
+    elif kind == "broll":
+        ref_line = BROLL_PERSON_REF.format(ref=fr["edit_of"]) if fr.get("edit_of") else ""
+        prompt = BROLL_PROMPT.format(name=name, ref_line=ref_line)
     else:
         prompt = HEAD_PROMPT.format(name=name)
         if fr.get("identity_of"):

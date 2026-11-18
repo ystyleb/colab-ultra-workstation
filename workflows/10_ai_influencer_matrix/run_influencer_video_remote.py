@@ -268,6 +268,7 @@ def main() -> None:
     ap.add_argument("--pull-only", action="store_true", help="0-CCU pull finished MP4s from Drive")
     ap.add_argument("--keep-alive", action="store_true", help="Keep G4 session alive after completion")
     ap.add_argument("--seed-base", type=int, default=2026111700, help="H3 seed = seed_base + position in batch; change it to re-roll failed clips")
+    ap.add_argument("--broll", action="store_true", help="动作开场 + 插入空镜形式：按 manifest 的 broll 字段出开场/说话段/插入镜头（broll_plan.py）")
     ap.add_argument("--session", default="", help="Colab session name (default: project_meta.video_session). 并行开多台 G4 时每台用不同名字，按人物拆 --ids 以免同时上传同一个文件")
     args = ap.parse_args()
 
@@ -277,6 +278,18 @@ def main() -> None:
     scripts = [s for s in manifest["scripts"] if (not sel or s["id"] in sel)]
     if not scripts:
         raise SystemExit("❌ No matching scripts selected.")
+
+    jobs: list[dict] = []
+    if args.broll:
+        from broll_plan import build_jobs
+
+        jobs, broll_files = build_jobs([x["id"] for x in scripts])
+        if args.dry_run:
+            print(f"🧪 [0-CCU DRY-RUN] broll 任务 {len(jobs)} 条，共 {sum(j['frames'] for j in jobs)} 帧：")
+            for j in jobs:
+                print(f"   {j['job_id']:10s} {j['kind']:7s} {j['frames']:3d}f  {j['image']}  {j['audio']}")
+            print(f"\n📝 示例提示词 ({jobs[0]['job_id']}):\n{jobs[0]['prompt']}")
+            return
 
     if args.dry_run:
         run_dry_run(cfg, scripts)
@@ -290,6 +303,20 @@ def main() -> None:
     session = args.session or cfg["project_meta"]["video_session"]
     ids_arg = ",".join(s["id"] for s in scripts)
 
+    if jobs:
+        missing = [f for f in broll_files if not f.exists()]
+        if missing:
+            raise FileNotFoundError(f"Missing broll inputs: {missing}")
+        stage_inputs_to_drive(broll_files)
+        jobs_path = Path(tempfile.gettempdir()) / f"wf10_jobs_{session}.json"
+        jobs_path.write_text(json.dumps(jobs, ensure_ascii=False), encoding="utf-8")
+        pull_ids = [j["job_id"] for j in jobs]
+        # 轮询上限按帧数算：一条 362 帧约 7–9 分钟，按 15 分钟/362 帧留余量
+        budget_sec = 15 * 60 + 15 * 60 * sum(j["frames"] for j in jobs) / 362
+    else:
+        pull_ids = [s["id"] for s in scripts]
+        budget_sec = 15 * 60 + 15 * 60 * len(scripts)
+
     # Verify all required inputs exist locally before booting G4
     req_imgs = sorted({cfg["personas"][s["persona"]]["scenes"][s["scene"]]["image"] for s in scripts})
     for img in req_imgs:
@@ -299,8 +326,9 @@ def main() -> None:
         if not (LOCAL_TTS_DIR / f"{s['id']}.wav").exists():
             raise FileNotFoundError(f"Missing TTS WAV: {LOCAL_TTS_DIR / (s['id'] + '.wav')}. Run run_influencer_tts_remote.py first.")
 
-    # 0 CCU：G4 开机前先把关键帧和 WAV 放到云盘
-    stage_inputs_to_drive([SAMPLE_DIR / img for img in req_imgs] + [LOCAL_TTS_DIR / f"{s['id']}.wav" for s in scripts])
+    # 0 CCU：G4 开机前先把关键帧和 WAV 放到云盘（broll 模式上面已经传过了）
+    if not jobs:
+        stage_inputs_to_drive([SAMPLE_DIR / img for img in req_imgs] + [LOCAL_TTS_DIR / f"{s['id']}.wav" for s in scripts])
 
     subprocess.run([sys.executable, str(SCRIPTS_DIR / "colab_meter.py"), "start", "-s", session, "-g", "G4"], check=False, env=ENV)
     try:
@@ -313,6 +341,8 @@ def main() -> None:
         upload_bytes_chunked(session, "/tmp/cloud_influencer_h3.py", CLOUD_VIDEO_PY.read_bytes())
         upload_bytes_chunked(session, "/tmp/wf10_config.json", CONFIG_PATH.read_bytes())
         upload_bytes_chunked(session, "/tmp/wf10_scripts.json", MANIFEST_PATH.read_bytes())
+        if jobs:
+            upload_bytes_chunked(session, "/tmp/wf10_jobs.json", jobs_path.read_bytes())
         if (LOCAL_TTS_DIR / "tts_manifest.json").exists():
             upload_bytes_chunked(session, "/tmp/wf10_tts_manifest.json", (LOCAL_TTS_DIR / "tts_manifest.json").read_bytes())
 
@@ -324,6 +354,8 @@ Path("/tmp/wf10_h3.err").unlink(missing_ok=True)
 cmd = [sys.executable, "-u", "/tmp/cloud_influencer_h3.py", "--config", "/tmp/wf10_config.json", "--scripts", "/tmp/wf10_scripts.json", "--ids", {json.dumps(ids_arg)}, "--seed-base", "{args.seed_base}"]
 if Path("/tmp/wf10_tts_manifest.json").exists():
     cmd += ["--tts-manifest", "/tmp/wf10_tts_manifest.json"]
+if {bool(jobs)!r}:
+    cmd += ["--jobs", "/tmp/wf10_jobs.json"]
 runner = "import subprocess\\nfrom pathlib import Path\\np = subprocess.run(" + repr(cmd) + ")\\n(Path('/tmp/wf10_h3.done') if p.returncode == 0 else Path('/tmp/wf10_h3.err')).write_text(str(p.returncode))\\n"
 Path("/tmp/wf10_h3_runner.py").write_text(runner)
 subprocess.Popen("nohup python3 -u /tmp/wf10_h3_runner.py > /tmp/wf10_h3.log 2>&1 &", shell=True)
@@ -336,7 +368,7 @@ print("H3_LAUNCHED")
         seen_lines = 0
         # 轮询上限按条数算：冷启动 15 分钟 + 每条 15 分钟（实测 6.5–9.5 分钟/条）。
         # 原来固定 360 次 ≈ 1 小时出头，超时后 finally 会关掉 G4，长批量会被中途杀掉
-        deadline = time.time() + 15 * 60 + 15 * 60 * len(scripts)
+        deadline = time.time() + budget_sec
         while time.time() < deadline:
             time.sleep(10)
             poll = colab_exec_short(
@@ -360,9 +392,20 @@ print(json.dumps({"n": len(lines), "lines": lines, "done": Path("/tmp/wf10_h3.do
         else:
             raise TimeoutError("❌ Cloud G4 H3 batch timed out (deadline from clip count).")
 
-        pulled = pull_videos_from_drive([s["id"] for s in scripts])
-        if len(pulled) < len(scripts):
-            raise RuntimeError(f"❌ Expected {len(scripts)} MP4s on Drive, found {len(pulled)}.")
+        # Drive 搜索索引有延迟：最后一条刚写进云盘时常常还搜不到（2026-11-18 W10ins0 漏拉）。
+        # 缺哪条就等 30 秒再查，最多 6 次，全部拿到再关 G4。
+        pulled = []
+        for _ in range(6):
+            got = {p.name.split("_")[1] for p in pulled}
+            missing = [i for i in pull_ids if i not in got]
+            if not missing:
+                break
+            if pulled:
+                print(f"⏳ Drive 还搜不到 {missing}，30 秒后再查", flush=True)
+                time.sleep(30)
+            pulled += pull_videos_from_drive(missing)
+        if len({p.name.split("_")[1] for p in pulled}) < len(pull_ids):
+            raise RuntimeError(f"❌ Expected {len(pull_ids)} clips on Drive, found {len(pulled)} files.")
     finally:
         if not args.keep_alive:
             subprocess.run([sys.executable, str(SCRIPTS_DIR / "colab_meter.py"), "stop", "-s", session], check=False, env=ENV)

@@ -94,3 +94,15 @@ python3 workflows/10_ai_influencer_matrix/subtitle_and_finalize.py
 ```
 
 **运镜分工（2026-11-18 试了三版后定的）**：H3 只出胸像、轻微手持晃动（`Shake Slightly`）加人物小动作的素材；景别变化在本地做，按配音句间停顿切成 钩子 1.0×慢推 → 主体切近 1.22× → CTA 1.10×（`influencer_config.json` 的 `finalize.punch_in`）。原因：H3 里写推镜头会一路推到大特写，写「最近只到头肩」也压不住；锁死机位又太僵。素材里 H3 已经自带运镜的条目在脚本里设 `"punch_in": false`（如 J01）。口播动作别写倒茶这类持续的手部动作，W01 第一版因此整条没张嘴。
+
+**片尾 CTA 改字卡（2026-11-18）**：口播结尾的 "Comment RULES/NOTICE/TEA." 听起来像 "common"，也没说评论能拿到什么。成片在 `work/tts/cta_cut.json` 的剪点截掉这句（whisper 词时间戳定位 Comment，再落到真实静音段里；J01 是 "Comment.（停顿）Notice." 两段念，只按最后一个停顿剪会留下 Comment），之后 1.8 秒画面模糊压暗、叠「Comment + 关键词 + 好处」字卡（文案在 `influencer_config.json` 各人物的 `cta`）。换了配音要重跑 `python3 make_cta_cuts.py --ids <片号>`。
+
+**动作开场 + 插入空镜形式（2026-11-18，J03/J04/V06/W04/W10 试点）**：脚本加 `broll` 字段后，一条片 = 开场动作镜头（H3，静音参考音，钩子句画外音压在上面）→ 对镜说话段（H3 只喂 `hook_cut` 到 CTA 剪点这段配音）→ 插入空镜盖在说话段上（静态图本地缓推 0 CCU，或 H3 短镜头）→ CTA 字卡。动作和说话分开出，是因为 H3 边说话边做手上动作就会闭嘴。首帧图在 `keyframes_broll.json`（`kind: broll`，`edit_of` 指向同场景说话关键帧保证人和衣服一致）。
+```bash
+python3 gen_keyframes.py --spec keyframes_broll.json                       # 本地出首帧图
+python3 run_influencer_video_remote.py --broll --ids V06,J03 --dry-run     # 看任务清单和提示词
+python3 run_influencer_video_remote.py --broll --ids V06,J03 --session inf-h3-g4-x --seed-base 2026111900
+python3 lip_qa.py --ids V06talk,J03talk                                    # 说话段口型质检
+python3 subtitle_and_finalize.py --ids V06,J03                             # 拼接 + 字幕 + 字卡
+```
+开场镜头前 0.5 秒常是参考图定格，`opener.in` 控制从哪开始取；插入镜头用 `inserts[].at`（配音秒数）。

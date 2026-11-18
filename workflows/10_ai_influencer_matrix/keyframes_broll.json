@@ -1,0 +1,46 @@
+{
+  "_note": "动作开场 / 插入空镜的首帧图（2026-11-18，J03/J04/V06/W04/W10 新形式试点）。kind=broll：不套对镜说话的胸像规则；edit_of 指向同一人物同一场景的说话关键帧，保证人、衣服、房间一致。用法：python3 gen_keyframes.py --spec keyframes_broll.json",
+  "style": "35mm film still shot on ARRI Alexa Mini LF with Cooke Panchro lenses, organic natural skin micro-texture, subtle film grain, natural optical bokeh, zero synthetic smoothing.",
+  "frames": [
+    {
+      "name": "broll_v06_open", "persona": "vivian", "scene": "flowers_open", "kind": "broll", "edit_of": "ref_vivian_flowers",
+      "prompt": "Medium shot (waist-up, camera at chest height, slightly to her side): she stands at a weathered wooden potting bench in the sunlit glass conservatory, both hands placing a fresh bunch of pale-pink peonies into a clear glass vase on the bench, eyes down on the flowers with a quiet, pleased look. Hands and flowers sit in the lower third of the frame, well below her chin; her face is fully visible in three-quarter view. Zinc buckets of roses and eucalyptus in soft bokeh behind her, morning sunlight through white window mullions. Natural color."
+    },
+    {
+      "name": "broll_v06_shoes", "persona": "vivian", "scene": "flowers_shoes", "kind": "broll", "edit_of": "ref_vivian_flowers",
+      "prompt": "Low close-up at ankle height on the conservatory's old terracotta tile floor: a woman's feet in a pair of beautifully kept but clearly decades-old dark-brown leather loafers (soft creases, re-polished, re-soled), standing still beside a zinc bucket of pale-pink peonies and eucalyptus. Only the shoes, ankles and the hem of soft dove-grey trousers are visible; no face, no hands. Morning sunlight, shallow depth of field. Natural color."
+    },
+    {
+      "name": "broll_w04_open", "persona": "wen", "scene": "chess_open", "kind": "broll", "edit_of": "ref_wen_chess",
+      "prompt": "Medium shot from across the small table: he sits alone at the wooden xiangqi board by the window in the quiet back room of his tea shop, one hand moving a round wooden xiangqi piece forward on the board, eyes down on the board with a calm, absorbed look. The board and his hand are in the lower third of the frame, well below his chin; his face is fully visible in three-quarter view. A small handwritten cardboard sign hangs in the window behind him (lettering out of focus), a thermos and a small teacup on the table, soft early-afternoon daylight. Natural color."
+    },
+    {
+      "name": "broll_w04_sign", "persona": "wen", "scene": "chess_sign", "kind": "broll", "edit_of": "ref_wen_chess",
+      "prompt": "Close-up of a small piece of brown cardboard hanging on a string inside the glass of the tea shop's back-room window, hand-lettered in black marker in neat, slightly shaky capital letters: CLOSED FOR NAP. Below it, smaller: BACK AT 4. The lettering is sharp and perfectly legible and spelled exactly like that. Soft afternoon daylight behind it, the street outside softly blurred. No people. Natural color."
+    },
+    {
+      "name": "broll_w10_open", "persona": "wen", "scene": "counter_open", "kind": "broll", "edit_of": "ref_wen_counter",
+      "prompt": "Medium shot: he stands behind the wooden counter of his small tea shop, half-turned toward the wall of tea tins, reaching up with one hand to take down a round tea tin with a paper label from the shelf, eyes on the tin. His face is fully visible in three-quarter profile, nothing crosses it; a clay teapot sits on the counter in the foreground. Soft window daylight. Natural color."
+    },
+    {
+      "name": "broll_w10_pour", "persona": "wen", "scene": "counter_pour", "kind": "broll", "edit_of": "ref_wen_counter",
+      "prompt": "Close-up at counter height: an old man's hand (navy cardigan cuff and white shirt cuff visible) tilting a small dark clay teapot, pouring a thin stream of amber tea into a small white porcelain cup on the worn wooden counter; the cup is about half full. Gentle steam rises. Only the hand, teapot, cup and counter are visible; no face. Wall of tea tins softly blurred behind, warm window daylight. Natural color."
+    },
+    {
+      "name": "broll_j03_open", "persona": "june", "scene": "studio_open", "kind": "broll", "edit_of": "ref_june_studio",
+      "prompt": "Medium shot: she stands at the cork wall of her sunlit photo studio, pinning a small black-and-white photographic print to the cork with a pushpin, eyes on the print with a soft, fond smile. Her hand and the print are at shoulder height off to one side of her body, never crossing her face; her face is fully visible in three-quarter view. Other contact sheets pinned around, a wooden worktable with an old film camera, north-window daylight. Natural color."
+    },
+    {
+      "name": "broll_j03_photo", "persona": "june", "scene": "photo_plates", "kind": "broll",
+      "prompt": "A full-frame black-and-white 35mm documentary wedding photograph from the 1990s, silver-gelatin look with real film grain: at a simple reception table, a groom in a dark suit quietly slides his own full dinner plate across to his bride and takes hers, both half-smiling, unposed, nobody else noticing; candlelight, guests softly out of focus behind. The photograph fills the entire frame edge to edge: no border, no visible paper, no frame."
+    },
+    {
+      "name": "broll_j04_open", "persona": "june", "scene": "studio_cam", "kind": "broll", "edit_of": "ref_june_studio",
+      "prompt": "Medium shot: she stands in her sunlit photo studio holding an old silver-and-black 35mm film rangefinder camera in both hands at chest height, about to raise it toward the viewer, with a playful, focused half-smile. The camera is below her chin, so her whole face and mouth are fully visible. Cork wall with pinned contact sheets and north-window daylight behind her. Natural color."
+    },
+    {
+      "name": "broll_j04_photo", "persona": "june", "scene": "photo_rain", "kind": "broll",
+      "prompt": "A full-frame black-and-white 35mm documentary wedding photograph from the 1990s, silver-gelatin look with real film grain: in pouring rain outside a small white church, a bride and groom huddle under one black umbrella held by the groom, the bride laughing hard with her head thrown back, the groom laughing a beat after her, her dress hem soaked, raindrops streaking through the frame; an unposed candid moment. The photograph fills the entire frame edge to edge: no border, no visible paper, no frame."
+    }
+  ]
+}

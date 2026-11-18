@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+import re
 import shutil
 import struct
 import subprocess
@@ -235,6 +236,42 @@ def render_caption_overlay(phrase: str, out_png: Path) -> None:
     im.save(out_png)
 
 
+def strip_cta(text: str) -> str:
+    """去掉口播结尾的 'Comment RULES.' 一句（字幕不再显示它）。"""
+    return re.sub(r"\s*Comment\s+[A-Z]+\.?\s*$", "", text.strip())
+
+
+def render_cta_card(keyword: str, benefit: str, out_png: Path) -> None:
+    """片尾 CTA 字卡：Comment + 金色关键词块 + 一句好处。画在模糊压暗的最后画面上。"""
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(im)
+    f_small, f_kw, f_ben = load_font(64), load_font(150), load_font(50)
+    y = 690
+    tw = draw.textlength("Comment", font=f_small)
+    draw.text(((W - tw) / 2, y), "Comment", font=f_small, fill=(255, 255, 255, 255), stroke_width=3, stroke_fill=(0, 0, 0, 200))
+    y += 100
+    bb = draw.textbbox((0, 0), keyword, font=f_kw)
+    kw_w, kw_h = bb[2] - bb[0], bb[3] - bb[1]
+    pad_x, pad_y = 54, 34
+    draw.rounded_rectangle(((W - kw_w) / 2 - pad_x, y, (W + kw_w) / 2 + pad_x, y + kw_h + pad_y * 2), radius=30, fill=(245, 200, 98, 255))
+    draw.text(((W - kw_w) / 2 - bb[0], y + pad_y - bb[1]), keyword, font=f_kw, fill=(24, 22, 20, 255))
+    y += kw_h + pad_y * 2 + 60
+    words, lines, cur = benefit.split(), [], ""
+    for w_ in words:  # 按宽度折行
+        t = f"{cur} {w_}".strip()
+        if draw.textlength(t, font=f_ben) > W - 160 and cur:
+            lines.append(cur)
+            cur = w_
+        else:
+            cur = t
+    lines.append(cur)
+    for ln in lines:
+        lw = draw.textlength(ln, font=f_ben)
+        draw.text(((W - lw) / 2, y), ln, font=f_ben, fill=(255, 248, 232, 255), stroke_width=3, stroke_fill=(0, 0, 0, 220))
+        y += 66
+    im.save(out_png)
+
+
 def finalize_clip(
     raw_mp4: Path,
     out_mp4: Path,
@@ -242,14 +279,22 @@ def finalize_clip(
     hook_banner: str,
     ext_wav: Path | None = None,
     punch: dict | None = None,
+    cta: dict | None = None,
 ) -> None:
     """Upscale 768x1344 -> 1080x1920, align phrases to speech window, and burn PIL overlays.
 
     `punch`（influencer_config.json 的 finalize.punch_in）不为空时，按配音的句间停顿切景别：
     钩子句原景别慢推 -> 主体切近 -> CTA 回一点。缩放和放大到 1080x1920 在同一次 scale 里完成，只重采样一次。
+
+    `cta` = {"cut", "speech_end", "keyword", "benefit", "card_sec"}：配音在 cut 处截断（去掉 'Comment X.'），
+    之后 card_sec 秒画面模糊压暗、叠 CTA 字卡，音频补静音。
     """
     total_dur = probe_duration(raw_mp4)
     t_start, t_end = detect_speech_window(ext_wav if (ext_wav and ext_wav.exists()) else raw_mp4, total_dur)
+    if cta:
+        spoken_en = strip_cta(spoken_en)
+        t_end = min(t_end, cta["speech_end"] + 0.12)
+        total_dur = cta["cut"] + cta["card_sec"]
     chunks = chunk_words(spoken_en, max_words=4)
     total_words = sum(len(c.split()) for c in chunks)
     span = max(0.8, t_end - t_start)
@@ -282,17 +327,20 @@ def finalize_clip(
         cuts: list[float] = []
         if punch and punch.get("enabled") and has_ext_audio:
             # 停顿和结尾都按配音时长算：H3 视频按 17k+5 帧补齐，比配音长，末尾静音不能当句间停顿
-            cuts = plan_punch_cuts(detect_pauses(ext_wav), probe_duration(ext_wav), punch.get("min_seg_sec", 3.0), punch.get("min_tail_sec", 1.0))
+            vo_end = cta["cut"] if cta else probe_duration(ext_wav)
+            pauses = [p for p in detect_pauses(ext_wav) if p[1] < vo_end - 0.05]
+            cuts = plan_punch_cuts(pauses, vo_end, punch.get("min_seg_sec", 3.0), punch.get("min_tail_sec", 1.0))
+        src = f"[0:v]tpad=stop_mode=clone:stop_duration=4,trim=duration={total_dur:.3f}," if cta else "[0:v]"
         if cuts:
             z = punch_zoom_expr(cuts, total_dur, punch["levels"], punch["drift"])
             ay = punch.get("face_anchor_y", 0.32)
             fc_parts = [
-                f"[0:v]scale=w='trunc({W}*({z})/2)*2':h='trunc({H}*({z})/2)*2':eval=frame:flags=lanczos,"
+                f"{src}scale=w='trunc({W}*({z})/2)*2':h='trunc({H}*({z})/2)*2':eval=frame:flags=lanczos,"
                 f"crop={W}:{H}:(iw-{W})/2:(ih-{H})*{ay},setsar=1[v0]"
             ]
             print(f"   ✂️ punch-in cuts at {', '.join(f'{c:.2f}s' for c in cuts)}", flush=True)
         else:
-            fc_parts = [f"[0:v]scale={W}:{H}:flags=lanczos,setsar=1[v0]"]
+            fc_parts = [f"{src}scale={W}:{H}:flags=lanczos,setsar=1[v0]"]
         prev = "v0"
         base_idx = 2 if has_ext_audio else 1
         for k, (_, s_t, e_t) in enumerate(overlays):
@@ -301,6 +349,24 @@ def finalize_clip(
             fc_parts.append(f"[{prev}]{in_lbl}overlay=0:0:enable='between(t,{s_t:.3f},{e_t:.3f})'{out_lbl}")
             prev = f"v{k + 1}"
 
+        a_map = "1:a:0" if has_ext_audio else "0:a?"
+        if cta:
+            card = tmp_dir / "cta.png"
+            render_cta_card(cta["keyword"], cta["benefit"], card)
+            ci = base_idx + len(overlays)
+            cmd += ["-i", str(card)]
+            c0 = cta["cut"]
+            fc_parts += [
+                f"[{prev}]split[cm][cn]",
+                "[cn]boxblur=24:2,eq=brightness=-0.14:saturation=0.7[cb]",
+                f"[cm][cb]overlay=0:0:enable='gte(t,{c0:.3f})'[vb]",
+                f"[vb][{ci}:v]overlay=0:0:enable='gte(t,{c0:.3f})'[vc]",
+            ]
+            prev = "vc"
+            if has_ext_audio:
+                fc_parts.append(f"[1:a]atrim=0:{c0:.3f},afade=t=out:st={c0 - 0.06:.3f}:d=0.06,apad=whole_dur={total_dur:.3f}[ac]")
+                a_map = "[ac]"
+
         out_mp4.parent.mkdir(parents=True, exist_ok=True)
         cmd += [
             "-filter_complex",
@@ -308,7 +374,7 @@ def finalize_clip(
             "-map",
             f"[{prev}]",
             "-map",
-            "1:a:0" if has_ext_audio else "0:a?",
+            a_map,
             "-c:v",
             "libx264",
             "-preset",
@@ -323,7 +389,7 @@ def finalize_clip(
             "192k",
             "-movflags",
             "+faststart",
-            "-shortest",
+            *(["-t", f"{total_dur:.3f}"] if cta else ["-shortest"]),
             str(out_mp4),
         ]
         subprocess.run(cmd, check=True)
@@ -396,12 +462,38 @@ def main() -> None:
         return
 
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
-    punch_cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8")).get("finalize", {}).get("punch_in")
+    cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    punch_cfg = cfg.get("finalize", {}).get("punch_in")
+    card_cfg = cfg.get("finalize", {}).get("cta_card", {})
+    cuts_path = WORK_DIR / "tts" / "cta_cut.json"
+    cta_cuts = json.loads(cuts_path.read_text(encoding="utf-8")) if cuts_path.exists() else {}
     sel = {x.strip() for x in args.ids.split(",") if x.strip()} if args.ids else None
     scripts = [s for s in manifest["scripts"] if (not sel or s["id"] in sel)]
 
     count = 0
     for s in scripts:
+        cta = None
+        if card_cfg.get("enabled") and s["id"] in cta_cuts:
+            cc = cta_cuts[s["id"]]
+            pc = cfg["personas"][s["persona"]]["cta"]
+            cta = {"cut": cc["cut"], "speech_end": (cc.get("pause") or [cc["speech_end"]])[0], "card_sec": card_cfg.get("card_sec", 1.8), **pc}
+        ext_wav = WORK_DIR / "tts" / f"{s['id']}.wav"
+        out_mp4 = FINAL_DIR / f"{s['id']}_final_1080x1920.mp4"
+        if "broll" in s:
+            # 动作开场 + 说话段 + 插入空镜：先按配音时间轴拼成一条素材，景别变化已在拼接里做了，不再叠 punch_in
+            from broll_plan import composite_tmp
+
+            total = (cta["cut"] + cta["card_sec"]) if cta else probe_duration(ext_wav) + 0.3
+            try:
+                comp = composite_tmp(s, total)
+            except FileNotFoundError as exc:
+                print(f"⏭️ [{s['id']}] {exc}", flush=True)
+                continue
+            finalize_clip(comp, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav, punch=None, cta=cta)
+            shutil.rmtree(comp.parent, ignore_errors=True)
+            print(f"✅ Finalized {out_mp4.name} [broll] ({out_mp4.stat().st_size / 1e6:.2f} MB)", flush=True)
+            count += 1
+            continue
         cands = sorted(RAW_DIR.glob(f"AIInf_{s['id']}_*.mp4"), key=lambda p: p.stat().st_mtime)
         if not cands:
             continue
@@ -414,11 +506,9 @@ def main() -> None:
             cuts_found = [c for c in cuts_found if 0.35 < c < speech_end]
         if cuts_found:
             print(f"⚠️ [{s['id']}] H3 素材里有硬切 {cuts_found}（{raw_mp4.name}），建议重跑这一条", flush=True)
-        ext_wav = WORK_DIR / "tts" / f"{s['id']}.wav"
-        out_mp4 = FINAL_DIR / f"{s['id']}_final_1080x1920.mp4"
         # 脚本级 "punch_in": false = 素材里 H3 自己已经有运镜（如 J01），不再叠加剪辑推近
         punch = punch_cfg if s.get("punch_in", True) else None
-        finalize_clip(raw_mp4, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav if ext_wav.exists() else None, punch=punch)
+        finalize_clip(raw_mp4, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav if ext_wav.exists() else None, punch=punch, cta=cta)
         print(f"✅ Finalized {out_mp4.name} ({out_mp4.stat().st_size / 1e6:.2f} MB)", flush=True)
         count += 1
 
