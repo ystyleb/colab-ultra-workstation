@@ -267,6 +267,7 @@ def main() -> None:
     ap.add_argument("--dry-run", action="store_true", help="0-CCU local check and CCU estimate")
     ap.add_argument("--pull-only", action="store_true", help="0-CCU pull finished MP4s from Drive")
     ap.add_argument("--keep-alive", action="store_true", help="Keep G4 session alive after completion")
+    ap.add_argument("--seed-base", type=int, default=2026111700, help="H3 seed = seed_base + position in batch; change it to re-roll failed clips")
     args = ap.parse_args()
 
     cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
@@ -319,7 +320,7 @@ import json, subprocess, sys
 from pathlib import Path
 Path("/tmp/wf10_h3.done").unlink(missing_ok=True)
 Path("/tmp/wf10_h3.err").unlink(missing_ok=True)
-cmd = [sys.executable, "-u", "/tmp/cloud_influencer_h3.py", "--config", "/tmp/wf10_config.json", "--scripts", "/tmp/wf10_scripts.json", "--ids", {json.dumps(ids_arg)}]
+cmd = [sys.executable, "-u", "/tmp/cloud_influencer_h3.py", "--config", "/tmp/wf10_config.json", "--scripts", "/tmp/wf10_scripts.json", "--ids", {json.dumps(ids_arg)}, "--seed-base", "{args.seed_base}"]
 if Path("/tmp/wf10_tts_manifest.json").exists():
     cmd += ["--tts-manifest", "/tmp/wf10_tts_manifest.json"]
 runner = "import subprocess\\nfrom pathlib import Path\\np = subprocess.run(" + repr(cmd) + ")\\n(Path('/tmp/wf10_h3.done') if p.returncode == 0 else Path('/tmp/wf10_h3.err')).write_text(str(p.returncode))\\n"
