@@ -280,6 +280,7 @@ def finalize_clip(
     ext_wav: Path | None = None,
     punch: dict | None = None,
     cta: dict | None = None,
+    bgm: dict | None = None,
 ) -> None:
     """Upscale 768x1344 -> 1080x1920, align phrases to speech window, and burn PIL overlays.
 
@@ -366,6 +367,23 @@ def finalize_clip(
             if has_ext_audio:
                 fc_parts.append(f"[1:a]atrim=0:{c0:.3f},afade=t=out:st={c0 - 0.06:.3f}:d=0.06,apad=whole_dur={total_dur:.3f}[ac]")
                 a_map = "[ac]"
+        if bgm and has_ext_audio and a_map == "[ac]":
+            # 垫底音乐：整体压到 gain_db，人声出现时再侧链压低；片尾字卡期间音乐继续，淡出收尾
+            bi = base_idx + len(overlays) + (1 if cta else 0)
+            cmd += ["-stream_loop", "-1", "-i", str(bgm["path"])]
+            fo = max(0.0, total_dur - 1.2)
+            fc_parts += [
+                f"[{bi}:a]aresample=48000,aformat=channel_layouts=stereo,atrim=0:{total_dur:.3f},asetpts=PTS-STARTPTS,"
+                f"volume={bgm.get('gain_db', -20)}dB,afade=t=in:d=0.6,afade=t=out:st={fo:.3f}:d=1.2[bg]",
+                "[ac]aresample=48000,aformat=channel_layouts=stereo,asplit[vo1][vo2]",
+                "[bg][vo1]sidechaincompress=threshold=0.02:ratio=4:attack=30:release=500[bgd]",
+                "[vo2][bgd]amix=inputs=2:duration=first:normalize=0[am]",
+            ]
+            a_map = "[am]"
+        if a_map.startswith("["):
+            # 平台响度对齐：Reels/Shorts 常见 -14 LUFS；原配音只有 ~-23 dB，外放偏轻
+            fc_parts.append(f"{a_map}loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[aout]")
+            a_map = "[aout]"
 
         out_mp4.parent.mkdir(parents=True, exist_ok=True)
         cmd += [
@@ -465,6 +483,7 @@ def main() -> None:
     cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     punch_cfg = cfg.get("finalize", {}).get("punch_in")
     card_cfg = cfg.get("finalize", {}).get("cta_card", {})
+    bgm_cfg = cfg.get("finalize", {}).get("bgm", {})
     cuts_path = WORK_DIR / "tts" / "cta_cut.json"
     cta_cuts = json.loads(cuts_path.read_text(encoding="utf-8")) if cuts_path.exists() else {}
     sel = {x.strip() for x in args.ids.split(",") if x.strip()} if args.ids else None
@@ -479,6 +498,10 @@ def main() -> None:
             cta = {"cut": cc["cut"], "speech_end": (cc.get("pause") or [cc["speech_end"]])[0], "card_sec": card_cfg.get("card_sec", 1.8), **pc}
         ext_wav = WORK_DIR / "tts" / f"{s['id']}.wav"
         out_mp4 = FINAL_DIR / f"{s['id']}_final_1080x1920.mp4"
+        bgm = None
+        if bgm_cfg.get("enabled"):
+            track = HERE / "bgm" / bgm_cfg["tracks"][s["persona"]]
+            bgm = {"path": track, "gain_db": bgm_cfg.get("gain_db", -20)} if track.exists() else None
         if "broll" in s:
             # 动作开场 + 说话段 + 插入空镜：先按配音时间轴拼成一条素材，景别变化已在拼接里做了，不再叠 punch_in
             from broll_plan import composite_tmp
@@ -489,7 +512,7 @@ def main() -> None:
             except FileNotFoundError as exc:
                 print(f"⏭️ [{s['id']}] {exc}", flush=True)
                 continue
-            finalize_clip(comp, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav, punch=None, cta=cta)
+            finalize_clip(comp, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav, punch=None, cta=cta, bgm=bgm)
             shutil.rmtree(comp.parent, ignore_errors=True)
             print(f"✅ Finalized {out_mp4.name} [broll] ({out_mp4.stat().st_size / 1e6:.2f} MB)", flush=True)
             count += 1
@@ -508,7 +531,7 @@ def main() -> None:
             print(f"⚠️ [{s['id']}] H3 素材里有硬切 {cuts_found}（{raw_mp4.name}），建议重跑这一条", flush=True)
         # 脚本级 "punch_in": false = 素材里 H3 自己已经有运镜（如 J01），不再叠加剪辑推近
         punch = punch_cfg if s.get("punch_in", True) else None
-        finalize_clip(raw_mp4, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav if ext_wav.exists() else None, punch=punch, cta=cta)
+        finalize_clip(raw_mp4, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav if ext_wav.exists() else None, punch=punch, cta=cta, bgm=bgm)
         print(f"✅ Finalized {out_mp4.name} ({out_mp4.stat().st_size / 1e6:.2f} MB)", flush=True)
         count += 1
 

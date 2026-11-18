@@ -1,0 +1,20 @@
+{
+ "taskId": "48819dc586651ebe447a79bd7a293497",
+ "style": "warm fingerpicked acoustic guitar with soft felt piano, slow 75 BPM, nostalgic, tender, Americana folk underscore for a talking video, steady and unobtrusive, no drums, no vocals",
+ "tracks": [
+  {
+   "id": "20a4380b-089d-421b-9a42-173dd51abdfd",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/20a4380b-089d-421b-9a42-173dd51abdfd.mp3",
+   "duration": 157.16,
+   "title": "Contact Sheet Underscore",
+   "local": "june_v1.mp3"
+  },
+  {
+   "id": "7e5e8413-b21a-49d7-b333-05ad173410dd",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/7e5e8413-b21a-49d7-b333-05ad173410dd.mp3",
+   "duration": 149.88,
+   "title": "Contact Sheet Underscore",
+   "local": "june_v2.mp3"
+  }
+ ]
+}

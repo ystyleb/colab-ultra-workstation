@@ -106,3 +106,5 @@ python3 lip_qa.py --ids V06talk,J03talk                                    # 说
 python3 subtitle_and_finalize.py --ids V06,J03                             # 拼接 + 字幕 + 字卡
 ```
 开场镜头前 0.5 秒常是参考图定格，`opener.in` 控制从哪开始取；插入镜头用 `inserts[].at`（配音秒数）。
+
+**配音放慢 + 配乐（2026-11-18）**：原配音 Wen 191 / Vivian 171 / June 165 wpm，偏快。`python3 slow_vo.py` 加长句间停顿并整体变速（Wen ×0.84、Vivian ×0.92、June ×0.94，原版备份在 `work/tts/_fast/`），之后必须重跑 `make_cta_cuts.py`（同时生成 `work/tts/words/` 词时间戳），H3 说话段要全部重出。`python3 make_bgm.py` 用 KIE Suno 给每人生成两版纯音乐（`bgm/`，付费积分），`finalize.bgm` 选用哪版；混音为人声下 -20 dB、说话时侧链压低，整体响度标准化到 -14 LUFS。broll 分镜的时间点写成台词文字（`hook_text` / `inserts[].at_text`），配音改速后自动换算；开场/插入镜头与配音无关，本地素材够长就复用，只重出说话段。

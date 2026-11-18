@@ -53,6 +53,63 @@ def cta_cuts() -> dict:
     return json.loads(CTA_CUTS.read_text(encoding="utf-8")) if CTA_CUTS.exists() else {}
 
 
+WORDS_DIR = TTS_DIR / "words"
+
+
+def _norm(w: str) -> str:
+    return "".join(ch for ch in w.lower() if ch.isalnum())
+
+
+def phrase_span(sid: str, phrase: str) -> tuple[float, float]:
+    """台词片段在配音里的 (开始, 结束) 秒数：whisper 词时间戳 + difflib 模糊对齐（whisper 会把 TEA 听成 T、twenty 写成 20）。"""
+    import difflib
+
+    words = json.loads((WORDS_DIR / f"{sid}.json").read_text(encoding="utf-8"))
+    hyp = [_norm(w["word"]) for w in words]
+    ref = [t for t in (_norm(x) for x in phrase.split()) if t]
+    sm = difflib.SequenceMatcher(a=ref, b=hyp, autojunk=False)
+    blocks = [b for b in sm.get_matching_blocks() if b.size]
+    if not blocks or sum(b.size for b in blocks) < max(1, len(ref) // 2):
+        raise ValueError(f"{sid}: 在配音里对不上台词片段「{phrase}」")
+    return words[blocks[0].b]["start"], words[blocks[-1].b + blocks[-1].size - 1]["end"]
+
+
+def _snap(sid: str, t: float, side: str) -> float:
+    """把切点挪进最近的静音段：side='after' 取 t 之后的停顿中点，'before' 取 t 之前的停顿中点（0.4s 内）。"""
+    from subtitle_and_finalize import detect_pauses
+
+    best = None
+    for s, e in detect_pauses(TTS_DIR / f"{sid}.wav", noise_db=-38, min_sil=0.09):
+        mid = (s + e) / 2
+        if side == "after" and s >= t - 0.15 and s - t <= 0.4:
+            best = mid if best is None else min(best, mid)
+        if side == "before" and e <= t + 0.15 and t - e <= 0.4:
+            best = mid if best is None else max(best, mid)
+    return round(best if best is not None else (t + 0.12 if side == "after" else t - 0.12), 2)
+
+
+def resolve_times(s: dict) -> dict:
+    """broll 的时间点可以写成台词文字（hook_text / inserts[].at_text），换配音或改语速后自动重算成秒。"""
+    b = json.loads(json.dumps(s["broll"]))
+    if "hook_text" in b:
+        b["hook_cut"] = _snap(s["id"], phrase_span(s["id"], b["hook_text"])[1], "after")
+    for ins in b.get("inserts", []):
+        if "at_text" in ins:
+            a, e = phrase_span(s["id"], ins["at_text"])
+            ins["at"] = [_snap(s["id"], a, "before"), _snap(s["id"], e, "after")]
+    return b
+
+
+def talk_text(s: dict, b: dict) -> str:
+    """说话段台词 = 全文去掉钩子句和结尾 Comment X."""
+    import re
+
+    full = re.sub(r"\s*Comment\s+[A-Z]+\.?\s*$", "", s["spoken_en"].strip())
+    if "hook_text" in b and full.startswith(b["hook_text"].strip()):
+        return full[len(b["hook_text"].strip()):].strip()
+    return b["talk"]["text"]
+
+
 def broll_prompt(persona: dict, scene_cfg: dict, action_en: str, dur_sec: float, person: bool, camera_en: str) -> str:
     """无台词镜头的 H3 提示词。<Audio 1> 是静音参考音，嘴巴靠音频锁住，文字里也写明不说话。"""
     ts_end = f"00:{dur_sec - 0.10:06.3f}"
@@ -93,9 +150,8 @@ def _ffmpeg(args: list[str]) -> None:
     subprocess.run(["ffmpeg", "-y", "-v", "error", *args], check=True)
 
 
-def make_talk_wav(s: dict, cut: float, out: Path) -> float:
+def make_talk_wav(s: dict, b: dict, cut: float, out: Path) -> float:
     """说话段配音：前面 lead 秒静音 + 配音[hook_cut, cta_cut) + 0.3 秒静音。返回总时长。"""
-    b = s["broll"]
     lead = b["talk"].get("lead", 0.25)
     src = TTS_DIR / f"{s['id']}.wav"
     a, e = b["hook_cut"], cut
@@ -115,8 +171,19 @@ def make_silence_wav(out: Path, sec: float) -> None:
     _ffmpeg(["-f", "lavfi", "-i", f"anoisesrc=color=pink:amplitude=0.001:duration={sec:.3f}:sample_rate=24000", "-ac", "1", str(out)])
 
 
-def build_jobs(ids: list[str]) -> tuple[list[dict], list[Path]]:
-    """为带 broll 的脚本生成 H3 任务清单。返回 (jobs, 需要上传的文件)。"""
+def _raw_len(job_id: str) -> float:
+    r = latest_raw(job_id)
+    if not r:
+        return 0.0
+    return float(subprocess.check_output(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(r)], text=True))
+
+
+def build_jobs(ids: list[str], reuse: bool = True) -> tuple[list[dict], list[Path]]:
+    """为带 broll 的脚本生成 H3 任务清单。返回 (jobs, 需要上传的文件)。
+
+    开场/插入镜头是无台词的，和配音无关：reuse=True 时本地已有且够长的原始素材直接复用，不再上云。
+    说话段口型跟着配音走，配音一改就必须重出，永远不复用。帧数按配音里实际需要的时长自动取。
+    """
     cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
     cuts = cta_cuts()
@@ -129,27 +196,30 @@ def build_jobs(ids: list[str]) -> tuple[list[dict], list[Path]]:
             continue
         if "broll" not in s:
             raise ValueError(f"{s['id']} 没有 broll 配置")
-        b = s["broll"]
+        b = resolve_times(s)
         persona = cfg["personas"][s["persona"]]
         scene_cfg = persona["scenes"][s["scene"]]
 
         # 1) 开场动作镜头
         op = b["opener"]
-        wav = BROLL_WAV_DIR / f"{s['id']}open.wav"
-        make_silence_wav(wav, op["frames"] / FPS)
-        jobs.append({
-            "job_id": f"{s['id']}open", "kind": "opener", "persona": s["persona"], "image": op["image"], "audio": wav.name,
-            "frames": op["frames"], "h3_overrides": BROLL_OVERRIDES,
-            "prompt": broll_prompt(persona, scene_cfg, op["action_en"], op["frames"] / FPS, True, OPENER_CAMERA),
-        })
-        files |= {SAMPLE_DIR / op["image"], wav}
+        need = b["hook_cut"] + op.get("in", 0.5) + 0.2
+        if not (reuse and _raw_len(f"{s['id']}open") >= need):
+            frames = legal_frames(need + 0.3)
+            wav = BROLL_WAV_DIR / f"{s['id']}open.wav"
+            make_silence_wav(wav, frames / FPS)
+            jobs.append({
+                "job_id": f"{s['id']}open", "kind": "opener", "persona": s["persona"], "image": op["image"], "audio": wav.name,
+                "frames": frames, "h3_overrides": BROLL_OVERRIDES,
+                "prompt": broll_prompt(persona, scene_cfg, op["action_en"], frames / FPS, True, OPENER_CAMERA),
+            })
+            files |= {SAMPLE_DIR / op["image"], wav}
 
         # 2) 对镜说话段
         cut = cuts[s["id"]]["cut"]
         wav = BROLL_WAV_DIR / f"{s['id']}talk.wav"
-        dur = make_talk_wav(s, cut, wav)
+        dur = make_talk_wav(s, b, cut, wav)
         frames = legal_frames(dur)
-        item = {"id": f"{s['id']}talk", "persona": s["persona"], "camera_action_en": b["talk"]["action_en"], "spoken_en": b["talk"]["text"]}
+        item = {"id": f"{s['id']}talk", "persona": s["persona"], "camera_action_en": b["talk"]["action_en"], "spoken_en": talk_text(s, b)}
         jobs.append({
             "job_id": item["id"], "kind": "talk", "persona": s["persona"], "image": scene_cfg["image"], "audio": wav.name,
             "frames": frames, "prompt": build_h3_prompt(persona, scene_cfg, item, frames / FPS),
@@ -160,12 +230,16 @@ def build_jobs(ids: list[str]) -> tuple[list[dict], list[Path]]:
         for k, ins in enumerate(b.get("inserts", [])):
             if "action_en" not in ins:
                 continue
+            need = ins["at"][1] - ins["at"][0] + ins.get("in", 0.6) + 0.1
+            if reuse and _raw_len(f"{s['id']}ins{k}") >= need:
+                continue
+            frames = legal_frames(need + 0.3)
             wav = BROLL_WAV_DIR / f"{s['id']}ins{k}.wav"
-            make_silence_wav(wav, ins["frames"] / FPS)
+            make_silence_wav(wav, frames / FPS)
             jobs.append({
                 "job_id": f"{s['id']}ins{k}", "kind": "insert", "persona": s["persona"], "image": ins["image"], "audio": wav.name,
-                "frames": ins["frames"], "h3_overrides": BROLL_OVERRIDES,
-                "prompt": broll_prompt(persona, scene_cfg, ins["action_en"], ins["frames"] / FPS, ins.get("person", False), INSERT_CAMERA),
+                "frames": frames, "h3_overrides": BROLL_OVERRIDES,
+                "prompt": broll_prompt(persona, scene_cfg, ins["action_en"], frames / FPS, ins.get("person", False), INSERT_CAMERA),
             })
             files |= {SAMPLE_DIR / ins["image"], wav}
     return jobs, sorted(files)
@@ -184,7 +258,7 @@ def _zoom_crop(z: str, anchor_y: float = 0.5) -> str:
 
 def build_composite(s: dict, out: Path, total: float) -> Path:
     """按配音时间轴拼出 768x1344 素材：开场 -> 说话段（插入后景别略近）-> 插入空镜盖在上面。无音轨。"""
-    b = s["broll"]
+    b = resolve_times(s)
     opener, talk = latest_raw(f"{s['id']}open"), latest_raw(f"{s['id']}talk")
     if not opener or not talk:
         raise FileNotFoundError(f"{s['id']}: 缺开场或说话段原始素材（outputs/raw/AIInf_{s['id']}open_* / talk_*）")
@@ -199,7 +273,7 @@ def build_composite(s: dict, out: Path, total: float) -> Path:
     # 说话段：插入镜头之后切近一档（剪辑式景别变化），时间换算到这一段自己的 t
     z_talk = f"if(gte(t,{ins_end - c1:.3f}),{after},1.0)" if (ins_end and after != 1.0) else "1.0"
     fc = [
-        f"[0:v]trim=start={o_in:.3f}:duration={c1:.3f},setpts=PTS-STARTPTS,fps={FPS},scale={W}:{H},setsar=1[A]",
+        f"[0:v]trim=start={o_in:.3f},setpts=PTS-STARTPTS,fps={FPS},tpad=stop_mode=clone:stop_duration=3,trim=duration={c1:.3f},scale={W}:{H},setsar=1[A]",
         f"[1:v]trim=start={lead:.3f},setpts=PTS-STARTPTS,fps={FPS},tpad=stop_mode=clone:stop_duration=4,"
         f"trim=duration={total - c1:.3f},{_zoom_crop(z_talk, 0.32)},setsar=1[B]",
         "[A][B]concat=n=2:v=1:a=0[base]",

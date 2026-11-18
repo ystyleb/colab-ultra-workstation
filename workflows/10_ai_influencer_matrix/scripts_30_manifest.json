@@ -96,9 +96,8 @@
    "pinned_comment": "Comment RULES for the free Approval Tax Audit, sent to your DMs.",
    "yt_shorts_title": "Same shoes for 20 years, flowers every Friday #shorts",
    "broll": {
-    "hook_cut": 3.35,
+    "hook_text": "I've worn the same good shoes for twenty years, darling,",
     "talk": {
-     "text": "and I still buy flowers every Friday. Spend where you'll feel it daily. Your list won't look like mine, and it shouldn't.",
      "action_en": "Vivian stands among the flowers, hands low and out of frame, speaking straight into the lens with small natural nods and a warm, knowing half-smile."
     },
     "opener": {
@@ -109,15 +108,12 @@
     },
     "inserts": [
      {
-      "at": [
-       5.6,
-       7.75
-      ],
       "still": "broll_v06_shoes_768x1344.png",
       "zoom": [
        1.0,
        1.08
-      ]
+      ],
+      "at_text": "Spend where you'll feel it daily."
      }
     ],
     "after_insert_zoom": 1.1
@@ -230,9 +226,8 @@
    "pinned_comment": "Comment NOTICE for the free 3-Day Notice Journal. The Contact Sheet ($14, link in bio) is for what comes next: spotting what repeats and preparing one honest conversation.",
    "yt_shorts_title": "The most romantic thing I ever photographed cost nothing #shorts",
    "broll": {
-    "hook_cut": 4.12,
+    "hook_text": "The most romantic thing I ever photographed cost nothing.",
     "talk": {
-     "text": "A groom quietly swapped plates because hers had gone cold. Love mostly looks like that. Small, quick, and nobody's watching.",
      "action_en": "June stands in her sunlit photo studio in front of the cork wall, hands low and relaxed at her sides out of frame, speaking straight into the lens with a soft, fond smile and small natural nods."
     },
     "opener": {
@@ -243,15 +238,12 @@
     },
     "inserts": [
      {
-      "at": [
-       5.3,
-       8.02
-      ],
       "still": "broll_j03_photo_768x1344.png",
       "zoom": [
        1.0,
        1.08
-      ]
+      ],
+      "at_text": "A groom quietly swapped plates because hers had gone cold."
      }
     ],
     "after_insert_zoom": 1.1
@@ -272,28 +264,24 @@
    "pinned_comment": "Comment NOTICE and I'll send the free 3-Day Notice Journal. The Contact Sheet (link in bio) is for what comes next: spotting what repeats and preparing to talk about it.",
    "yt_shorts_title": "When it rained on the wedding, I watched who held the umbrella #shorts",
    "broll": {
-    "hook_cut": 4.71,
+    "hook_text": "When it rained on a wedding, I stopped watching the dress and watched the couple.",
     "talk": {
-     "text": "Who held the umbrella. Who laughed first. Next time your plans fall apart, notice who reaches for whom.",
      "action_en": "June stands in her sunlit photo studio in front of the cork wall, hands low and relaxed at her sides out of frame, speaking straight into the lens with a soft, remembering smile and small natural nods."
     },
     "opener": {
      "image": "broll_j04_open_768x1344.png",
      "frames": 141,
-     "in": 0.5,
+     "in": 0.3,
      "action_en": "<Subject 1> raises the film camera to her eye, aims it at the lens and presses the shutter once, then lowers the camera to her chest and smiles warmly at the lens, lips closed."
     },
     "inserts": [
      {
-      "at": [
-       4.71,
-       8.3
-      ],
       "still": "broll_j04_photo_768x1344.png",
       "zoom": [
        1.0,
        1.08
-      ]
+      ],
+      "at_text": "Who held the umbrella. Who laughed first."
      }
     ],
     "after_insert_zoom": 1.0
@@ -451,9 +439,8 @@
    "pinned_comment": "Comment TEA for The Tea Drawer in your DMs. Doing Less, Case by Case (link in bio) is organized by situation, not by days.",
    "yt_shorts_title": "What's your second shop? Close it for one afternoon #shorts",
    "broll": {
-    "hook_cut": 3.87,
+    "hook_text": "In my forties I opened a second shop and stopped taking days off.",
     "talk": {
-     "text": "Then I collapsed. Now I close at two and nap. What's your second shop, my friend? Close it one afternoon.",
      "action_en": "Wen sits by the window at the chessboard, hands low and out of frame, speaking straight into the lens with a calm, slightly rueful smile and small natural nods."
     },
     "opener": {
@@ -464,15 +451,12 @@
     },
     "inserts": [
      {
-      "at": [
-       5.24,
-       7.55
-      ],
       "still": "broll_w04_sign_768x1344.png",
       "zoom": [
        1.0,
        1.07
-      ]
+      ],
+      "at_text": "Now I close at two and nap."
      }
     ],
     "after_insert_zoom": 1.1
@@ -568,9 +552,8 @@
    "pinned_comment": "Comment TEA for The Tea Drawer in your DMs. Doing Less, Case by Case ($14) and the 30 Tao Te Ching cards ($9) are in the link in bio.",
    "yt_shorts_title": "Lending to a friend: two kinds of reluctance #shorts",
    "broll": {
-    "hook_cut": 2.33,
+    "hook_text": "There are two kinds of reluctance, my friend.",
     "talk": {
-     "text": "Lending when you don't want to, and pretending afterward you don't mind. The second one lasts longer. Pour only what you can let go of.",
      "action_en": "Wen stands behind his tea counter, hands low and out of frame, speaking straight into the lens with a quiet, knowing look and small natural nods."
     },
     "opener": {
@@ -581,14 +564,11 @@
     },
     "inserts": [
      {
-      "at": [
-       7.98,
-       9.95
-      ],
       "image": "broll_w10_pour_768x1344.png",
       "frames": 90,
       "in": 0.6,
-      "action_en": "The hand tilts the small clay teapot and a thin stream of amber tea pours into the white cup; the pour stops with the cup half full and the pot is set upright on the counter."
+      "action_en": "The hand tilts the small clay teapot and a thin stream of amber tea pours into the white cup; the pour stops with the cup half full and the pot is set upright on the counter.",
+      "at_text": "Pour only what you can let go of."
      }
     ],
     "after_insert_zoom": 1.0

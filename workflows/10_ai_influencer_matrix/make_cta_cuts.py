@@ -23,6 +23,7 @@ from subtitle_and_finalize import detect_pauses
 HERE = Path(__file__).resolve().parent
 TTS_DIR = HERE / "work" / "tts"
 OUT = TTS_DIR / "cta_cut.json"
+WORDS_DIR = TTS_DIR / "words"  # 词级时间戳，broll_plan.py 按台词文字定位剪点/插入镜头用
 
 
 def whisper_words(wav: Path, tmp: Path) -> list[dict]:
@@ -32,7 +33,10 @@ def whisper_words(wav: Path, tmp: Path) -> list[dict]:
         check=True, capture_output=True,
     )
     d = json.loads((tmp / f"{wav.stem}.json").read_text(encoding="utf-8"))
-    return [w for s in d["segments"] for w in s["words"]]
+    words = [{"word": w["word"], "start": round(w["start"], 3), "end": round(w["end"], 3)} for s in d["segments"] for w in s["words"]]
+    WORDS_DIR.mkdir(parents=True, exist_ok=True)
+    (WORDS_DIR / f"{wav.stem}.json").write_text(json.dumps(words, ensure_ascii=False), encoding="utf-8")
+    return words
 
 
 def cut_for(wav: Path, tmp: Path) -> dict:

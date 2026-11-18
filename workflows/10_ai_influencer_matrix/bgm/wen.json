@@ -1,0 +1,20 @@
+{
+ "taskId": "c9307ca6df486d59ed4d9c5c9e5e6fbe",
+ "style": "soft felt piano with sparse gentle guqin plucks over a warm ambient pad, slow 65 BPM, calm, unhurried, afternoon tea-shop underscore for a talking video, steady and unobtrusive, no drums, no gongs, no vocals",
+ "tracks": [
+  {
+   "id": "0ed17437-311d-4d59-b468-8ea63594ca07",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/0ed17437-311d-4d59-b468-8ea63594ca07.mp3",
+   "duration": 182.8,
+   "title": "Tea Drawer Underscore",
+   "local": "wen_v1.mp3"
+  },
+  {
+   "id": "7495f7a4-9654-42d4-a258-dcae7c931e88",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/7495f7a4-9654-42d4-a258-dcae7c931e88.mp3",
+   "duration": 171.76,
+   "title": "Tea Drawer Underscore",
+   "local": "wen_v2.mp3"
+  }
+ ]
+}

@@ -1,0 +1,20 @@
+{
+ "taskId": "6d8c65f49d4f845f147617ade0dd6a10",
+ "style": "soft solo piano with gentle warm strings, slow 70 BPM, elegant, calm, intimate, sparse, cinematic underscore for a talking video, steady and unobtrusive, no drums, no vocals",
+ "tracks": [
+  {
+   "id": "e1700114-a2e8-4d9b-aaae-6b7e72988f47",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/e1700114-a2e8-4d9b-aaae-6b7e72988f47.mp3",
+   "duration": 144.0,
+   "title": "Quiet Money Underscore",
+   "local": "vivian_v1.mp3"
+  },
+  {
+   "id": "63eeb731-2f30-432f-b1b8-3c81a2b31d17",
+   "audioUrl": "https://tempfile.aiquickdraw.com/r/63eeb731-2f30-432f-b1b8-3c81a2b31d17.mp3",
+   "duration": 157.92,
+   "title": "Quiet Money Underscore",
+   "local": "vivian_v2.mp3"
+  }
+ ]
+}
