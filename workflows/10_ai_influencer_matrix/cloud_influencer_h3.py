@@ -98,18 +98,26 @@ def ensure_comfy_running() -> None:
     raise RuntimeError("❌ ComfyUI /object_info failed to respond.")
 
 
-def build_h3_prompt(persona: dict, scene_cfg: dict, item: dict, dur_sec: float) -> str:
-    """Construct Iron-Rule-F compliant single-speaker MiniMax-H3 Ref2VA English talking-head prompt."""
+def build_h3_prompt(persona: dict, scene_cfg: dict, item: dict, dur_sec: float, look: dict | None = None) -> str:
+    """Construct Iron-Rule-F compliant single-speaker MiniMax-H3 Ref2VA English talking-head prompt.
+
+    `look`（2026-11-18 去「数字感」）：
+    - trigger：fal People 写实 LoRA 的触发词 r34l1sm，官方要求放在提示词最前面；之前一直没写，LoRA 基本没生效
+    - skin_en：皮肤写哑光、毛孔、细绒毛，不写光滑/发光
+    - shot_en / speak_en：纪录片访谈机位（人物偏一侧，视线落在镜头旁的采访者身上）
+    """
+    look = look or {}
     ts_end = f"00:{dur_sec - 0.10:06.3f}"
     # 服装随场景变化（同一人物两张关键帧穿的不一样），必须取场景级 outfit_en；
     # 写在人物级 look_en 会让文字和 <Picture 1> 打架，H3 可能改衣服。
-    look = persona["look_en"]
+    desc = persona["look_en"]
     if scene_cfg.get("outfit_en"):
-        look = f"{look}, wearing {scene_cfg['outfit_en']}"
+        desc = f"{desc}, wearing {scene_cfg['outfit_en']}"
     return (
-        "subject_definitions:\n"
-        f"<Subject 1> is {persona['display_name']} ({look}) from <Picture 1>, "
-        "warm natural lifelike human skin tone with realistic fine pores and subtle authentic facial lines.\n"
+        (f"{look['trigger']}\n" if look.get("trigger") else "")
+        + "subject_definitions:\n"
+        f"<Subject 1> is {persona['display_name']} ({desc}) from <Picture 1>, "
+        f"{look.get('skin_en', 'warm natural lifelike human skin tone with realistic fine pores and subtle authentic facial lines')}.\n"
         "<Audio 1> is the voice-timbre reference for <Subject 1>.\n\n"
         "retention_analysis:\n"
         "<Subject 1> (appears in [Shot 1]): fully_preserved - Strictly preserve exact facial bone structure, "
@@ -118,8 +126,8 @@ def build_h3_prompt(persona: dict, scene_cfg: dict, item: dict, dur_sec: float) 
         f"from <Picture 1> ({scene_cfg['bg_en']}).\n\n"
         "summary:\n"
         "[reference generation + audio reference]\n"
-        f"Shot 1 (00:00.000 - {ts_end}): Live-action 35mm cinema vertical 9:16 natural talking-head shot at eye level "
-        f"on <Subject 1>, chest-up medium close-up. {item['camera_action_en']} "
+        f"Shot 1 (00:00.000 - {ts_end}): Live-action 35mm cinema vertical 9:16 "
+        f"{look.get('shot_en', 'natural talking-head shot at eye level on <Subject 1>, chest-up medium close-up.')} {item['camera_action_en']} "
         # 景别变化交给本地剪辑（subtitle_and_finalize.py 的 punch_in）。H3 里写推镜头会一路推到大特写，
         # 锁死机位又太僵；这里只要官方词表的 Shake Slightly，加上人物自己的小动作。2026-11-18 试了三版后定的。
         "One single continuous shot from start to end. "
@@ -127,8 +135,8 @@ def build_h3_prompt(persona: dict, scene_cfg: dict, item: dict, dur_sec: float) 
         "<Subject 1> keeps small, natural head and shoulder movements while speaking, never frozen. "
         "<Subject 1>'s mouth, lips, and jaw remain 100% unobstructed and naturally expressive throughout. "
         "<Subject 1> is the on-screen speaker of every word, lips and jaw visibly forming each syllable in sync with the speech. "
-        f"Speaking directly to the viewer in a clear, grounded tone, <Subject 1> delivers: <d>[English]{item['spoken_en']}</d> "
-        "Clean live-action optical realism, natural room ambiance, zero subtitles, zero on-screen text, zero watermarks."
+        f"{look.get('speak_en', 'Speaking directly to the viewer in a clear, grounded tone')}, <Subject 1> delivers: <d>[English]{item['spoken_en']}</d> "
+        f"{look.get('finish_en', 'Clean live-action optical realism')}, natural room ambiance, zero subtitles, zero on-screen text, zero watermarks."
     )
 
 
@@ -321,7 +329,7 @@ def run_jobs(cfg: dict, jobs: list[dict], comfy_in: Path, seed_base: int) -> Non
         for f in (job["image"], job["audio"]):
             if not (comfy_in / f).exists():
                 raise FileNotFoundError(f"Missing staged input {f} in {comfy_in}.")
-        seed = seed_base + idx + 1
+        seed = int(job.get("seed", seed_base + idx + 1))
         item = {"id": job["job_id"], "persona": job["persona"]}
         wf = build_workflow(cfg, item, job["image"], job["audio"], job["prompt"], int(job["frames"]), seed, job.get("h3_overrides"))
         t0 = time.time()

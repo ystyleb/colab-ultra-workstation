@@ -270,6 +270,7 @@ def main() -> None:
     ap.add_argument("--pull-only", action="store_true", help="0-CCU pull finished MP4s from Drive")
     ap.add_argument("--keep-alive", action="store_true", help="Keep G4 session alive after completion")
     ap.add_argument("--seed-base", type=int, default=2026111700, help="H3 seed = seed_base + position in batch; change it to re-roll failed clips")
+    ap.add_argument("--jobs-file", default="", help="直接给任务清单 JSON（{jobs, files}，如 look_test.py 生成的画风对比）")
     ap.add_argument("--broll", action="store_true", help="动作开场 + 插入空镜形式：按 manifest 的 broll 字段出开场/说话段/插入镜头（broll_plan.py）")
     ap.add_argument("--session", default="", help="Colab session name (default: project_meta.video_session). 并行开多台 G4 时每台用不同名字，按人物拆 --ids 以免同时上传同一个文件")
     args = ap.parse_args()
@@ -282,7 +283,14 @@ def main() -> None:
         raise SystemExit("❌ No matching scripts selected.")
 
     jobs: list[dict] = []
-    if args.broll:
+    if args.jobs_file:
+        data = json.loads(Path(args.jobs_file).read_text(encoding="utf-8"))
+        jobs, broll_files = data["jobs"], [Path(f) for f in data["files"]]
+        if args.dry_run:
+            for j in jobs:
+                print(f"   {j['job_id']:10s} {j['frames']:3d}f seed={j.get('seed')} {j['image']}")
+            return
+    elif args.broll:
         from broll_plan import build_jobs
 
         jobs, broll_files = build_jobs([x["id"] for x in scripts])

@@ -309,6 +309,7 @@ def finalize_clip(
     punch: dict | None = None,
     cta: dict | None = None,
     bgm: dict | None = None,
+    film: str | None = None,
 ) -> None:
     """Upscale 768x1344 -> 1080x1920, align phrases to speech window, and burn PIL overlays.
 
@@ -370,6 +371,9 @@ def finalize_clip(
             print(f"   ✂️ punch-in cuts at {', '.join(f'{c:.2f}s' for c in cuts)}", flush=True)
         else:
             fc_parts = [f"{src}scale={W}:{H}:flags=lanczos,setsar=1[v0]"]
+        if film:
+            # 胶片后期（去「数字感」）：轻柔化 + 动态颗粒 + 降饱和 + 曲线 + 暗角。放在字幕之前，字幕保持干净
+            fc_parts[0] = fc_parts[0].replace("setsar=1[v0]", f"setsar=1,{film}[v0]")
         prev = "v0"
         base_idx = 2 if has_ext_audio else 1
         for k, (_, s_t, e_t) in enumerate(overlays):
@@ -515,6 +519,8 @@ def main() -> None:
     punch_cfg = cfg.get("finalize", {}).get("punch_in")
     card_cfg = cfg.get("finalize", {}).get("cta_card", {})
     bgm_cfg = cfg.get("finalize", {}).get("bgm", {})
+    film_cfg = cfg.get("finalize", {}).get("film", {})
+    film = film_cfg.get("filter") if film_cfg.get("enabled") else None
     cuts_path = WORK_DIR / "tts" / "cta_cut.json"
     cta_cuts = json.loads(cuts_path.read_text(encoding="utf-8")) if cuts_path.exists() else {}
     sel = {x.strip() for x in args.ids.split(",") if x.strip()} if args.ids else None
@@ -545,7 +551,7 @@ def main() -> None:
             except FileNotFoundError as exc:
                 print(f"⏭️ [{s['id']}] {exc}", flush=True)
                 continue
-            finalize_clip(comp, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav, punch=None, cta=cta, bgm=bgm)
+            finalize_clip(comp, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav, punch=None, cta=cta, bgm=bgm, film=film)
             shutil.rmtree(comp.parent, ignore_errors=True)
             print(f"✅ Finalized {out_mp4.name} [broll] ({out_mp4.stat().st_size / 1e6:.2f} MB)", flush=True)
             count += 1
@@ -564,7 +570,7 @@ def main() -> None:
             print(f"⚠️ [{s['id']}] H3 素材里有硬切 {cuts_found}（{raw_mp4.name}），建议重跑这一条", flush=True)
         # 脚本级 "punch_in": false = 素材里 H3 自己已经有运镜（如 J01），不再叠加剪辑推近
         punch = punch_cfg if s.get("punch_in", True) else None
-        finalize_clip(raw_mp4, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav if ext_wav.exists() else None, punch=punch, cta=cta, bgm=bgm)
+        finalize_clip(raw_mp4, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav if ext_wav.exists() else None, punch=punch, cta=cta, bgm=bgm, film=film)
         print(f"✅ Finalized {out_mp4.name} ({out_mp4.stat().st_size / 1e6:.2f} MB)", flush=True)
         count += 1
 

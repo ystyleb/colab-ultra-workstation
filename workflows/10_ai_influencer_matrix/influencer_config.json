@@ -274,6 +274,11 @@
         "wen": "wen_v1.mp3"
       },
       "_note": "make_bgm.py 用 KIE Suno 生成的纯音乐（每人 v1/v2 两版，在 bgm/ 下）。人声下 -20 dB，说话时侧链再压，字卡期间音乐继续并淡出。"
+    },
+    "film": {
+      "enabled": true,
+      "filter": "gblur=sigma=0.6,eq=saturation=0.86:contrast=1.04:gamma=0.98,curves=r='0/0.03 0.5/0.5 1/0.96':g='0/0.02 0.5/0.49 1/0.96':b='0/0.06 0.5/0.48 1/0.92',noise=c0s=9:c0f=t+u:c1s=3:c1f=t+u:c2s=3:c2f=t+u,vignette=angle=PI/5",
+      "_note": "去「数字感」后期（2026-11-18）：AI 画面过锐、过净、饱和偏高。0.6px 柔化 + 每帧变化的颗粒（亮度 9 / 色度 3）+ 饱和 -14% + 轻 S 曲线（暗部偏冷、高光微压）+ 暗角。在字幕之前做。"
     }
   }
 }

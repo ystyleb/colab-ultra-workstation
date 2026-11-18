@@ -118,6 +118,27 @@ BROLL_PERSON_REF = (
 )
 
 
+# ---- 纪录片访谈机位参考图（2026-11-18 去「数字感」对比 C 版）----
+# 原参考图是商业图库风：金色暖光、人物正中、证件照式直视。网上共识是「光太完美」是 AI 最大破绽。
+# 这里只改光线、机位、视线和皮肤质感，不改长相和妆容（用户否过把 Vivian 画老画丑的版本）。
+INTERVIEW_PROMPT = (
+    "Use your image generation tool to create ONE photorealistic frame in vertical 2:3 orientation (1024x1536), then save it in the "
+    "current directory as {name}.png (PNG). Do not ask questions; just produce the file.\n"
+    "This is a still frame from a cinematic documentary film interview, NOT a commercial portrait, NOT a stock photo.\n"
+    "The attached {ref}.png is the identity reference: preserve EXACTLY the face, bone structure, eye color, age lines, hairstyle, "
+    "hair color, makeup, jewelry and outfit, and keep the same location. Only re-light and re-frame it as a documentary interview:\n"
+    "- Framing: chest-up medium close-up, the person placed on the {side} third of the frame, open space on the side they look toward.\n"
+    "- Eyeline: looking just off-camera to the {look_dir}, at an interviewer sitting beside the camera. NOT looking into the lens.\n"
+    "- Light: one soft key light from a side window, the far side of the face falling into gentle natural shadow; mixed color "
+    "temperatures (cool daylight from the window, a warm practical lamp glowing in the background); natural contrast, slightly "
+    "underexposed; no golden-hour glow, no beauty lighting, no rim-light halo.\n"
+    "- Skin: unretouched dry matte skin with visible pores, fine peach fuzz and natural slight redness; no smoothing, no glow, no shine.\n"
+    "- Lens and color: 50mm at T2, natural perspective, background softly out of focus with real depth and lived-in clutter; muted "
+    "natural film color like Kodak Vision3 500T, fine film grain.\n"
+    "- Mouth gently closed, lips and jaw fully unobstructed; hands low and out of frame.\n"
+)
+
+
 def _attach(work: Path, dep: str) -> Path | None:
     src = WORK_DIR / f"{dep}_raw.png"
     if not src.exists():
@@ -158,6 +179,8 @@ def run_one(fr: dict, style: str) -> tuple[str, bool, str]:
         prompt = PLATE_PROMPT.format(name=name, ref_line=ref_line)
     elif kind == "composite":
         prompt = COMPOSE_PROMPT.format(name=name, plate=fr["edit_of"], sheet=fr["sheet_of"])
+    elif kind == "interview":
+        prompt = INTERVIEW_PROMPT.format(name=name, ref=fr["edit_of"], side=fr.get("side", "right"), look_dir=fr.get("look_dir", "left"))
     elif kind == "broll":
         ref_line = BROLL_PERSON_REF.format(ref=fr["edit_of"]) if fr.get("edit_of") else ""
         prompt = BROLL_PROMPT.format(name=name, ref_line=ref_line)

@@ -1,0 +1,10 @@
+{
+  "_note": "去「数字感」对比（2026-11-18）C 版参考图：纪录片访谈机位。用法：python3 gen_keyframes.py --spec keyframes_look.json",
+  "style": "Documentary feature film still, ARRI Alexa Mini LF, Cooke S4 50mm, Kodak Vision3 500T film emulation, fine organic grain.",
+  "frames": [
+    {"name": "ref_vivian_flowers_doc", "persona": "vivian", "scene": "flowers_doc", "kind": "interview", "edit_of": "ref_vivian_flowers", "side": "right", "look_dir": "left",
+     "prompt": "She stands in the glass conservatory among buckets of peonies and roses on an overcast spring morning, soft grey daylight from the glass wall on her right."},
+    {"name": "ref_wen_counter_doc", "persona": "wen", "scene": "counter_doc", "kind": "interview", "edit_of": "ref_wen_counter", "side": "left", "look_dir": "right",
+     "prompt": "He stands behind the wooden counter of his small old tea shop in the late afternoon, cool daylight from the shop window on his left, a warm tungsten lamp glowing among the tea tins behind him."}
+  ]
+}
