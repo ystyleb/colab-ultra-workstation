@@ -118,9 +118,11 @@ def build_h3_prompt(persona: dict, scene_cfg: dict, item: dict, dur_sec: float) 
         f"from <Picture 1> ({scene_cfg['bg_en']}).\n\n"
         "summary:\n"
         "[reference generation + audio reference]\n"
-        f"Shot 1 (00:00.000 - {ts_end}): Live-action 35mm cinema vertical 9:16 chest-up medium close-up at eye level, "
-        f"holding a steady natural talking-head composition on <Subject 1>. {item['camera_action_en']} "
-        "Static locked-off camera; the chest-up framing stays the same from the first frame to the last. "
+        f"Shot 1 (00:00.000 - {ts_end}): Live-action 35mm cinema vertical 9:16 natural talking-head shot at eye level "
+        f"on <Subject 1>, chest-up medium close-up. {item['camera_action_en']} "
+        # 景别变化交给本地剪辑（subtitle_and_finalize.py 的 punch_in）。H3 里写推镜头会一路推到大特写，
+        # 锁死机位又太僵；这里只要官方词表的 Shake Slightly，加上人物自己的小动作。2026-11-18 试了三版后定的。
+        "The camera shakes slightly at slow speed like a steady handheld camera, keeping the same chest-up framing. "
         "<Subject 1>'s mouth, lips, and jaw remain 100% unobstructed and naturally expressive throughout. "
         "<Subject 1> is the on-screen speaker of every word, lips and jaw visibly forming each syllable in sync with the speech. "
         f"Speaking directly to the viewer in a clear, grounded tone, <Subject 1> delivers: <d>[English]{item['spoken_en']}</d> "

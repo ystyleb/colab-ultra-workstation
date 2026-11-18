@@ -229,5 +229,24 @@
         }
       }
     }
+  },
+  "finalize": {
+    "punch_in": {
+      "enabled": true,
+      "_note": "剪辑式推近（2026-11-18 用户选定）：按配音句间停顿切景别。levels/drift 依次对应 钩子句 / 主体 / CTA；face_anchor_y 是裁切框的纵向锚点，胸像参考图下 0.32 能保住头顶留白",
+      "levels": [
+        1.0,
+        1.22,
+        1.1
+      ],
+      "drift": [
+        0.05,
+        0.015,
+        0.0
+      ],
+      "min_seg_sec": 3.0,
+      "min_tail_sec": 1.0,
+      "face_anchor_y": 0.32
+    }
   }
 }

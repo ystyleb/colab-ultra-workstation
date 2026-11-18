@@ -1,0 +1,61 @@
+{
+  "style": "35mm cinema still shot on ARRI Alexa Mini LF with Cooke Panchro 50mm T2.2 prime lens, organic natural human skin micro-texture with fine pores, subtle film grain, authentic candid color grading, natural optical bokeh, zero synthetic smoothing.",
+  "note": "铁律 H 分层参考图试点（V01/W01）：三视图 + 空环境图 -> edit_of 合成中景关键帧。确认后再推广到 6 个场景。",
+  "frames": [
+    {
+      "name": "sheet_vivian",
+      "persona": "vivian",
+      "scene": "sheet",
+      "kind": "turnaround",
+      "identity_of": "ref_vivian_library",
+      "prompt": "Clothing: a crisp cream silk ascot blouse beneath a tailored charcoal-tweed blazer, charcoal wool trousers, low leather pumps, pearl stud earrings."
+    },
+    {
+      "name": "sheet_wen",
+      "persona": "wen",
+      "scene": "sheet",
+      "kind": "turnaround",
+      "identity_of": "ref_wen_counter",
+      "prompt": "Clothing: a navy cotton cardigan over a white collared shirt, grey cotton trousers, plain black cloth shoes."
+    },
+    {
+      "name": "plate_vivian_library",
+      "persona": "vivian",
+      "scene": "library_plate",
+      "kind": "plate",
+      "plate_ref": "ref_vivian_library",
+      "prompt": "Location: a sunlit Old-Money mahogany home library. Camera: eye level (about 1.2 m high), about 2.5 m from a mahogany writing desk, 35mm lens, a MEDIUM shot. Composition from bottom to top: the front edge of the desk runs straight across the lower 25% of the frame; on the desk a closed leather-bound household ledger at lower-right and a warm glowing brass banker desk lamp at the left edge; directly behind the desk, centered, an EMPTY high-backed leather desk chair facing the camera, leaving clear space for one seated person from the waist up; behind that, floor-to-ceiling leather-bound book spines and wood-paneled walls in soft T2.2 bokeh, warm window sunlight from the left. Keep the top 20% of the frame as calm background (bookshelves)."
+    },
+    {
+      "name": "plate_wen_counter",
+      "persona": "wen",
+      "scene": "counter_plate",
+      "kind": "plate",
+      "plate_ref": "ref_wen_counter",
+      "prompt": "Location: a small, old San Francisco neighborhood tea shop, an ordinary shop, no temple, no incense, no gongs. Camera: eye level (about 1.4 m high), about 1.5 m from the wooden tea counter, 50mm lens, a MEDIUM CLOSE shot. Composition from bottom to top: the front edge of the worn wooden counter runs straight across the lower 18% of the frame; on the counter, both props sit NEAR THE CENTER of the frame, close together: a small brown clay teapot just left of center and ONE small white porcelain cup of amber oolong with a thin wisp of steam just right of center, the two about a hand-width apart; directly behind the counter, centered, EMPTY space for one standing person seen from the mid-chest up; behind that, a wall of tea tins and paper-labelled jars in soft T2.2 bokeh, soft window daylight. Keep the top 18% of the frame as calm background."
+    },
+    {
+      "name": "ref_vivian_library_med",
+      "persona": "vivian",
+      "scene": "library",
+      "kind": "composite",
+      "edit_of": "plate_vivian_library",
+      "sheet_of": "sheet_vivian",
+      "prompt": "She sits upright in the desk chair behind the desk, seen from the waist up, facing the camera. Forearms rest on the desk; one hand lies lightly on the closed leather ledger, the other hand rests beside it. Clothing: a crisp cream silk ascot blouse beneath a tailored charcoal-tweed blazer, pearl stud earrings. Expression: poised, dry, a knowing closed-mouth half-smile.",
+      "tight_crop": {
+        "height_frac": 0.72,
+        "cx": 0.56,
+        "top": 0.1
+      }
+    },
+    {
+      "name": "ref_wen_counter_med",
+      "persona": "wen",
+      "scene": "counter",
+      "kind": "composite",
+      "edit_of": "plate_wen_counter",
+      "sheet_of": "sheet_wen",
+      "prompt": "He stands behind the counter, close to it, seen from the mid-chest up, facing the camera; his head and shoulders fill about the middle 45% of the frame width. Forearms rest low on the counter edge; his hands rest lightly on the counter on either side of the teapot and cup, neither hand lifted. Clothing: a navy cotton cardigan over a white collared shirt. Expression: calm, faintly amused, closed-mouth."
+    }
+  ]
+}

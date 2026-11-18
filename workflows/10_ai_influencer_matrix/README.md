@@ -23,7 +23,8 @@
 ├── influencer_config.json             # 三大人设、声线 F0 区间、双场景、H3 参数与双阶产品配置
 ├── scripts_30_manifest.json           # 30 条英文口播脚本（V01-V10, J01-J10, W01-W10）
 ├── keyframes.json                     # 7 张 9:16 锁脸锚点规范（Vivian jet 仅作身份基准 + 三人各两场景）
-├── gen_keyframes.py                   # 0-CCU Codex 关键帧生成器 + 3×2 质检总览拼图
+├── gen_keyframes.py                   # 0-CCU Codex 关键帧生成器 + 3×2 质检总览拼图（支持三视图 / 空环境图 / 合成中景，--crop-only）
+├── keyframes_layered.json             # 分层参考图试点（铁律 H：三视图 + 空环境图 -> edit_of 中景），目前未启用
 ├── build_digital_products.py          # 0-CCU 渲染 6 本 A4 PDF（共用样式 + Headless Chrome 渲染与页数校验）
 ├── products_v3.py                     # V3.1 六本产品的内容（Vivian / June / Wen 各一本免费 + 一本付费）
 ├── make_store_and_profile_assets.py   # 0-CCU 生成 800×800 头像与 1280×720 Gumroad 封面
@@ -31,7 +32,7 @@
 ├── run_influencer_tts_remote.py       # 本地遥控器：L4 TTS（支持 --dry-run / --pull-only / 计费包裹）
 ├── cloud_influencer_h3.py             # 云端 G4 MiniMax-H3 Ref2VA 9:16 批量口播生成器（铁律 F）
 ├── run_influencer_video_remote.py     # 本地遥控器：G4 H3 批量出片（支持 --dry-run / --pull-only / 计费包裹）
-├── subtitle_and_finalize.py           # 本地 0-CCU 1080×1920 超分 + 声学包络动态短语字幕 + Hook 贴片（含 --self-test）
+├── subtitle_and_finalize.py           # 本地 0-CCU 1080×1920 超分 + 剪辑式推近（按句间停顿切景别）+ 动态短语字幕 + Hook 贴片（含 --self-test）
 ├── sample_inputs/                     # 768×1344 人物参考图（入库；elias/sienna 为旧阵型遗留）
 ├── products/                          # V3.1 可打印 A4 PDF（免费 4–5 页 / 付费 11 页；V2 旧版在 work/archive/products_v2/）
 ├── work/                              # 原始生图、HTML 源码、L4 WAV 缓存（gitignored）
@@ -91,3 +92,5 @@ python3 workflows/10_ai_influencer_matrix/run_influencer_video_remote.py
 # 3) 本地 0-CCU 一键批量出终版成品
 python3 workflows/10_ai_influencer_matrix/subtitle_and_finalize.py
 ```
+
+**运镜分工（2026-11-18 试了三版后定的）**：H3 只出胸像、轻微手持晃动（`Shake Slightly`）加人物小动作的素材；景别变化在本地做，按配音句间停顿切成 钩子 1.0×慢推 → 主体切近 1.22× → CTA 1.10×（`influencer_config.json` 的 `finalize.punch_in`）。原因：H3 里写推镜头会一路推到大特写，写「最近只到头肩」也压不住；锁死机位又太僵。素材里 H3 已经自带运镜的条目在脚本里设 `"punch_in": false`（如 J01）。口播动作别写倒茶这类持续的手部动作，W01 第一版因此整条没张嘴。

@@ -118,6 +118,55 @@ def detect_speech_window(media_path: Path, total_dur: float) -> tuple[float, flo
         shutil.rmtree(tmp_wav.parent, ignore_errors=True)
 
 
+def detect_pauses(wav: Path, noise_db: float = -35.0, min_sil: float = 0.25) -> list[tuple[float, float]]:
+    """Silence spans in the voiceover (ffmpeg silencedetect) -> [(start, end), ...]."""
+    r = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-i", str(wav), "-af", f"silencedetect=noise={noise_db}dB:d={min_sil}", "-f", "null", "-"],
+        capture_output=True,
+        text=True,
+    )
+    spans: list[tuple[float, float]] = []
+    start = None
+    for line in r.stderr.splitlines():
+        if "silence_start:" in line:
+            start = float(line.split("silence_start:")[1].split()[0])
+        elif "silence_end:" in line and start is not None:
+            spans.append((start, float(line.split("silence_end:")[1].split()[0])))
+            start = None
+    return spans
+
+
+def plan_punch_cuts(pauses: list[tuple[float, float]], total_dur: float, min_seg: float = 3.0, min_tail: float = 1.0) -> list[float]:
+    """Pick up to two cut points (pause midpoints) for hook / body / CTA framing.
+
+    剪辑式推近：只在句间停顿的中点切，不会切断正在说的词。
+    - 第 1 刀：第一个离开头 >= min_seg 秒的停顿（钩子句说完）
+    - 第 2 刀：最后一个停顿，要求和第 1 刀间隔 >= min_seg、离结尾 >= min_tail（CTA 常常只有 1.5 秒）
+    开头/结尾贴边的静音不算停顿。
+    """
+    mids = [(s + e) / 2 for s, e in pauses if s > 0.05 and e < total_dur - 0.05]
+    c1 = next((m for m in mids if m >= min_seg), None)
+    if c1 is None:
+        return []
+    c2 = next((m for m in reversed(mids) if m - c1 >= min_seg and total_dur - m >= min_tail), None)
+    return [c1] if c2 is None else [c1, c2]
+
+
+def punch_zoom_expr(cuts: list[float], total_dur: float, levels: list[float], drift: list[float]) -> str:
+    """ffmpeg per-frame zoom factor z(t): each segment starts at levels[i] and drifts by drift[i] over its length."""
+    bounds = [0.0, *cuts, total_dur]
+    segs = []
+    for i in range(len(bounds) - 1):
+        a, b = bounds[i], bounds[i + 1]
+        lv = levels[min(i, len(levels) - 1)]
+        dr = drift[min(i, len(drift) - 1)]
+        segs.append((b, f"({lv:.4f}+{dr:.4f}*(t-{a:.3f})/{max(0.1, b - a):.3f})"))
+    expr = segs[-1][1]
+    for b, e in reversed(segs[:-1]):
+        expr = f"if(lt(t,{b:.3f}),{e},{expr})"
+    return expr
+
+
 def chunk_words(text: str, max_words: int = 4) -> list[str]:
     words = text.strip().split()
     chunks: list[str] = []
@@ -175,8 +224,13 @@ def finalize_clip(
     spoken_en: str,
     hook_banner: str,
     ext_wav: Path | None = None,
+    punch: dict | None = None,
 ) -> None:
-    """Upscale 768x1344 -> 1080x1920, align phrases to speech window, and burn PIL overlays."""
+    """Upscale 768x1344 -> 1080x1920, align phrases to speech window, and burn PIL overlays.
+
+    `punch`（influencer_config.json 的 finalize.punch_in）不为空时，按配音的句间停顿切景别：
+    钩子句原景别慢推 -> 主体切近 -> CTA 回一点。缩放和放大到 1080x1920 在同一次 scale 里完成，只重采样一次。
+    """
     total_dur = probe_duration(raw_mp4)
     t_start, t_end = detect_speech_window(ext_wav if (ext_wav and ext_wav.exists()) else raw_mp4, total_dur)
     chunks = chunk_words(spoken_en, max_words=4)
@@ -208,7 +262,20 @@ def finalize_clip(
         for ov_p, _, _ in overlays:
             cmd += ["-i", str(ov_p)]
 
-        fc_parts = [f"[0:v]scale={W}:{H}:flags=lanczos,setsar=1[v0]"]
+        cuts: list[float] = []
+        if punch and punch.get("enabled") and has_ext_audio:
+            # 停顿和结尾都按配音时长算：H3 视频按 17k+5 帧补齐，比配音长，末尾静音不能当句间停顿
+            cuts = plan_punch_cuts(detect_pauses(ext_wav), probe_duration(ext_wav), punch.get("min_seg_sec", 3.0), punch.get("min_tail_sec", 1.0))
+        if cuts:
+            z = punch_zoom_expr(cuts, total_dur, punch["levels"], punch["drift"])
+            ay = punch.get("face_anchor_y", 0.32)
+            fc_parts = [
+                f"[0:v]scale=w='trunc({W}*({z})/2)*2':h='trunc({H}*({z})/2)*2':eval=frame:flags=lanczos,"
+                f"crop={W}:{H}:(iw-{W})/2:(ih-{H})*{ay},setsar=1[v0]"
+            ]
+            print(f"   ✂️ punch-in cuts at {', '.join(f'{c:.2f}s' for c in cuts)}", flush=True)
+        else:
+            fc_parts = [f"[0:v]scale={W}:{H}:flags=lanczos,setsar=1[v0]"]
         prev = "v0"
         base_idx = 2 if has_ext_audio else 1
         for k, (_, s_t, e_t) in enumerate(overlays):
@@ -312,6 +379,7 @@ def main() -> None:
         return
 
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
+    punch_cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8")).get("finalize", {}).get("punch_in")
     sel = {x.strip() for x in args.ids.split(",") if x.strip()} if args.ids else None
     scripts = [s for s in manifest["scripts"] if (not sel or s["id"] in sel)]
 
@@ -323,7 +391,9 @@ def main() -> None:
         raw_mp4 = cands[-1]
         ext_wav = WORK_DIR / "tts" / f"{s['id']}.wav"
         out_mp4 = FINAL_DIR / f"{s['id']}_final_1080x1920.mp4"
-        finalize_clip(raw_mp4, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav if ext_wav.exists() else None)
+        # 脚本级 "punch_in": false = 素材里 H3 自己已经有运镜（如 J01），不再叠加剪辑推近
+        punch = punch_cfg if s.get("punch_in", True) else None
+        finalize_clip(raw_mp4, out_mp4, s["spoken_en"], s["hook_banner"], ext_wav=ext_wav if ext_wav.exists() else None, punch=punch)
         print(f"✅ Finalized {out_mp4.name} ({out_mp4.stat().st_size / 1e6:.2f} MB)", flush=True)
         count += 1
 
