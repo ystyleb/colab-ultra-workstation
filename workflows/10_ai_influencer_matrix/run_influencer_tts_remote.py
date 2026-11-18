@@ -184,6 +184,7 @@ def main() -> None:
     ap.add_argument("--dry-run", action="store_true", help="0-CCU local validation and CCU estimate")
     ap.add_argument("--pull-only", action="store_true", help="0-CCU pull generated WAVs from Drive")
     ap.add_argument("--keep-alive", action="store_true", help="Keep L4 session alive after completion")
+    ap.add_argument("--redesign-voices", action="store_true", help="Ignore locked seed_<persona>.wav and redo voice design (changes the voice!)")
     args = ap.parse_args()
 
     cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
@@ -206,6 +207,21 @@ def main() -> None:
     session = cfg["project_meta"]["tts_session"]
     ids_arg = ",".join(s["id"] for s in scripts)
 
+    # 已锁定的声线（本地 work/tts/seed_<persona>.wav）开机前传到云盘，云端跳过声音设计直接克隆
+    locked_meta: dict = {}
+    locked_files = [LOCAL_TTS_DIR / f"seed_{p}.wav" for p in sorted({s["persona"] for s in scripts})]
+    locked_files = [f for f in locked_files if f.exists()]
+    if locked_files and not args.redesign_voices:
+        sys.path.insert(0, str(HERE))
+        from run_influencer_video_remote import stage_inputs_to_drive
+
+        stage_inputs_to_drive(locked_files)
+        if (LOCAL_TTS_DIR / "tts_manifest.json").exists():
+            locked_meta = json.loads((LOCAL_TTS_DIR / "tts_manifest.json").read_text(encoding="utf-8")).get("seeds", {})
+        print(f"🔒 Locked voices: {', '.join(f.stem for f in locked_files)}", flush=True)
+    else:
+        locked_files = []
+
     subprocess.run([sys.executable, str(SCRIPTS_DIR / "colab_meter.py"), "start", "-s", session, "-g", "L4"], check=False, env=ENV)
     try:
         subprocess.run([COLAB_BIN, "new", "-s", session, "--gpu", "L4"], check=True, env=ENV)
@@ -215,17 +231,22 @@ def main() -> None:
         b64_cfg = base64.b64encode(CONFIG_PATH.read_bytes()).decode("ascii")
         b64_man = base64.b64encode(MANIFEST_PATH.read_bytes()).decode("ascii")
 
+        locked_args = ""
+        if locked_files:
+            locked_args = ', "--locked-seed-dir", "/content/drive/MyDrive/AI_Influencer_Matrix/inputs", "--locked-seed-meta", "/tmp/wf10_seed_meta.json"'
+        b64_meta = base64.b64encode(json.dumps(locked_meta).encode()).decode("ascii")
         launch_py = f"""
 import base64, json, subprocess, sys
 from pathlib import Path
 Path("/tmp/cloud_influencer_tts.py").write_bytes(base64.b64decode("{b64_py}"))
 Path("/tmp/wf10_config.json").write_bytes(base64.b64decode("{b64_cfg}"))
 Path("/tmp/wf10_scripts.json").write_bytes(base64.b64decode("{b64_man}"))
+Path("/tmp/wf10_seed_meta.json").write_bytes(base64.b64decode("{b64_meta}"))
 Path("/tmp/wf10_tts.done").unlink(missing_ok=True)
 Path("/tmp/wf10_tts.err").unlink(missing_ok=True)
 runner = '''import subprocess, sys
 from pathlib import Path
-p = subprocess.run([sys.executable, "-u", "/tmp/cloud_influencer_tts.py", "--config", "/tmp/wf10_config.json", "--scripts", "/tmp/wf10_scripts.json", "--ids", {json.dumps(ids_arg)}, "--mode", {json.dumps(args.mode)}])
+p = subprocess.run([sys.executable, "-u", "/tmp/cloud_influencer_tts.py", "--config", "/tmp/wf10_config.json", "--scripts", "/tmp/wf10_scripts.json", "--ids", {json.dumps(ids_arg)}, "--mode", {json.dumps(args.mode)}{locked_args}])
 (Path("/tmp/wf10_tts.done") if p.returncode == 0 else Path("/tmp/wf10_tts.err")).write_text(str(p.returncode))
 '''
 Path("/tmp/wf10_tts_runner.py").write_text(runner)

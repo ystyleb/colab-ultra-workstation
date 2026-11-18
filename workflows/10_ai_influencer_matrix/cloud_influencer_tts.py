@@ -108,6 +108,8 @@ def main() -> None:
     ap.add_argument("--ids", default="", help="Comma-separated script IDs (default: all)")
     ap.add_argument("--mode", default="qwen", choices=["qwen", "hybrid"], help="Synthesis backend (default: qwen)")
     ap.add_argument("--temperature", type=float, default=0.40)
+    ap.add_argument("--locked-seed-dir", default="", help="Dir with seed_<persona>.wav from an earlier run; personas found there skip voice design so the voice stays identical across batches")
+    ap.add_argument("--locked-seed-meta", default="", help="Path to JSON {persona: {seed, f0_hz, seed_text}} for the locked seeds")
     args = ap.parse_args()
 
     cfg = json.loads(Path(args.config).read_text(encoding="utf-8"))
@@ -170,8 +172,19 @@ def main() -> None:
     seed_paths: dict[str, Path] = {}
     seed_meta: dict[str, dict] = {}
 
+    locked_dir = Path(args.locked_seed_dir) if args.locked_seed_dir else None
+    locked_meta = json.loads(Path(args.locked_seed_meta).read_text()) if args.locked_seed_meta else {}
+    LOCAL_OUT.mkdir(parents=True, exist_ok=True)
     for pk in needed_personas:
         v_cfg = cfg["personas"][pk]["voice"]
+        # 已锁定的声线直接复用：声音设计是采样出来的，同一个 seed 重跑也不保证是同一个声音
+        if locked_dir and (locked_dir / f"seed_{pk}.wav").exists():
+            sp = LOCAL_OUT / f"seed_{pk}.wav"
+            shutil.copy2(locked_dir / f"seed_{pk}.wav", sp)
+            seed_paths[pk] = sp
+            seed_meta[pk] = locked_meta.get(pk, {"seed": "locked", "seed_text": v_cfg["seed_text"]})
+            print(f"🔒 Reusing locked [{pk}] voice from {locked_dir.name}/seed_{pk}.wav", flush=True)
+            continue
         lo_f0, hi_f0 = v_cfg["f0_range_hz"]
         mid_f0 = 0.5 * (lo_f0 + hi_f0)
         best_wav = None

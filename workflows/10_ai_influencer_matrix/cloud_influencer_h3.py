@@ -122,7 +122,9 @@ def build_h3_prompt(persona: dict, scene_cfg: dict, item: dict, dur_sec: float) 
         f"on <Subject 1>, chest-up medium close-up. {item['camera_action_en']} "
         # 景别变化交给本地剪辑（subtitle_and_finalize.py 的 punch_in）。H3 里写推镜头会一路推到大特写，
         # 锁死机位又太僵；这里只要官方词表的 Shake Slightly，加上人物自己的小动作。2026-11-18 试了三版后定的。
+        "One single continuous shot from start to end. "
         "The camera shakes slightly at slow speed like a steady handheld camera, keeping the same chest-up framing. "
+        "<Subject 1> keeps small, natural head and shoulder movements while speaking, never frozen. "
         "<Subject 1>'s mouth, lips, and jaw remain 100% unobstructed and naturally expressive throughout. "
         "<Subject 1> is the on-screen speaker of every word, lips and jaw visibly forming each syllable in sync with the speech. "
         f"Speaking directly to the viewer in a clear, grounded tone, <Subject 1> delivers: <d>[English]{item['spoken_en']}</d> "

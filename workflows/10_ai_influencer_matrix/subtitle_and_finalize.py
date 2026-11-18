@@ -167,6 +167,23 @@ def punch_zoom_expr(cuts: list[float], total_dur: float, levels: list[float], dr
     return expr
 
 
+def detect_hard_cuts(mp4: Path, ratio: float = 10.0, floor: float = 12.0) -> list[float]:
+    """H3 有时会自己把一条口播拍成多个镜头（V02 第一版在 5.71s / 9.79s 硬切，换了背景和前景道具）。
+    灰度小图逐帧差，超过中位数 ratio 倍且绝对值 > floor 的记为硬切；返回时间点（秒）。"""
+    raw = subprocess.run(
+        ["ffmpeg", "-v", "error", "-i", str(mp4), "-vf", "scale=96:168,format=gray", "-f", "rawvideo", "-"],
+        capture_output=True,
+    ).stdout
+    n = 96 * 168
+    frames = [raw[i : i + n] for i in range(0, len(raw) - n + 1, n)]
+    diffs = [sum(abs(a - b) for a, b in zip(f0[::7], f1[::7])) / len(f0[::7]) for f0, f1 in zip(frames, frames[1:])]
+    if not diffs:
+        return []
+    med = sorted(diffs)[len(diffs) // 2]
+    fps = 24.0
+    return [round((i + 1) / fps, 2) for i, v in enumerate(diffs) if v > max(floor, med * ratio)]
+
+
 def chunk_words(text: str, max_words: int = 4) -> list[str]:
     words = text.strip().split()
     chunks: list[str] = []
@@ -389,6 +406,9 @@ def main() -> None:
         if not cands:
             continue
         raw_mp4 = cands[-1]
+        cuts_found = detect_hard_cuts(raw_mp4)
+        if cuts_found:
+            print(f"⚠️ [{s['id']}] H3 素材里有硬切 {cuts_found}（{raw_mp4.name}），建议重跑这一条", flush=True)
         ext_wav = WORK_DIR / "tts" / f"{s['id']}.wav"
         out_mp4 = FINAL_DIR / f"{s['id']}_final_1080x1920.mp4"
         # 脚本级 "punch_in": false = 素材里 H3 自己已经有运镜（如 J01），不再叠加剪辑推近
