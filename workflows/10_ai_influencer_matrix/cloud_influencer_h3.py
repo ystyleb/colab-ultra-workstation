@@ -120,7 +120,9 @@ def build_h3_prompt(persona: dict, scene_cfg: dict, item: dict, dur_sec: float) 
         "[reference generation + audio reference]\n"
         f"Shot 1 (00:00.000 - {ts_end}): Live-action 35mm cinema vertical 9:16 chest-up medium close-up at eye level, "
         f"holding a steady natural talking-head composition on <Subject 1>. {item['camera_action_en']} "
+        "Static locked-off camera; the chest-up framing stays the same from the first frame to the last. "
         "<Subject 1>'s mouth, lips, and jaw remain 100% unobstructed and naturally expressive throughout. "
+        "<Subject 1> is the on-screen speaker of every word, lips and jaw visibly forming each syllable in sync with the speech. "
         f"Speaking directly to the viewer in a clear, grounded tone, <Subject 1> delivers: <d>[English]{item['spoken_en']}</d> "
         "Clean live-action optical realism, natural room ambiance, zero subtitles, zero on-screen text, zero watermarks."
     )
@@ -135,7 +137,8 @@ def build_workflow(
     frames: int,
     seed: int,
 ) -> dict:
-    d = cfg["h3_defaults"]
+    # 人设级 h3_overrides 覆盖全局默认（例：Vivian 关掉 closeup LoRA，它会把机位往大特写推）
+    d = {**cfg["h3_defaults"], **cfg["personas"][item["persona"]].get("h3_overrides", {})}
     assert (frames - 5) % 17 == 0, f"Illegal frame count {frames} (must be 17k+5)"
     wf = {
         "1": {"class_type": "UNETLoader", "inputs": {"unet_name": d["unet"], "weight_dtype": "default"}},
@@ -261,8 +264,15 @@ def main() -> None:
     comfy_in = LOCAL_COMFY / "input"
     comfy_in.mkdir(parents=True, exist_ok=True)
 
-    # Copy staged assets from /tmp/wf10_inputs or Drive ComfyUI/input into local NVMe input
-    for stage_dir in (Path("/tmp/wf10_inputs"), DRIVE_COMFY / "input", DRIVE_ROOT / "AI_Influencer_Matrix/tts"):
+    # Copy staged assets into local NVMe input. Later dirs overwrite earlier ones, so the freshest
+    # source goes last: AI_Influencer_Matrix/inputs is staged by the local controller right before boot;
+    # older copies in ComfyUI/input (e.g. a replaced keyframe) must never win over it.
+    for stage_dir in (
+        DRIVE_COMFY / "input",
+        DRIVE_ROOT / "AI_Influencer_Matrix/tts",
+        Path("/tmp/wf10_inputs"),
+        DRIVE_ROOT / "AI_Influencer_Matrix/inputs",
+    ):
         if stage_dir.exists():
             for f in stage_dir.glob("*"):
                 if f.is_file() and f.suffix.lower() in (".png", ".wav"):

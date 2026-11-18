@@ -106,6 +106,9 @@
           "bump_price_usd": 9.0,
           "cta": "Get The Quiet Money Rules"
         }
+      },
+      "h3_overrides": {
+        "closeup_strength": 0.0
       }
     },
     "june": {

@@ -155,6 +155,69 @@ def upload_bytes_chunked(session: str, remote_path: str, data: bytes, chunk_size
         )
 
 
+DRIVE_INPUTS_DIRS = ("AI_Influencer_Matrix", "inputs")  # 云端 /content/drive/MyDrive/AI_Influencer_Matrix/inputs
+FOLDER_MIME = "application/vnd.google-apps.folder"
+
+
+def drive_token() -> str:
+    return parse_colab_token_json(subprocess.check_output([COLAB_BIN, "dfs", "token"], text=True, env=ENV))
+
+
+def drive_json(tok: str, url: str, method: str = "GET", body: bytes | None = None, ctype: str | None = None) -> dict:
+    headers = {"Authorization": f"Bearer {tok}"}
+    if ctype:
+        headers["Content-Type"] = ctype
+    req = urllib.request.Request(url, data=body, headers=headers, method=method)
+    return json.loads(urlopen_retry(req, timeout=120).read().decode() or "{}")
+
+
+def drive_find(tok: str, name: str, parent: str, folder: bool) -> str | None:
+    q = f"name = '{name}' and '{parent}' in parents and trashed = false"
+    q += f" and mimeType {'=' if folder else '!='} '{FOLDER_MIME}'"
+    params = urllib.parse.urlencode({"q": q, "fields": "files(id)", "pageSize": 10})
+    files = drive_json(tok, f"https://www.googleapis.com/drive/v3/files?{params}").get("files", [])
+    return files[0]["id"] if files else None
+
+
+def drive_folder(tok: str, parts: tuple[str, ...]) -> str:
+    parent = "root"
+    for name in parts:
+        fid = drive_find(tok, name, parent, folder=True)
+        if not fid:
+            meta = json.dumps({"name": name, "mimeType": FOLDER_MIME, "parents": [parent]}).encode()
+            fid = drive_json(tok, "https://www.googleapis.com/drive/v3/files?fields=id", "POST", meta, "application/json")["id"]
+        parent = fid
+    return parent
+
+
+def stage_inputs_to_drive(files: list[Path]) -> None:
+    """开 G4 之前用 Drive v3 API 把关键帧/WAV 传到云盘（0 CCU）。
+
+    以前是 G4 开机后逐块 base64 `colab exec` 上传，~7 MB 要 ~210 次往返，
+    2026-11-18 试水时 G4 空转约 45 分钟。同名文件原地更新内容，回读 size 校验。
+    """
+    tok = drive_token()
+    folder = drive_folder(tok, DRIVE_INPUTS_DIRS)
+    for f in files:
+        data = f.read_bytes()
+        fid = drive_find(tok, f.name, folder, folder=False)
+        if fid:
+            url = f"https://www.googleapis.com/upload/drive/v3/files/{fid}?uploadType=media&fields=id,size"
+            res = drive_json(tok, url, "PATCH", data, "application/octet-stream")
+        else:
+            boundary = "wf10boundary7f3a"
+            meta = json.dumps({"name": f.name, "parents": [folder]})
+            body = (
+                f"--{boundary}\r\nContent-Type: application/json; charset=UTF-8\r\n\r\n{meta}\r\n"
+                f"--{boundary}\r\nContent-Type: application/octet-stream\r\n\r\n"
+            ).encode() + data + f"\r\n--{boundary}--\r\n".encode()
+            url = "https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart&fields=id,size"
+            res = drive_json(tok, url, "POST", body, f"multipart/related; boundary={boundary}")
+        if int(res.get("size", 0)) != len(data):
+            raise RuntimeError(f"❌ Drive staging size mismatch for {f.name}: {res.get('size')} != {len(data)}")
+        print(f"☁️ Staged {f.name} ({len(data) / 1e6:.2f} MB) -> MyDrive/{'/'.join(DRIVE_INPUTS_DIRS)}", flush=True)
+
+
 def pull_videos_from_drive(ids: list[str] | None = None) -> list[Path]:
     LOCAL_RAW_OUT.mkdir(parents=True, exist_ok=True)
     tok = parse_colab_token_json(subprocess.check_output([COLAB_BIN, "dfs", "token"], text=True, env=ENV))
@@ -173,14 +236,19 @@ def pull_videos_from_drive(ids: list[str] | None = None) -> list[Path]:
     files = json.loads(urlopen_retry(req).read().decode()).get("files", [])
     wanted_prefixes = {f"AIInf_{i}_" for i in ids} if ids else None
     pulled: list[Path] = []
-    seen: set[str] = set()
-    for f in files:
+    seen: set[tuple[str, bool]] = set()
+    for f in files:  # modifiedTime desc：每个片号只要云端最新的一份
         name = f["name"]
-        if int(f.get("size", 0)) <= 10_000 or name in seen:
+        if int(f.get("size", 0)) <= 10_000:
             continue
         if wanted_prefixes and not any(name.startswith(p) for p in wanted_prefixes):
             continue
-        seen.add(name)
+        # 重跑后云盘上同一片号有多个版本。只拉最新的：旧版后下载会拿到更新的本地 mtime，
+        # subtitle_and_finalize.py 按 mtime 取最后一个，就会把旧片当成新片合成（2026-11-18 踩过）。
+        key = (name.split("_")[1], name.endswith("-audio.mp4"))
+        if key in seen:
+            continue
+        seen.add(key)
         dl_req = urllib.request.Request(
             f"https://www.googleapis.com/drive/v3/files/{f['id']}?alt=media",
             headers={"Authorization": f"Bearer {tok}"},
@@ -229,6 +297,9 @@ def main() -> None:
         if not (LOCAL_TTS_DIR / f"{s['id']}.wav").exists():
             raise FileNotFoundError(f"Missing TTS WAV: {LOCAL_TTS_DIR / (s['id'] + '.wav')}. Run run_influencer_tts_remote.py first.")
 
+    # 0 CCU：G4 开机前先把关键帧和 WAV 放到云盘
+    stage_inputs_to_drive([SAMPLE_DIR / img for img in req_imgs] + [LOCAL_TTS_DIR / f"{s['id']}.wav" for s in scripts])
+
     subprocess.run([sys.executable, str(SCRIPTS_DIR / "colab_meter.py"), "start", "-s", session, "-g", "G4"], check=False, env=ENV)
     try:
         subprocess.run([COLAB_BIN, "new", "-s", session, "--gpu", "G4"], check=True, env=ENV)
@@ -242,11 +313,6 @@ def main() -> None:
         upload_bytes_chunked(session, "/tmp/wf10_scripts.json", MANIFEST_PATH.read_bytes())
         if (LOCAL_TTS_DIR / "tts_manifest.json").exists():
             upload_bytes_chunked(session, "/tmp/wf10_tts_manifest.json", (LOCAL_TTS_DIR / "tts_manifest.json").read_bytes())
-        for img in req_imgs:
-            upload_bytes_chunked(session, f"/tmp/wf10_inputs/{img}", (SAMPLE_DIR / img).read_bytes())
-        for s in scripts:
-            w = LOCAL_TTS_DIR / f"{s['id']}.wav"
-            upload_bytes_chunked(session, f"/tmp/wf10_inputs/{w.name}", w.read_bytes())
 
         launch_py = f"""
 import json, subprocess, sys
