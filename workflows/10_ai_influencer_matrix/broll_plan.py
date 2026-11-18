@@ -56,6 +56,21 @@ def cta_cuts() -> dict:
 WORDS_DIR = TTS_DIR / "words"
 
 
+def detect_pauses(wav: Path, noise_db: float = -35.0, min_sil: float = 0.25) -> list[tuple[float, float]]:
+    """同 subtitle_and_finalize.detect_pauses。这里单独放一份：远程控制脚本会 execv 到 colab-cli 的 Python，
+    那个环境没有 PIL，不能 import subtitle_and_finalize（2026-11-18 开机前就报 ModuleNotFoundError）。"""
+    r = subprocess.run(["ffmpeg", "-hide_banner", "-i", str(wav), "-af", f"silencedetect=noise={noise_db}dB:d={min_sil}", "-f", "null", "-"],
+                       capture_output=True, text=True)
+    spans, start = [], None
+    for line in r.stderr.splitlines():
+        if "silence_start:" in line:
+            start = float(line.split("silence_start:")[1].split()[0])
+        elif "silence_end:" in line and start is not None:
+            spans.append((start, float(line.split("silence_end:")[1].split()[0])))
+            start = None
+    return spans
+
+
 def _norm(w: str) -> str:
     return "".join(ch for ch in w.lower() if ch.isalnum())
 
@@ -76,8 +91,6 @@ def phrase_span(sid: str, phrase: str) -> tuple[float, float]:
 
 def _snap(sid: str, t: float, side: str) -> float:
     """把切点挪进最近的静音段：side='after' 取 t 之后的停顿中点，'before' 取 t 之前的停顿中点（0.4s 内）。"""
-    from subtitle_and_finalize import detect_pauses
-
     best = None
     for s, e in detect_pauses(TTS_DIR / f"{sid}.wav", noise_db=-38, min_sil=0.09):
         mid = (s + e) / 2
@@ -93,10 +106,16 @@ def resolve_times(s: dict) -> dict:
     b = json.loads(json.dumps(s["broll"]))
     if "hook_text" in b:
         b["hook_cut"] = _snap(s["id"], phrase_span(s["id"], b["hook_text"])[1], "after")
+    cut = cta_cuts().get(s["id"], {}).get("cut")
     for ins in b.get("inserts", []):
         if "at_text" in ins:
             a, e = phrase_span(s["id"], ins["at_text"])
             ins["at"] = [_snap(s["id"], a, "before"), _snap(s["id"], e, "after")]
+        # 插入镜头离开场结束不到 0.9s：人脸只闪一下就切走很难看，直接从开场接到插入镜头
+        if 0 < ins["at"][0] - b["hook_cut"] < 0.9:
+            ins["at"][0] = b["hook_cut"]
+        if cut:
+            ins["at"][1] = min(ins["at"][1], cut)
     return b
 
 

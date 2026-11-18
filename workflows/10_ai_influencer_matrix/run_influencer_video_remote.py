@@ -218,12 +218,14 @@ def stage_inputs_to_drive(files: list[Path]) -> None:
         print(f"☁️ Staged {f.name} ({len(data) / 1e6:.2f} MB) -> MyDrive/{'/'.join(DRIVE_INPUTS_DIRS)}", flush=True)
 
 
-def pull_videos_from_drive(ids: list[str] | None = None) -> list[Path]:
+def pull_videos_from_drive(ids: list[str] | None = None, since: str = "") -> list[Path]:
+    """since（RFC3339，如 2026-11-18T12:00:00Z）：只要这之后写进云盘的文件。
+    Drive 搜索索引有延迟，新文件还没进索引时会搜到同片号的旧版本（2026-11-18 W10talk 拉成了上一轮的旧片）。"""
     LOCAL_RAW_OUT.mkdir(parents=True, exist_ok=True)
     tok = parse_colab_token_json(subprocess.check_output([COLAB_BIN, "dfs", "token"], text=True, env=ENV))
     params = urllib.parse.urlencode(
         {
-            "q": "trashed = false and name contains 'AIInf_' and name contains '.mp4'",
+            "q": "trashed = false and name contains 'AIInf_' and name contains '.mp4'" + (f" and modifiedTime > '{since}'" if since else ""),
             "fields": "files(id,name,size,modifiedTime)",
             "orderBy": "modifiedTime desc",
             "pageSize": 60,
@@ -329,6 +331,7 @@ def main() -> None:
     # 0 CCU：G4 开机前先把关键帧和 WAV 放到云盘（broll 模式上面已经传过了）
     if not jobs:
         stage_inputs_to_drive([SAMPLE_DIR / img for img in req_imgs] + [LOCAL_TTS_DIR / f"{s['id']}.wav" for s in scripts])
+    run_since = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())  # 本轮开机时刻，拉取只认之后的文件
 
     subprocess.run([sys.executable, str(SCRIPTS_DIR / "colab_meter.py"), "start", "-s", session, "-g", "G4"], check=False, env=ENV)
     try:
@@ -403,7 +406,7 @@ print(json.dumps({"n": len(lines), "lines": lines, "done": Path("/tmp/wf10_h3.do
             if pulled:
                 print(f"⏳ Drive 还搜不到 {missing}，30 秒后再查", flush=True)
                 time.sleep(30)
-            pulled += pull_videos_from_drive(missing)
+            pulled += pull_videos_from_drive(missing, since=run_since)
         if len({p.name.split("_")[1] for p in pulled}) < len(pull_ids):
             raise RuntimeError(f"❌ Expected {len(pull_ids)} clips on Drive, found {len(pulled)} files.")
     finally:

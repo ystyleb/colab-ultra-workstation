@@ -272,6 +272,34 @@ def render_cta_card(keyword: str, benefit: str, out_png: Path) -> None:
     im.save(out_png)
 
 
+def render_question_card(question: str, out_png: Path) -> None:
+    """提问版片尾字卡（新号运营：约一半片子用它代替「评论领资料」，用问题带评论，不像营销号）。"""
+    im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    draw = ImageDraw.Draw(im)
+    f_q, f_small = load_font(78), load_font(48)
+    words, lines, cur = question.split(), [], ""
+    for w_ in words:
+        t = f"{cur} {w_}".strip()
+        if draw.textlength(t, font=f_q) > W - 180 and cur:
+            lines.append(cur)
+            cur = w_
+        else:
+            cur = t
+    lines.append(cur)
+    y = 820 - len(lines) * 50
+    for ln in lines:
+        lw = draw.textlength(ln, font=f_q)
+        draw.text(((W - lw) / 2, y), ln, font=f_q, fill=(255, 255, 255, 255), stroke_width=4, stroke_fill=(0, 0, 0, 220))
+        y += 100
+    y += 40
+    label = "Tell me in the comments"
+    bb = draw.textbbox((0, 0), label, font=f_small)
+    lw, lh = bb[2] - bb[0], bb[3] - bb[1]
+    draw.rounded_rectangle(((W - lw) / 2 - 40, y, (W + lw) / 2 + 40, y + lh + 44), radius=26, fill=(245, 200, 98, 255))
+    draw.text(((W - lw) / 2 - bb[0], y + 22 - bb[1]), label, font=f_small, fill=(24, 22, 20, 255))
+    im.save(out_png)
+
+
 def finalize_clip(
     raw_mp4: Path,
     out_mp4: Path,
@@ -353,7 +381,10 @@ def finalize_clip(
         a_map = "1:a:0" if has_ext_audio else "0:a?"
         if cta:
             card = tmp_dir / "cta.png"
-            render_cta_card(cta["keyword"], cta["benefit"], card)
+            if cta.get("question"):
+                render_question_card(cta["question"], card)
+            else:
+                render_cta_card(cta["keyword"], cta["benefit"], card)
             ci = base_idx + len(overlays)
             cmd += ["-i", str(card)]
             c0 = cta["cut"]
@@ -496,6 +527,8 @@ def main() -> None:
             cc = cta_cuts[s["id"]]
             pc = cfg["personas"][s["persona"]]["cta"]
             cta = {"cut": cc["cut"], "speech_end": (cc.get("pause") or [cc["speech_end"]])[0], "card_sec": card_cfg.get("card_sec", 1.8), **pc}
+            if s.get("end_card") == "question":  # 提问版字卡：问题写在脚本的 question_en
+                cta["question"] = s["question_en"]
         ext_wav = WORK_DIR / "tts" / f"{s['id']}.wav"
         out_mp4 = FINAL_DIR / f"{s['id']}_final_1080x1920.mp4"
         bgm = None
