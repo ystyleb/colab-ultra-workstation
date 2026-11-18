@@ -268,6 +268,7 @@ def main() -> None:
     ap.add_argument("--pull-only", action="store_true", help="0-CCU pull finished MP4s from Drive")
     ap.add_argument("--keep-alive", action="store_true", help="Keep G4 session alive after completion")
     ap.add_argument("--seed-base", type=int, default=2026111700, help="H3 seed = seed_base + position in batch; change it to re-roll failed clips")
+    ap.add_argument("--session", default="", help="Colab session name (default: project_meta.video_session). 并行开多台 G4 时每台用不同名字，按人物拆 --ids 以免同时上传同一个文件")
     args = ap.parse_args()
 
     cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
@@ -286,7 +287,7 @@ def main() -> None:
         return
 
     ensure_colab_python_env()
-    session = cfg["project_meta"]["video_session"]
+    session = args.session or cfg["project_meta"]["video_session"]
     ids_arg = ",".join(s["id"] for s in scripts)
 
     # Verify all required inputs exist locally before booting G4
@@ -333,7 +334,10 @@ print("H3_LAUNCHED")
             raise RuntimeError(f"Failed to launch H3 batch:\n{out}")
 
         seen_lines = 0
-        for _ in range(360):
+        # 轮询上限按条数算：冷启动 15 分钟 + 每条 15 分钟（实测 6.5–9.5 分钟/条）。
+        # 原来固定 360 次 ≈ 1 小时出头，超时后 finally 会关掉 G4，长批量会被中途杀掉
+        deadline = time.time() + 15 * 60 + 15 * 60 * len(scripts)
+        while time.time() < deadline:
             time.sleep(10)
             poll = colab_exec_short(
                 session,
@@ -354,7 +358,7 @@ print(json.dumps({"n": len(lines), "lines": lines, "done": Path("/tmp/wf10_h3.do
             if info["done"]:
                 break
         else:
-            raise TimeoutError("❌ Cloud G4 H3 batch timed out.")
+            raise TimeoutError("❌ Cloud G4 H3 batch timed out (deadline from clip count).")
 
         pulled = pull_videos_from_drive([s["id"] for s in scripts])
         if len(pulled) < len(scripts):

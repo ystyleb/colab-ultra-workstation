@@ -407,6 +407,11 @@ def main() -> None:
             continue
         raw_mp4 = cands[-1]
         cuts_found = detect_hard_cuts(raw_mp4)
+        vo_wav = WORK_DIR / "tts" / f"{s['id']}.wav"
+        if vo_wav.exists():
+            # 只算说话期间的硬切：配音前的开场摆拍、配音结束后的尾帧闪烁都会被 -shortest 截掉或不影响口型
+            speech_end = probe_duration(vo_wav) - 0.3
+            cuts_found = [c for c in cuts_found if 0.35 < c < speech_end]
         if cuts_found:
             print(f"⚠️ [{s['id']}] H3 素材里有硬切 {cuts_found}（{raw_mp4.name}），建议重跑这一条", flush=True)
         ext_wav = WORK_DIR / "tts" / f"{s['id']}.wav"
