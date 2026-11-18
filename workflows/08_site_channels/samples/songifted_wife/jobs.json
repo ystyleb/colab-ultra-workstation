@@ -1,0 +1,25 @@
+{
+  "note": "Songifted 第三批：反应短片（AI 演绎）。首尾帧 = songifted.com 首页 /videos/reaction-quiet.jpg（AI 场景图）竖裁。配乐后期换成网站示例歌 /demos/for-wife.mp3。必须标注 AI dramatization。",
+  "length": 192,
+  "steps": 10,
+  "style_mode": "photorealistic",
+  "realism_lora_strength": 0.7,
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/songifted",
+  "jobs": [
+    {
+      "id": "Songifted_WifeReaction_T1",
+      "first": "songifted_reaction-quiet_768x1344.png",
+      "last": "songifted_reaction-quiet_768x1344.png",
+      "seed": 2026111321,
+      "prompt": "r34l1sm, Realistic candid 35mm photography, natural soft matte skin texture with fine pores, zero oily shine, warm natural lamp light. A single continuous 8-second shot from a static locked-off camera with no zoom and no cuts, in a cozy living room at golden hour. A woman in her thirties with long dark curly hair and a cream knit cardigan sits on a sofa wearing silver over-ear headphones, listening to a song her husband made for her, one hand pressed to her chest and tears in her eyes. She closes her eyes and slowly shakes her head in disbelief, a tear rolls down her cheek, she breaks into a trembling, joyful smile and lets out a soft laugh, wipes the tear away with her fingertips, then presses her hand back to her chest and looks up again with the same tearful smile as at the start. Her headphones stay on the whole time. Quiet, warm room tone."
+    },
+    {
+      "id": "Songifted_WifeReaction_T2",
+      "first": "songifted_reaction-quiet_768x1344.png",
+      "last": "songifted_reaction-quiet_768x1344.png",
+      "seed": 2026111322,
+      "prompt": "r34l1sm, Realistic candid 35mm photography, natural soft matte skin texture with fine pores, zero oily shine, warm natural lamp light. A single continuous 8-second shot from a static locked-off camera with no zoom and no cuts, in a cozy living room at golden hour. A woman in her thirties with long dark curly hair and a cream knit cardigan sits on a sofa wearing silver over-ear headphones, listening to a song her husband made for her, one hand pressed to her chest and tears in her eyes. She closes her eyes and slowly shakes her head in disbelief, a tear rolls down her cheek, she breaks into a trembling, joyful smile and lets out a soft laugh, wipes the tear away with her fingertips, then presses her hand back to her chest and looks up again with the same tearful smile as at the start. Her headphones stay on the whole time. Quiet, warm room tone."
+    }
+  ]
+}

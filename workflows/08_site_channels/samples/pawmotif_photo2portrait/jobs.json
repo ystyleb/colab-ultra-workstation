@@ -1,0 +1,24 @@
+{
+  "note": "PawMotif 第三批：照片 → 画像。首帧 = 站长杜宾头部原照（对齐裁剪），尾帧 = 用这张照片在 pawmotif.com/portraits/golden（Botanical）测试号新生成的画像（job 8ec5dc7c）。",
+  "length": 192,
+  "steps": 10,
+  "style_mode": "stylized",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/pawmotif",
+  "jobs": [
+    {
+      "id": "PawMotif_Photo2Botanical_T1",
+      "first": "pawmotif_doberman_head_photo_768x1344.png",
+      "last": "pawmotif_doberman_head_botanical_768x1344.png",
+      "seed": 2026111301,
+      "prompt": "A single continuous 8-second shot from a completely static, locked-off camera with no zoom, no pan and no cuts. It opens as a real, candid phone photo of a red-brown Doberman with tall natural ears resting his chin on a brown-and-white checkered tablecloth in a home kitchen, looking straight into the lens with soft eyes. He slowly lifts his head and sits up a little, still gazing at the camera, while the whole photograph gradually turns into a hand-painted botanical portrait: the kitchen, fridge and checkered tablecloth melt away into textured cream watercolor paper with warm golden-ochre and sage-green brush washes, white daisies and golden wildflowers grow and bloom up both sides of the frame, and his short glossy fur becomes fine painted brushstrokes. His head stays the same size and in the same place in the frame the whole time, and he ends perfectly still, facing the camera exactly like the finished portrait. Soft, warm solo piano melody with a quiet cozy room tone."
+    },
+    {
+      "id": "PawMotif_Photo2Botanical_T2",
+      "first": "pawmotif_doberman_head_photo_768x1344.png",
+      "last": "pawmotif_doberman_head_botanical_768x1344.png",
+      "seed": 2026111302,
+      "prompt": "A single continuous 8-second shot from a completely static, locked-off camera with no zoom, no pan and no cuts. It opens as a real, candid phone photo of a red-brown Doberman with tall natural ears resting his chin on a brown-and-white checkered tablecloth in a home kitchen, looking straight into the lens with soft eyes. He slowly lifts his head and sits up a little, still gazing at the camera, while the whole photograph gradually turns into a hand-painted botanical portrait: the kitchen, fridge and checkered tablecloth melt away into textured cream watercolor paper with warm golden-ochre and sage-green brush washes, white daisies and golden wildflowers grow and bloom up both sides of the frame, and his short glossy fur becomes fine painted brushstrokes. His head stays the same size and in the same place in the frame the whole time, and he ends perfectly still, facing the camera exactly like the finished portrait. Soft, warm solo piano melody with a quiet cozy room tone."
+    }
+  ]
+}

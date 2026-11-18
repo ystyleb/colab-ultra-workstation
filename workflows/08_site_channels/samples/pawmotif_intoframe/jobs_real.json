@@ -1,0 +1,39 @@
+{
+  "note": "PawMotif 第四批《Into the Frame》真实客厅镜头。画框里贴的是站上真实生成的水彩画像（pawmotif_doberman_watercolor_full.jpg）。",
+  "length": 141,
+  "steps": 10,
+  "style_mode": "photorealistic",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/pawmotif_story",
+  "jobs": [
+    {
+      "id": "PM_S1_Meet_T1",
+      "first": "kf/pm_a_framed_768x1344.png",
+      "last": "kf/pm_b_framed_768x1344.png",
+      "seed": 2026111501,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no cuts. A bright cozy living room in warm late-afternoon sunlight; on the cream wall hangs a framed watercolor portrait of a red Doberman. The real red Doberman with cropped ears and a red collar sits on the rug with his back to the camera, staring up at the painting of himself. He tilts his head to one side, then the other, ears twitching, curious and puzzled, then slowly lowers into a playful crouch, front legs forward and hindquarters up, ready to pounce. The painting on the wall stays perfectly still. Quiet room tone, a soft curious whine, collar tags jingling."
+    },
+    {
+      "id": "PM_S1_Meet_T2",
+      "first": "kf/pm_a_framed_768x1344.png",
+      "last": "kf/pm_b_framed_768x1344.png",
+      "seed": 2026111502,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no cuts. A bright cozy living room in warm late-afternoon sunlight; on the cream wall hangs a framed watercolor portrait of a red Doberman. The real red Doberman with cropped ears and a red collar sits on the rug with his back to the camera, staring up at the painting of himself. He tilts his head to one side, then the other, ears twitching, curious and puzzled, then slowly lowers into a playful crouch, front legs forward and hindquarters up, ready to pounce. The painting on the wall stays perfectly still. Quiet room tone, a soft curious whine, collar tags jingling."
+    },
+    {
+      "id": "PM_S4_Empty_T1",
+      "first": "kf/pm_c_framed_768x1344.png",
+      "last": "kf/pm_c_zoom_768x1344.png",
+      "seed": 2026111503,
+      "prompt": "r34l1sm, A single continuous slow, smooth dolly push-in, no cuts. An empty, sunlit living room: a red leash lies loose on the empty rug, and on the cream wall hangs a framed watercolor portrait of a red Doberman. The camera glides steadily forward toward the painting until the framed portrait fills most of the frame. Inside the painting, the painted Doberman's ears perk up and he glances at the viewer. Quiet empty room tone, a distant clock ticking."
+    },
+    {
+      "id": "PM_S4_Empty_T2",
+      "first": "kf/pm_c_framed_768x1344.png",
+      "last": "kf/pm_c_zoom_768x1344.png",
+      "seed": 2026111504,
+      "prompt": "r34l1sm, A single continuous slow, smooth dolly push-in, no cuts. An empty, sunlit living room: a red leash lies loose on the empty rug, and on the cream wall hangs a framed watercolor portrait of a red Doberman. The camera glides steadily forward toward the painting until the framed portrait fills most of the frame. Inside the painting, the painted Doberman's ears perk up and he glances at the viewer. Quiet empty room tone, a distant clock ticking."
+    }
+  ],
+  "realism_lora_strength": 0.5
+}

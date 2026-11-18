@@ -1,0 +1,81 @@
+{
+  "note": "TryOnSwap 第六批《One Dress, Every Party》：店主是 AI 生成的成年人；三个派对镜头首尾帧 = 站长账号在站上真实生成的 Custom 场景图（#c44b 年会 / #3fa9 跨年夜 / #b6f5 家宴）。",
+  "length": 141,
+  "steps": 10,
+  "style_mode": "photorealistic",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/tryonswap_story6",
+  "realism_lora_strength": 0.7,
+  "jobs": [
+    {
+      "id": "TP_S2_Flat_T1",
+      "first": "kf/tp_b_768x1344.png",
+      "last": "kf/tp_b_768x1344.png",
+      "seed": 2026111721,
+      "prompt": "r34l1sm, Top-down overhead shot, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. At night on a boutique cutting table, an emerald velvet wrap dress lies perfectly flat on a white sheet. A woman's hands hold a smartphone above it, tap the screen to take a photo, lower the phone slightly to check, then raise it again exactly as at the end. The dress stays perfectly still. A soft camera shutter click, quiet room tone."
+    },
+    {
+      "id": "TP_S2_Flat_T2",
+      "first": "kf/tp_b_768x1344.png",
+      "last": "kf/tp_b_768x1344.png",
+      "seed": 2026111722,
+      "prompt": "r34l1sm, Top-down overhead shot, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. At night on a boutique cutting table, an emerald velvet wrap dress lies perfectly flat on a white sheet. A woman's hands hold a smartphone above it, tap the screen to take a photo, lower the phone slightly to check, then raise it again exactly as at the end. The dress stays perfectly still. A soft camera shutter click, quiet room tone."
+    },
+    {
+      "id": "TP_S1_Owner_T1",
+      "first": "kf/tp_a_768x1344.png",
+      "last": "kf/tp_a_768x1344.png",
+      "seed": 2026111723,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Early December evening in a small closed boutique with fairy lights in the window. A shop owner with short natural curls and a mustard cardigan holds up an emerald velvet wrap dress on a hanger, looks from the dress to her phone and back, glances at the December wall calendar with circled dates, then nods to herself with a determined little smile, exactly as at the end. The dress sways gently. Soft shop ambience, a distant street sound."
+    },
+    {
+      "id": "TP_S1_Owner_T2",
+      "first": "kf/tp_a_768x1344.png",
+      "last": "kf/tp_a_768x1344.png",
+      "seed": 2026111724,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Early December evening in a small closed boutique with fairy lights in the window. A shop owner with short natural curls and a mustard cardigan holds up an emerald velvet wrap dress on a hanger, looks from the dress to her phone and back, glances at the December wall calendar with circled dates, then nods to herself with a determined little smile, exactly as at the end. The dress sways gently. Soft shop ambience, a distant street sound."
+    },
+    {
+      "id": "TP_S3_Office_T1",
+      "first": "ts_party_office_768x1344.png",
+      "last": "ts_party_office_768x1344.png",
+      "seed": 2026111725,
+      "prompt": "r34l1sm, Clean fashion lookbook video on a full-frame camera, natural soft matte skin, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts, full-body framing the whole time. An office holiday party with string lights and a decorated tree. A woman in an emerald velvet long-sleeve wrap midi dress stands holding a glass of sparkling water, laughs, turns slightly to one side so the velvet skirt swings and catches the light, then turns back to face the camera exactly as at the end. Colleagues chat in the background. Party chatter, light laughter."
+    },
+    {
+      "id": "TP_S3_Office_T2",
+      "first": "ts_party_office_768x1344.png",
+      "last": "ts_party_office_768x1344.png",
+      "seed": 2026111726,
+      "prompt": "r34l1sm, Clean fashion lookbook video on a full-frame camera, natural soft matte skin, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts, full-body framing the whole time. An office holiday party with string lights and a decorated tree. A woman in an emerald velvet long-sleeve wrap midi dress stands holding a glass of sparkling water, laughs, turns slightly to one side so the velvet skirt swings and catches the light, then turns back to face the camera exactly as at the end. Colleagues chat in the background. Party chatter, light laughter."
+    },
+    {
+      "id": "TP_S4_NYE_T1",
+      "first": "ts_party_nye_768x1344.png",
+      "last": "ts_party_nye_768x1344.png",
+      "seed": 2026111727,
+      "prompt": "r34l1sm, Clean fashion lookbook video on a full-frame camera, natural soft matte skin, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts, full-body framing the whole time. A New Year's Eve rooftop party at night, golden fireworks over the city skyline, gold confetti drifting down. A woman in an emerald velvet long-sleeve wrap midi dress raises her champagne coupe in a toast, laughs, sways to the music so the velvet skirt moves, then settles back into her pose exactly as at the end. Distant fireworks pops, cheering, music."
+    },
+    {
+      "id": "TP_S4_NYE_T2",
+      "first": "ts_party_nye_768x1344.png",
+      "last": "ts_party_nye_768x1344.png",
+      "seed": 2026111728,
+      "prompt": "r34l1sm, Clean fashion lookbook video on a full-frame camera, natural soft matte skin, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts, full-body framing the whole time. A New Year's Eve rooftop party at night, golden fireworks over the city skyline, gold confetti drifting down. A woman in an emerald velvet long-sleeve wrap midi dress raises her champagne coupe in a toast, laughs, sways to the music so the velvet skirt moves, then settles back into her pose exactly as at the end. Distant fireworks pops, cheering, music."
+    },
+    {
+      "id": "TP_S5_Family_T1",
+      "first": "ts_party_family_768x1344.png",
+      "last": "ts_party_family_768x1344.png",
+      "seed": 2026111729,
+      "prompt": "r34l1sm, Clean fashion lookbook video on a full-frame camera, natural soft matte skin, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts, full-body framing the whole time. A cozy family holiday dinner at home with candles and a decorated tree. A woman in an emerald velvet long-sleeve wrap midi dress stands by the table, smiles warmly, laughs at something someone at the table says, smooths the velvet skirt with one hand, then settles back exactly as at the end. Family members at the table chat and pass dishes. Warm dinner chatter, clinking cutlery."
+    },
+    {
+      "id": "TP_S5_Family_T2",
+      "first": "ts_party_family_768x1344.png",
+      "last": "ts_party_family_768x1344.png",
+      "seed": 2026111730,
+      "prompt": "r34l1sm, Clean fashion lookbook video on a full-frame camera, natural soft matte skin, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts, full-body framing the whole time. A cozy family holiday dinner at home with candles and a decorated tree. A woman in an emerald velvet long-sleeve wrap midi dress stands by the table, smiles warmly, laughs at something someone at the table says, smooths the velvet skirt with one hand, then settles back exactly as at the end. Family members at the table chat and pass dishes. Warm dinner chatter, clinking cutlery."
+    }
+  ]
+}

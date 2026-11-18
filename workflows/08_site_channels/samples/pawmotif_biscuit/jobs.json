@@ -1,0 +1,67 @@
+{
+  "note": "PawMotif 第六批《Back in His Spot》（宠物纪念，第一人称）：人物与场景是 AI 生成的；画框里贴的是测试号用 inputs_1117/collie_src.jpg 在站上真实生成的 Watercolor（job 943726cc）。",
+  "length": 141,
+  "steps": 10,
+  "style_mode": "photorealistic",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/pawmotif_story6",
+  "realism_lora_strength": 0.5,
+  "jobs": [
+    {
+      "id": "PB_S1_Bed_T1",
+      "first": "kf/pb_a_768x1344.png",
+      "last": "kf/pb_a_768x1344.png",
+      "seed": 2026111701,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Early morning in a quiet farmhouse kitchen. A woman in her sixties with silver-blonde hair and reading glasses on a beaded chain holds a steaming mug in both hands and looks at an empty, worn dog bed by the back door with a faded red collar resting on its cushion. She breathes out slowly, her thumb rubs the mug, she gives a small sad smile, exactly as at the end. Steam curls from the mug. A ticking clock, a kettle softly hissing, quiet room tone."
+    },
+    {
+      "id": "PB_S1_Bed_T2",
+      "first": "kf/pb_a_768x1344.png",
+      "last": "kf/pb_a_768x1344.png",
+      "seed": 2026111702,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Early morning in a quiet farmhouse kitchen. A woman in her sixties with silver-blonde hair and reading glasses on a beaded chain holds a steaming mug in both hands and looks at an empty, worn dog bed by the back door with a faded red collar resting on its cushion. She breathes out slowly, her thumb rubs the mug, she gives a small sad smile, exactly as at the end. Steam curls from the mug. A ticking clock, a kettle softly hissing, quiet room tone."
+    },
+    {
+      "id": "PB_S2_Phone_T1",
+      "first": "kf/pb_b_768x1344.png",
+      "last": "kf/pb_b_768x1344.png",
+      "seed": 2026111703,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Evening, a woman in her sixties with silver-blonde hair and reading glasses sits curled on a grey sofa under a warm lamp, a knit throw on her knees, scrolling old photos on her phone (screen not visible). She stops on one photo, her thumb rests on the screen, a slow tender smile spreads across her face and her eyes glisten, exactly as at the end. Soft lamp hum, a quiet exhale."
+    },
+    {
+      "id": "PB_S2_Phone_T2",
+      "first": "kf/pb_b_768x1344.png",
+      "last": "kf/pb_b_768x1344.png",
+      "seed": 2026111704,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Evening, a woman in her sixties with silver-blonde hair and reading glasses sits curled on a grey sofa under a warm lamp, a knit throw on her knees, scrolling old photos on her phone (screen not visible). She stops on one photo, her thumb rests on the screen, a slow tender smile spreads across her face and her eyes glisten, exactly as at the end. Soft lamp hum, a quiet exhale."
+    },
+    {
+      "id": "PB_S3_Wall_T1",
+      "first": "kf/pb_c_framed_768x1344.png",
+      "last": "kf/pb_c_framed_768x1344.png",
+      "seed": 2026111705,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Mid-morning in a farmhouse kitchen. On the wall above an empty dog bed hangs a light oak frame with a watercolor painting of a black-and-white Border Collie. A woman in her sixties in an oatmeal cardigan stands one step back, one hand pressed to her chest, looking up at the painting; she nods softly, blinks back a tear and smiles, exactly as at the end. The painting stays perfectly still and unchanged. A soft breath, quiet room tone."
+    },
+    {
+      "id": "PB_S3_Wall_T2",
+      "first": "kf/pb_c_framed_768x1344.png",
+      "last": "kf/pb_c_framed_768x1344.png",
+      "seed": 2026111706,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Mid-morning in a farmhouse kitchen. On the wall above an empty dog bed hangs a light oak frame with a watercolor painting of a black-and-white Border Collie. A woman in her sixties in an oatmeal cardigan stands one step back, one hand pressed to her chest, looking up at the painting; she nods softly, blinks back a tear and smiles, exactly as at the end. The painting stays perfectly still and unchanged. A soft breath, quiet room tone."
+    },
+    {
+      "id": "PB_S4_Turn_T1",
+      "first": "kf/pb_d_framed_768x1344.png",
+      "last": "kf/pb_d_zoom_768x1344.png",
+      "seed": 2026111707,
+      "prompt": "r34l1sm, A single continuous slow push-in toward the framed painting on the wall, no cuts. A beam of warm morning sun falls across a kitchen wall and an empty dog bed with a red collar below. As the camera glides closer, the black-and-white Border Collie inside the watercolor painting slowly turns its head toward the viewer, gives one slow gentle blink, then turns back to its original pose exactly as at the end. Everything inside the frame stays soft watercolor washes on paper. Quiet morning birdsong, a soft music-box twinkle."
+    },
+    {
+      "id": "PB_S4_Turn_T2",
+      "first": "kf/pb_d_framed_768x1344.png",
+      "last": "kf/pb_d_zoom_768x1344.png",
+      "seed": 2026111708,
+      "prompt": "r34l1sm, A single continuous slow push-in toward the framed painting on the wall, no cuts. A beam of warm morning sun falls across a kitchen wall and an empty dog bed with a red collar below. As the camera glides closer, the black-and-white Border Collie inside the watercolor painting slowly turns its head toward the viewer, gives one slow gentle blink, then turns back to its original pose exactly as at the end. Everything inside the frame stays soft watercolor washes on paper. Quiet morning birdsong, a soft music-box twinkle."
+    }
+  ]
+}

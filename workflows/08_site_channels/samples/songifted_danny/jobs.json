@@ -1,0 +1,95 @@
+{
+  "note": "Songifted 第四批《It Was Not Nothing》：她给他送歌，用站上 /custom-song-for-husband 现成 demo 歌（虚构名字 Danny）。人物全是 AI 生成的成年人。",
+  "length": 141,
+  "steps": 10,
+  "style_mode": "photorealistic",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/songifted_story",
+  "jobs": [
+    {
+      "id": "SG_S1_Typing_T1",
+      "first": "kf/sg_a_768x1344.png",
+      "last": "kf/sg_a_768x1344.png",
+      "seed": 2026111521,
+      "prompt": "r34l1sm, A static medium shot, no zoom, no cuts. Late at night at a kitchen table, a woman around 40 with curly shoulder-length hair, gold hoop earrings and a mustard cardigan types on a laptop, pauses, glances at a handwritten notebook beside her, smiles softly to herself and keeps typing. Warm lamp light. Quiet night room tone, soft keyboard clicks."
+    },
+    {
+      "id": "SG_S1_Typing_T2",
+      "first": "kf/sg_a_768x1344.png",
+      "last": "kf/sg_a_768x1344.png",
+      "seed": 2026111522,
+      "prompt": "r34l1sm, A static medium shot, no zoom, no cuts. Late at night at a kitchen table, a woman around 40 with curly shoulder-length hair, gold hoop earrings and a mustard cardigan types on a laptop, pauses, glances at a handwritten notebook beside her, smiles softly to herself and keeps typing. Warm lamp light. Quiet night room tone, soft keyboard clicks."
+    },
+    {
+      "id": "SG_S2_NotYet_T1",
+      "first": "kf/sg_b_768x1344.png",
+      "last": "kf/sg_b2_768x1344.png",
+      "seed": 2026111523,
+      "prompt": "r34l1sm, A static two-shot, no zoom, no cuts. On a brown leather couch, a woman plays a song from her phone for her husband, a bearded man in a navy flannel shirt. He grins and opens his mouth to crack a joke; she quickly raises one finger with a knowing smile, not yet, and he presses his lips together, suppressing a laugh, his eyes softening as he listens. Warm lamp light, soft living room tone."
+    },
+    {
+      "id": "SG_S2_NotYet_T2",
+      "first": "kf/sg_b_768x1344.png",
+      "last": "kf/sg_b2_768x1344.png",
+      "seed": 2026111524,
+      "prompt": "r34l1sm, A static two-shot, no zoom, no cuts. On a brown leather couch, a woman plays a song from her phone for her husband, a bearded man in a navy flannel shirt. He grins and opens his mouth to crack a joke; she quickly raises one finger with a knowing smile, not yet, and he presses his lips together, suppressing a laugh, his eyes softening as he listens. Warm lamp light, soft living room tone."
+    },
+    {
+      "id": "SG_S3_Snow_T1",
+      "first": "kf/sg_c_768x1344.png",
+      "last": "kf/sg_c_768x1344.png",
+      "seed": 2026111525,
+      "prompt": "r34l1sm, A single continuous medium-wide shot, gentle handheld, no cuts. A freezing January night, heavy snow falling under a streetlamp: a bearded man in a dark green parka and knit beanie digs out a snowed-in silver sedan with a snow shovel, tossing snow aside, his breath steaming in the amber headlight glow. Howling wind, crunching snow."
+    },
+    {
+      "id": "SG_S3_Snow_T2",
+      "first": "kf/sg_c_768x1344.png",
+      "last": "kf/sg_c_768x1344.png",
+      "seed": 2026111526,
+      "prompt": "r34l1sm, A single continuous medium-wide shot, gentle handheld, no cuts. A freezing January night, heavy snow falling under a streetlamp: a bearded man in a dark green parka and knit beanie digs out a snowed-in silver sedan with a snow shovel, tossing snow aside, his breath steaming in the amber headlight glow. Howling wind, crunching snow."
+    },
+    {
+      "id": "SG_S4_Keys_T1",
+      "first": "kf/sg_d_768x1344.png",
+      "last": "kf/sg_d_768x1344.png",
+      "seed": 2026111527,
+      "prompt": "r34l1sm, A single continuous static shot, no cuts. A front hallway at night, the door open onto falling snow. A bearded man covered in snow stands just inside, shrugs with a modest lopsided grin and holds out a set of car keys to his wife in pajamas and a robe; she takes them, one hand on her chest, moved. Warm hallway light, cold wind outside."
+    },
+    {
+      "id": "SG_S4_Keys_T2",
+      "first": "kf/sg_d_768x1344.png",
+      "last": "kf/sg_d_768x1344.png",
+      "seed": 2026111528,
+      "prompt": "r34l1sm, A single continuous static shot, no cuts. A front hallway at night, the door open onto falling snow. A bearded man covered in snow stands just inside, shrugs with a modest lopsided grin and holds out a set of car keys to his wife in pajamas and a robe; she takes them, one hand on her chest, moved. Warm hallway light, cold wind outside."
+    },
+    {
+      "id": "SG_S5_Tears_T1",
+      "first": "kf/sg_e_768x1344.png",
+      "last": "kf/sg_e_768x1344.png",
+      "seed": 2026111529,
+      "prompt": "r34l1sm, A static close-up, no zoom, no cuts. A bearded man in his early 40s listens on the couch; his eyes slowly fill with tears, he swallows, blinks, and a moved half-smile appears as he looks toward his wife off-camera. Warm lamp light, quiet room."
+    },
+    {
+      "id": "SG_S5_Tears_T2",
+      "first": "kf/sg_e_768x1344.png",
+      "last": "kf/sg_e_768x1344.png",
+      "seed": 2026111530,
+      "prompt": "r34l1sm, A static close-up, no zoom, no cuts. A bearded man in his early 40s listens on the couch; his eyes slowly fill with tears, he swallows, blinks, and a moved half-smile appears as he looks toward his wife off-camera. Warm lamp light, quiet room."
+    },
+    {
+      "id": "SG_S6_Hug_T1",
+      "first": "kf/sg_g_768x1344.png",
+      "last": "kf/sg_f_768x1344.png",
+      "seed": 2026111531,
+      "prompt": "r34l1sm, A static two-shot, no zoom, no cuts. On the couch, the bearded man laughs through happy tears, wiping one eye with the back of his hand, and his wife laughs too; he pulls her into a tight hug, her cheek on his shoulder, both smiling with eyes closed. Warm lamp light, soft laughter."
+    },
+    {
+      "id": "SG_S6_Hug_T2",
+      "first": "kf/sg_g_768x1344.png",
+      "last": "kf/sg_f_768x1344.png",
+      "seed": 2026111532,
+      "prompt": "r34l1sm, A static two-shot, no zoom, no cuts. On the couch, the bearded man laughs through happy tears, wiping one eye with the back of his hand, and his wife laughs too; he pulls her into a tight hug, her cheek on his shoulder, both smiling with eyes closed. Warm lamp light, soft laughter."
+    }
+  ],
+  "realism_lora_strength": 0.7
+}

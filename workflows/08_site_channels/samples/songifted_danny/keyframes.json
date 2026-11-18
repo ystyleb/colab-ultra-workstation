@@ -1,0 +1,21 @@
+{
+ "style": "Authentic live-action 35mm film still, Kodak Vision3 500T, warm intimate cinematic lighting, realistic skin texture with pores and fine wrinkles, natural expressions, gentle film grain. Adults only.",
+ "frames": [
+  {"name": "sg_b",
+   "prompt": "Evening in a warm, lived-in suburban living room. A married couple in their early 40s sits close together on a worn brown leather couch, medium two-shot from the knees up, facing the camera at a slight angle. HIM (Danny), on the left: white American man, 42, stocky, short dark-brown hair greying at the temples, short full beard, warm brown eyes, laugh lines, faded navy flannel shirt over a grey t-shirt. HER, on the right: Black American woman, 40, natural shoulder-length curly hair, small gold hoop earrings, cozy mustard-yellow cardigan over a white tee. She holds her phone between them, playing a song for him (screen not visible). He grins mischievously, mouth slightly open, one eyebrow raised, clearly about to crack a joke; she looks at him warmly. Table lamp glow, knitted throw blanket, blurred framed photos on the wall behind (no readable faces)."},
+  {"name": "sg_b2", "edit_of": "sg_b",
+   "prompt": "Change only: she raises her index finger toward him playfully, a knowing 'not yet' smile; he presses his lips together, suppressing a laugh, his eyes softening."},
+  {"name": "sg_g", "edit_of": "sg_b",
+   "prompt": "Change only: Danny laughs through happy tears, wiping one eye with the back of his hand; she laughs too, leaning into him, her hand on his chest."},
+  {"name": "sg_f", "edit_of": "sg_b",
+   "prompt": "Change only: they hug tightly on the couch, his arms wrapped around her, her cheek on his shoulder, both smiling with eyes closed; her phone rests on the cushion."},
+  {"name": "sg_a", "refs": [], "edit_of": "sg_b",
+   "prompt": "NEW SHOT, same woman (HER: identical face, curly hair, gold hoops, mustard cardigan), a different night: she sits alone at a wooden kitchen table late at night, typing on a laptop seen from behind (no logo), a mug of tea and an open notebook with a few handwritten lines (unreadable) beside her. She smiles softly to herself as she types. Medium shot from the front, slightly right of center, warm lamp light, dark window behind. Ignore the couch, Danny and the living room of the reference; only keep her identity and the warm color grade."},
+  {"name": "sg_c", "edit_of": "sg_b",
+   "prompt": "NEW SHOT, flashback, same man (Danny: identical face, beard, hair): a dark, freezing January night, heavy snow falling on a quiet suburban street lit by one streetlamp and a car's amber headlights. Danny, in a dark green parka and a knit beanie with snow on his shoulders, digs out a snowed-in small silver sedan with a snow shovel, breath steaming, determined. Medium-wide shot, he fills the center third, upper body clearly visible. Cool blue-teal night tones with warm amber headlight glow. Ignore the couch, the woman and the living room of the reference; only keep Danny's identity."},
+  {"name": "sg_d", "edit_of": "sg_b",
+   "prompt": "NEW SHOT, flashback, the same couple the same January night: inside their front hallway, the front door open behind him onto a cold blue snowy night. Danny has just come back inside, snow on his dark green parka, beanie and beard, shrugging with a modest lopsided grin and holding out a set of car keys to her. She stands in the hallway in flannel pajamas and a robe, one hand on her chest, moved. Warm hallway light. Medium two-shot from the side, both faces visible."},
+  {"name": "sg_e", "edit_of": "sg_b",
+   "prompt": "NEW SHOT, same evening, same couch, same navy flannel: a close-up of Danny's face and shoulders only, eyes glistening and welling with tears, a moved, vulnerable half-smile, looking off-camera to the right toward her. Shallow depth of field, warm lamp light."}
+ ]
+}

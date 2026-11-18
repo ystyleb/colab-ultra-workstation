@@ -73,9 +73,30 @@ def build_config(spec: dict) -> dict:
     return cfg
 
 
+def job_length(spec: dict, job: dict) -> int:
+    """单条 job 可用 "length" 覆盖 jobs.json 的全局片长（同一场戏拆段接力时，各段长度不同）。"""
+    return int(job.get("length", spec.get("length", 192)))
+
+
 def resolve(p: str, base: Path) -> Path:
     q = Path(p)
     return q if q.is_absolute() else (base / q)
+
+
+def _urlopen_retry(req, timeout: int, tries: int = 5):
+    """本地经代理访问 googleapis 偶发 SSL EOF / 超时（2026-11-15 第四批踩到：云端已出片，本地拉回时断），指数退避重试。"""
+    import ssl
+    import urllib.error
+    import urllib.request
+
+    for k in range(tries):
+        try:
+            return urllib.request.urlopen(req, timeout=timeout)
+        except (urllib.error.URLError, ssl.SSLError, TimeoutError, ConnectionError) as exc:
+            if k == tries - 1:
+                raise
+            print(f"   ↻ Drive 请求失败（{exc}），{2 ** k * 3}s 后重试 {k + 2}/{tries}", flush=True)
+            time.sleep(2 ** k * 3)
 
 
 def pull_from_drive(name: str, out_dir: Path, rrr) -> Path | None:
@@ -90,7 +111,7 @@ def pull_from_drive(name: str, out_dir: Path, rrr) -> Path | None:
     )
     for _ in range(6):
         req = urllib.request.Request(f"https://www.googleapis.com/drive/v3/files?{q}", headers={"Authorization": f"Bearer {tok}"})
-        files = [f for f in json.loads(urllib.request.urlopen(req, timeout=15).read().decode()).get("files", []) if int(f.get("size", 0)) > 10_000]
+        files = [f for f in json.loads(_urlopen_retry(req, 15).read().decode()).get("files", []) if int(f.get("size", 0)) > 10_000]
         if files:
             break
         time.sleep(3)
@@ -100,7 +121,7 @@ def pull_from_drive(name: str, out_dir: Path, rrr) -> Path | None:
     out_dir.mkdir(parents=True, exist_ok=True)
     dst = out_dir / f["name"]
     req = urllib.request.Request(f"https://www.googleapis.com/drive/v3/files/{f['id']}?alt=media", headers={"Authorization": f"Bearer {tok}"})
-    with urllib.request.urlopen(req, timeout=180) as resp:
+    with _urlopen_retry(req, 180) as resp:
         dst.write_bytes(resp.read())
     print(f"📥 已从 Drive 拉回 {dst} ({dst.stat().st_size / 1024**2:.2f} MB, Drive size={f['size']})", flush=True)
     return dst
@@ -113,6 +134,7 @@ def main() -> None:
     ap.add_argument("-s", "--session", default="sitech-g4")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--keep-alive", action="store_true")
+    ap.add_argument("--pull-only", action="store_true", help="不开机，只从 Drive 拉回这些 job 已有的产物（本地拉取失败后补拉，0 CCU）")
     args = ap.parse_args()
 
     batches = []  # (spec, base, jobs, tag)
@@ -130,9 +152,9 @@ def main() -> None:
 
     gpu_min = COLD_BOOT_MIN
     for spec, base, jobs, tag in batches:
-        length = int(spec.get("length", 192))
-        build_config(spec)  # 提前校验 17k+5
         for j in jobs:
+            length = job_length(spec, j)
+            build_config(spec | {"length": length})  # 提前校验 17k+5
             for k in ("first", "last"):
                 p = resolve(j[k], base)
                 if not p.exists():
@@ -154,6 +176,19 @@ def main() -> None:
     sys.path.insert(0, str(WF07))
     import run_runway_remote as rrr
 
+    if args.pull_only:
+        got = {}
+        for spec, base, jobs, tag in batches:
+            for j in jobs:
+                try:
+                    got[j["id"]] = pull_from_drive(f"{j['id']}_Master.mp4", resolve(spec.get("out_dir", "out"), base), rrr)
+                except Exception as exc:
+                    print(f"⚠️ {j['id']} 拉取失败: {exc}", flush=True)
+                    got[j["id"]] = None
+        for k, v in got.items():
+            print(f"  {'✅' if v else '❌'} {k}: {v}")
+        sys.exit(0 if all(got.values()) else 1)
+
     tmp = Path(tempfile.mkdtemp(prefix="site_samples_"))
     rrr.ensure_local_oauth(session_to_pause=args.session)
     sname = args.session
@@ -163,11 +198,14 @@ def main() -> None:
         rrr.stage_scripts_and_inputs(sname, extra_local_files=[], only_sample_names=set())
         uploaded: set[str] = set()
         for spec, base, jobs, tag in batches:
-            cfg_path = tmp / f"site_samples_config_{tag}.json"
-            cfg_path.write_text(json.dumps(build_config(spec), ensure_ascii=False, indent=1), encoding="utf-8")
-            rrr.upload_file_chunked(sname, cfg_path, f"/tmp/{cfg_path.name}")
             out_dir = resolve(spec.get("out_dir", "out"), base)
             for j in jobs:
+                length = job_length(spec, j)
+                cfg_path = tmp / f"site_samples_config_{tag}_{length}.json"
+                if cfg_path.name not in uploaded:
+                    cfg_path.write_text(json.dumps(build_config(spec | {"length": length}), ensure_ascii=False, indent=1), encoding="utf-8")
+                    rrr.upload_file_chunked(sname, cfg_path, f"/tmp/{cfg_path.name}")
+                    uploaded.add(cfg_path.name)
                 prefix = j["id"]
                 pf = tmp / f"prompt_{prefix}.txt"
                 pf.write_text(j["prompt"].strip(), encoding="utf-8")

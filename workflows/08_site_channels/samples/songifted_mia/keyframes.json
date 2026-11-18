@@ -1,0 +1,133 @@
+{
+ "style": "Authentic live-action 35mm film still, Kodak Vision3 500T, warm intimate cinematic lighting, late November, realistic skin texture with pores and fine wrinkles, natural expressions, gentle film grain.",
+ "frames": [
+  {
+   "name": "sm_a",
+   "prompt": "Thanksgiving evening in a warm, lived-in family dining room. A long wooden table with a half-carved roast turkey, bowls of mashed potatoes and green beans, a pumpkin pie, candles, autumn leaves and small gourds as decoration, wine glasses and water glasses. Medium-wide shot from standing chest height at the end of the table, everyone visible from the waist up. DAD, on the left side of the table, standing: white American man, 56, salt-and-pepper short hair, clean-shaven, reading glasses pushed up on his head, a navy quarter-zip sweater over a light blue collared shirt; he holds his phone up at chest height in one hand (screen faces away from camera, not visible), clearing his throat, a little nervous, about to say something. MIA, seated on the right side across from him, the birthday girl: white American woman, 23, long wavy chestnut-brown hair, light freckles, small gold hoop earrings, a cream turtleneck sweater; she looks up at her dad, curious, half-smiling. MOM, seated at the far end of the table: woman, 55, short silver bob, burgundy cardigan, smiling knowingly. Warm pendant lamp over the table, a dark window with blue dusk behind."
+  },
+  {
+   "name": "sm_b",
+   "edit_of": "sm_a",
+   "prompt": "NEW SHOT, same moment, close-up on MIA only (same long wavy chestnut hair, freckles, gold hoops, cream turtleneck), seated at the Thanksgiving table, framed from the chest up, slightly off-center. She has just heard her own name in a song: both hands rise to cover her mouth, eyes wide and starting to shine with tears, eyebrows raised in disbelief. Shallow depth of field, warm candle and pendant light on her face, the blurred table and a glass in the foreground."
+  },
+  {
+   "name": "sm_c",
+   "edit_of": "sm_a",
+   "prompt": "NEW SHOT, same dining room, same evening: Mia (same chestnut hair, cream turtleneck) has walked around the table and hugs her dad (same navy quarter-zip, glasses on his head) from the side as he sits in his chair, her arms around his shoulders, her cheek against his head; he holds his phone in one hand and squeezes her arm with the other, eyes closed, smiling and teary. Medium shot from standing chest height, both faces visible. The Thanksgiving table and candles in the foreground, slightly blurred."
+  },
+  {
+   "name": "sm_d",
+   "edit_of": "sm_a",
+   "prompt": "Change only: the room lights are dimmed and the pumpkin pie now sits in front of Mia with ONE lit birthday candle stuck in its center. Mia leans forward over the pie, smiling, about to blow out the candle; Dad (now seated beside her on her left) and Mom lean in, laughing, both raising their wine glasses. Warm candlelight on their faces."
+  },
+  {
+   "name": "sm_e",
+   "edit_of": "sm_a",
+   "prompt": "NEW SHOT, a memory from 20 years ago, early autumn afternoon on a quiet tree-lined suburban street with yellow and orange leaves on the sidewalk. Wide shot from BEHIND at standing height: the same Dad, much younger (36, dark brown hair, no grey, a brown canvas jacket and jeans), seen from behind, and a tiny toddler girl (about 3, chestnut-brown pigtails, a red raincoat and yellow rain boots, seen ONLY from behind, no face visible) walking together toward a pedestrian crosswalk. She has just pulled her small hand free from his and marches one step ahead on her own; his empty hand still hovers low behind her, protective. A crossing-guard style sign and parked cars blurred. Slightly faded warm film look, like a memory. Ignore the dining room of the reference; only keep Dad's identity (younger)."
+  },
+  {
+   "name": "sm_f",
+   "edit_of": "sm_a",
+   "prompt": "NEW SHOT, a memory from 5 years ago, late August afternoon in front of a red-brick college dormitory with green lawn and students in the distance. Medium-wide shot at standing height. MIA at 18 (same chestnut wavy hair, slightly rounder face, a grey college hoodie and jeans, a backpack on one shoulder) walks away from the open trunk of the family's silver SUV toward the dorm entrance carrying a cardboard box, turning her head back over her shoulder with a brave, excited smile. DAD (same man, 51, slightly less grey, navy polo shirt) stands by the open trunk holding a desk lamp, watching her go, smiling and swallowing hard. Bright warm afternoon sun, slightly faded film look like a memory. Ignore the dining room of the reference; only keep Mia's and Dad's identities."
+  },
+  {
+   "name": "sm_e_end",
+   "edit_of": "sm_e",
+   "prompt": "END FRAME of the same walk, about 5 seconds later, camera did NOT move (same street, same trees, same crosswalk sign and parked cars in the exact same places). Both have walked forward along the sidewalk: the toddler girl (same red raincoat, yellow boots, chestnut pigtails, still seen ONLY from behind, no face) is now about three small steps further ahead, noticeably smaller in frame and closer to the crosswalk, mid-stride, arms swinging, marching on her own. The young dad (same brown canvas jacket, jeans, dark hair, seen from behind) has also walked forward two steps and stays about one step behind her, slightly smaller in frame, his empty hand still hovering low near her back. A few more leaves on the sidewalk."
+  },
+  {
+   "name": "sm_f_end",
+   "edit_of": "sm_f",
+   "prompt": "END FRAME of the same moment, about 5 seconds later, camera did NOT move (same dorm building, lawn, SUV and trunk in the exact same places). MIA (same chestnut hair, grey hoodie, jeans, backpack, still carrying the cardboard box in one arm) has walked only about eight steps further along the concrete path toward the dorm, at a normal walking pace: she is now in the MIDDLE DISTANCE, about halfway between the SUV and the dorm steps, roughly one third of her previous height in frame, her face still recognizable, turned halfway back toward her dad with a bright brave smile, lifting her free hand in a wave. She is NOT at the steps yet. DAD stays by the open trunk where he was, still holding the desk lamp in one hand and now raising his other hand in a small wave back, smiling, eyes a little wet."
+  },
+  {
+   "name": "sm_f2",
+   "edit_of": "sm_f",
+   "prompt": "START FRAME of a new take, camera did NOT move (same dorm building, lawn, silver SUV with open trunk on the LEFT side of the frame, same light). DAD stands by the open trunk on the left exactly as before, holding the desk lamp, watching his daughter go with a proud, slightly sad smile. MIA (same chestnut wavy hair, grey hoodie, jeans, white sneakers, dark backpack on her back, cardboard box held in front of her) has just stepped away from the car: she is two steps to the right of her dad and slightly farther from the camera, seen from BEHIND, walking away toward the dorm along the path, her back and backpack facing the camera. She does NOT look back; her face is not visible, only the back of her head and hair. Mid-stride, natural walking posture."
+  },
+  {
+   "name": "sm_f2_end",
+   "edit_of": "sm_f2",
+   "prompt": "END FRAME of the same take, about 5 seconds later, camera did NOT move (same dorm, lawn, SUV and trunk in the exact same places). MIA has walked about eight steps further along the concrete path and has now STOPPED in the middle distance, about halfway to the dorm steps, roughly one third of her previous height in frame. Both feet are planted on the path, toes still pointing toward the dorm. She looks back over her shoulder on the LEFT side of the frame, toward the SUV and her dad: her head and upper body turn toward the left edge of the frame, so her face is seen in three-quarter profile looking to the left of the frame (toward the car), NOT straight into the camera. She waves with the arm on the LEFT side of the frame (the arm closer to the SUV), raised above her shoulder; the cardboard box is tucked under the arm on the RIGHT side of the frame. Her backpack is still on her back and partly visible. Natural, relaxed anatomy: her hips stay facing the dorm, only the shoulders and head twist. DAD stays by the open trunk on the left where he was, still holding the desk lamp in one hand and raising his other hand in a small wave back, smiling, eyes a little wet."
+  },
+  {
+   "name": "sm_f2_end_b",
+   "edit_of": "sm_f2",
+   "prompt": "END FRAME of the same take, about 5 seconds later, camera did NOT move (same dorm, lawn, SUV and trunk in the exact same places). MIA has walked only about five or six normal steps further and has now STOPPED on the lawn, still far from the dorm steps (the steps are well behind her, much farther away). She is about HALF of her previous height in frame, clearly in the middle ground, NOT at the steps. Both feet are planted on the path, toes still pointing toward the dorm. She looks back over her shoulder on the LEFT side of the frame, toward the SUV and her dad: her head and upper body turn toward the left edge of the frame, so her face is seen in three-quarter profile looking to the left of the frame (toward the car), NOT straight into the camera. She waves with the arm on the LEFT side of the frame (the arm closer to the SUV), raised above her shoulder; the cardboard box is tucked under the arm on the RIGHT side of the frame. Her backpack is still on her back and partly visible. Natural, relaxed anatomy: her hips stay facing the dorm, only the shoulders and head twist. DAD stays by the open trunk on the left where he was, still holding the desk lamp in one hand and raising his other hand in a small wave back, smiling, eyes a little wet."
+  },
+  {
+   "name": "sm_ref_mia",
+   "refs": [
+    "kf/sm_f_raw.png"
+   ],
+   "prompt": "CHARACTER TURNAROUND SHEET of the SAME young woman as the girl in the attached photo (keep her face, light freckles and long wavy chestnut-brown hair exactly): MIA, 18, wearing a heather-grey college hoodie, light-blue straight jeans, white canvas sneakers, and a dark brown backpack worn on both shoulders (the backpack is clothing, keep it on in all three views). This is a NEUTRAL TURNAROUND, not a pose: in every view the person stands straight and still, weight on both feet, arms hanging relaxed at the sides, hands empty, neutral calm expression. The head ALWAYS points the same way as the body (no head turn, no looking over the shoulder, no twisting). Show exactly THREE full-body views side by side, same scale, same height, aligned on the same floor line: (1) FRONT view, body and face facing the camera; (2) SIDE view, a true 90-degree profile facing the left edge of the image, head in profile too; (3) BACK view, body and head facing directly away from the camera, only the back of the head visible. Plain light-grey seamless studio background, soft even light, no props, no text, no labels."
+  },
+  {
+   "name": "sm_ref_dad",
+   "refs": [
+    "kf/sm_f_raw.png"
+   ],
+   "prompt": "CHARACTER TURNAROUND SHEET of the SAME man as the father in the attached photo (keep his face, salt-and-pepper short hair and the sunglasses pushed up on his head exactly): DAD, 51, navy short-sleeve polo shirt, khaki chinos, brown leather belt, brown boat shoes. This is a NEUTRAL TURNAROUND, not a pose: in every view the person stands straight and still, weight on both feet, arms hanging relaxed at the sides, hands empty, neutral calm expression. The head ALWAYS points the same way as the body (no head turn, no looking over the shoulder, no twisting). Show exactly THREE full-body views side by side, same scale, same height, aligned on the same floor line: (1) FRONT view, body and face facing the camera; (2) SIDE view, a true 90-degree profile facing the left edge of the image, head in profile too; (3) BACK view, body and head facing directly away from the camera, only the back of the head visible. Plain light-grey seamless studio background, soft even light, no props, no text, no labels."
+  },
+  {
+   "name": "sm_env",
+   "prompt": "ENVIRONMENT PLATE (empty scene, NO people at all) of the same college move-in location as the attached photo: same red-brick dorm with the arched stone entrance and wide stone steps, same hydrangea bushes, same green lawn, same silver SUV, same late-August afternoon sun and warm film look. Composition, static camera at standing eye height, medium-wide: the silver SUV with its rear trunk OPEN (boxes and a duffel inside) sits in the LEFT third of the frame, its rear facing the camera, with an empty strip of sidewalk in front of it where a person could stand. One straight light-grey concrete walkway, about 1.5 m wide, starts at the foreground sidewalk in the CENTER-RIGHT of the frame and runs straight back across the lawn, getting narrower with distance, to the dorm steps, which are in the upper CENTER of the frame. The whole walkway stays well inside the frame, away from the right edge. Lawn on both sides of the walkway, no other paths. Nobody in the scene.",
+   "refs": [
+    "kf/sm_f2_raw.png"
+   ]
+  },
+  {
+   "name": "sm_f3",
+   "edit_of": "sm_env",
+   "refs": [
+    "kf/sm_ref_mia_raw.png",
+    "kf/sm_ref_dad_raw.png"
+   ],
+   "prompt": "ADD two people into this empty scene. Their faces, hair and clothes must match the attached CHARACTER REFERENCE SHEETS exactly (MIA, 18: long wavy chestnut hair, grey hoodie, light-blue jeans, white sneakers, dark brown backpack, cardboard box; DAD, 51: salt-and-pepper hair, sunglasses on his head, navy polo, khaki chinos, silver desk lamp). Do NOT change the walkway, lawn, SUV or building in any way. DAD stands on the foreground sidewalk right beside the SUV's rear bumper, on the bumper's right side between the car and the start of the walkway, seen in three-quarter view from the knees up to the head, turned toward the walkway, holding the desk lamp in both hands against his chest, watching his daughter go with a proud, slightly sad smile. MIA is ON the concrete walkway, just two steps past her dad, seen from BEHIND, walking away from the camera toward the dorm, mid-stride, backpack on both shoulders, the cardboard box held in front of her in both arms. She does NOT look back: only the back of her head, hair and backpack are visible. She is large in frame, her full body visible, roughly half the frame height."
+  },
+  {
+   "name": "sm_f3_end",
+   "edit_of": "sm_env",
+   "refs": [
+    "kf/sm_ref_mia_raw.png",
+    "kf/sm_ref_dad_raw.png"
+   ],
+   "prompt": "ADD two people into this empty scene. Their faces, hair and clothes must match the attached CHARACTER REFERENCE SHEETS exactly (MIA, 18: long wavy chestnut hair, grey hoodie, light-blue jeans, white sneakers, dark brown backpack, cardboard box; DAD, 51: salt-and-pepper hair, sunglasses on his head, navy polo, khaki chinos, silver desk lamp). Do NOT change the walkway, lawn, SUV or building in any way. DAD stands on the foreground sidewalk right beside the SUV's rear bumper, on the bumper's right side between the car and the start of the walkway, seen in three-quarter view from the knees up to the head, turned toward the walkway, now holding the lamp in one hand against his chest and raising his other hand to shoulder height in a small wave, smiling, eyes a little wet. MIA is ON the concrete walkway about one third of the way from the sidewalk to the dorm steps, clearly in the middle ground and still far from the steps, about half as tall in frame as someone standing next to her dad would be. She has STOPPED and turned her WHOLE BODY around to face back toward her dad: her feet, hips, shoulders and face all point toward the LOWER-LEFT of the frame (toward the SUV), so we see her FRONT in a three-quarter view, with a bright, brave smile. Natural relaxed posture, weight on one leg. She waves with the hand on the LEFT side of the frame (nearer her dad), a small natural wave at shoulder height, palm open, NOT raised overhead. The cardboard box rests against her hip, held by the arm on the RIGHT side of the frame. The backpack straps are visible on her shoulders."
+  },
+  {
+   "name": "sm_f3_end_b",
+   "edit_of": "sm_env",
+   "refs": [
+    "kf/sm_ref_mia_raw.png",
+    "kf/sm_ref_dad_raw.png",
+    "kf/sm_f3_raw.png"
+   ],
+   "prompt": "ADD two people into this empty scene. Their faces, hair and clothes must match the attached CHARACTER REFERENCE SHEETS exactly (MIA, 18: long wavy chestnut hair, grey hoodie, light-blue jeans, white sneakers, dark brown backpack, cardboard box; DAD, 51: salt-and-pepper hair, sunglasses on his head, navy polo, khaki chinos, silver desk lamp). Do NOT change the walkway, lawn, SUV or building in any way. DAD stands on the foreground sidewalk right beside the SUV's rear bumper, on the bumper's right side between the car and the start of the walkway, seen in three-quarter view from the knees up to the head, turned toward the walkway, now holding the lamp in one hand against his chest and raising his other hand to shoulder height in a small wave, smiling, eyes a little wet. One of the attached images is the START FRAME of this shot (Mia walking away, seen from behind). In THIS end frame Mia has walked about SIX more steps along the walkway than in that start frame: she is clearly FARTHER from the camera than in the start frame, her whole figure only about 60 percent as tall as it is in the start frame, standing about halfway between her start position and the dorm steps, still well short of the steps. She has STOPPED and turned her WHOLE BODY around to face back toward her dad: her feet, hips, shoulders and face all point toward the LOWER-LEFT of the frame (toward the SUV), so we see her FRONT in a three-quarter view, with a bright, brave smile. Natural relaxed posture, weight on one leg. She waves with the hand on the LEFT side of the frame (nearer her dad), a small natural wave at shoulder height, palm open, NOT raised overhead. The cardboard box rests against her hip, held by the arm on the RIGHT side of the frame. The backpack straps are visible on her shoulders."
+  },
+  {
+   "name": "sm_g0",
+   "edit_of": "sm_env",
+   "refs": [
+    "kf/sm_ref_mia_raw.png",
+    "kf/sm_ref_dad_raw.png",
+    "kf/sm_f3_raw.png"
+   ],
+   "prompt": "ADD two people into this empty scene. Their faces, hair and clothes must match the attached CHARACTER TURNAROUND SHEETS exactly (use the SIDE views for their profiles): MIA, 18: long wavy chestnut hair, grey hoodie, light-blue jeans, white sneakers, dark brown backpack on both shoulders; DAD, 51: salt-and-pepper hair, sunglasses pushed up on his head, navy polo, khaki chinos. Do NOT change the walkway, lawn, SUV or building in any way. One attached image is a LATER frame of this same shot: DAD must stand in EXACTLY the same spot and at the same size as in that later frame (on the foreground sidewalk beside the SUV's rear bumper, on its right side), holding the silver desk lamp in both hands against his chest, but here his whole body, shoulders and head are turned to face his daughter. This is the moment of saying goodbye, BEFORE she walks away: MIA stands on the sidewalk right at the start of the walkway, about one arm's length to the right of her dad, facing him. Both are seen in clean SIDE PROFILE: Dad faces the RIGHT side of the frame, Mia faces the LEFT side of the frame, looking at each other, at the same distance from the camera. She holds the cardboard box in both arms in front of her chest. She smiles bravely, he smiles with slightly wet eyes, as if one of them just said 'okay, go on'. Natural relaxed standing posture, heads aligned with their bodies, full bodies visible from head to shoes, nobody else in the scene. EYE LINE IS CRITICAL: Dad looks directly INTO his daughter's eyes, his gaze slightly downward toward her face, his nose pointing at her face; he is NOT looking at the camera, NOT looking past her, NOT looking at the dorm. Mia looks directly back into his eyes. Their faces are turned toward each other and their gazes meet in the middle."
+  },
+  {
+   "name": "sm_g0b",
+   "edit_of": "sm_env",
+   "refs": [
+    "kf/sm_ref_mia_raw.png",
+    "kf/sm_ref_dad_raw.png",
+    "kf/sm_f3_raw.png"
+   ],
+   "prompt": "ADD two people into this empty scene. Their faces, hair and clothes must match the attached CHARACTER TURNAROUND SHEETS exactly (use the SIDE views for their profiles): MIA, 18: long wavy chestnut hair, grey hoodie, light-blue jeans, white sneakers, dark brown backpack on both shoulders; DAD, 51: salt-and-pepper hair, sunglasses pushed up on his head, navy polo, khaki chinos. Do NOT change the walkway, lawn, SUV or building in any way. One attached image is a LATER frame of this same shot: DAD must stand in EXACTLY the same spot and at the same size as in that later frame (on the foreground sidewalk beside the SUV's rear bumper, on its right side), holding the silver desk lamp in both hands against his chest, but here his whole body, shoulders and head are turned to face his daughter. This is the moment of saying goodbye, BEFORE she walks away: MIA stands on the sidewalk right at the start of the walkway, about one arm's length to the right of her dad, facing him. Both are seen in clean SIDE PROFILE: Dad faces the RIGHT side of the frame, Mia faces the LEFT side of the frame, looking at each other, at the same distance from the camera. She holds the cardboard box in both arms in front of her chest. She smiles bravely, he smiles with slightly wet eyes, as if one of them just said 'okay, go on'. Natural relaxed standing posture, heads aligned with their bodies, full bodies visible from head to shoes, nobody else in the scene. EYE LINE IS CRITICAL: Dad looks directly INTO his daughter's eyes, his gaze slightly downward toward her face, his nose pointing at her face; he is NOT looking at the camera, NOT looking past her, NOT looking at the dorm. Mia looks directly back into his eyes. Their faces are turned toward each other and their gazes meet in the middle."
+  },
+  {
+   "name": "sm_d_end",
+   "edit_of": "sm_d",
+   "prompt": "END FRAME of the same shot, about 4 seconds later, camera did NOT move: same table, same food, same plates, same glasses, same lamp, same window, same three people in exactly the same seats and the same places. Change ONLY these things: (1) the small birthday candle on the pumpkin pie has been BLOWN OUT: no flame on it any more, just a thin wisp of grey smoke curling up from its wick. The tall pillar candle and the small votive candle on the table stay LIT exactly as before. (2) MIA has sat back up straight in her chair, laughing with joy, both hands clapping together in front of her chest, looking toward her parents. (3) DAD and MOM are still raising their wine glasses toward her, laughing and cheering, mouths open mid-cheer. Natural anatomy, heads aligned with bodies."
+  }
+ ]
+}

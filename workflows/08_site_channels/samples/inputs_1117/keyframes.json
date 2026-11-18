@@ -1,0 +1,9 @@
+{
+ "style": "Casual but sharp smartphone photo (iPhone main camera), natural soft daylight, realistic everyday look, true-to-life colors, no filters, no artistic styling.",
+ "frames": [
+  {"name": "collie_src",
+   "prompt": "A real pet owner's phone photo of their old dog, taken a few autumns ago: a senior male Border Collie, about 13 years old, classic black-and-white coat (black body and ears, white blaze down the face, white chest ruff, white front legs and paws, white tail tip), a clearly greying muzzle and grey around the eyes, kind amber-brown eyes, slightly soft ears, wearing a faded red fabric collar with a small round silver tag. The dog SITS upright on a backyard lawn with a few fallen yellow leaves, body facing the camera in a slight three-quarter turn to the left, head up looking just past the camera with a gentle, calm expression, mouth closed. The ENTIRE dog is visible from ear tips to front paws and tail, with grass margin around it; the dog fills about 60% of the image width, centered. A blurred weathered wooden fence and an autumn hedge behind. Camera at the dog's eye level, about 1.5 m away. Nothing else in frame, no people."},
+  {"name": "dress_src",
+   "prompt": "A small boutique owner's own flat-lay product photo, shot straight down from above: ONE women's emerald-green velvet midi wrap dress laid perfectly flat and symmetrical on a plain warm-white cotton sheet, long sleeves extended slightly outward, the skirt fanned neatly. The dress: rich deep emerald-green crushed velvet, fully OPAQUE and lined, long fitted sleeves, a modest V wrap neckline (not low-cut), a self-tie sash at the waist, midi length. Visible soft velvet sheen and pile texture. The dress fills about 85% of the frame, fully visible with a little margin, centered. Even soft daylight, no props, no hands, no hanger, no tags, no text."}
+ ]
+}

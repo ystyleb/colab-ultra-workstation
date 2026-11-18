@@ -60,7 +60,86 @@ python3 workflows/08_site_channels/make_channel_assets.py --site pawmotif
   - Songifted `0S8IrjXonjs`「Happy Birthday Mom」：站上 /birthday-song-for-mom 的现成示例歌 + /create 真实手机截图（`songifted-mom`）
   - TryOnSwap `ZDOXYAwCRT4`「One sweater, six photoshoots」：站长账号 6 个 Scene 预设各 1 张 2K 9:16，扣 60 credits（`tryonswap-campaign`）
   - 三个站的产品问题分别记在 `site-social-ops/brands/<site>/产品体验问题.md`
+- [x] 2026-11-13 第三批：三个站各 1 条 H3 引流 Shorts（一次开机 6 条每站挑 1 条，G4 33 分钟，实耗 5.03 CCU），同日公开上线并用 oEmbed 核验：PawMotif `dk-3tSHBxxw`、TryOnSwap `RyqvI_cORPQ`、Songifted `NIp1Ct3OeXs`：
+  - PawMotif「照片 → 画像」（`pawmotif-photo2art`）：首帧杜宾头部原照（按画像里的五官位置对齐裁剪），尾帧是测试号用**同一张照片**在 `/portraits/golden` 新生成的 Botanical（job `8ec5dc7c`）。H3 放完后交叉淡化到站上真实下载的画像，观众最后看到的是产品真实输出
+  - TryOnSwap 转身换装 v2（`tryonswap-knit`）：model-a → 第二批 Studio 毛衣图。T1 作废（提示词禁了近景，仍硬切到脸部和臀部特写）；T2 在背身转侧面的那一帧瞬间换装，全程不切镜
+  - Songifted 反应片（`songifted-wife`）：站首页 `/videos/reaction-quiet.jpg` 竖裁 + `/demos/for-wife.mp3`（虚构的 Nora），副歌「Nora」在成片 4.56 s，③ 段 4.58 s 开始
+- [x] 2026-11-15 第四批：用户要求「跳出四段式，用小故事」。三条多镜头故事片做到母版 + 发布包（`site-social-ops/releases/2026-11-15_*`，YouTube 已于当天公开上线：PawMotif `QiMxArC_kyE`、TryOnSwap `MGFoyYX02Ss`、Songifted `rf6Rh9x9qL8`，oEmbed 200；Pinterest/IG/FB 仍为 draft）。Codex 关键帧 0 CCU，H3 一次开机 28 条（每镜 2 seed）挑 14 条，G4 101 分钟，实耗 16.62 CCU；Kie Suno 纯音乐 2 次共 24 积分：
+  - PawMotif《Into the Frame》（`story_short.py pawmotif-intoframe`，23.6 s）：杜宾盯着墙上自己的画像 → 一跃钻进画框溶成水彩 → 画里的它转头冲你笑 → 空客厅推镜，画里的狗看向镜头。画框里贴的是测试号用全身照真实生成的 Watercolor（红项圈和真狗一致）
+  - TryOnSwap《The Photoshoot That Never Happened》（`tryonswap-photoshoot`，25.1 s）：深夜卖家看到 $2,400 拍摄报价（本地画的示意报价单，标 Example quote）→ 揉掉 → 手机拍平铺图 → 第二批 6 个 Scene 真实上身图弹出 → 街拍 → 举杯。鼓点（Suno 源 19.0 s）卡在揉纸那一刻
+  - Songifted《It Was Not Nothing》（`songifted-danny`，28.6 s）：用户指定「女生给男生送歌」，用 `/demos/for-husband.mp3`（虚构 Danny）。镜头切点卡歌词换句：打字 → 「Danny, don't make a joke yet」→ 雪夜铲雪闪回 → 递钥匙 → 他流泪 →（接尾声）「Go on, make the joke now」拥抱。歌里两句之间 1.4 s 停顿用拥抱镜头的 H3 笑声补上
+- [x] 2026-11-16 第五批（节日季小故事）。用户看片后要求去掉画面里的 AI 胶囊，当天 YouTube 公开上线（oEmbed 200 核验）：PawMotif `fBPSLU5ZHg8`、TryOnSwap `-SnKUYoPxWQ`、Songifted `vebsJuhKz58`；发布包 `site-social-ops/releases/2026-11-16_*`，Pinterest/IG/FB 仍为 draft。站上真实产出：PawMotif 测试号用 AI 金毛照生成 Old World 油画（job `1867f515`）；TryOnSwap 站长账号用 AI 圣诞毛衣平铺图生成 3 张上身图（Custom 雪夜街景、Custom 圣诞客厅、Street style，扣 30 credits）。H3 一次开机 26 条挑 13 条，G4 94 分 47 秒，本会话按时长折算 15.88 CCU（同时段 09 号另开实例出片，账户余额共减少 31.03）；Kie 纯音乐 2 次共 24 积分：
+  - PawMotif《Under the Tree》（`story_short.py pawmotif-tree`，23.8 s）：圣诞早晨她递给他扁礼盒 → 拆开是他家金毛的油画 → 金毛跑来趴在画前摆出同样姿势 → 晚上画挂到壁炉上，画里的狗转头冲你笑
+  - TryOnSwap《Model Cancelled》（`tryonswap-cancelled`，23.3 s）：黑五上新前一晚模特发消息取消 → 手机拍平铺图 → 3 张上身图卡在配乐 drop（10.0 s）弹出 → 零点上线、订单通知（示意）
+  - Songifted《Porch Light》（`songifted-porch`，37.0 s）：用 `/demos/for-dad.mp3`（虚构的 Daniel），镜头切点卡在逐词时间戳上：门廊灯 → 门口拥抱 → 故事卡 →「Happy birthday, Dad!」捂嘴笑出眼泪 → 全家举咖啡杯
+  - 关键帧 `gen_keyframes.py` 只排两轮依赖：`edit_of` 套 `edit_of`（pt_d → pt_c → pt_a）的帧要第二次单独 `--only` 补跑
+  - 贴画改用 `paste_into_canvas`（floodfill 求画布，前景遮挡物如狗头自动保留）；PIL `thresh` 是三通道差之和，阴影画布约 105、金毛毛色约 175、金框约 285，取 120
+- [x] 2026-11-17/18 第六批（三条多镜头故事片），母版已经用户审定，`ops import` 和 `ops validate` 都通过（发布包 `site-social-ops/releases/2026-11-17_*`），**还没有发布**。H3 首批 30 条，G4 113 分 55 秒，按时长算 19.08 CCU；《Mia》返工又开了 3 次机，补渲 12 条，按时长共约 9.3 CCU：
+  - PawMotif《Back in His Spot》（`story_short.py pawmotif-biscuit`，24.8 s）：第一人称怀念老牧羊犬，站上真实生成的 Watercolor（job `943726cc`）
+  - TryOnSwap《One Dress, Every Party》（`tryonswap-party`，20.2 s）：一条祖母绿丝绒裙，3 张上身图（办公室、跨年夜、家宴）在配乐 drop 7.20 s 弹出；封面取 13.6 s 跨年夜举杯
+  - Songifted《Mia》（`songifted-mia`，38.1 s）：`/demos/for-daughter.mp3`，感恩节当天过 23 岁生日。用户审片后返工 3 镜：过马路（Cross T3）、宿舍（方案一 S1_T2：侧面道别 → 转身走开 → 回头挥手）、吹蜡烛（Pie T3：蜡烛不再复燃，吹灭时间对准「Mia」）。经验见上文「有走位、有转身的镜头怎么做」
 - [ ] 三个站的页脚加上 YouTube 链接（在各站自己的仓库里改，不在本仓库）
+- [ ] 下一批（2026-11-17 用户同意）：Songifted 做 1 条横屏长视频（1–2 分钟「怎么做一首歌」流程演示，简介里放可点的 UTM 链接），之后每条 Songifted Shorts 上传时把「相关视频」挂到它，走 Shorts → 长视频 → 网站。原因：Shorts 简介和评论里的网址不能点（2023-08 起）。效果好再推广到 PawMotif / TryOnSwap
+
+## 小故事 Shorts（`story_short.py` + `gen_keyframes.py` + `kie_bgm.py`，第四批起）
+
+```bash
+python3 workflows/08_site_channels/gen_keyframes.py samples/<dir> -j 4          # Codex 生关键帧，0 CCU；有 edit_of 的帧以基础帧为参考只改动作
+python3 workflows/08_site_channels/story_short.py prep-pawmotif                  # 把站上真实画像贴进关键帧的画框
+python3 workflows/08_site_channels/kie_bgm.py --title ... --style ... --out out/bgm/<site>   # Suno 纯音乐，一次 2 条，约 12 积分
+python3 workflows/08_site_channels/story_short.py <pawmotif-intoframe|tryonswap-photoshoot|songifted-danny> [--preview]
+```
+
+- **人物/场景一致性**：先生成 1 张基础帧，其余帧都用 `edit_of` 把它当参考图，提示词只写「改什么」。同一对夫妻跨 8 个镜头（沙发、厨房、雪夜、玄关）脸都对得上；新镜头要在提示词里写清「忽略参考图的场景，只保留人物」
+- **产品真实性**：故事画面全是 AI，但画框里的画、商品页里的上身图、歌都必须是站上真实产出。第四批片中常驻 AI 标注胶囊；**第五批起画面里不放**（2026-11-16 用户定），AI 声明靠 YouTube 上传勾 Altered or synthetic content = Yes + 各平台文案里原样写 `disclosure.credit_line`
+- **H3 选片规律**（本批 14 镜 × 2 seed）：首帧 = 尾帧的「微动」镜头，H3 很爱自己推成特写再拉回（TryOnSwap 平铺 T2、举杯 T2、打字 T2、街拍 T1 都这样），选镜头稳的那条；动作镜头（揉纸、扑画框、拥抱）两条都能成，挑动作看得清的。跳画框 192 帧最后 38 帧是定格，只用前 6 s
+- 原声：大多 -13～-30 LUFS 不等，狗叫可能冲到 -5 dB。故事片以配乐/歌为主，原声按镜头给增益（0～0.6），最后整体 loudnorm 到 -14
+- **拉回失败 ≠ 渲染失败**：本地经代理拉 Drive 偶发 `SSL: UNEXPECTED_EOF`，云端片子其实已在 Drive。`pull_from_drive` 已加指数退避重试；漏拉的用 `render_samples.py --jobs ... --only <id> --pull-only` 补拉（0 CCU）
+- **冷启动第一条可能超时**：ComfyUI 报就绪后第一次 `/object_info` 可能超时，第一条 job 直接失败，第四、五、六批都遇到过（11-18 宿舍 S1_T1 也是）。2026-11-18 已在 07 号 `run_runway.py` 里改成 timeout=90，并最多重试 4 次（**还没有上云验证**，下次开机时看日志里有没有 `/object_info 第 N 次失败` 并且最后成功了）
+
+### 有走位、有转身的镜头怎么做（2026-11-18，《Mia》宿舍镜头返工 4 轮）
+
+返工经过：母版审片时用户发现过马路那镜「爸爸不动、女儿原地走」，宿舍那镜「走出去又倒着走回来」。之后每一轮都靠用户指出问题：
+1. 首尾帧是同一张图，人物没法产生位移。
+2. 尾帧里的人只扭头不转身，而且从远离爸爸的那一侧回头，转身角度超过 180°。
+3. 首帧和尾帧各自 `edit_of` 生成，两张图里草坪上的路不一样。
+4. 人物参考图里带了动作（扭头）。
+5. 首帧其实是这场戏的中间状态，缺了侧面相对道别那一拍。
+
+**关键帧设计规则**
+
+| 规则 | 做法 | 反例（本次踩过的） |
+|---|---|---|
+| 首尾同图只用于原地动作 | 拥抱、吹蜡烛、表情反应可以首尾同图；走路、离开、靠近**必须用不同的尾帧** | 过马路、宿舍用了 `first == last`：H3 只能原地踏步，或者走出去再倒回来（两个 seed 都这样） |
+| 不可逆的状态变化也要给不同的尾帧 | 吹灭蜡烛、打碎、倒满、拆开礼物：尾帧要画成变化**之后**的样子，同时写明哪些东西不变（比如「其他蜡烛照样亮着」）。人不走动的镜头直接 `edit_of` 首帧即可 | 吹蜡烛用了 `first == last`：蜡烛吹灭后又自己复燃（用户审片发现） |
+| 位移按步速算 | 正常步速约 1.4 m/s。按「片长 × 步速」估算距离，再换算成人物在画面里缩小的比例 | 尾帧把人放到宿舍台阶下，要走 20 多米，H3 只能小跑或者瞬移 |
+| 首尾之间只变一件事 | 一段只做一个动作：只走开，或只回头 | 首帧在回头、尾帧也在回头，H3 只能补成「回头 → 甩头转回去 → 走 → 再回头」 |
+| 转身要整个人转，从近侧转 | 回头看人时脚、髋、肩、脸一起转，从离对方近的那一侧转（人能转约 135°） | 身体背对、只扭脖子，挥手的手和抱箱子的手挤在同一侧，像猫头鹰 |
+| 方向用画面坐标写 | 写 "toward the LOWER-LEFT of the frame, toward the SUV"、"the arm on the LEFT side of the frame"，渲染提示词再写明 "turns to her RIGHT / LEFT" | 只写 "toward her dad"，模型选了画面右侧 |
+| 视线单独写 | "looks directly into her eyes, nose pointing at her face; NOT at the camera" | 要求爸爸「和后一帧姿势完全一样」，他就照搬了目送远处的方向，没看女儿 |
+| 先想清楚整场戏的拍子 | 先列出这场戏有哪几拍（道别 → 转身走 → 回头挥手），首帧应该是第一拍，不是中间状态 | 首帧选了「已经背对着走」，缺了道别那一拍 |
+
+**参考图流程**（用户定的做法）
+1. **人物三视图**：正面、90° 侧面、背面，中性站姿，双手空着自然下垂，头和身体始终同向。**不带动作，也不拿道具**；箱子、台灯这些道具写在首尾帧的提示词里。带了扭头动作的三视图会被模型当成人物特征，复制到后面的帧里。
+2. **空环境图**：没有人，把路线（这次是那条水泥路）定下来，人物站位要留出空间。不要用 `edit_of` 从带人的帧去删人：这样做机位会被推近，路也会被挤到画面边上。应该拿原帧当参考图，把构图逐项写清楚。
+3. **首尾帧都用 `edit_of` 环境图生成**，加上三视图作为参考图。两帧共用同一张底，路和草坪就不会变。
+4. 不动的人物（爸爸）在每一帧里位置、大小都要一样，可以把另一帧也放进参考图，并写明 "stand in EXACTLY the same spot"。这样画面里只有一个人在动，H3 补得最顺。
+
+**首尾同图的镜头只截前半段**：做个动作再回原位的镜头（转身转回、举杯），前半段是动作，后半段是复原，H3 还常在后半段推近再拉回。TryOnSwap 第六批每段只截 2.5 s，就没有出现复原感（11-18 复查 PawMotif 和 TryOnSwap 两条，均无问题；NYE 一镜自己推到了半身，用户同意保留）。
+
+**动作卡歌词**：先用 whisper 加 `--word-timestamps True` 拿到关键词的时间，比如「Mia」在 54.14 s，换算到素材里的秒数后写进提示词（"about three seconds in, blows the candle out"）。出片后量实际时间，再在 `t0` 的余量里微调。
+
+**选条要多查一项：走位方向**
+- 帧差和接触印样查不出「倒着走」：倒着走和正着走在像素上同样平滑。每条按 0%～100% 抽 8 帧，看人物大小和位置是否**单调变化**，只缩小或只放大，不能先缩后放。
+- 转身段落要放大裁切看头部：头有没有来回甩，正面和背面有没有闪，有没有凭空冒出配饰（这次有一条凭空出现了眼镜）。
+
+**一场戏多拍：一次生成还是两段接力**（`render_samples.py` 的 job 支持单独设置 `"length"`）
+- 方案一：首帧（道别）→ 尾帧（回头挥手），141 帧一次生成。
+- 方案二：A 段 首帧 → 中间帧（背对着走），73 帧；B 段 中间帧 → 尾帧，90 帧。两段共用中间帧，拼起来是一个连续长镜头。
+- 对比结果（2026-11-18，G4 一次开机 6 条，S1_T1 因冷启动超时没出片）：
+  - 方案一 S1_T2：道别、走开、回头三拍都有，方向也对。但回头挤在最后约 0.5 s 里完成，挥手只停留了不到 1 s。H3 会自己分配每一拍的时间，最后一拍往往被压缩。
+  - 方案二：A 两条都自然；B_T1 的转身用了约 0.9 s，最从容，B_T2 有一次甩头。A 末帧接 B 首帧，帧差 1.72～2.01（片内正常运动约 1～1.7，不相关镜头约 64），**直接硬接就是无缝的**，两头也没有定格帧。代价是拼起来约 6.8 s，宿舍这一镜要 6.2 s，得从前一镜借 0.6 s；而且只能剪 A 的头和 B 的尾，剪中间就会跳。
+  - 成片：`out/promo/songifted/Songifted_Story_Mia_DormS1_1080x1920.mp4` 和 `…_DormS2_…`（`story_short.py songifted-mia-s1|s2`）。用户选择**方案一**（`songifted_mia()` 默认 `dorm="s1"`），认为首尾帧一次生成的效果已经够用
 
 ## 样片出片（`render_samples.py` + `finish_sample.py`）
 
@@ -98,6 +177,7 @@ python3 workflows/08_site_channels/promo_short.py {tryonswap|songifted|pawmotif}
 python3 workflows/08_site_channels/promo_short.py {pawmotif-styles|songifted-mom|tryonswap-campaign}   # 第二批，产出 out/promo/<site>/
 ```
 
+- **合成前先测响度**（`ebur128` + `silencedetect`）：H3 原生音轨不稳定，可能只有底噪（TryOnSwap 换装 T2 只有 -30.7 LUFS），也可能开头有静音。按「H3 出现的时刻」对齐循环相位时，开头的静音会正好落在画面变化的那一刻。这时用 `audio_loop` 借别的样片的音轨，或者先做无缝音床再当 `audio` 用（见 `tryonswap-knit` 的注释）。
 - **Shorts 的简介和评论里的链接点不开**，所以网址从第 ③ 段起常驻在画面顶部居中（右上角会被 Shorts 的搜索按钮挡住）；能点的入口只有频道主页的链接和关联长视频。
 - 安全区：关键文字放在 `STEP_Y=1450` 以上；底部约 20% 会被标题、频道名、音乐条盖住。
 - 免费额度的说法照搬网站原文，限定条件也照写（Songifted 的「for eligible first-time creators」）。

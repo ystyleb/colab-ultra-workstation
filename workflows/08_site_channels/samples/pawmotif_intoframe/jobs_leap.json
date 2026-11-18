@@ -1,0 +1,24 @@
+{
+  "note": "PawMotif《Into the Frame》跃入画框：首帧客厅俯冲姿势，尾帧 = 站上真实水彩画像。",
+  "length": 192,
+  "steps": 10,
+  "style_mode": "stylized",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/pawmotif_story",
+  "jobs": [
+    {
+      "id": "PM_S2_Leap_T1",
+      "first": "kf/pm_b_framed_768x1344.png",
+      "last": "pm_portrait_768x1344.png",
+      "seed": 2026111505,
+      "prompt": "A single continuous magical shot, no cuts. In a sunlit living room, a red Doberman crouched on the rug springs forward and leaps up toward the large framed watercolor portrait of himself on the wall. As he jumps into the frame the camera flies forward with him, through the frame, and the whole image melts into flowing watercolor washes, brushstrokes and paper texture, until the screen is filled by the watercolor painting: the same Doberman, now painted in loose watercolor, sitting in a sunny painted room by a bright window, exactly like the final frame. A whoosh of air, a soft magical shimmer, a gentle chime."
+    },
+    {
+      "id": "PM_S2_Leap_T2",
+      "first": "kf/pm_b_framed_768x1344.png",
+      "last": "pm_portrait_768x1344.png",
+      "seed": 2026111506,
+      "prompt": "A single continuous magical shot, no cuts. In a sunlit living room, a red Doberman crouched on the rug springs forward and leaps up toward the large framed watercolor portrait of himself on the wall. As he jumps into the frame the camera flies forward with him, through the frame, and the whole image melts into flowing watercolor washes, brushstrokes and paper texture, until the screen is filled by the watercolor painting: the same Doberman, now painted in loose watercolor, sitting in a sunny painted room by a bright window, exactly like the final frame. A whoosh of air, a soft magical shimmer, a gentle chime."
+    }
+  ]
+}

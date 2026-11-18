@@ -1,0 +1,15 @@
+{
+ "style": "Authentic live-action 35mm film still, cinematic night interior, warm tungsten practical light mixed with cool blue window light, realistic skin texture with pores, gentle film grain, modest everyday clothing.",
+ "frames": [
+  {"name": "ts_a", "refs": ["../tryonswap/tryonswap_g-knit.webp"],
+   "prompt": "Late night (1 a.m.) in a small, lived-in apartment kitchen. A woman in her early 30s (South Asian, dark hair in a messy bun, round tortoiseshell glasses, oversized heather-grey hoodie, no makeup, tired) sits at a wooden kitchen table facing the camera, slightly left of center, medium shot from the waist up, camera at seated eye level. On the table: an open laptop seen from behind (no logo), a mug of tea, a small stack of kraft shipping mailers and a roll of tape. Behind her, clearly visible on the right, the attached sweater (exact same cream chunky cable-knit crewneck with ribbed cuffs) hangs on a wooden hanger hooked onto an open shelf. She holds a single printed sheet of paper in both hands at chest height, reading it with a frown and raised eyebrows: sticker shock. We only see the back of the sheet (no readable text). Warm pendant lamp overhead, dark blue night window behind her."},
+  {"name": "ts_b", "edit_of": "ts_a",
+   "prompt": "Change only: she has crumpled the paper into a tight ball in her raised right hand, chin up, a determined little smile, eyebrows relaxed, looking past the camera as if about to toss it."},
+  {"name": "ts_a2", "edit_of": "ts_a",
+   "prompt": "Change only: the paper is gone. She leans toward the laptop, both hands on its keyboard, focused, face lit by soft screen glow."},
+  {"name": "ts_d", "edit_of": "ts_a",
+   "prompt": "Change only: the paper is gone. She leans back in her chair with a big, relieved, genuine smile, looking at the laptop screen and raising her tea mug toward it like a toast."},
+  {"name": "ts_c", "refs": ["../tryonswap/tryonswap_g-knit.webp"],
+   "prompt": "Top-down overhead shot (camera looking straight down) of a warm wooden kitchen table at night under a lamp. The attached sweater (exact same cream chunky cable-knit crewneck) is laid perfectly flat and neatly arranged in the center of the frame, sleeves slightly folded in. From the bottom edge of the frame, a woman's two hands in grey hoodie sleeves hold a smartphone flat above the sweater, taking a photo of it (we see the back of the phone, no logo). A tea mug and a tape roll sit at the edges of the table."}
+ ]
+}

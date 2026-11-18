@@ -1,0 +1,67 @@
+{
+  "note": "PawMotif 第五批《Under the Tree》：人物和狗是 AI 生成的；画框里贴的是测试号用 golden_src.jpg 在站上真实生成的 Old World 油画（job 1867f515）。",
+  "length": 141,
+  "steps": 10,
+  "style_mode": "photorealistic",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/pawmotif_story5",
+  "realism_lora_strength": 0.5,
+  "jobs": [
+    {
+      "id": "PT_S1_Gift_T1",
+      "first": "kf/pt_a_768x1344.png",
+      "last": "kf/pt_a_768x1344.png",
+      "seed": 2026111609,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Christmas morning in a cozy living room by a lit tree. A woman in a cream cable-knit sweater playfully slides a flat kraft-paper present with a red velvet bow across the rug to a man in tartan flannel pajamas. He picks it up, gives it a curious little shake next to his ear, laughs, and sets it back down in front of him, reaching for the ribbon, exactly as at the end. Behind them a Golden Retriever with a green collar lifts its head and wags its tail. Soft laughter, crinkling paper, warm room tone."
+    },
+    {
+      "id": "PT_S1_Gift_T2",
+      "first": "kf/pt_a_768x1344.png",
+      "last": "kf/pt_a_768x1344.png",
+      "seed": 2026111610,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Christmas morning in a cozy living room by a lit tree. A woman in a cream cable-knit sweater playfully slides a flat kraft-paper present with a red velvet bow across the rug to a man in tartan flannel pajamas. He picks it up, gives it a curious little shake next to his ear, laughs, and sets it back down in front of him, reaching for the ribbon, exactly as at the end. Behind them a Golden Retriever with a green collar lifts its head and wags its tail. Soft laughter, crinkling paper, warm room tone."
+    },
+    {
+      "id": "PT_S2_Reveal_T1",
+      "first": "kf/pt_b_framed_768x1344.png",
+      "last": "kf/pt_b_framed_768x1344.png",
+      "seed": 2026111611,
+      "prompt": "r34l1sm, A close point-of-view shot, very gentle handheld, no zoom, no cuts. His hands hold an opened gift in his lap: an ornate antique-gold frame with a classical oil painting of a Golden Retriever lying on a Persian rug. His thumbs slowly brush along the gilded frame, the torn kraft paper rustles and slides, his hands tremble slightly with emotion. The oil painting itself stays perfectly still and unchanged. A soft surprised exhale, paper rustling."
+    },
+    {
+      "id": "PT_S2_Reveal_T2",
+      "first": "kf/pt_b_framed_768x1344.png",
+      "last": "kf/pt_b_framed_768x1344.png",
+      "seed": 2026111612,
+      "prompt": "r34l1sm, A close point-of-view shot, very gentle handheld, no zoom, no cuts. His hands hold an opened gift in his lap: an ornate antique-gold frame with a classical oil painting of a Golden Retriever lying on a Persian rug. His thumbs slowly brush along the gilded frame, the torn kraft paper rustles and slides, his hands tremble slightly with emotion. The oil painting itself stays perfectly still and unchanged. A soft surprised exhale, paper rustling."
+    },
+    {
+      "id": "PT_S3_Mirror_T1",
+      "first": "kf/pt_c_framed_768x1344.png",
+      "last": "kf/pt_d_framed_768x1344.png",
+      "seed": 2026111613,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Christmas morning: an ornate gold-framed oil painting of a Golden Retriever lying on a rug is propped under the Christmas tree. The real Golden Retriever with a green collar walks up to the painting, sniffs it curiously, turns around and lies down right in front of it in exactly the same pose as the dog in the painting, head up, mouth open in a happy smile. The couple on the left bursts out laughing, she covers her mouth, he points at the dog. The painting stays perfectly still. Laughter, a happy dog huff."
+    },
+    {
+      "id": "PT_S3_Mirror_T2",
+      "first": "kf/pt_c_framed_768x1344.png",
+      "last": "kf/pt_d_framed_768x1344.png",
+      "seed": 2026111614,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Christmas morning: an ornate gold-framed oil painting of a Golden Retriever lying on a rug is propped under the Christmas tree. The real Golden Retriever with a green collar walks up to the painting, sniffs it curiously, turns around and lies down right in front of it in exactly the same pose as the dog in the painting, head up, mouth open in a happy smile. The couple on the left bursts out laughing, she covers her mouth, he points at the dog. The painting stays perfectly still. Laughter, a happy dog huff."
+    },
+    {
+      "id": "PT_S4_Mantel_T1",
+      "first": "kf/pt_e_framed_768x1344.png",
+      "last": "kf/pt_e_zoom_768x1344.png",
+      "seed": 2026111615,
+      "prompt": "r34l1sm, A single continuous slow push-in toward the painting, no cuts. Christmas evening, a cozy room lit by a crackling fire and fairy lights on the mantel garland. Above the mantel hangs an ornate gold-framed classical oil painting of a Golden Retriever lying on a Persian rug. As the camera glides closer, the painted dog inside the painting slowly turns its head toward the viewer, gives one slow gentle blink and a soft smile, then turns back to its original pose exactly as at the end. Everything inside the frame stays oil-paint brushwork on canvas. Crackling fire, a soft music-box twinkle."
+    },
+    {
+      "id": "PT_S4_Mantel_T2",
+      "first": "kf/pt_e_framed_768x1344.png",
+      "last": "kf/pt_e_zoom_768x1344.png",
+      "seed": 2026111616,
+      "prompt": "r34l1sm, A single continuous slow push-in toward the painting, no cuts. Christmas evening, a cozy room lit by a crackling fire and fairy lights on the mantel garland. Above the mantel hangs an ornate gold-framed classical oil painting of a Golden Retriever lying on a Persian rug. As the camera glides closer, the painted dog inside the painting slowly turns its head toward the viewer, gives one slow gentle blink and a soft smile, then turns back to its original pose exactly as at the end. Everything inside the frame stays oil-paint brushwork on canvas. Crackling fire, a soft music-box twinkle."
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+ "style": "Casual but sharp smartphone photo (iPhone main camera), natural soft daylight, realistic everyday look, true-to-life colors, no filters, no artistic styling.",
+ "frames": [
+  {"name": "golden_src",
+   "prompt": "A real pet owner's phone photo of their dog: an adult male English-cream-to-light-gold Golden Retriever (medium-gold coat, soft feathering on legs, chest and tail, friendly dark brown eyes, black nose) wearing a forest-green fabric collar with a small round brass tag. The dog lies down on a light oak living-room floor in a classic sphinx pose, seen from the side in three-quarter profile facing left: front legs stretched forward, head up, mouth slightly open in a relaxed smile, looking toward the left. The ENTIRE dog is visible from nose to tail tip with some floor margin around it, the dog fills about 70% of the image width, centered vertically in the middle of the frame. Plain warm off-white wall behind, a bit of window light from the left. Camera at the dog's eye level, about 2 m away. Nothing else in frame, no people."},
+  {"name": "sweater_src",
+   "prompt": "An e-commerce seller's own flat-lay product photo, shot straight down from above: ONE women's Christmas Fair Isle crewneck sweater laid perfectly flat and symmetrical on a plain warm-white cotton sheet, sleeves extended slightly outward. The sweater: deep forest-green base wool, a cream and burgundy-red Nordic Fair Isle yoke band of small snowflakes and tiny reindeer across the chest and shoulders, thin cream-and-red stripes on the cuffs and hem, ribbed collar, cuffs and hem. Opaque chunky wool knit with visible stitch texture. The sweater fills about 85% of the frame, fully visible with a little margin, centered. Even soft daylight, no props, no hands, no hanger, no tags, no text."}
+ ]
+}

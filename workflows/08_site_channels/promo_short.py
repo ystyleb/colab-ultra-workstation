@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import argparse
 import subprocess
+from functools import partial
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
@@ -119,10 +120,14 @@ def wrap(d: ImageDraw.ImageDraw, text: str, f, maxw: int) -> list[str]:
 TS = {"bg": (12, 11, 10), "ivory": (242, 237, 229), "gold": (200, 164, 107), "muted": (160, 152, 140)}
 
 
-def tryonswap_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
-    """逐帧产出 RGB Image。src = samples/tryonswap 目录。"""
+def tryonswap_frames(src: Path, clip: Path, clip_start: int, clip_end: int, *,
+                     garment_keys=("coat", "knit", "trousers", "loafers"), hook=("One photo.", "Any outfit.")):
+    """逐帧产出 RGB Image。src = samples/tryonswap 目录。
+
+    garment_keys = ② 里弹入的单品（tryonswap_g-<key>.webp），要和尾帧那张站上试穿图实际用的单品一致；hook = ① 两行大标题。
+    """
     model = Image.open(src / "tryonswap_model-a_768x1344.png").convert("RGB")
-    garments = [Image.open(src / f"tryonswap_g-{g}.webp").convert("RGB") for g in ("coat", "knit", "trousers", "loafers")]
+    garments = [Image.open(src / f"tryonswap_g-{g}.webp").convert("RGB") for g in garment_keys]
     icon = Image.open(src / "tryonswap_icon_512.png").convert("RGBA")
     serif = lambda n: font("cormorant", n, "SemiBold")  # noqa: E731
     sans = lambda n, w="SemiBold": font("manrope", n, w)  # noqa: E731
@@ -148,17 +153,20 @@ def tryonswap_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
         img.alpha_composite(fade, (0, PHOTO_Y))
         d = ImageDraw.Draw(img)
         a = int(255 * ease_out(i / 8))
-        d.text((W // 2, 230), "One photo.", font=serif(150), fill=TS["ivory"] + (a,), anchor="mm")
-        d.text((W // 2, 380), "Any outfit.", font=serif(150), fill=TS["gold"] + (a,), anchor="mm")
+        d.text((W // 2, 230), hook[0], font=serif(150), fill=TS["ivory"] + (a,), anchor="mm")
+        d.text((W // 2, 380), hook[1], font=serif(150), fill=TS["gold"] + (a,), anchor="mm")
         pill(d, W // 2, STEP_Y, "1  Upload a photo of the person", sans(42), TS["bg"], TS["ivory"] + (240,))
         yield img.convert("RGB")
 
     # ② 产品动作：2.0–4.6s，暗底「人 + 4 件单品」依次弹入，模拟站上 Model + Garment 两个上传框
     n2 = int(2.6 * FPS)
     mcard = rounded(cover_fit(model, 420, 735, 0.3), 28)
-    gcards = [rounded(contain(g, 270, 330, (246, 243, 237)), 22) for g in garments]
-    gpos = [(700, 640), (980 - 10, 640), (700, 1010), (980 - 10, 1010)]
-    gpos = [(x - 30, y) for x, y in gpos]
+    if len(garments) <= 2:  # 两件：右侧上下排，卡片放大
+        gcards = [rounded(contain(g, 330, 360, (246, 243, 237)), 22) for g in garments]
+        gpos = [(810, 640), (810, 1030)][: len(garments)]
+    else:
+        gcards = [rounded(contain(g, 270, 330, (246, 243, 237)), 22) for g in garments]
+        gpos = [(670, 640), (940, 640), (670, 1010), (940, 1010)][: len(garments)]
     for i in range(n2):
         img = Image.new("RGBA", (W, H), TS["bg"] + (255,))
         d = ImageDraw.Draw(img)
@@ -185,7 +193,8 @@ def tryonswap_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
         if i < int(3.5 * FPS):
             a = int(255 * min(1.0, i / 6))
             pill(d, W // 2, STEP_Y, "3  Get the new look in ~1 min", sans(42), TS["bg"] + (a,), TS["ivory"] + (min(a, 240),))
-        d.text((W // 2, STEP_Y + 85), "Try-on image: TryOnSwap  ·  Motion: AI video", font=sans(26, "Medium"), fill=(242, 237, 229, 170), anchor="mm")
+        # 深底胶囊：浅色影棚背景上白字看不清，AI 标注必须可读
+        pill(d, W // 2, STEP_Y + 85, "Try-on image: TryOnSwap  ·  Motion: AI video", sans(26, "Medium"), TS["ivory"], TS["bg"] + (200,), pad=(20, 8))
         yield img.convert("RGB")
 
     # ④ 落版：网址 + 免费额度
@@ -894,6 +903,236 @@ def pawmotif_styles_frames(src: Path, clip: Path, clip_start: int, clip_end: int
         yield img.convert("RGB")
 
 
+PM_BOX = (108, 360, 864, 1512)  # 照片→画像 H3 片段在画面里的位置 (x, y, w, h)：缩到 0.8，顶部留给标题/网址，不压耳朵
+
+
+def pawmotif_photo2art_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
+    """Photo → Portrait：① 手机原照 → ② 选 Botanical + 站上原文按钮 → ③ H3 FL2VA（原照一路画成画像）
+    → 停在站上真实生成的那张画像上 → ④ 落版。
+
+    H3 的尾帧只是「接近」站上的画像，所以 ③ 最后要交叉淡化到真实下载的 PNG，观众最后看到的是产品真正的输出。
+    ① 的照片 == H3 首帧（同一张 768x1344、同位置），① → ② → ③ 的衔接只在 ② 那一段换画面。
+    """
+    photo = Image.open(src / "pawmotif_doberman_head_photo_768x1344.png").convert("RGB")
+    art = Image.open(src / "pawmotif_doberman_head_botanical_768x1344.png").convert("RGB")
+    cache = HERE / ".cache" / "pawmotif"
+    styles = [("watercolor-portrait", "Watercolor"), ("old-world-portrait", "Old World Oil"), ("golden-portrait", "Botanical"), ("pencil-portrait", "Colored Pencil")]
+    icon = rounded(Image.open(HERE / "out" / "pawmotif" / "avatar_800.png").convert("RGB").resize((210, 210), Image.LANCZOS), 105)
+    sans = lambda n, w="SemiBold": font("dmsans", n, w)  # noqa: E731
+    bx, by, bw, bh = PM_BOX
+    shadow = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+    ImageDraw.Draw(shadow).rounded_rectangle((bx + 8, by + 14, bx + bw + 8, by + bh + 14), radius=26, fill=(40, 40, 30, 70))
+    shadow = shadow.filter(ImageFilter.GaussianBlur(14))
+
+    def boxed(im: Image.Image) -> Image.Image:
+        c = Image.new("RGBA", (W, H), PM["paper"] + (255,))
+        c.alpha_composite(shadow)
+        c.alpha_composite(rounded(im.resize((bw, bh), Image.LANCZOS), 22), (bx, by))
+        return c
+
+    def url_badge(d):
+        pill(d, W // 2, 190, "pawmotif.com", sans(44, "Bold"), PM["white"], PM["ink"] + (235,), pad=(36, 18))
+
+    # ① 钩子 + 输入：手机随手拍的原照（就是 H3 的首帧）
+    n1 = int(2.0 * FPS)
+    photo_box = boxed(photo)
+    for i in range(n1):
+        img = photo_box.copy()
+        d = ImageDraw.Draw(img)
+        a = int(255 * ease_out(i / 8))
+        d.text((W // 2, 150), "Just a phone photo", font=pm_serif(88), fill=PM["ink"] + (a,), anchor="mm")
+        d.text((W // 2, 262), "of my dog…", font=pm_serif(88, True), fill=PM["olive"] + (a,), anchor="mm")
+        pill(d, W // 2, STEP_Y, "1  Upload one photo of your pet", sans(42), PM["white"], PM["ink"] + (240,))
+        yield img.convert("RGB")
+
+    # ② 产品动作：站上真实风格样图，Botanical 被选中，弹出站上原文按钮
+    n2 = int(2.2 * FPS)
+    cards = [(rounded(cover_fit(Image.open(cache / f"{k}.webp").convert("RGB"), 340, 360, 0.3), 24), name) for k, name in styles]
+    pos = [(330, 600), (750, 600), (330, 1080), (750, 1080)]
+    pick = 2
+    for i in range(n2):
+        img = Image.new("RGBA", (W, H), PM["paper"] + (255,))
+        d = ImageDraw.Draw(img)
+        d.text((W // 2, 230), "Pick an art style", font=pm_serif(96), fill=PM["ink"], anchor="mm")
+        d.text((W // 2, 345), "and preview it free", font=pm_serif(96, True), fill=PM["olive"], anchor="mm")
+        sel = i > 20
+        for k, ((card, name), (cx, cy)) in enumerate(zip(cards, pos)):
+            sc = ease_out_back((i - k * 3) / 9)
+            if k == pick and sel:
+                sc *= 1.0 + 0.04 * ease_out((i - 20) / 6)
+                r, rh = int(card.width * sc / 2) + 12, int(card.height * sc / 2) + 12
+                d.rounded_rectangle((cx - r, cy - rh, cx + r, cy + rh), radius=32, outline=PM["olive"], width=10)
+            paste_scaled(img, card, cx, cy, sc)
+            if sc > 0.5:
+                d.text((cx, cy + 218), name, font=sans(34, "Medium"), fill=PM["ink"] if (k == pick and sel) else PM["muted"], anchor="mm")
+        if i > n2 - 16:
+            btn = Image.new("RGBA", (640, 110), (0, 0, 0, 0))
+            bd = ImageDraw.Draw(btn)
+            bd.rounded_rectangle((0, 0, 639, 109), radius=8, fill=PM["olive"])
+            bd.text((320, 55), "Create my free preview  →", font=sans(42, "Bold"), fill=PM["white"], anchor="mm")
+            paste_scaled(img, btn, W // 2, 1395, ease_out_back((i - (n2 - 16)) / 8))
+        pill(d, W // 2, 1510, "2  Choose from 6 art styles", sans(40), PM["white"], PM["ink"])
+        yield img.convert("RGB")
+
+    # ③ 结果：H3 照片 → 画像，然后交叉淡化到站上真实下载的画像并停住
+    def overlay(img: Image.Image, k: int, real: bool) -> Image.Image:
+        d = ImageDraw.Draw(img)
+        url_badge(d)
+        if k < int(3.2 * FPS):
+            a = int(255 * min(1.0, k / 6))
+            pill(d, W // 2, STEP_Y, "3  Your portrait in about a minute", sans(42), PM["white"] + (a,), PM["ink"] + (min(a, 240),))
+        cap = "The real PawMotif portrait from that photo" if real else "Real photo → PawMotif Botanical portrait  ·  Transition: AI video"
+        pill(d, W // 2, STEP_Y + 85, cap, sans(26, "Medium"), PM["ink"], PM["paper"] + (225,), pad=(20, 8))
+        return img.convert("RGB")
+
+    k, last = 0, None
+    for fr in clip_frames(clip, clip_start, clip_end):
+        last = fr
+        yield overlay(boxed(fr), k, False)
+        k += 1
+    art_box, n_x, n_hold = boxed(art), 8, int(1.6 * FPS)
+    last_box = boxed(last) if last is not None else art_box
+    for j in range(n_x + n_hold):
+        img = Image.blend(last_box, art_box, min(1.0, (j + 1) / n_x)) if j < n_x else art_box.copy()
+        yield overlay(img, k, j >= n_x // 2)
+        k += 1
+
+    # ④ 落版：价格/免费预览照抄网站原文（brand.json offer.verbatim）
+    n4 = int(2.8 * FPS)
+    for i in range(n4):
+        img = Image.new("RGBA", (W, H), PM["paper"] + (255,))
+        d = ImageDraw.Draw(img)
+        paste_scaled(img, icon, W // 2, 520, ease_out_back(i / 10))
+        d.text((W // 2, 760), "PawMotif", font=pm_serif(150), fill=PM["ink"], anchor="mm")
+        d.text((W // 2, 910), "pawmotif.com", font=sans(78, "Bold"), fill=PM["olive"], anchor="mm")
+        d.text((W // 2, 1050), "Custom pet portraits from your photo", font=sans(44, "Medium"), fill=PM["ink"], anchor="mm")
+        pill(d, W // 2, 1190, "Preview your portrait free", sans(44, "Bold"), PM["white"], PM["olive"], pad=(40, 20))
+        d.text((W // 2, 1290), "No card needed until you decide to buy.", font=sans(34, "Medium"), fill=PM["ink"], anchor="mm")
+        d.text((W // 2, 1345), "$29 USD · one-time digital artwork", font=sans(34, "Medium"), fill=PM["ink"], anchor="mm")
+        d.text((W // 2, 1420), "Link on our channel page", font=sans(36, "Medium"), fill=PM["muted"], anchor="mm")
+        yield img.convert("RGB")
+
+
+# /demos/for-wife.mp3（站上 /custom-song-for-wife 的示例歌「Always Going To Be You (for Nora)」，页面原文：
+# "A real song made with Songifted — nothing edited or cherry-picked"）。mlx_whisper small 词级时间戳（44 s 起截 30 s 识别）
+SGW_CHORUS = 53.28
+SGW_LEAD = int(2.4 * FPS) / FPS + int(2.2 * FPS) / FPS  # ①②；歌从 SGW_CHORUS - SGW_LEAD 起放，片头唱 "...that's the one I keep"
+SGW_LYRICS = [(53.28, 57.38, "Nora, it was always", "gonna be you"), (58.58, 63.50, "Not the big nights,", "the ones that nobody knew")]
+
+
+def songifted_wife_frames(src: Path, clip: Path, clip_start: int, clip_end: int):
+    """A song for his wife：① 一句话写下 Nora → ② 歌词确认 → ③ H3 反应片 + 副歌字幕（Nora 高亮）→ ④ 落版。"""
+    icon = rounded(Image.open(HERE / "out" / "songifted" / "avatar_800.png").convert("RGB").resize((200, 200), Image.LANCZOS), 100)
+    serif = lambda n, w="SemiBold": font("fraunces", n, w)  # noqa: E731
+    sans = lambda n, w="SemiBold": font("dmsans", n, w)  # noqa: E731
+    bg = Image.new("RGBA", (W, H))
+    for y in range(H):
+        t = y / H
+        ImageDraw.Draw(bg).line((0, y, W, y), fill=tuple(int(a + (b - a) * t) for a, b in zip(SG["cream"], SG["cream2"])) + (255,))
+    NAME = "Nora"
+
+    def name_line(d, x: float, y: int, line: str, f, fb, col, hi, a: int = 255, anchor="la"):
+        """一行歌词，NAME 用粗体高亮。anchor 'la' 左对齐 / 'mm' 居中。"""
+        parts = line.split(NAME, 1) if NAME in line else [line]
+        segs = [(parts[0], f, col)] + ([(NAME, fb, hi), (parts[1], f, col)] if len(parts) == 2 else [])
+        if anchor == "mm":
+            x = (W - sum(d.textlength(s, font=ff) for s, ff, _ in segs)) / 2
+        for s, ff, c in segs:
+            d.text((x, y), s, font=ff, fill=c + (a,), anchor="lm" if anchor == "mm" else "la")
+            x += d.textlength(s, font=ff)
+
+    def card(d, box, label: str):
+        x0, y0, x1, y1 = box
+        d.rounded_rectangle((x0 + 6, y0 + 10, x1 + 6, y1 + 10), radius=34, fill=(120, 80, 60, 40))
+        d.rounded_rectangle(box, radius=34, fill=SG["white"] + (255,))
+        d.text((x0 + 56, y0 + 62), label, font=sans(34, "Bold"), fill=SG["muted"], anchor="lm")
+
+    # ① 钩子 + 输入：打字机写下关于 Nora 的一句话（细节取自示例歌歌词本身）
+    brief = "Our 12th anniversary. Nora made toast at midnight the night the rain came through the window we never fixed."
+    n1 = int(2.4 * FPS)
+    for i in range(n1):
+        img = bg.copy()
+        d = ImageDraw.Draw(img)
+        a = int(255 * ease_out(i / 8))
+        d.text((W // 2, 250), "A song for his wife,", font=serif(96), fill=SG["ink"] + (a,), anchor="mm")
+        d.text((W // 2, 370), "with her name in it.", font=serif(96), fill=SG["coral"] + (a,), anchor="mm")
+        card(d, (90, 560, W - 90, 1240), "Tell us about her")
+        k = int(len(brief) * min(1.0, max(0.0, (i - 4) / (n1 - 12))))
+        f = serif(56, "Regular")
+        y, line = 680, ""
+        for line in wrap(d, brief[:k], f, W - 300):
+            d.text((150, y), line, font=f, fill=SG["ink"], anchor="la")
+            y += 80
+        if (i // 6) % 2 == 0 and k < len(brief):
+            cx = 150 + d.textlength(line, font=f) + 6
+            d.rectangle((cx, y - 74, cx + 4, y - 14), fill=SG["coral"])
+        pill(d, W // 2, STEP_Y, "1  Share a few words about her", sans(42), SG["white"], SG["ink"])
+        yield img.convert("RGB")
+
+    # ② 产品动作：我们写词，你确认（站首页原话：You approve the lyrics before we sing it）
+    n2 = int(SGW_LEAD * FPS) - n1
+    lyr = ["Twelve years on, we still bring up that night", "Nora, it was always gonna be you", "Not the big nights,", "the ones that nobody knew"]
+    probe = ImageDraw.Draw(bg.copy())
+    sz = 52  # 四句统一字号：按最长那句缩
+    while sz > 38 and max(probe.textlength(l, font=serif(sz, "Regular")) for l in lyr) > W - 300:
+        sz -= 2
+    for i in range(n2):
+        img = bg.copy()
+        d = ImageDraw.Draw(img)
+        d.text((W // 2, 250), "We write the lyrics.", font=serif(96), fill=SG["ink"], anchor="mm")
+        d.text((W // 2, 370), "You approve them.", font=serif(96), fill=SG["coral"], anchor="mm")
+        card(d, (90, 560, W - 90, 1280), "Your lyrics")
+        for j, line in enumerate(lyr):
+            a = int(255 * ease_out((i - j * 4) / 6))
+            name_line(d, 146, 720 + j * 92, line, serif(sz, "Regular"), serif(sz, "Bold"), SG["ink"], SG["coral"], a)
+        if i > n2 - 20:
+            btn = Image.new("RGBA", (460, 110), (0, 0, 0, 0))
+            bd = ImageDraw.Draw(btn)
+            bd.rounded_rectangle((0, 0, 459, 109), radius=55, fill=SG["coral"])
+            bd.text((230, 55), "Approve lyrics", font=sans(44, "Bold"), fill=SG["white"], anchor="mm")
+            paste_scaled(img, btn, W // 2, 1170, ease_out_back((i - (n2 - 20)) / 10))
+        pill(d, W // 2, STEP_Y, "2  Approve the lyrics", sans(42), SG["white"], SG["ink"])
+        yield img.convert("RGB")
+
+    # ③ 结果：反应片 + 副歌字幕（Nora 高亮），网址常驻顶部
+    for i, fr in enumerate(clip_frames(clip, clip_start, clip_end)):
+        img = Image.new("RGBA", (W, H), SG["ink"] + (255,))
+        img.paste(fr, (0, (H - fr.height) // 2))
+        d = ImageDraw.Draw(img)
+        pill(d, W // 2, 190, "songifted.com", sans(44, "Bold"), SG["white"], SG["coral"], pad=(36, 18))
+        t_song = SGW_CHORUS + i / FPS
+        for a0, a1, l1, l2 in SGW_LYRICS:
+            if a0 - 0.1 <= t_song < a1:
+                fa = int(255 * min(1.0, (t_song - a0 + 0.1) / 0.15, (a1 - t_song) / 0.15))
+                band = Image.new("RGBA", (W, 300), (0, 0, 0, 0))
+                bd = ImageDraw.Draw(band)
+                bd.rounded_rectangle((70, 0, W - 70, 270), radius=36, fill=(43, 29, 22, int(fa * 0.62)))
+                for row, line in enumerate((l1, l2)):
+                    name_line(bd, 0, 80 + row * 110, line, serif(68), serif(68, "Bold"), SG["white"], (255, 168, 140), fa, anchor="mm")
+                img.alpha_composite(band, (0, 1130))
+        if i < int(2.5 * FPS):
+            a = int(255 * min(1.0, i / 6))
+            pill(d, W // 2, STEP_Y, "3  Play it. Watch her face.", sans(42), SG["white"] + (a,), SG["coral"] + (a,))
+        # brand.json disclosure.rules：示例歌名字是虚构的要写 fictional；反应画面写 AI dramatization
+        pill(d, W // 2, STEP_Y + 85, "Example song from songifted.com (fictional \"Nora\")  ·  Scene: AI dramatization", sans(26, "Medium"),
+             SG["white"], SG["ink"] + (200,), pad=(20, 8))
+        yield img.convert("RGB")
+
+    # ④ 落版：免费额度照抄网站原文，限定条件照写
+    n4 = int(2.8 * FPS)
+    for i in range(n4):
+        img = bg.copy()
+        d = ImageDraw.Draw(img)
+        paste_scaled(img, icon, W // 2, 560, ease_out_back(i / 10))
+        d.text((W // 2, 790), "Songifted", font=serif(150), fill=SG["ink"], anchor="mm")
+        d.text((W // 2, 940), "songifted.com", font=sans(78, "Bold"), fill=SG["coral"], anchor="mm")
+        d.text((W // 2, 1090), "A song with her name in it.", font=sans(46, "Medium"), fill=SG["ink"], anchor="mm")
+        pill(d, W // 2, 1240, "Free 45-second preview", sans(46, "Bold"), SG["white"], SG["coral"], pad=(40, 20))
+        d.text((W // 2, 1340), "for eligible first-time creators", font=sans(32, "Medium"), fill=SG["muted"], anchor="mm")
+        d.text((W // 2, 1420), "Link on our channel page", font=sans(36, "Medium"), fill=SG["muted"], anchor="mm")
+        yield img.convert("RGB")
+
+
 RECIPES = {
     "tryonswap": dict(
         src="samples/tryonswap", clip="out/samples/tryonswap/TryOnSwap_SpinSwap_Coat_Master.mp4", start=1, end=188,
@@ -932,6 +1171,32 @@ RECIPES = {
         out="out/promo/songifted/Songifted_Promo_Birthday_1080x1920.mp4", frames=songifted_frames,
         audio="samples/songifted/songifted_demo_birthday.mp3", audio_start=SG_CHORUS - SG_LEAD,
     ),
+    # ---- 第三批（2026-11-13，H3 FL2VA，一次开机 6 条挑 3 条，G4 33 分钟，实耗 5.03 CCU） ----
+    # 选片：PawMotif T2（先抬头再一笔笔画进来；T1 是平叠化）；TryOnSwap T2（第 74 帧背身瞬间换装，全程不切镜）——
+    #       T1 作废：提示词禁了近景仍硬切到脸部/臀部特写（第 27/70/166 帧帧差 65–91）；Songifted T1（T2 第 163 帧抬手糊成一团）
+    # 照片 → 画像：首帧杜宾头部原照，尾帧 = 同一张照片在站上测试号生成的 Botanical（job 8ec5dc7c）。
+    # T2 原生音轨开头 0.66 s 静音，按 H3 出现时刻对齐循环会正好在「开始变画」那一刻没声音，所以借第一批杜宾 Living Portrait 的钢琴（全程无静音）
+    "pawmotif-photo2art": dict(
+        src="samples/pawmotif_photo2portrait", clip="out/samples/pawmotif/PawMotif_Photo2Botanical_T2_Master.mp4", start=0, end=190,
+        out="out/promo/pawmotif/PawMotif_Promo_Photo2Botanical_1080x1920.mp4", frames=pawmotif_photo2art_frames,
+        audio_loop="out/samples/pawmotif/PawMotif_LivingDoberman_T1_Master.mp4",
+    ),
+    # 转身换装 v2：尾帧是第二批站上 Studio 场景图（model-a + 毛衣 + 阔腿裤），面料不透。
+    # T2 原生音轨只有影棚底噪（-30.7 LUFS），改用第一批大衣样片的音轨（和 tryonswap-campaign 同一段音乐，频道声音统一）。
+    # 大衣音轨开头有 0.33 s 静音，直接循环会在片中留 0.3 s 空档，所以先去掉静音、交叉淡化接三遍做成无缝音床：
+    #   ffmpeg -i out/samples/tryonswap/TryOnSwap_SpinSwap_Coat_Master.mp4 -filter_complex "[0:a]atrim=0.36:7.98,asetpts=PTS-STARTPTS,
+    #   asplit=3[a][b][c];[a][b]acrossfade=d=0.3[ab];[ab][c]acrossfade=d=0.3[o]" -map "[o]" -c:a aac -b:a 192k out/samples/tryonswap/tryonswap_coat_bed.m4a
+    "tryonswap-knit": dict(
+        src="samples/tryonswap", clip="out/samples/tryonswap/TryOnSwap_SpinKnit_T2_Master.mp4", start=1, end=188,
+        audio="out/samples/tryonswap/tryonswap_coat_bed.m4a", audio_start=0.0,
+        out="out/promo/tryonswap/TryOnSwap_Promo_KnitSpin_1080x1920.mp4",
+        frames=partial(tryonswap_frames, garment_keys=("knit", "trousers"), hook=("Same model.", "New outfit.")),
+    ),
+    "songifted-wife": dict(
+        src="samples/songifted_wife", clip="out/samples/songifted/Songifted_WifeReaction_T1_Master.mp4", start=0, end=190,
+        out="out/promo/songifted/Songifted_Promo_Wife_1080x1920.mp4", frames=songifted_wife_frames,
+        audio="samples/songifted/demos/for-wife.mp3", audio_start=SGW_CHORUS - SGW_LEAD,
+    ),
 }
 
 
@@ -960,8 +1225,9 @@ def main() -> None:
     # 首尾淡入淡出，开头不留静音（Shorts 开头静音会掉留存）
     if r.get("audio"):
         a_in, a0 = ["-i", str(HERE / r["audio"])], float(r.get("audio_start", 0.0))
-    else:  # 用 clip 的原生音轨循环铺满；audio_start 可让循环相位对齐到画面里 clip 出现的时刻
-        a_in, a0 = ["-stream_loop", "-1", "-i", str(clip)], float(r.get("audio_start", 0.0))
+    else:  # 循环铺满：默认用 clip 的原生音轨；audio_loop 可借别的片子的音轨（clip 原生音轨只有底噪或开头有静音时）
+        loop_src = HERE / r["audio_loop"] if r.get("audio_loop") else clip
+        a_in, a0 = ["-stream_loop", "-1", "-i", str(loop_src)], float(r.get("audio_start", 0.0))
     subprocess.run(
         ["ffmpeg", "-v", "error", "-y", "-i", str(tmp_v), *a_in,
          "-filter_complex", f"[1:a]atrim={a0:.3f}:{a0 + dur:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.1,afade=t=out:st={dur - 0.8:.3f}:d=0.8[a]",

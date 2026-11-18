@@ -1,0 +1,25 @@
+{
+  "note": "TryOnSwap 第三批：转身换装 v2。首帧 = 首页模特 model-a，尾帧 = 第二批站长账号生成的 Studio 场景毛衣图（tryonswap_knit_studio_2k）。面料不透，提示词禁近景。",
+  "length": 192,
+  "steps": 10,
+  "style_mode": "photorealistic",
+  "realism_lora_strength": 0.7,
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/tryonswap",
+  "jobs": [
+    {
+      "id": "TryOnSwap_SpinKnit_T1",
+      "first": "../tryonswap/tryonswap_model-a_768x1344.png",
+      "last": "tryonswap_knit_studio_768x1344.png",
+      "seed": 2026111311,
+      "prompt": "r34l1sm, Clean e-commerce fashion studio video on a full-frame camera, natural soft matte skin texture with fine pores, zero oily shine, soft even studio light. A single continuous 8-second full-body head-to-toe shot from a static locked-off tripod camera at a fixed distance: no zoom, no push-in, no close-ups, no cuts. Her whole body from the top of her head to her shoes stays in frame for every second, against a seamless light-grey paper studio backdrop. A young woman with shoulder-length dark brown hair starts standing relaxed facing the camera in a white tank top, light-wash straight-leg jeans and white sneakers. She does one smooth, unhurried full turn in place, and as she turns back to face the camera her outfit has become a chunky cream cable-knit wool crewneck sweater, high-waisted charcoal wide-leg wool trousers and black leather loafers. She slips one hand into her trouser pocket and settles into a calm, natural catalog pose facing the camera, exactly as at the end. Her face, hair and the backdrop stay identical throughout. Quiet studio room tone with soft wool fabric rustle."
+    },
+    {
+      "id": "TryOnSwap_SpinKnit_T2",
+      "first": "../tryonswap/tryonswap_model-a_768x1344.png",
+      "last": "tryonswap_knit_studio_768x1344.png",
+      "seed": 2026111312,
+      "prompt": "r34l1sm, Clean e-commerce fashion studio video on a full-frame camera, natural soft matte skin texture with fine pores, zero oily shine, soft even studio light. A single continuous 8-second full-body head-to-toe shot from a static locked-off tripod camera at a fixed distance: no zoom, no push-in, no close-ups, no cuts. Her whole body from the top of her head to her shoes stays in frame for every second, against a seamless light-grey paper studio backdrop. A young woman with shoulder-length dark brown hair starts standing relaxed facing the camera in a white tank top, light-wash straight-leg jeans and white sneakers. She does one smooth, unhurried full turn in place, and as she turns back to face the camera her outfit has become a chunky cream cable-knit wool crewneck sweater, high-waisted charcoal wide-leg wool trousers and black leather loafers. She slips one hand into her trouser pocket and settles into a calm, natural catalog pose facing the camera, exactly as at the end. Her face, hair and the backdrop stay identical throughout. Quiet studio room tone with soft wool fabric rustle."
+    }
+  ]
+}

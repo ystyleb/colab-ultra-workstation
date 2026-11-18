@@ -1,0 +1,13 @@
+{
+ "style": "Authentic live-action 35mm film still, cinematic night interior, warm tungsten practical lamp light mixed with cool blue window light, realistic skin texture with pores, gentle film grain, modest everyday clothing.",
+ "frames": [
+  {"name": "tc_a", "refs": ["../inputs_1116/kf/sweater_src_raw.png"],
+   "prompt": "11:40 p.m. in a small home studio set up in a spare bedroom: a folded white paper backdrop on a stand, a switched-off ring light, a clothing rack crowded with holiday knit sweaters in greens, reds and creams. Hanging front and center on the rack, clearly visible behind her on the right, is the attached sweater (exact same deep forest-green Fair Isle crewneck with cream and burgundy snowflake-and-reindeer yoke) on a wooden hanger. A woman around 29 (Korean American, straight black shoulder-length hair pulled up in a claw clip, small silver hoops, oversized charcoal sweatshirt, no makeup, tired) sits on a wooden stool facing the camera slightly left of center, medium shot from the waist up, camera at seated eye level. She holds her phone in both hands at chest height reading a message (screen faces her, not visible), her face falling: eyebrows up, lips parted, shocked and dismayed. A desk lamp and an open laptop seen from behind (no logo) on a small desk at the left edge. Dark blue night window behind."},
+  {"name": "tc_b", "edit_of": "tc_a",
+   "prompt": "Change only: she slumps forward on the stool, forehead resting in her left palm, eyes closed, the phone lowered in her right hand on her knee, a long defeated exhale."},
+  {"name": "tc_c", "refs": ["../inputs_1116/kf/sweater_src_raw.png"],
+   "prompt": "Top-down overhead shot (camera looking straight down) of a neatly made bed with a plain white duvet at night under warm lamp light. The attached sweater (exact same deep forest-green Fair Isle crewneck with the cream and burgundy snowflake-and-reindeer yoke and striped cuffs) is laid perfectly flat and symmetrical in the center of the frame. From the bottom edge, a woman's two hands in charcoal sweatshirt sleeves hold a smartphone flat above the sweater, taking a photo of it (we see the back of the phone, no logo). A claw clip and a lint roller lie at the edge of the duvet."},
+  {"name": "tc_d", "edit_of": "tc_a",
+   "prompt": "Change only: it is midnight. She has turned toward the small desk at the left and sits facing the open laptop (still seen from behind, no logo), both arms thrown up in victory, laughing with a huge genuine smile, eyes bright, her phone lit up in her right hand. The laptop screen glow lights her face."}
+ ]
+}

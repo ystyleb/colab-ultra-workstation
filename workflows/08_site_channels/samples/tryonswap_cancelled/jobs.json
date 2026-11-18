@@ -1,0 +1,67 @@
+{
+  "note": "TryOnSwap 第五批《Model Cancelled》（黑五前夜）：卖家是 AI 生成的成年人；雪夜街景镜头首尾帧 = 站长账号在站上真实生成的 Custom 场景图（#e353）。",
+  "length": 141,
+  "steps": 10,
+  "style_mode": "photorealistic",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/tryonswap_story5",
+  "realism_lora_strength": 0.7,
+  "jobs": [
+    {
+      "id": "TC_S2_Flat_T1",
+      "first": "kf/tc_c_768x1344.png",
+      "last": "kf/tc_c_768x1344.png",
+      "seed": 2026111601,
+      "prompt": "r34l1sm, Top-down overhead shot, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. At night on a white duvet, a forest-green Fair Isle Christmas sweater lies perfectly flat. A woman's hands in charcoal sweatshirt sleeves hold a smartphone above it, tap the screen to take a photo, tilt the phone a little, tap again, then hold still exactly as at the start. The sweater does not move. Soft camera shutter clicks, quiet room tone."
+    },
+    {
+      "id": "TC_S2_Flat_T2",
+      "first": "kf/tc_c_768x1344.png",
+      "last": "kf/tc_c_768x1344.png",
+      "seed": 2026111602,
+      "prompt": "r34l1sm, Top-down overhead shot, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. At night on a white duvet, a forest-green Fair Isle Christmas sweater lies perfectly flat. A woman's hands in charcoal sweatshirt sleeves hold a smartphone above it, tap the screen to take a photo, tilt the phone a little, tap again, then hold still exactly as at the start. The sweater does not move. Soft camera shutter clicks, quiet room tone."
+    },
+    {
+      "id": "TC_S1_Cancel_T1",
+      "first": "kf/tc_a_768x1344.png",
+      "last": "kf/tc_b_768x1344.png",
+      "seed": 2026111603,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Late at night in a small home studio with a rack of holiday sweaters behind her, a young woman with black hair in a claw clip and a charcoal sweatshirt sits on a stool reading a message on her phone. Her face falls, she blinks in disbelief, reads it again, then slowly slumps forward and drops her forehead into her left palm, the phone sinking to her knee, letting out a long defeated sigh. Quiet room tone, a phone notification buzz at the start."
+    },
+    {
+      "id": "TC_S1_Cancel_T2",
+      "first": "kf/tc_a_768x1344.png",
+      "last": "kf/tc_b_768x1344.png",
+      "seed": 2026111604,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Late at night in a small home studio with a rack of holiday sweaters behind her, a young woman with black hair in a claw clip and a charcoal sweatshirt sits on a stool reading a message on her phone. Her face falls, she blinks in disbelief, reads it again, then slowly slumps forward and drops her forehead into her left palm, the phone sinking to her knee, letting out a long defeated sigh. Quiet room tone, a phone notification buzz at the start."
+    },
+    {
+      "id": "TC_S3_Snow_T1",
+      "first": "ts_xmas_snow_768x1344.png",
+      "last": "ts_xmas_snow_768x1344.png",
+      "seed": 2026111605,
+      "prompt": "r34l1sm, Clean fashion lookbook video on a full-frame camera, natural soft matte skin, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Her whole body from head to shoes stays in frame. On a snowy small-town main street at blue hour with warm shop windows and string lights, a young woman in a forest-green Fair Isle Christmas sweater and light-blue jeans walks a slow step toward the camera, tucks her hands in her pockets, glances at the glowing shop window, then looks back to the camera with a relaxed natural smile, settling exactly as at the end. Gentle snow falls the whole time. Soft winter street ambience, distant sleigh bells."
+    },
+    {
+      "id": "TC_S3_Snow_T2",
+      "first": "ts_xmas_snow_768x1344.png",
+      "last": "ts_xmas_snow_768x1344.png",
+      "seed": 2026111606,
+      "prompt": "r34l1sm, Clean fashion lookbook video on a full-frame camera, natural soft matte skin, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Her whole body from head to shoes stays in frame. On a snowy small-town main street at blue hour with warm shop windows and string lights, a young woman in a forest-green Fair Isle Christmas sweater and light-blue jeans walks a slow step toward the camera, tucks her hands in her pockets, glances at the glowing shop window, then looks back to the camera with a relaxed natural smile, settling exactly as at the end. Gentle snow falls the whole time. Soft winter street ambience, distant sleigh bells."
+    },
+    {
+      "id": "TC_S4_Win_T1",
+      "first": "kf/tc_d_768x1344.png",
+      "last": "kf/tc_d_768x1344.png",
+      "seed": 2026111607,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. At midnight in a small home studio with a rack of holiday sweaters behind her, a young woman in a charcoal sweatshirt sits on a stool with both arms thrown up in victory, laughing with a huge genuine smile; she pumps her fists twice, bounces on the stool, laughs at her glowing phone, then throws her arms up again exactly as at the start. Excited laughter, phone notification chimes."
+    },
+    {
+      "id": "TC_S4_Win_T2",
+      "first": "kf/tc_d_768x1344.png",
+      "last": "kf/tc_d_768x1344.png",
+      "seed": 2026111608,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. At midnight in a small home studio with a rack of holiday sweaters behind her, a young woman in a charcoal sweatshirt sits on a stool with both arms thrown up in victory, laughing with a huge genuine smile; she pumps her fists twice, bounces on the stool, laughs at her glowing phone, then throws her arms up again exactly as at the start. Excited laughter, phone notification chimes."
+    }
+  ]
+}

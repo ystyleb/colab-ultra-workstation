@@ -1,0 +1,67 @@
+{
+  "note": "TryOnSwap 第四批《The Photoshoot That Never Happened》。卖家是 AI 生成的成年人；街景镜头首尾帧 = 站长账号在站上真实生成的 Street 场景图。",
+  "length": 141,
+  "steps": 10,
+  "style_mode": "photorealistic",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/tryonswap_story",
+  "jobs": [
+    {
+      "id": "TS_S1_Quote_T1",
+      "first": "kf/ts_a_768x1344.png",
+      "last": "kf/ts_b_768x1344.png",
+      "seed": 2026111511,
+      "prompt": "r34l1sm, A single continuous medium shot from a static camera, no zoom, no cuts. Late at night in a small apartment kitchen, a tired woman in her early 30s with a messy bun, round glasses and a grey hoodie sits at the table reading a printed quote, frowning; she exhales, rubs her forehead, shakes her head in disbelief, then slowly crumples the paper into a tight ball in her right hand and lifts her chin with a determined little smile. A cream cable-knit sweater hangs on a hanger on the shelf behind her. Quiet night room tone, fridge hum, paper crumpling."
+    },
+    {
+      "id": "TS_S1_Quote_T2",
+      "first": "kf/ts_a_768x1344.png",
+      "last": "kf/ts_b_768x1344.png",
+      "seed": 2026111512,
+      "prompt": "r34l1sm, A single continuous medium shot from a static camera, no zoom, no cuts. Late at night in a small apartment kitchen, a tired woman in her early 30s with a messy bun, round glasses and a grey hoodie sits at the table reading a printed quote, frowning; she exhales, rubs her forehead, shakes her head in disbelief, then slowly crumples the paper into a tight ball in her right hand and lifts her chin with a determined little smile. A cream cable-knit sweater hangs on a hanger on the shelf behind her. Quiet night room tone, fridge hum, paper crumpling."
+    },
+    {
+      "id": "TS_S2_FlatLay_T1",
+      "first": "kf/ts_c_768x1344.png",
+      "last": "kf/ts_c_768x1344.png",
+      "seed": 2026111513,
+      "prompt": "r34l1sm, A static overhead top-down shot, no zoom, no cuts. A cream cable-knit sweater lies flat on a wooden kitchen table at night; a woman's hands hold a smartphone above it, adjust slightly, smooth one sleeve of the sweater with a finger, then hold the phone steady and take a photo. Everything else stays still. Quiet room tone, a soft camera shutter click."
+    },
+    {
+      "id": "TS_S2_FlatLay_T2",
+      "first": "kf/ts_c_768x1344.png",
+      "last": "kf/ts_c_768x1344.png",
+      "seed": 2026111514,
+      "prompt": "r34l1sm, A static overhead top-down shot, no zoom, no cuts. A cream cable-knit sweater lies flat on a wooden kitchen table at night; a woman's hands hold a smartphone above it, adjust slightly, smooth one sleeve of the sweater with a finger, then hold the phone steady and take a photo. Everything else stays still. Quiet room tone, a soft camera shutter click."
+    },
+    {
+      "id": "TS_S3_Street_T1",
+      "first": "tryonswap_knit_street_768x1344.png",
+      "last": "tryonswap_knit_street_768x1344.png",
+      "seed": 2026111515,
+      "prompt": "r34l1sm, Clean fashion lookbook video on a full-frame camera, natural soft matte skin, static camera at a fixed distance, no zoom, no push-in, no close-ups, no cuts; her whole body from head to shoes stays in frame. On a sunny city sidewalk, a young woman in a cream cable-knit sweater and charcoal wide-leg trousers shifts her weight, tucks her hair behind her ear, glances down the street and back to the camera with a relaxed natural smile, settling exactly as at the end. Light breeze moves her hair. City street ambience, distant traffic."
+    },
+    {
+      "id": "TS_S3_Street_T2",
+      "first": "tryonswap_knit_street_768x1344.png",
+      "last": "tryonswap_knit_street_768x1344.png",
+      "seed": 2026111516,
+      "prompt": "r34l1sm, Clean fashion lookbook video on a full-frame camera, natural soft matte skin, static camera at a fixed distance, no zoom, no push-in, no close-ups, no cuts; her whole body from head to shoes stays in frame. On a sunny city sidewalk, a young woman in a cream cable-knit sweater and charcoal wide-leg trousers shifts her weight, tucks her hair behind her ear, glances down the street and back to the camera with a relaxed natural smile, settling exactly as at the end. Light breeze moves her hair. City street ambience, distant traffic."
+    },
+    {
+      "id": "TS_S4_Cheers_T1",
+      "first": "kf/ts_a2_768x1344.png",
+      "last": "kf/ts_d_768x1344.png",
+      "seed": 2026111517,
+      "prompt": "r34l1sm, A single continuous medium shot from a static camera, no cuts. Late at night at the kitchen table, the woman in the grey hoodie and round glasses types on her laptop, her face lit by the screen glow; she stops, her eyes widen, a slow delighted smile spreads, she leans back in her chair laughing softly and raises her tea mug toward the screen like a toast. Quiet room tone, a soft laugh."
+    },
+    {
+      "id": "TS_S4_Cheers_T2",
+      "first": "kf/ts_a2_768x1344.png",
+      "last": "kf/ts_d_768x1344.png",
+      "seed": 2026111518,
+      "prompt": "r34l1sm, A single continuous medium shot from a static camera, no cuts. Late at night at the kitchen table, the woman in the grey hoodie and round glasses types on her laptop, her face lit by the screen glow; she stops, her eyes widen, a slow delighted smile spreads, she leans back in her chair laughing softly and raises her tea mug toward the screen like a toast. Quiet room tone, a soft laugh."
+    }
+  ],
+  "realism_lora_strength": 0.7
+}

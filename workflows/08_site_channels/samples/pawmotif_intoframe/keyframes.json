@@ -1,0 +1,11 @@
+{
+ "style": "Authentic live-action 35mm film still, Kodak Portra 400 colors, soft natural window light, gentle film grain, realistic fur texture, shallow depth of field.",
+ "frames": [
+  {"name": "pm_a", "refs": ["../pawmotif/pawmotif_doberman_fullbody_src.jpg"],
+   "prompt": "Attached photo = the real dog to recreate exactly: a slim red (chocolate-brown) Doberman with tan points, cropped upright ears, docked tail, red nylon collar. Scene: a bright, cozy, minimal living room in warm late-afternoon sunlight. A cream plaster wall fills the upper two thirds of the image. Centered on the wall, perfectly straight-on and parallel to the camera (no perspective distortion), hangs a large thin natural-oak picture frame with a narrow cream mat, portrait orientation with a 2:3 aspect ratio. The frame is about 55% of the image width and its top edge sits at about 13% of the image height. The area inside the mat is a completely blank, flat, evenly lit pale cream canvas: leave it EMPTY, no artwork. Below, on a light oak floor with a soft oatmeal wool rug, the Doberman sits facing the wall with his back three-quarters to the camera, head lifted, looking up at the empty frame with curiosity, full body visible in the lower third, slightly left of center. A small potted olive tree at the right edge, a red leash coiled on the rug near the dog. Camera at standing chest height, 35mm lens, straight-on to the wall."},
+  {"name": "pm_b", "edit_of": "pm_a", "refs": ["../pawmotif/pawmotif_doberman_fullbody_src.jpg"],
+   "prompt": "Change only the dog's pose: the same Doberman is now in a playful crouch (play-bow) on the rug, front legs stretched forward, chest low, hindquarters raised, head up and ears forward, staring at the frame, about to leap toward it. The picture frame interior stays a blank pale cream canvas."},
+  {"name": "pm_c", "edit_of": "pm_a",
+   "prompt": "Change only: the dog is gone from the room. Nothing else moves; the red leash still lies on the rug where the dog was sitting, now loose and uncoiled. The picture frame interior stays a blank pale cream canvas."}
+ ]
+}

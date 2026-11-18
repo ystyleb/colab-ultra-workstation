@@ -1,0 +1,24 @@
+{
+  "note": "PawMotif《Into the Frame》画中世界：首尾帧都是站上真实水彩画像。",
+  "length": 141,
+  "steps": 10,
+  "style_mode": "stylized",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/pawmotif_story",
+  "jobs": [
+    {
+      "id": "PM_S3_Alive_T1",
+      "first": "pm_portrait_768x1344.png",
+      "last": "pm_portrait_768x1344.png",
+      "seed": 2026111507,
+      "prompt": "A hand-painted watercolor portrait gently comes to life, static camera, no zoom, no cuts. The painted red Doberman with a red collar sits in a sunlit painted room by a bright window; sunlight shimmers softly through the window and the watercolor washes breathe and flow. The dog blinks, pants happily with his tongue out, turns his head toward the viewer and gives one slow playful wink, then returns to his original pose exactly as at the end. Everything stays loose watercolor brushwork on textured paper, never photographic. Soft birdsong and a gentle breeze."
+    },
+    {
+      "id": "PM_S3_Alive_T2",
+      "first": "pm_portrait_768x1344.png",
+      "last": "pm_portrait_768x1344.png",
+      "seed": 2026111508,
+      "prompt": "A hand-painted watercolor portrait gently comes to life, static camera, no zoom, no cuts. The painted red Doberman with a red collar sits in a sunlit painted room by a bright window; sunlight shimmers softly through the window and the watercolor washes breathe and flow. The dog blinks, pants happily with his tongue out, turns his head toward the viewer and gives one slow playful wink, then returns to his original pose exactly as at the end. Everything stays loose watercolor brushwork on textured paper, never photographic. Soft birdsong and a gentle breeze."
+    }
+  ]
+}

@@ -1,0 +1,185 @@
+{
+ "note": "Songifted 第六批《Mia》：用站上 /demos/for-daughter.mp3 示例歌（虚构名字 Mia，生日歌），设定为 Mia 23 岁生日落在感恩节那周。人物全是 AI 生成的；3 岁闪回只拍背影。",
+ "length": 141,
+ "steps": 10,
+ "style_mode": "photorealistic",
+ "output_subdir": "SiteChannels_Samples",
+ "out_dir": "../../out/samples/songifted_story6",
+ "realism_lora_strength": 0.7,
+ "jobs": [
+  {
+   "id": "SM_S1_Table_T1",
+   "first": "kf/sm_a_768x1344.png",
+   "last": "kf/sm_a_768x1344.png",
+   "seed": 2026111741,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Thanksgiving evening at a warm family dining table with a roast turkey and pumpkin pie. A man in his fifties with salt-and-pepper hair and glasses on his head stands holding his phone, clears his throat nervously, taps the screen to start a song and looks across the table at his daughter. The young woman with long chestnut hair in a cream turtleneck looks up at him, curious; her mother at the far end smiles knowingly, exactly as at the end. Clinking cutlery, a soft nervous laugh, warm room tone."
+  },
+  {
+   "id": "SM_S1_Table_T2",
+   "first": "kf/sm_a_768x1344.png",
+   "last": "kf/sm_a_768x1344.png",
+   "seed": 2026111742,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Thanksgiving evening at a warm family dining table with a roast turkey and pumpkin pie. A man in his fifties with salt-and-pepper hair and glasses on his head stands holding his phone, clears his throat nervously, taps the screen to start a song and looks across the table at his daughter. The young woman with long chestnut hair in a cream turtleneck looks up at him, curious; her mother at the far end smiles knowingly, exactly as at the end. Clinking cutlery, a soft nervous laugh, warm room tone."
+  },
+  {
+   "id": "SM_S2_Cross_T1",
+   "first": "kf/sm_e_768x1344.png",
+   "last": "kf/sm_e_768x1344.png",
+   "seed": 2026111743,
+   "prompt": "r34l1sm, A single continuous wide shot from behind, static camera, no zoom, no cuts. Early autumn afternoon on a quiet tree-lined street with yellow leaves. A young father in a brown canvas jacket walks behind a tiny toddler girl in a red raincoat and yellow rain boots, seen only from behind; she marches ahead on her own toward the crosswalk, pigtails bouncing, and his empty hand hovers low behind her, ready to catch her, exactly as at the end. Leaves drift down. Rustling leaves, small footsteps, distant birds."
+  },
+  {
+   "id": "SM_S2_Cross_T2",
+   "first": "kf/sm_e_768x1344.png",
+   "last": "kf/sm_e_768x1344.png",
+   "seed": 2026111744,
+   "prompt": "r34l1sm, A single continuous wide shot from behind, static camera, no zoom, no cuts. Early autumn afternoon on a quiet tree-lined street with yellow leaves. A young father in a brown canvas jacket walks behind a tiny toddler girl in a red raincoat and yellow rain boots, seen only from behind; she marches ahead on her own toward the crosswalk, pigtails bouncing, and his empty hand hovers low behind her, ready to catch her, exactly as at the end. Leaves drift down. Rustling leaves, small footsteps, distant birds."
+  },
+  {
+   "id": "SM_S3_Name_T1",
+   "first": "kf/sm_b_768x1344.png",
+   "last": "kf/sm_b_768x1344.png",
+   "seed": 2026111745,
+   "prompt": "r34l1sm, A static close-up, no zoom, no cuts. At a candlelit Thanksgiving table, a young woman with long wavy chestnut hair, freckles and a cream turtleneck hears her own name in a song: her hands cover her mouth, her eyes fill with tears, she laughs softly behind her hands and shakes her head in disbelief, exactly as at the end. Warm candlelight flickers on her face. A soft surprised gasp, a teary laugh."
+  },
+  {
+   "id": "SM_S3_Name_T2",
+   "first": "kf/sm_b_768x1344.png",
+   "last": "kf/sm_b_768x1344.png",
+   "seed": 2026111746,
+   "prompt": "r34l1sm, A static close-up, no zoom, no cuts. At a candlelit Thanksgiving table, a young woman with long wavy chestnut hair, freckles and a cream turtleneck hears her own name in a song: her hands cover her mouth, her eyes fill with tears, she laughs softly behind her hands and shakes her head in disbelief, exactly as at the end. Warm candlelight flickers on her face. A soft surprised gasp, a teary laugh."
+  },
+  {
+   "id": "SM_S4_Dorm_T1",
+   "first": "kf/sm_f_768x1344.png",
+   "last": "kf/sm_f_768x1344.png",
+   "seed": 2026111747,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. A sunny late-August afternoon in front of a red-brick college dorm. An 18-year-old girl with long chestnut hair in a grey hoodie and backpack walks away from the family SUV carrying a cardboard box, turns her head back over her shoulder with a brave, excited smile and lifts one hand in a quick wave; her father standing by the open trunk holding a desk lamp waves back, smiling and swallowing hard, exactly as at the end. Distant campus chatter, birds, a car door."
+  },
+  {
+   "id": "SM_S4_Dorm_T2",
+   "first": "kf/sm_f_768x1344.png",
+   "last": "kf/sm_f_768x1344.png",
+   "seed": 2026111748,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. A sunny late-August afternoon in front of a red-brick college dorm. An 18-year-old girl with long chestnut hair in a grey hoodie and backpack walks away from the family SUV carrying a cardboard box, turns her head back over her shoulder with a brave, excited smile and lifts one hand in a quick wave; her father standing by the open trunk holding a desk lamp waves back, smiling and swallowing hard, exactly as at the end. Distant campus chatter, birds, a car door."
+  },
+  {
+   "id": "SM_S5_Hug_T1",
+   "first": "kf/sm_c_768x1344.png",
+   "last": "kf/sm_c_768x1344.png",
+   "seed": 2026111749,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Thanksgiving evening at the dining table. A young woman with long chestnut hair in a cream turtleneck hugs her seated father from the side, her cheek pressed to his head; he closes his eyes, smiles with tears, and squeezes her arm, holding his phone in his other hand; they rock gently together, exactly as at the end. Candles flicker on the table. A soft laugh, a sniffle, warm room tone."
+  },
+  {
+   "id": "SM_S5_Hug_T2",
+   "first": "kf/sm_c_768x1344.png",
+   "last": "kf/sm_c_768x1344.png",
+   "seed": 2026111750,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Thanksgiving evening at the dining table. A young woman with long chestnut hair in a cream turtleneck hugs her seated father from the side, her cheek pressed to his head; he closes his eyes, smiles with tears, and squeezes her arm, holding his phone in his other hand; they rock gently together, exactly as at the end. Candles flicker on the table. A soft laugh, a sniffle, warm room tone."
+  },
+  {
+   "id": "SM_S6_Pie_T1",
+   "first": "kf/sm_d_768x1344.png",
+   "last": "kf/sm_d_768x1344.png",
+   "seed": 2026111751,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Thanksgiving night, the dining room lights dimmed. A young woman with long chestnut hair leans over a pumpkin pie with one lit birthday candle and blows it out; her father and mother laugh and cheer, raising their wine glasses toward her; she laughs and raises her glass too, exactly as at the end. Candlelight glow. A happy cheer, clinking glasses, laughter."
+  },
+  {
+   "id": "SM_S6_Pie_T2",
+   "first": "kf/sm_d_768x1344.png",
+   "last": "kf/sm_d_768x1344.png",
+   "seed": 2026111752,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Thanksgiving night, the dining room lights dimmed. A young woman with long chestnut hair leans over a pumpkin pie with one lit birthday candle and blows it out; her father and mother laugh and cheer, raising their wine glasses toward her; she laughs and raises her glass too, exactly as at the end. Candlelight glow. A happy cheer, clinking glasses, laughter."
+  },
+  {
+   "id": "SM_S2_Cross_T3",
+   "first": "kf/sm_e_768x1344.png",
+   "last": "kf/sm_e_end_768x1344.png",
+   "seed": 2026111753,
+   "prompt": "r34l1sm, A single continuous wide shot from behind, static locked-off camera, no zoom, no pan, no cuts. Early autumn afternoon on a quiet tree-lined street with yellow leaves. A young father in a brown canvas jacket and a tiny toddler girl in a red raincoat and yellow rain boots, seen only from behind, walk forward together along the sidewalk, away from the camera, toward the crosswalk. She marches ahead on her own, pigtails bouncing, steadily getting smaller in frame; he follows one step behind at her pace, his empty hand hovering low behind her, ready to catch her. They keep moving forward the whole time and never turn back. Leaves drift down. Rustling leaves, small footsteps, distant birds."
+  },
+  {
+   "id": "SM_S2_Cross_T4",
+   "first": "kf/sm_e_768x1344.png",
+   "last": "kf/sm_e_end_768x1344.png",
+   "seed": 2026111754,
+   "prompt": "r34l1sm, A single continuous wide shot from behind, static locked-off camera, no zoom, no pan, no cuts. Early autumn afternoon on a quiet tree-lined street with yellow leaves. A young father in a brown canvas jacket and a tiny toddler girl in a red raincoat and yellow rain boots, seen only from behind, walk forward together along the sidewalk, away from the camera, toward the crosswalk. She marches ahead on her own, pigtails bouncing, steadily getting smaller in frame; he follows one step behind at her pace, his empty hand hovering low behind her, ready to catch her. They keep moving forward the whole time and never turn back. Leaves drift down. Rustling leaves, small footsteps, distant birds."
+  },
+  {
+   "id": "SM_S4_Dorm_T3",
+   "first": "kf/sm_f_768x1344.png",
+   "last": "kf/sm_f_end_768x1344.png",
+   "seed": 2026111757,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no pan, no push-in, no close-ups, no cuts. A sunny late-August afternoon in front of a red-brick college dorm. An 18-year-old girl with long chestnut hair in a grey hoodie and backpack, carrying a cardboard box, walks away from the family SUV along the path toward the dorm at a normal pace, steadily getting farther and smaller, then turns halfway back with a brave, excited smile and lifts one hand in a wave, still moving forward. Her father stays by the open trunk holding a desk lamp, watching her go, and raises his other hand to wave back, smiling and swallowing hard. She never walks backward. Distant campus chatter, birds."
+  },
+  {
+   "id": "SM_S4_Dorm_T4",
+   "first": "kf/sm_f_768x1344.png",
+   "last": "kf/sm_f_end_768x1344.png",
+   "seed": 2026111758,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no pan, no push-in, no close-ups, no cuts. A sunny late-August afternoon in front of a red-brick college dorm. An 18-year-old girl with long chestnut hair in a grey hoodie and backpack, carrying a cardboard box, walks away from the family SUV along the path toward the dorm at a normal pace, steadily getting farther and smaller, then turns halfway back with a brave, excited smile and lifts one hand in a wave, still moving forward. Her father stays by the open trunk holding a desk lamp, watching her go, and raises his other hand to wave back, smiling and swallowing hard. She never walks backward. Distant campus chatter, birds."
+  },
+  {
+   "id": "SM_S4_DormS1_T1",
+   "length": 141,
+   "first": "kf/sm_g0_768x1344.png",
+   "last": "kf/sm_f3_end_b_768x1344.png",
+   "seed": 2026111861,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera at standing height, no zoom, no pan, no push-in, no close-ups, no cuts. A sunny late-August afternoon in front of a red-brick college dorm; a silver SUV with its trunk open on the left, a straight concrete walkway leading to the dorm steps. A father (51, navy polo, khakis, holding a silver desk lamp) stands by the trunk and does not walk anywhere. His 18-year-old daughter (long chestnut hair, grey hoodie, jeans, backpack) carries a cardboard box. They share one last smile face to face. Then she turns to her RIGHT toward the dorm and walks away along the walkway at a normal pace, steadily getting smaller; after several steps she stops, turns her whole body around to her LEFT toward the SUV side, and gives a small wave at shoulder height with a brave smile. Her father's eyes follow her the whole time; at the end he raises his free hand and waves back, eyes wet. Natural human movement, head always turning together with the shoulders. Distant campus chatter, birds, footsteps on concrete."
+  },
+  {
+   "id": "SM_S4_DormS1_T2",
+   "length": 141,
+   "first": "kf/sm_g0_768x1344.png",
+   "last": "kf/sm_f3_end_b_768x1344.png",
+   "seed": 2026111862,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera at standing height, no zoom, no pan, no push-in, no close-ups, no cuts. A sunny late-August afternoon in front of a red-brick college dorm; a silver SUV with its trunk open on the left, a straight concrete walkway leading to the dorm steps. A father (51, navy polo, khakis, holding a silver desk lamp) stands by the trunk and does not walk anywhere. His 18-year-old daughter (long chestnut hair, grey hoodie, jeans, backpack) carries a cardboard box. They share one last smile face to face. Then she turns to her RIGHT toward the dorm and walks away along the walkway at a normal pace, steadily getting smaller; after several steps she stops, turns her whole body around to her LEFT toward the SUV side, and gives a small wave at shoulder height with a brave smile. Her father's eyes follow her the whole time; at the end he raises his free hand and waves back, eyes wet. Natural human movement, head always turning together with the shoulders. Distant campus chatter, birds, footsteps on concrete."
+  },
+  {
+   "id": "SM_S4_DormA_T1",
+   "length": 73,
+   "first": "kf/sm_g0_768x1344.png",
+   "last": "kf/sm_f3_768x1344.png",
+   "seed": 2026111863,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera at standing height, no zoom, no pan, no push-in, no close-ups, no cuts. A sunny late-August afternoon in front of a red-brick college dorm; a silver SUV with its trunk open on the left, a straight concrete walkway leading to the dorm steps. A father (51, navy polo, khakis, holding a silver desk lamp) stands by the trunk and does not walk anywhere. His 18-year-old daughter (long chestnut hair, grey hoodie, jeans, backpack) carries a cardboard box. They share one last smile face to face. Then she turns to her RIGHT toward the dorm and starts walking away along the walkway at a normal pace, her back to the camera. Her father stays where he is, holding the lamp, his eyes following her. Natural human movement, head always turning together with the shoulders. Distant campus chatter, birds, footsteps on concrete."
+  },
+  {
+   "id": "SM_S4_DormA_T2",
+   "length": 73,
+   "first": "kf/sm_g0_768x1344.png",
+   "last": "kf/sm_f3_768x1344.png",
+   "seed": 2026111864,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera at standing height, no zoom, no pan, no push-in, no close-ups, no cuts. A sunny late-August afternoon in front of a red-brick college dorm; a silver SUV with its trunk open on the left, a straight concrete walkway leading to the dorm steps. A father (51, navy polo, khakis, holding a silver desk lamp) stands by the trunk and does not walk anywhere. His 18-year-old daughter (long chestnut hair, grey hoodie, jeans, backpack) carries a cardboard box. They share one last smile face to face. Then she turns to her RIGHT toward the dorm and starts walking away along the walkway at a normal pace, her back to the camera. Her father stays where he is, holding the lamp, his eyes following her. Natural human movement, head always turning together with the shoulders. Distant campus chatter, birds, footsteps on concrete."
+  },
+  {
+   "id": "SM_S4_DormB_T1",
+   "length": 90,
+   "first": "kf/sm_f3_768x1344.png",
+   "last": "kf/sm_f3_end_b_768x1344.png",
+   "seed": 2026111865,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera at standing height, no zoom, no pan, no push-in, no close-ups, no cuts. A sunny late-August afternoon in front of a red-brick college dorm; a silver SUV with its trunk open on the left, a straight concrete walkway leading to the dorm steps. A father (51, navy polo, khakis, holding a silver desk lamp) stands by the trunk and does not walk anywhere. His 18-year-old daughter (long chestnut hair, grey hoodie, jeans, backpack) carries a cardboard box. Seen from behind, she keeps walking away along the walkway at a normal pace, steadily getting smaller; after a few steps she stops, turns her whole body around to her LEFT toward the SUV side, and gives a small wave at shoulder height with a brave smile. Her father, still in place, raises his free hand and waves back, smiling, eyes wet. Natural human movement, head always turning together with the shoulders. Distant campus chatter, birds, footsteps on concrete."
+  },
+  {
+   "id": "SM_S4_DormB_T2",
+   "length": 90,
+   "first": "kf/sm_f3_768x1344.png",
+   "last": "kf/sm_f3_end_b_768x1344.png",
+   "seed": 2026111866,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera at standing height, no zoom, no pan, no push-in, no close-ups, no cuts. A sunny late-August afternoon in front of a red-brick college dorm; a silver SUV with its trunk open on the left, a straight concrete walkway leading to the dorm steps. A father (51, navy polo, khakis, holding a silver desk lamp) stands by the trunk and does not walk anywhere. His 18-year-old daughter (long chestnut hair, grey hoodie, jeans, backpack) carries a cardboard box. Seen from behind, she keeps walking away along the walkway at a normal pace, steadily getting smaller; after a few steps she stops, turns her whole body around to her LEFT toward the SUV side, and gives a small wave at shoulder height with a brave smile. Her father, still in place, raises his free hand and waves back, smiling, eyes wet. Natural human movement, head always turning together with the shoulders. Distant campus chatter, birds, footsteps on concrete."
+  },
+  {
+   "id": "SM_S6_Pie_T3",
+   "first": "kf/sm_d_768x1344.png",
+   "last": "kf/sm_d_end_768x1344.png",
+   "seed": 2026111871,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Thanksgiving night, the dining room lights dimmed. A young woman with long chestnut hair leans over a pumpkin pie with one lit birthday candle, smiling, takes a slow breath and, about three seconds in, blows the candle out in one breath; a thin wisp of smoke rises from the wick and the candle stays out. She sits back up laughing and claps her hands; her father and mother laugh and cheer, raising their wine glasses toward her. The other candles on the table stay lit. A happy cheer and laughter."
+  },
+  {
+   "id": "SM_S6_Pie_T4",
+   "first": "kf/sm_d_768x1344.png",
+   "last": "kf/sm_d_end_768x1344.png",
+   "seed": 2026111872,
+   "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Thanksgiving night, the dining room lights dimmed. A young woman with long chestnut hair leans over a pumpkin pie with one lit birthday candle, smiling, takes a slow breath and, about three seconds in, blows the candle out in one breath; a thin wisp of smoke rises from the wick and the candle stays out. She sits back up laughing and claps her hands; her father and mother laugh and cheer, raising their wine glasses toward her. The other candles on the table stay lit. A happy cheer and laughter."
+  }
+ ]
+}

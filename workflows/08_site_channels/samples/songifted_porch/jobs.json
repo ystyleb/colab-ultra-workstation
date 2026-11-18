@@ -1,0 +1,81 @@
+{
+  "note": "Songifted 第五批《Porch Light》：用站上 /birthday-song-for-dad 的现成示例歌（虚构名字 Daniel）。人物全是 AI 生成的成年人。",
+  "length": 158,
+  "steps": 10,
+  "style_mode": "photorealistic",
+  "output_subdir": "SiteChannels_Samples",
+  "out_dir": "../../out/samples/songifted_story5",
+  "realism_lora_strength": 0.7,
+  "jobs": [
+    {
+      "id": "SP_S1_Porch_T1",
+      "first": "kf/sp_d_768x1344.png",
+      "last": "kf/sp_d_768x1344.png",
+      "seed": 2026111617,
+      "prompt": "r34l1sm, A single continuous wide shot, static camera, no zoom, no cuts. A frosty late-November night in front of a modest suburban house; the porch light glows warm yellow. A dark grey SUV rolls slowly into the driveway and stops, headlights on. An older man with a grey beard, glasses and a brown cardigan stands in the open front doorway under the porch light and waves, beaming, then steps forward onto the porch. Cold night ambience, tires on gravel, a car door."
+    },
+    {
+      "id": "SP_S1_Porch_T2",
+      "first": "kf/sp_d_768x1344.png",
+      "last": "kf/sp_d_768x1344.png",
+      "seed": 2026111618,
+      "prompt": "r34l1sm, A single continuous wide shot, static camera, no zoom, no cuts. A frosty late-November night in front of a modest suburban house; the porch light glows warm yellow. A dark grey SUV rolls slowly into the driveway and stops, headlights on. An older man with a grey beard, glasses and a brown cardigan stands in the open front doorway under the porch light and waves, beaming, then steps forward onto the porch. Cold night ambience, tires on gravel, a car door."
+    },
+    {
+      "id": "SP_S2_Door_T1",
+      "first": "kf/sp_e_768x1344.png",
+      "last": "kf/sp_e_768x1344.png",
+      "seed": 2026111619,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Just inside an open front door on a cold night. An older man with a grey beard, glasses and a brown cardigan hugs his adult daughter in a camel coat tightly, rocking her gently side to side, talking to her over her shoulder with a warm smile, asking how the drive was; she laughs and nods. Her brother in a navy puffer jacket stands behind holding a duffel bag and a bakery box, grinning. Warm hallway light, cold wind from outside, happy murmured voices."
+    },
+    {
+      "id": "SP_S2_Door_T2",
+      "first": "kf/sp_e_768x1344.png",
+      "last": "kf/sp_e_768x1344.png",
+      "seed": 2026111620,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. Just inside an open front door on a cold night. An older man with a grey beard, glasses and a brown cardigan hugs his adult daughter in a camel coat tightly, rocking her gently side to side, talking to her over her shoulder with a warm smile, asking how the drive was; she laughs and nods. Her brother in a navy puffer jacket stands behind holding a duffel bag and a bakery box, grinning. Warm hallway light, cold wind from outside, happy murmured voices."
+    },
+    {
+      "id": "SP_S3_Play_T1",
+      "first": "kf/sp_a_768x1344.png",
+      "last": "kf/sp_a_768x1344.png",
+      "seed": 2026111621,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. In a warm lamp-lit living room, an older man with a grey beard and glasses sits in a worn leather armchair. His adult daughter holds her phone out toward him, playing him a song; he tilts his head and listens, puzzled at first, then his eyebrows rise as he hears his own name, a surprised smile spreading across his face; his son grins and nudges his sister. Quiet room tone."
+    },
+    {
+      "id": "SP_S3_Play_T2",
+      "first": "kf/sp_a_768x1344.png",
+      "last": "kf/sp_a_768x1344.png",
+      "seed": 2026111622,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. In a warm lamp-lit living room, an older man with a grey beard and glasses sits in a worn leather armchair. His adult daughter holds her phone out toward him, playing him a song; he tilts his head and listens, puzzled at first, then his eyebrows rise as he hears his own name, a surprised smile spreading across his face; his son grins and nudges his sister. Quiet room tone."
+    },
+    {
+      "id": "SP_S4_Tears_T1",
+      "first": "kf/sp_b_768x1344.png",
+      "last": "kf/sp_b_768x1344.png",
+      "seed": 2026111623,
+      "prompt": "r34l1sm, A static close-up, no zoom, no cuts. An older man with a grey beard and glasses laughs with tears welling in his eyes, his hand pressed over his mouth; he shakes his head in disbelief, blinks, wipes one eye with his knuckle, and laughs again behind his hand, overwhelmed and moved. Warm lamp light. A soft emotional laugh."
+    },
+    {
+      "id": "SP_S4_Tears_T2",
+      "first": "kf/sp_b_768x1344.png",
+      "last": "kf/sp_b_768x1344.png",
+      "seed": 2026111624,
+      "prompt": "r34l1sm, A static close-up, no zoom, no cuts. An older man with a grey beard and glasses laughs with tears welling in his eyes, his hand pressed over his mouth; he shakes his head in disbelief, blinks, wipes one eye with his knuckle, and laughs again behind his hand, overwhelmed and moved. Warm lamp light. A soft emotional laugh."
+    },
+    {
+      "id": "SP_S5_Toast_T1",
+      "first": "kf/sp_c_768x1344.png",
+      "last": "kf/sp_c_768x1344.png",
+      "seed": 2026111625,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. In a warm living room, an older man with a grey beard and glasses stands laughing and lifts his old chipped coffee mug high in a toast; his adult daughter and son clink their mugs against his, all three singing along together with big open-mouthed smiles, then raise their mugs again exactly as at the start. Joyful singing and laughter, mugs clinking."
+    },
+    {
+      "id": "SP_S5_Toast_T2",
+      "first": "kf/sp_c_768x1344.png",
+      "last": "kf/sp_c_768x1344.png",
+      "seed": 2026111626,
+      "prompt": "r34l1sm, A single continuous shot from a static locked-off camera, no zoom, no push-in, no close-ups, no cuts. In a warm living room, an older man with a grey beard and glasses stands laughing and lifts his old chipped coffee mug high in a toast; his adult daughter and son clink their mugs against his, all three singing along together with big open-mouthed smiles, then raise their mugs again exactly as at the start. Joyful singing and laughter, mugs clinking."
+    }
+  ]
+}
