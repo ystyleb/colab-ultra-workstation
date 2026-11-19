@@ -300,6 +300,11 @@ def render_question_card(question: str, out_png: Path) -> None:
     im.save(out_png)
 
 
+def card_at(cta: dict) -> float:
+    """字卡出现时间：最后一个字说完（speech_end）后留 hold 秒，且不早于配音剪点。"""
+    return round(max(cta["cut"], cta["speech_end"] + cta.get("hold", 0.9)), 3)
+
+
 def finalize_clip(
     raw_mp4: Path,
     out_mp4: Path,
@@ -316,15 +321,15 @@ def finalize_clip(
     `punch`（influencer_config.json 的 finalize.punch_in）不为空时，按配音的句间停顿切景别：
     钩子句原景别慢推 -> 主体切近 -> CTA 回一点。缩放和放大到 1080x1920 在同一次 scale 里完成，只重采样一次。
 
-    `cta` = {"cut", "speech_end", "keyword", "benefit", "card_sec"}：配音在 cut 处截断（去掉 'Comment X.'），
-    之后 card_sec 秒画面模糊压暗、叠 CTA 字卡，音频补静音。
+    `cta` = {"cut", "speech_end", "keyword", "benefit", "card_sec", "hold", "fade"}：配音在 cut 处截断（去掉 'Comment X.'），
+    说完后人物再停留 hold 秒（只有音乐），然后画面模糊压暗、字卡淡入，持续 card_sec 秒。
     """
     total_dur = probe_duration(raw_mp4)
     t_start, t_end = detect_speech_window(ext_wav if (ext_wav and ext_wav.exists()) else raw_mp4, total_dur)
     if cta:
         spoken_en = strip_cta(spoken_en)
         t_end = min(t_end, cta["speech_end"] + 0.12)
-        total_dur = cta["cut"] + cta["card_sec"]
+        total_dur = card_at(cta) + cta["card_sec"]
     chunks = chunk_words(spoken_en, max_words=4)
     total_words = sum(len(c.split()) for c in chunks)
     span = max(0.8, t_end - t_start)
@@ -390,17 +395,20 @@ def finalize_clip(
             else:
                 render_cta_card(cta["keyword"], cta["benefit"], card)
             ci = base_idx + len(overlays)
-            cmd += ["-i", str(card)]
-            c0 = cta["cut"]
+            cmd += ["-loop", "1", "-framerate", "24", "-t", f"{total_dur:.3f}", "-i", str(card)]
+            # 说完留一拍（hold）再出字卡，模糊层和字卡一起淡入；硬切会让人觉得话被掐断
+            c0, fd = card_at(cta), cta.get("fade", 0.35)
             fc_parts += [
                 f"[{prev}]split[cm][cn]",
-                "[cn]boxblur=24:2,eq=brightness=-0.14:saturation=0.7[cb]",
+                f"[cn]boxblur=24:2,eq=brightness=-0.14:saturation=0.7,format=yuva420p,fade=t=in:st={c0:.3f}:d={fd}:alpha=1[cb]",
+                f"[{ci}:v]format=rgba,fade=t=in:st={c0:.3f}:d={fd}:alpha=1[cc]",
                 f"[cm][cb]overlay=0:0:enable='gte(t,{c0:.3f})'[vb]",
-                f"[vb][{ci}:v]overlay=0:0:enable='gte(t,{c0:.3f})'[vc]",
+                f"[vb][cc]overlay=0:0:enable='gte(t,{c0:.3f})'[vc]",
             ]
             prev = "vc"
             if has_ext_audio:
-                fc_parts.append(f"[1:a]atrim=0:{c0:.3f},afade=t=out:st={c0 - 0.06:.3f}:d=0.06,apad=whole_dur={total_dur:.3f}[ac]")
+                vc = cta["cut"]  # 配音照旧在 Comment 前截断，hold 期间只剩音乐
+                fc_parts.append(f"[1:a]atrim=0:{vc:.3f},afade=t=out:st={vc - 0.06:.3f}:d=0.06,apad=whole_dur={total_dur:.3f}[ac]")
                 a_map = "[ac]"
         if bgm and has_ext_audio and a_map == "[ac]":
             # 垫底音乐：整体压到 gain_db，人声出现时再侧链压低；片尾字卡期间音乐继续，淡出收尾
@@ -532,7 +540,8 @@ def main() -> None:
         if card_cfg.get("enabled") and s["id"] in cta_cuts:
             cc = cta_cuts[s["id"]]
             pc = cfg["personas"][s["persona"]]["cta"]
-            cta = {"cut": cc["cut"], "speech_end": (cc.get("pause") or [cc["speech_end"]])[0], "card_sec": card_cfg.get("card_sec", 1.8), **pc}
+            cta = {"cut": cc["cut"], "speech_end": (cc.get("pause") or [cc["speech_end"]])[0], "card_sec": card_cfg.get("card_sec", 1.8),
+                   "hold": card_cfg.get("hold_sec", 0.9), "fade": card_cfg.get("fade_sec", 0.35), **pc}
             if s.get("end_card") == "question":  # 提问版字卡：问题写在脚本的 question_en
                 cta["question"] = s["question_en"]
         ext_wav = WORK_DIR / "tts" / f"{s['id']}.wav"
@@ -545,7 +554,7 @@ def main() -> None:
             # 动作开场 + 说话段 + 插入空镜：先按配音时间轴拼成一条素材，景别变化已在拼接里做了，不再叠 punch_in
             from broll_plan import composite_tmp
 
-            total = (cta["cut"] + cta["card_sec"]) if cta else probe_duration(ext_wav) + 0.3
+            total = (card_at(cta) + cta["card_sec"]) if cta else probe_duration(ext_wav) + 0.3
             try:
                 comp = composite_tmp(s, total)
             except FileNotFoundError as exc:

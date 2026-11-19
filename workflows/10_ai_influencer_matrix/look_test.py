@@ -15,16 +15,12 @@ import json
 import shutil
 from pathlib import Path
 
-from broll_plan import BROLL_WAV_DIR, FPS, SAMPLE_DIR, legal_frames
+from broll_plan import BROLL_WAV_DIR, FPS, LOOK, SAMPLE_DIR, legal_frames
 from cloud_influencer_h3 import build_h3_prompt
 
 HERE = Path(__file__).resolve().parent
 
-LOOK_B = {
-    "trigger": "r34l1sm",
-    "skin_en": "unretouched dry matte skin with visible pores, fine peach fuzz, faint freckles and slight natural unevenness and redness",
-    "finish_en": "Natural live-action documentary realism with fine film grain",
-}
+LOOK_B = LOOK  # 用户选了 B，已成为 broll_plan 的正式画风
 LOOK_C = {
     **LOOK_B,
     "shot_en": "documentary interview shot on <Subject 1>, chest-up medium close-up through a 50mm lens, <Subject 1> placed off-center exactly as in <Picture 1>, soft side window light.",
@@ -88,7 +84,7 @@ def finalize_variants() -> None:
     for sid, seed, _, _ in TESTS:
         s = manifest[sid]
         cc = cuts[sid]
-        cta = {"cut": cc["cut"], "speech_end": (cc.get("pause") or [cc["speech_end"]])[0], "card_sec": 1.8, **cfg["personas"][s["persona"]]["cta"]}
+        cta = {"cut": cc["cut"], "speech_end": (cc.get("pause") or [cc["speech_end"]])[0], "card_sec": 1.8, "hold": 0.9, "fade": 0.35, **cfg["personas"][s["persona"]]["cta"]}
         if s.get("end_card") == "question":
             cta["question"] = s["question_en"]
         bgm = {"path": HERE / "bgm" / cfg["finalize"]["bgm"]["tracks"][s["persona"]], "gain_db": cfg["finalize"]["bgm"].get("gain_db", -20)}
@@ -99,7 +95,7 @@ def finalize_variants() -> None:
                 print(f"⏭️ {sid} {tag}: 没有素材", flush=True)
                 continue
             broll_plan.latest_raw = lambda job, _t=talk_raw[-1], _s=sid: _t if job == f"{_s}talk" else orig_latest(job)
-            comp = broll_plan.composite_tmp(s, cta["cut"] + cta["card_sec"])
+            comp = broll_plan.composite_tmp(s, sf.card_at(cta) + cta["card_sec"])
             dst = out_dir / f"{sid}_{tag}.mp4"
             sf.finalize_clip(comp, dst, s["spoken_en"], s["hook_banner"], ext_wav=HERE / "work" / "tts" / f"{sid}.wav",
                              cta=cta, bgm=bgm, film=None if tag == "A" else film)

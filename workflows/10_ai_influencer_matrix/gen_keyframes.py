@@ -139,6 +139,25 @@ INTERVIEW_PROMPT = (
 )
 
 
+# ---- 电影级重打光（2026-11-19）：用户选了 B 版画风，嫌偏暗、要「电影级打光」----
+# H3 会照搬参考图的光线（retention 写的是 lighting fully_preserved），所以光要在参考图上打好。
+# 只改光：脸、妆容、服装、机位、景别、构图、直视镜头全部不动（H3 不听构图/视线指令，改了也白改）。
+RELIGHT_PROMPT = (
+    "Use your image generation tool to create ONE photorealistic frame in vertical 2:3 orientation (1024x1536), then save it in the "
+    "current directory as {name}.png (PNG). Do not ask questions; just produce the file.\n"
+    "The attached {ref}.png is the exact shot. Keep EVERYTHING identical - face, bone structure, eye color, age lines, hairstyle, "
+    "makeup, jewelry, outfit, pose, framing, camera position, lens, composition, eye contact with the lens and every prop - and change "
+    "ONLY the lighting, as a cinematographer would light this shot for a feature film:\n"
+    "- Key: a large soft source from 45 degrees camera-{key_side}, slightly above eye level, wrapping the face; the face is the "
+    "brightest, well-exposed area of the frame with a gentle 2:1 falloff to the other cheek (soft Rembrandt modelling), clear catchlights in both eyes.\n"
+    "- Edge: a subtle warm back/hair light that separates the head and shoulders from the background with a thin natural rim, not a halo.\n"
+    "- Background: about one stop darker than the face but still readable, with motivated practical sources glowing warm in it "
+    "(lamps, window light), creating depth and soft bokeh.\n"
+    "- Overall: bright and inviting, never murky or underexposed; rich but natural contrast; warm skin tones against slightly cooler shadows.\n"
+    "- Skin stays unretouched and matte with visible pores; no beauty glow, no shine, no HDR look, no over-sharpening.\n"
+)
+
+
 def _attach(work: Path, dep: str) -> Path | None:
     src = WORK_DIR / f"{dep}_raw.png"
     if not src.exists():
@@ -181,6 +200,8 @@ def run_one(fr: dict, style: str) -> tuple[str, bool, str]:
         prompt = COMPOSE_PROMPT.format(name=name, plate=fr["edit_of"], sheet=fr["sheet_of"])
     elif kind == "interview":
         prompt = INTERVIEW_PROMPT.format(name=name, ref=fr["edit_of"], side=fr.get("side", "right"), look_dir=fr.get("look_dir", "left"))
+    elif kind == "relight":
+        prompt = RELIGHT_PROMPT.format(name=name, ref=fr["edit_of"], key_side=fr.get("key_side", "left"))
     elif kind == "broll":
         ref_line = BROLL_PERSON_REF.format(ref=fr["edit_of"]) if fr.get("edit_of") else ""
         prompt = BROLL_PROMPT.format(name=name, ref_line=ref_line)

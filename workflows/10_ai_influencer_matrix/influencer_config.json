@@ -263,6 +263,8 @@
     "cta_card": {
       "enabled": true,
       "card_sec": 1.8,
+      "hold_sec": 0.9,
+      "fade_sec": 0.35,
       "_note": "口播结尾的 'Comment X.' 听起来像 'common'，也没说评论能拿到什么。成片在 work/tts/cta_cut.json 的剪点处截掉这句，换成字卡。剪点 = whisper 词时间戳定位 Comment + 落在真实静音段里。"
     },
     "bgm": {
@@ -277,8 +279,8 @@
     },
     "film": {
       "enabled": true,
-      "filter": "gblur=sigma=0.6,eq=saturation=0.86:contrast=1.04:gamma=0.98,curves=r='0/0.03 0.5/0.5 1/0.96':g='0/0.02 0.5/0.49 1/0.96':b='0/0.06 0.5/0.48 1/0.92',noise=c0s=9:c0f=t+u:c1s=3:c1f=t+u:c2s=3:c2f=t+u,vignette=angle=PI/5",
-      "_note": "去「数字感」后期（2026-11-18）：AI 画面过锐、过净、饱和偏高。0.6px 柔化 + 每帧变化的颗粒（亮度 9 / 色度 3）+ 饱和 -14% + 轻 S 曲线（暗部偏冷、高光微压）+ 暗角。在字幕之前做。"
+      "filter": "format=gbrp,split=3[o][d][m];[d]curves=master='0/0 0.55/0.55 0.75/0.70 1/0.80',gblur=sigma=2.5[dd];[m]format=gray,curves=master='0/0 0.62/0 0.85/1 1/1',gblur=sigma=8,format=gbrp[mm];[o][dd][mm]maskedmerge,format=yuv420p,eq=saturation=0.92:contrast=1.0:gamma=1.08,curves=master='0/0.02 0.25/0.27 0.5/0.56 0.75/0.78 0.9/0.86 1/0.9',colorbalance=rs=-0.04:bs=0.05:rm=0.03:gm=0.01:bm=-0.02:rh=0.04:gh=0.015:bh=-0.03,gblur=sigma=0.5,noise=c0s=8:c0f=t+u:c1s=3:c1f=t+u:c2s=3:c2f=t+u,vignette=angle=PI/6.5",
+      "_note": "电影调色 B4（2026-11-19 用户在 B2~B6 里选定）：先局部去油光（只对脸上的亮部压暗并柔化，按亮度遮罩合回去）-> 提亮中间调、高光软压 -> 暗部偏青、肤色偏暖 -> 0.5px 柔化 + 动态颗粒 + 轻暗角。不要加高光柔光（halation）：会放大脸上的油光（B2 被否的原因）。11-18 的压暗版让平均亮度掉了约 27%，用户嫌暗。暗角不要偏离画面中心，否则底角出现黑色硬弧。滤镜里有 split/maskedmerge，finalize_clip 把它接在 [v0] 链里，标签 o/d/m/dd/mm 不要和别处冲突。候选对比见 outputs/look_test/*_grades_B2-B6.mp4。"
     }
   }
 }

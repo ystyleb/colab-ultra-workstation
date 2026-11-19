@@ -36,8 +36,18 @@ W, H = 768, 1344
 
 # 空镜/开场不要 closeup LoRA：它会把镜头往脸部大特写推，空镜里根本没有脸
 BROLL_OVERRIDES = {"closeup_strength": 0.0}
+# 去「数字感」画风（2026-11-19 用户在 A/B/C 对比里选了 B）：写实 LoRA 触发词 + 哑光皮肤 + 胶片质感描述，关 closeup LoRA
+LOOK = {
+    "trigger": "r34l1sm",
+    "skin_en": "unretouched dry matte skin with visible pores, fine peach fuzz, faint freckles and slight natural unevenness and redness, a soft satin-matte finish with no oily sheen and no specular hotspots on the forehead, nose or cheeks",
+    "finish_en": "Natural live-action documentary realism with fine film grain",
+}
 OPENER_CAMERA = "The camera pushes in with small amplitude at slow speed."
 INSERT_CAMERA = "The camera shakes slightly at slow speed like a steady handheld camera."
+
+
+TALK_TAIL = 1.2  # 说话段配音尾部静音（秒），见 make_talk_wav
+FACE_TAIL = 1.5  # 说完前至少这么多秒必须是人物出镜，见 resolve_times
 
 
 def legal_frames(sec: float) -> int:
@@ -106,7 +116,11 @@ def resolve_times(s: dict) -> dict:
     b = json.loads(json.dumps(s["broll"]))
     if "hook_text" in b:
         b["hook_cut"] = _snap(s["id"], phrase_span(s["id"], b["hook_text"])[1], "after")
-    cut = cta_cuts().get(s["id"], {}).get("cut")
+    cc = cta_cuts().get(s["id"], {})
+    cut = cc.get("cut")
+    # 收尾要人物当着镜头说完：插入空镜最晚在说完前 FACE_TAIL 秒结束
+    speech_end = (cc.get("pause") or [cc.get("speech_end")])[0]
+    limit = speech_end - FACE_TAIL if speech_end else None
     for ins in b.get("inserts", []):
         if "at_text" in ins:
             a, e = phrase_span(s["id"], ins["at_text"])
@@ -116,6 +130,13 @@ def resolve_times(s: dict) -> dict:
             ins["at"][0] = b["hook_cut"]
         if cut:
             ins["at"][1] = min(ins["at"][1], cut)
+        if limit and ins["at"][1] > limit:
+            a, e = ins["at"]
+            if limit - a >= 1.5:  # 截掉尾巴还够长：只截
+                ins["at"][1] = round(limit, 2)
+            else:  # 太短：保持原时长整体往前挪（画面先演、人物再当面说出那句）
+                d = e - a
+                ins["at"] = [round(max(b["hook_cut"], limit - d), 2), round(limit, 2)]
     return b
 
 
@@ -136,8 +157,7 @@ def broll_prompt(persona: dict, scene_cfg: dict, action_en: str, dur_sec: float,
     if scene_cfg.get("outfit_en"):
         look = f"{look}, wearing {scene_cfg['outfit_en']}"
     subj = (
-        f"<Subject 1> is {persona['display_name']} ({look}) from <Picture 1>, "
-        "warm natural lifelike human skin tone with realistic fine pores and subtle authentic facial lines.\n"
+        f"<Subject 1> is {persona['display_name']} ({look}) from <Picture 1>, {LOOK['skin_en']}.\n"
         if person
         else ""
     )
@@ -149,7 +169,8 @@ def broll_prompt(persona: dict, scene_cfg: dict, action_en: str, dur_sec: float,
     )
     hush = "Nobody speaks: <Subject 1>'s lips stay gently closed the whole time. " if person else "Nobody speaks. "
     return (
-        "subject_definitions:\n"
+        (f"{LOOK['trigger']}\n" if person else "")
+        + "subject_definitions:\n"
         f"{subj}"
         "<Audio 1> is a quiet room-tone reference with no speech.\n\n"
         "retention_analysis:\n"
@@ -161,7 +182,7 @@ def broll_prompt(persona: dict, scene_cfg: dict, action_en: str, dur_sec: float,
         f"Shot 1 (00:00.000 - {ts_end}): Live-action 35mm cinema vertical 9:16 B-roll shot that starts exactly from the "
         f"composition of <Picture 1>. {action_en} One single continuous shot from start to end, no cuts. {camera_en} {hush}"
         "Only quiet natural room ambiance, no speech, no music. "
-        "Clean live-action optical realism, zero subtitles, zero on-screen text, zero watermarks."
+        f"{LOOK['finish_en']}, zero subtitles, zero on-screen text, zero watermarks."
     )
 
 
@@ -170,18 +191,23 @@ def _ffmpeg(args: list[str]) -> None:
 
 
 def make_talk_wav(s: dict, b: dict, cut: float, out: Path) -> float:
-    """说话段配音：前面 lead 秒静音 + 配音[hook_cut, cta_cut) + 0.3 秒静音。返回总时长。"""
+    """说话段配音：前面 lead 秒静音 + 配音[hook_cut, cta_cut) + tail 秒静音。返回总时长。
+
+    tail 默认 1.2 秒：成片说完后要停一拍再出字卡（finalize.cta_card.hold_sec），这一拍得是 H3 真渲染的
+    闭嘴收尾，不能靠冻结最后一帧。总长贴近 H3 单段上限时缩短 tail，最少 0.3 秒。
+    """
     lead = b["talk"].get("lead", 0.25)
     src = TTS_DIR / f"{s['id']}.wav"
     a, e = b["hook_cut"], cut
+    tail = max(0.3, min(TALK_TAIL, 15.0 - lead - (e - a)))
     out.parent.mkdir(parents=True, exist_ok=True)
     _ffmpeg([
         "-i", str(src), "-af",
         f"atrim={a:.3f}:{e:.3f},asetpts=PTS-STARTPTS,afade=t=in:d=0.03,afade=t=out:st={e - a - 0.05:.3f}:d=0.05,"
-        f"adelay={int(lead * 1000)}:all=1,apad=pad_dur=0.3",
+        f"adelay={int(lead * 1000)}:all=1,apad=pad_dur={tail:.3f}",
         "-ac", "1", str(out),
     ])
-    return lead + (e - a) + 0.3
+    return lead + (e - a) + tail
 
 
 def make_silence_wav(out: Path, sec: float) -> None:
@@ -241,7 +267,8 @@ def build_jobs(ids: list[str], reuse: bool = True) -> tuple[list[dict], list[Pat
         item = {"id": f"{s['id']}talk", "persona": s["persona"], "camera_action_en": b["talk"]["action_en"], "spoken_en": talk_text(s, b)}
         jobs.append({
             "job_id": item["id"], "kind": "talk", "persona": s["persona"], "image": scene_cfg["image"], "audio": wav.name,
-            "frames": frames, "prompt": build_h3_prompt(persona, scene_cfg, item, frames / FPS),
+            "frames": frames, "h3_overrides": BROLL_OVERRIDES,
+            "prompt": build_h3_prompt(persona, scene_cfg, item, frames / FPS, LOOK),
         })
         files |= {SAMPLE_DIR / scene_cfg["image"], wav}
 

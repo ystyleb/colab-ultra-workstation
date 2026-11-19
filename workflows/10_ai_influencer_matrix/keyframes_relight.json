@@ -1,0 +1,10 @@
+{
+  "_note": "电影级重打光（2026-11-19）：B 版画风 + 参考图重打光对比。用法：python3 gen_keyframes.py --spec keyframes_relight.json",
+  "style": "Feature film still, ARRI Alexa Mini LF, Cooke S4 50mm, Kodak Vision3 250D film emulation, fine organic grain, professional cinematic lighting.",
+  "frames": [
+    {"name": "ref_vivian_flowers_lit", "persona": "vivian", "scene": "flowers_lit", "kind": "relight", "edit_of": "ref_vivian_flowers", "key_side": "left",
+     "prompt": "Glass conservatory full of peonies and roses: the key is soft daylight through the glass, a warm hanging lamp glows in the background."},
+    {"name": "ref_wen_counter_lit", "persona": "wen", "scene": "counter_lit", "kind": "relight", "edit_of": "ref_wen_counter", "key_side": "right",
+     "prompt": "Small old tea shop: the key is soft window light, warm tungsten lamps glow among the tea tins on the shelves behind him."}
+  ]
+}
