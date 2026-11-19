@@ -146,10 +146,12 @@ RELIGHT_PROMPT = (
     "Use your image generation tool to create ONE photorealistic frame in vertical 2:3 orientation (1024x1536), then save it in the "
     "current directory as {name}.png (PNG). Do not ask questions; just produce the file.\n"
     "The attached {ref}.png is the exact shot. Keep EVERYTHING identical - face, bone structure, eye color, age lines, hairstyle, "
-    "makeup, jewelry, outfit, pose, framing, camera position, lens, composition, eye contact with the lens and every prop - and change "
+    "makeup, jewelry, outfit, pose, action, framing, camera position, lens, composition, gaze direction and every prop - and change "
     "ONLY the lighting, as a cinematographer would light this shot for a feature film:\n"
+    "{light_ref_line}"
     "- Key: a large soft source from 45 degrees camera-{key_side}, slightly above eye level, wrapping the face; the face is the "
-    "brightest, well-exposed area of the frame with a gentle 2:1 falloff to the other cheek (soft Rembrandt modelling), clear catchlights in both eyes.\n"
+    "brightest, well-exposed area of the frame with a gentle 2:1 falloff to the other cheek (soft Rembrandt modelling), clear catchlights in the eyes. "
+    "If no face is visible, the key falls on the hands and the main subject of the action.\n"
     "- Edge: a subtle warm back/hair light that separates the head and shoulders from the background with a thin natural rim, not a halo.\n"
     "- Background: about one stop darker than the face but still readable, with motivated practical sources glowing warm in it "
     "(lamps, window light), creating depth and soft bokeh.\n"
@@ -168,7 +170,7 @@ def _attach(work: Path, dep: str) -> Path | None:
 
 
 def frame_deps(fr: dict) -> list[str]:
-    deps = [fr.get("identity_of"), fr.get("edit_of"), fr.get("sheet_of"), fr.get("plate_ref")]
+    deps = [fr.get("identity_of"), fr.get("edit_of"), fr.get("sheet_of"), fr.get("plate_ref"), fr.get("light_ref")]
     return [d for d in deps if d]
 
 
@@ -201,7 +203,10 @@ def run_one(fr: dict, style: str) -> tuple[str, bool, str]:
     elif kind == "interview":
         prompt = INTERVIEW_PROMPT.format(name=name, ref=fr["edit_of"], side=fr.get("side", "right"), look_dir=fr.get("look_dir", "left"))
     elif kind == "relight":
-        prompt = RELIGHT_PROMPT.format(name=name, ref=fr["edit_of"], key_side=fr.get("key_side", "left"))
+        light_ref_line = (f"- The attached {fr['light_ref']}.png is another shot of the same scene that is already lit: match its key "
+                          "direction, color temperature, contrast, rim light and practical lamps exactly, so the two shots cut together.\n"
+                          if fr.get("light_ref") else "")
+        prompt = RELIGHT_PROMPT.format(name=name, ref=fr["edit_of"], key_side=fr.get("key_side", "left"), light_ref_line=light_ref_line)
     elif kind == "broll":
         ref_line = BROLL_PERSON_REF.format(ref=fr["edit_of"]) if fr.get("edit_of") else ""
         prompt = BROLL_PROMPT.format(name=name, ref_line=ref_line)

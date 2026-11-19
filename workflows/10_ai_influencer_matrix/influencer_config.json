@@ -78,12 +78,12 @@
       },
       "scenes": {
         "library": {
-          "image": "ref_vivian_library_768x1344.png",
+          "image": "ref_vivian_library_lit_768x1344.png",
           "bg_en": "a sunlit Old-Money mahogany home library with leather-bound book spines, a warm brass banker desk lamp and wood-paneled walls",
           "outfit_en": "a crisp cream silk ascot blouse beneath a tailored charcoal-tweed blazer"
         },
         "flowers": {
-          "image": "ref_vivian_flowers_768x1344.png",
+          "image": "ref_vivian_flowers_lit_768x1344.png",
           "bg_en": "a sunlit glass conservatory room filled with buckets of fresh peonies, garden roses and seasonal stems in soft morning light",
           "outfit_en": "a soft dove-grey cashmere cardigan over a cream silk blouse"
         }
@@ -144,12 +144,12 @@
       },
       "scenes": {
         "studio": {
-          "image": "ref_june_studio_768x1344.png",
+          "image": "ref_june_studio_lit_768x1344.png",
           "bg_en": "a natural-light old photography studio: she stands in front of a cork wall with pinned black-and-white contact sheets, a wooden worktable with an old film camera behind her",
           "outfit_en": "a faded denim shirt with rolled sleeves over a cream tee"
         },
         "kitchen": {
-          "image": "ref_june_kitchen_768x1344.png",
+          "image": "ref_june_kitchen_lit_768x1344.png",
           "bg_en": "a warm lived-in Midwestern kitchen with an open wedding photo album and a mug on the table, soft window daylight",
           "outfit_en": "a soft oatmeal knit sweater"
         }
@@ -207,12 +207,12 @@
       },
       "scenes": {
         "counter": {
-          "image": "ref_wen_counter_768x1344.png",
+          "image": "ref_wen_counter_lit_768x1344.png",
           "bg_en": "a small San Francisco tea shop counter with a wall of tea tins, a steaming clay teapot and soft window daylight",
           "outfit_en": "a navy cotton cardigan over a white collared shirt"
         },
         "chess": {
-          "image": "ref_wen_chess_768x1344.png",
+          "image": "ref_wen_chess_lit_768x1344.png",
           "bg_en": "a quiet back room with a wooden xiangqi board on a small table by a window, a handwritten 'Closed for nap' sign hanging in the window",
           "outfit_en": "a soft grey wool vest over a light-blue collared shirt"
         }

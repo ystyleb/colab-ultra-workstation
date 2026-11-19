@@ -216,6 +216,12 @@ def make_silence_wav(out: Path, sec: float) -> None:
     _ffmpeg(["-f", "lavfi", "-i", f"anoisesrc=color=pink:amplitude=0.001:duration={sec:.3f}:sample_rate=24000", "-ac", "1", str(out)])
 
 
+def _raw_newer(job_id: str, image: str) -> bool:
+    """原始素材比它的首帧图新才能复用：首帧图换过（比如重打光）就必须重出。"""
+    r, img = latest_raw(job_id), SAMPLE_DIR / image
+    return bool(r) and (not img.exists() or r.stat().st_mtime > img.stat().st_mtime)
+
+
 def _raw_len(job_id: str) -> float:
     r = latest_raw(job_id)
     if not r:
@@ -248,7 +254,7 @@ def build_jobs(ids: list[str], reuse: bool = True) -> tuple[list[dict], list[Pat
         # 1) 开场动作镜头
         op = b["opener"]
         need = b["hook_cut"] + op.get("in", 0.5) + 0.2
-        if not (reuse and _raw_len(f"{s['id']}open") >= need):
+        if not (reuse and _raw_len(f"{s['id']}open") >= need and _raw_newer(f"{s['id']}open", op["image"])):
             frames = legal_frames(need + 0.3)
             wav = BROLL_WAV_DIR / f"{s['id']}open.wav"
             make_silence_wav(wav, frames / FPS)
@@ -277,7 +283,7 @@ def build_jobs(ids: list[str], reuse: bool = True) -> tuple[list[dict], list[Pat
             if "action_en" not in ins:
                 continue
             need = ins["at"][1] - ins["at"][0] + ins.get("in", 0.6) + 0.1
-            if reuse and _raw_len(f"{s['id']}ins{k}") >= need:
+            if reuse and _raw_len(f"{s['id']}ins{k}") >= need and _raw_newer(f"{s['id']}ins{k}", ins["image"]):
                 continue
             frames = legal_frames(need + 0.3)
             wav = BROLL_WAV_DIR / f"{s['id']}ins{k}.wav"
