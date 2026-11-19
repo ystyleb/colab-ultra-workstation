@@ -1,0 +1,1289 @@
+{
+ "name": "Sarah",
+ "message": "Thank you for the laughs and the late-night calls. You always pick up, even at 2am.",
+ "from": "The whole gang",
+ "viewport": [
+  1280,
+  720
+ ],
+ "scale": 2,
+ "shots": [
+  {
+   "file": "000_s1_empty.png",
+   "label": "s1_empty",
+   "scrollY": 662,
+   "targets": {
+    "field": [
+     337,
+     -180,
+     606,
+     36
+    ]
+   }
+  },
+  {
+   "file": "001_s1_name_scroll1.png",
+   "label": "s1_name_scroll1",
+   "scrollY": 541,
+   "targets": {}
+  },
+  {
+   "file": "002_s1_name_scroll2.png",
+   "label": "s1_name_scroll2",
+   "scrollY": 419,
+   "targets": {}
+  },
+  {
+   "file": "003_s1_name_scroll3.png",
+   "label": "s1_name_scroll3",
+   "scrollY": 298,
+   "targets": {}
+  },
+  {
+   "file": "004_s1_name_scroll4.png",
+   "label": "s1_name_scroll4",
+   "scrollY": 176,
+   "targets": {}
+  },
+  {
+   "file": "005_s1_name_1.png",
+   "label": "s1_name_1",
+   "scrollY": 176,
+   "targets": {
+    "field": [
+     337,
+     354,
+     606,
+     36
+    ]
+   }
+  },
+  {
+   "file": "006_s1_name_2.png",
+   "label": "s1_name_2",
+   "scrollY": 176,
+   "targets": {
+    "field": [
+     337,
+     354,
+     606,
+     36
+    ]
+   }
+  },
+  {
+   "file": "007_s1_name_3.png",
+   "label": "s1_name_3",
+   "scrollY": 176,
+   "targets": {
+    "field": [
+     337,
+     354,
+     606,
+     36
+    ]
+   }
+  },
+  {
+   "file": "008_s1_name_4.png",
+   "label": "s1_name_4",
+   "scrollY": 176,
+   "targets": {
+    "field": [
+     337,
+     354,
+     606,
+     36
+    ]
+   }
+  },
+  {
+   "file": "009_s1_name_5.png",
+   "label": "s1_name_5",
+   "scrollY": 176,
+   "targets": {
+    "field": [
+     337,
+     354,
+     606,
+     36
+    ]
+   }
+  },
+  {
+   "file": "010_s1_friend_hover.png",
+   "label": "s1_friend_hover",
+   "scrollY": 176,
+   "targets": {
+    "target": [
+     337,
+     464,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "011_s1_friend.png",
+   "label": "s1_friend",
+   "scrollY": 176,
+   "targets": {
+    "target": [
+     337,
+     464,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "012_s1_age_scroll1.png",
+   "label": "s1_age_scroll1",
+   "scrollY": 314,
+   "targets": {}
+  },
+  {
+   "file": "013_s1_age_scroll2.png",
+   "label": "s1_age_scroll2",
+   "scrollY": 451,
+   "targets": {}
+  },
+  {
+   "file": "014_s1_age_scroll3.png",
+   "label": "s1_age_scroll3",
+   "scrollY": 589,
+   "targets": {}
+  },
+  {
+   "file": "015_s1_age_scroll4.png",
+   "label": "s1_age_scroll4",
+   "scrollY": 726,
+   "targets": {}
+  },
+  {
+   "file": "016_s1_age_hover.png",
+   "label": "s1_age_hover",
+   "scrollY": 726,
+   "targets": {
+    "target": [
+     749,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "017_s1_age.png",
+   "label": "s1_age",
+   "scrollY": 726,
+   "targets": {
+    "target": [
+     749,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "018_s1_next_hover.png",
+   "label": "s1_next_hover",
+   "scrollY": 726,
+   "targets": {
+    "target": [
+     885.3125,
+     614,
+     86.6875,
+     36
+    ]
+   }
+  },
+  {
+   "file": "019_s1_next.png",
+   "label": "s1_next",
+   "scrollY": 0,
+   "targets": {}
+  },
+  {
+   "file": "020_s2_birthday_scroll1.png",
+   "label": "s2_birthday_scroll1",
+   "scrollY": 129,
+   "targets": {}
+  },
+  {
+   "file": "021_s2_birthday_scroll2.png",
+   "label": "s2_birthday_scroll2",
+   "scrollY": 258,
+   "targets": {}
+  },
+  {
+   "file": "022_s2_birthday_hover.png",
+   "label": "s2_birthday_hover",
+   "scrollY": 258,
+   "targets": {
+    "target": [
+     337,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "023_s2_birthday.png",
+   "label": "s2_birthday",
+   "scrollY": 258,
+   "targets": {
+    "target": [
+     337,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "024_s3_enter.png",
+   "label": "s3_enter",
+   "scrollY": 258,
+   "targets": {}
+  },
+  {
+   "file": "025_s3_English_hover.png",
+   "label": "s3_English_hover",
+   "scrollY": 258,
+   "targets": {
+    "target": [
+     337,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "026_s3_English.png",
+   "label": "s3_English",
+   "scrollY": 258,
+   "targets": {
+    "target": [
+     337,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "027_s3_Upbeat_pop_scroll1.png",
+   "label": "s3_Upbeat_pop_scroll1",
+   "scrollY": 385,
+   "targets": {}
+  },
+  {
+   "file": "028_s3_Upbeat_pop_scroll2.png",
+   "label": "s3_Upbeat_pop_scroll2",
+   "scrollY": 512,
+   "targets": {}
+  },
+  {
+   "file": "029_s3_Upbeat_pop_hover.png",
+   "label": "s3_Upbeat_pop_hover",
+   "scrollY": 512,
+   "targets": {
+    "target": [
+     749,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "030_s3_Upbeat_pop.png",
+   "label": "s3_Upbeat_pop",
+   "scrollY": 512,
+   "targets": {
+    "target": [
+     749,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "031_s3_Playful_scroll1.png",
+   "label": "s3_Playful_scroll1",
+   "scrollY": 633,
+   "targets": {}
+  },
+  {
+   "file": "032_s3_Playful_scroll2.png",
+   "label": "s3_Playful_scroll2",
+   "scrollY": 753,
+   "targets": {}
+  },
+  {
+   "file": "033_s3_Playful_scroll3.png",
+   "label": "s3_Playful_scroll3",
+   "scrollY": 874,
+   "targets": {}
+  },
+  {
+   "file": "034_s3_Playful_hover.png",
+   "label": "s3_Playful_hover",
+   "scrollY": 874,
+   "targets": {
+    "target": [
+     543,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "035_s3_Playful.png",
+   "label": "s3_Playful",
+   "scrollY": 874,
+   "targets": {
+    "target": [
+     543,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "036_s3_Female_voice_scroll1.png",
+   "label": "s3_Female_voice_scroll1",
+   "scrollY": 1001,
+   "targets": {}
+  },
+  {
+   "file": "037_s3_Female_voice_scroll2.png",
+   "label": "s3_Female_voice_scroll2",
+   "scrollY": 1128,
+   "targets": {}
+  },
+  {
+   "file": "038_s3_Female_voice_hover.png",
+   "label": "s3_Female_voice_hover",
+   "scrollY": 1128,
+   "targets": {
+    "target": [
+     543,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "039_s3_Female_voice.png",
+   "label": "s3_Female_voice",
+   "scrollY": 1128,
+   "targets": {
+    "target": [
+     543,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "040_s3__Upbeat_scroll1.png",
+   "label": "s3__Upbeat_scroll1",
+   "scrollY": 1249,
+   "targets": {}
+  },
+  {
+   "file": "041_s3__Upbeat_scroll2.png",
+   "label": "s3__Upbeat_scroll2",
+   "scrollY": 1369,
+   "targets": {}
+  },
+  {
+   "file": "042_s3__Upbeat_scroll3.png",
+   "label": "s3__Upbeat_scroll3",
+   "scrollY": 1490,
+   "targets": {}
+  },
+  {
+   "file": "043_s3__Upbeat_hover.png",
+   "label": "s3__Upbeat_hover",
+   "scrollY": 1490,
+   "targets": {
+    "target": [
+     749,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "044_s3__Upbeat.png",
+   "label": "s3__Upbeat",
+   "scrollY": 1490,
+   "targets": {
+    "target": [
+     749,
+     276,
+     194,
+     96
+    ]
+   }
+  },
+  {
+   "file": "045_s3_next_hover.png",
+   "label": "s3_next_hover",
+   "scrollY": 1490,
+   "targets": {
+    "target": [
+     885.3125,
+     478,
+     86.6875,
+     36
+    ]
+   }
+  },
+  {
+   "file": "046_s3_next.png",
+   "label": "s3_next",
+   "scrollY": 0,
+   "targets": {}
+  },
+  {
+   "file": "047_s4__Late_night_talks_scroll1.png",
+   "label": "s4__Late_night_talks_scroll1",
+   "scrollY": 134,
+   "targets": {}
+  },
+  {
+   "file": "048_s4__Late_night_talks_scroll2.png",
+   "label": "s4__Late_night_talks_scroll2",
+   "scrollY": 267,
+   "targets": {}
+  },
+  {
+   "file": "049_s4__Late_night_talks_hover.png",
+   "label": "s4__Late_night_talks_hover",
+   "scrollY": 267,
+   "targets": {
+    "target": [
+     446.7421875,
+     307,
+     127.28125,
+     34
+    ]
+   }
+  },
+  {
+   "file": "050_s4__Late_night_talks.png",
+   "label": "s4__Late_night_talks",
+   "scrollY": 267,
+   "targets": {
+    "target": [
+     446.7421875,
+     307,
+     129.9921875,
+     34
+    ]
+   }
+  },
+  {
+   "file": "051_s4__Inside_jokes_hover.png",
+   "label": "s4__Inside_jokes_hover",
+   "scrollY": 267,
+   "targets": {
+    "target": [
+     337,
+     307,
+     101.7421875,
+     34
+    ]
+   }
+  },
+  {
+   "file": "052_s4__Inside_jokes.png",
+   "label": "s4__Inside_jokes",
+   "scrollY": 267,
+   "targets": {
+    "target": [
+     337,
+     307,
+     103.671875,
+     34
+    ]
+   }
+  },
+  {
+   "file": "053_s4__Bad_karaoke_hover.png",
+   "label": "s4__Bad_karaoke_hover",
+   "scrollY": 267,
+   "targets": {
+    "target": [
+     414.2109375,
+     513,
+     105.515625,
+     34
+    ]
+   }
+  },
+  {
+   "file": "054_s4__Bad_karaoke.png",
+   "label": "s4__Bad_karaoke",
+   "scrollY": 267,
+   "targets": {
+    "target": [
+     414.2109375,
+     513,
+     107.2578125,
+     34
+    ]
+   }
+  },
+  {
+   "file": "055_s4__That_laugh_scroll1.png",
+   "label": "s4__That_laugh_scroll1",
+   "scrollY": 376,
+   "targets": {}
+  },
+  {
+   "file": "056_s4__That_laugh_scroll2.png",
+   "label": "s4__That_laugh_scroll2",
+   "scrollY": 486,
+   "targets": {}
+  },
+  {
+   "file": "057_s4__That_laugh_scroll3.png",
+   "label": "s4__That_laugh_scroll3",
+   "scrollY": 595,
+   "targets": {}
+  },
+  {
+   "file": "058_s4__That_laugh_hover.png",
+   "label": "s4__That_laugh_hover",
+   "scrollY": 595,
+   "targets": {
+    "target": [
+     337,
+     307,
+     94.5625,
+     34
+    ]
+   }
+  },
+  {
+   "file": "059_s4__That_laugh.png",
+   "label": "s4__That_laugh",
+   "scrollY": 595,
+   "targets": {
+    "target": [
+     337,
+     307,
+     96.1484375,
+     34
+    ]
+   }
+  },
+  {
+   "file": "060_s4_msg_scroll1.png",
+   "label": "s4_msg_scroll1",
+   "scrollY": 689,
+   "targets": {}
+  },
+  {
+   "file": "061_s4_msg_scroll2.png",
+   "label": "s4_msg_scroll2",
+   "scrollY": 784,
+   "targets": {}
+  },
+  {
+   "file": "062_s4_msg_scroll3.png",
+   "label": "s4_msg_scroll3",
+   "scrollY": 878,
+   "targets": {}
+  },
+  {
+   "file": "063_s4_msg_4.png",
+   "label": "s4_msg_4",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "064_s4_msg_8.png",
+   "label": "s4_msg_8",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "065_s4_msg_12.png",
+   "label": "s4_msg_12",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "066_s4_msg_16.png",
+   "label": "s4_msg_16",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "067_s4_msg_20.png",
+   "label": "s4_msg_20",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "068_s4_msg_24.png",
+   "label": "s4_msg_24",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "069_s4_msg_28.png",
+   "label": "s4_msg_28",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "070_s4_msg_32.png",
+   "label": "s4_msg_32",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "071_s4_msg_36.png",
+   "label": "s4_msg_36",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "072_s4_msg_40.png",
+   "label": "s4_msg_40",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "073_s4_msg_44.png",
+   "label": "s4_msg_44",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "074_s4_msg_48.png",
+   "label": "s4_msg_48",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "075_s4_msg_52.png",
+   "label": "s4_msg_52",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "076_s4_msg_56.png",
+   "label": "s4_msg_56",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "077_s4_msg_60.png",
+   "label": "s4_msg_60",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "078_s4_msg_64.png",
+   "label": "s4_msg_64",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "079_s4_msg_68.png",
+   "label": "s4_msg_68",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "080_s4_msg_72.png",
+   "label": "s4_msg_72",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "081_s4_msg_76.png",
+   "label": "s4_msg_76",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "082_s4_msg_80.png",
+   "label": "s4_msg_80",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "083_s4_msg_83.png",
+   "label": "s4_msg_83",
+   "scrollY": 878,
+   "targets": {
+    "field": [
+     337,
+     254,
+     606,
+     140
+    ]
+   }
+  },
+  {
+   "file": "084_s4_next_hover.png",
+   "label": "s4_next_hover",
+   "scrollY": 878,
+   "targets": {
+    "target": [
+     885.3125,
+     586,
+     86.6875,
+     36
+    ]
+   }
+  },
+  {
+   "file": "085_s4_next.png",
+   "label": "s4_next",
+   "scrollY": 0,
+   "targets": {
+    "email": [
+     518.265625,
+     509.5,
+     194.265625,
+     16.5
+    ]
+   }
+  },
+  {
+   "file": "086_s5_enter.png",
+   "label": "s5_enter",
+   "scrollY": 0,
+   "targets": {
+    "email": [
+     518.265625,
+     509.5,
+     194.265625,
+     16.5
+    ],
+    "offer": [
+     337,
+     854,
+     606,
+     16
+    ],
+    "start": [
+     793.890625,
+     668,
+     178.109375,
+     36
+    ]
+   }
+  },
+  {
+   "file": "087_s5_from_scroll1.png",
+   "label": "s5_from_scroll1",
+   "scrollY": 100,
+   "targets": {
+    "email": [
+     518.265625,
+     409.5,
+     194.265625,
+     16.5
+    ]
+   }
+  },
+  {
+   "file": "088_s5_from_scroll2.png",
+   "label": "s5_from_scroll2",
+   "scrollY": 200,
+   "targets": {
+    "email": [
+     518.265625,
+     309.5,
+     194.265625,
+     16.5
+    ]
+   }
+  },
+  {
+   "file": "089_s5_from_scroll3.png",
+   "label": "s5_from_scroll3",
+   "scrollY": 300,
+   "targets": {
+    "email": [
+     518.265625,
+     209.5,
+     194.265625,
+     16.5
+    ]
+   }
+  },
+  {
+   "file": "090_s5_from_2.png",
+   "label": "s5_from_2",
+   "scrollY": 300,
+   "targets": {
+    "email": [
+     518.265625,
+     209.5,
+     194.265625,
+     16.5
+    ],
+    "field": [
+     337,
+     306,
+     606,
+     36
+    ],
+    "offer": [
+     337,
+     554,
+     606,
+     16
+    ],
+    "start": [
+     793.890625,
+     668,
+     178.109375,
+     36
+    ]
+   }
+  },
+  {
+   "file": "091_s5_from_4.png",
+   "label": "s5_from_4",
+   "scrollY": 300,
+   "targets": {
+    "email": [
+     518.265625,
+     209.5,
+     194.265625,
+     16.5
+    ],
+    "field": [
+     337,
+     306,
+     606,
+     36
+    ],
+    "offer": [
+     337,
+     554,
+     606,
+     16
+    ],
+    "start": [
+     793.890625,
+     668,
+     178.109375,
+     36
+    ]
+   }
+  },
+  {
+   "file": "092_s5_from_6.png",
+   "label": "s5_from_6",
+   "scrollY": 300,
+   "targets": {
+    "email": [
+     518.265625,
+     209.5,
+     194.265625,
+     16.5
+    ],
+    "field": [
+     337,
+     306,
+     606,
+     36
+    ],
+    "offer": [
+     337,
+     554,
+     606,
+     16
+    ],
+    "start": [
+     793.890625,
+     668,
+     178.109375,
+     36
+    ]
+   }
+  },
+  {
+   "file": "093_s5_from_8.png",
+   "label": "s5_from_8",
+   "scrollY": 300,
+   "targets": {
+    "email": [
+     518.265625,
+     209.5,
+     194.265625,
+     16.5
+    ],
+    "field": [
+     337,
+     306,
+     606,
+     36
+    ],
+    "offer": [
+     337,
+     554,
+     606,
+     16
+    ],
+    "start": [
+     793.890625,
+     668,
+     178.109375,
+     36
+    ]
+   }
+  },
+  {
+   "file": "094_s5_from_10.png",
+   "label": "s5_from_10",
+   "scrollY": 300,
+   "targets": {
+    "email": [
+     518.265625,
+     209.5,
+     194.265625,
+     16.5
+    ],
+    "field": [
+     337,
+     306,
+     606,
+     36
+    ],
+    "offer": [
+     337,
+     554,
+     606,
+     16
+    ],
+    "start": [
+     793.890625,
+     668,
+     178.109375,
+     36
+    ]
+   }
+  },
+  {
+   "file": "095_s5_from_12.png",
+   "label": "s5_from_12",
+   "scrollY": 300,
+   "targets": {
+    "email": [
+     518.265625,
+     209.5,
+     194.265625,
+     16.5
+    ],
+    "field": [
+     337,
+     306,
+     606,
+     36
+    ],
+    "offer": [
+     337,
+     554,
+     606,
+     16
+    ],
+    "start": [
+     793.890625,
+     668,
+     178.109375,
+     36
+    ]
+   }
+  },
+  {
+   "file": "096_s5_from_14.png",
+   "label": "s5_from_14",
+   "scrollY": 300,
+   "targets": {
+    "email": [
+     518.265625,
+     209.5,
+     194.265625,
+     16.5
+    ],
+    "field": [
+     337,
+     306,
+     606,
+     36
+    ],
+    "offer": [
+     337,
+     554,
+     606,
+     16
+    ],
+    "start": [
+     793.890625,
+     668,
+     178.109375,
+     36
+    ]
+   }
+  },
+  {
+   "file": "097_s5_final_scroll1.png",
+   "label": "s5_final_scroll1",
+   "scrollY": 421,
+   "targets": {
+    "email": [
+     518.265625,
+     88.5,
+     194.265625,
+     16.5
+    ]
+   }
+  },
+  {
+   "file": "098_s5_final_scroll2.png",
+   "label": "s5_final_scroll2",
+   "scrollY": 541,
+   "targets": {
+    "email": [
+     518.265625,
+     -31.5,
+     194.265625,
+     16.5
+    ]
+   }
+  },
+  {
+   "file": "099_s5_final_scroll3.png",
+   "label": "s5_final_scroll3",
+   "scrollY": 662,
+   "targets": {
+    "email": [
+     518.265625,
+     -152.5,
+     194.265625,
+     16.5
+    ]
+   }
+  },
+  {
+   "file": "100_s5_final.png",
+   "label": "s5_final",
+   "scrollY": 662,
+   "targets": {
+    "email": [
+     518.265625,
+     -152.5,
+     194.265625,
+     16.5
+    ],
+    "offer": [
+     337,
+     192,
+     606,
+     16
+    ],
+    "start": [
+     793.890625,
+     354,
+     178.109375,
+     36
+    ]
+   }
+  },
+  {
+   "file": "101_s5_start_hover.png",
+   "label": "s5_start_hover",
+   "scrollY": 662,
+   "targets": {
+    "email": [
+     518.265625,
+     -152.5,
+     194.265625,
+     16.5
+    ],
+    "target": [
+     793.890625,
+     354,
+     178.109375,
+     36
+    ],
+    "offer": [
+     337,
+     192,
+     606,
+     16
+    ],
+    "start": [
+     793.890625,
+     354,
+     178.109375,
+     36
+    ]
+   }
+  }
+ ]
+}

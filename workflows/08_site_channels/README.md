@@ -79,7 +79,9 @@ python3 workflows/08_site_channels/make_channel_assets.py --site pawmotif
   - TryOnSwap《One Dress, Every Party》（`tryonswap-party`，20.2 s）：一条祖母绿丝绒裙，3 张上身图（办公室、跨年夜、家宴）在配乐 drop 7.20 s 弹出；封面取 13.6 s 跨年夜举杯
   - Songifted《Mia》（`songifted-mia`，38.1 s）：`/demos/for-daughter.mp3`，感恩节当天过 23 岁生日。用户审片后返工 3 镜：过马路（Cross T3）、宿舍（方案一 S1_T2：侧面道别 → 转身走开 → 回头挥手）、吹蜡烛（Pie T3：蜡烛不再复燃，吹灭时间对准「Mia」）。经验见上文「有走位、有转身的镜头怎么做」
 - [ ] 三个站的页脚加上 YouTube 链接（在各站自己的仓库里改，不在本仓库）
-- [ ] 下一批（2026-11-17 用户同意）：Songifted 做 1 条横屏长视频（1–2 分钟「怎么做一首歌」流程演示，简介里放可点的 UTM 链接），之后每条 Songifted Shorts 上传时把「相关视频」挂到它，走 Shorts → 长视频 → 网站。原因：Shorts 简介和评论里的网址不能点（2023-08 起）。效果好再推广到 PawMotif / TryOnSwap
+- [x] 2026-11-19 第六批三条已按时公开（oEmbed 200 核验）；site-social-ops 里的 release.json 还是 `scheduled`，要改成 `published`
+- [x] 2026-11-19 Songifted 横屏长视频「How it works」母版（`songifted_longform.py`，87.8 s，1920x1080，**0 CCU**），**等用户审片**，还没做发布包、没上传。素材全部来自网站本身：/create 桌面版逐状态截图（`capture_songifted_create.mjs`）、首页 4 条 AI 反应视频 `/videos/reaction-*.mp4`、场合配图、`/demos/*.mp3`。用户定的：只用现成示例歌（不真实提交，不占用免费试听资格），不要旁白
+- [ ] 长视频上线后（简介里放可点的 UTM 链接）：每条 Songifted Shorts 的「相关视频」都挂到它上面，走 Shorts → 长视频 → 网站。原因：Shorts 简介和评论里的网址不能点（2023-08 起）。效果好再推广到 PawMotif / TryOnSwap
 
 ## 小故事 Shorts（`story_short.py` + `gen_keyframes.py` + `kie_bgm.py`，第四批起）
 
@@ -140,6 +142,21 @@ python3 workflows/08_site_channels/story_short.py <pawmotif-intoframe|tryonswap-
   - 方案一 S1_T2：道别、走开、回头三拍都有，方向也对。但回头挤在最后约 0.5 s 里完成，挥手只停留了不到 1 s。H3 会自己分配每一拍的时间，最后一拍往往被压缩。
   - 方案二：A 两条都自然；B_T1 的转身用了约 0.9 s，最从容，B_T2 有一次甩头。A 末帧接 B 首帧，帧差 1.72～2.01（片内正常运动约 1～1.7，不相关镜头约 64），**直接硬接就是无缝的**，两头也没有定格帧。代价是拼起来约 6.8 s，宿舍这一镜要 6.2 s，得从前一镜借 0.6 s；而且只能剪 A 的头和 B 的尾，剪中间就会跳。
   - 成片：`out/promo/songifted/Songifted_Story_Mia_DormS1_1080x1920.mp4` 和 `…_DormS2_…`（`story_short.py songifted-mia-s1|s2`）。用户选择**方案一**（`songifted_mia()` 默认 `dorm="s1"`），认为首尾帧一次生成的效果已经够用
+
+## 横屏长视频（`songifted_longform.py` + `capture_songifted_create.mjs`，2026-11-19 起）
+
+```bash
+ego-browser nodejs < workflows/08_site_channels/capture_songifted_create.mjs   # 采集 /create 每一步的状态截图（约 100 张 2560x1440）+ manifest.json
+python3 workflows/08_site_channels/songifted_longform.py --still 14 41          # 导出单帧看版式
+python3 workflows/08_site_channels/songifted_longform.py --preview              # 960x540 预览（约 50 s）
+python3 workflows/08_site_channels/songifted_longform.py                        # 成片 out/promo/songifted/Songifted_HowItWorks_1920x1080.mp4
+```
+
+- 结构跟着首页「How it works」三步走：派对钩子 → 标题 → ① 录屏 → ② 歌词 → ③ 反应镜头 → 场合串烧 → 片尾。配乐只用 Sarah 示例歌，基本按原顺序播放：从标题那一刻起从 0 秒开始放，第一段副歌（歌内 24.72 s）落在 ② 开头。录屏段的节奏由 `shot_duration()` 决定，最后会整体缩放，保证总长等于 `T_STEP2 - T_WALK`。
+- **录屏不用 screencast**：CDP screencast 每帧都要 ack，而且只在画面变化时出帧，帧率不稳。改成每做一步操作截一张 2x 视口图，同时记下元素坐标，合成时用指数平滑做镜头跟随，再叠光标和点击涟漪。
+- **视口覆盖要在 goto/reload 之后设**（`Emulation.setDeviceMetricsOverride`），在那之前设会被重置。
+- **账号邮箱打码**：第 5 步页面上有登录邮箱（在 `<strong>` 里）。采集时每一帧都按 "@" 查邮箱坐标；合成脚本从 `s4_next` 起，任何一帧缺邮箱坐标都直接报错，不出片。第一版选错了元素（副标题 "We'll email you…"），邮箱明文漏进了预览，这道闸就是为此加的。
+- 清空站点存储会重新弹出隐私同意弹窗：采集脚本会点 Reject all。Turnstile 在自动化浏览器里一直停在 Verifying，镜头不对准它，也不点它。
 
 ## 样片出片（`render_samples.py` + `finish_sample.py`）
 
