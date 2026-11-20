@@ -96,7 +96,7 @@ grep -q 'COLAB_DFS_DEFAULT=1' ~/.zshrc || echo 'export COLAB_DFS_DEFAULT=1' >> ~
 - **单卡 96GB G4 部署与评测 748B `DeepSeek-V4.1-Flash-1017`（2-Bit 双模型网关 & Engram 置零排障）**：
   - 当用户要求在 G4 上运行 `DeepSeek-V4.1-Flash`、切换 `Unsloth UD-IQ2_XXS` / `Abiray GSQ-RCO IQ2_XXS`、配置 `fast_start_g4.sh` 或排查 Engram 置零导致的拼写/SVG 瑕疵时，读取 **[`references/deepseek_v41_748b_g4_guide.md`](references/deepseek_v41_748b_g4_guide.md)** 及脚本说明 **[`scripts/deepseek_g4/README.md`](scripts/deepseek_g4/README.md)**。
 - **MiniMax-H3 视频生成、双擎云端 TTS (`Qwen3-TTS` + `IndexTTS-2`) 与潜变量续跑操作铁律**：
-  - 当用户使用 G4 生成 `MiniMax-H3` 短剧/动作长镜头、配置 `F = 17k + 5` 帧数、合成配音、使用 `SaveLatent/LoadLatent` 断点续跑或压制自动字幕时，**必须先读取 [`references/minimax_h3_zero_waste_sop.md`](references/minimax_h3_zero_waste_sop.md)**（包含完整的铁律 A ~ G）。
+  - 当用户使用 G4 生成 `MiniMax-H3` 短剧/动作长镜头、配置 `F = 17k + 5` 帧数、合成配音、使用 `SaveLatent/LoadLatent` 断点续跑或压制自动字幕时，**必须先读取 [`references/minimax_h3_zero_waste_sop.md`](references/minimax_h3_zero_waste_sop.md)**（包含完整的铁律 A ~ I）。
 - **MiniMax-H3 工业级双轨架构与多角色一致性深度白皮书**：
   - 当需要深入了解方案 A/B 架构、22 帧潜空间接力、`H3 Join Match` 手动参数、`Self-Anchor Voice` 原生自锚定声纹或 `V3 ProSeam` 武指分镜语法时，读取 **[`references/minimax_h3_industrial_workflow_whitepaper.md`](references/minimax_h3_industrial_workflow_whitepaper.md)**。
 - **MiniMax-H3 无审核破限版与 ComfyUI 节点搭建指南**：

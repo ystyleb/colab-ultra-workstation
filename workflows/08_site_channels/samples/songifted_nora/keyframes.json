@@ -1,0 +1,332 @@
+{
+ "aspect": "16:9",
+ "note": "Songifted 横屏故事片《Nora》（2026-11-19）：站上 /demos/for-wife.mp3（虚构 Nora，3:10）。丈夫送给妻子的结婚纪念歌，按歌词拍 12 年的平常日子。人物与场景全部是 AI 演绎。",
+ "style": "Authentic live-action 35mm film still, Kodak Vision3 500T, natural cinematic lighting, realistic skin texture with pores and fine lines, natural unposed expressions, gentle film grain, 16:9 widescreen composition.",
+ "frames": [
+  {
+   "name": "ref_nora_now",
+   "prompt": "Character reference sheet on a plain light-grey studio backdrop: the SAME person shown three times side by side at full body, left = facing the camera, middle = exact 90-degree side profile facing right, right = seen from directly behind. Neutral relaxed standing pose, arms hanging naturally, hands empty, head and body always facing the same way, soft even light. NORA (white woman, 39, shoulder-length wavy auburn hair, light freckles, green eyes, small silver stud earrings), wearing a slouchy oatmeal knit sweater, dark jeans, white sneakers."
+  },
+  {
+   "name": "ref_husb_now",
+   "prompt": "Character reference sheet on a plain light-grey studio backdrop: the SAME person shown three times side by side at full body, left = facing the camera, middle = exact 90-degree side profile facing right, right = seen from directly behind. Neutral relaxed standing pose, arms hanging naturally, hands empty, head and body always facing the same way, soft even light. A man (white man, 41, short dark-brown hair greying at the temples, short trimmed beard with some grey), wearing a faded navy henley with sleeves pushed up, jeans, brown boots."
+  },
+  {
+   "name": "ref_nora_young",
+   "refs": [
+    "kf/ref_nora_now_raw.png"
+   ],
+   "prompt": "Character reference sheet on a plain light-grey studio backdrop: the SAME person shown three times side by side at full body, left = facing the camera, middle = exact 90-degree side profile facing right, right = seen from directly behind. Neutral relaxed standing pose, arms hanging naturally, hands empty, head and body always facing the same way, soft even light. The woman from the reference image, 12 years YOUNGER: NORA at 27 (same face as the reference, longer wavy auburn hair past her shoulders, freckles, no makeup), wearing an oversized grey crewneck sweatshirt and jeans."
+  },
+  {
+   "name": "ref_husb_young",
+   "refs": [
+    "kf/ref_husb_now_raw.png"
+   ],
+   "prompt": "Character reference sheet on a plain light-grey studio backdrop: the SAME person shown three times side by side at full body, left = facing the camera, middle = exact 90-degree side profile facing right, right = seen from directly behind. Neutral relaxed standing pose, arms hanging naturally, hands empty, head and body always facing the same way, soft even light. The man from the reference image, 12 years YOUNGER: her HUSBAND at 29 (same face as the reference, messy dark-brown hair, light stubble, no grey at all), wearing a black band T-shirt and jeans."
+  },
+  {
+   "name": "env_kitchen",
+   "prompt": "EMPTY ROOM, no people. Night, a warm lived-in kitchen of a small family house. Medium-wide shot from standing height looking across a wooden kitchen island toward the back wall. On the back wall a window over the sink, rain streaking down the dark glass. A warm pendant lamp over the island; open shelves with mismatched mugs; a chrome two-slot toaster on the counter at the LEFT of the frame; a small round bluetooth speaker and a phone lying on the island; a mug of tea. Clear floor space on BOTH sides of the island so people can stand left and right of it."
+  },
+  {
+   "name": "env_apt",
+   "prompt": "EMPTY ROOM, no people. Same apartment, same camera, same night rain, same leaking window and puddle as the reference image. Only the bed changes: the double mattress on the floor now lies lengthwise along the brick wall, pillows at the far end by the bookshelf, the foot of the bed toward the camera. It is long enough for two adults to lie side by side. The middle of the floor stays open.",
+   "refs": [
+    "kf_v2/env_apt_raw.png"
+   ],
+   "note": "第 2 轮评审采纳候选 A（kf_v2/env_apt_cand_a），床改为顺砖墙、枕头在书架那头"
+  },
+  {
+   "name": "env_apt_nook",
+   "refs": [
+    "kf/env_apt_raw.png",
+    "kf_v1/n05_toast_a_raw.png"
+   ],
+   "prompt": "EMPTY ROOM, no people. The tiny kitchenette at the back of the SAME apartment as the first reference image (same white toaster, same chipped white cabinets, same open shelf with jars, small sink, peeling plaster), seen close up with the same framing as the second reference image: a medium shot from standing height facing the counter, the counter top and toaster at the lower part of the frame, the shelves above, a small rainy window at the right edge. Night, warm string-light glow and a small under-shelf light, cooler faded flashback color, film grain. Nobody in the frame."
+  },
+  {
+   "name": "env_apt_floor",
+   "refs": [
+    "kf/env_apt_nook_raw.png",
+    "kf_v1/n06_floor_raw.png"
+   ],
+   "prompt": "EMPTY ROOM, no people. The SAME tiny kitchenette as the first reference image (same chipped white lower cabinets, same counter with the white toaster, same small rainy window), seen from a LOW camera at sitting height on the floor facing the lower cabinets, with the same framing as the second reference image: the lower cabinet doors fill the middle of the frame with an empty stretch of worn wooden floor in front of them where two people could sit, the counter edge and toaster at the top. Night, warm string-light glow, cooler faded flashback color, film grain. Nobody in the frame."
+  },
+  {
+   "name": "env_hosp",
+   "prompt": "EMPTY ROOM, no people. Night, a dim private hospital room: a single hospital bed with white sheets in the center, an IV stand beside it, a vinyl visitor armchair pulled up to the LEFT side of the bed, a window with blurred city lights and rain, a small warm reading lamp is the only light. Medium-wide shot from standing height at the foot-right corner of the room."
+  },
+  {
+   "name": "env_moving",
+   "prompt": "EMPTY ROOM, no people. Bright overcast afternoon, the empty living room of an older house on moving day: bare hardwood floor, white walls, stacked brown cardboard moving boxes along the left wall, a rolled rug, an open front door at the back with daylight. Wide shot from standing height, clear floor space in the center."
+  },
+  {
+   "name": "env_kitchen_wide",
+   "refs": [
+    "kf/env_kitchen_raw.png"
+   ],
+   "prompt": "EMPTY ROOM, no people. The SAME kitchen as the reference image (same cabinets, copper pendant lamp, open shelves with mugs, window over the sink with rain streaking down at night, pink hydrangea, chrome two-slot toaster on the back counter at the LEFT, wooden island with a small round speaker, a phone and an open book on it), but a WIDER shot from standing height further back: the whole wooden island is visible in the center of the frame with its base, a fridge at the far left edge, a stove at the right, and clear terracotta-tiled floor on BOTH the left and the right of the island, enough to see two people full body standing at either end."
+  },
+  {
+   "name": "n01_counter",
+   "edit_of": "env_kitchen",
+   "refs": [
+    "kf/ref_nora_now_raw.png",
+    "kf/ref_husb_now_raw.png"
+   ],
+   "prompt": "Same camera and kitchen. Add two people, waist-up visible: her HUSBAND (white man, 41, short dark-brown hair greying at the temples, short trimmed beard with some grey) stands at the RIGHT end of the island looking down at the phone in his hand, thumb hovering, nervous; NORA (white woman, 39, shoulder-length wavy auburn hair, light freckles, green eyes, small silver stud earrings) sits on a stool at the LEFT end of the island with a book and the mug of tea, glancing up at him, curious. Nora wears a slouchy oatmeal knit sweater; her husband wears a faded navy henley with the sleeves pushed up."
+  },
+  {
+   "name": "n02_play",
+   "edit_of": "n01_counter",
+   "prompt": "NEW SHOT, same kitchen, same moment: medium two-shot from slightly closer, both faces clearly visible across the island. The husband sets the phone down on the island next to the small speaker and looks at Nora with a shy, nervous half-smile; Nora lowers her book, eyebrows raised, amused. Rain on the window behind them."
+  },
+  {
+   "name": "n03_name",
+   "edit_of": "n01_counter",
+   "prompt": "NEW SHOT, medium close-up on NORA only (same auburn hair, freckles, oatmeal sweater) sitting at the island, framed from the chest up, the rainy window softly blurred behind her. She has just heard her own name sung: a surprised half-laugh, lips parted, eyebrows up, looking toward the RIGHT of frame (toward her husband, off-screen)."
+  },
+  {
+   "name": "n04_leak_a",
+   "prompt": "Same camera and apartment. The same young couple as in reference frame n04_leak_b (same clothes, same big cooking pot and armful of towels): they rush across the open wooden floor in the middle of the room toward the leaking window on the right, she carrying the pot, he carrying the towels, both mid-stride and laughing in panic. They are still in the middle of the room, between the mattress and the table.",
+   "edit_of": "env_apt",
+   "refs": [
+    "kf/ref_nora_young_raw.png",
+    "kf/ref_husb_young_raw.png",
+    "kf/n04_leak_b_raw.png"
+   ]
+  },
+  {
+   "name": "n04_leak_b",
+   "prompt": "Same camera and apartment. Add the young couple (she in an oversized grey sweatshirt and jeans, he in a black band T-shirt and jeans; same big cooking pot and armful of towels). They are now at the leaking window on the RIGHT side of the frame: she crouches holding the pot under the drip from the sill, he presses the towels along the windowsill, both soaked and laughing, faces visible in three-quarter view.",
+   "edit_of": "env_apt",
+   "refs": [
+    "kf/ref_nora_young_raw.png",
+    "kf/ref_husb_young_raw.png"
+   ]
+  },
+  {
+   "name": "n05_toast_a",
+   "prompt": "Same camera and kitchenette. Add NORA at 27 (same face as the reference, longer wavy auburn hair past her shoulders, freckles, no makeup) in an oversized grey sweatshirt, standing at the counter at midnight, staring at the white toaster as grey smoke curls up out of it, about to laugh.",
+   "edit_of": "env_apt_nook",
+   "refs": [
+    "kf/ref_nora_young_raw.png"
+   ]
+  },
+  {
+   "name": "n05_toast_b",
+   "prompt": "Same camera and kitchenette. Add the same young woman as in reference frame n05_toast_a (same grey sweatshirt, same spot at the counter). The toast has popped up and she holds up a slice of burnt black toast, laughing.",
+   "edit_of": "env_apt_nook",
+   "refs": [
+    "kf/ref_nora_young_raw.png",
+    "kf/n05_toast_a_raw.png"
+   ]
+  },
+  {
+   "name": "n06_floor",
+   "prompt": "Same camera and kitchenette. Add Nora (same face and grey sweatshirt as in reference frame n05_toast_a) and her HUSBAND at 29 (same face as the reference, messy dark-brown hair, light stubble, no grey at all) in a black band T-shirt, sitting side by side on the floor with their backs against the lower cabinets, sharing a plate of burnt toast, laughing at nothing, her head tipped against his shoulder.",
+   "edit_of": "env_apt_floor",
+   "refs": [
+    "kf/ref_nora_young_raw.png",
+    "kf/ref_husb_young_raw.png",
+    "kf/n05_toast_a_raw.png"
+   ]
+  },
+  {
+   "name": "n07_smile",
+   "edit_of": "n03_name",
+   "prompt": "Change only her expression and hands: a slow smile spreading across her face, eyes glistening with tears, one hand resting at her collarbone, still looking toward the RIGHT of frame at her husband."
+  },
+  {
+   "name": "n08_wedding",
+   "refs": [
+    "kf/ref_nora_young_raw.png",
+    "kf/ref_husb_young_raw.png"
+   ],
+   "prompt": "Close shot of a hallway shelf in a lived-in house at night, warm lamp light: a simple wooden picture frame holding a WEDDING PHOTO of the young couple from the references (she ~28 in a simple white dress with loose auburn hair, he ~30 in a dark suit, both laughing, outdoors), next to a small plant and a bowl of keys. The photo fills the center third of the frame, softly lit. Shallow depth of field."
+  },
+  {
+   "name": "n09_dawn",
+   "prompt": "Same camera and apartment, the morning after: grey-blue dawn light, the rain has stopped, the cooking pot full of water sits under the window. They lie lengthwise on the mattress along the brick wall, heads on the pillows at the far end by the bookshelf: young Nora (same face as the reference) sleeps on her side under the duvet; her young husband (same face as the reference) lies beside her under the same duvet, propped on one elbow, quietly watching her and smiling.",
+   "edit_of": "env_apt",
+   "refs": [
+    "kf/ref_nora_young_raw.png",
+    "kf/ref_husb_young_raw.png"
+   ]
+  },
+  {
+   "name": "n10_him",
+   "edit_of": "n01_counter",
+   "prompt": "NEW SHOT, medium close-up on the HUSBAND only (same greying temples, short beard, navy henley) standing at the island, framed from the chest up, the warm pendant lamp above. He watches her (looking toward the LEFT of frame), nervous, swallowing, a small hopeful smile."
+  },
+  {
+   "name": "n11_dishes",
+   "prompt": "Same camera and kitchenette, a different ordinary evening. Add young Nora (same face as the reference, hair in a messy bun, grey sweatshirt) and her HUSBAND at 29 (same face as the reference, messy dark-brown hair, light stubble, no grey at all) in a black band T-shirt washing dishes side by side at the small sink; she flicks water at him, he flinches and laughs.",
+   "edit_of": "env_apt_nook",
+   "refs": [
+    "kf/ref_nora_young_raw.png",
+    "kf/ref_husb_young_raw.png"
+   ]
+  },
+  {
+   "name": "n12_tape",
+   "prompt": "Same camera and apartment, the next evening, still raining. The young husband (same face as the reference, same black band T-shirt as in reference frame n04_leak_b) stands on a wooden chair at the window on the right, taping a clear plastic sheet over the glass with silver duct tape; young Nora (same grey sweatshirt) stands below handing him the tape roll, both grinning at each other.",
+   "edit_of": "env_apt",
+   "refs": [
+    "kf/ref_nora_young_raw.png",
+    "kf/ref_husb_young_raw.png",
+    "kf/n04_leak_b_raw.png"
+   ]
+  },
+  {
+   "name": "n13_tear",
+   "edit_of": "n03_name",
+   "prompt": "Change only: she wipes a tear from under one eye with the back of her finger, laughing and slowly shaking her head, still looking toward the RIGHT of frame."
+  },
+  {
+   "name": "n14_hosp_edge",
+   "edit_of": "env_hosp",
+   "refs": [
+    "kf/ref_husb_now_raw.png"
+   ],
+   "prompt": "Same camera and room. Add one person: the husband from the reference, five years younger, noticeably thinner and pale, in a pale blue hospital gown with a hospital wristband, sitting on the edge of the bed with his feet on the floor, elbows on knees, staring at the floor, exhausted. The IV line taped to the back of his hand."
+  },
+  {
+   "name": "n15_drive",
+   "prompt": "Night, a modest car driving on a dark highway in heavy rain, seen from IN FRONT of the car: the camera looks in through the rain-streaked windshield at both front seats, the wet hood at the bottom edge of the frame, wipers mid-sweep. NORA (white woman, 39, shoulder-length wavy auburn hair, light freckles, green eyes, small silver stud earrings) in a dark rain jacket is driving, hands on the wheel, jaw set, eyes on the road, lit by the dashboard glow. Beside her in the passenger seat her husband (same face as the reference, thinner and pale, a grey hoodie, a hospital wristband) sleeps with his head against the side window.",
+   "refs": [
+    "kf/ref_nora_now_raw.png",
+    "kf/ref_husb_now_raw.png"
+   ]
+  },
+  {
+   "name": "n16_hosp_chair",
+   "prompt": "Same camera and room, 3 a.m., only the small reading lamp on. The husband (same face as the reference, thin and pale, same pale blue hospital gown and wristband as in reference frame n14_hosp_edge) lies in the bed under the sheet, awake, his head on the pillow turned toward NORA (white woman, 39, shoulder-length wavy auburn hair, light freckles), who has fallen asleep in the visitor armchair beside the bed with her head resting on the edge of the mattress, her hand holding his.",
+   "edit_of": "env_hosp",
+   "refs": [
+    "kf/ref_husb_now_raw.png",
+    "kf/ref_nora_now_raw.png",
+    "kf/n14_hosp_edge_raw.png"
+   ]
+  },
+  {
+   "name": "n17_him_close",
+   "edit_of": "n10_him",
+   "prompt": "Change ONLY his expression: his eyes are wet and red-rimmed, lips pressed together, he cannot speak. Keep EXACTLY the same head angle, position in frame and eyeline as the reference: his face is turned toward the LEFT edge of the frame (screen-left, where his wife is), NOT toward the right and NOT at the camera."
+  },
+  {
+   "name": "n18_walk_a",
+   "prompt": "Same camera and kitchen. Add two people, full body. Nora wears a slouchy oatmeal knit sweater and jeans; her husband wears a faded navy henley with the sleeves pushed up and jeans. NORA has just stood up at the LEFT end of the island and sets her mug down on the island, about to walk toward her husband, her body turned to the right. Her HUSBAND stands still at the RIGHT end of the island, feet planted, hands loose at his sides, facing left toward her, watching. About 2.5 metres of floor between them.",
+   "edit_of": "env_kitchen_wide",
+   "refs": [
+    "kf/ref_nora_now_raw.png",
+    "kf/ref_husb_now_raw.png"
+   ]
+  },
+  {
+   "name": "n18_walk_b",
+   "prompt": "Same camera and kitchen. Add the same two people as in reference frame n18_walk_a (same clothes). The HUSBAND must stand in EXACTLY the same spot, same size, same pose as in n18_walk_a: at the RIGHT end of the island, feet planted, facing left. NORA has walked around the end of the island and now stands right in front of him, facing him, close, looking up into his face; he looks down at her. Her mug stays on the island where she set it in n18_walk_a.",
+   "edit_of": "env_kitchen_wide",
+   "refs": [
+    "kf/ref_nora_now_raw.png",
+    "kf/ref_husb_now_raw.png",
+    "kf/n18_walk_a_raw.png"
+   ]
+  },
+  {
+   "name": "n19_hug",
+   "edit_of": "n18_walk_b",
+   "prompt": "NEW SHOT, medium two-shot slightly closer: Nora and her husband hold each other in a tight hug in the kitchen, her face against his shoulder (her face visible, eyes closed, smiling), his cheek against her hair, eyes closed. The rainy window and pendant lamp behind them."
+  },
+  {
+   "name": "n20_window",
+   "prompt": "A still insert with NO people: a close shot of the same old window as in the reference image, now covered with the clear plastic sheet and silver duct tape, rain streaking down the glass at dusk, warm string lights from the room reflected in it. Same faded flashback color and film grain.",
+   "refs": [
+    "kf/n12_tape_raw.png"
+   ]
+  },
+  {
+   "name": "n21_roadside",
+   "refs": [
+    "kf/ref_nora_now_raw.png",
+    "kf/ref_husb_now_raw.png"
+   ],
+   "prompt": "Daytime, heavy rain on an empty country road, wide-medium shot: an old hatchback broken down on the gravel shoulder with its hood up and hazard lights on. Nora (33, same auburn hair now soaked flat, a yellow rain jacket) and her husband (35, soaked, a denim jacket) stand side by side next to the open hood, drenched; she turns her head to him with a perfectly deadpan face, he is already trying not to laugh."
+  },
+  {
+   "name": "n22_box_a",
+   "edit_of": "env_moving",
+   "refs": [
+    "kf/ref_nora_now_raw.png",
+    "kf/ref_husb_now_raw.png"
+   ],
+   "prompt": "Same camera and room. Add Nora (35, auburn hair in a ponytail, old grey T-shirt) and her husband (37, plain white T-shirt): he walks in from the open door at the back carrying a big overfilled cardboard box with both arms, she follows behind him carrying a floor lamp. He is about a third of the way into the room, coming toward the camera."
+  },
+  {
+   "name": "n22_box_b",
+   "prompt": "Same camera and room. Add the same two people as in reference frame n22_box_a (same clothes: she in an old grey T-shirt with her auburn hair in a ponytail holding the floor lamp, he in a plain white T-shirt). He now stands in the CENTER of the room holding an empty burst cardboard box frame against his chest; books and wrapped dishes lie scattered on the floor at his feet; she stands a step behind him near the doorway with the lamp. Both frozen, staring down at the mess.",
+   "edit_of": "env_moving",
+   "refs": [
+    "kf/ref_nora_now_raw.png",
+    "kf/ref_husb_now_raw.png",
+    "kf/n22_box_a_raw.png"
+   ]
+  },
+  {
+   "name": "n23_floorlaugh",
+   "edit_of": "n22_box_b",
+   "prompt": "NEW SHOT, medium shot at sitting height: Nora and her husband sit on the hardwood floor among the scattered books and dishes, leaning against each other, laughing helplessly, she wipes her eyes."
+  },
+  {
+   "name": "n24_forehead",
+   "edit_of": "n19_hug",
+   "prompt": "NEW SHOT, close two-shot: Nora and her husband stand forehead to forehead in the kitchen, eyes closed, she is laughing through tears, his hands holding her face gently. Warm pendant light on both faces, rainy window softly blurred behind."
+  },
+  {
+   "name": "n25_dance",
+   "prompt": "Same camera and kitchen. Add two people, full body. Nora wears a slouchy oatmeal knit sweater and jeans; her husband wears a faded navy henley with the sleeves pushed up and jeans. Nora and her husband slow-dance together in the open floor space at the RIGHT end of the island, her arms around his neck, his hands at her back, swaying, both smiling with eyes closed. The chrome toaster on the back counter at the LEFT has two slices in it, lever pushed down, glowing.",
+   "edit_of": "env_kitchen_wide",
+   "refs": [
+    "kf/ref_nora_now_raw.png",
+    "kf/ref_husb_now_raw.png"
+   ]
+  },
+  {
+   "name": "n26_toast_a",
+   "prompt": "Same camera and kitchen. Add two people, full body. Nora wears a slouchy oatmeal knit sweater and jeans; her husband wears a faded navy henley with the sleeves pushed up and jeans. Grey smoke curls up out of the toaster on the back counter at the LEFT. NORA stands at the toaster on the LEFT, one hand reaching for it, looking back over her shoulder at her husband with wide eyes. Her HUSBAND stands at the RIGHT end of the island, hands in his pockets, laughing.",
+   "edit_of": "env_kitchen_wide",
+   "refs": [
+    "kf/ref_nora_now_raw.png",
+    "kf/ref_husb_now_raw.png"
+   ]
+  },
+  {
+   "name": "n26_toast_b",
+   "prompt": "Same camera and kitchen. Add the same two people as in reference frame n26_toast_a. NORA stands in EXACTLY the same spot by the toaster on the LEFT, now turned toward her husband, holding up one slice of completely BLACK burnt toast at face height with a perfectly deadpan face; a thin wisp of smoke. Her HUSBAND stands in EXACTLY the same spot at the RIGHT end of the island as in n26_toast_a, hands in his pockets, grinning at her.",
+   "edit_of": "env_kitchen_wide",
+   "refs": [
+    "kf/ref_nora_now_raw.png",
+    "kf/ref_husb_now_raw.png",
+    "kf/n26_toast_a_raw.png"
+   ]
+  },
+  {
+   "name": "n27_laugh",
+   "prompt": "Same camera and kitchen. Add the same two people as in reference frame n26_toast_b. Nora still stands by the toaster on the LEFT holding the burnt toast; her husband has come over and stands right beside her on her right; they have both cracked up laughing, she leans into his chest, his arm around her shoulders.",
+   "edit_of": "env_kitchen_wide",
+   "refs": [
+    "kf/ref_nora_now_raw.png",
+    "kf/ref_husb_now_raw.png",
+    "kf/n26_toast_b_raw.png"
+   ]
+  },
+  {
+   "name": "n28_exterior",
+   "refs": [
+    "kf/n25_dance_raw.png"
+   ],
+   "prompt": "Night, exterior: wide shot from the dark wet backyard looking at the house's lit kitchen window, rain falling in the foreground, the window glass streaked with rain. Through the window, small in the frame, the same couple (auburn-haired woman in an oatmeal sweater, bearded man in a navy henley) slow-dance in the warm kitchen light under the pendant lamp. Dark house siding and a gutter overflowing around the window."
+  }
+ ]
+}

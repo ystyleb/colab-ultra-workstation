@@ -1,0 +1,545 @@
+{
+ "note": "Songifted 横屏故事片《Nora》（2026-11-19）：/demos/for-wife.mp3（虚构 Nora）。1344x768 横版。原声全部静音，配乐只有这首歌。",
+ "length": 175,
+ "steps": 10,
+ "style_mode": "photorealistic",
+ "realism_lora_strength": 0.7,
+ "width": 1344,
+ "height": 768,
+ "output_subdir": "SiteChannels_Samples",
+ "out_dir": "../../out/samples/songifted_nora",
+ "jobs": [
+  {
+   "id": "N01_Counter_T1",
+   "first": "kf/n01_counter_1344x768.png",
+   "last": "kf/n01_counter_1344x768.png",
+   "seed": 2026111901,
+   "length": 175,
+   "prompt": "r34l1sm, Night, a warm kitchen with rain streaking down the window. A bearded man with greying temples in a navy henley stands at the end of the kitchen island fiddling nervously with his phone, glancing up; an auburn-haired woman in an oatmeal sweater sits on a stool at the other end with a book and a mug of tea, looking up at him with curious amusement, exactly as at the end. Soft rain on the window. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N02_Play_T1",
+   "first": "kf/n02_play_1344x768.png",
+   "last": "kf/n02_play_1344x768.png",
+   "seed": 2026111902,
+   "length": 175,
+   "prompt": "r34l1sm, Night kitchen, rain on the window. The bearded man sets his phone down next to a small speaker and looks at his wife with a shy, nervous half-smile; the auburn-haired woman lowers her book, eyebrows raised, amused, waiting, exactly as at the end. Soft rain. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N03_Name_T1",
+   "first": "kf/n03_name_1344x768.png",
+   "last": "kf/n03_name_1344x768.png",
+   "seed": 2026111903,
+   "length": 192,
+   "prompt": "r34l1sm, An auburn-haired woman with freckles in an oatmeal sweater hears her own name in a song: a surprised half-laugh, she glances toward her husband off-screen and back, delighted and puzzled, exactly as at the end. Warm kitchen light, rainy window blurred behind. The camera holds a static close-up for the whole clip."
+  },
+  {
+   "id": "N04_Leak_T1",
+   "first": "kf/n04_leak_a_1344x768.png",
+   "last": "kf/n04_leak_b_1344x768.png",
+   "seed": 2026111904,
+   "length": 141,
+   "prompt": "r34l1sm, Night, a tiny old apartment, rain leaking in around an old window frame and dripping off the sill. A young couple rush across the room to the leaking window on the right: she crouches and holds a cooking pot under the drip, he presses towels along the sill, both soaked and laughing in panic. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N04_Leak_T2",
+   "first": "kf/n04_leak_a_1344x768.png",
+   "last": "kf/n04_leak_b_1344x768.png",
+   "seed": 2026111905,
+   "length": 141,
+   "prompt": "r34l1sm, Night, a tiny old apartment, rain leaking in around an old window frame and dripping off the sill. A young couple rush across the room to the leaking window on the right: she crouches and holds a cooking pot under the drip, he presses towels along the sill, both soaked and laughing in panic. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N05_Toast_T1",
+   "first": "kf/n05_toast_a_1344x768.png",
+   "last": "kf/n05_toast_b_1344x768.png",
+   "seed": 2026111906,
+   "length": 141,
+   "prompt": "r34l1sm, Midnight in a tiny kitchenette lit by string lights. A young auburn-haired woman in a grey sweatshirt watches smoke curl out of a white toaster; the toast pops up and she lifts out one slice of burnt black toast, holding it up and laughing. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N05_Toast_T2",
+   "first": "kf/n05_toast_a_1344x768.png",
+   "last": "kf/n05_toast_b_1344x768.png",
+   "seed": 2026111907,
+   "length": 141,
+   "prompt": "r34l1sm, Midnight in a tiny kitchenette lit by string lights. A young auburn-haired woman in a grey sweatshirt watches smoke curl out of a white toaster; the toast pops up and she lifts out one slice of burnt black toast, holding it up and laughing. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N06_Floor_T1",
+   "first": "kf/n06_floor_1344x768.png",
+   "last": "kf/n06_floor_1344x768.png",
+   "seed": 2026111908,
+   "length": 141,
+   "prompt": "r34l1sm, Midnight, a young couple sit on the kitchen floor with their backs against the cabinets, sharing a plate of burnt toast, laughing at nothing; she tips her head onto his shoulder, exactly as at the end. A pot catches drips beside them. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N07_Smile_T1",
+   "first": "kf/n07_smile_1344x768.png",
+   "last": "kf/n07_smile_1344x768.png",
+   "seed": 2026111909,
+   "length": 175,
+   "prompt": "r34l1sm, The auburn-haired woman in the oatmeal sweater listens, a slow smile spreading, eyes glistening with tears, one hand at her collarbone, looking toward her husband off-screen, exactly as at the end. The camera holds a static close-up for the whole clip."
+  },
+  {
+   "id": "N09_Dawn_T1",
+   "first": "kf/n09_dawn_1344x768.png",
+   "last": "kf/n09_dawn_1344x768.png",
+   "seed": 2026111910,
+   "length": 243,
+   "prompt": "r34l1sm, Grey-blue dawn in a tiny apartment after a rainy night. A young woman sleeps on a mattress on the floor wrapped in a duvet, breathing slowly; the young man beside her, propped on one elbow, watches her and smiles quietly, gently tucking a strand of hair from her face, exactly as at the end. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N10_Him_T1",
+   "first": "kf/n10_him_1344x768.png",
+   "last": "kf/n10_him_1344x768.png",
+   "seed": 2026111911,
+   "length": 158,
+   "prompt": "r34l1sm, A bearded man with greying temples in a navy henley watches his wife listen to a song, nervous, swallowing, a small hopeful smile, exactly as at the end. Warm pendant light. The camera holds a static close-up for the whole clip."
+  },
+  {
+   "id": "N11_Dishes_T1",
+   "first": "kf/n11_dishes_1344x768.png",
+   "last": "kf/n11_dishes_1344x768.png",
+   "seed": 2026111912,
+   "length": 141,
+   "prompt": "r34l1sm, An ordinary evening in a tiny kitchenette: a young couple wash dishes side by side at a small sink; she flicks water at him with her fingers, he flinches and laughs, they bump shoulders, exactly as at the end. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N12_Tape_T1",
+   "first": "kf/n12_tape_1344x768.png",
+   "last": "kf/n12_tape_1344x768.png",
+   "seed": 2026111913,
+   "length": 158,
+   "prompt": "r34l1sm, A young man standing on a wooden chair tapes a clear plastic sheet over a leaking old window with duct tape while a young auburn-haired woman hands him the tape roll; they grin at each other, rain outside, exactly as at the end. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N13_Tear_T1",
+   "first": "kf/n13_tear_1344x768.png",
+   "last": "kf/n13_tear_1344x768.png",
+   "seed": 2026111914,
+   "length": 175,
+   "prompt": "r34l1sm, The auburn-haired woman wipes a tear from under her eye with the back of a finger, laughing softly and slowly shaking her head, looking toward her husband off-screen, exactly as at the end. The camera holds a static close-up for the whole clip."
+  },
+  {
+   "id": "N14_HospEdge_T1",
+   "first": "kf/n14_hosp_edge_1344x768.png",
+   "last": "kf/n14_hosp_edge_1344x768.png",
+   "seed": 2026111915,
+   "length": 141,
+   "prompt": "r34l1sm, Night in a dim hospital room. A thin, pale man in a hospital gown sits on the edge of the bed, elbows on his knees, staring at the floor, breathing slowly, exhausted, exactly as at the end. Rain on the window, soft hum of machines. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N15_Drive_T1",
+   "first": "kf/n15_drive_1344x768.png",
+   "last": "kf/n15_drive_1344x768.png",
+   "seed": 2026111916,
+   "length": 209,
+   "prompt": "r34l1sm, Night, a car driving on a dark rainy highway, seen from in front through the windshield by a camera mounted on the hood. The auburn-haired woman drives in silence, hands on the wheel, jaw set, eyes on the road, passing headlights sweeping over her face; her pale husband sleeps in the passenger seat against the side window. Wipers sweep rain across the windshield, exactly as at the end. The hood-mounted camera holds a static shot through the windshield for the whole clip."
+  },
+  {
+   "id": "N15_Drive_T2",
+   "first": "kf/n15_drive_1344x768.png",
+   "last": "kf/n15_drive_1344x768.png",
+   "seed": 2026111917,
+   "length": 209,
+   "prompt": "r34l1sm, Night, a car driving on a dark rainy highway, seen from in front through the windshield by a camera mounted on the hood. The auburn-haired woman drives in silence, hands on the wheel, jaw set, eyes on the road, passing headlights sweeping over her face; her pale husband sleeps in the passenger seat against the side window. Wipers sweep rain across the windshield, exactly as at the end. The hood-mounted camera holds a static shot through the windshield for the whole clip."
+  },
+  {
+   "id": "N16_HospChair_T1",
+   "first": "kf/n16_hosp_chair_1344x768.png",
+   "last": "kf/n16_hosp_chair_1344x768.png",
+   "seed": 2026111918,
+   "length": 226,
+   "prompt": "r34l1sm, 3 a.m. in a dim hospital room. A woman has fallen asleep in the armchair with her head on the edge of the bed, still holding her husband's hand; he lies awake, gently stroking her hand with his thumb, watching her, exactly as at the end. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N17_HimClose_T1",
+   "first": "kf/n17_him_close_1344x768.png",
+   "last": "kf/n17_him_close_1344x768.png",
+   "seed": 2026111919,
+   "length": 158,
+   "prompt": "r34l1sm, The bearded man's eyes fill with tears, he presses his lips together, unable to speak, looking at his wife off-screen, exactly as at the end. The camera holds a static close-up for the whole clip."
+  },
+  {
+   "id": "N18_Walk_T1",
+   "first": "kf/n18_walk_a_1344x768.png",
+   "last": "kf/n18_walk_b_1344x768.png",
+   "seed": 2026111920,
+   "length": 158,
+   "prompt": "r34l1sm, Night kitchen, rain on the window. The auburn-haired woman sets her mug down and walks around the end of the kitchen island at a normal pace to her husband, stopping right in front of him and looking up into his face; he watches her come, standing still. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N18_Walk_T2",
+   "first": "kf/n18_walk_a_1344x768.png",
+   "last": "kf/n18_walk_b_1344x768.png",
+   "seed": 2026111921,
+   "length": 158,
+   "prompt": "r34l1sm, Night kitchen, rain on the window. The auburn-haired woman sets her mug down and walks around the end of the kitchen island at a normal pace to her husband, stopping right in front of him and looking up into his face; he watches her come, standing still. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N19_Hug_T1",
+   "first": "kf/n19_hug_1344x768.png",
+   "last": "kf/n19_hug_1344x768.png",
+   "seed": 2026111922,
+   "length": 226,
+   "prompt": "r34l1sm, Night kitchen with rain on the window. A man and a woman hold each other in a tight hug, eyes closed, swaying very slightly, her smile against his shoulder, exactly as at the end. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N20_Window_T1",
+   "first": "kf/n20_window_1344x768.png",
+   "last": "kf/n20_window_1344x768.png",
+   "seed": 2026111923,
+   "length": 192,
+   "prompt": "r34l1sm, An empty scene. Close shot of an old window covered with clear plastic and duct tape, rain streaming down the glass, string lights reflecting and twinkling, exactly as at the end. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N21_Roadside_T1",
+   "first": "kf/n21_roadside_1344x768.png",
+   "last": "kf/n21_roadside_1344x768.png",
+   "seed": 2026111924,
+   "length": 226,
+   "prompt": "r34l1sm, Heavy rain on an empty country road, an old hatchback broken down with its hood up and hazards blinking. A soaked couple stand beside it; she turns to him with a perfectly deadpan face, says a few words, and they both burst out laughing in the rain, exactly as at the end. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N22_Box_T1",
+   "first": "kf/n22_box_a_1344x768.png",
+   "last": "kf/n22_box_b_1344x768.png",
+   "seed": 2026111925,
+   "length": 141,
+   "prompt": "r34l1sm, Moving day in an empty living room. A man carrying a big overfilled cardboard box walks in from the doorway, followed by his wife with a lamp; the bottom of the box bursts and books and dishes crash onto the floor; they freeze, staring down at the mess. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N22_Box_T2",
+   "first": "kf/n22_box_a_1344x768.png",
+   "last": "kf/n22_box_b_1344x768.png",
+   "seed": 2026111926,
+   "length": 141,
+   "prompt": "r34l1sm, Moving day in an empty living room. A man carrying a big overfilled cardboard box walks in from the doorway, followed by his wife with a lamp; the bottom of the box bursts and books and dishes crash onto the floor; they freeze, staring down at the mess. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N23_FloorLaugh_T1",
+   "first": "kf/n23_floorlaugh_1344x768.png",
+   "last": "kf/n23_floorlaugh_1344x768.png",
+   "seed": 2026111927,
+   "length": 243,
+   "prompt": "r34l1sm, A couple sit on a hardwood floor among scattered books and dishes, leaning on each other and laughing helplessly; she wipes her eyes, he drops his head back, exactly as at the end. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N24_Forehead_T1",
+   "first": "kf/n24_forehead_1344x768.png",
+   "last": "kf/n24_forehead_1344x768.png",
+   "seed": 2026111928,
+   "length": 260,
+   "prompt": "r34l1sm, A man and a woman stand forehead to forehead in a warm kitchen, eyes closed; she laughs softly through tears, he holds her face gently, both breathing slowly, exactly as at the end. The camera holds a static close-up for the whole clip."
+  },
+  {
+   "id": "N25_Dance_T1",
+   "first": "kf/n25_dance_1344x768.png",
+   "last": "kf/n25_dance_1344x768.png",
+   "seed": 2026111929,
+   "length": 243,
+   "prompt": "r34l1sm, Night kitchen with rain on the window. A couple slow-dance in the open floor space by the island, her arms around his neck, swaying gently, smiling with eyes closed; the toaster glows on the counter, exactly as at the end. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N26_Toast_T1",
+   "first": "kf/n26_toast_a_1344x768.png",
+   "last": "kf/n26_toast_b_1344x768.png",
+   "seed": 2026111930,
+   "length": 158,
+   "prompt": "r34l1sm, Night kitchen. Smoke curls from the toaster; the auburn-haired woman reaches in, pulls out one slice of completely black burnt toast and holds it up toward her husband with a perfectly deadpan face; he grins. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N26_Toast_T2",
+   "first": "kf/n26_toast_a_1344x768.png",
+   "last": "kf/n26_toast_b_1344x768.png",
+   "seed": 2026111931,
+   "length": 158,
+   "prompt": "r34l1sm, Night kitchen. Smoke curls from the toaster; the auburn-haired woman reaches in, pulls out one slice of completely black burnt toast and holds it up toward her husband with a perfectly deadpan face; he grins. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N27_Laugh_T1",
+   "first": "kf/n27_laugh_1344x768.png",
+   "last": "kf/n27_laugh_1344x768.png",
+   "seed": 2026111932,
+   "length": 192,
+   "prompt": "r34l1sm, Night kitchen. A couple crack up laughing; she leans into his chest still holding a slice of burnt toast, his arm around her, both shaking with laughter, exactly as at the end. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N28_Exterior_T1",
+   "first": "kf/n28_exterior_1344x768.png",
+   "last": "kf/n28_exterior_1344x768.png",
+   "seed": 2026111933,
+   "length": 362,
+   "prompt": "r34l1sm, Night, rain falling in a dark backyard in the foreground. Through the rain-streaked lit kitchen window, a small couple slow-dance in warm light, swaying, exactly as at the end. Rain dripping from an overflowing gutter. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N28_Exterior_T2",
+   "first": "kf/n28_exterior_1344x768.png",
+   "last": "kf/n28_exterior_1344x768.png",
+   "seed": 2026111934,
+   "length": 362,
+   "prompt": "r34l1sm, Night, rain falling in a dark backyard in the foreground. Through the rain-streaked lit kitchen window, a small couple slow-dance in warm light, swaying, exactly as at the end. Rain dripping from an overflowing gutter. The camera holds a static shot, keeping the framing of the first frame for the whole clip."
+  },
+  {
+   "id": "N01_Counter_T3",
+   "first": "kf/n01_counter_1344x768.png",
+   "last": "kf/n01_counter_1344x768.png",
+   "seed": 2026112001,
+   "length": 175,
+   "prompt": "r34l1sm, Night, a warm kitchen with rain streaking down the window. A bearded man with greying temples in a navy henley stands at the end of the kitchen island fiddling nervously with his phone, glancing up; an auburn-haired woman in an oatmeal sweater sits on a stool at the other end with a book and a mug of tea, looking up at him with curious amusement. Soft rain on the window. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N01_Counter_T4",
+   "first": "kf/n01_counter_1344x768.png",
+   "last": "kf/n01_counter_1344x768.png",
+   "seed": 2026112002,
+   "length": 175,
+   "prompt": "r34l1sm, Night, a warm kitchen with rain streaking down the window. A bearded man with greying temples in a navy henley stands at the end of the kitchen island fiddling nervously with his phone, glancing up; an auburn-haired woman in an oatmeal sweater sits on a stool at the other end with a book and a mug of tea, looking up at him with curious amusement. Soft rain on the window. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N02_Play_T3",
+   "first": "kf/n02_play_1344x768.png",
+   "last": "kf/n02_play_1344x768.png",
+   "seed": 2026112003,
+   "length": 175,
+   "prompt": "r34l1sm, Night kitchen, rain on the window. The bearded man sets his phone down next to a small speaker and looks at his wife with a shy, nervous half-smile; the auburn-haired woman lowers her book, eyebrows raised, amused, waiting. Soft rain. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N02_Play_T4",
+   "first": "kf/n02_play_1344x768.png",
+   "last": "kf/n02_play_1344x768.png",
+   "seed": 2026112004,
+   "length": 175,
+   "prompt": "r34l1sm, Night kitchen, rain on the window. The bearded man sets his phone down next to a small speaker and looks at his wife with a shy, nervous half-smile; the auburn-haired woman lowers her book, eyebrows raised, amused, waiting. Soft rain. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N06_Floor_T3",
+   "first": "kf/n06_floor_1344x768.png",
+   "last": "kf/n06_floor_1344x768.png",
+   "seed": 2026112005,
+   "length": 141,
+   "prompt": "r34l1sm, Midnight, a young couple sit on the kitchen floor with their backs against the cabinets, sharing a plate of burnt toast, laughing at nothing; she tips her head onto his shoulder. A pot catches drips beside them. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N06_Floor_T4",
+   "first": "kf/n06_floor_1344x768.png",
+   "last": "kf/n06_floor_1344x768.png",
+   "seed": 2026112006,
+   "length": 141,
+   "prompt": "r34l1sm, Midnight, a young couple sit on the kitchen floor with their backs against the cabinets, sharing a plate of burnt toast, laughing at nothing; she tips her head onto his shoulder. A pot catches drips beside them. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N09_Dawn_T3",
+   "first": "kf/n09_dawn_1344x768.png",
+   "last": "kf/n09_dawn_1344x768.png",
+   "seed": 2026112007,
+   "length": 243,
+   "prompt": "r34l1sm, Grey-blue dawn in a tiny apartment after a rainy night. A young woman sleeps on a mattress on the floor wrapped in a duvet, breathing slowly; the young man beside her, propped on one elbow, watches her and smiles quietly, gently tucking a strand of hair from her face. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N09_Dawn_T4",
+   "first": "kf/n09_dawn_1344x768.png",
+   "last": "kf/n09_dawn_1344x768.png",
+   "seed": 2026112008,
+   "length": 243,
+   "prompt": "r34l1sm, Grey-blue dawn in a tiny apartment after a rainy night. A young woman sleeps on a mattress on the floor wrapped in a duvet, breathing slowly; the young man beside her, propped on one elbow, watches her and smiles quietly, gently tucking a strand of hair from her face. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N10_Him_T3",
+   "first": "kf/n10_him_1344x768.png",
+   "last": "kf/n10_him_1344x768.png",
+   "seed": 2026112009,
+   "length": 158,
+   "prompt": "r34l1sm, A bearded man with greying temples in a navy henley listens to a song, nervous, swallowing, a small hopeful smile spreading, his eyes resting on something just to the left. Warm pendant light, rainy window behind him. The camera holds a static close-up for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N10_Him_T4",
+   "first": "kf/n10_him_1344x768.png",
+   "last": "kf/n10_him_1344x768.png",
+   "seed": 2026112010,
+   "length": 158,
+   "prompt": "r34l1sm, A bearded man with greying temples in a navy henley listens to a song, nervous, swallowing, a small hopeful smile spreading, his eyes resting on something just to the left. Warm pendant light, rainy window behind him. The camera holds a static close-up for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N14_HospEdge_T3",
+   "first": "kf/n14_hosp_edge_1344x768.png",
+   "last": "kf/n14_hosp_edge_1344x768.png",
+   "seed": 2026112011,
+   "length": 141,
+   "prompt": "r34l1sm, Night in a dim hospital room. A thin, pale man in a hospital gown sits on the edge of the bed, elbows on his knees, staring at the floor, breathing slowly, exhausted. Rain on the window, soft hum of machines. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N14_HospEdge_T4",
+   "first": "kf/n14_hosp_edge_1344x768.png",
+   "last": "kf/n14_hosp_edge_1344x768.png",
+   "seed": 2026112012,
+   "length": 141,
+   "prompt": "r34l1sm, Night in a dim hospital room. A thin, pale man in a hospital gown sits on the edge of the bed, elbows on his knees, staring at the floor, breathing slowly, exhausted. Rain on the window, soft hum of machines. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N17_HimClose_T3",
+   "first": "kf/n17_him_close_1344x768.png",
+   "last": "kf/n17_him_close_1344x768.png",
+   "seed": 2026112013,
+   "length": 158,
+   "prompt": "r34l1sm, The bearded man with greying temples in a navy henley, eyes filling with tears, lips pressed tightly together, swallowing hard, his gaze resting just to the left. Warm kitchen light, rainy window behind him. The camera holds a static close-up for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N17_HimClose_T4",
+   "first": "kf/n17_him_close_1344x768.png",
+   "last": "kf/n17_him_close_1344x768.png",
+   "seed": 2026112014,
+   "length": 158,
+   "prompt": "r34l1sm, The bearded man with greying temples in a navy henley, eyes filling with tears, lips pressed tightly together, swallowing hard, his gaze resting just to the left. Warm kitchen light, rainy window behind him. The camera holds a static close-up for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N19_Hug_T3",
+   "first": "kf/n19_hug_1344x768.png",
+   "last": "kf/n19_hug_1344x768.png",
+   "seed": 2026112015,
+   "length": 226,
+   "prompt": "r34l1sm, Night kitchen with rain on the window. A man and a woman hold each other in a tight hug, eyes closed, swaying very slightly, her smile against his shoulder. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N19_Hug_T4",
+   "first": "kf/n19_hug_1344x768.png",
+   "last": "kf/n19_hug_1344x768.png",
+   "seed": 2026112016,
+   "length": 226,
+   "prompt": "r34l1sm, Night kitchen with rain on the window. A man and a woman hold each other in a tight hug, eyes closed, swaying very slightly, her smile against his shoulder. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N20_Window_T3",
+   "first": "kf/n20_window_1344x768.png",
+   "last": "kf/n20_window_1344x768.png",
+   "seed": 2026112017,
+   "length": 192,
+   "prompt": "r34l1sm, A still close shot of an old window covered with clear plastic and silver duct tape, rain streaming down the glass at dusk, warm string lights reflected in it, twinkling softly. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N20_Window_T4",
+   "first": "kf/n20_window_1344x768.png",
+   "last": "kf/n20_window_1344x768.png",
+   "seed": 2026112018,
+   "length": 192,
+   "prompt": "r34l1sm, A still close shot of an old window covered with clear plastic and silver duct tape, rain streaming down the glass at dusk, warm string lights reflected in it, twinkling softly. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N21_Roadside_T3",
+   "first": "kf/n21_roadside_1344x768.png",
+   "last": "kf/n21_roadside_1344x768.png",
+   "seed": 2026112019,
+   "length": 226,
+   "prompt": "r34l1sm, Heavy rain on an empty country road, an old hatchback broken down with its hood up and hazards blinking. A soaked couple stand beside it; she turns to him with a perfectly deadpan face, says a few words, and they both burst out laughing in the rain. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N21_Roadside_T4",
+   "first": "kf/n21_roadside_1344x768.png",
+   "last": "kf/n21_roadside_1344x768.png",
+   "seed": 2026112020,
+   "length": 226,
+   "prompt": "r34l1sm, Heavy rain on an empty country road, an old hatchback broken down with its hood up and hazards blinking. A soaked couple stand beside it; she turns to him with a perfectly deadpan face, says a few words, and they both burst out laughing in the rain. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N26_Toast_T3",
+   "first": "kf/n26_toast_a_1344x768.png",
+   "last": "kf/n26_toast_b_1344x768.png",
+   "seed": 2026112021,
+   "length": 158,
+   "prompt": "r34l1sm, Night kitchen. Smoke curls from the toaster; the auburn-haired woman reaches in, pulls out one slice of completely black burnt toast and holds it up toward her husband with a perfectly deadpan face; he grins. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N26_Toast_T4",
+   "first": "kf/n26_toast_a_1344x768.png",
+   "last": "kf/n26_toast_b_1344x768.png",
+   "seed": 2026112022,
+   "length": 158,
+   "prompt": "r34l1sm, Night kitchen. Smoke curls from the toaster; the auburn-haired woman reaches in, pulls out one slice of completely black burnt toast and holds it up toward her husband with a perfectly deadpan face; he grins. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N28_Exterior_T3",
+   "first": "kf/n28_exterior_1344x768.png",
+   "last": "kf/n28_exterior_1344x768.png",
+   "seed": 2026112023,
+   "length": 362,
+   "prompt": "r34l1sm, Night, heavy rain falling through a dark backyard, water spilling from an overflowing gutter and rippling in puddles on the grass. Across the yard, the small house's lit kitchen window glows warm and golden behind streaks of rain. The camera holds a static wide shot from the dark backyard for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N28_Exterior_T4",
+   "first": "kf/n28_exterior_1344x768.png",
+   "last": "kf/n28_exterior_1344x768.png",
+   "seed": 2026112024,
+   "length": 362,
+   "prompt": "r34l1sm, Night, heavy rain falling through a dark backyard, water spilling from an overflowing gutter and rippling in puddles on the grass. Across the yard, the small house's lit kitchen window glows warm and golden behind streaks of rain. The camera holds a static wide shot from the dark backyard for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N09_Dawn_T5",
+   "first": "kf/n09_dawn_1344x768.png",
+   "last": "kf/n09_dawn_1344x768.png",
+   "seed": 2026112025,
+   "length": 243,
+   "prompt": "r34l1sm, Grey-blue dawn in a tiny apartment after a rainy night. A young woman sleeps on a mattress on the floor wrapped in a duvet, breathing slowly; the young man beside her, propped on one elbow, watches her sleep and smiles quietly. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N09_Dawn_T6",
+   "first": "kf/n09_dawn_1344x768.png",
+   "last": "kf/n09_dawn_1344x768.png",
+   "seed": 2026112026,
+   "length": 243,
+   "prompt": "r34l1sm, Grey-blue dawn in a tiny apartment after a rainy night. A young woman sleeps on a mattress on the floor wrapped in a duvet, breathing slowly; the young man beside her, propped on one elbow, watches her sleep and smiles quietly. The camera holds a static shot, keeping the framing of the first frame for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N28_Exterior_T5",
+   "first": "kf/n28_exterior_1344x768.png",
+   "last": "kf/n28_exterior_1344x768.png",
+   "seed": 2026112027,
+   "length": 192,
+   "prompt": "r34l1sm, Night, heavy rain falling through a dark backyard, water spilling from an overflowing gutter and rippling in puddles on the grass. Across the yard, the small house's lit kitchen window glows warm and golden behind streaks of rain. The camera holds a static wide shot from the dark backyard for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N28_Exterior_T6",
+   "first": "kf/n28_exterior_1344x768.png",
+   "last": "kf/n28_exterior_1344x768.png",
+   "seed": 2026112028,
+   "length": 192,
+   "prompt": "r34l1sm, Night, heavy rain falling through a dark backyard, water spilling from an overflowing gutter and rippling in puddles on the grass. Across the yard, the small house's lit kitchen window glows warm and golden behind streaks of rain. The camera holds a static wide shot from the dark backyard for the whole clip.",
+   "first_only": true
+  },
+  {
+   "id": "N28_Exterior_T7",
+   "first": "kf/n28_exterior_1344x768.png",
+   "last": "kf/n28_exterior_1344x768.png",
+   "seed": 2026112029,
+   "length": 192,
+   "prompt": "r34l1sm, Night, heavy rain falling through a dark backyard, water spilling from an overflowing gutter and rippling in puddles on the grass. Across the yard, the small house's lit kitchen window glows warm and golden behind streaks of rain. The camera holds a static wide shot from the dark backyard for the whole clip."
+  }
+ ]
+}

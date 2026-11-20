@@ -81,6 +81,7 @@ python3 workflows/08_site_channels/make_channel_assets.py --site pawmotif
 - [ ] 三个站的页脚加上 YouTube 链接（在各站自己的仓库里改，不在本仓库）
 - [x] 2026-11-19 第六批三条已按时公开（oEmbed 200 核验）；site-social-ops 里的 release.json 还是 `scheduled`，要改成 `published`
 - [x] 2026-11-19 Songifted 横屏长视频「How it works」母版（`songifted_longform.py`，87.8 s，1920x1080，**0 CCU**），**等用户审片**，还没做发布包、没上传。素材全部来自网站本身：/create 桌面版逐状态截图（`capture_songifted_create.mjs`）、首页 4 条 AI 反应视频 `/videos/reaction-*.mp4`、场合配图、`/demos/*.mp3`。用户定的：只用现成示例歌（不真实提交，不占用免费试听资格），不要旁白
+- [x] 2026-11-20 Songifted 横屏故事片《Nora》成片（`nora_film.py`，196 s，1920x1080，整首 `/demos/for-wife.mp3`，产品只出现在片尾卡），**等用户在审核页审片**，还没做发布包、没上传。关键帧经过两轮页面评审（第二轮重做公寓环境图：床的长宽画反了）。H3 27 个镜头三次开机共渲 63 条，56.5 CCU（开机前估 26～28，第一轮约一半不能用）。经验见下文「横屏故事片《Nora》」和 H3 SOP 铁律 I
 - [ ] 长视频上线后（简介里放可点的 UTM 链接）：每条 Songifted Shorts 的「相关视频」都挂到它上面，走 Shorts → 长视频 → 网站。原因：Shorts 简介和评论里的网址不能点（2023-08 起）。效果好再推广到 PawMotif / TryOnSwap
 
 ## 小故事 Shorts（`story_short.py` + `gen_keyframes.py` + `kie_bgm.py`，第四批起）
@@ -166,7 +167,7 @@ python3 workflows/08_site_channels/render_samples.py --jobs workflows/08_site_ch
 python3 workflows/08_site_channels/finish_sample.py -i <raw.mp4> -o <final.mp4> --start 5 --end 186 --credit "Portrait: PawMotif · Motion: AI video"
 ```
 
-- `render_samples.py` 复用 07 号的云端执行器和远程函数，**不改 07 号文件**：用自己派生的 config 覆盖 `--config`，把 07 已有的 preset 名 `fl2v_candid_look_camera` 重定义成本批参数；`--style-mode stylized` 把写实人像和特写 LoRA 归零，画作笔触不会变成照片质感。会话名默认 `sitech-g4`。
+- `render_samples.py` 复用 07 号的云端执行器和远程函数，**原则上不改 07 号文件**（唯一例外：2026-11-20 给 `run_runway.py` 加了「只锁首帧」开关，`last_frame="__NONE__"` 时走 I2V，不传就和原来一样；注意 07 号整个目录目前不在 git 里）：用自己派生的 config 覆盖 `--config`，把 07 已有的 preset 名 `fl2v_candid_look_camera` 重定义成本批参数；`--style-mode stylized` 把写实人像和特写 LoRA 归零，画作笔触不会变成照片质感。会话名默认 `sitech-g4`。
 - 实测（2026-11-11，192 帧 8 秒，10 步）：首条含 ComfyUI 冷启动 7.4 分钟，热机第二条 3.7 分钟。
 - **FL2VA 首尾定格跳帧**：生成结果首尾几帧是原图定格，接到生成内容时相邻帧差约 8（正常运动 1.5 左右）。T1 跳在第 4/187 帧，T2 跳在第 180 帧，位置不固定，所以每条都要按帧差选截取范围，再用 `finish_sample.py` 截。
 - **循环**：首尾帧用同一张图不保证能循环。T1 截第 5～186 帧后接缝帧差 2.1（低于片中运动峰值 3.5），可无缝循环；T2 首尾姿势差太多（≥7.5），只能做单次播放版。
@@ -204,3 +205,57 @@ python3 workflows/08_site_channels/promo_short.py {pawmotif-styles|songifted-mom
 - **TryOnSwap 场景合集**：Scene try-on 可以连续提交排队，2K 一张约 25 秒，结果原图就是缩略图背后的 `/api/tryon/asset/<id>`。偶发失败（Needs attention）会自动退款，重试一次即可。
 - PawMotif 的原照是站长自家的杜宾（已去掉 EXIF/GPS）。画像用站长测试号在 pawmotif.com 真实生成并下载（无水印 1664×2512）。H3 输入图在顶部补了纸色留白（`pawmotif_doberman_watercolor_768x1344.png`），给网址腾出位置；划屏的终点画面就是 H3 的第一帧，衔接无缝。配乐用 H3 原生的钢琴音轨，相位对齐到画面开始动的那一刻（`PM_MOTION_T`）。`promo_short.py pawmotif-static` 是不用 H3 的 0 CCU 版本。
 
+
+
+## 横屏故事片《Nora》（`nora_film.py` + `screen_takes.py`，2026-11-20）
+
+```bash
+python3 workflows/08_site_channels/gen_keyframes.py samples/songifted_nora -j 4                      # 三视图 → 空环境图 → 首尾帧（0 CCU）
+python3 workflows/08_site_channels/nora_film.py --animatic                                         # 全关键帧样片，开机前审节奏
+python3 workflows/08_site_channels/render_samples.py --jobs workflows/08_site_channels/samples/songifted_nora/jobs.json --only N01_Counter_T3,... --keep-alive -s sitech-g4   # 开 G4（先问）
+python3 workflows/08_site_channels/screen_takes.py out/samples/songifted_nora [N01 N02 ...]       # 硬切/运镜筛片 + 联系表 sheets/<id>.jpg（0 CCU）
+python3 workflows/08_site_channels/nora_film.py [--preview] [--take N18_Walk=2]                   # 成片 out/promo/songifted/Songifted_Story_Nora_1920x1080.mp4
+```
+
+**流程**：先出人物三视图，再出空环境图（每个新机位各一张，不从广角图上 `edit_of` 改机位），每个首尾帧都 `edit_of` 环境图并带三视图作参考。然后在审核页（见下节）评审两轮，过审后才开机。第二轮用户发现公寓那张床长宽画反了：先出两张候选环境图（`env_apt_cand_a/b`）让用户选 A，再重做依赖它的分镜，旧图备份到 `kf_vN/`，页面上能看「上一版」。
+
+**第一轮 H3 约一半不能用，原因和改法**（通用规则已写进 `references/minimax_h3_zero_waste_sop.md` 铁律 I）：
+
+| 现象 | 镜头 | 改法 |
+|---|---|---|
+| 首尾同图的近静止全景/中景，H3 推成特写再拉回或硬切回来；换提示词、同 seed 结果几乎一样 | N01 N02 N06 N14 N16 N19 N21 N23 N28 | job 加 `"first_only": true`，只锁首帧（I2V） |
+| 提示词写了画外的人，被 H3 编出来 | N10（他的特写冒出陌生女人）、N28（屋外夜景切进屋内） | 只写画面里有的东西 |
+| 否定写法反着来 | N17「unable to speak」→ 张嘴说话 | 正向写：「lips pressed tightly together」 |
+| 动作控制太细出伪影 | N09 拨头发 → 手里冒棍子；换 seed 冒出镜子 | 删掉动作，只写「watches her sleep and smiles quietly」 |
+| 362 帧自己剪成多镜头蒙太奇 | N28 片尾 20 s 空镜 | 渲 192 帧，合成时 `loop=1.0` 交叉溶解循环 |
+
+所有提示词统一成 `r34l1sm, {动作} The camera holds a static shot, keeping the framing of the first frame for the whole clip.`（特写用 static close-up；车内用 hood-mounted camera）。
+
+**选片**：`screen_takes.py` 的判据：逐帧灰度差大于 95 分位 × 4 且大于 12 记为硬切（首尾各 6 帧是定格段跳入跳出，单独标出，不计入）；中位帧差大于 1.8 记为运镜大。阈值用已知好片和坏片对过：N01 的硬切帧差 32.8，中位 4.4，所以不能和中位数比。**脚本报 ✅ 也要看联系表**：N15 雨刮器的周期运动把一次硬切藏住了。选中的 take 写在 `nora_film.py` 的 `TAKES`，审核页每个分镜显示「H3 选用 Tx」和联系表。
+
+**合成器**（`nora_film.py`）：
+- `Shot.speed`：硬切离片尾不远的 take（N12 0.94、N15 0.95、N16 0.86、N23 0.96、N25 0.97），用 `setpts` + `framerate` 帧混合放慢，在读到硬切之前就结束。
+- `Shot.loop`：短片段掐掉尾部 `LOOP_TRIM=8` 帧，循环时用 1 s 交叉溶解。N28 接缝帧差最大 0.53，片内中位 0.29，看不出接缝。
+- 每个镜头读帧要读到它自己的转场尾巴：0.6 s 长溶解的镜头要多读 0.6 s，而不是固定多读 0.25 s，否则溶解段会定格。
+- `TAKES` 写 0 表示这个镜头不用 H3，直接用关键帧。
+- 之前只渲过关键帧样片，ffmpeg 滤镜里 `crop=…:flags=lanczos` 写错了却一直没暴露（`flags` 是 `scale` 的参数），第一次读 H3 片段时才报错。新合成器至少要用一条真实片段跑通一次。
+
+**`render_samples.py` 新增的防护**：
+- `launch_with_retry`：启动指令的回执丢失（"Connection was lost"）时，先查远端：`active_token` 不是本次的、没有任务在跑、ComfyUI 空闲，三条都满足才重发。这次补回 2 条。
+- `pull_from_drive(..., since=)`：同名 job 重渲时，只认启动前 60 s 之后修改过的文件。之前 N01 重渲拉回的是旧文件，字节数完全一样。
+- 配置文件名带长度和 `_fo`（只锁首帧），同一个 job 换长度或换模式不会互相覆盖。
+
+**耗时**：H3 175 帧每步约 17 s，362 帧约 59 s（一条约 10 分钟）。需要长空镜时，渲短片再循环更省也更稳。
+
+## 审核页（开机前给用户审，可在页面上直接评论）
+
+```bash
+python3 workflows/08_site_channels/review_nora.py                  # 生成 out/review/songifted_nora/index.html（数据读 keyframes/jobs/nora_film）
+python3 workflows/08_site_channels/review_kit/server.py             # http://127.0.0.1:8765/ （只监听本机）
+python3 workflows/08_site_channels/review_kit/server.py --dump songifted_nora [--open-only] [--render]   # Agent 读评论；--render 把圈/点画到原图导出 out/review/<p>/annot/<id>.jpg
+```
+
+- 评论写一条存一条，存到 `samples/<project>/review_comments.json`：`target`（`kf:<帧名>` / `shot:NN` / `lyric:NN` / `todo:N` / `video:animatic` / `general`），`box` 是图上画的圈（椭圆外接框 [x0, y0, x1, y1]，0–1 相对坐标），`pin` 是单击标的点 [x, y]（有圈时为圈心），`t` 是样片时间点（秒），`img_ver` 是评论时那张原图的 mtime。
+- 用户点「完成本轮评审」后，`rounds[-1].closed` 会写上时间。Agent 处理完一条，就在 JSON 里把它的 `status` 改成 `done`/`wontfix`/`question`，并把说明写进 `reply`，然后重跑 `review_nora.py`。图重做过以后，页面上的旧评论会显示「图已更新」。
+- 页面只按条增改评论，不整份覆盖文件，所以 Agent 改 JSON 时页面开着也没关系（页面每 15 秒或窗口重新获得焦点时会刷新）。
+- `file://` 直接打开也能看，但评论存不了，页面会给出提示。视频拖进度条需要 206 Range 响应，这个服务已经支持。

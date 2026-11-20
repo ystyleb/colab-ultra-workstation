@@ -46,6 +46,9 @@ def build_config(spec: dict) -> dict:
     length = int(spec.get("length", 192))
     assert (length - 5) % 17 == 0, f"length 必须满足 17k+5，当前 {length}"
     cfg["output_subdir"] = spec.get("output_subdir", "SiteChannels_Samples")
+    # 画幅：默认 07 号的 768x1344 竖版；横版长视频在 jobs.json 写 "width": 1344, "height": 768
+    if "width" in spec or "height" in spec:
+        cfg["width"], cfg["height"] = int(spec.get("width", 768)), int(spec.get("height", 1344))
     cfg["bgm_mix_mode"] = "native_only"
     cfg["master_bgm_wav"] = ""
     cfg["presets"][PRESET_KEY] = {
@@ -64,7 +67,8 @@ def build_config(spec: dict) -> dict:
                 "length": length,
                 "seed": 1,
                 "first_frame": "__MUSE_FULLBODY__",
-                "last_frame": "__MUSE_CLOSEUP__",
+                # first_only：只锁首帧（07 号 run_runway 认 "__NONE__"）。首尾同图的「微动」镜头 H3 会自己推近再拉回，见 README「H3 选片规律」
+                "last_frame": "__NONE__" if spec.get("first_only") else "__MUSE_CLOSEUP__",
                 "last_frame_idx": length - 5,
                 "prompt": "",
             }
@@ -99,7 +103,8 @@ def _urlopen_retry(req, timeout: int, tries: int = 5):
             time.sleep(2 ** k * 3)
 
 
-def pull_from_drive(name: str, out_dir: Path, rrr) -> Path | None:
+def pull_from_drive(name: str, out_dir: Path, rrr, since: str | None = None) -> Path | None:
+    """since（RFC3339 UTC）：只认这之后写入的文件。同名重渲时 Drive 搜索有延迟，会先返回上一版（2026-11-20 N01 踩到）。"""
     import urllib.parse
     import urllib.request
 
@@ -107,9 +112,9 @@ def pull_from_drive(name: str, out_dir: Path, rrr) -> Path | None:
     # colab CLI 有新版本时会把升级提示打到 stdout 第一行（2026-11-11 0.8.0 发布当天踩到），只取 JSON 部分
     tok = json.loads(raw[raw.index("{"): raw.rindex("}") + 1])["access_token"]
     q = urllib.parse.urlencode(
-        {"q": f"trashed = false and name = '{name}'", "fields": "files(id,name,size,modifiedTime)", "orderBy": "modifiedTime desc", "pageSize": 3}
+        {"q": f"trashed = false and name = '{name}'" + (f" and modifiedTime > '{since}'" if since else ""), "fields": "files(id,name,size,modifiedTime)", "orderBy": "modifiedTime desc", "pageSize": 3}
     )
-    for _ in range(6):
+    for _ in range(20 if since else 6):
         req = urllib.request.Request(f"https://www.googleapis.com/drive/v3/files?{q}", headers={"Authorization": f"Bearer {tok}"})
         files = [f for f in json.loads(_urlopen_retry(req, 15).read().decode()).get("files", []) if int(f.get("size", 0)) > 10_000]
         if files:
@@ -125,6 +130,32 @@ def pull_from_drive(name: str, out_dir: Path, rrr) -> Path | None:
         dst.write_bytes(resp.read())
     print(f"📥 已从 Drive 拉回 {dst} ({dst.stat().st_size / 1024**2:.2f} MB, Drive size={f['size']})", flush=True)
     return dst
+
+
+def launch_with_retry(rrr, sname: str, fwd: list[str], tries: int = 3) -> None:
+    """启动回执丢失时，只在「确定没启动」的情况下重发。
+
+    07 号 run_detached_pipeline 对回执丢失一律拒绝重放（防止同一任务跑两遍）。2026-11-20 Nora 批次里
+    `colab exec` 连接在启动脚本执行前就断了（N02/N07/N09）：远端 active_token 还是上一条的、没有进程在跑、
+    ComfyUI 空闲。启动脚本是先写 active_token 再拉起进程的，所以 token 不是这次的 = 这次根本没执行，重发是安全的。
+    """
+    import uuid
+
+    for k in range(tries):
+        tok = f"{int(time.time() * 1000)}_{os.getpid()}_{uuid.uuid4().hex[:8]}"
+        try:
+            rrr.run_detached_pipeline(sname, forward_args=fwd, job_token=tok)
+            return
+        except rrr.RemoteSessionBusyError:
+            raise
+        except rrr.RemotePollLostError:
+            if k == tries - 1:
+                raise
+            time.sleep(10)
+            probe = rrr.probe_remote_job_state(sname, "", job_token=tok)
+            if probe.get("active_token") == tok or probe.get("running") or probe.get("comfy_busy"):
+                raise  # 可能已经启动了：不重发，交给人看
+            print(f"   ↻ 启动没执行（远端 token={probe.get('active_token')}，空闲），重发 {k + 2}/{tries}", flush=True)
 
 
 def main() -> None:
@@ -160,7 +191,7 @@ def main() -> None:
                 if not p.exists():
                     raise FileNotFoundError(f"❌ [{j['id']}] 找不到 {k} 帧: {p}")
             gpu_min += est_job_min(length)
-            print(f"  • [{tag}] {j['id']} {length} 帧 seed={j['seed']} | {Path(j['first']).name} -> {Path(j['last']).name}")
+            print(f"  • [{tag}] {j['id']} {length} 帧 seed={j['seed']} | {Path(j['first']).name} -> {'（只锁首帧）' if j.get('first_only') else Path(j['last']).name}")
     n = sum(len(b[2]) for b in batches)
     print(f"🎬 共 {n} 条 | 会话 {args.session} | 预计 G4 {gpu_min:.1f} 分钟 ≈ {gpu_min / 60 * G4_CCU_PER_H:.2f} CCU（偏保守：实测热机 192 帧约 3.7 分钟/条）")
     if args.dry_run:
@@ -201,9 +232,10 @@ def main() -> None:
             out_dir = resolve(spec.get("out_dir", "out"), base)
             for j in jobs:
                 length = job_length(spec, j)
-                cfg_path = tmp / f"site_samples_config_{tag}_{length}.json"
+                fo = bool(j.get("first_only"))
+                cfg_path = tmp / f"site_samples_config_{tag}_{length}{'_fo' if fo else ''}.json"
                 if cfg_path.name not in uploaded:
-                    cfg_path.write_text(json.dumps(build_config(spec | {"length": length}), ensure_ascii=False, indent=1), encoding="utf-8")
+                    cfg_path.write_text(json.dumps(build_config(spec | {"length": length, "first_only": fo}), ensure_ascii=False, indent=1), encoding="utf-8")
                     rrr.upload_file_chunked(sname, cfg_path, f"/tmp/{cfg_path.name}")
                     uploaded.add(cfg_path.name)
                 prefix = j["id"]
@@ -228,9 +260,10 @@ def main() -> None:
                 ]
                 print(f"\n🚀 === [{tag}] {prefix} (seed={j['seed']}) ===", flush=True)
                 try:
-                    rrr.run_detached_pipeline(sname, forward_args=fwd)
+                    since = time.strftime("%Y-%m-%dT%H:%M:%S", time.gmtime(time.time() - 60))
+                    launch_with_retry(rrr, sname, fwd)
                     # 销毁实例前先确认 Drive 上产物 size > 0（防烧钱硬规则 5）
-                    results[prefix] = pull_from_drive(f"{prefix}_Master.mp4", out_dir, rrr)
+                    results[prefix] = pull_from_drive(f"{prefix}_Master.mp4", out_dir, rrr, since=since)
                 except Exception as exc:
                     print(f"⚠️ {prefix} 失败: {exc}", flush=True)
                     results[prefix] = None
